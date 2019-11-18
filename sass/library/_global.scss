@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: $neutralColor;
+}
+
+body {
+    width: 100%;
+    -webkit-font-smoothing: auto;
+    font-family: 'Sukhumvit Set', 'Helvetica Neue', 'Tahoma', 'Helvetica', 'Arial', 'PingFang TC', 'Microsoft JhengHei', 'Microsoft JhengHei UI', 'LiHei Pro', 'Heiti TC',  'sans-serif';
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $colorGreyishWhite;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+p {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: $neutralColor;
+    outline: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+dl {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+dd {
+    display: block;
+    margin-inline-start: 0px;
+}
+
+img {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+//圖片百分之百
+
+.img-fluid {
+    width: 100%;
+}
+
+
+//RWD 物件隱藏出現
+.hidden-xxs-down {
+    @media (max-width: $break-xxs) {
+        display: none !important
+    }
+}
+.hidden-xs-down {
+    @media (max-width: $break-xs) {
+        display: none !important
+    }
+}
+
+.hidden-sm-down {
+    @media (max-width: $break-sm) {
+        display: none !important
+    }
+
+}
+
+.hidden-md-down {
+    @media (max-width: $break-md) {
+        display: none !important
+    }
+
+}
+
+
+.hidden-lg-down {
+    @media (max-width: $break-lg) {
+        display: none !important
+    }
+
+}
+
+
+.hidden-lg-up {
+    @media (min-width: $break-lg) {
+        display: none !important
+    }
+}
+
+.hidden-md-up {
+    @media (min-width: $break-md)  {
+        display: none !important
+    }
+
+}
+
+.hidden-sm-up {
+    @media (min-width: 769px) {
+        display: none !important
+    }
+}
+
+.hidden-xs-up {
+    @media (min-width: $break-xs) {
+        display:none !important
+    }
+
+}
+.hidden-xxs-up {
+    @media (min-width: $break-xxs) {
+        display:none !important
+    }
+
+}
+
+
+//英數字體
+.eng-num {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+
+// 文字對齊
+.text__align--center {
+    text-align: center;
+}
+.text__align--left {
+    text-align: left;
+}
+.text__align--right {
+    text-align: right;
+}
+
+
+
+//背景圖片置中自動縮放
+.img-bg {
+    background-size: cover;
+    width: 100%;
+    background-position: center center;
+}
+
+
+.pct-btn-loadcontent {
+
+    p{
+        font-weight: 400;
+        color: #C5C5C5;
+        font-size: 0.9375rem;
+        text-align: center;
+        min-height:35px;
+    }
+
+}
+
+//通知中心lightbox
+#pct-lightbox-notification{
+    text-align: left;
+    line-height: 24px;
+
+    .description a{
+      color: $accentColor;
+    }
+}
+

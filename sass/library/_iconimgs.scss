@@ -1,0 +1,167 @@
+//海外商品
+.pct-icon-overseas {
+    width: 25px;
+    height: 25px;
+    background: url(../img/icon-badge-overseas.svg);
+    background-size: cover;
+}
+
+//海外代溝標
+.pct-icon-shopassist {
+    // width: 105px;
+    width: 130px;
+    height: 26px;
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 26px;
+    text-align: center;
+    background: url(../img/icon-tag-shopassist.svg);
+    background-size: cover;
+    color: $colorWhite;
+    padding-right: 5px;
+    transform: scale(1);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+//海外國旗
+.pct-icon-flag {
+    width: 20px;
+    height: 14px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    &.th {
+        background: url(../img/icon-flag-thailand.svg);
+    }
+    &.tw {
+        background: url(../img/icon-flag-taiwan.svg);
+    }
+    &.jp {
+        background: url(../img/icon-flag-japan.svg);
+    }
+}
+
+//評價樣式
+.pct-ui.review-star {
+    display: flex;
+    align-items: center;
+
+    > ul {
+        margin-right: 0.3125rem;
+
+        > li.pct-icon {
+            display: inline-block;
+            font-size: 1rem;
+            margin: 0 -0.125rem;
+
+            &.icon-star-on {
+                color: $colorOrange;
+            }
+            &.icon-star-off {
+                color: $colorGray;
+            }
+            &.icon-star-half {
+                color: $colorOrange;
+            }
+        }
+    }
+
+    .review-text {
+        font-size: 0.8125rem;
+
+        a {
+            color: $primaryDeepColor;
+        }
+    }
+}
+
+//特價標
+.pct-icon-salebadge {
+    width: 40px;
+    height: 32px;
+    background-color: rgba(253, 214, 65, 0.9);
+    position: absolute;
+    z-index: 2;
+    left: 8px;
+}
+
+.pct-icon-salebadge::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 20px 0 20px;
+    border-color: rgba(253, 214, 65, 0.9) transparent transparent transparent;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.pct-icon-salebadge {
+    text-align: center;
+    line-height: 35px;
+
+    span {
+        font-size: 0.875rem;
+        color: #d23131;
+        font-weight: 600;
+        span.percent-sign {
+            display: inline-block;
+            transform: scale(0.65);
+        }
+    }
+}
+
+.icon-back {
+    border-radius: 50%;
+    color: $colorWhite;
+    margin: 0 4px;
+    position: relative;
+    top: -1px;
+    width: 1.25rem;
+    height: 1.25rem;
+    font-size: 1rem;
+    padding-top: 2px;
+    padding-left: 2px;
+
+    background-color: #666;
+
+    &.icon-wait {
+        text-align: center;
+        font-size: 0.9rem;
+        padding-top: 3px;
+    }
+
+    &.icon-checked {
+        text-align: center;
+        font-size: 1.1rem;
+        padding-left: 1px;
+        padding-top: 2px;
+    }
+}
+
+// 等待中（申請中 待付款）
+.icon-back-red {
+    background-color: $colorRed;
+}
+
+// 取消（退款完成）
+.icon-back-gray {
+    background-color: $colorDeepGray;
+}
+
+// 半完成（已付款）
+.icon-back-orange {
+    background-color: $colorOrange;
+}
+
+// 已完成（最終）
+.icon-back-green {
+    background-color: $colorCrystalGreen;
+}
+
+// 起始
+.icon-back-blue {
+    background-color: $colorBlue;
+}

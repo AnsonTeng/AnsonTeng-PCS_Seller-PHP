@@ -1,0 +1,168 @@
+// Header 高度
+$headerHeight_table: 64px;
+$headerHeight_mobile: 54px;
+
+// Nav  高度
+$navHeight_table: 38px;
+
+// Nav 寬度
+$navWidth_mobile: 290px;
+
+// search Bar 高度
+$searchBarHeight: 45px;
+
+// 將欄距改成 左右各10px 共20px
+$custom-gutter-width: 20px;
+
+.pct-gutters {
+    &.container {
+        padding-left: $custom-gutter-width / 2;
+        padding-right: $custom-gutter-width / 2;
+    }
+    .row {
+        margin-left: -$custom-gutter-width / 4;
+        margin-right: -$custom-gutter-width / 4;
+    }
+
+    [class^="col-"],
+    [class*=" col-"] {
+        padding-left: $custom-gutter-width / 4;
+        padding-right: $custom-gutter-width / 4;
+    }
+}
+
+//隔線系統欄寬無內距與外距
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+//Layouts
+$break-xxs: 441px;
+$break-xs: 576px;
+$break-sm: 768px;
+$break-md: 992px;
+$break-lg: 1200px;
+$break-xl: 1920px;
+
+//Colours
+// 主要色
+$brandColor: #00afeb;
+$primaryColor: #00afeb;
+$primaryDeepColor: #0091d7;
+
+// 亮點色
+$accentLightColor: #ffebcf;
+$accentColor: #ff9800;
+$accentDeepColor: #ffb71a;
+
+// 文字色
+$neutralColor: #333333;
+
+// 黑白灰階
+$colorWhite: #ffffff;
+$colorGreyishWhite: #f6f6f6;
+$colorLightGray: #ececec;
+$colorGray: #cccccc;
+$colorWhiteGray: #a9a9a9;
+$colorDeepGray: #888888;
+$colorDarkGray: #555555;
+$colorGrayBlack: #333333;
+$colorBlack: #000000;
+
+//輔助色
+$colorYellow: #fdd641;
+$colorLightOrange: #ff9430;
+$colorOrange: #f88a51;
+$colorDeepOrange: #ff7500;
+$colorPink: #eab2ba;
+$colorLightBlue: #e6f7ff;
+$colorRed: #ba0019;
+
+$colorWhiteBlue: #f3fcff;
+$colorBlue: #2da9fb;
+$colorLightGreen: #d2d9dd;
+$colorWhiteGreen: #eff3f6;
+$colorDeepLightGreen: #bbccd4;
+$colorGreen: #7c97a2;
+$colorCrystalGreen: #42cb69;
+
+//表格預設寬度
+.table--w8 {
+    width: 8%;
+}
+.table--w9 {
+    width: 9%;
+}
+.table--w10 {
+    width: 10%;
+}
+.table--w11 {
+    width: 11%;
+}
+.table--w12 {
+    width: 12%;
+}
+.table--w15 {
+    width: 15%;
+}
+.table--w17 {
+    width: 17%;
+}
+.table--w18 {
+    width: 18%;
+}
+.table--w19 {
+    width: 19%;
+}
+.table--w20 {
+    width: 20%;
+}
+.table--w22 {
+    width: 22%;
+}
+.table--w23 {
+    width: 23%;
+}
+.table--w24 {
+    width: 24%;
+}
+.table--w25 {
+    width: 25%;
+}
+.table--w30 {
+    width: 30%;
+}
+.table--w35 {
+    width: 35%;
+}
+.table--w40 {
+    width: 40%;
+}
+.table--w45 {
+    width: 45%;
+}
+.table--w50 {
+    width: 50%;
+}
+.table--w55 {
+    width: 55%;
+}
+.table--w60 {
+    width: 60%;
+}
+.table--w70 {
+    width: 70%;
+}
+.table--w75 {
+    width: 75%;
+}
+//寫成content的icon-font
+$icon-checked: "\e902";
+$icon-angle-down: "\e936";

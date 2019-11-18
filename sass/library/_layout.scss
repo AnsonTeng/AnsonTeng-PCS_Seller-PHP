@@ -1,0 +1,279 @@
+//首頁內容區
+#pct-main {
+    padding-top: calc(#{$headerHeight_table} - #{2px});
+}
+
+//內頁內容區
+#pct-main-page {
+    padding-top: calc(#{$headerHeight_table} + #{20px});
+}
+
+//內容預設高度
+.container-min-height {
+    min-height: 75vh;
+}
+
+//內頁內容區
+#pct-section-content {
+    padding: 20px 0;
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12,
+    .col,
+    .col-auto,
+    .col-sm-1,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12,
+    .col-sm,
+    .col-sm-auto,
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-md,
+    .col-md-auto,
+    .col-lg-1,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12,
+    .col-lg,
+    .col-lg-auto,
+    .col-xl-1,
+    .col-xl-2,
+    .col-xl-3,
+    .col-xl-4,
+    .col-xl-5,
+    .col-xl-6,
+    .col-xl-7,
+    .col-xl-8,
+    .col-xl-9,
+    .col-xl-10,
+    .col-xl-11,
+    .col-xl-12,
+    .col-xl,
+    .col-xl-auto {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: $break-md) {
+    //內頁內容區
+    #pct-main-page {
+        padding-top: calc(#{$headerHeight_table} + #{$navHeight_table} + #{15px});
+    }
+}
+
+@media (max-width: $break-sm) {
+    #pct-main {
+        padding-top: calc(#{$headerHeight_mobile} - #{2px});
+    }
+
+    //內頁內容區
+    #pct-main-page {
+        padding-top: calc(#{$headerHeight_mobile});
+    }
+}
+
+//區塊
+.section-outer {
+    margin-bottom: 40px;
+
+    .pct-seller-header {
+        padding: 8px 0;
+        padding-left: 0.3rem;
+
+        h5 {
+            font-size: 0.9375rem;
+        }
+    }
+
+    .pct-section-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid $colorLightGray;
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 0;
+            font-weight: 500;
+            line-height: 3.125rem;
+            color: $neutralColor;
+            border-bottom: 2px solid $primaryDeepColor;
+            margin-bottom: -2px;
+        }
+
+        a.pct-section-header-link {
+            font-size: 0.8125rem;
+            color: $primaryDeepColor;
+            font-weight: 400;
+        }
+    }
+
+    .pct-section-header {
+        &.sub-header {
+            border-bottom: none;
+
+            h4 {
+                font-size: 1.125rem;
+                margin: 0;
+                font-weight: 500;
+                line-height: 3rem;
+                color: $neutralColor;
+            }
+        }
+    }
+    .pct-section-content {
+        &.no-margin {
+            margin-bottom: 0;
+        }
+    }
+}
+
+//區塊排序
+.pct-reverse {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: $break-sm) {
+    .pct-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.section-skinny-banner,
+.section-tall-banner {
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    margin: 0 0 -4px 0;
+}
+
+@media (max-width: $break-md) {
+    .section-outer {
+        margin-bottom: 35px;
+    }
+}
+
+// 列表頁面 TAB bar 上方 統計文字/篩選
+.searchBarGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding: 15px 0;
+
+    // (輸入框＋按鈕) 群組
+    .pct-ui.form.inputGroup {
+        flex-basis: 340px;
+
+        .inputGroup-inputBox {
+            flex: 1;
+        }
+    }
+
+    .searchBarGroup-selectGroup {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 100%;
+
+        .selectBox {
+            width: auto;
+            margin: 0 0 0 8px;
+
+            // 下拉選單
+            .pct-ui.form select {
+                min-width: 120px;
+            }
+        }
+        .selectBox.select-arrayOption {
+            // 下拉選單-篩選
+            .pct-ui.form select {
+                min-width: 160px;
+            }
+        }
+    }
+
+    // 選單－排序用
+    .select-arrayOption {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: $break-xs) {
+    .searchBarGroup {
+        display: block;
+
+        // (輸入框＋按鈕) 群組
+        .pct-ui.form.inputGroup {
+            margin: 0 0 15px 0;
+        }
+
+        .searchBarGroup-selectGroup {
+            width: 100%;
+            margin-bottom: 12px;
+
+            .selectBox {
+                width: 100%;
+                margin: 0px 0 0px 0;
+            }
+        }
+    }
+}
+
+//沒有資料時
+.section-default_empaty {
+    .message-text {
+        width: 100%;
+        height: 300px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $colorGray;
+        text-align: center !important;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 28px;
+    }
+}

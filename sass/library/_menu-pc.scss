@@ -1,0 +1,137 @@
+//賣家左邊選單
+.sidebar-panel-wrap {
+    padding: 40px 30px 0 0px;
+
+    ul {
+        li {
+            font-size: 1rem;
+            font-weight: 400;
+            padding: 0;
+
+            ul {
+                display: none;
+                padding: 10px 0;
+
+                li {
+                    font-size: 0.875rem;
+                    font-weight: 400;
+
+                    a {
+                        display: block;
+                        width: 100%;
+                        padding: 0.8125rem 0;
+                        padding-left: 51px;
+
+                        &:hover {
+                            color: $primaryDeepColor;
+                        }
+                    }
+                }
+            }
+
+            &.nosub {
+                a.seller-nav-link {
+                    font-weight: 700;
+
+                    &:after {
+                        content: "";
+                    }
+                }
+            }
+
+            a.seller-nav-link {
+                display: block;
+                width: 100%;
+                padding: 0.75rem 1rem;
+                color: $colorDarkGray;
+                position: relative;
+
+                &:hover {
+                    color: $primaryDeepColor;
+                    background-color: $colorLightGray;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    right: 15px;
+                    top: 38%;
+                    font-family: "pct-icon" !important;
+                    content: $icon-angle-down;
+                    color: $primaryDeepColor;
+                    font-size: 0.7rem;
+                }
+
+                &.active {
+                    a.guide-category-link {
+                        font-weight: 400;
+                        color: $primaryDeepColor;
+                    }
+                }
+
+                span {
+                    display: inline-block;
+                    // vertical-align: -33%;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    background: $brandColor; /* Old browsers */
+                    background: -moz-linear-gradient(left, #00afeb 50%, #0091d7 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(left, #00afeb 50%, #0091d7 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(
+                        to right,
+                        #00afeb 50%,
+                        #0091d7 100%
+                    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00AFEB', endColorstr='#0091D7',GradientType=1 ); /* IE6-9 */
+
+                    &.pct-icon {
+                        color: #ffffff;
+                        text-align: center;
+                        line-height: 25px;
+                    }
+
+                    &.no-circle {
+                        background: none;
+
+                        &.pct-icon.icon-homepage {
+                            color: $primaryDeepColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-lg) {
+    //賣家左邊選單
+    .sidebar-panel-wrap {
+        padding: 40px 5px 0 0px;
+
+        ul {
+            li {
+                ul {
+                    li {
+                        a {
+                            padding-left: 38px;
+                        }
+                    }
+                }
+
+                a.seller-nav-link {
+                    display: block;
+                    width: 100%;
+                    padding: 0.75rem 0.1rem;
+                    color: $colorDarkGray;
+                    position: relative;
+
+                    &:after {
+                        right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

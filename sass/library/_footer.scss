@@ -1,0 +1,125 @@
+.section-footer {
+    .pct-section-content {
+        p.footer-ttl {
+            font-weight: 400;
+            font-size: 0.9375rem;
+            margin-bottom: 0.9375rem;
+        }
+
+        p.footer-text {
+            color: $colorDeepGray;
+            font-size: 0.8125rem;
+            margin-bottom: 0.3125rem;
+            line-height: 1rem;
+
+            a {
+                color: $colorDeepGray;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        //隱私條款
+        &.privacy {
+            width: 100%;
+            text-align: center;
+            font-size: 0.75rem;
+            background-color: #424242;
+            color: $colorWhite;
+            height: auto;
+            padding: 0 0.9375rem;
+
+            .privacy-wrap {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+
+                .pct-footer-logoprivacy {
+                    margin: 5px 0 5px 0;
+
+                    > ul {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        top: 5px;
+
+                        li {
+                            &.pct-footerlogo {
+                                width: 156px;
+                                height: 52px;
+                                background-image: url(../img/img_pchomethai_white.svg);
+                                margin-right: 12px;
+                                position: relative;
+                                top: -5px;
+                            }
+                        }
+                    }
+                }
+
+                .pct-footer-contact {
+                    margin: 5px 0 5px 0;
+                    position: relative;
+                    top: 5px;
+
+                    > ul {
+                        color: $colorDeepGray;
+                        display: flex;
+                        justify-content: center;
+
+                        > li {
+                            line-height: 1rem;
+
+                            .pct-icon {
+                                padding-right: 5px;
+                            }
+
+                            a {
+                                color: $colorDeepGray;
+                            }
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-md) {
+    .section-footer {
+        .pct-section-content {
+            //隱私條款
+            &.privacy {
+                padding: 0.9375rem 0.9375rem;
+
+                .privacy-wrap {
+                    display: block;
+
+                    .pct-footer-logoprivacy {
+                        margin: 5px 0;
+
+                        > ul {
+                            display: block;
+
+                            li {
+                                &.pct-footerlogo {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .pct-footer-contact {
+                        > ul {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

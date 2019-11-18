@@ -1,0 +1,56 @@
+//彈跳訊息bar
+.msgbar {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 300;
+    padding: 0 0;
+    margin-bottom: 20px;
+
+    a {
+        color: $primaryDeepColor;
+        text-decoration: underline;
+    }
+
+    div {
+        position: relative;
+        border-radius: 2px;
+        padding: 16px 20px;
+        margin-bottom: 8px;
+
+        .pct-icon {
+            position: absolute;
+            font-size: 1.125rem;
+            right: 15px;
+        }
+    }
+
+    //  警告
+    .alert {
+        background-color: $accentLightColor;
+        color: $accentColor;
+    }
+}
+
+@media (max-width: $break-md) {
+    .msgbar {
+        padding: 0 3%;
+    }
+}
+
+@media (max-width: $break-sm) {
+    .msgbar {
+        div {
+            position: relative;
+            border-radius: 2px;
+            padding: 16px 40px 16px 20px;
+
+            .pct-icon {
+                position: absolute;
+                font-size: 1.125rem;
+                right: 10px;
+                top: 50%;
+                margin-top: -10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,579 @@
+//MODALS  後台使用的對話視窗樣式
+
+.pct-ui.modal {
+    // 對話框內容
+    .modal-content {
+        .description {
+            //條列內容樣式-1
+            .description-list {
+                margin-top: 10px;
+                margin-bottom: 20px;
+
+                .description-list-box {
+                    display: flex;
+
+                    .list-box-item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        font-size: 0.875rem;
+                        min-height: 44px;
+                        padding: 10px 15px;
+                        flex-basis: 180px;
+                        background-color: #eff3f6;
+                        margin-bottom: 2px;
+                        margin-right: 1px;
+                        text-align: right;
+                    }
+
+                    .list-box-text {
+                        display: flex;
+                        align-items: center;
+                        text-align: left;
+                        min-height: 44px;
+                        font-size: 0.9375rem;
+                        line-height: 22px;
+                        font-weight: 300;
+                        padding: 15px 15px;
+                        flex: 1;
+                        background-color: #fcfcfc;
+                        margin-bottom: 2px;
+
+                        a {
+                            color: $accentColor;
+                        }
+                    }
+
+                    .list-box-form {
+                        background-color: #fcfcfc;
+                        margin-bottom: 2px;
+                        padding: 25px 15px 15px 15px;
+                        flex: 1;
+                    }
+
+                    // 作為標頭
+                    &.description-list-box-title {
+                        .list-box-item {
+                            text-align: center;
+                            font-weight: 400;
+                            background-color: $colorLightGreen;
+                            justify-content: center;
+                        }
+                        .list-box-text {
+                            text-align: center;
+                            font-weight: 400;
+                            background-color: $colorLightGreen;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                //條列內容樣式-shrink (寬度壓縮後不折行)
+                &.description-list-shrink {
+                    .description-list-box {
+                        .list-box-flexbox {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                            min-height: 44px;
+                            font-size: 0.9375rem;
+                            line-height: 22px;
+                            font-weight: 300;
+                            padding: 15px 15px;
+                            flex: 1;
+                            background-color: #fcfcfc;
+                            margin-bottom: 2px;
+
+                            .flexbox-item {
+                                flex: 1;
+                            }
+
+                            .flexbox-item-flexbox {
+                                flex: 2;
+                                display: flex;
+                                flex-direction: row;
+
+                                .flexbox-item:first-child {
+                                    flex: 2;
+                                }
+                            }
+
+                            > div {
+                                flex: 1;
+
+                                .flexbox-item-icon {
+                                    width: 20px;
+                                    position: relative;
+                                    top: 3px;
+                                }
+                            }
+
+                            .flexbox-btnbox {
+                                flex: 1;
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-end;
+                                height: auto;
+                                background-color: #fcfcfc;
+                                a {
+                                    padding: 0.25rem 0.9375rem 0.25rem 0.9375rem;
+                                    margin: 0;
+                                    margin-bottom: 1px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //條列內容樣式-2
+            .description-list-column {
+                margin-top: 10px;
+                margin-bottom: 20px;
+
+                .list-column-up {
+                    display: flex;
+                }
+
+                .description-list-box {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+
+                    .list-box-item {
+                        display: flex;
+                        align-items: center;
+                        font-size: 0.875rem;
+                        min-height: 44px;
+                        padding: 10px 15px;
+                        flex: 1;
+                        background-color: #eff3f6;
+                        margin-bottom: 2px;
+                        margin-right: 1px;
+                        text-align: right;
+                    }
+
+                    .list-box-text {
+                        display: flex;
+                        align-items: center;
+                        text-align: left;
+                        min-height: 44px;
+                        font-size: 0.9375rem;
+                        line-height: 22px;
+                        font-weight: 300;
+                        padding: 15px 15px;
+                        flex: 1;
+                        background-color: #fcfcfc;
+                        margin-bottom: 2px;
+
+                        a {
+                            color: $accentColor;
+                        }
+                    }
+
+                    .list-box-form {
+                        background-color: #fcfcfc;
+                        margin-bottom: 2px;
+                        padding: 25px 15px 15px 15px;
+                        flex: 1;
+                    }
+                }
+
+                .description-list-box:first-child {
+                    border-right: 2px solid #fff;
+                }
+            }
+
+            //檢視圖片區塊
+            .payment-img-wrap {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                background-color: #fcfcfc;
+                margin-bottom: 2px;
+
+                .payment-img-preview {
+                    background-color: #ffffff;
+                    border-radius: 4px;
+                    width: 400px;
+                    height: 400px;
+
+                    margin: 0 auto;
+                    background-size: 25% auto;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    @extend %shadow-style-block-2;
+
+                    .payment-img {
+                        height: 350px;
+                        background: url(../img/noimage_default.svg);
+                        background-size: cover;
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .view-img-original {
+                        text-align: center;
+                        border-top: 1px solid $colorLightGray;
+
+                        a {
+                            display: block;
+                            height: 50px;
+                            width: 100%;
+                            line-height: 50px;
+                            font-size: 0.9375rem;
+                            color: $accentColor;
+                            background-color: #ffffff;
+
+                            .pct-icon {
+                                display: inline-block;
+                                position: relative;
+                                font-size: 18px;
+                                width: auto;
+                                height: auto;
+                                color: $accentColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ********** RWD ************ //
+
+@media (max-width: $break-sm) {
+    .pct-ui.modal {
+        // 對話框內容
+        .modal-content {
+            .description {
+                .payment-img-wrap {
+                    padding: 20px 0px;
+
+                    .payment-img-preview {
+                        width: 250px;
+                        height: 250px;
+
+                        .payment-img {
+                            height: 200px;
+                        }
+                    }
+                }
+
+                //條列內容樣式-1
+                .description-list {
+                    .description-list-box {
+                        display: block;
+
+                        .list-box-item {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            font-size: 0.875rem;
+                            min-height: auto;
+                            padding: 10px 15px;
+                            flex-basis: 180px;
+                            background-color: #eff3f6;
+                            margin-bottom: 2px;
+                            margin-right: 1px;
+                        }
+                        // 作為標頭
+                        &.description-list-box-title {
+                            .list-box-item {
+                                display: none;
+                            }
+                            .list-box-text {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                //條列內容樣式-2
+                .description-list-column {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+
+                    .list-column-up {
+                        display: block;
+                    }
+
+                    .description-list-box {
+                        display: block;
+
+                        .list-box-item {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            font-size: 0.875rem;
+                            min-height: auto;
+                            padding: 10px 15px;
+                            flex-basis: 180px;
+                            background-color: #eff3f6;
+                            margin-bottom: 2px;
+                            margin-right: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    .pct-ui.modal {
+        // 對話框內容
+        .modal-content {
+            .description {
+                //條列內容樣式-1
+                .description-list {
+                    //條列內容樣式-shrink (寬度壓縮後不折行)
+                    &.description-list-shrink {
+                        .description-list-box {
+                            display: block;
+                            .list-box-item {
+                                //  Title 齊右
+                                justify-content: flex-start;
+                            }
+
+                            .list-box-flexbox {
+                                .flexbox-item-flexbox {
+                                    flex: 1;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//MODALS  後台使用的對話視窗樣式 - 電話驗證 / 提領
+
+.lightbox-setbank,
+.lightbox-telverify {
+    &.pct-ui.modal {
+        // 對話框內容
+        .modal-content {
+            &::-webkit-scrollbar-track {
+                @extend %scrollbar-track;
+            }
+
+            &::-webkit-scrollbar {
+                @extend %scrollbar;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                @extend %scrollbar-thumb;
+            }
+
+            .description {
+                .title {
+                    font-size: 1.2rem;
+                    text-align: center !important;
+                    margin-bottom: 0px;
+                }
+
+                .modal-icon-img {
+                    width: 90px;
+                    height: 90px;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+
+                .divide-line {
+                    position: relative;
+                    text-align: center;
+                    width: 100%;
+                    height: 25px;
+                    z-index: 1;
+
+                    span {
+                        font-size: 0.8125rem;
+                        color: $colorGray;
+                        line-height: 25px;
+                        background: white;
+                        padding: 0 20px;
+                    }
+
+                    &:before {
+                        position: absolute;
+                        margin: 0 auto;
+                        top: 50%;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        border-top: 1px solid $colorLightGray;
+                        content: "";
+                        z-index: -1;
+                    }
+                }
+
+                //選責驗證方式
+                ul.choose_verify {
+                    display: flex;
+                    justify-content: center;
+
+                    li {
+                        a.pct-ui.btn-sm {
+                            padding: 0.75rem 0.5rem 0.625rem 0.5rem !important;
+                        }
+                    }
+                }
+
+                //  輸入電話
+                .tel-number-box {
+                    display: flex;
+                    align-items: center;
+
+                    .pct-icon {
+                        text-align: center;
+                        font-size: 1.2rem;
+                        color: $colorGray;
+                        flex-basis: 30px;
+                    }
+
+                    .pct-ui.form {
+                        &.national-code {
+                            flex-basis: 80px;
+                            margin-right: 10px;
+
+                            p.data-text {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+
+                    .tel-number {
+                        flex: 1;
+                    }
+                }
+
+                //輸入驗證碼
+                .verify-box {
+                    display: flex;
+
+                    .pct-ui.form {
+                        padding-left: 10px;
+
+                        input[type="text"] {
+                            text-align: center;
+                        }
+
+                        &:first-child {
+                            padding-left: 0;
+                        }
+                    }
+                }
+
+                .pct-ui.form.text-without-input {
+                    display: flex;
+                    align-items: center;
+
+                    .pct-ui.btn {
+                        margin-left: 10px;
+                    }
+
+                    p.data-text {
+                        font-weight: 400;
+                        font-size: 0.9375rem;
+                    }
+                }
+
+                .pct-item-link {
+                    margin: 15px 0 10px 0;
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 1rem;
+
+                    a {
+                        color: $primaryDeepColor;
+                    }
+
+                    span {
+                        display: none;
+                        font-size: 0.8125rem;
+                    }
+                    p {
+                        display: none;
+                        font-weight: 400;
+                        text-align: center;
+                        font-size: 1rem;
+                        color: $primaryDeepColor;
+                    }
+
+                    //超過驗證次數
+                    &.unsucess {
+                        p {
+                            display: block;
+                        }
+
+                        a {
+                            display: none;
+                        }
+                    }
+
+                    &.processing {
+                        p {
+                            display: none;
+                        }
+
+                        a {
+                            pointer-events: none;
+                            color: $colorDeepGray !important;
+                        }
+
+                        span {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    .lightbox-telverify {
+        &.pct-ui.modal {
+            .modal-content {
+                // max-height: calc(60vh);
+                // overflow: auto;
+
+                .description {
+                    .title {
+                        font-size: 1rem;
+                        padding-bottom: 5px;
+                    }
+
+                    .modal-icon-img {
+                        width: 70px;
+                        height: 70px;
+                        margin: 0 auto;
+                        margin-bottom: 15px;
+                        margin-top: 5px;
+                    }
+
+                    //選責驗證方式
+                    ul.choose_verify {
+                        justify-content: center;
+
+                        li {
+                            a.pct-ui.btn-sm {
+                                text-align: center;
+                                padding: 0.75rem 0.5rem 0.625rem 0.5rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

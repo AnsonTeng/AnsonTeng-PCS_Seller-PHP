@@ -1,0 +1,82 @@
+//無法點擊
+%ui-disabled {
+    color: $colorGray;
+    -webkit-text-fill-color: $colorGray;
+    background-color: #E9E9E9;
+    cursor: not-allowed;
+}
+
+
+//陰影樣式
+%shadow-style-card {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+%shadow-style-block {
+    box-shadow: 0 2px 2px 0.1px rgba(0, 0, 0, 0.05);
+}
+
+%shadow-style-block-2{
+    box-shadow: 0 1px 2px 0.1px rgba(0, 0, 0, 0.05);
+}
+
+%shadow-style-block-3{
+    box-shadow: 0 2px 5px 0px rgba(224, 224, 224, 0.5);
+}
+
+%shadow-style-inner-block {
+    box-shadow: 0 2px 10px 0.1px rgba(0, 0, 0, 0.12);
+}
+
+
+
+// 內容區塊ScrollBar自訂樣式
+%scrollbar-track {
+    padding: 2px 0;
+    background-color: $colorLightGray;
+}
+
+%scrollbar {
+    width: 10px;
+}
+
+%scrollbar-thumb {
+    border-radius: 10px;
+    background-color: $colorGray;
+}
+
+
+//元件內背景圖片物件設定
+%figure-inner {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    background-color: #FAFAFA;
+    -webkit-animation-duration: 14s;
+    animation-duration: 14s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode:  forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: placeHolderShimmer;
+    animation-name: placeHolderShimmer;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    background: -webkit-gradient(linear, left top, right top, color-stop(10%, #FAFAFA), color-stop(30%, #F9F9F9), color-stop(100%, #FAFAFA));
+    background: -webkit-linear-gradient(left, #FAFAFA 10%, #F9F9F9 30%, #FAFAFA 100%);
+    background: linear-gradient(to right, #FAFAFA 10%, #F9F9F9 30%, #FAFAFA 100%);
+    -webkit-background-size: 200px 500%;
+    background-size: 280px 500%;
+}
+
+%figure-img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}

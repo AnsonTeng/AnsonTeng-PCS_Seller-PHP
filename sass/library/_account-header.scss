@@ -1,0 +1,406 @@
+//賣家共用header
+.account-header {
+    background-color: $colorWhite;
+    min-height: 120px;
+}
+
+@media (max-width: $break-sm) {
+    .account-header {
+        .pct-gutters.container {
+            overflow: hidden;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}
+
+.nav-seller-buyer {
+    height: 50px;
+    background-color: #fbfbfb;
+
+    .account-link-nav {
+        display: flex;
+        justify-content: space-between;
+
+        .account-tab-nav {
+            .account-tab-pointing {
+                // border-bottom: 1px solid $colorLightGray;
+
+                > ul.tab-items {
+                    //按鈕預設至左
+                    display: flex;
+                    align-items: flex-end;
+                    font-size: 0.9375rem;
+
+                    > li {
+                        font-weight: 500;
+
+                        & a {
+                            display: block;
+                            padding: 1rem 1.5625rem 1rem 1.5625rem;
+                            margin: 0 1rem 0 0;
+
+                            &:hover {
+                                color: $primaryDeepColor;
+                                background-color: $colorGreyishWhite;
+                            }
+
+                            &.active {
+                                &.link {
+                                    color: $primaryDeepColor;
+                                    // pointer-events: none;
+                                    background-color: $colorGreyishWhite;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .account-setting {
+            a {
+                display: inline-block;
+                padding: 1rem 1.5625rem 0.8rem 1.5625rem;
+                font-size: 0.9375rem;
+                font-weight: 500;
+
+                &:hover {
+                    color: $primaryDeepColor;
+                    background-color: $colorGreyishWhite;
+                }
+
+                span.pct-icon {
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding-right: 10px;
+                    font-size: 1.375rem;
+                    color: $colorGray;
+                    position: relative;
+                    top: -2px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    .nav-seller-buyer {
+        .pct-gutters.container {
+            overflow: hidden;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .account-link-nav {
+            display: block;
+            text-align: center;
+
+            .account-tab-nav {
+                .account-tab-pointing {
+                    // border-bottom: 1px solid $colorLightGray;
+
+                    > ul.tab-items {
+                        > li {
+                            flex: 1;
+
+                            a {
+                                margin: 0 0rem 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .account-setting {
+            display: none;
+        }
+    }
+}
+
+.account-profile-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    position: relative;
+
+    .account-name-review {
+        flex: 8;
+        padding: 30px 0 20px 8%;
+
+        .name-review-wrap {
+            display: flex;
+            align-items: center;
+
+            .account-profile {
+                display: flex;
+
+                a.account-name {
+                    font-weight: 500;
+                    font-size: 1.5625rem;
+                    margin-right: 8px;
+                    height: 30px;
+                    max-width: 300px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+
+                .pct-icon-overseas {
+                    margin-right: 8px;
+                }
+
+                .pct-icon-flag {
+                    position: relative;
+                    top: 7px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .account-join-info {
+            font-size: 0.8125rem;
+            display: flex;
+            color: $colorDeepGray;
+
+            ul {
+                display: flex;
+                padding: 10px 0;
+
+                li {
+                    font-size: 0.8125rem;
+                    margin-right: 5px;
+
+                    .pct-icon {
+                        font-size: 1.125rem;
+                        padding-right: 5px;
+                        position: relative;
+                        top: 3px;
+                    }
+
+                    .eng-num {
+                        padding-left: 5px;
+                    }
+
+                    &:nth-child(2) {
+                        .pct-icon {
+                            font-size: 1.125rem;
+                            padding-right: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .account-avatar-box {
+        flex: 4;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .account-avatar {
+            position: absolute;
+            top: 20px;
+            z-index: 10;
+        }
+    }
+}
+
+@media (max-width: $break-lg) {
+    .account-profile-box {
+        .account-name-review {
+            flex: 8;
+            padding: 30px 0 30px 8%;
+
+            .name-review-wrap {
+                display: block;
+
+                .seller-review {
+                    margin: 5px 0;
+                }
+            }
+
+            .account-join-info {
+                font-size: 0.8125rem;
+                display: flex;
+                color: $colorDeepGray;
+
+                ul {
+                    display: flex;
+                    padding: 0px 0;
+                }
+            }
+        }
+
+        .account-avatar-box {
+            .account-avatar {
+                top: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    .account-profile-box {
+        .account-name-review {
+            text-align: center;
+            padding: 30px 0 50px 0%;
+
+            .name-review-wrap {
+                .account-profile {
+                    justify-content: flex-start;
+
+                    a.account-name {
+                        text-align: center !important;
+                    }
+
+                    .pct-icon-overseas {
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xs) {
+    .account-profile-box {
+        .account-name-review {
+            .name-review-wrap {
+                .account-profile {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+.account-detail-box {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 40px 0 25px 0;
+
+    .detail-box-wrap {
+        display: flex;
+        align-items: center;
+
+        .account-detail {
+            font-size: 0.8125rem;
+            color: $colorDeepGray;
+            padding: 0 15px;
+            text-align: right;
+
+            span.eng-num,
+            a.eng-num {
+                color: $accentColor;
+                font-size: 1rem;
+                line-height: 24px;
+            }
+
+            &.product-num {
+                border-right: 1px solid $colorLightGray;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    .account-detail-box {
+        padding: 12px 0 12px 10px;
+        background-color: rgba(0, 0, 0, 0.6);
+
+        .detail-box-wrap {
+            .account-detail {
+                color: $colorWhite;
+
+                span.eng-num,
+                a.eng-num {
+                    color: $colorWhite;
+                }
+
+                &.product-num {
+                    border-right: 1px solid $colorWhite;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xs) {
+    .account-header {
+        padding: 25px 0 0 0;
+    }
+
+    .account-profile-box {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        .account-name-review {
+            padding: 0px 0 20px 0;
+
+            .name-review-wrap {
+                display: block;
+                text-align: center;
+
+                .account-profile {
+                    a.seller-name {
+                        font-size: 1.4rem;
+                        max-width: 380px;
+                    }
+                }
+
+                .account-review {
+                    margin: 5px 0;
+
+                    .pct-ui.review-star {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        .account-join-info {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .account-avatar-box {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+
+            .account-avatar {
+                position: static;
+
+                &.lg {
+                    width: 110px;
+                    height: 110px;
+                    padding: 3px;
+                }
+
+                .account-avatar-inner {
+                    .avatar-figure-edit {
+                        height: 25px;
+                        text-align: center;
+                        padding: 3px 0;
+
+                        .pct-icon {
+                            font-size: 0.875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .account-detail-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

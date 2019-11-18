@@ -1,0 +1,102 @@
+$brand-success: #ba0019;
+$loader-size: 100%;
+$check-height: $loader-size/2;
+$check-width: $check-height/2;
+$check-left: ($loader-size/6 + $loader-size/12);
+$check-thickness: 2px;
+
+.pct-ui.loading-overlay-main {
+    position: fixed;
+    background-color: rgba(236, 236, 236, 0.6);
+    z-index: 5000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+
+    .loading-circle-main {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -50px;
+        border-radius: 50%;
+        box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.1);
+        padding: 3px;
+        background-image: url(../img/loading-mark.svg);
+        background-color: $primaryColor;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 65%;
+
+        .circle-loader {
+            margin-bottom: $loader-size/2;
+            border: $check-thickness solid rgba(255, 255, 255, 0.3);
+            border-left-color: #fff;
+            animation: spin 2s infinite linear;
+            border-radius: 50%;
+            width: $loader-size;
+            height: $loader-size;
+        }
+    }
+}
+
+@media (max-width: $break-xs) {
+    //Loading-全站
+    .pct-ui.loading-overlay-main {
+        .loading-circle-main {
+            width: 80px;
+            height: 80px;
+            margin-left: -40px;
+        }
+    }
+}
+
+//Loading-小型
+.pct-ui.loading-overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.88);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    .loading-circle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-box-sizing: border-box;
+        border: solid 4px rgba(186, 0, 25, 0.1);
+        border-top-color: rgba(186, 0, 25, 0.8);
+        -webkit-animation: spin 1s infinite linear;
+        &.small {
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            margin-left: -15px;
+            margin-top: -15px;
+        }
+        &.medium {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            margin-left: -25px;
+            margin-top: -25px;
+        }
+        &.large {
+            width: 70px;
+            height: 70px;
+            border-radius: 70px;
+            margin-left: -35px;
+            margin-top: -35px;
+        }
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}

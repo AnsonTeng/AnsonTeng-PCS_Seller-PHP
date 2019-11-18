@@ -1,0 +1,259 @@
+//Forms_Input 輸入框相關
+.pct-ui.form input:not([type]),
+.pct-ui.form input[type="date"],
+.pct-ui.form input[type="datetime-local"],
+.pct-ui.form input[type="email"],
+.pct-ui.form input[type="file"],
+.pct-ui.form input[type="number"],
+.pct-ui.form input[type="password"],
+.pct-ui.form input[type="search"],
+.pct-ui.form input[type="tel"],
+.pct-ui.form input[type="text"],
+.pct-ui.form input[type="time"],
+.pct-ui.form input[type="url"],
+.pct-ui.form textarea,
+.pct-ui.form select {
+    font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei",
+        "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    margin: 2px 0 6px 0;
+    width: 100%;
+    font-size: 0.875rem;
+    border-radius: 2px;
+    border: 1px solid #dadada;
+    background-color: $colorWhite;
+    color: $colorGrayBlack;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+    appearance: none;
+    font-weight: 300;
+}
+
+.pct-ui.form input:not([type]):focus,
+.pct-ui.form input[type="date"]:focus,
+.pct-ui.form input[type="datetime-local"]:focus,
+.pct-ui.form input[type="email"]:focus,
+.pct-ui.form input[type="file"]:focus,
+.pct-ui.form input[type="number"]:focus,
+.pct-ui.form input[type="password"]:focus,
+.pct-ui.form input[type="search"]:focus,
+.pct-ui.form input[type="tel"]:focus,
+.pct-ui.form input[type="text"]:focus,
+.pct-ui.form input[type="time"]:focus,
+.pct-ui.form input[type="url"]:focus,
+.pct-ui.form textarea:focus,
+.pct-ui.form select:focus {
+    outline: none;
+    border-color: $accentColor;
+    box-shadow: 0 0 5px rgba(33, 144, 198, 0.4);
+}
+
+.pct-ui.form-disabled input:disabled,
+.pct-ui.form-disabled input.disabled,
+.pct-ui.form-disabled input[disabled],
+.pct-ui.form-disabled input.disabled:hover,
+.pct-ui.form-disabled input[disabled]:hover,
+.pct-ui.form-disabled input.disabled:active,
+.pct-ui.form-disabled input[disabled]:active {
+    @extend %ui-disabled;
+    border: 1px solid #dadada;
+    color: $colorGray;
+    -webkit-text-fill-color: $colorGray;
+    box-shadow: none;
+    padding: 0.5rem 0.75rem;
+    margin: 2px 0 6px 0;
+    width: 100%;
+    font-size: 0.875rem;
+    border-radius: 2px;
+    font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei",
+        "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
+    font-weight: 300;
+}
+
+// 僅能閱讀
+.pct-ui.form-readonly input {
+    border: 0px;
+    box-shadow: none;
+    padding: 0.5rem 0.75rem;
+    margin: 2px 0 6px 0;
+    width: 100%;
+    font-size: 0.875rem;
+    font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei",
+        "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
+    font-weight: 400;
+    outline: none;
+}
+
+//帶有單位的表單-後
+.unit-after {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        font-size: 0.875rem;
+        right: 15px;
+        top: 13px;
+        color: #555555;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    }
+}
+
+//帶有單位的表單-前
+.unit-before {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        font-size: 0.875rem;
+        left: 15px;
+        top: 13px;
+        color: #c0c0c0;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    }
+}
+
+// (輸入框＋按鈕) 群組
+.pct-ui.form.inputGroup {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .inputGroup-inputBox {
+        flex: 1;
+        // max-width: 240px;
+
+        .pct-ui.form {
+            input {
+                margin: 0;
+            }
+        }
+    }
+    .inputGroup-btn {
+        flex-shrink: 0;
+        text-align: center;
+        position: relative;
+        top: -1px;
+    }
+}
+
+// (輸入框＋按鈕) 群組 + 其他選項
+.inputGroupWithOption {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    max-width: 690px;
+    // margin: 12px 0 18px 0;
+
+    .inputGroupWithOption-inner {
+        max-width: 420px;
+        flex: 1;
+    }
+}
+
+@media (max-width: $break-sm) {
+    .inputGroupWithOption {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .inputGroupWithOption-inner {
+            width: 100%;
+        }
+    }
+}
+
+.pct-ui.form {
+    textarea {
+        min-height: 8rem;
+        max-height: 10rem;
+
+        @media (max-width: $break-sm) {
+            min-height: 16rem;
+            max-height: 25rem;
+        }
+    }
+}
+
+.fluid input:not([type]),
+.fluid input[type="date"],
+.fluid input[type="datetime-local"],
+.fluid input[type="email"],
+.fluid input[type="file"],
+.fluid input[type="number"],
+.fluid input[type="password"],
+.fluid input[type="search"],
+.fluid input[type="tel"],
+.fluid input[type="text"],
+.fluid input[type="time"],
+.fluid input[type="url"],
+.fluid textarea,
+.fluid select {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pct-ui.form.error input,
+.pct-ui.form.error textarea {
+    border-color: $colorRed;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 0.125rem 0 0 0;
+}
+
+.pct-ui.form.error {
+    .error-notification-tooltip-inline {
+        display: block !important;
+    }
+}
+
+.error-notification-tooltip-inline {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: $colorRed;
+    line-height: 1.5rem;
+    padding-left: 0.3125rem;
+    margin: 0rem 0 0.375rem 0;
+    text-align: left;
+    display: none;
+}
+
+.pct-ui.form.error input::placeholder,
+.pct-ui.form.error textarea::placeholder {
+    color: #e0b4b4;
+    font-weight: 300;
+    -webkit-text-fill-color: #e0b4b4;
+}
+
+//金額 - 泰銖
+.pct-ui.form.product-price-THbaht {
+    input[type="text"],
+    input[type="tel"] {
+        padding-left: 36px;
+    }
+    &:before {
+        content: "฿";
+    }
+}
+//金額 - 美金
+.pct-ui.form.product-price-USdollar {
+    input[type="text"],
+    input[type="tel"] {
+        padding-left: 30px;
+    }
+    &:before {
+        content: "$";
+    }
+}
+//金額 - 新台幣
+.pct-ui.form.product-price-TWdollar {
+    input[type="text"],
+    input[type="tel"] {
+        padding-left: 43px;
+        left: -60px;
+    }
+    &:before {
+        position: absolute;
+        content: "NT$";
+    }
+}

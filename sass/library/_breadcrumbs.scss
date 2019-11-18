@@ -1,0 +1,116 @@
+//麵包屑
+.pct-ui.breadcrumb {
+    font-size: 0.8125rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+    > ul {
+        overflow: hidden;
+        height: 25px;
+
+        > li {
+            display: inline;
+            line-height: 22px;
+
+            & a {
+                text-decoration: underline;
+
+                h3 {
+                    display: inline;
+                    font-size: 0.8125rem;
+                    font-weight: 300;
+                    // margin-bottom: 20px;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    color: $primaryDeepColor;
+                }
+            }
+
+            &:nth-last-child() {
+                -webkit-line-clamp: 1;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            &.pct-icon {
+                font-size: 0.75rem;
+                color: $colorGray;
+                margin: 0 10px;
+            }
+        }
+    }
+}
+@media (max-width: $break-sm) {
+    .pct-ui.breadcrumb {
+        margin-top: 20px;
+    }
+}
+
+.pct-ui.breadcrumb-back {
+    font-size: 0.875rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+
+    span {
+        display: inline-block;
+        // vertical-align: -33%;
+        width: 28px;
+        height: 28px;
+        flex-basis: 28px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        margin-right: 10px;
+        background: #c20023; /* Old browsers */
+        background: -moz-linear-gradient(left, #c20023 50%, #dd001d 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #c20023 50%, #dd001d 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(
+            to right,
+            #c20023 50%,
+            #dd001d 100%
+        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c20023', endColorstr='#dd001d',GradientType=1 ); /* IE6-9 */
+
+        &.pct-icon {
+            color: #ffffff;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 28px;
+        }
+    }
+
+    > ul {
+        overflow: hidden;
+        height: 25px;
+
+        > li {
+            display: inline;
+            line-height: 24px;
+
+            & a {
+                font-weight: 400;
+                text-decoration: underline;
+                h3 {
+                    display: inline;
+                    font-size: 0.8125rem;
+                    font-weight: 300;
+                    // margin-bottom: 20px;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    color: $primaryDeepColor;
+                }
+            }
+
+            &.pct-icon {
+                font-size: 0.75rem;
+                color: $colorGray;
+                margin: 0 3px;
+            }
+        }
+    }
+}

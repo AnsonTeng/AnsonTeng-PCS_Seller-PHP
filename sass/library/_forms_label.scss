@@ -1,0 +1,82 @@
+//labels相關
+.pct-ui.form-label.break-label{
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+
+    label{
+         display: block; /* 加這個才會可以有padding的作用*/
+        padding: 0rem 0rem 5px 0rem;
+    }
+}
+
+.pct-ui.form-select-label.break-label{
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+
+    label{
+        display: block; /* 加這個才會可以有padding的作用*/
+        padding: 0rem 0rem 5px 0rem;
+
+    }
+
+    .pct-ui.form.select{
+      margin-right: 0px;  
+      margin-top: 2px;    
+    }
+}
+
+.pct-ui.form-label label {
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding: 0rem 0.5rem 0 0rem;
+}
+
+.pct-ui.form-select-label label {
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding: 0.75rem 0.5rem 0 0rem
+}
+
+.pct-ui.form-textarea-label label{
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding: 0.9375rem 0.5rem 0.5rem 0;
+}
+
+@media (max-width:$break-lg) {
+
+    .pct-ui.form-textarea-label label{
+        padding: 0rem 0.5rem 0.5rem 0;
+    }
+
+}
+
+
+.pct-ui.form-label.fluid,
+.pct-ui.form-label,
+.pct-ui.form-select-label {
+    display: flex;
+    align-items: baseline;
+}
+
+.pct-ui.form-textarea-label{
+    display: flex;
+    align-items: top;
+
+    .pct-ui.form{
+        flex:1;
+    }
+}
+
+.pct-ui.form-label.error{
+    .error-notification-tooltip-inline {
+        display: block!important;
+    }
+}
+
+
+.error-notification-tooltip-inline {
+    display: none;
+}

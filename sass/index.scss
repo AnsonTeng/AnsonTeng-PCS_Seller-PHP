@@ -1,0 +1,699 @@
+//變數
+/*@import 'library/_variables';*/
+//混用
+/*@import 'library/_mixin';*/
+//繼承
+/*@import 'library/_extend';*/
+
+//Page Components
+@import "layout.scss";
+
+//animation
+/*@import 'library/_animation';*/
+
+//系統公告
+.section-system-ticker {
+    padding: 15px 15px;
+    border-radius: 2px;
+    background-color: $colorWhite;
+    border: 1px solid $colorLightGray;
+    display: flex;
+    font-weight: 300;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    align-items: center;
+    word-break: normal;
+
+    .ticker-ttl {
+        flex-shrink: 0;
+        font-weight: 400;
+        margin-right: 10px;
+
+        p {
+            display: inline-block;
+        }
+
+        .pct-icon {
+            display: inline-block;
+            vertical-align: bottom;
+            color: $primaryDeepColor;
+            font-size: 1.25rem;
+            padding-right: 5px;
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    .section-system-ticker {
+        .ticker-ttl {
+            p {
+                display: none;
+            }
+        }
+    }
+}
+
+//代收款項區塊
+.section-seller-bank-payment {
+    display: flex;
+    background: #14a9ba;
+    border-radius: 4px;
+    padding: 15px 20px;
+    background: -moz-linear-gradient(left, #14a9ba 1%, #21c8d9 73%);
+    background: -webkit-linear-gradient(left, #14a9ba 1%, #21c8d9 73%);
+    background: linear-gradient(to right, #14a9ba 1%, #21c8d9 73%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#14a9ba', endColorstr='#21c8d9', GradientType=1);
+    min-height: 120px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+    .box-ttl {
+        display: flex;
+        font-size: 0.8125rem;
+        color: $colorLightGray;
+        padding: 5px 0;
+
+        .bankvarify-text {
+            color: $colorWhite;
+            font-size: 0.8125rem;
+            margin-left: 5px;
+            display: flex;
+            align-items: flex-start;
+
+            .pct-icon {
+                &.icon-bank-verified {
+                    font-size: 1.125rem;
+                    padding-right: 2px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    position: relative;
+                    top: -4px;
+                }
+            }
+        }
+    }
+
+    //帳戶餘額
+    .current-balance {
+        flex: 5;
+
+        .balance-num {
+            color: $colorWhite;
+            font-size: 2.2rem;
+            text-align: center;
+            padding: 10px 0;
+
+            span {
+                font-size: 0.875rem;
+                padding-right: 10px;
+            }
+
+            a {
+                color: $colorWhite;
+            }
+        }
+    }
+
+    //連結銀行
+    .linked-bank-account {
+        flex: 11;
+        position: relative;
+
+        .payment-setting {
+            position: absolute;
+            right: 0px;
+            font-size: 0.8125rem;
+
+            a {
+                color: $colorLightGray;
+
+                .pct-icon {
+                    font-size: 0.9375rem;
+                    padding-right: 5px;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
+
+        .bank-info {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 0;
+            color: $colorWhite;
+            font-size: 0.9375rem;
+            font-weight: 300;
+
+            .icon-bank {
+                font-size: 2.5rem;
+                color: $colorLightGray;
+            }
+
+            .linked-bank-account {
+                display: flex;
+                align-items: flex-end;
+                padding: 0 0 0 15px;
+
+                .bank-account {
+                    flex-shrink: 0;
+                    flex-basis: 220px;
+
+                    a.btn-xs {
+                        display: inline-block;
+                        margin-top: 0rem;
+                        margin-bottom: 0rem;
+                        margin-left: 0rem;
+                        margin-right: 0rem;
+                        font-size: 0.75rem;
+                        border-radius: 3px;
+                        font-weight: 400;
+                        color: $colorWhite;
+                        background-color: none;
+                        border: 1px solid $colorLightGray;
+                        padding: 0.4375rem 0.5rem 0.3125rem 0.5rem;
+
+                        &:hover {
+                            color: $colorGreen;
+                            background-color: $colorWhite;
+                            transform: translateY(-2px);
+                        }
+                    }
+                }
+
+                .bank-name-num {
+                    flex: 10;
+
+                    ul {
+                        li {
+                            display: inline-block;
+                            vertical-align: top;
+                            padding-left: 5px;
+                            text-align: right;
+
+                            &.bank-name {
+                                border-right: 1px solid $colorLightGray;
+                                padding-right: 5px;
+                                min-width: 210px;
+                                max-width: 210px;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                white-space: nowrap;
+                            }
+
+                            &.bank-num {
+                                max-width: 110px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-lg) {
+    //代收款項區塊
+    .section-seller-bank-payment {
+        //帳戶餘額
+        .current-balance {
+            .balance-num {
+                font-size: 1.8rem;
+            }
+        }
+
+        //連結銀行
+        .linked-bank-account {
+            .payment-setting {
+                position: absolute;
+                right: 0px;
+                font-size: 0.8125rem;
+
+                a {
+                    color: $colorLightGray;
+
+                    .pct-icon {
+                        font-size: 0.9375rem;
+                        padding-right: 5px;
+                    }
+                }
+            }
+
+            .bank-info {
+                .linked-bank-account {
+                    display: block;
+
+                    .bank-account {
+                        flex-basis: auto;
+                    }
+
+                    .bank-name-num {
+                        ul {
+                            li {
+                                text-align: left;
+                                margin: 5px 0;
+
+                                &.bank-name {
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    //代收款項區塊
+    .section-seller-bank-payment {
+        display: block;
+
+        //帳戶餘額
+        .current-balance {
+            .balance-num {
+                font-size: 2.4rem;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xxs) {
+    //代收款項區塊
+    .section-seller-bank-payment {
+        display: block;
+
+        //帳戶餘額
+        .current-balance {
+            .balance-num {
+                padding: 15px 0;
+            }
+        }
+
+        //連結銀行
+        .linked-bank-account {
+            .bank-info {
+                padding: 5px 0;
+                align-items: center;
+
+                .icon-bank {
+                    margin-right: 8px;
+                }
+
+                .linked-bank-account {
+                    display: block;
+
+                    .bank-account {
+                        flex-basis: auto;
+                    }
+
+                    .bank-name-num {
+                        ul {
+                            li {
+                                display: block;
+                                text-align: left;
+                                margin: 5px 0;
+                                padding-left: 0;
+
+                                &.bank-name {
+                                    border-right: none;
+                                }
+
+                                &.bank-num {
+                                    max-width: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//上架/總覽區塊
+.section-seller-dashboard {
+    display: flex;
+    flex-direction: row;
+
+    .upload-peoduct-wrap {
+        flex-shrink: 0;
+        flex-basis: 200px;
+        padding: 0rem 0.4rem 0.3rem 0.3rem;
+        // align-items:stretch;
+
+        .upload-peoduct-card {
+            height: 86.888%;
+            background-color: $colorWhite;
+            @extend %shadow-style-card;
+            padding: 3px;
+            transition: 0.3s;
+
+            &:hover {
+                box-shadow: 0 2px 10px 0.1px rgba(0, 0, 0, 0.08);
+                transition: 0.3s;
+                transform: translateY(-2px);
+            }
+
+            .upload-peoduct-inner {
+                width: 100%;
+                height: 75%;
+                background-color: $colorWhiteGreen;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .inner-items {
+                    .pct-cion {
+                        font-size: 3.5rem;
+                        color: $colorLightGreen;
+                    }
+
+                    p {
+                        font-size: 0.875rem;
+                        font-weight: 500;
+
+                        .pct-icon {
+                            display: inline-block;
+                            vertical-align: bottom;
+                            font-size: 1.3rem;
+                            color: $accentColor;
+                            padding-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .dashboard-panel {
+        width: 100%;
+
+        .dashboard-card-wrap {
+            display: inline-block;
+            width: 24.999%;
+            margin-right: -0.15rem;
+            margin-left: -0.15rem;
+            padding: 0rem 0.3rem 0.6rem 0.3rem;
+
+            .dashboard-card {
+                background-color: $colorWhite;
+                min-height: 125px;
+                border-radius: 2px;
+                @extend %shadow-style-card;
+                transition: 0.3s;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 10%;
+
+                &:hover {
+                    box-shadow: 0 2px 10px 0.1px rgba(0, 0, 0, 0.08);
+                    transition: 0.3s;
+                    transform: translateY(-2px);
+                }
+
+                .dashboard-card-icon {
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 50%;
+                    border: 3px solid $colorGreyishWhite;
+                    flex-shrink: 0;
+                    margin-right: 10px;
+                    text-align: center;
+                    line-height: 65px;
+                    font-size: 2.25rem;
+                    position: relative;
+
+                    .unread-reddot {
+                        width: 15px;
+                        height: 15px;
+                        position: absolute;
+                        right: 0;
+
+                        .redot {
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            margin: auto;
+                            z-index: 2;
+                            width: 10px;
+                            height: 10px;
+                            background-color: rgba(209, 1, 22, 1);
+                            border-radius: 50%;
+                        }
+
+                        .ripple {
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            margin: auto;
+                            z-index: 2;
+                            width: 10px;
+                            height: 10px;
+                            background-color: rgba(209, 1, 22, 0.6);
+                            border-radius: 50%;
+                            -webkit-animation: rippleAnimation 1s ease-out infinite;
+                            animation: rippleAnimation 1s ease-out infinite;
+                        }
+                    }
+
+                    .pct-icon {
+                        color: $colorLightGreen;
+                    }
+                }
+
+                .dashboard-card-num {
+                    flex: 1;
+
+                    ul {
+                        li {
+                            &.eng-num {
+                                padding: 16px 0 0 0;
+                                font-size: 1.75rem;
+                                color: $colorGray;
+
+                                &.unread {
+                                    color: $accentColor;
+                                }
+                            }
+
+                            &.card-num-ttl {
+                                padding: 0 0 12px 0;
+                                @include text-overflow;
+                                word-break: normal;
+                                -webkit-box-orient: vertical;
+                                font-size: 0.875rem;
+                                line-height: 1.3rem;
+                                min-height: 2.2rem;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-lg) {
+    //上架/總覽區塊
+    .section-seller-dashboard {
+        flex-direction: column-reverse;
+
+        .upload-peoduct-wrap {
+            .upload-peoduct-card {
+                height: 70px;
+
+                .upload-peoduct-inner {
+                    width: 100%;
+                    height: 100%;
+                    background-color: $colorWhite;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .inner-items {
+                        .pct-cion {
+                            display: none;
+                        }
+
+                        p {
+                            font-size: 0.875rem;
+                            font-weight: 500;
+
+                            span {
+                                background-color: $accentColor;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                            }
+
+                            .pct-icon {
+                                color: $colorWhite;
+                                padding-right: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .dashboard-panel {
+            margin-bottom: 30px;
+
+            .dashboard-card-wrap {
+                padding: 0rem 0.2rem 0.6rem 0.3rem;
+
+                .dashboard-card {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10% 10% 0 10%;
+
+                    .dashboard-card-icon {
+                        font-size: 2.5rem;
+                    }
+
+                    .dashboard-card-num {
+                        ul {
+                            li {
+                                text-align: center;
+
+                                &.eng-num {
+                                    padding: 5px 0 0 0;
+                                    font-size: 1.5rem;
+                                }
+
+                                &.card-num-ttl {
+                                    padding: 0 0 12px 0;
+                                    font-size: 0.8125rem;
+                                    line-height: 1.3rem;
+                                    min-height: 2.2rem;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    //上架/總覽區塊
+    .section-seller-dashboard {
+        margin-bottom: 0;
+
+        .upload-peoduct-wrap {
+            // display: none;
+            margin-bottom: -50px;
+        }
+
+        .dashboard-panel {
+            margin-bottom: 30px;
+
+            .dashboard-card-wrap {
+                width: 33.3333%;
+
+                .dashboard-card {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 15px 10px 0 10px;
+
+                    .dashboard-card-icon {
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        margin-right: 0px;
+                        margin-bottom: -5px;
+                        border: none;
+                        font-size: 2rem;
+
+                        .unread-reddot {
+                            top: 0px;
+                            right: -10px;
+                        }
+                    }
+
+                    .dashboard-card-num {
+                        ul {
+                            li {
+                                text-align: center;
+
+                                &.eng-num {
+                                    padding: 0px 0 0 0;
+                                    font-size: 1.5rem;
+                                }
+
+                                &.card-num-ttl {
+                                    padding: 0 0 0px 0;
+                                    font-size: 0.8125rem;
+                                    line-height: 1.3rem;
+                                    min-height: 2.2rem;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//手機版上架
+.upload-peoduct-wrap-m {
+    .upload-peoduct-card {
+        height: 70px;
+        @extend %shadow-style-card;
+        padding: 3px;
+        transition: 0.3s;
+        border-radius: 2px;
+        background-color: $colorWhite;
+
+        &:hover {
+            box-shadow: 0 2px 10px 0.1px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+            transform: translateY(-2px);
+        }
+
+        .upload-peoduct-inner {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .inner-items {
+                .pct-cion {
+                    display: none;
+                }
+
+                p {
+                    font-size: 0.875rem;
+                    font-weight: 500;
+
+                    span {
+                        background-color: $accentColor;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                    }
+
+                    .pct-icon {
+                        color: $colorWhite;
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

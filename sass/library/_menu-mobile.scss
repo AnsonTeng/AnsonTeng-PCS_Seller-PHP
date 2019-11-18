@@ -1,0 +1,238 @@
+.menu--mobile {
+    position: absolute;
+    top: 0;
+    left: calc(0px - #{$navWidth_mobile});
+    height: 100vh;
+    z-index: 10000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.menu--mobile--open {
+    width: 100%;
+
+    .menuBackGround {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+.menu--mobile--close {
+    width: auto;
+
+    .menuBackGround {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.menuBackGround {
+    position: fixed;
+    width: 300%;
+    height: 100vh;
+    background-color: rgba(black, 0.8);
+    transition: opacity 0.2s;
+
+    .pct-icon {
+        position: relative;
+        top: 6px;
+        left: calc(6px + #{$navWidth_mobile});
+        color: $colorWhite;
+        font-size: 42px;
+    }
+}
+
+@media (max-width:$break-sm) {
+    .menuBackGround {
+        .pct-icon {
+            left: calc(6px + #{$navWidth_mobile});
+            font-size: 36px;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .menuBackGround {
+        .pct-icon {
+            left: $navWidth_mobile;
+            font-size: 30px;
+        }
+    }
+}
+
+.menuMobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $navWidth_mobile;
+    height: auto;
+    height: 100vh;
+    max-width: $navWidth_mobile;
+    background-color: rgba($colorWhite, 0.5);
+    background-color: $colorWhite;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.menuMobile::-webkit-scrollbar {
+    display: none;
+}
+
+.menuMobile-inner {
+    padding-bottom: 48px;
+
+    .header {
+        height: 70px;
+        padding: 27px 20px 13px 20px;
+        background-color: $brandColor;
+
+        .headerInner {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+
+            .header-user {
+                width: 100%;
+
+                .header-user-head,
+                .header-user-name {
+                    display: inline-block;
+                }
+
+                .header-user-head {
+                    font-size: 30px;
+                    color: $colorWhite;
+                }
+
+                .header-user-name {
+                    padding-top: 1px;
+                    vertical-align: top;
+
+                    span {
+                        display: inline-block;
+                        line-height: 30px;
+                        font-size: 16px;
+                        color: $colorWhite;
+                        padding-left: 6px;
+                    }
+                }
+            }
+
+            .header-logout {
+                a {
+                    font-size: 20px;
+                    color: $colorWhite;
+                }
+            }
+        }
+    }
+
+    .managerBtnGroup,
+    .logBtnGroup {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        background-color: $brandColor;
+        padding: 40px 7%;
+    }
+
+    .headerBtn {
+        width: 120px;
+        height: 28px;
+        line-height: 28px;
+        border: 1px solid $colorWhite;
+        border-radius: 2px;
+        text-align: center;
+        background-color: $brandColor;
+        color: $colorWhite;
+        font-size: 13px;
+    }
+
+    .headerBtn:hover,
+    .logBtn-login {
+        background-color: $colorWhite;
+        color: $brandColor;
+    }
+
+    .language {
+        width: 100%;
+        height: 60px;
+        padding: 21px 36px;
+        background-color: $colorWhite;
+
+        .language-icon {
+            display: inline-block;
+            font-size: 18px;
+            color: $colorGrayBlack;
+            line-height: 18px;
+        }
+
+        .languageBtnGroup {
+            width: 75%;
+            display: inline-flex;
+            position: relative;
+            top: -2px;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 0 24px;
+            height: 18px;
+
+            .languageBtn {
+                text-align: center;
+                font-size: 14px;
+                color: $colorDeepGray;
+            }
+
+            .languageBtn:hover {
+                color: $colorGrayBlack;
+            }
+
+            .languageBtn-select {
+                font-weight: 500;
+                color: $colorGrayBlack;
+            }
+
+            .languageBtn:after {
+                content: "|";
+                color: $colorDeepGray;
+                position: relative;
+                left: 16px;
+            }
+
+            .languageBtn:last-child:after {
+                content: "";
+            }
+        }
+    }
+
+    .sidebar-panel-wrap{
+        padding: 20px 0 70px 0;
+
+        ul{
+
+            li{
+
+                    a{
+                         padding: 0.8125rem 0.9375rem;
+
+                         &.seller-nav-link::after{
+                            right: 20px;
+                         }
+
+                    }
+
+                         ul{
+                            padding-left: 37px;
+                         }
+                 
+            }
+           
+        }
+    }
+}
