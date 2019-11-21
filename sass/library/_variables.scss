@@ -57,6 +57,9 @@ $brandColor: #00afeb;
 $primaryColor: #00afeb;
 $primaryDeepColor: #0091d7;
 
+// 次要色
+$secondaryColor: #14b9d5;
+
 // 亮點色
 $accentLightColor: #ffebcf;
 $accentColor: #ff9800;
@@ -70,7 +73,7 @@ $colorWhite: #ffffff;
 $colorGreyishWhite: #f6f6f6;
 $colorLightGray: #ececec;
 $colorGray: #cccccc;
-$colorWhiteGray: #a9a9a9;
+$colorWhiteGray: #a9a9a9; //新增
 $colorDeepGray: #888888;
 $colorDarkGray: #555555;
 $colorGrayBlack: #333333;
@@ -78,14 +81,16 @@ $colorBlack: #000000;
 
 //輔助色
 $colorYellow: #fdd641;
-$colorLightOrange: #ff9430;
+// $colorLightOrange: #ff9430;
 $colorOrange: #f88a51;
-$colorDeepOrange: #ff7500;
+// $colorDeepOrange: #ff7500;
 $colorPink: #eab2ba;
-$colorLightBlue: #e6f7ff;
+$colorLightBlue: #f3f9fc;
 $colorRed: #ba0019;
 
-$colorWhiteBlue: #f3fcff;
+// 輔助色（新增）
+$colorPinkRed: #e96886;
+// $colorWhiteBlue: #f3fcff;
 $colorBlue: #2da9fb;
 $colorLightGreen: #d2d9dd;
 $colorWhiteGreen: #eff3f6;

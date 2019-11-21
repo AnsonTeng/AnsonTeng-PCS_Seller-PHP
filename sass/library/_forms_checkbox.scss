@@ -1,0 +1,133 @@
+//表單--Checkbox 選取框
+.pct-ui.form.checkbox input[type="checkbox"]:checked,
+.pct-ui.form.checkbox input[type="checkbox"]:not(:checked) {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    position: relative;
+    padding-left: 20px;
+    font-size: 0.8rem;
+}
+
+.pct-ui.form.checkbox input[type="checkbox"]:focus {
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+}
+
+%checkbox {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    margin-top: -13px;
+    margin-left: -1px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #cfd9db;
+    background: $colorWhite;
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.pct-ui.form.checkbox {
+    margin: 0 0 15px 0;
+    font-weight: 300;
+
+    input[type="checkbox"] {
+        display: inline-block;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -o-appearance: none;
+        position: absolute;
+        padding: 0;
+        z-index: 2;
+    }
+
+    input[type="checkbox"]:before {
+        @extend %checkbox;
+    }
+
+    &.md {
+        input[type="checkbox"]:before {
+            width: 24px;
+            height: 24px;
+        }
+        input[type="checkbox"]:after {
+            width: 24px;
+            height: 24px;
+            font-size: 1.25rem;
+            line-height: 23px;
+            padding-left: 1px;
+        }
+    }
+
+    input[type="checkbox"]:after {
+        @extend %checkbox;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: none;
+    }
+
+    //checked
+    input[type="checkbox"]:checked:after {
+        display: block;
+    }
+
+    input[type="checkbox"]:after {
+        font-family: "pct-icon";
+        content: $icon-checked;
+        color: $colorWhite;
+        font-size: 1.05rem;
+        background: $secondaryColor;
+    }
+
+    label span {
+        position: relative;
+        font-size: 0.875rem;
+        padding-left: 0px;
+        line-height: 24px;
+        cursor: pointer; // &:hover {
+        //     color: $primaryColor;
+        // }
+        // &.active {
+        //     color: $primaryColor;
+        // }
+    }
+
+    label span a {
+        text-decoration: none;
+        color: $colorGrayBlack;
+
+        &:hover {
+            color: $primaryDeepColor;
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    %checkbox {
+        width: 23px;
+        height: 23px;
+    }
+
+    .pct-ui.form.checkbox {
+        input[type="checkbox"] {
+            vertical-align: middle;
+        }
+
+        label span {
+            position: relative;
+            font-size: 0.9375rem;
+            padding-left: 3px;
+            line-height: 22px;
+        }
+
+        input[type="checkbox"]:after {
+            font-size: 1.25rem;
+        }
+    }
+}

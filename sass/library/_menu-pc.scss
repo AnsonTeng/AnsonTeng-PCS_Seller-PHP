@@ -23,7 +23,7 @@
                         padding-left: 51px;
 
                         &:hover {
-                            color: $primaryDeepColor;
+                            color: $secondaryColor;
                         }
                     }
                 }
@@ -47,7 +47,7 @@
                 position: relative;
 
                 &:hover {
-                    color: $primaryDeepColor;
+                    color: $secondaryColor;
                     background-color: $colorLightGray;
                 }
 
@@ -58,7 +58,7 @@
                     top: 38%;
                     font-family: "pct-icon" !important;
                     content: $icon-angle-down;
-                    color: $primaryDeepColor;
+                    color: $secondaryColor;
                     font-size: 0.7rem;
                 }
 
@@ -76,18 +76,22 @@
                     height: 25px;
                     border-radius: 50%;
                     margin-right: 10px;
-                    background: $brandColor; /* Old browsers */
-                    background: -moz-linear-gradient(left, #00afeb 50%, #0091d7 100%); /* FF3.6-15 */
-                    background: -webkit-linear-gradient(left, #00afeb 50%, #0091d7 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: $secondaryColor; /* Old browsers */
+                    background: -moz-linear-gradient(left, $secondaryColor 50%, $secondaryColor 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(
+                        left,
+                        $secondaryColor 50%,
+                        $secondaryColor 100%
+                    ); /* Chrome10-25,Safari5.1-6 */
                     background: linear-gradient(
                         to right,
-                        #00afeb 50%,
-                        #0091d7 100%
+                        $secondaryColor 50%,
+                        $secondaryColor 100%
                     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00AFEB', endColorstr='#0091D7',GradientType=1 ); /* IE6-9 */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14B9D5', endColorstr='#14B9D5',GradientType=1 ); /* IE6-9 */
 
                     &.pct-icon {
-                        color: #ffffff;
+                        color: $colorWhite;
                         text-align: center;
                         line-height: 25px;
                     }
@@ -96,7 +100,10 @@
                         background: none;
 
                         &.pct-icon.icon-homepage {
-                            color: $primaryDeepColor;
+                            color: $secondaryColor;
+                            font-size: 20px;
+                            position: relative;
+                            top: 2px;
                         }
                     }
                 }

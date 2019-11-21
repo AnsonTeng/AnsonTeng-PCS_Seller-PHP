@@ -1,0 +1,902 @@
+%cardhover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.02), 0 2px 2px 0px rgba(0, 0, 0, 0.02);
+}
+
+//Card 商品卡片
+a.pct-item-card-link .pct-ui.card {
+    &:hover {
+        @extend %cardhover;
+        border: 1px solid $primaryColor;
+    }
+}
+
+//編輯相關商品卡片
+.pct-ui.card-edit {
+    border: none !important;
+
+    &:hover {
+        @extend %cardhover;
+    }
+}
+
+.pct-ui.card,
+.pct-ui.card-edit,
+.pct-ui.card-edit-add {
+    @extend %shadow-style-card;
+    background-color: $colorWhite;
+    border: 1px solid $colorWhite;
+    border-radius: 2px;
+    transition: 0.3s;
+    margin-bottom: 0.5rem;
+    position: relative;
+
+    .pct-ui.form.checkbox {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 7;
+    }
+    .edit-btn {
+        position: absolute;
+        cursor: pointer;
+        transition: 0.3s;
+        z-index: 8;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: $colorWhite;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+
+        li.pct-icon {
+            font-size: 1.3rem;
+            position: static;
+            width: auto;
+            height: auto;
+            color: $secondaryColor;
+            text-align: center;
+            line-height: 35px;
+        }
+
+        &.delete-btn {
+            bottom: 8px;
+            right: 8px;
+        }
+
+        &:hover {
+            transition: 0.3s;
+            transform: translateY(-2px);
+        }
+    }
+
+    .card-edit-info {
+        .card-content {
+            padding: 0 0.5rem 0.3125rem 0.5rem;
+
+            .card-content-title {
+                margin-top: 10px;
+            }
+
+            .card-content-pricestock {
+                display: flex;
+                align-items: stretch;
+                justify-content: space-between;
+                margin: 15px 0 0px 0;
+                height: 20px;
+
+                .current-price {
+                    color: $colorPinkRed;
+                    font-size: 0.875rem;
+                    font-weight: 700;
+                    margin-right: 0rem;
+
+                    span {
+                        font-size: 0.75rem;
+                    }
+                }
+
+                .current-stock {
+                    position: relative;
+                    font-size: 0.75rem;
+
+                    .replen-stock-block {
+                        position: absolute;
+                        top: -30px;
+                        left: -19px;
+                        min-width: 100px;
+                        max-width: auto;
+                        padding: 0 8px;
+                        height: 24px;
+                        line-height: 24px;
+                        // background-color: #FEE4E4;
+                        background-color: $accentColor;
+                        // color:#D3818A;
+                        color: $colorWhite;
+                        font-size: 0.75rem;
+                        border-radius: 4px;
+                        box-shadow: 0 0.5px 3px 0px rgba(0, 0, 0, 0.2);
+                        animation: floatAnimation-noshadow 1.3s ease-in-out infinite;
+
+                        .pct-icon {
+                            font-size: 0.75rem;
+                            // color:#D3818A;
+                            color: $colorWhite;
+                        }
+
+                        &:after {
+                            position: absolute;
+                            content: "";
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 10px 7.5px 0 7.5px;
+                            border-color: $accentColor transparent transparent transparent;
+                            bottom: -7px;
+                            left: 20%;
+                        }
+                    }
+
+                    span {
+                        font-size: 0.875rem;
+                        color: $colorDeepGray;
+                        font-weight: 500;
+                        padding-left: 3px;
+                    }
+                }
+            }
+
+            .card-footer {
+                display: flex;
+                align-items: stretch;
+                width: 100%;
+                color: $colorGray;
+                height: 25px;
+                font-size: 0.75rem;
+
+                .card-footer-save {
+                    flex: 5;
+                    display: flex;
+                    align-items: center;
+
+                    .pct-icon {
+                        pointer-events: none;
+
+                        &.icon-heart-on {
+                            color: $primaryColor;
+                        }
+                    }
+
+                    .card-footer-save-text {
+                        font-size: 0.75rem;
+                    }
+                }
+
+                .card-footer-sold {
+                    flex: 5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    .card-footer-sold-title {
+                        padding-right: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    .card-edit-action {
+        border-top: 1px solid $colorLightGray;
+        height: 34px;
+        font-size: 0.8125rem;
+        font-weight: 700;
+        color: $colorDarkGray;
+        display: flex;
+
+        a {
+            flex: 1;
+            display: inline-block;
+            text-align: center;
+            line-height: 34px;
+
+            .pct-icon {
+                color: $colorDeepGray;
+                padding-right: 2px;
+
+                &.icon-arrow-down {
+                    font-size: 0.75rem;
+                }
+                &.icon-preview {
+                    font-size: 0.9375rem;
+                }
+            }
+
+            &:first-child {
+                border-right: 1px solid $colorLightGray;
+            }
+
+            &:hover {
+                background-color: #fcfcfc;
+                color: $primaryColor;
+
+                .pct-icon {
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+
+    //  產品圖
+    .card-figure {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0.3125rem;
+
+        .unlist-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 6;
+            color: $colorWhite;
+            font-size: 0.875rem;
+            text-align: center;
+
+            p {
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &.pending {
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+        }
+
+        .card-figure-inner {
+            @extend %figure-inner;
+
+            .card-figure-img {
+                z-index: 5;
+                @extend %figure-img;
+                border-radius: 2px 2px 0 0;
+
+                // img.card-figure-img-item {
+                //     display: block;
+                //     width: 100%;
+                //     height: inherit;
+                //     -o-object-fit: cover;
+                //     object-fit: cover;
+
+                // }
+            }
+        }
+
+        .card-figure-inner-blank {
+            width: 100%;
+            height: 0;
+            padding-top: 100%;
+        }
+    }
+
+    //  產品內容
+    .card-content {
+        padding: 0 0.75rem 0.3125rem 0.75rem;
+
+        .card-content-tag {
+            max-height: 1.3rem;
+            min-height: 1.3rem;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+
+            > div {
+                // margin-right: 0.3125rem;
+            }
+
+            .pct-icon-overseas {
+                width: 18px;
+                height: 18px;
+            }
+
+            .pct-icon-shopassist {
+                width: auto;
+                max-width: 138px;
+                transform: scale(0.7);
+                padding: 0 12px 0 5px;
+                // margin-left: -13px;
+                margin-left: -0.5rem;
+            }
+
+            .mutiple-spec-tag {
+                font-size: 0.75rem;
+                font-weight: 500;
+                color: #547c8e;
+                border: 1px solid #dae5ea;
+                border-radius: 40px;
+                padding: 3px 10px 2px 8px;
+
+                .pct-icon {
+                    color: #a3bfcc;
+                    margin-right: 2px;
+                }
+            }
+        }
+
+        .card-content-title {
+            h2 {
+                @include text-overflow;
+                height: 2.3rem;
+                font-size: 0.9375rem;
+                line-height: 1.2rem;
+                font-weight: 400;
+                margin: 0 0 0.6875rem 0;
+            }
+        }
+
+        .card-content-price {
+            display: flex;
+            align-items: flex-end;
+            margin: 10px 0;
+            height: 25px;
+
+            .current-price {
+                color: $colorRed;
+                font-size: 1.125rem;
+                font-weight: 700;
+                margin-right: 0.3125rem;
+
+                span {
+                    font-size: 0.75rem;
+                }
+            }
+
+            .original-price {
+                color: $colorDeepGray;
+                font-size: 0.75rem;
+                text-decoration: line-through;
+            }
+        }
+
+        .card-footer {
+            display: flex;
+            align-items: stretch;
+            width: 100%;
+            color: $colorGray;
+            height: 25px;
+
+            .card-footer-save {
+                flex: 5;
+                display: flex;
+                align-items: center;
+
+                .pct-icon {
+                    margin-right: 0.3125rem;
+                    cursor: pointer;
+
+                    &.icon-heart-on {
+                        color: $primaryColor;
+                    }
+                }
+
+                .card-footer-save-text {
+                    font-size: 0.75rem;
+                }
+            }
+
+            .card-footer-review {
+                .pct-ui.review-star {
+                    display: flex;
+                    align-items: center;
+                    padding-top: 0.125rem;
+
+                    > ul {
+                        margin-right: 0.3125rem;
+
+                        > li.pct-icon {
+                            display: inline-block;
+                            font-size: 0.75rem;
+                            margin: 0 -0.125rem;
+
+                            &.icon-star-on {
+                                color: $colorOrange;
+                            }
+
+                            &.icon-star-half {
+                                color: $colorOrange;
+                            }
+                        }
+                    }
+
+                    .review-text {
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xs) {
+    .pct-ui.card,
+    .pct-ui.card-edit,
+    .pct-ui.card-edit-add {
+        .pct-ui.form.checkbox {
+            position: absolute;
+            top: 12px;
+            left: 10px;
+        }
+
+        .card-edit-action {
+            border-top: 1px solid #ececec;
+            height: 34px;
+            font-size: 0.8125rem;
+            font-weight: 700;
+            color: $colorDarkGray;
+            display: flex;
+
+            a {
+                flex: 1;
+                display: inline-block;
+                text-align: center;
+                line-height: 34px;
+
+                .pct-icon {
+                    color: $colorDeepGray;
+                    padding-right: 2px;
+
+                    &.icon-arrow-down,
+                    &.icon-arrow-up {
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+        }
+
+        //  產品內容
+        .card-content {
+            padding: 0 0.4375rem 0.3125rem 0.4375rem;
+
+            .card-content-title {
+                h2 {
+                    @include text-overflow;
+                    height: 2rem;
+                    font-size: 0.875rem;
+                    line-height: 1rem;
+                }
+            }
+
+            .card-footer {
+                .card-footer-save {
+                    .pct-icon {
+                        margin-right: 0.1875rem;
+                        cursor: pointer;
+
+                        &.icon-heart-on {
+                            color: $primaryColor;
+                        }
+                    }
+
+                    .card-footer-save-text {
+                        font-size: 0.75rem;
+                    }
+                }
+
+                .card-footer-review {
+                    .pct-ui.review-star {
+                        display: flex;
+                        align-items: center;
+
+                        > ul {
+                            margin-right: 0.1875rem;
+
+                            > li.pct-icon {
+                                display: inline-block;
+                                font-size: 0.75rem;
+                                margin: 0 -0.125rem;
+
+                                &.icon-star-on {
+                                    color: $colorOrange;
+                                }
+
+                                &.icon-star-half {
+                                    color: $colorOrange;
+                                }
+                            }
+                        }
+
+                        .review-text {
+                            font-size: 0.75rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xxs) {
+    .pct-ui.card,
+    .pct-ui.card-edit {
+        .card-edit-action {
+            a {
+                .pct-icon {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+//品牌卡片
+
+.pct-ui.card-brandshop {
+    position: relative;
+    transition: 0.3s;
+    // min-height:100px;
+    padding: 0.9375rem;
+
+    display: flex;
+
+    .card-figure {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        flex-shrink: 0;
+        border-radius: 3px;
+
+        .card-figure-inner {
+            @extend %figure-inner;
+
+            .card-figure-img {
+                @extend %figure-img;
+                border: 1px solid $colorLightGray;
+                border-radius: 3px;
+            }
+        }
+    }
+
+    .card-content {
+        padding-top: 0.626rem;
+        margin-left: 0.9375rem;
+
+        .card-content-title {
+            @include text-overflow;
+            min-height: 1.375rem;
+            max-height: 2.3rem;
+            font-size: 0.975rem;
+            line-height: 1rem;
+            font-weight: 400;
+        }
+
+        .card-content-save {
+            position: absolute;
+            right: 15px;
+            bottom: 10px;
+            display: flex;
+            align-items: center;
+            color: $colorGray;
+
+            .card-content-save-text {
+                font-size: 0.8125rem;
+            }
+
+            .pct-icon {
+                font-size: 1.325rem;
+                margin-left: 0.3125rem;
+                cursor: pointer;
+
+                &.icon-heart-on {
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}
+
+a.pct-view-more-link {
+    .pct-ui.card-brandshop {
+        .pct-view-more {
+            color: $primaryColor;
+            font-size: 1.25rem;
+            font-weight: 400;
+            display: inline-block;
+            line-height: 70px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    .pct-ui.card-brandshop {
+        padding: 0.75rem;
+
+        .card-figure {
+            width: 60px;
+            height: 60px;
+        }
+        .card-content {
+            padding-top: 0.2rem;
+            margin-left: 0.65rem;
+
+            .card-content-title {
+                min-height: 1.2rem;
+                max-height: 2rem;
+                font-size: 0.875rem;
+                font-weight: 400;
+            }
+
+            .card-content-save {
+                right: 10px;
+                bottom: 10px;
+
+                .pct-icon {
+                    font-size: 1.2rem;
+                    margin-left: 0.125rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+//文章卡片
+
+a.pct-item-card-link .pct-ui.card-blog {
+    &:hover {
+        @extend %cardhover;
+    }
+}
+
+.pct-ui.card-blog {
+    @extend %shadow-style-card;
+    background-color: #f2f2f2;
+    height: 265px;
+    position: relative;
+    border-radius: 2px;
+    transition: 0.3s;
+
+    .card-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 2px;
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 63.7%, rgba(0, 0, 0, 0.75) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 63.7%, rgba(0, 0, 0, 0.75) 100%);
+
+        .card-content-title {
+            @include text-overflow;
+            color: $colorWhite;
+            height: 2.5rem;
+            font-size: 0.9375rem;
+            line-height: 1.375;
+            font-weight: 400;
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            padding: 0 1.875rem;
+        }
+    }
+}
+
+@media (max-width: $break-md) {
+    a.pct-item-card-link .pct-ui.card {
+        &:hover {
+            border: 1px solid $colorWhite;
+        }
+    }
+
+    .pct-ui.card-blog {
+        .card-mask {
+            .card-content-title {
+                position: absolute;
+                bottom: 20px;
+                width: 100%;
+                padding: 0 1rem;
+            }
+        }
+    }
+}
+
+//店家卡片
+
+.pct-ui.card-shop {
+    @extend %shadow-style-card;
+    background-color: $colorWhite;
+    margin-bottom: 10px;
+    border-radius: 2px;
+
+    .card-shop-content {
+        .seller-product-pic {
+            overflow: hidden;
+            // height:150px;
+            background-color: #fafafa;
+
+            .seller-product-inner {
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-top: 100%;
+
+                .seller-figure-img {
+                    @extend %figure-img;
+                }
+            }
+        }
+
+        .seller-profile-up {
+            display: flex;
+            padding: 15px 10px 5px 10px;
+            border-bottom: 1px solid $colorLightGray;
+
+            //商家頭像
+            .seller-profile-figure {
+                flex-shrink: 0;
+                flex-basis: 55px;
+                height: 55px;
+                border-radius: 50%;
+                margin: 0 5px 10px 0;
+                overflow: hidden;
+                border: 1px solid $colorLightGray;
+
+                .seller-profile-inner {
+                    position: relative;
+                    width: 100%;
+                    height: 0;
+                    padding-top: 100%;
+
+                    .profile-figure-img {
+                        @extend %figure-img;
+                    }
+                }
+            }
+
+            //統計資料
+            .seller-profile-data {
+                min-width: 0;
+                flex: 4;
+                position: relative;
+                width: 100%;
+
+                .pct-icon-overseas {
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 5px;
+                    margin-top: -8px;
+                }
+
+                .seller-name {
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 1.25rem;
+                    margin-bottom: 10px;
+                    height: 30px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        .seller-profile-down {
+            padding: 15px 15px 0 15px;
+
+            //商家描述(200字)
+            .seller-description {
+                font-size: 0.9375rem;
+                font-weight: 300;
+                line-height: 22px;
+                height: 38px;
+                @include text-overflow;
+            }
+            .seller-product-num {
+                font-size: 0.8125rem;
+                color: $colorDeepGray;
+
+                .eng-num {
+                    font-size: 1rem;
+                    color: $accentColor;
+                }
+            }
+        }
+
+        .seller-visit-follow {
+            .pct-ui.btn-group-horizontal {
+                padding: 10px 15px 15px 15px;
+                display: flex;
+
+                a {
+                    flex: 5;
+
+                    &.btn-cta-outlined {
+                        margin-right: 4px !important;
+                    }
+
+                    &.btn-cta {
+                        margin-left: 4px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-lg) {
+    .pct-ui.card-shop {
+        .card-shop-content {
+            .seller-profile-up {
+                //商家頭像
+                .seller-profile-figure {
+                    flex-shrink: 0;
+                    flex-basis: 50px;
+                    height: 50px;
+                }
+
+                //統計資料
+                .seller-profile-data {
+                    .pct-icon-overseas {
+                        width: 22px;
+                        height: 22px;
+                        // position:absolute;
+                        // right:0px;
+                        // bottom: 0px;
+                    }
+
+                    .seller-name {
+                        font-weight: 500;
+                        font-size: 1rem;
+                        line-height: 1.2rem;
+                        height: auto;
+                    }
+
+                    .seller-product-num {
+                        font-size: 0.8125rem;
+                        .eng-num {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: $break-sm) {
+    .pct-ui.card-shop {
+        margin-bottom: 10px;
+
+        .card-shop-content {
+            .seller-profile-up {
+                padding: 15px 15px 10px 15px;
+                //商家頭像
+                .seller-profile-figure {
+                    flex-shrink: 0;
+                    flex-basis: 60px;
+                    height: 60px;
+                }
+
+                //統計資料
+                .seller-profile-data {
+                    .pct-icon-overseas {
+                        width: 25px;
+                        height: 25px;
+                    }
+
+                    .seller-name {
+                        font-weight: 500;
+                        font-size: 1.125rem;
+                        line-height: 1.25rem;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

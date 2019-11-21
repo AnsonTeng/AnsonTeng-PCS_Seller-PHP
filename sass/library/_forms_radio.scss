@@ -1,0 +1,828 @@
+// //表單
+// .fluid input:not([type]),
+// .fluid input[type="date"],
+// .fluid input[type="datetime-local"],
+// .fluid input[type="email"],
+// .fluid input[type="file"],
+// .fluid input[type="number"],
+// .fluid input[type="password"],
+// .fluid input[type="search"],
+// .fluid input[type="tel"],
+// .fluid input[type="text"],
+// .fluid input[type="time"],
+// .fluid input[type="url"],
+// .fluid textarea,
+// .fluid select {
+//     display: block;
+//     width: 100%;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
+// .pct-ui.form-label.fluid,
+// .pct-ui.form-label,
+// .pct-ui.form-select-label {
+//     display: flex;
+//     align-items: baseline;
+// }
+
+// .pct-ui.form-textarea-label {
+//     display: flex;
+//     align-items: top;
+
+//     .pct-ui.form {
+//         flex: 1;
+//     }
+// }
+
+// .pct-ui.form-label.break-label {
+//     display: block;
+//     margin-bottom: 10px;
+//     text-align: left;
+
+//     label {
+//         display: block; /* 加這個才會可以有padding的作用*/
+//         padding: 0rem 0rem 5px 0rem;
+//     }
+// }
+
+// .pct-ui.form-select-label.break-label {
+//     display: block;
+//     margin-bottom: 10px;
+//     text-align: left;
+
+//     label {
+//         display: block; /* 加這個才會可以有padding的作用*/
+//         padding: 0rem 0rem 5px 0rem;
+//     }
+
+//     .pct-ui.form.select {
+//         margin-right: 0px;
+//         margin-top: 2px;
+//     }
+// }
+
+// .pct-ui.form-label label {
+//     font-size: 0.875rem;
+//     font-weight: 400;
+//     padding: 0rem 0.5rem 0 0rem;
+// }
+
+// .pct-ui.form-select-label label {
+//     font-size: 0.875rem;
+//     font-weight: 400;
+//     padding: 0.75rem 0.5rem 0 0rem;
+// }
+
+// .pct-ui.form-textarea-label label {
+//     font-size: 0.875rem;
+//     font-weight: 400;
+//     padding: 0.9375rem 0.5rem 0.5rem 0;
+// }
+
+// @media (max-width: $break-lg) {
+//     .pct-ui.form-textarea-label label {
+//         padding: 0rem 0.5rem 0.5rem 0;
+//     }
+// }
+
+// .pct-ui.form input:not([type]),
+// .pct-ui.form input[type="date"],
+// .pct-ui.form input[type="datetime-local"],
+// .pct-ui.form input[type="email"],
+// .pct-ui.form input[type="file"],
+// .pct-ui.form input[type="number"],
+// .pct-ui.form input[type="password"],
+// .pct-ui.form input[type="search"],
+// .pct-ui.form input[type="tel"],
+// .pct-ui.form input[type="text"],
+// .pct-ui.form input[type="time"],
+// .pct-ui.form input[type="url"],
+// .pct-ui.form textarea,
+// .pct-ui.form select {
+//     font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei",
+//         "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
+//     padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+//     margin: 2px 0 6px 0;
+//     width: 100%;
+//     font-size: 0.875rem;
+//     border-radius: 2px;
+//     border: 1px solid #dadada;
+//     background-color: $colorWhite;
+//     color: $colorGrayBlack;
+//     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+//     appearance: none;
+//     font-weight: 300;
+// }
+
+// .pct-ui.form input:not([type]):focus,
+// .pct-ui.form input[type="date"]:focus,
+// .pct-ui.form input[type="datetime-local"]:focus,
+// .pct-ui.form input[type="email"]:focus,
+// .pct-ui.form input[type="file"]:focus,
+// .pct-ui.form input[type="number"]:focus,
+// .pct-ui.form input[type="password"]:focus,
+// .pct-ui.form input[type="search"]:focus,
+// .pct-ui.form input[type="tel"]:focus,
+// .pct-ui.form input[type="text"]:focus,
+// .pct-ui.form input[type="time"]:focus,
+// .pct-ui.form input[type="url"]:focus,
+// .pct-ui.form textarea:focus,
+// .pct-ui.form select:focus {
+//     outline: none;
+//     border-color: $secondaryColor;
+//     box-shadow: 0 0 5px rgba(33, 144, 198, 0.4);
+// }
+
+// .pct-ui.form input::placeholder,
+// .pct-ui.form textarea::placeholder,
+// .pct-ui.form select::placeholder {
+//     color: $colorGray;
+//     font-weight: 300;
+//     -webkit-text-fill-color: $colorGray;
+// }
+
+// .pct-ui.form.error input,
+// .pct-ui.form.error textarea,
+// .pct-ui.form.error select {
+//     border-color: $primaryColor;
+//     -webkit-box-shadow: none;
+//     box-shadow: none;
+//     margin: 0.125rem 0 0 0;
+// }
+
+// .pct-ui.form.error input::placeholder,
+// .pct-ui.form.error textarea::placeholder {
+//     color: #e0b4b4;
+//     font-weight: 300;
+//     -webkit-text-fill-color: #e0b4b4;
+// }
+
+// .error-notification-tooltip-inline {
+//     font-size: 0.75rem;
+//     font-weight: 300;
+//     color: $primaryColor;
+//     line-height: 1.5rem;
+//     padding-left: 0.3125rem;
+//     margin: 0rem 0 0.375rem 0;
+//     text-align: left;
+// }
+
+// .pct-ui.form-disabled input:disabled,
+// .pct-ui.form-disabled input.disabled,
+// .pct-ui.form-disabled input[disabled],
+// .pct-ui.form-disabled input.disabled:hover,
+// .pct-ui.form-disabled input[disabled]:hover,
+// .pct-ui.form-disabled input.disabled:active,
+// .pct-ui.form-disabled input[disabled]:active {
+//     @extend %ui-disabled;
+//     border: 1px solid #dadada;
+//     color: $colorGray;
+//     -webkit-text-fill-color: $colorGray;
+//     box-shadow: none;
+//     padding: 0.5rem 0.75rem;
+//     margin: 2px 0 6px 0;
+//     width: 100%;
+//     font-size: 0.875rem;
+//     border-radius: 2px;
+//     font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei",
+//         "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
+//     font-weight: 300;
+// }
+
+// .pct-ui.form {
+//     textarea {
+//         min-height: 8rem;
+//         max-height: 10rem;
+
+//         @media (max-width: $break-sm) {
+//             min-height: 16rem;
+//             max-height: 25rem;
+//         }
+//     }
+// }
+
+//// (輸入框＋按鈕) 群組 + 其他選項
+// .inputGroupWithOption {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: nowrap;
+//     align-items: center;
+//     width: 100%;
+//     max-width: 690px;
+//     // margin: 12px 0 18px 0;
+
+//     .inputGroupWithOption-inner {
+//         max-width: 420px;
+//         flex: 1;
+//     }
+// }
+
+// @media (max-width: $break-sm) {
+//     .inputGroupWithOption {
+//         flex-direction: column;
+//         align-items: flex-start;
+
+//         .inputGroupWithOption-inner {
+//             width: 100%;
+//         }
+//     }
+// }
+
+// // (輸入框＋按鈕) 群組
+// .pct-ui.form.inputGroup {
+//     display: flex;
+//     flex-wrap: nowrap;
+
+//     .inputGroup-inputBox {
+//         flex: 1;
+
+//         // max-width: 240px;
+
+//         .pct-ui.form {
+//             input {
+//                 margin: 0;
+//             }
+//         }
+//     }
+//     .inputGroup-btn {
+//         flex-shrink: 0;
+//         text-align: center;
+//         position: relative;
+//         top: -1px;
+//     }
+// }
+
+// //表單--Input Select 下拉選單
+// .pct-ui.form.select {
+//     position: relative;
+//     align-self: flex-start;
+// }
+
+// .pct-ui.form.select:after {
+//     font-family: "pct-icon";
+//     content: $icon-angle-down;
+//     font-size: 0.75rem;
+//     color: $primaryColor;
+//     position: absolute;
+//     z-index: 1;
+//     top: 50%;
+//     right: 1rem;
+//     margin-top: -0.375rem;
+//     display: block;
+//     pointer-events: none;
+// }
+
+// .pct-ui.form-select-label {
+//     .pct-ui.form.select {
+//         margin-right: 12px;
+//     }
+// }
+
+// .pct-ui.form-select-label {
+//     .pct-ui.form.error.select:after {
+//         top: 32%;
+//     }
+// }
+
+// .pct-ui.form.select.error {
+//     &:after {
+//         top: 32%;
+//     }
+// }
+
+// //表單--Checkbox 選取框
+// .pct-ui.form.checkbox input[type="checkbox"]:checked,
+// .pct-ui.form.checkbox input[type="checkbox"]:not(:checked) {
+//     -moz-appearance: none;
+//     -webkit-appearance: none;
+//     -o-appearance: none;
+//     position: relative;
+//     padding-left: 20px;
+//     font-size: 0.8rem;
+// }
+
+// .pct-ui.form.checkbox input[type="checkbox"]:focus {
+//     outline: none;
+//     -moz-appearance: none;
+//     -webkit-appearance: none;
+//     -o-appearance: none;
+// }
+
+// %checkbox {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     left: 0;
+//     top: 40%;
+//     margin-top: -13px;
+//     margin-left: -1px;
+//     width: 18px;
+//     height: 18px;
+//     border: 1px solid #cfd9db;
+//     background: $colorWhite;
+//     border-radius: 2px;
+//     z-index: 1;
+// }
+
+// .pct-ui.form.checkbox {
+//     margin: 0 0 15px 0;
+//     font-weight: 300;
+
+//     input[type="checkbox"] {
+//         display: inline-block;
+//         appearance: none;
+//         -moz-appearance: none;
+//         -webkit-appearance: none;
+//         -o-appearance: none;
+//         position: absolute;
+//         padding: 0;
+//         z-index: 2;
+//     }
+
+//     input[type="checkbox"]:before {
+//         @extend %checkbox;
+//     }
+
+//     &.md {
+//         input[type="checkbox"]:before {
+//             width: 24px;
+//             height: 24px;
+//         }
+//         input[type="checkbox"]:after {
+//             width: 24px;
+//             height: 24px;
+//             font-size: 1.25rem;
+//             line-height: 23px;
+//             padding-left: 1px;
+//         }
+//     }
+
+//     input[type="checkbox"]:after {
+//         @extend %checkbox;
+//         background-position: center center;
+//         background-repeat: no-repeat;
+//         display: none;
+//     }
+
+//     //checked
+//     input[type="checkbox"]:checked:after {
+//         display: block;
+//     }
+
+//     input[type="checkbox"]:after {
+//         font-family: "pct-icon";
+//         content: $icon-checked;
+//         color: $colorWhite;
+//         font-size: 1.05rem;
+//         background: $secondaryColor;
+//     }
+
+//     label span {
+//         position: relative;
+//         font-size: 0.875rem;
+//         padding-left: 0px;
+//         line-height: 24px;
+//         cursor: pointer; // &:hover {
+//         //     color: $primaryColor;
+//         // }
+//         // &.active {
+//         //     color: $primaryColor;
+//         // }
+//     }
+
+//     label span a {
+//         text-decoration: none;
+//         color: $colorGrayBlack;
+
+//         &:hover {
+//             color: $primaryColor;
+//         }
+//     }
+// }
+
+// @media (max-width: $break-sm) {
+//     %checkbox {
+//         width: 23px;
+//         height: 23px;
+//     }
+
+//     .pct-ui.form.checkbox {
+//         input[type="checkbox"] {
+//             vertical-align: middle;
+//         }
+
+//         label span {
+//             position: relative;
+//             font-size: 0.9375rem;
+//             padding-left: 3px;
+//             line-height: 22px;
+//         }
+
+//         input[type="checkbox"]:after {
+//             font-size: 1.25rem;
+//         }
+//     }
+// }
+
+//表單-- Radio Button
+.pct-ui.form.radio {
+    margin: 0 0 15px 0;
+
+    input[type="radio"]:checked,
+    input[type="radio"]:not(:checked) {
+        outline: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -o-appearance: none;
+        position: absolute;
+        left: -9999px;
+    }
+
+    input[type="radio"]:checked + label,
+    input[type="radio"]:not(:checked) + label {
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+        line-height: 20px;
+        display: inline-block;
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+
+    /*radio未選取樣式*/
+    input[type="radio"]:checked + label:before,
+    input[type="radio"]:not(:checked) + label:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        border: 1px solid #cfd9db;
+        background-color: $colorWhite;
+    }
+
+    /*radio已選取樣式*/
+    input[type="radio"]:checked + label:after,
+    input[type="radio"]:not(:checked) + label:after {
+        content: "";
+        width: 14px;
+        height: 14px;
+        background: $secondaryColor;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        border-radius: 100%;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    input[type="radio"]:not(:checked) + label:after {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    input[type="radio"]:checked + label:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+// //表單--Switch-toggle
+// input[type="checkbox"].switch-checkbox {
+//     position: absolute;
+//     left: -9999px;
+// }
+// input[type="checkbox"].switch-checkbox:checked + label,
+// input[type="checkbox"].switch-checkbox:not(:checked) + label {
+//     position: relative;
+//     line-height: 20px;
+//     display: inline-block;
+//     margin-right: 15px;
+//     font-size: 0.8rem;
+//     max-width: auto;
+//     min-width: auto;
+// }
+// .switch-checkbox + label {
+//     padding: 2px;
+//     width: 45px;
+//     height: 24px;
+//     background-color: #dddddd;
+//     border-radius: 70px;
+//     transition: background 0.4s;
+// }
+
+// .switch-checkbox + label:before,
+// .switch-checkbox + label:after {
+//     display: block;
+//     position: absolute;
+//     content: "";
+// }
+
+// .switch-checkbox + label:before {
+//     top: 2px;
+//     left: 2px;
+//     bottom: 2px;
+//     right: 2px;
+//     background-color: #dddddd;
+//     border-radius: 60px;
+//     transition: background 0.4s;
+// }
+
+// .switch-checkbox + label:after {
+//     top: 2px;
+//     left: 2px;
+//     bottom: 3px;
+//     width: 20px;
+//     height: 20px;
+//     background-color: $colorWhite;
+//     border-radius: 50px;
+//     transition: margin 0.4s, background 0.4s;
+// }
+
+// .switch-checkbox:checked + label {
+//     background-color: $secondaryColor;
+// }
+
+// .switch-checkbox:not(:checked) + label {
+//     background-color: #dddddd;
+// }
+
+// .switch-checkbox:checked + label:after {
+//     margin-left: 21px;
+//     background-color: $colorWhite;
+// }
+
+// .switch-checkbox:checked + label:before {
+//     background-color: $secondaryColor;
+// }
+
+// //表單--Input Number 數量輸入
+// %input-number {
+//     border-radius: 0;
+//     vertical-align: top;
+//     text-align: center;
+//     width: 100px;
+// }
+
+// %number-btn {
+//     display: inline-block;
+//     width: 41px;
+//     height: 40.5px;
+//     background: #fbfbfb;
+//     text-align: center;
+//     cursor: pointer;
+//     border: 1px solid #cfd9db;
+//     margin-top: 2px;
+//     line-height: 40px;
+// }
+
+// .pct-ui.form.number {
+//     display: flex;
+//     align-items: center;
+
+//     label {
+//         font-size: 0.875rem;
+//         padding: 0rem 0.5rem 0 0rem;
+//     }
+
+//     .number-controller {
+//         display: flex;
+//         align-items: center;
+
+//         input[type="number"] {
+//             @extend %input-number;
+//             margin-top: 8px;
+//             -moz-appearance: textfield;
+//             -webkit-appearance: textfield;
+//             -o-appearance: textfield;
+//         }
+
+//         .number-btn {
+//             flex-shrink: 0;
+//             @extend %number-btn;
+//             color: $primaryColor;
+
+//             .number__decrement {
+//                 border-right: none;
+//                 margin-left: -2px;
+//             }
+//             .number__decrement {
+//                 border-left: none;
+//                 margin-right: -2px;
+//             }
+//         }
+//     }
+// }
+
+// //表單--數字--無法點擊
+// input[type="number"]::-webkit-inner-spin-button,
+// input[type="number"]::-webkit-outer-spin-button {
+//     appearance: none;
+// }
+
+// .pct-ui.form-disabled.number {
+//     display: flex;
+//     align-items: center;
+
+//     label {
+//         font-size: 0.875rem;
+//         padding: 0rem 0.5rem 0 0rem;
+//     }
+
+//     .number-controller {
+//         display: flex;
+//         align-items: center;
+
+//         input[type="number"] {
+//             @extend %input-number;
+//             -moz-appearance: textfield;
+//             -webkit-appearance: textfield;
+//             -o-appearance: textfield;
+//             margin-top: 8px;
+//         }
+
+//         .number-btn {
+//             flex-shrink: 0;
+//             @extend %number-btn;
+//             color: $colorGray;
+//             -webkit-text-fill-color: $colorGray;
+//             cursor: not-allowed;
+
+//             .number__decrement {
+//                 border-right: none;
+//                 margin-left: -2px;
+//             }
+//             .number__decrement {
+//                 border-left: none;
+//                 margin-right: -2px;
+//             }
+//         }
+//     }
+// }
+
+// //Anson
+// //表單--Input Number 數量輸入 (自適應)
+// %input-number-responsive {
+//     border-radius: 0;
+//     vertical-align: top;
+//     text-align: center;
+//     min-width: 52px;
+//     height: 36px;
+// }
+
+// %number-btn-responsive {
+//     display: inline-block;
+//     width: 36px;
+//     height: 36px;
+//     line-height: 36px;
+//     background: #fbfbfb;
+//     text-align: center;
+//     cursor: pointer;
+//     border: 1px solid #cfd9db;
+//     margin-top: 2px;
+// }
+
+// .pct-ui.form.number-responsive {
+//     label {
+//         font-size: 0.875rem;
+//         padding: 0rem 0.5rem 0 0rem;
+//     }
+
+//     .number-controller {
+//         display: flex;
+//         align-items: center;
+
+//         input[type="number"] {
+//             @extend %input-number-responsive;
+//             margin-top: 8px;
+//             -moz-appearance: textfield;
+//             -webkit-appearance: textfield;
+//             -o-appearance: textfield;
+//             padding: 0rem;
+//         }
+
+//         .number-btn {
+//             flex-shrink: 0;
+//             @extend %number-btn-responsive;
+//             color: $primaryColor;
+//             font-size: 0.875rem;
+
+//             .number__decrement {
+//                 border-right: none;
+//                 margin-left: -2px;
+//             }
+//             .number__decrement {
+//                 border-left: none;
+//                 margin-right: -2px;
+//             }
+//         }
+//     }
+// }
+
+// //表單--Input Number 數量輸入 (自適應)
+// @media (max-width: $break-md) {
+//     %input-number-responsive-md {
+//         min-width: 36px;
+//         max-width: 72px;
+//         height: 30px;
+//     }
+//     %number-btn-responsive-md {
+//         width: 30px;
+//         height: 30px;
+//         line-height: 30px;
+//     }
+
+//     .pct-ui.form.number-responsive {
+//         .number-controller {
+//             input[type="number"] {
+//                 @extend %input-number-responsive-md;
+//             }
+
+//             .number-btn {
+//                 flex-shrink: 0;
+//                 @extend %number-btn-responsive-md;
+//             }
+//         }
+//     }
+// }
+
+// //表單--Input Number 數量輸入 (自適應)
+// @media (max-width: $break-xxs) {
+//     %input-number-responsive-xxs {
+//         max-width: 40px;
+//         height: 26px;
+//         font-size: 0.8125rem;
+//     }
+//     %number-btn-responsive-xxs {
+//         width: 26px;
+//         height: 26px;
+//         line-height: 26px;
+//     }
+
+//     .pct-ui.form.number-responsive {
+//         .number-controller {
+//             input[type="number"] {
+//                 @extend %input-number-responsive-xxs;
+//             }
+
+//             .number-btn {
+//                 flex-shrink: 0;
+//                 @extend %number-btn-responsive-xxs;
+//             }
+//         }
+//     }
+// }
+
+// //表單--月曆表單
+// .datepicker {
+//     width: 360px;
+
+//     table {
+//         table-layout: fixed;
+//         width: 100%;
+//     }
+// }
+
+// @media (max-width: $break-xxs) {
+//     .datepicker {
+//         width: 260px;
+//     }
+// }
+
+// //金額 - 泰銖
+// .pct-ui.form.product-price-THbaht {
+//     input[type="text"],
+//     input[type="tel"] {
+//         padding-left: 36px;
+//     }
+//     &:before {
+//         content: "฿";
+//     }
+// }
+// //金額 - 美金
+// .pct-ui.form.product-price-USdollar {
+//     input[type="text"],
+//     input[type="tel"] {
+//         padding-left: 30px;
+//     }
+//     &:before {
+//         content: "$";
+//     }
+// }
+// //金額 - 新台幣
+// .pct-ui.form.product-price-TWdollar {
+//     input[type="text"],
+//     input[type="tel"] {
+//         padding-left: 43px;
+//         left: -60px;
+//     }
+//     &:before {
+//         position: absolute;
+//         content: "NT$";
+//     }
+// }

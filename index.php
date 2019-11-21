@@ -72,7 +72,6 @@
         <?php include("assets/header.php"); ?>
         <!-- PChome Thai Header end-->
 
-
         <!-- PChome Thai Menu_mobile -->
         <?php include("assets/menu-mobile.php"); ?>
         <!-- PChome Thai Menu_mobile end-->
@@ -111,7 +110,7 @@
                                     <div class="current-balance">
                                         <div class="box-ttl">帳戶總金額 <span class="eng-num">THB</span></div>
                                         <div class="balance-num eng-num">
-                                            <a href="selleracc-withdrawal.php"><span>฿</span>179,843.87</a>
+                                            <a href="selleracc-withdrawal.php"><span>฿</span>19,843.87</a>
                                         </div>
                                     </div>
 
@@ -127,7 +126,6 @@
                                         <div class="bank-info">
                                             <div class="pct-icon icon-bank"></div>
                                             <div class="linked-bank-account">
-
 
                                                 <!-- 說明For RD: 狀態01: KYC審核未通過(全新帳戶)：無設定提領設定銀行--->
                                                 <!-- 說明For RD: 若未過SMS OTP class請帶 class="btn-xs telveriBtn" 已通過SMS OTP 直接連結到kyc-identity.php--->
@@ -166,7 +164,6 @@
                                                 <div class="bank-account" style="display: none"><span
                                                         class="txt">銀行待認證。</span> <a class="btn-xs telveriBtn"
                                                         class="btn-xs">申請認證</a></div>
-
 
                                                 <!--說明 FOR RD: 若沒有帳號與戶名時，請整塊隱藏-->
                                                 <div class="bank-name-num">

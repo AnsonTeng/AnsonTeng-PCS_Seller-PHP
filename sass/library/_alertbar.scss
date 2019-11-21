@@ -14,10 +14,16 @@
     div {
         position: relative;
         border-radius: 2px;
-        padding: 16px 20px;
+        padding: 16px 40px 16px 40px;
         margin-bottom: 8px;
 
-        .pct-icon {
+        .pct-icon.icon-alert {
+            position: absolute;
+            font-size: 1.125rem;
+            left: 15px;
+        }
+
+        .pct-icon.icon-delete {
             position: absolute;
             font-size: 1.125rem;
             right: 15px;
@@ -28,6 +34,12 @@
     .alert {
         background-color: $accentLightColor;
         color: $accentColor;
+
+        background-color: #fee4e4;
+        // background-color: $colorPink;
+        color: $colorPinkRed;
+        font-weight: 500;
+        // color: $colorPink;
     }
 }
 
@@ -42,7 +54,7 @@
         div {
             position: relative;
             border-radius: 2px;
-            padding: 16px 40px 16px 20px;
+            padding: 16px 40px 16px 40px;
 
             .pct-icon {
                 position: absolute;

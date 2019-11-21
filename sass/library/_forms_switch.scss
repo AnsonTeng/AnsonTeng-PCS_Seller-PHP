@@ -1,0 +1,68 @@
+//表單--Switch-toggle
+input[type="checkbox"].switch-checkbox {
+    position: absolute;
+    left: -9999px;
+}
+input[type="checkbox"].switch-checkbox:checked + label,
+input[type="checkbox"].switch-checkbox:not(:checked) + label {
+    position: relative;
+    line-height: 20px;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 0.8rem;
+    max-width: auto;
+    min-width: auto;
+}
+.switch-checkbox + label {
+    padding: 2px;
+    width: 45px;
+    height: 24px;
+    background-color: #dddddd;
+    border-radius: 70px;
+    transition: background 0.4s;
+}
+
+.switch-checkbox + label:before,
+.switch-checkbox + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+.switch-checkbox + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #dddddd;
+    border-radius: 60px;
+    transition: background 0.4s;
+}
+
+.switch-checkbox + label:after {
+    top: 2px;
+    left: 2px;
+    bottom: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: $colorWhite;
+    border-radius: 50px;
+    transition: margin 0.4s, background 0.4s;
+}
+
+.switch-checkbox:checked + label {
+    background-color: $secondaryColor;
+}
+
+.switch-checkbox:not(:checked) + label {
+    background-color: #dddddd;
+}
+
+.switch-checkbox:checked + label:after {
+    margin-left: 21px;
+    background-color: $colorWhite;
+}
+
+.switch-checkbox:checked + label:before {
+    background-color: $secondaryColor;
+}

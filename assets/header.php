@@ -9,12 +9,11 @@
                     <div class="btnBurger" id="btnBurger">
                         <div class="pct-icon icon-bars"></div>
                     </div>
-                    ㄢ
 
                 </div>
             </div>
             <div class="logotypeBox">
-                <a class="logotype" href="https://www.pchome.co.th/">
+                <a class="logotype" href="index.php">
                     <img src="img/img_pchomesea_white.svg" alt="PChome Thai" class="img-fluid">
                 </a>
                 <div class="pct-site-ttl"><a href="index.php" class="pct-link-item">賣家中心</a></div>

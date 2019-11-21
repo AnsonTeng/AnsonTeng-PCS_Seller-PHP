@@ -1,10 +1,10 @@
 @font-face {
     font-family: "pct-icon";
-    src: url("../../fonts/icon/pct-icon.eot?fdtib");
-    src: url("../../fonts/icon/pct-icon.eot?fdtib#iefix") format("embedded-opentype"),
-        url("../../fonts/icon/pct-icon.ttf?fdtib") format("truetype"),
-        url("../../fonts/icon/pct-icon.woff?fdtib") format("woff"),
-        url("../../fonts/icon/pct-icon.svg?fdtib#pct-icon") format("svg");
+    src: url("../../fonts/icon/pct-icon.eot?f6nyvu");
+    src: url("../../fonts/icon/pct-icon.eot?f6nyvu#iefix") format("embedded-opentype"),
+        url("../../fonts/icon/pct-icon.ttf?f6nyvu") format("truetype"),
+        url("../../fonts/icon/pct-icon.woff?f6nyvu") format("woff"),
+        url("../../fonts/icon/pct-icon.svg?f6nyvu#pct-icon") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -25,10 +25,15 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-search:before {
+    content: "\e93e";
+}
+.icon-minus:before {
+    content: "\e93d";
+}
 .icon-setting:before {
     content: "\e93c";
 }
-
 .icon-faq:before {
     content: "\e93b";
 }

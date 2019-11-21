@@ -58,33 +58,35 @@
     span {
         display: inline-block;
         // vertical-align: -33%;
-        width: 28px;
-        height: 28px;
-        flex-basis: 28px;
-        flex-shrink: 0;
+        width: 25px;
+        height: 25px;
         border-radius: 50%;
         margin-right: 10px;
-        background: #c20023; /* Old browsers */
-        background: -moz-linear-gradient(left, #c20023 50%, #dd001d 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, #c20023 50%, #dd001d 100%); /* Chrome10-25,Safari5.1-6 */
+        background: $secondaryColor; /* Old browsers */
+        background: -moz-linear-gradient(left, $secondaryColor 50%, $secondaryColor 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(
+            left,
+            $secondaryColor 50%,
+            $secondaryColor 100%
+        ); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(
             to right,
-            #c20023 50%,
-            #dd001d 100%
+            $secondaryColor 50%,
+            $secondaryColor 100%
         ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c20023', endColorstr='#dd001d',GradientType=1 ); /* IE6-9 */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14B9D5', endColorstr='#14B9D5',GradientType=1 ); /* IE6-9 */
 
         &.pct-icon {
-            color: #ffffff;
+            color: $colorWhite;
             text-align: center;
-            font-size: 1.1rem;
-            line-height: 28px;
+            font-size: 1.125rem;
+            line-height: 24px;
         }
     }
 
     > ul {
         overflow: hidden;
-        height: 25px;
+        height: 24px;
 
         > li {
             display: inline;
@@ -102,7 +104,7 @@
 
                 &:hover {
                     text-decoration: none;
-                    color: $primaryDeepColor;
+                    color: $primaryColor;
                 }
             }
 

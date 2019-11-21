@@ -52,9 +52,37 @@ $default-btn-font-size: 16px;
     background-color: $primaryColor;
     border: 1px solid $primaryColor;
 }
-
 .pct-ui.btn-primary:hover {
     background-color: $primaryDeepColor;
+    border: 1px solid $primaryDeepColor;
+}
+.pct-ui.btn-primary-outlined {
+    color: $primaryColor;
+    border: 1px solid $primaryColor;
+}
+.pct-ui.btn-primary-outlined:hover {
+    color: $colorWhite;
+    background-color: $primaryDeepColor;
+    border: 1px solid $primaryDeepColor;
+}
+
+.pct-ui.btn-secondary {
+    color: $colorWhite;
+    background-color: $secondaryColor;
+    border: 1px solid $secondaryColor;
+}
+.pct-ui.btn-secondary:hover {
+    background-color: $secondaryColor;
+    border: 1px solid $secondaryColor;
+    filter: brightness(110%);
+}
+.pct-ui.btn-secondary-outlined {
+    color: $secondaryColor;
+    border: 1px solid $secondaryColor;
+}
+.pct-ui.btn-secondary-outlined:hover {
+    color: $colorWhite;
+    background-color: $secondaryColor;
 }
 
 .pct-ui.btn-cta {
@@ -62,30 +90,20 @@ $default-btn-font-size: 16px;
     background-color: $accentColor;
     border: 1px solid $accentColor;
 }
-
 .pct-ui.btn-cta:hover {
     background-color: $accentDeepColor;
+    border: 1px solid $accentDeepColor;
 }
-
-.pct-ui.btn-primary-outlined {
-    color: $primaryColor;
-    border: 1px solid $primaryColor;
-}
-
-.pct-ui.btn-primary-outlined:hover {
-    color: $colorWhite;
-    background-color: $primaryDeepColor;
-}
-
 .pct-ui.btn-cta-outlined {
     color: $accentColor;
     border: 1px solid $accentColor;
 }
-
 .pct-ui.btn-cta-outlined:hover {
     color: $colorWhite;
     background-color: $accentDeepColor;
+    border: 1px solid $accentDeepColor;
 }
+
 .pct-ui.btn-fb {
     color: $colorWhite;
     background-color: #395497;

@@ -1,0 +1,70 @@
+//頁碼--標準
+.pct-ui.page-pagination {
+    > ul {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+
+        li {
+            width: 35px;
+            height: 35px;
+            margin: 0 5px;
+            line-height: 35px;
+            text-align: center;
+            font-weight: 400;
+
+            &.pagination-jump-next {
+                background: url("../img/icon-page-jump-next.svg") center no-repeat;
+                background-size: 18px 18px;
+            }
+
+            &.active {
+                color: $primaryColor;
+            }
+
+            & a {
+                width: 35px;
+                height: 35px;
+                border-radius: 2px;
+                display: inline-block;
+                color: $colorGrayBlack;
+                background-color: rgba(238, 238, 238, 0);
+
+                .pct-icon {
+                    font-size: 0.75rem;
+                    color: $colorDarkGray;
+                }
+
+                &:hover {
+                    color: $primaryColor;
+                    background-color: rgba(238, 238, 238, 1);
+                    .pct-icon {
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+    }
+
+    &.group {
+        > ul {
+            justify-content: flex-end;
+
+            li {
+                width: auto;
+                height: 35px;
+                margin: 0 5px;
+
+                span.icon-plus {
+                    padding-left: 5px;
+                    font-size: 12px;
+                }
+            }
+
+            //按鈕置中
+            &.align-center {
+                justify-content: center;
+            }
+        }
+    }
+}

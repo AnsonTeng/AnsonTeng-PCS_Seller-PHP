@@ -203,7 +203,7 @@
 
     // (輸入框＋按鈕) 群組
     .pct-ui.form.inputGroup {
-        flex-basis: 340px;
+        flex-basis: 400px;
 
         .inputGroup-inputBox {
             flex: 1;
@@ -220,7 +220,7 @@
 
         .selectBox {
             width: auto;
-            margin: 0 0 0 8px;
+            margin: 0 0 0 4px;
 
             // 下拉選單
             .pct-ui.form select {

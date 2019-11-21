@@ -17,14 +17,14 @@
 
 .pct-ui.form select:focus {
     outline: none;
-    border-color: $accentColor;
+    border-color: $secondaryColor;
     box-shadow: 0 0 5px rgba(33, 144, 198, 0.4);
 }
 
 .pct-ui.form {
     select {
+        min-width: 200px;
         position: relative;
-        min-width: 12.5rem;
         margin: 0px 0;
         padding: 0.5rem 2rem 0.5rem 0.75rem;
         font-weight: 300;
@@ -46,7 +46,7 @@
     font-family: "pct-icon";
     content: $icon-angle-down;
     font-size: 0.75rem;
-    color: $primaryDeepColor;
+    color: $secondaryColor;
     position: absolute;
     z-index: 1;
     top: 50%;
@@ -76,7 +76,7 @@
 }
 
 .pct-ui.form.error select {
-    border-color: $colorRed;
+    border-color: $colorPinkRed;
     -webkit-box-shadow: none;
     box-shadow: none;
     margin: 0.125rem 0 0 0;

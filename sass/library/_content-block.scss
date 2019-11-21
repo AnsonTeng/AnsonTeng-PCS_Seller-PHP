@@ -1,0 +1,513 @@
+//買賣家中心內容區塊
+.content-block {
+    @extend %shadow-style-block-2;
+    background-color: #fff;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    //內容區塊標題
+    .content-title {
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0.75rem 0.9375rem;
+        border-bottom: 1px solid $colorLightGray;
+
+        span.required {
+            position: absolute;
+            font-size: 0.75rem !important;
+            color: $colorPinkRed;
+            font-weight: 400 !important;
+            margin-top: -5px;
+            margin-left: 0px;
+        }
+    }
+
+    //內容區塊內容區
+    .content-description {
+        padding: 1.25rem 1.25rem;
+
+        &.no-padding {
+            padding: 0;
+        }
+
+        p {
+            &.break-text {
+                font-weight: 300;
+                font-size: 0.875rem;
+                line-height: 20px;
+                margin-bottom: 10px;
+
+                .pct-icon {
+                    color: $primaryColor;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        @media (max-width: $break-sm) {
+            p {
+                &.break-text {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+        //左右欄位形式表單
+        .form-column {
+            display: flex;
+            flex-wrap: wrap;
+
+            .zipcode {
+                flex-basis: 100px;
+                margin-left: 20px;
+            }
+
+            @media (max-width: 611px) {
+                .zipcode {
+                    margin-left: 0px;
+                }
+            }
+
+            .two-column,
+            .three-column {
+                flex: 1;
+                margin-left: 20px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                .pct-ui.form {
+                    flex: 1;
+
+                    input[type="text"],
+                    input[type="tel"] {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: $break-xs) {
+            .form-column {
+                display: block;
+
+                .two-column,
+                .three-column {
+                    margin-left: 0px;
+                }
+            }
+        }
+
+        //關於表單的重新設定
+        .pct-ui.form,
+        .pct-ui.form-label,
+        .pct-ui.form-textarea-label {
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+
+            &.error {
+                margin-bottom: 15px;
+            }
+        }
+
+        @media (max-width: $break-sm) {
+            .pct-ui.form,
+            .pct-ui.form-label,
+            .pct-ui.form-textarea-label {
+                margin-bottom: 15px;
+            }
+        }
+
+        //帶有單位的表單-後
+        .unit-after {
+            position: relative;
+
+            &:after {
+                position: absolute;
+                font-size: 0.875rem;
+                right: 15px;
+                top: 13px;
+                color: #555555;
+                font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+            }
+        }
+
+        //帶有單位的表單-前
+        .unit-before {
+            position: relative;
+
+            &:before {
+                position: absolute;
+                font-size: 0.875rem;
+                left: 15px;
+                top: 13px;
+                color: #c0c0c0;
+                font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+            }
+        }
+
+        label {
+            display: block;
+            font-weight: 500 !important;
+            position: relative;
+            min-width: 130px;
+            max-width: 220px;
+            padding-right: 15px !important;
+
+            &.required:after {
+                content: "*";
+                position: absolute;
+                font-size: 0.815rem;
+                color: $colorPinkRed;
+                font-weight: 400 !important;
+                margin-top: -8px;
+                margin-left: 3px;
+            }
+        }
+
+        .form-break {
+            display: block;
+
+            label {
+                margin-bottom: 8px;
+            }
+        }
+
+        .radio-wrap {
+            display: flex;
+        }
+
+        input[type="radio"]:checked + label,
+        input[type="radio"]:not(:checked) + label {
+            font-weight: 400 !important;
+        }
+
+        p.description-title {
+            font-size: 1.125rem;
+            margin-bottom: 15px;
+            word-break: normal;
+        }
+
+        p.description-text {
+            display: block;
+            font-size: 0.9375rem;
+            font-weight: 300;
+            line-height: 24px;
+            margin-bottom: 15px;
+            word-break: normal;
+
+            a {
+                text-decoration: underline;
+                color: $primaryDeepColor;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .pct-ui.form-label {
+            .column-form {
+                display: flex;
+
+                .pct-ui.form {
+                    margin-right: 15px;
+                }
+            }
+
+            //輸入框旁邊有文字
+            .pct-ui.form.text-with-input {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                // flex:1;
+
+                p {
+                    position: relative;
+                    font-weight: 300;
+                    font-size: 0.9375rem;
+
+                    &.no-align {
+                        padding: 0 10px;
+                    }
+
+                    &.align-right {
+                        padding-left: 15px;
+                    }
+
+                    &.align-left {
+                        padding-left: 0px;
+                        padding-right: 15px;
+                    }
+
+                    &.required:after {
+                        content: "*";
+                        position: absolute;
+                        font-size: 0.815rem;
+                        color: $colorPinkRed;
+                        font-weight: 400 !important;
+                        margin-top: -8px;
+                        margin-left: 3px;
+                    }
+                }
+            }
+
+            //只有文字
+            .pct-ui.form.text-without-input {
+                display: flex;
+                align-items: center;
+
+                p {
+                    font-weight: 300;
+                    font-size: 0.9375rem;
+
+                    &.no-align {
+                        padding: 0 10px;
+                    }
+
+                    &.align-right {
+                        padding-left: 10px;
+                    }
+
+                    &.align-left {
+                        padding-left: 0px;
+                        padding-right: 10px;
+                    }
+
+                    &.data-text {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        .pct-ui.accordion {
+            margin-top: -1px;
+        }
+    }
+
+    .content-action {
+        text-align: center;
+    }
+}
+
+@media (max-width: $break-lg) {
+    .content-description {
+        .form-lg-break {
+            display: block;
+            // margin-bottom: 20px;
+
+            label {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-md) {
+    .content-description {
+        //關於表單的重新設定
+        .pct-ui.form-textarea-label {
+            margin-bottom: 20px !important;
+        }
+
+        .pct-ui.form-textarea-label {
+            label {
+                padding: 0 0.5rem 0.15rem 0;
+                display: block;
+            }
+        }
+
+        .form-m-break {
+            display: block;
+            // margin-bottom: 20px;
+
+            label {
+                margin-bottom: 8px;
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    .content-description {
+        .form-sm-break {
+            display: block;
+            // margin-bottom: 20px;
+
+            label {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+//至底按鈕BAR
+
+.seller-action-bar-fixed {
+    transition: bottom 0.3s;
+}
+
+.seller-action-bar-fixed.float-bar.seller-action-bar-hidden {
+    bottom: -100%;
+}
+
+.seller-action-bar,
+.seller-action-bar-fixed {
+    .action-bar-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .alert-box {
+            flex: 4;
+            font-size: 0.8125rem;
+            font-weight: 300;
+
+            p {
+                display: none;
+                line-height: 22px;
+            }
+
+            span {
+                display: none;
+                color: $primaryColor;
+            }
+
+            ul li {
+                color: $primaryColor;
+                font-weight: 400;
+                margin-right: 3px;
+                line-height: 18px;
+                display: none;
+            }
+        }
+
+        .action-btn-box {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &.error {
+        .alert-box {
+            p,
+            span,
+            ul {
+                display: inline-block;
+            }
+
+            ul li {
+                display: inline-block;
+
+                &:after {
+                    content: "/";
+                    padding: 5px;
+                    color: $colorGrayBlack;
+                }
+
+                &:last-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &.float-bar {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;
+        padding: 8px 0;
+        @extend %shadow-style-inner-block;
+        background-color: $colorWhite;
+        animation: action-bar 0.5s;
+
+        .action-btn-box {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    &.shrink-float-bar {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: -100%;
+        z-index: 1000;
+        padding: 8px 0;
+        @extend %shadow-style-inner-block;
+        background-color: $colorWhite;
+        animation: action-bar 0.5s;
+
+        .action-btn-box {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+@media (max-width: $break-lg) {
+    .seller-action-bar,
+    .seller-action-bar-fixed {
+        &.error {
+            .alert-box {
+                flex-basis: 320px;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    .seller-action-bar,
+    .seller-action-bar-fixed {
+        .action-bar-wrap {
+            display: block;
+        }
+
+        &.error {
+            .alert-box {
+                text-align: center;
+            }
+
+            &.float-bar {
+                &.error {
+                    .alert-box {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+
+    .seller-action-bar-fixed {
+        .action-bar-wrap {
+            .action-btn-box {
+                // justify-content: center;
+                a {
+                    // width: 100%;
+                    text-align: center;
+                    flex-basis: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xxs) {
+    .seller-action-bar-fixed {
+        .action-bar-wrap {
+            .action-btn-box {
+                a {
+                    padding: 0.625rem 0.8125rem 0.5rem 0.8125rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

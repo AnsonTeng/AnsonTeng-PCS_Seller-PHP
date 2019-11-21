@@ -1,0 +1,1271 @@
+//變數
+// @import 'library/_variables';
+//混用
+// @import 'library/_mixin';
+//繼承
+// @import 'library/_extend';
+
+@import "layout.scss";
+
+//－－－ Page Components －－－
+
+//animation
+@import "library/_animation";
+
+//版面--格線
+@import "library/_grid";
+
+//卡片
+@import "library/_card";
+
+//TAB導航
+@import "library/_tabnav";
+
+//頁碼
+@import "library/_pagination";
+
+// 表單
+@import "library/_forms";
+
+//區塊內容
+@import "library/_content-block";
+
+//折疊內容
+@import "library/_accordion";
+
+//表格內容
+@import "library/_table";
+
+//表格－訂單管理/大量修改/評價/聊聊
+@import "library/_table-backendlist";
+
+//區塊－訂單清單
+@import "library/_section-InfoList";
+
+//表格－大量修改
+@import "library/_slide-panel-batchedit";
+
+//上傳檔案
+@import "library/_file-upload";
+
+//商品列表
+.grid-content {
+    padding: 5px 0 0 0;
+}
+
+@media (max-width: $break-xs) {
+    .grid-content {
+        padding: 5px 0 30px 0;
+    }
+}
+
+//搜尋群組中加「搜尋類別」下拉選單
+.productList-searchBarGroup {
+    .inputGroup {
+        .pct-ui.form {
+            select {
+                min-width: 100px;
+                max-width: 150px;
+                position: relative;
+                left: 1px;
+            }
+        }
+    }
+}
+
+//搜尋群組中的「搜尋」按鈕（放大鏡）
+.searchBarGroup-searchBtn {
+    line-height: 40px;
+    width: 36px;
+    color: $secondaryColor;
+    > .pct-icon {
+        position: relative;
+        top: 2px;
+    }
+}
+
+//商品列表-新增商品卡片
+.pct-ui.card-edit-add {
+    @extend %shadow-style-card;
+    // background-color: $colorGreyishWhite!important;
+    border: none !important;
+    border-radius: 2px;
+    transition: 0.3s;
+
+    &:hover {
+        @extend %cardhover;
+        border: none !important;
+    }
+
+    .add-to-list {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $accentColor;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        top: 50%;
+        left: 50%;
+        z-index: 5;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        .pct-icon {
+            font-size: 1.6rem;
+            color: #fff;
+            line-height: 50px;
+        }
+    }
+
+    .add-to-list-text {
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+        position: absolute;
+        top: 64%;
+        left: 50%;
+        z-index: 5;
+        transform: translate(-50%, -50%);
+    }
+
+    //  產品圖
+    .card-figure {
+        .card-figure-inner {
+            .card-figure-img {
+                background-color: #eff3f6 !important;
+
+                .pct-cion.icon-picture {
+                    font-size: 3.5rem;
+                    color: $colorLightGreen;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    z-index: 5;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+    .card-edit-action {
+        border-top: none !important;
+    }
+}
+
+//新增商品
+.content-description {
+    //上傳圖片
+    .upload-product-img {
+        .upload-img-num {
+            margin: 25px 0 15px 0;
+            text-align: right;
+            font-size: 0.8125rem;
+            background-color: #fafbfc;
+            padding: 8px 15px;
+
+            span.current {
+                letter-spacing: 2px;
+                color: $secondaryColor;
+            }
+        }
+
+        .pct-ui.img-manager {
+            display: inline-block;
+            vertical-align: top;
+            width: 160px;
+            height: 160px;
+            margin: 0 5px 5px 0;
+
+            //  有產品圖
+            .content-fill {
+                height: 100%;
+                position: relative;
+
+                &.processing {
+                    border: 2px solid #f5f8f9;
+                }
+            }
+
+            //  產品圖上傳
+            .content-upload {
+                label#filedrag {
+                    width: 160px;
+                    height: 160px;
+                    background-color: #f5f8f9;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+
+                input[type="file"] {
+                    display: none;
+                }
+
+                p {
+                    display: inline-block;
+                    font-weight: 500;
+                    font-size: 0.875rem;
+
+                    .pct-icon {
+                        color: $secondaryColor;
+                        font-size: 1.2rem;
+                        vertical-align: bottom;
+                    }
+                }
+
+                .icon-picture {
+                    color: $colorDeepLightGreen;
+                    font-size: 3rem;
+                }
+            }
+
+            //  產品圖
+            .upload-figure {
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                .primary-tag {
+                    position: absolute;
+                    z-index: 10;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 50px;
+                    padding: 5px 6px;
+                    color: $colorWhite;
+                    font-size: 0.8125rem;
+                    bottom: 8px;
+                    left: 3px;
+                }
+
+                .rotate-btn {
+                    position: absolute;
+                    left: 5px;
+                    top: 5px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    z-index: 10;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: $colorWhite;
+                    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+
+                    li.pct-icon {
+                        font-size: 1.2rem;
+                        position: static;
+                        width: auto;
+                        height: auto;
+                        color: $secondaryColor;
+                        text-align: center;
+                        line-height: 30px;
+                    }
+
+                    &:hover {
+                        transition: 0.3s;
+                        transform: translateY(-2px);
+                    }
+                }
+
+                .edit-btn {
+                    position: absolute;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    z-index: 10;
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 50%;
+                    background-color: rgba(0, 0, 0, 0.35);
+
+                    li.pct-icon {
+                        font-size: 0.875rem;
+                        position: static;
+                        width: auto;
+                        height: auto;
+                        color: $colorWhite;
+                        text-align: center;
+                        line-height: 28px;
+                    }
+
+                    &.delete-btn {
+                        bottom: 5px;
+                        right: 8px;
+                    }
+
+                    &:hover {
+                        transition: 0.3s;
+                        transform: translateY(-2px);
+                    }
+                }
+
+                .figure-inner {
+                    @extend %figure-inner;
+
+                    .figure-img {
+                        @extend %figure-img;
+                        border-radius: 2px 2px 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .pct-ui.form-label {
+        &.product-title input[type="text"] {
+            width: 450px;
+        }
+
+        &.product-price input[type="text"] {
+            width: 150px;
+        }
+
+        //輸入框旁邊有文字
+        .pct-ui.form.text-with-input {
+            input[type="text"].stock-num {
+                max-width: 80px;
+                flex-shrink: 0;
+            }
+
+            input[type="text"].processing-day {
+                width: 80px;
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    @media (max-width: $break-xs) {
+        .pct-ui.form-label.product-price {
+            .column-form {
+                display: block;
+
+                .pct-ui.form.text-with-input {
+                    p {
+                        &.no-align {
+                            padding: 0 10px 0 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: $break-xxs) {
+        .pct-ui.form-label {
+            //輸入框旁邊有文字
+            .pct-ui.form.text-with-input {
+                input[type="text"].stock-num {
+                    max-width: 100%;
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+
+    //商品標題/規格
+    .pct-ui.tab-nav-bar {
+        .pct-ui.tab-pointing {
+            box-shadow: none;
+            background-color: #fafbfc;
+            border-bottom: none;
+
+            > ul.tab-items {
+                //按鈕預設至左
+                display: flex;
+                align-items: flex-end;
+                font-size: 0.875rem;
+
+                > li {
+                    & a {
+                        display: block;
+                        padding: 1rem 1.8rem 0.8rem 1.8rem;
+                        margin: 0 0.2rem;
+                        border-bottom: none;
+                        background-color: #eff3f4;
+
+                        .icon-overseas {
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 16px;
+                            height: 16px;
+                            background-size: cover;
+                            margin-right: 5px;
+
+                            &.th {
+                                background-image: url(../img/icon-overseas-th.svg);
+                            }
+
+                            &.tw {
+                                background-image: url(../img/icon-overseas-tw.svg);
+                            }
+
+                            &.eng {
+                                background-image: url(../img/icon-overseas-us.svg);
+                            }
+                        }
+
+                        &:hover {
+                            color: #547c8e;
+                            background-color: #eff3f4;
+                        }
+
+                        &.active {
+                            color: #547c8e;
+                            pointer-events: none;
+                            border-top: 3px solid #547c8e;
+                            background: $colorWhite;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tab-panel {
+            padding: 1.25rem 1.25rem;
+            line-height: 1rem;
+        }
+    }
+
+    //規格切換
+    .variations {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    @media (max-width: $break-xxs) {
+        //規格切換
+        .variations {
+            &.single {
+                .pct-ui.form.text-with-input {
+                    display: block !important;
+
+                    p {
+                        &.align-right {
+                            padding-left: 0px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //新增規格
+    .pct-ui.btn.add-variation {
+        .pct-btn-icon {
+            color: $secondaryColor;
+        }
+    }
+
+    //保固
+    .product-warranty {
+        align-items: center !important;
+    }
+
+    .warrantytime {
+        display: none;
+    }
+
+    //重量
+    .pct-ui.form.product-weight {
+        input[type="text"] {
+            width: 315px;
+        }
+
+        &:after {
+            content: "kg";
+        }
+    }
+
+    //材積
+    .pct-ui.form.product-volumatic {
+        input[type="text"] {
+            width: 150px;
+        }
+
+        &:after {
+            content: "cm";
+        }
+    }
+
+    //物流
+    .logistic-wrap {
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: $break-xs) {
+        .logistic-wrap {
+            .pct-ui.accordion {
+                //摺疊標題
+                .accordion-caption {
+                    .caption-inner {
+                        .caption-title-box {
+                            flex-basis: 120px;
+
+                            .caption-title {
+                                font-size: 0.875rem;
+                                line-height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: $break-xxs) {
+        .logistic-wrap {
+            .pct-ui.accordion {
+                //摺疊標題
+                .accordion-caption {
+                    padding: 10px 10px 10px 10px;
+
+                    .caption-inner {
+                        display: flex;
+                        align-items: center;
+
+                        .caption-figure {
+                            flex-basis: 34px;
+                            margin-right: 7px;
+                        }
+
+                        .caption-title-box {
+                            flex-shrink: 0;
+                            flex-basis: 90px;
+
+                            .caption-title {
+                                font-size: 0.8125rem;
+                                line-height: 14px;
+                            }
+                        }
+                    }
+
+                    .caption-text-box {
+                        font-size: 0.875rem;
+                        line-height: 16px;
+                        flex-basis: 155px;
+                        text-align: right;
+
+                        a {
+                            color: $primaryColor;
+
+                            &.pct-icon {
+                                vertical-align: middle;
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//規格
+.variation-box {
+    position: relative;
+    background-color: $colorWhite;
+    border: 1px solid $colorLightGray;
+    padding: 15px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+    .spec-wrap {
+        display: flex;
+        align-items: center;
+
+        .pct-icon {
+            &.icon-angle-right {
+                color: $colorGray;
+                margin-top: 20px;
+                margin-right: 10px;
+            }
+        }
+
+        .pct-ui.form-label {
+            input[type="text"] {
+                width: 290px;
+            }
+
+            margin-right: 10px;
+            margin-bottom: -10px !important;
+        }
+    }
+
+    .pct-ui.form-label.spec-stock {
+        flex-shrink: 0;
+        flex-basis: 60px;
+        margin-right: 10px;
+        margin-bottom: -10px !important;
+    }
+
+    .pct-icon {
+        &.icon-trash {
+            color: $colorDeepGray;
+            position: absolute;
+            font-size: 1.3rem;
+            right: 35px;
+            top: 50%;
+            margin-top: -10px;
+
+            &:hover {
+                color: $secondaryColor;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-lg) {
+    //規格
+    .variation-box {
+        padding: 15px 15px 10px 15px;
+        display: block;
+        margin-bottom: 20px;
+
+        .spec-wrap {
+            .pct-icon {
+                &.icon-angle-right {
+                    margin-top: 0px;
+                }
+            }
+
+            .pct-ui.form-label {
+                flex: 1;
+
+                input[type="text"] {
+                    width: 100%;
+                }
+
+                margin-bottom: 10px !important;
+            }
+        }
+
+        .pct-icon {
+            &.icon-trash {
+                width: 38px;
+                height: 38px;
+                cursor: pointer;
+                border-radius: 50%;
+                background-color: $colorDeepLightGreen;
+                box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+                color: $colorWhite;
+                text-align: center;
+                line-height: 38px;
+                position: absolute;
+                font-size: 1.3rem;
+                right: -10px;
+                top: -5px;
+
+                &:hover {
+                    color: $colorWhite;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    //規格
+    .variation-box {
+        .spec-wrap {
+            display: block;
+
+            .pct-icon {
+                &.icon-angle-right {
+                    text-align: center;
+                    font-size: 1.3rem;
+                    margin-bottom: 5px;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+}
+
+//end of .content-description
+//燈箱
+.pct-ui.modal {
+    .modal-content {
+        // 保固時間
+        .warranty-wrap {
+            display: flex;
+        }
+
+        .pct-ui.form.number {
+            input[type="number"] {
+                width: 150px;
+            }
+        }
+
+        // 下拉選單
+        .pct-ui.form.select {
+            margin-top: 7px;
+            margin-bottom: 0px !important;
+            margin-left: 15px;
+
+            select {
+                min-width: 120px;
+            }
+        }
+
+        @media (max-width: $break-xs) {
+            .pct-ui.form.number {
+                input[type="number"] {
+                    width: 70px;
+                }
+            }
+
+            // 下拉選單
+            .pct-ui.form.select {
+                select {
+                    min-width: 100px;
+                }
+            }
+        }
+
+        //材積
+        .pct-ui.form.shippingcost {
+            position: relative;
+
+            input[type="text"] {
+                padding-left: 30px;
+            }
+
+            &:before {
+                position: absolute;
+                font-size: 0.875rem;
+                left: 15px;
+                top: 13px;
+                content: "฿";
+                color: $colorGray;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-lg) {
+    .content-description {
+        .pct-ui.form-label {
+            &.product-title {
+                .pct-ui.form {
+                    width: 100%;
+                }
+            }
+
+            &.product-title input[type="text"] {
+                width: 100%;
+            }
+
+            &.product-price {
+                label {
+                    margin-bottom: 10px;
+                }
+
+                display: block;
+            }
+
+            &.product-price input[type="text"] {
+                width: 150px;
+            }
+        }
+
+        //商品分類
+        .pct-ui.form-label.product-category {
+            .column-form {
+                display: block;
+                margin-bottom: 30px;
+
+                .pct-ui.form {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        //重量
+        .pct-ui.form.product-weight {
+            input[type="text"] {
+                width: 100%;
+            }
+        }
+
+        //材積
+        .pct-ui.form-label.volumatic {
+            display: block;
+
+            label {
+                margin-bottom: 5px;
+            }
+
+            .column-form {
+                display: block;
+
+                .pct-ui.form {
+                    margin-right: 0;
+
+                    input[type="text"] {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    .content-description {
+        //上傳圖片
+        .upload-product-img {
+            .pct-ui.img-manager {
+                width: 140px;
+                height: 140px;
+            }
+
+            //  產品圖上傳
+            .content-upload {
+                label#filedrag {
+                    min-width: auto;
+                    max-width: auto;
+                    width: 140px !important;
+                    height: 140px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xs) {
+    .content-description {
+        //上傳圖片
+        .upload-product-img {
+            .pct-ui.img-manager {
+                width: 180px;
+                height: 180px;
+            }
+
+            //  產品圖上傳
+            .content-upload {
+                label#filedrag {
+                    width: 180px !important;
+                    height: 180px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xxs) {
+    .content-description {
+        //上傳圖片
+        .upload-product-img {
+            .pct-ui.img-manager {
+                width: 130px;
+                height: 130px;
+            }
+
+            //  產品圖上傳
+            .content-upload {
+                label#filedrag {
+                    width: 130px !important;
+                    height: 130px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .content-description {
+        //上傳圖片
+        .upload-product-img {
+            .pct-ui.img-manager {
+                width: 120px;
+                height: 120px;
+            }
+
+            //  產品圖上傳
+            .content-upload {
+                label#filedrag {
+                    width: 120px !important;
+                    height: 120px !important;
+                }
+            }
+        }
+    }
+}
+
+//大量上傳
+.xsl-download-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .xsl-download-block {
+        flex: 4;
+
+        .xsl-download {
+            padding: 0 15%;
+            position: relative;
+
+            img {
+                border-radius: 50%;
+            }
+
+            .download-btn {
+                width: 55px;
+                height: 55px;
+                position: absolute;
+                right: 45px;
+                bottom: 10px;
+                cursor: pointer;
+                font-size: 1.9rem;
+                text-align: center;
+                line-height: 60px;
+                color: $colorWhite;
+                background-color: $secondaryColor;
+                transition: 0.3s;
+                z-index: 10;
+                border-radius: 50%;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+                transform: translatey(0px);
+                animation: floatAnimation 1.2s ease-in-out infinite;
+
+                &:hover {
+                    color: $colorWhite;
+                    background-color: $primaryDeepColor;
+                }
+            }
+        }
+    }
+
+    .xsl-download-text {
+        flex: 7;
+        text-align: left;
+    }
+}
+
+//大量上傳拖拉檔案
+.xsl-file-drop-area {
+    position: relative;
+    background-color: $colorWhiteGreen;
+    border-radius: 4px;
+    padding: 25px;
+
+    .pct-icon.icon-cloud-uploading {
+        position: absolute;
+        top: 30px;
+        color: $colorDeepLightGreen;
+        font-size: 4rem;
+    }
+
+    &.is-active {
+        background-color: rgba(239, 243, 246, 0.5);
+        border: 2px solid $colorLightGreen;
+    }
+}
+
+//大量上傳紀錄
+.bulklist-list-table {
+    margin: 20px 0 20px 0;
+}
+
+//大量上傳燈箱
+#pct-lightbox-xlsstep {
+    .xsl-download-img {
+        background-color: #fdfce6;
+        padding: 0 30%;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+
+    @media (max-width: $break-xs) {
+        .xsl-download-img {
+            padding: 0 10%;
+        }
+    }
+}
+
+@media (max-width: $break-lg) {
+    .xsl-download-wrap {
+        display: block;
+
+        .xsl-download-block {
+            width: 400px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+
+            .xsl-download {
+                .download-btn {
+                    width: 65px;
+                    height: 65px;
+                    position: absolute;
+                    right: 50px;
+                    bottom: 10px;
+                    font-size: 2rem;
+                    text-align: center;
+                    line-height: 70px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-md) {
+    .xsl-download-wrap {
+        display: block;
+
+        .xsl-download-block {
+            width: 350px;
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    .xsl-download-wrap {
+        display: block;
+
+        .xsl-download-block {
+            width: 250px;
+
+            .xsl-download {
+                .download-btn {
+                    width: 55px;
+                    height: 55px;
+                    position: absolute;
+                    right: 30px;
+                    bottom: 10px;
+                    font-size: 2rem;
+                    text-align: center;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+}
+
+// 商品選取與統計
+.product-list-statistics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 6px;
+
+    background-color: $colorLightGray;
+    // border: 1px solid red;
+    padding: 0 8px;
+    height: 54px;
+
+    .product-list-statistics-subHeader {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0px 5px;
+
+        .subHeader-text {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 0.9375rem;
+            color: $colorDeepGray;
+            margin-right: 6px;
+
+            span {
+                color: $primaryColor;
+
+                &.cat-now-text:before {
+                    content: "";
+                    padding: 4px;
+                    color: $colorDeepGray;
+                }
+
+                &.cat-now-text:after {
+                    content: "";
+                    padding: 4px;
+                    color: $colorDeepGray;
+                }
+            }
+
+            &:last-child {
+                span {
+                    color: $colorGrayBlack;
+                }
+            }
+        }
+    }
+
+    // 按鈕群組
+    .product-list-statistics-btnGroup {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .pct-ui.form.checkbox {
+        margin-bottom: 0px;
+        margin-right: 12px;
+        label input {
+            position: relative;
+            top: -1px;
+        }
+        label span {
+            font-weight: 400;
+            font-size: 0.9375rem;
+            color: $colorGrayBlack;
+        }
+    }
+}
+
+@media (max-width: $break-md) {
+    .product-list-statistics {
+        height: auto;
+
+        .product-list-statistics-subHeader {
+            flex-direction: column;
+            align-items: flex-start;
+            // align-items: center;
+            margin: 15px 0;
+
+            .pct-ui.form.checkbox {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    .product-list-statistics {
+        .product-list-statistics-subHeader {
+            flex-direction: row;
+            align-items: center;
+
+            .pct-ui.form.checkbox {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xs) {
+    .product-list-statistics {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .product-list-statistics-subHeader {
+            flex-direction: row;
+            align-items: center;
+            margin: 2px 0 0 0;
+            padding: 15px 10px;
+            width: 100%;
+
+            .pct-ui.form.checkbox {
+                margin-bottom: 0px;
+                margin-right: 12px;
+                label span {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+
+        // 按鈕群組
+        .product-list-statistics-btnGroup {
+            width: 100%;
+            position: relative;
+            top: -6px;
+            left: 0px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            a.pct-ui.btn-xs {
+                width: 100%;
+                text-align: center;
+                margin: 5px 4px;
+            }
+        }
+    }
+}
+
+.td-inline {
+    // 分類標題
+    .categoriesTitle {
+        font-size: 0.8125rem;
+        font-weight: 500;
+    }
+    // 分類
+    .categories {
+        display: inline-block;
+        li {
+            font-size: 0.8125rem;
+            text-align: left;
+            display: inline-block;
+            margin-right: 3px;
+            margin-bottom: 3px;
+            color: $accentColor;
+            &:after {
+                content: ">";
+                font-size: 0.8125rem;
+                color: $colorDeepGray;
+            }
+            &:last-child:after {
+                content: "";
+            }
+        }
+    }
+
+    .product-info-title {
+        text-align: left;
+        font-size: 0.8125rem;
+        @include text-overflow(3);
+        line-height: 1rem;
+        height: 3rem;
+    }
+
+    .content-block {
+        box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
+        background-color: #fff;
+        margin-bottom: 0px;
+        overflow: hidden; //內容區塊標題
+
+        //內容區塊內容區
+        .content-description {
+            padding: 0;
+        }
+    }
+}
+
+// 全部上架按鈕
+.sellAllBtn.sellAllBtn-hidden {
+    display: none;
+}
+
+// 待上架商品上架確認
+#pct-lightbox-readyOnTheMarket {
+    .modal-content {
+        .checkbox {
+            label {
+                span {
+                    a {
+                        text-decoration: underline;
+                        color: $primaryDeepColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.seller-action-bar-fixed {
+    transition: all 0.3s;
+    opacity: 1;
+}
+.seller-action-bar-fixed.seller-action-bar-fixed-hidden {
+    bottom: -100px;
+    opacity: 0;
+}

@@ -1,0 +1,15 @@
+//表單--月曆表單
+.datepicker {
+    width: 360px;
+
+    table {
+        table-layout: fixed;
+        width: 100%;
+    }
+}
+
+@media (max-width: $break-xxs) {
+    .datepicker {
+        width: 260px;
+    }
+}

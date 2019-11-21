@@ -1,0 +1,426 @@
+
+//batchedit
+@import '_slide-panel-batchedit-pexhlist';
+
+//panel 大量編輯內容
+
+
+
+// ------ 表格類型－大量編輯（覆寫_table-backendlist）--------------------------------------
+.tableBox-batchedit {
+
+    .pct-ui.btn{
+        margin-left:0;
+        margin-right:0;
+    }
+
+    .table__thead{
+        position: sticky;
+        top: -6px;
+    }
+    .normal-table td{
+        border-bottom:0;
+    } 
+
+    .table__tbody {
+
+        .categories{
+
+            td{
+                padding: 0;
+            }
+        }
+
+
+        tbody {
+            // border-bottom-width: 0px;
+
+
+            tr {
+                background-color: $colorWhite;
+                padding: 8px; 
+
+
+                td {
+                    vertical-align: top;
+                    // border: 10px;
+                    padding: 10px;
+
+                    &.single{
+                        vertical-align: middle;
+                    }
+
+
+                    .content-description {
+                        margin-bottom: 0;
+
+                        .pct-ui.form {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    .tableDeta-box {
+                        text-align: center;
+                    }
+
+                    .productInfoGroup {
+                        align-items: flex-start;
+
+                        // 商品資訊群組 - 商品資訊 - 主標 - 文字
+                        .productInfo-info-title-text {
+                            @include text-overflow(2);
+                            line-height: 1.25rem;
+                            height: 2.5rem;
+                        }
+                    }
+
+                    .btn-apply {
+                        margin-top: 4px;
+                    }
+
+                    .radio-wrap {
+                        text-align: left;
+                        padding-left: 6px;
+                    }
+                }
+                
+            }
+                //列表區塊最後一個區塊要陰影
+
+                tr:last-child(){
+                    td:last-child(){
+                        box-shadow: 0 8px 7px -7px rgba(225, 225, 225, 0);
+                    }
+                }
+
+        }
+    }
+
+
+}
+
+
+#pct-lightbox-editspenstock{
+
+    .pct-ui.form-label{
+
+        flex:1;
+
+    }
+
+    .variation-box{
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width:$break-md) {
+
+    // 表格類型－大量編輯
+    .tableBox-batchedit {
+
+        .table__tbody {
+
+            .normal-table td {
+                padding: 15px 10% 15px 20%;
+
+                .tableDeta-box {
+                    text-align: left;
+                }
+
+                .productInfoGroup {
+                    position: relative;
+                    left: 0px;
+                    align-items: flex-start;
+
+                    // 商品資訊群組 - 商品資訊 - 主標 - 文字
+                    .productInfo-info-title-text {
+                        @include text-overflow(1);
+                        line-height: 1.25rem;
+                        height: 1.25rem;
+                    }
+                }
+
+                input {
+                    margin: 0;
+                }
+
+                .btn-apply {
+                    margin-top: 12px;
+                }
+
+            }
+
+            td:before {
+                position: absolute;
+                top: 10px;
+                left: 20px;
+                width: 14%;
+                white-space: nowrap;
+                content: attr(data-title);
+                text-align: right;
+                font-size: 0.8125rem;
+                font-weight: 500;
+            }
+
+
+
+            tbody {
+                tr:last-child(){
+                    
+                    td{
+                         box-shadow: 0 8px 8px -8px rgba(225, 225, 225, 0.0);
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+
+
+@media (max-width:$break-xs) {
+
+    // 表格類型－大量編輯
+    .tableBox-batchedit {
+
+        .table__tbody {
+
+            .normal-table td {
+                padding: 15px 10px 15px 10px;
+
+                .tableDeta-box {
+                    text-align: left;
+                }
+                .productInfoGroup {
+                    left: -6px;
+                }
+            }
+
+            td:before {
+                position: relative;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                line-height: 30px;
+                text-align: left;
+                font-size: 0.8125rem;
+
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+
+
+// ------ 表格類型－大量編輯（覆寫_table-backendlist）End --------------------------------------
+
+
+
+// 分類
+.tableBox-batchedit .table__tbody tbody .categories {
+
+    td{
+        border-bottom:0px;
+    }
+
+    .tableData-header {
+        height: 46px;
+        border-bottom: 2px solid $colorGreyishWhite;
+
+    }
+}
+@media (max-width: $break-md) {
+    .tableBox-batchedit .table__tbody tbody .categories {
+
+        td:first-child{
+         background-color: #EFF3F6;
+        }
+        .tableData-header {
+            height: auto;
+            background-color: rgba(#fff, 0);
+            border-bottom: 0px solid $colorGreyishWhite !important;
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    .tableBox-batchedit .table__tbody tbody .categories {
+
+        td:first-child{
+            padding: 10px 10px 10px 20%;
+        }
+        .tableData-header {
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: $break-xs) {
+    .tableBox-batchedit .table__tbody tbody .categories {
+        td:first-child{
+            padding: 5px 15px 10px 15px;
+
+        }
+    }
+
+    .tableBox-batchedit .table__tbody tbody .categories {
+        .tableData-header {
+            height: auto;
+        }
+    }
+}
+
+
+// 分類標題群組
+.table_flexBox.categoriesGroup{
+    height: auto;    
+}
+.categoriesGroup {
+    text-align: left;
+    position: relative;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3px;
+
+    .categoriesGroup-action {
+        position: relative;
+        left: 20px;
+    }
+}
+
+@media (max-width: $break-md) {
+    .categoriesGroup {
+        left: -6px;
+        flex-direction: column;
+        align-items: flex-start;
+        .categoriesGroup-action {
+            position: relative;
+            left: -8px;
+        }
+    }
+}
+
+@media (max-width: $break-md) {
+    .categoriesGroup {
+        left: 0px;
+
+        .categoriesGroup-action {
+            position: relative;
+            left: 0px;
+        }
+    }
+}
+
+@media (max-width: $break-xxs) {
+    .categoriesGroup {
+        .categoriesGroup-action {
+            a{
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+.tableBox-batchedit {
+    .md-break-table .normal-table td:first-child{
+        background-color: rgba(#EFF3F6, 0);
+    }
+}
+
+
+// 分類標題
+.categoriesTitle {
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+// 分類
+.categoriesList {
+    display: inline-block;
+    font-weight: 400;
+
+    li {
+        font-size: 0.8125rem;
+        text-align: left;
+        display: inline-block;
+        margin-right: 3px;
+        margin-bottom: 3px;
+        color: $colorDarkGray;
+    }
+    li.arrow {
+        font-size: 0.6875rem;
+        color: $colorGray;
+    }
+    
+}
+@media (max-width: $break-xxs) {
+    .categoriesList {
+        // align-items: flex-start;
+        li {
+            display: inline-block;
+
+        }
+    }
+}
+
+
+// 刪除 table 內陰影與四周間距
+.tableBox-batchedit {
+    .content-block {
+        box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
+        background-color: #fff;
+        margin-bottom: 0px;
+        overflow: hidden; //內容區塊標題
+        //內容區塊內容區
+        .content-description {
+            padding: 0;
+        }
+    }
+}
+
+
+//重量輸入框(覆寫掉product-manage)
+.tableBox-batchedit {
+    .content-description{
+        //重量(覆寫掉product-manage)
+        .pct-ui.form.product-weight {
+            input[type="text"] {
+                padding-right: 36px;
+                // 刪除固定寬度
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

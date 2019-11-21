@@ -9,7 +9,7 @@
 @import "layout.scss";
 
 //animation
-/*@import 'library/_animation';*/
+@import "library/_animation";
 
 //系統公告
 .section-system-ticker {
@@ -36,7 +36,7 @@
         .pct-icon {
             display: inline-block;
             vertical-align: bottom;
-            color: $primaryDeepColor;
+            color: $secondaryColor;
             font-size: 1.25rem;
             padding-right: 5px;
         }
@@ -56,13 +56,13 @@
 //代收款項區塊
 .section-seller-bank-payment {
     display: flex;
-    background: #14a9ba;
+    background: $secondaryColor;
     border-radius: 4px;
     padding: 15px 20px;
-    background: -moz-linear-gradient(left, #14a9ba 1%, #21c8d9 73%);
-    background: -webkit-linear-gradient(left, #14a9ba 1%, #21c8d9 73%);
-    background: linear-gradient(to right, #14a9ba 1%, #21c8d9 73%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#14a9ba', endColorstr='#21c8d9', GradientType=1);
+    background: -moz-linear-gradient(left, $secondaryColor 1%, #21c8d9 73%);
+    background: -webkit-linear-gradient(left, $secondaryColor 1%, #21c8d9 73%);
+    background: linear-gradient(to right, $secondaryColor 1%, #21c8d9 73%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#14b9d5', endColorstr='#21c8d9', GradientType=1);
     min-height: 120px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 
@@ -99,8 +99,8 @@
         .balance-num {
             color: $colorWhite;
             font-size: 2.2rem;
-            text-align: center;
-            padding: 10px 0;
+            text-align: left;
+            padding: 15px 0;
 
             span {
                 font-size: 0.875rem;
@@ -271,7 +271,9 @@
         //帳戶餘額
         .current-balance {
             .balance-num {
+                text-align: center;
                 font-size: 2.4rem;
+                padding: 5px 0 15px 0;
             }
         }
     }
@@ -281,13 +283,6 @@
     //代收款項區塊
     .section-seller-bank-payment {
         display: block;
-
-        //帳戶餘額
-        .current-balance {
-            .balance-num {
-                padding: 15px 0;
-            }
-        }
 
         //連結銀行
         .linked-bank-account {
@@ -443,7 +438,7 @@
                             z-index: 2;
                             width: 10px;
                             height: 10px;
-                            background-color: rgba(209, 1, 22, 1);
+                            background-color: rgba($colorPinkRed, 1);
                             border-radius: 50%;
                         }
 
@@ -458,7 +453,7 @@
                             z-index: 2;
                             width: 10px;
                             height: 10px;
-                            background-color: rgba(209, 1, 22, 0.6);
+                            background-color: rgba($colorPinkRed, 0.6);
                             border-radius: 50%;
                             -webkit-animation: rippleAnimation 1s ease-out infinite;
                             animation: rippleAnimation 1s ease-out infinite;
@@ -481,7 +476,7 @@
                                 color: $colorGray;
 
                                 &.unread {
-                                    color: $accentColor;
+                                    color: $primaryColor;
                                 }
                             }
 

@@ -1,0 +1,216 @@
+//表單--Input Number 數量輸入
+%input-number {
+    border-radius: 0;
+    vertical-align: top;
+    text-align: center;
+    width: 100px;
+}
+
+%number-btn {
+    display: inline-block;
+    width: 41px;
+    height: 40.5px;
+    background: #fbfbfb;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #cfd9db;
+    margin-top: 2px;
+    line-height: 40px;
+}
+
+.pct-ui.form.number {
+    display: flex;
+    align-items: center;
+
+    label {
+        font-size: 0.875rem;
+        padding: 0rem 0.5rem 0 0rem;
+    }
+
+    .number-controller {
+        display: flex;
+        align-items: center;
+
+        input[type="number"] {
+            @extend %input-number;
+            margin-top: 8px;
+            -moz-appearance: textfield;
+            -webkit-appearance: textfield;
+            -o-appearance: textfield;
+        }
+
+        .number-btn {
+            flex-shrink: 0;
+            @extend %number-btn;
+            color: $primaryColor;
+
+            .number__decrement {
+                border-right: none;
+                margin-left: -2px;
+            }
+            .number__decrement {
+                border-left: none;
+                margin-right: -2px;
+            }
+        }
+    }
+}
+
+//表單--數字--無法點擊
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+.pct-ui.form-disabled.number {
+    display: flex;
+    align-items: center;
+
+    label {
+        font-size: 0.875rem;
+        padding: 0rem 0.5rem 0 0rem;
+    }
+
+    .number-controller {
+        display: flex;
+        align-items: center;
+
+        input[type="number"] {
+            @extend %input-number;
+            -moz-appearance: textfield;
+            -webkit-appearance: textfield;
+            -o-appearance: textfield;
+            margin-top: 8px;
+        }
+
+        .number-btn {
+            flex-shrink: 0;
+            @extend %number-btn;
+            color: $colorGray;
+            -webkit-text-fill-color: $colorGray;
+            cursor: not-allowed;
+
+            .number__decrement {
+                border-right: none;
+                margin-left: -2px;
+            }
+            .number__decrement {
+                border-left: none;
+                margin-right: -2px;
+            }
+        }
+    }
+}
+
+//Anson
+//表單--Input Number 數量輸入 (自適應)
+%input-number-responsive {
+    border-radius: 0;
+    vertical-align: top;
+    text-align: center;
+    min-width: 52px;
+    height: 36px;
+}
+
+%number-btn-responsive {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: #fbfbfb;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #cfd9db;
+    margin-top: 2px;
+}
+
+.pct-ui.form.number-responsive {
+    label {
+        font-size: 0.875rem;
+        padding: 0rem 0.5rem 0 0rem;
+    }
+
+    .number-controller {
+        display: flex;
+        align-items: center;
+
+        input[type="number"] {
+            @extend %input-number-responsive;
+            margin-top: 8px;
+            -moz-appearance: textfield;
+            -webkit-appearance: textfield;
+            -o-appearance: textfield;
+            padding: 0rem;
+        }
+
+        .number-btn {
+            flex-shrink: 0;
+            @extend %number-btn-responsive;
+            color: $primaryColor;
+            font-size: 0.875rem;
+
+            .number__decrement {
+                border-right: none;
+                margin-left: -2px;
+            }
+            .number__decrement {
+                border-left: none;
+                margin-right: -2px;
+            }
+        }
+    }
+}
+
+//表單--Input Number 數量輸入 (自適應)
+@media (max-width: $break-md) {
+    %input-number-responsive-md {
+        min-width: 36px;
+        max-width: 72px;
+        height: 30px;
+    }
+    %number-btn-responsive-md {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .pct-ui.form.number-responsive {
+        .number-controller {
+            input[type="number"] {
+                @extend %input-number-responsive-md;
+            }
+
+            .number-btn {
+                flex-shrink: 0;
+                @extend %number-btn-responsive-md;
+            }
+        }
+    }
+}
+
+//表單--Input Number 數量輸入 (自適應)
+@media (max-width: $break-xxs) {
+    %input-number-responsive-xxs {
+        max-width: 40px;
+        height: 26px;
+        font-size: 0.8125rem;
+    }
+    %number-btn-responsive-xxs {
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+    }
+
+    .pct-ui.form.number-responsive {
+        .number-controller {
+            input[type="number"] {
+                @extend %input-number-responsive-xxs;
+            }
+
+            .number-btn {
+                flex-shrink: 0;
+                @extend %number-btn-responsive-xxs;
+            }
+        }
+    }
+}

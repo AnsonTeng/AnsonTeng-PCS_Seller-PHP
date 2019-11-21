@@ -1,0 +1,253 @@
+//區塊式- 圖片上傳相關
+.upload-img-wrap {
+    padding: 20px;
+
+    .pct-cion {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-55%);
+        font-size: 5rem;
+        color: $colorLightGreen;
+    }
+
+    label#filedrag {
+        background-color: #ffffff;
+        border-radius: 4px;
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        background-size: 25% auto;
+        transition: 0.3s;
+        cursor: pointer;
+        @extend %shadow-style-block-2;
+
+        &:hover {
+            transition: 0.3s;
+            transform: translateY(-2px);
+        }
+
+        .filedrag-text {
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+            color: $colorLightGreen;
+            letter-spacing: 1px;
+            position: relative;
+            top: 50%;
+            transform: translateY(-170%);
+        }
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+}
+
+.upload-img-result {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #EFF3F6;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .img-result-inner {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    .edit-btn {
+        position: absolute;
+        cursor: pointer;
+        transition: 0.3s;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+
+        li.pct-icon {
+            font-size: 1.7rem;
+            position: static;
+            width: auto;
+            height: auto;
+            color: $accentColor!important;
+            text-align: center;
+
+            &.icon-rotate {
+                line-height: 40px;
+            }
+        }
+
+        &.delete-btn {
+            top: -15px!important;
+            right: -10px!important;
+            
+            .pct-icon{
+                line-height: 40px;
+            }
+
+        }
+
+        &.rotate-btn {
+            bottom: 10px;
+            left: 10px;
+        }
+
+        &:hover {
+            transition: 0.3s;
+            transform: translateY(-2px);
+        }
+    }
+}
+
+@media (max-width: $break-xs) {
+    .upload-img-wrap {
+        padding: 0px;
+
+        .pct-cion {
+            transform: translateY(-65%);
+        }
+
+        label#filedrag {
+            width: 230px;
+            height: 230px;
+            margin-top: 20px;
+
+            .filedrag-text {
+                font-size: 1.2rem;
+                font-weight: 500;
+                text-align: center;
+                color: $colorLightGreen;
+                letter-spacing: 1px;
+                transform: translateY(-200%);
+            }
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+    }
+
+    .upload-img-result {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+
+//單行式 檔案上場
+.file-upload{
+    display:block;
+    text-align:center;
+    font-size:0.8125rem;
+
+    .file-select{
+        display:block;
+        border: 1px solid #BBCCD4;
+        background-color: $colorWhite;
+        color: $colorGrayBlack;
+        border-radius: 2px;
+        cursor:pointer;
+        height:44px;
+        line-height:44px;
+        text-align:left;
+        overflow:hidden;
+        position:relative;
+
+        .file-select-button{
+            border-radius: 3px;
+            background-color: $colorGreyishWhite;
+            border: 1px solid #CCCCCC;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+            padding:0 10px;
+            display:inline-block;
+            height:32px;
+            line-height:32px;
+            color:$colorGrayBlack;
+            min-width:100px;
+            text-align: center;
+            margin-left: 10px;
+        }
+        .file-select-name{
+            line-height:44px;
+            display:inline-block;
+            padding:0 10px;
+        }
+        input[type=file]{
+            z-index:100;
+            cursor:pointer;
+            position:absolute;
+            height:100%;
+            width:100%;
+            top:0;
+            left:0;
+            opacity:0;
+            filter:alpha(opacity=0);
+        }
+
+    }
+}
+
+
+//拖拉式
+.file-drop-wrap {
+    position: relative;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    transition: 0.2s;
+    max-width: 100%;
+}
+
+.file-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.file-msg {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 10px;
+}
+
+@media (max-width:$break-xs) {
+
+        .pct-icon.icon-cloud-uploading {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            color: $colorDeepLightGreen;
+            font-size: 4rem;
+            margin-left: -30px;
+        }
+
+        .file-drop-wrap {
+            display: block;
+            text-align: center;
+            padding: 100px 25px 80px 25px;
+            min-height: auto;
+        }
+
+}

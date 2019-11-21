@@ -1,0 +1,63 @@
+//動畫
+@-webkit-keyframes rippleAnimation {
+    0% {
+        -webkit-transform: scale(1, 1);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(2, 2);
+        opacity: 0;
+    }
+}
+
+
+@keyframes floatAnimation {
+    0% {
+        box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.1);
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.1);
+        transform: translatey(-5px);
+    }
+
+    100% {
+        box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.1);
+        transform: translatey(0px);
+    }
+}
+
+@keyframes floatAnimation-noshadow {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-3px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+
+@keyframes placeHolderShimmer {
+    0% {
+        background-position: -500px 0
+    }
+
+    30% {
+        background-position: -500px 0
+    }
+
+    70% {
+        background-position: 500px 0
+    }
+
+    100% {
+        background-position: 500px 0
+    }
+}

@@ -1,0 +1,101 @@
+//商品格子類Layout
+.grid-content {
+    margin-right: -0.3rem;
+    margin-right: -0.3rem;
+    padding: 1.25rem 0 0 0;
+
+    .block-grid-1-7 {
+        display: inline-block;
+        width: 13.93%;
+    }
+
+    .block-grid-2 {
+        display: inline-block;
+        width: 16.3333%;
+        padding-right: 0.1rem;
+        padding-left: 0.1rem;
+    }
+
+    .block-grid-2-4 {
+        display: inline-block;
+        vertical-align: top;
+        width: 19.555%;
+        padding-right: 0.1rem;
+        padding-left: 0.1rem;
+    }
+
+}
+
+.grid-content-bg {
+    padding-top: 0;
+    margin-top: 1.25rem;
+
+}
+
+
+// ********** RWD ************ //
+
+@media (max-width: $break-lg) {
+    .grid-content {
+
+        .block-grid-1-7 {
+            width: 16.23%;
+        }
+
+        .block-grid-2 {
+            width: 24.555%;
+        }
+
+        .block-grid-2-4 {
+            width: 24.333%;
+        }
+    }
+}
+
+
+@media (max-width: $break-md) {
+    .grid-content {
+
+        .block-grid-1-7 {
+            width: 19.53%;
+        }
+
+        .block-grid-2-4 {
+            width: 32.666%;
+        }
+    }
+
+
+    .grid-content-bg {
+        margin-top: 0;
+
+    }
+}
+
+
+@media (max-width: $break-sm) {
+    .grid-content {
+
+        .block-grid-2 {
+            width: 32.666%;
+        }
+
+        .block-grid-2-4 {
+            width: 32.666%;
+        }
+    }
+}
+
+
+@media (max-width: $break-xs) {
+    .grid-content {
+
+        .block-grid-2 {
+            width: 49.3333%;
+        }
+
+        .block-grid-2-4 {
+            width: 49.3333%;
+        }
+    }
+}

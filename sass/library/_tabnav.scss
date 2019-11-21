@@ -1,0 +1,167 @@
+//TABS NAVIGATIONS 標籤導航
+.pct-ui.tab-nav,
+.pct-ui.tab-nav-bar {
+    //  後台導航標籤多使用黏著功能
+    position: sticky;
+    top: $headerHeight_table;
+    background-color: $colorWhite;
+    z-index: 10;
+
+    .pct-ui.tab-pointing {
+        border-bottom: 1px solid $colorLightGray;
+        //  後台導航標籤多使用左右滑動功能，需要可以在手機順暢滑動
+        -webkit-overflow-scrolling: touch;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+
+        &::-webkit-scrollbar-track {
+            padding: 2px 0;
+            background-color: $colorGreyishWhite;
+        }
+        &::-webkit-scrollbar {
+            height: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 15px;
+            background-color: $colorGray;
+        }
+
+        > ul.tab-items {
+            //按鈕預設至左
+            display: flex;
+            align-items: flex-end;
+            font-size: 0.875rem;
+
+            //按鈕置中
+            &.align-center {
+                justify-content: center;
+            }
+
+            //以外容器寬度自動等分伸縮
+            &.flex-item {
+                > li {
+                    flex: 1;
+                    text-align: center;
+
+                    & a {
+                        margin: 0 0;
+                    }
+                }
+            }
+
+            //按鈕至左按文字長度伸縮但左右不會有間距，若搭配外層tab-nav-fluid，長度超過外層時，可在區塊內左右滑動
+            &.no-margin {
+                > li {
+                    & a {
+                        margin: 0 0;
+                    }
+                }
+            }
+
+            > li {
+                font-weight: 400;
+
+                & a {
+                    display: block;
+                    padding: 1.375rem 1.5625rem 1.1875rem 1.5625rem;
+                    margin: 0 1.25rem;
+                    border-bottom: 3px solid $colorWhite;
+
+                    &:hover {
+                        color: $primaryColor;
+                        border-bottom: 3px solid $colorGreyishWhite;
+                        background-color: $colorGreyishWhite;
+                    }
+
+                    &.active {
+                        color: $primaryColor;
+                        pointer-events: none;
+                        border-bottom: 3px solid $primaryColor;
+                    }
+                }
+            }
+        }
+    }
+
+    // 標籤導航－橫向Scroll（整體標籤導航改成可以橫向滾動）
+    &.tab-nav-fluid {
+        .pct-ui.tab-pointing {
+            // overflow-x: scroll;
+
+            > ul.tab-items {
+                // 讓整體空間超出容器
+                display: block;
+                // 子物件橫向排列不要斷行
+                white-space: nowrap;
+
+                > li {
+                    // 子物件橫向排列
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .tab-panel {
+        font-size: 0.9375rem;
+        line-height: 1.5rem;
+
+        > div {
+            display: none;
+        }
+    }
+}
+
+// @media (max-width:$break-lg) {
+
+//     .pct-ui.tab-nav,
+//     .pct-ui.tab-nav-bar {
+
+//         .pct-ui.tab-pointing {
+
+//              //  後台導航標籤多使用左右滑動功能，需要可以在手機順暢滑動
+//               -webkit-overflow-scrolling: touch;
+//               overflow-x: scroll;
+//               overflow-y: hidden;
+//               white-space: nowrap;
+
+//                  &::-webkit-scrollbar-track {
+//                     padding: 2px 0;
+//                     background-color: $colorLightGray;
+//                 }
+//                 &::-webkit-scrollbar {
+//                       height: 8px;
+//                 }
+//                 &::-webkit-scrollbar-thumb {
+//                        border-radius: 15px;
+//                        background-color: $colorGray;
+//                 }
+
+//         }
+//     }
+
+// }
+
+@media (max-width: $break-sm) {
+    // 標籤導航（滾動時黏在畫面上方）
+    .pct-ui.tab-nav,
+    .pct-ui.tab-nav-bar {
+        top: $headerHeight_mobile;
+    }
+}
+
+//Ｗith Line 區塊內底線標籤導航
+.pct-ui.tab-nav {
+    @extend %shadow-style-block-2;
+    background-color: $colorWhite;
+}
+
+//Ｗithout Line 獨立標籤導航
+.pct-ui.tab-nav-bar {
+    .pct-ui.tab-pointing {
+        @extend %shadow-style-block-2;
+        background-color: $colorWhite;
+        border-bottom: none;
+    }
+}

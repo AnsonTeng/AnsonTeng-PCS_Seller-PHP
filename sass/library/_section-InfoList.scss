@@ -1,0 +1,447 @@
+//區塊－買家訂單清單
+
+
+// ：：：：：  從 orderlist.scss 搬過來共用  ：：：：：：：：：：：：：：：：：：：：：：：：：：：
+
+// 訂單編號欄
+.column_orderNum{
+    background-color: #f5f8f9;
+    height: 40px;
+    line-height: 30px;
+
+    .btn_contanctSeller{
+        line-height: 1rem;
+    }
+}
+@media (max-width:$break-sm) {
+    .column_orderNum{
+        height: 40px;
+        width: 100%;
+
+        .table_flexBox{
+            height: 40px;
+            padding: 0 2px;
+        }
+    }
+}
+
+
+
+// 買家命名欄
+.column_userName{
+    background-color: #f5f8f9;
+    height: 40px;
+}
+
+@media (max-width:$break-sm) {
+    .column_userName{
+        height: 40px;
+        width: 100%;
+        background-color: $colorWhite;
+
+        .table_flexBox{
+            height: 40px;
+            padding: 0 2px;
+        }
+    }
+}
+
+
+// 操作按鈕欄
+.column_action{
+    position: relative;
+    top: 10;
+}
+@media (max-width:$break-sm) {
+    .column_action{
+        top: 0px;
+    }
+}
+
+
+// 訂單整體資訊
+.list__itemInfo{
+    font-size: 0.9375rem;
+    margin-right: 8px;
+    color: $colorDeepGray;
+    
+    .pct-btn-icon{
+        margin-right: 6px;
+    }
+
+}
+
+// 訂單狀態文字（重點顯示）
+.list_status {
+    color: $colorGrayBlack;
+    font-weight: 500;
+}
+
+//訂單問答/商品問答/評價 時間樣式
+span.date-time{
+    font-weight: 300;
+    font-size:0.75rem;
+    color:$colorDeepGray;
+    margin-right: 3px;
+
+    time{
+        padding-left: 3px;
+    }
+}
+
+
+// 訂單整體資訊－買家姓名
+.list__itemInfo-userName {
+    display: inline-block;
+    color: $colorGrayBlack;
+    position: relative;
+    top: 2px;
+    font-size: 0.8125rem;
+    @include text-overflow(1);
+    height: 1rem;
+    padding-left: 5px;
+}
+
+@media (max-width:$break-md) {
+    .list__itemInfo-userName{
+        max-width: 90px;
+    }
+}
+@media (max-width:$break-sm) {
+    .list__itemInfo-userName{
+        max-width: 100%;
+    }
+}
+@media (max-width:$break-xs) {
+    .list__itemInfo-userName{
+        max-width: 170px;
+    }
+}
+@media (max-width: 350px) {
+    .list__itemInfo-userName{
+        max-width: 110px;
+    }
+}
+
+
+.listDetail__itemInfo-userName{
+    height: auto;
+}
+
+// 買家頭像與帳號群組（共用）
+.itemInfoGroup {
+    display: flex;
+    align-items: center;
+    height: auto;
+    text-align: left;
+}
+
+// 訂單整體資訊－買家頭像
+.list__itemInfo-userImg {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+
+// tr-表格內容（分段表格）
+// 訂單內容－主標容器
+.orderlist_titleBox {
+    width: 100%;
+    height: 1.375rem;
+    position: relative;
+
+    // 標題, 標題可並排（＋icon）
+    .orderlist_title,
+    .orderlist_title-inline {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        font-weight: 400;
+        position: relative;
+    }
+    
+    // 標題 （單行文字不換行 文字節略）
+    .orderlist_title {
+        @include text-overflow(1);
+        height: 1.375rem;
+        a{
+            color: $accentColor;
+        }
+    }
+    
+    // 標題可並排
+    .orderlist_title-inline {
+        display: inline;
+    }
+
+    // 標題－與 icon 配合的文字
+    .orderlist_title-withicon {
+        position: relative;
+        top: -6px;
+    }
+
+    // 標題－的 icon
+    .orderlist_title-icon {
+        display: inline-block;
+        line-height: 1.375rem;
+        height: 1.375rem;
+        font-size: 1.375rem;
+
+        img {
+            height: 1.375rem;
+        }
+    }
+}
+@media (max-width:$break-md) {
+    .orderlist_titleBox {
+        width: auto;
+    }
+}
+
+
+
+// 訂單內容－副標容器
+.orderlist_subtitleBox {
+    width: 100%;
+    // height: 1rem;
+    position: relative;
+    word-break: normal;
+
+    // 訂單內容－副標
+    .orderlist_subtitle {
+        font-size: 0.8125rem;
+        font-weight: 300;
+        word-break: normal;
+        // @include text-overflow(1);
+        // height: 1rem;
+    }
+}
+
+@media (max-width:$break-md) {
+    .orderlist_subtitleBox {
+        width: auto;
+        // height: 1.375rem;
+    }
+}
+
+@media (max-width:$break-xs) {
+    // 訂單內容－副標容器
+    .orderlist_subtitleBox {
+        flex-basis:240px;
+        padding:10px 0;
+        text-align: left;
+
+        // 訂單內容－副標
+        .orderlist_subtitle {
+            
+        }
+    }
+
+}
+
+// 訂單買家資訊群組
+.buyer-infoGroup{
+    border: 0px;
+    
+    .buyer-infoGroup-contact{
+        width: auto;
+    }
+}
+@media (max-width:$break-sm) {
+    // .buyer-infoGroup{
+    //     border: 0px solid #f5f8f9;
+    //     border-bottom-width: 1px
+    // }
+}
+
+
+// 聊聊按鈕 （共）
+a.pct-ui.btn-xs.btn.btn_contanctSeller {
+    // 按鈕icon
+    .pct-btn-icon {
+        color: $accentColor;
+        font-size: 0.875rem;
+    }
+}
+@media (max-width: $break-sm) {
+    a.pct-ui.btn-xs.btn.btn_contanctSeller {
+        border-width: 1px;
+    }
+}
+
+// 商品資訊群組（圖＋文）
+.productInfoGroup {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    // padding: 6px 8px;
+    min-height: 60px;
+    margin-bottom: 6px;
+}
+
+// 商品資訊群組 - 商品縮圖
+.productInfo-img {
+    flex-shrink: 0;
+    border: 1px solid $colorLightGray;
+    margin-right: 12px;
+    width: 74px;
+    height: 74px;
+    overflow:hidden;
+
+    &.small{
+       width: 58px;
+       height: 58px; 
+    }
+}
+
+@media (max-width:$break-lg) {
+    .productInfo-img {
+        margin-right: 8px;
+        width: 68px;
+        height: 68px;
+    }
+}
+
+@media (max-width:$break-xxs) {
+    .productInfo-img {
+        width: 62px;
+        height: 62px;
+    }
+}
+
+
+// 商品資訊群組 - 商品資訊
+.productInfo-info {
+    position: relative;
+}
+
+商品編號or訂單編號
+.productInfo-info-orderNum-text{
+    margin-right: 5px;
+}
+@media (max-width:359px) {
+    .productInfo-info-orderNum-text {
+        margin-right: 2px;
+    }
+}
+
+// 「海外代購」標籤
+.pct-icon-shopassist{
+    width: auto;
+    max-width: 138px;
+    transform: scale(0.75);
+    padding: 0 12px 0 5px;
+    margin-left: -0.5rem;
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+}
+
+
+
+
+// 商品資訊群組 - 商品資訊 - 主標
+.productInfo-info-title{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-weight: 500;
+    text-align: left;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+
+    // 商品資訊群組 - 商品資訊 - 主標 - 文字
+    .productInfo-info-title-text{
+        @include text-overflow(1);
+        height: 1.375rem;        
+    }
+}
+
+
+// 商品資訊群組 - 商品資訊 - 編號
+.productInfo-info-orderNum {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-weight: 400;
+    text-align: left;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+
+    // 商品資訊群組 - 商品資訊 - 編號 - 文字
+    .productInfo-info-orderNum-text {
+        @include text-overflow(1);
+        height: 1.25rem;
+    }
+    // 商品資訊群組 - 商品資訊 - 編號 - 內標
+    .productInfo-info-orderNum-title {
+        font-weight: 400;
+        color: $colorDeepGray;
+        margin-right: 6px;
+        white-space: nowrap;
+    }
+}
+
+
+
+// 商品資訊群組 - 商品資訊 - （主標）文字內小圖示
+.productInfo-info-icon{
+    display: inline-block;
+    line-height: 1.125rem;
+    height: 1.125rem;
+    font-size: 1.125rem;
+    margin-right: 4px;
+}
+
+
+// 商品資訊群組 - 商品資訊 - 副標
+.productInfo-info-subtitle{
+    width: 100%;
+    font-weight: 300; 
+    text-align: left;   
+    font-size: 0.8125rem;
+    line-height: 1rem;
+
+    // 商品資訊群組 - 商品資訊 - 副標 - 文字
+    .productInfo-info-subtitle-text{
+        @include text-overflow(1);
+        height: 1rem;
+    }
+}
+
+
+// 訂單列表 單筆數量
+.orderlist_amount{
+    // width: 50%;
+    // min-width: 150px;
+    height: 1.375rem;
+    margin-top: 8px;
+    padding-left: 5px;
+    text-align: left;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: $colorDeepGray;
+
+    .orderlist_amount_num{
+        color: $colorGrayBlack;
+    }
+}
+
+
+
+//客服管理 - 列表頁面 商品問答 訂單問答 評價留言 文字樣式
+tbody{
+  .msg-text{
+    font-weight: 300;
+    font-size:0.875rem;
+    line-height: 20px;
+  }  
+}
+
+
+
