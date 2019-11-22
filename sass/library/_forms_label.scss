@@ -75,3 +75,12 @@
 .error-notification-tooltip-inline {
     display: none;
 }
+
+// 文字說明（搭配）
+.form-introduction {
+    position: relative;
+    top: -1rem;
+    font-size: 0.875rem;
+    color: $colorDeepGray;
+    margin-bottom: 1rem;
+}

@@ -2346,6 +2346,13 @@ img {
 .error-notification-tooltip-inline {
   display: none; }
 
+.form-introduction {
+  position: relative;
+  top: -1rem;
+  font-size: 0.875rem;
+  color: #888888;
+  margin-bottom: 1rem; }
+
 .pct-ui.form select {
   font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei", "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;

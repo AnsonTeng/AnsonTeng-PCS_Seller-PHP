@@ -2375,6 +2375,13 @@ img {
 .error-notification-tooltip-inline {
   display: none; }
 
+.form-introduction {
+  position: relative;
+  top: -1rem;
+  font-size: 0.875rem;
+  color: #888888;
+  margin-bottom: 1rem; }
+
 .pct-ui.form select {
   font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei", "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
@@ -5679,6 +5686,13 @@ a.pct-view-more-link .pct-ui.card-brandshop .pct-view-more {
 .error-notification-tooltip-inline {
   display: none; }
 
+.form-introduction {
+  position: relative;
+  top: -1rem;
+  font-size: 0.875rem;
+  color: #888888;
+  margin-bottom: 1rem; }
+
 .pct-ui.form.checkbox input[type="checkbox"]:checked,
 .pct-ui.form.checkbox input[type="checkbox"]:not(:checked) {
   -moz-appearance: none;
@@ -6008,7 +6022,7 @@ input[type="checkbox"].switch-checkbox:not(:checked) + label {
     width: 260px; } }
 
 .content-block {
-  background-color: #fff;
+  background-color: #ffffff;
   margin-bottom: 20px;
   overflow: hidden; }
   .content-block .content-title {
@@ -6038,6 +6052,18 @@ input[type="checkbox"].switch-checkbox:not(:checked) + label {
     @media (max-width: 768px) {
       .content-block .content-description p.break-text {
         margin-bottom: 25px; } }
+    .content-block .content-description p.description-text {
+      display: block;
+      font-size: 0.9375rem;
+      font-weight: 300;
+      line-height: 24px;
+      margin-bottom: 15px;
+      word-break: normal; }
+      .content-block .content-description p.description-text a {
+        text-decoration: underline;
+        color: #0091d7; }
+        .content-block .content-description p.description-text a:hover {
+          text-decoration: none; }
     .content-block .content-description .form-column {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -6110,11 +6136,11 @@ input[type="checkbox"].switch-checkbox:not(:checked) + label {
         color: #c0c0c0;
         font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
     .content-block .content-description label {
+      min-width: 130px;
+      max-width: 220px;
       display: block;
       font-weight: 500 !important;
       position: relative;
-      min-width: 130px;
-      max-width: 220px;
       padding-right: 15px !important; }
       .content-block .content-description label.required:after {
         content: "*";
@@ -6139,18 +6165,6 @@ input[type="checkbox"].switch-checkbox:not(:checked) + label {
       font-size: 1.125rem;
       margin-bottom: 15px;
       word-break: normal; }
-    .content-block .content-description p.description-text {
-      display: block;
-      font-size: 0.9375rem;
-      font-weight: 300;
-      line-height: 24px;
-      margin-bottom: 15px;
-      word-break: normal; }
-      .content-block .content-description p.description-text a {
-        text-decoration: underline;
-        color: #0091d7; }
-        .content-block .content-description p.description-text a:hover {
-          text-decoration: none; }
     .content-block .content-description .pct-ui.form-label .column-form {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -6161,13 +6175,16 @@ input[type="checkbox"].switch-checkbox:not(:checked) + label {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
       .content-block .content-description .pct-ui.form-label .pct-ui.form.text-with-input p {
-        position: relative;
         font-weight: 300;
         font-size: 0.9375rem; }
         .content-block .content-description .pct-ui.form-label .pct-ui.form.text-with-input p.no-align {
@@ -8397,11 +8414,13 @@ a.btn_secondary:hover {
   .grid-content {
     padding: 5px 0 30px 0; } }
 
-.productList-searchBarGroup .inputGroup .pct-ui.form select {
-  min-width: 100px;
-  max-width: 150px;
-  position: relative;
-  left: 1px; }
+.productList-searchBarGroup .inputGroup {
+  width: 100%; }
+  .productList-searchBarGroup .inputGroup .pct-ui.form select {
+    min-width: 100px;
+    max-width: 150px;
+    position: relative;
+    left: 1px; }
 
 .searchBarGroup-searchBtn {
   line-height: 40px;

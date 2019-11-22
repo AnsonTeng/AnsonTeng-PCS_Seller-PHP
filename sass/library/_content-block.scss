@@ -1,7 +1,7 @@
 //買賣家中心內容區塊
 .content-block {
     @extend %shadow-style-block-2;
-    background-color: #fff;
+    background-color: $colorWhite;
     margin-bottom: 20px;
     overflow: hidden;
 
@@ -31,6 +31,7 @@
         }
 
         p {
+            // form 內的文字欄位
             &.break-text {
                 font-weight: 300;
                 font-size: 0.875rem;
@@ -43,11 +44,29 @@
                 }
             }
         }
-
         @media (max-width: $break-sm) {
             p {
                 &.break-text {
                     margin-bottom: 25px;
+                }
+            }
+        }
+
+        // form 外的獨立文字欄位
+        p.description-text {
+            display: block;
+            font-size: 0.9375rem;
+            font-weight: 300;
+            line-height: 24px;
+            margin-bottom: 15px;
+            word-break: normal;
+
+            a {
+                text-decoration: underline;
+                color: $primaryDeepColor;
+
+                &:hover {
+                    text-decoration: none;
                 }
             }
         }
@@ -148,11 +167,11 @@
         }
 
         label {
+            min-width: 130px; // 標籤最小寬度
+            max-width: 220px; // 標籤最大寬度
             display: block;
             font-weight: 500 !important;
             position: relative;
-            min-width: 130px;
-            max-width: 220px;
             padding-right: 15px !important;
 
             &.required:after {
@@ -166,18 +185,18 @@
             }
         }
 
+        // 強制label後的元件折行
         .form-break {
             display: block;
-
             label {
                 margin-bottom: 8px;
             }
         }
 
+        // radio組件不折行
         .radio-wrap {
             display: flex;
         }
-
         input[type="radio"]:checked + label,
         input[type="radio"]:not(:checked) + label {
             font-weight: 400 !important;
@@ -187,24 +206,6 @@
             font-size: 1.125rem;
             margin-bottom: 15px;
             word-break: normal;
-        }
-
-        p.description-text {
-            display: block;
-            font-size: 0.9375rem;
-            font-weight: 300;
-            line-height: 24px;
-            margin-bottom: 15px;
-            word-break: normal;
-
-            a {
-                text-decoration: underline;
-                color: $primaryDeepColor;
-
-                &:hover {
-                    text-decoration: none;
-                }
-            }
         }
 
         .pct-ui.form-label {
@@ -219,14 +220,16 @@
             //輸入框旁邊有文字
             .pct-ui.form.text-with-input {
                 display: flex;
+                flex-direction: row;
                 align-items: center;
-                flex-wrap: wrap;
-                // flex:1;
+                flex-wrap: nowrap;
+                // background-color: red;
 
                 p {
-                    position: relative;
+                    // width: 100%;
                     font-weight: 300;
                     font-size: 0.9375rem;
+                    // border: 1px solid red;
 
                     &.no-align {
                         padding: 0 10px;

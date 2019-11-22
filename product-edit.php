@@ -293,205 +293,113 @@
                             <!--商品標題/規格-->
                             <div class="content-block">
                                 <div class="content-title">商品名稱與規格</div>
-                                <div class="content-description no-padding">
-                                    <div class="pct-ui tab-nav-bar">
-                                        <!--目前不分語系-->
-                                        <!--                                         <div class="pct-ui tab-pointing">
+                                <div class="content-description">
+                                    <!-- <div class="pct-ui tab-nav-bar"> -->
+                                    <!--目前不分語系-->
+                                    <!--                                         <div class="pct-ui tab-pointing">
                                             <ul class="tab-items" data-tabgroup="tab-panel">
                                                 <li><a href="#thai" class="active"><span class="icon-overseas th"></span>泰文</a></li>
                                             </ul>
                                         </div> -->
 
-                                        <div id="tab-panel" class="tab-panel">
-                                            <div id="thai">
-                                                <div class="pct-ui form-label product-title form-m-break">
-                                                    <label for="" class="required">商品名稱
-                                                        <!-- Product Name--></label>
-                                                    <div class="pct-ui form">
-                                                        <input type="text" placeholder="請輸入商品名稱">
-                                                    </div>
-                                                </div>
-                                                <div class="pct-ui form-textarea-label fluid form-m-break">
-                                                    <label for="" class="required">商品描述
-                                                        <!-- Product Intro --></label>
-                                                    <div class="pct-ui form">
-                                                        <textarea placeholder="請輸入商品描述"></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="pct-ui form-label form-sm-break">
-                                                    <label for="">商品規格
-                                                        <!-- Product Name--></label>
+                                    <!-- <div id="tab-panel" class="tab-panel"> -->
+                                    <!-- <div id="thai"> -->
+                                    <div class="pct-ui form-label form-m-break">
+                                        <label for="" class="required">商品名稱</label>
+                                        <div class="pct-ui form">
+                                            <input type="text" placeholder="請輸入商品名稱">
+                                            <a href="#"
+                                                class="pct-ui btn-sm btn-secondary-outlined inputGroup-btn">Google翻譯
+                                                中翻泰</a>
+                                            <input type="text" placeholder="商品泰文名稱">
+                                            <!-- <p class="break-text">自動翻譯功能由 Google
+                                                翻譯所提供，PChome不保證翻譯內容之正確性！您可自行修正翻譯結果。
+                                            </p> -->
+                                        </div>
+                                    </div>
 
-                                                    <div class="radio-wrap">
-                                                        <div class="pct-ui form radio">
-                                                            <input type="radio" id="singleVaritation" name="radio-group"
-                                                                checked="">
-                                                            <label for="singleVaritation">單一規格</label>
-                                                        </div>
-                                                        <div class="pct-ui form radio">
-                                                            <input type="radio" id="multipleVaritation"
-                                                                name="radio-group">
-                                                            <label for="multipleVaritation">多種規格</label>
-                                                        </div>
-                                                    </div>
+                                    <div class="pct-ui form">
+                                        <div class="pct-ui form-label product-title form-m-break">
+                                            <label></label>
+                                            <div class="pct-ui form">
 
-                                                </div>
-                                                <div class="variations single">
-                                                    <div class="pct-ui form-label form-sm-break">
-                                                        <label for="" class="required">庫存數</label>
-                                                        <div class="pct-ui form text-with-input">
-                                                            <input type="text" placeholder="" value="0"
-                                                                class="stock-num">
-                                                            <p class="align-right">單一商品庫存數量上限為 <span
-                                                                    class="eng-num">499</span>。</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="variations multiple">
-                                                    <div class="pct-ui form-label product-price">
-                                                        <label for="" class="required">規格與庫存數</label>
-                                                    </div>
-                                                    <p class="description-text">範例：A商品有「顏色」、「尺寸」等2種規格，規格可填寫成「紅色 >
-                                                        M」等。單一商品庫存數量上限為499。<a class="specsampleBtn"><span
-                                                                class="pct-icon icon-information"></span> 規格填寫範例</a>
-                                                    </p>
 
-                                                    <div class="variation-box">
-
-                                                        <div class="spec-wrap">
-                                                            <div class="pct-ui form-label break-label">
-                                                                <label for="">Spec 1</label>
-                                                                <div class="pct-ui form">
-                                                                    <input type="text" placeholder="請輸入商品規格(建議英文)">
-                                                                </div>
-                                                            </div>
-                                                            <div class="pct-icon icon-angle-right"></div>
-                                                            <div class="pct-ui form-label break-label">
-                                                                <label for="">Spec</label>
-                                                                <div class="pct-ui form">
-                                                                    <input type="text" placeholder="非必填">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="pct-ui form-label break-label spec-stock">
-                                                            <label for="">Stock</label>
-                                                            <div class="pct-ui form">
-                                                                <input type="text" placeholder="庫存數">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--說明 FOR RD: 新增規格後長出第二條規格輸入區-->
-                                                    <div class="variation-box">
-
-                                                        <div class="spec-wrap">
-                                                            <div class="pct-ui form-label break-label">
-                                                                <label for="">Spec 2</label>
-                                                                <div class="pct-ui form">
-                                                                    <input type="text" placeholder="請輸入商品規格(建議英文)">
-                                                                </div>
-                                                            </div>
-                                                            <div class="pct-icon icon-angle-right"></div>
-                                                            <div class="pct-ui form-label break-label">
-                                                                <label for="">Spec</label>
-                                                                <div class="pct-ui form">
-                                                                    <input type="text" placeholder="非必填">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="pct-ui form-label break-label spec-stock">
-                                                            <label for="">Stock</label>
-                                                            <div class="pct-ui form">
-                                                                <input type="text" placeholder="庫存數">
-                                                            </div>
-                                                        </div>
-                                                        <div class="pct-icon icon-trash"></div>
-                                                    </div>
-                                                    <!--說明 FOR RD: 新增規格後長出第三條規格輸入區-->
-                                                    <div class="variation-box">
-
-                                                        <div class="spec-wrap">
-                                                            <div class="pct-ui form-label break-label">
-                                                                <label for="">Spec 3</label>
-                                                                <div class="pct-ui form">
-                                                                    <input type="text" placeholder="請輸入商品規格(建議英文)">
-                                                                </div>
-                                                            </div>
-                                                            <div class="pct-icon icon-angle-right"></div>
-                                                            <div class="pct-ui form-label break-label">
-                                                                <label for="">Spec</label>
-                                                                <div class="pct-ui form">
-                                                                    <input type="text" placeholder="非必填">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="pct-ui form-label break-label spec-stock">
-                                                            <label for="">Stock</label>
-                                                            <div class="pct-ui form">
-                                                                <input type="text" placeholder="庫存數">
-                                                            </div>
-                                                        </div>
-                                                        <div class="pct-icon icon-trash"></div>
-                                                    </div>
-                                                    <a class="pct-ui btn add-variation">
-                                                        <li class="pct-btn-icon icon-plus"></li>新增規格
-                                                    </a>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                </div>
-                            </div>
-
-                            <!--商品價格/情況/保固-->
-                            <div class="content-block product-description">
-                                <div class="content-title">商品基本資訊</div>
-                                <div class="content-description">
-                                    <div class="pct-ui form-label product-price form-sm-break">
-                                        <label for="">商品價格</label>
-                                        <div class="column-form">
-                                            <div class="pct-ui form text-with-input product-price">
-                                                <p class="align-left required">原價 ฿</p>
-                                                <input type="text">
-                                            </div>
-                                            <div class="pct-ui form text-with-input product-price">
-                                                <p class="no-align">特價 ฿</p>
-                                                <input type="text">
-                                            </div>
+                                    <div class="pct-ui form-textarea-label fluid form-m-break">
+                                        <label for="" class="required">商品描述</label>
+                                        <div class="pct-ui form">
+                                            <textarea placeholder="請輸入商品簡介（上限 150 字）"></textarea>
                                         </div>
                                     </div>
+
                                     <div class="pct-ui form-label product-category form-lg-break">
                                         <label for="" class="required">商品分類</label>
                                         <div class="column-form">
                                             <div class="pct-ui form select">
                                                 <select>
                                                     <option value="0">請選擇</option>
-                                                    <option value="1">Option 01</option>
-                                                    <option value="2">Option 02</option>
-                                                    <option value="3">Option 03</option>
+                                                    <option value="1">女生服裝</option>
+                                                    <option value="2">男生服裝</option>
                                                 </select>
                                             </div>
                                             <div class="pct-ui form select">
                                                 <select>
                                                     <option value="0">請選擇</option>
-                                                    <option value="1">Option 01</option>
-                                                    <option value="2">Option 02</option>
-                                                    <option value="3">Option 03</option>
+                                                    <option value="1">上衣</option>
+                                                    <option value="2">褲子</option>
+                                                    <option value="3">外套</option>
                                                 </select>
                                             </div>
                                             <div class="pct-ui form select">
                                                 <select>
                                                     <option value="0">請選擇</option>
-                                                    <option value="1">Option 01</option>
-                                                    <option value="2">Option 02</option>
-                                                    <option value="3">Option 03</option>
+                                                    <option value="1">長褲</option>
+                                                    <option value="2">短褲</option>
+                                                    <option value="3">內褲</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="form-column">
+                                        <div class="pct-ui form-label two-column ">
+                                            <label for="" class="required">商品售價</label>
+                                            <div>
+                                                <div class="pct-ui form product-price-TWdollar unit-before">
+                                                    <input type="tel" value="">
+                                                </div>
+                                                <div class="pct-ui form product-price-THbaht unit-before">
+                                                    <input type="tel" value="自動帶入" readonly="readonly">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="pct-ui form-label two-column ">
+                                            <label>促銷售價</label>
+                                            <div>
+                                                <div class="pct-ui form product-price-TWdollar unit-before">
+                                                    <input type="tel" value="">
+                                                </div>
+                                                <div class="pct-ui form product-price-THbaht unit-before">
+                                                    <input type="tel" value="自動帶入" readonly="readonly">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pct-ui form">
+                                        <div class="pct-ui form-label form-m-break">
+                                            <label></label>
+                                            <span
+                                                class="form-introduction">按照每日浮動匯率計算泰銖價格，參考匯率：<span>0.981</span><span>(DD/MM/YYYY)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+
                                     <div class="pct-ui form-label form-sm-break">
                                         <label for="">商品情況
                                             <!--  Product Status --></label>
@@ -506,39 +414,186 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pct-ui form-label product-warranty">
-                                        <label for="">購買此商品的是否提供保固？</label>
-                                        <div class="pct-ui switch-toggle">
-                                            <input id="switch-checkbox-warranty" class="switch-checkbox"
-                                                type="checkbox">
-                                            <label for="switch-checkbox-warranty"></label>
+
+                                    <div class="pct-ui form">
+                                        <div class="pct-ui form-label product-title">
+                                            <label>自訂商品編號</label>
+                                            <div class="pct-ui form">
+                                                <input type="text" placeholder="自訂商品編號(上限150字)">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="warrantytime">
-                                        <div class="pct-ui form-label form-sm-break">
-                                            <label for="">保固時間</label>
-                                            <div class="pct-ui form text-without-input">
-                                                <p class="align-left">自購買日起 <span class="eng-num">1</span>年。</p>
-                                                <a class="pct-ui btn-xs btn warrantytimeBtn">
-                                                    <li class="pct-btn-icon icon-edit"></li>修改
-                                                </a>
-                                            </div>
+
+                                    <div class="pct-ui form-label product-title">
+                                        <label>HS CODE</label>
+                                        <div class="pct-ui form ">
+                                            <input type="text" placeholder="" value="">
+                                            <a href="#"
+                                                class="pct-ui btn-sm btn-secondary-outlined inputGroup-btn">代碼查詢</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="pct-ui form-label">
+                                        <label>預估關稅</label>
+                                        <div class="pct-ui form text-with-input">
+                                            <input type="text" placeholder="" value="0">
+                                            <p class="align-right">％</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
+                            <!--商品庫存與規格-->
+                            <div class="content-block">
+                                <div class="content-title">商品規格與庫存</div>
+                                <div class="content-description">
+
+                                    <div class="pct-ui form-label form-sm-break">
+                                        <label for="">商品規格
+                                            <!-- Product Name--></label>
+
+                                        <div class="radio-wrap">
+                                            <div class="pct-ui form radio">
+                                                <input type="radio" id="singleVaritation" name="radio-group1"
+                                                    checked="">
+                                                <label for="singleVaritation">單一規格</label>
+                                            </div>
+                                            <div class="pct-ui form radio">
+                                                <input type="radio" id="multipleVaritation" name="radio-group1">
+                                                <label for="multipleVaritation">多種規格</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="variations single">
+                                        <div class="pct-ui form-label form-sm-break">
+                                            <label for="" class="required">庫存數</label>
+                                            <div class="pct-ui form text-with-input">
+                                                <input type="text" placeholder="" value="0" class="stock-num">
+                                                <p class="align-right">單一商品庫存數量上限為 <span class="eng-num">499</span>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="variations multiple">
+                                        <div class="pct-ui form-label product-price">
+                                            <label for="" class="required">規格與庫存數</label>
+                                        </div>
+                                        <p class="description-text">範例：A商品有「顏色」、「尺寸」等2種規格，規格可填寫成「紅色 >
+                                            M」等。單一商品庫存數量上限為499。<a class="specsampleBtn"><span
+                                                    class="pct-icon icon-information"></span> 規格填寫範例</a>
+                                        </p>
+
+                                        <div class="variation-box">
+
+                                            <div class="spec-wrap">
+                                                <div class="pct-ui form-label break-label">
+                                                    <label for="">Spec 1</label>
+                                                    <div class="pct-ui form">
+                                                        <input type="text" placeholder="請輸入商品規格(建議英文)">
+                                                    </div>
+                                                </div>
+                                                <div class="pct-icon icon-angle-right"></div>
+                                                <div class="pct-ui form-label break-label">
+                                                    <label for="">Spec</label>
+                                                    <div class="pct-ui form">
+                                                        <input type="text" placeholder="非必填">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="pct-ui form-label break-label spec-stock">
+                                                <label for="">Stock</label>
+                                                <div class="pct-ui form">
+                                                    <input type="text" placeholder="庫存數">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--說明 FOR RD: 新增規格後長出第二條規格輸入區-->
+                                        <div class="variation-box">
+
+                                            <div class="spec-wrap">
+                                                <div class="pct-ui form-label break-label">
+                                                    <label for="">Spec 2</label>
+                                                    <div class="pct-ui form">
+                                                        <input type="text" placeholder="請輸入商品規格(建議英文)">
+                                                    </div>
+                                                </div>
+                                                <div class="pct-icon icon-angle-right"></div>
+                                                <div class="pct-ui form-label break-label">
+                                                    <label for="">Spec</label>
+                                                    <div class="pct-ui form">
+                                                        <input type="text" placeholder="非必填">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="pct-ui form-label break-label spec-stock">
+                                                <label for="">Stock</label>
+                                                <div class="pct-ui form">
+                                                    <input type="text" placeholder="庫存數">
+                                                </div>
+                                            </div>
+                                            <div class="pct-icon icon-trash"></div>
+                                        </div>
+                                        <!--說明 FOR RD: 新增規格後長出第三條規格輸入區-->
+                                        <div class="variation-box">
+
+                                            <div class="spec-wrap">
+                                                <div class="pct-ui form-label break-label">
+                                                    <label for="">Spec 3</label>
+                                                    <div class="pct-ui form">
+                                                        <input type="text" placeholder="請輸入商品規格(建議英文)">
+                                                    </div>
+                                                </div>
+                                                <div class="pct-icon icon-angle-right"></div>
+                                                <div class="pct-ui form-label break-label">
+                                                    <label for="">Spec</label>
+                                                    <div class="pct-ui form">
+                                                        <input type="text" placeholder="非必填">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="pct-ui form-label break-label spec-stock">
+                                                <label for="">Stock</label>
+                                                <div class="pct-ui form">
+                                                    <input type="text" placeholder="庫存數">
+                                                </div>
+                                            </div>
+                                            <div class="pct-icon icon-trash"></div>
+                                        </div>
+                                        <a class="pct-ui btn add-variation">
+                                            <li class="pct-btn-icon icon-plus"></li>新增規格
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+                                <!-- </div> -->
+
+                                <!-- </div> -->
+                            </div>
+
                             <!--商品運費設定-->
                             <div class="content-block">
-                                <div class="content-title">運費設定</div>
+                                <div class="content-title">運費與備貨時間</div>
                                 <div class="content-description">
-                                    <p class="description-text">若您輸入的包裹重量與物流商實際秤重有差異，將以物流商計算的重量為準。</p>
+
+                                    <div class="pct-ui form-label form-m-break">
+                                        <label for="">出貨地</label>
+                                        <div class="pct-ui form">
+                                            <input type="text" placeholder="" value="台灣 Taiwan" readonly="readonly">
+                                        </div>
+                                    </div>
+
                                     <div class="pct-ui form-label form-m-break">
                                         <label for="" class="required">包裹重量</label>
                                         <div class="pct-ui form product-weight unit-after">
                                             <input type="text" placeholder="">
                                         </div>
                                     </div>
+
                                     <div class="pct-ui form-label volumatic">
                                         <label for="" class="required">包裹材積</label>
                                         <div class="column-form">
@@ -553,6 +608,27 @@
                                             </div>
                                         </div>
                                     </div>
+
+
+
+
+
+
+
+                                    <div class="pct-ui form-label form-m-break">
+                                        <label for="">物流方式</label>
+                                        <div class="pct-ui form text-list">
+                                            <p>(1) 請確實輸入商品包裹的重量及材積，我們會依照您所輸入的資訊向買家收取適當的國際運費。詳見【<a href="#">運費如何計算</a>】
+                                            </p>
+                                            <p>(2) 海外出貨目前以單一商品為一個包裹來計算運費，譬如買家購買同商品x2，會計算為兩個包裹、兩筆運費。</p>
+                                            <p>(3) 提醒您，包裹重量小於
+                                                2kg，材積相加不超過90cm的包裹將優先以國際e小包計算運費並且進行配送，但若您輸入的包裹重量或材積與實際寄送時計量結果不符而導致運費少收，將以物流商計算的運費金額為主，並且列為運費補收項目於提領時補扣。
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+
 
                                     <!--說明For RD:  若未選擇物流商，此區塊請整塊隱藏 包含 <div class="logistic-wrap operation"> 這層-->
                                     <div class="logistic-wrap operation">
@@ -670,6 +746,45 @@
                                         </div>
                                     </div>
 
+                                    <div class="variations single">
+                                        <div class="pct-ui form-label form-sm-break">
+                                            <label for="" class="required">庫存數</label>
+                                            <div class="pct-ui form text-with-input">
+                                                <input type="text" placeholder="" value="0" class="stock-num">
+                                                <p class="align-right">單一商品庫存數量上限為 <span class="eng-num">499</span>。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!--商品保固-->
+                            <div class="content-block product-description">
+                                <div class="content-title">商品保固</div>
+                                <div class="content-description">
+
+                                    <div class="pct-ui form-label product-warranty">
+                                        <label for="">購買此商品的是否提供保固？</label>
+                                        <div class="pct-ui switch-toggle">
+                                            <input id="switch-checkbox-warranty" class="switch-checkbox"
+                                                type="checkbox">
+                                            <label for="switch-checkbox-warranty"></label>
+                                        </div>
+                                    </div>
+                                    <div class="warrantytime">
+                                        <div class="pct-ui form-label form-sm-break">
+                                            <label for="">保固時間</label>
+                                            <div class="pct-ui form text-without-input">
+                                                <p class="align-left">自購買日起 <span class="eng-num">1</span>年。</p>
+                                                <a class="pct-ui btn-xs btn warrantytimeBtn">
+                                                    <li class="pct-btn-icon icon-edit"></li>修改
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -741,14 +856,11 @@
                                         <a href="#" class="pct-ui btn-lg btn-cta">確定送出</a>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
         <!-- 內容寬度 1200 區塊 end-->
 
