@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
-    <title>PChome Thai | มุมลูกค้า</title>
+    <title>PChome SEA | 海外賣家中心</title>
     <!-- Google Tag Manager -->
     <script>
     (function(w, d, s, l, i) {

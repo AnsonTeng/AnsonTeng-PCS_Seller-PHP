@@ -1278,7 +1278,8 @@ img {
       background-color: #fcfcfc;
       margin-bottom: 2px; }
       .pct-ui.modal .modal-content .description .description-list .description-list-box .list-box-text a {
-        color: #ff9800; }
+        color: #0091d7;
+        text-decoration: underline; }
     .pct-ui.modal .modal-content .description .description-list .description-list-box .list-box-form {
       background-color: #fcfcfc;
       margin-bottom: 2px;
@@ -1425,7 +1426,7 @@ img {
       background-color: #fcfcfc;
       margin-bottom: 2px; }
       .pct-ui.modal .modal-content .description .description-list-column .description-list-box .list-box-text a {
-        color: #ff9800; }
+        color: #0091d7; }
     .pct-ui.modal .modal-content .description .description-list-column .description-list-box .list-box-form {
       background-color: #fcfcfc;
       margin-bottom: 2px;
@@ -1434,7 +1435,7 @@ img {
       -ms-flex: 1;
       flex: 1; }
   .pct-ui.modal .modal-content .description .description-list-column .description-list-box:first-child {
-    border-right: 2px solid #fff; }
+    border-right: 2px solid #ffffff; }
 
 .pct-ui.modal .modal-content .description .payment-img-wrap {
   padding: 20px;
@@ -1478,7 +1479,7 @@ img {
         width: 100%;
         line-height: 50px;
         font-size: 0.9375rem;
-        color: #ff9800;
+        color: #0091d7;
         background-color: #ffffff; }
         .pct-ui.modal .modal-content .description .payment-img-wrap .payment-img-preview .view-img-original a .pct-icon {
           display: inline-block;
@@ -1486,7 +1487,7 @@ img {
           font-size: 18px;
           width: auto;
           height: auto;
-          color: #ff9800; }
+          color: #0091d7; }
 
 @media (max-width: 768px) {
   .pct-ui.modal .modal-content .description .payment-img-wrap {
@@ -1498,6 +1499,10 @@ img {
         height: 200px; }
   .pct-ui.modal .modal-content .description .description-list .description-list-box {
     display: block; }
+    .pct-ui.modal .modal-content .description .description-list .description-list-box.box-displayflex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
     .pct-ui.modal .modal-content .description .description-list .description-list-box .list-box-item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1527,6 +1532,10 @@ img {
       display: block; }
     .pct-ui.modal .modal-content .description .description-list-column .description-list-box {
       display: block; }
+      .pct-ui.modal .modal-content .description .description-list-column .description-list-box.box-displayflex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
       .pct-ui.modal .modal-content .description .description-list-column .description-list-box .list-box-item {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1549,6 +1558,10 @@ img {
 @media (max-width: 768px) {
   .pct-ui.modal .modal-content .description .description-list.description-list-shrink .description-list-box {
     display: block; }
+    .pct-ui.modal .modal-content .description .description-list.description-list-shrink .description-list-box.box-displayflex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
     .pct-ui.modal .modal-content .description .description-list.description-list-shrink .description-list-box .list-box-item {
       -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -1569,7 +1582,13 @@ img {
 .lightbox-telverify.pct-ui.modal .modal-content .description .title {
   font-size: 1.2rem;
   text-align: center !important;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  line-height: 1.6; }
+
+.lightbox-setbank.pct-ui.modal .modal-content .description .remark,
+.lightbox-telverify.pct-ui.modal .modal-content .description .remark {
+  font-size: 0.75rem;
+  margin-top: -7px; }
 
 .lightbox-setbank.pct-ui.modal .modal-content .description .modal-icon-img,
 .lightbox-telverify.pct-ui.modal .modal-content .description .modal-icon-img {
@@ -1591,7 +1610,7 @@ img {
     font-size: 0.8125rem;
     color: #cccccc;
     line-height: 25px;
-    background: white;
+    background: #ffffff;
     padding: 0 20px; }
   .lightbox-setbank.pct-ui.modal .modal-content .description .divide-line:before,
   .lightbox-telverify.pct-ui.modal .modal-content .description .divide-line:before {
@@ -2307,6 +2326,17 @@ img {
   position: absolute;
   content: "NT$"; }
 
+.form-introduction {
+  position: relative;
+  top: -1rem;
+  font-size: 0.875rem;
+  color: #888888;
+  margin-bottom: 1rem;
+  text-align: left; }
+  @media (max-width: 576px) {
+    .form-introduction {
+      top: -1rem; } }
+
 .pct-ui.form-label.break-label {
   display: block;
   margin-bottom: 10px;
@@ -2375,12 +2405,18 @@ img {
 .error-notification-tooltip-inline {
   display: none; }
 
-.form-introduction {
-  position: relative;
-  top: -1rem;
-  font-size: 0.875rem;
-  color: #888888;
-  margin-bottom: 1rem; }
+.form-textList {
+  margin: 2px 0 6px 0; }
+  .form-textList > p {
+    font-size: 0.875rem;
+    margin-bottom: 6px; }
+    .form-textList > p.alert {
+      color: #e96886; }
+    .form-textList > p > a {
+      text-decoration: underline;
+      color: #0091d7; }
+    .form-textList > p > a:hover {
+      text-decoration: none; }
 
 .pct-ui.form select {
   font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei", "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
@@ -3014,7 +3050,7 @@ header {
     #language .drawer .drawer-triangle {
       left: 124px; }
     #language .drawer .drawer-content .drawer-link li.active > a {
-      color: #ff9800; }
+      color: #14b9d5; }
 
 .account-header {
   background-color: #ffffff;
@@ -3491,7 +3527,7 @@ header {
     text-align: left; }
     .pct-ui.drawer .drawer-content .drawer-link > ul > li.active {
       font-weight: 400;
-      color: #ff9800;
+      color: #14b9d5;
       padding: 0 0.9375rem; }
     .pct-ui.drawer .drawer-content .drawer-link > ul > li.account-logout a {
       color: #888888; }
@@ -3503,7 +3539,7 @@ header {
       color: #333333;
       font-size: 0.875rem; }
     .pct-ui.drawer .drawer-content .drawer-link > ul > li a:hover {
-      color: #ff9800;
+      color: #14b9d5;
       background-color: #f6f6f6; }
   .pct-ui.drawer .drawer-content.scrolling {
     position: relative;
@@ -5483,6 +5519,17 @@ a.pct-view-more-link .pct-ui.card-brandshop .pct-view-more {
   position: absolute;
   content: "NT$"; }
 
+.form-introduction {
+  position: relative;
+  top: -1rem;
+  font-size: 0.875rem;
+  color: #888888;
+  margin-bottom: 1rem;
+  text-align: left; }
+  @media (max-width: 576px) {
+    .form-introduction {
+      top: -1rem; } }
+
 .pct-ui.form select {
   font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei", "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
@@ -5686,12 +5733,18 @@ a.pct-view-more-link .pct-ui.card-brandshop .pct-view-more {
 .error-notification-tooltip-inline {
   display: none; }
 
-.form-introduction {
-  position: relative;
-  top: -1rem;
-  font-size: 0.875rem;
-  color: #888888;
-  margin-bottom: 1rem; }
+.form-textList {
+  margin: 2px 0 6px 0; }
+  .form-textList > p {
+    font-size: 0.875rem;
+    margin-bottom: 6px; }
+    .form-textList > p.alert {
+      color: #e96886; }
+    .form-textList > p > a {
+      text-decoration: underline;
+      color: #0091d7; }
+    .form-textList > p > a:hover {
+      text-decoration: none; }
 
 .pct-ui.form.checkbox input[type="checkbox"]:checked,
 .pct-ui.form.checkbox input[type="checkbox"]:not(:checked) {
@@ -5790,8 +5843,8 @@ a.pct-view-more-link .pct-ui.card-brandshop .pct-view-more {
 
 .pct-ui.form.number .number-controller .number-btn, .pct-ui.form-disabled.number .number-controller .number-btn {
   display: inline-block;
-  width: 41px;
-  height: 40.5px;
+  width: 40px;
+  height: 40px;
   background: #fbfbfb;
   text-align: center;
   cursor: pointer;
@@ -5824,7 +5877,7 @@ a.pct-view-more-link .pct-ui.card-brandshop .pct-view-more {
     .pct-ui.form.number .number-controller .number-btn {
       -ms-flex-negative: 0;
       flex-shrink: 0;
-      color: #00afeb; }
+      color: #14b9d5; }
       .pct-ui.form.number .number-controller .number-btn .number__decrement {
         border-right: none;
         margin-left: -2px; }
@@ -5902,7 +5955,7 @@ input[type="number"]::-webkit-outer-spin-button {
   -ms-flex-align: center;
   align-items: center; }
   .pct-ui.form.number-responsive .number-controller input[type="number"] {
-    margin-top: 8px;
+    margin-top: 7px;
     -moz-appearance: textfield;
     -webkit-appearance: textfield;
     -o-appearance: textfield;
@@ -6107,11 +6160,21 @@ input[type="checkbox"].switch-checkbox:not(:checked) + label {
     .content-block .content-description .pct-ui.form-textarea-label {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      margin-bottom: 10px; }
+      margin-bottom: 24px; }
       .content-block .content-description .pct-ui.form.error,
       .content-block .content-description .pct-ui.form-label.error,
       .content-block .content-description .pct-ui.form-textarea-label.error {
         margin-bottom: 15px; }
+      .content-block .content-description .pct-ui.form .pct-ui.form,
+      .content-block .content-description .pct-ui.form .pct-ui.form-label,
+      .content-block .content-description .pct-ui.form .pct-ui.form-textarea-label,
+      .content-block .content-description .pct-ui.form-label .pct-ui.form,
+      .content-block .content-description .pct-ui.form-label .pct-ui.form-label,
+      .content-block .content-description .pct-ui.form-label .pct-ui.form-textarea-label,
+      .content-block .content-description .pct-ui.form-textarea-label .pct-ui.form,
+      .content-block .content-description .pct-ui.form-textarea-label .pct-ui.form-label,
+      .content-block .content-description .pct-ui.form-textarea-label .pct-ui.form-textarea-label {
+        margin-bottom: 8px; }
     @media (max-width: 768px) {
       .content-block .content-description .pct-ui.form,
       .content-block .content-description .pct-ui.form-label,
@@ -6436,7 +6499,8 @@ input[type="checkbox"].switch-checkbox:not(:checked) + label {
         color: #0091d7; }
         .pct-ui.accordion .accordion-caption .caption-text-box a.pct-icon {
           vertical-align: middle;
-          font-size: 1.2rem; }
+          font-size: 1.25rem;
+          color: #14b9d5; }
       .pct-ui.accordion .accordion-caption .caption-text-box .hint-text {
         color: #e96886; }
         .pct-ui.accordion .accordion-caption .caption-text-box .hint-text .pct-icon {
@@ -7026,7 +7090,7 @@ span.date-time {
     -webkit-box-orient: vertical;
     height: 1.375rem; }
     .orderlist_titleBox .orderlist_title a {
-      color: #ff9800; }
+      color: #14b9d5; }
   .orderlist_titleBox .orderlist_title-inline {
     display: inline; }
   .orderlist_titleBox .orderlist_title-withicon {
@@ -7070,7 +7134,7 @@ span.date-time {
     width: auto; }
 
 a.pct-ui.btn-xs.btn.btn_contanctSeller .pct-btn-icon {
-  color: #ff9800;
+  color: #14b9d5;
   font-size: 0.875rem; }
 
 @media (max-width: 768px) {
@@ -8443,7 +8507,7 @@ a.btn_secondary:hover {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #ff9800;
+    background-color: #14b9d5;
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     top: 50%;
@@ -8491,7 +8555,7 @@ a.btn_secondary:hover {
   padding: 8px 15px; }
   .content-description .upload-product-img .upload-img-num span.current {
     letter-spacing: 2px;
-    color: #14b9d5; }
+    color: #00afeb; }
 
 .content-description .upload-product-img .pct-ui.img-manager {
   display: inline-block;
@@ -8758,10 +8822,10 @@ a.btn_secondary:hover {
       flex-basis: 155px;
       text-align: right; }
       .content-description .logistic-wrap .pct-ui.accordion .accordion-caption .caption-text-box a {
-        color: #00afeb; }
+        color: #14b9d5; }
         .content-description .logistic-wrap .pct-ui.accordion .accordion-caption .caption-text-box a.pct-icon {
           vertical-align: middle;
-          font-size: 1.2rem; } }
+          font-size: 1.25rem; } }
 
 .variation-box {
   position: relative;
@@ -8968,17 +9032,17 @@ a.btn_secondary:hover {
       .xsl-download-wrap .xsl-download-block .xsl-download img {
         border-radius: 50%; }
       .xsl-download-wrap .xsl-download-block .xsl-download .download-btn {
-        width: 55px;
-        height: 55px;
+        width: 54px;
+        height: 54px;
         position: absolute;
         right: 45px;
         bottom: 10px;
         cursor: pointer;
-        font-size: 1.9rem;
+        font-size: 1.875rem;
         text-align: center;
         line-height: 60px;
         color: #ffffff;
-        background-color: #14b9d5;
+        background-color: #ff9800;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s;
@@ -8993,7 +9057,7 @@ a.btn_secondary:hover {
         animation: floatAnimation 1.2s ease-in-out infinite; }
         .xsl-download-wrap .xsl-download-block .xsl-download .download-btn:hover {
           color: #ffffff;
-          background-color: #0091d7; }
+          background-color: #ffb71a; }
   .xsl-download-wrap .xsl-download-text {
     -webkit-box-flex: 7;
     -ms-flex: 7;
@@ -9274,3 +9338,19 @@ a.btn_secondary:hover {
 .seller-action-bar-fixed.seller-action-bar-fixed-hidden {
   bottom: -100px;
   opacity: 0; }
+
+.product-add-alert {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 15px;
+  word-break: normal; }
+  .product-add-alert .pct-icon {
+    color: #e96886;
+    margin-right: 6px; }
+  .product-add-alert > a {
+    text-decoration: underline;
+    color: #0091d7; }
+    .product-add-alert > a:hover {
+      text-decoration: none; }

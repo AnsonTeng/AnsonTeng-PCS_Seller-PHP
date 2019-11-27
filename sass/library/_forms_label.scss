@@ -76,11 +76,22 @@
     display: none;
 }
 
-// 文字說明（搭配）
-.form-introduction {
-    position: relative;
-    top: -1rem;
-    font-size: 0.875rem;
-    color: $colorDeepGray;
-    margin-bottom: 1rem;
+.form-textList {
+    margin: 2px 0 6px 0;
+    > p {
+        font-size: 0.875rem;
+        margin-bottom: 6px;
+
+        &.alert {
+            color: $colorPinkRed;
+        }
+
+        > a {
+            text-decoration: underline;
+            color: $primaryDeepColor;
+        }
+        > a:hover {
+            text-decoration: none;
+        }
+    }
 }

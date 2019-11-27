@@ -123,10 +123,16 @@
         .pct-ui.form-label,
         .pct-ui.form-textarea-label {
             flex-wrap: wrap;
-            margin-bottom: 10px;
+            margin-bottom: 24px;
 
             &.error {
                 margin-bottom: 15px;
+            }
+
+            .pct-ui.form,
+            .pct-ui.form-label,
+            .pct-ui.form-textarea-label {
+                margin-bottom: 8px;
             }
         }
 

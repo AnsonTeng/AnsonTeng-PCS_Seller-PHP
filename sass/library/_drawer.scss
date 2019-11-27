@@ -181,7 +181,7 @@
                     text-align: left;
                     &.active {
                         font-weight: 400;
-                        color: $accentColor;
+                        color: $secondaryColor;
                         padding: 0 0.9375rem;
                     }
                     &.account-logout {
@@ -198,7 +198,7 @@
                         font-size: 0.875rem;
                     }
                     a:hover {
-                        color: $accentColor;
+                        color: $secondaryColor;
                         background-color: $colorGreyishWhite;
                     }
                 }

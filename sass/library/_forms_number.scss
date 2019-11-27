@@ -8,8 +8,8 @@
 
 %number-btn {
     display: inline-block;
-    width: 41px;
-    height: 40.5px;
+    width: 40px;
+    height: 40px;
     background: #fbfbfb;
     text-align: center;
     cursor: pointer;
@@ -42,7 +42,7 @@
         .number-btn {
             flex-shrink: 0;
             @extend %number-btn;
-            color: $primaryColor;
+            color: $secondaryColor;
 
             .number__decrement {
                 border-right: none;
@@ -136,7 +136,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
         input[type="number"] {
             @extend %input-number-responsive;
-            margin-top: 8px;
+            margin-top: 7px;
             -moz-appearance: textfield;
             -webkit-appearance: textfield;
             -o-appearance: textfield;

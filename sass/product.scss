@@ -103,7 +103,7 @@
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: $accentColor;
+        background-color: $secondaryColor;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
         top: 50%;
         left: 50%;
@@ -165,7 +165,7 @@
 
             span.current {
                 letter-spacing: 2px;
-                color: $secondaryColor;
+                color: $primaryColor;
             }
         }
 
@@ -549,11 +549,11 @@
                         text-align: right;
 
                         a {
-                            color: $primaryColor;
+                            color: $secondaryColor;
 
                             &.pct-icon {
                                 vertical-align: middle;
-                                font-size: 1.2rem;
+                                font-size: 1.25rem;
                             }
                         }
                     }
@@ -915,17 +915,17 @@
             }
 
             .download-btn {
-                width: 55px;
-                height: 55px;
+                width: 54px;
+                height: 54px;
                 position: absolute;
                 right: 45px;
                 bottom: 10px;
                 cursor: pointer;
-                font-size: 1.9rem;
+                font-size: 1.875rem;
                 text-align: center;
                 line-height: 60px;
                 color: $colorWhite;
-                background-color: $secondaryColor;
+                background-color: $accentColor;
                 transition: 0.3s;
                 z-index: 10;
                 border-radius: 50%;
@@ -935,7 +935,7 @@
 
                 &:hover {
                     color: $colorWhite;
-                    background-color: $primaryDeepColor;
+                    background-color: $accentDeepColor;
                 }
             }
         }
@@ -1269,4 +1269,27 @@
 .seller-action-bar-fixed.seller-action-bar-fixed-hidden {
     bottom: -100px;
     opacity: 0;
+}
+
+// 新增商品提醒文字
+.product-add-alert {
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 15px;
+    word-break: normal;
+
+    .pct-icon {
+        color: $colorPinkRed;
+        margin-right: 6px;
+    }
+    > a {
+        text-decoration: underline;
+        color: $primaryDeepColor;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }

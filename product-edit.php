@@ -22,9 +22,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#e21e26">
-    <meta name="msapplication-TileColor" content="#e21e26">
-    <meta name="theme-color" content="#e21e26">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#00afeb">
+    <meta name="msapplication-TileColor" content="#00afeb">
+    <meta name="theme-color" content="#00afeb">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -37,7 +37,7 @@
     <!-- BS grid -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
 
-    <title>PChome Thai | มุมลูกค้า</title>
+    <title>PChome SEA | 編輯商品</title>
     <!-- Google Tag Manager -->
     <script>
     (function(w, d, s, l, i) {
@@ -122,6 +122,8 @@
                                     <li>新增商品</li>
                                 </ul>
                             </div>
+                            <p class="product-add-alert"><span class="pct-icon icon-alert"></span>新增商品前，請先參閱 <a
+                                    href="prohibited_restricted.html" target="_blank">禁運及受限商品列表</a>，以維護您的權益。謝謝！</p>
                             <!--商品圖片-->
                             <div class="content-block">
                                 <div class="content-title">設定商品圖片 <span class="required">＊</span></div>
@@ -312,9 +314,9 @@
                                                 class="pct-ui btn-sm btn-secondary-outlined inputGroup-btn">Google翻譯
                                                 中翻泰</a>
                                             <input type="text" placeholder="商品泰文名稱">
-                                            <!-- <p class="break-text">自動翻譯功能由 Google
+                                            <p class="break-text">自動翻譯功能由 Google
                                                 翻譯所提供，PChome不保證翻譯內容之正確性！您可自行修正翻譯結果。
-                                            </p> -->
+                                            </p>
                                         </div>
                                     </div>
 
@@ -335,7 +337,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="pct-ui form-label product-category form-lg-break">
+                                    <div class="pct-ui form-label product-category form-m-break">
                                         <label for="" class="required">商品分類</label>
                                         <div class="column-form">
                                             <div class="pct-ui form select">
@@ -391,10 +393,10 @@
                                     </div>
 
                                     <div class="pct-ui form">
-                                        <div class="pct-ui form-label form-m-break">
+                                        <div class="pct-ui form-label form-lg-break">
                                             <label></label>
                                             <span
-                                                class="form-introduction">按照每日浮動匯率計算泰銖價格，參考匯率：<span>0.981</span><span>(DD/MM/YYYY)</span>
+                                                class="form-introduction">按照每日浮動匯率計算泰銖價格，參考匯率：<span>0.991</span><span>(DD/MM/YYYY)</span>
                                             </span>
                                         </div>
                                     </div>
@@ -617,8 +619,9 @@
 
                                     <div class="pct-ui form-label form-m-break">
                                         <label for="">物流方式</label>
-                                        <div class="pct-ui form text-list">
-                                            <p>(1) 請確實輸入商品包裹的重量及材積，我們會依照您所輸入的資訊向買家收取適當的國際運費。詳見【<a href="#">運費如何計算</a>】
+                                        <div class="pct-ui form form-textList">
+                                            <p class="alert">(1) 請確實輸入商品包裹的重量及材積，我們會依照您所輸入的資訊向買家收取適當的國際運費。詳見【<a
+                                                    href="#">運費如何計算</a>】
                                             </p>
                                             <p>(2) 海外出貨目前以單一商品為一個包裹來計算運費，譬如買家購買同商品x2，會計算為兩個包裹、兩筆運費。</p>
                                             <p>(3) 提醒您，包裹重量小於
@@ -822,7 +825,7 @@
                                     </div>
                                     <div class="action-btn-box">
                                         <a href="#" class="pct-ui btn-lg">取消</a>
-                                        <a href="#" class="pct-ui btn-lg btn-cta">確定送出</a>
+                                        <a href="#" class="pct-ui btn-lg btn-secondary">確定送出</a>
                                     </div>
                                 </div>
 
@@ -853,7 +856,7 @@
                                     </div>
                                     <div class="action-btn-box">
                                         <a href="#" class="pct-ui btn-lg">取消</a>
-                                        <a href="#" class="pct-ui btn-lg btn-cta">確定送出</a>
+                                        <a href="#" class="pct-ui btn-lg btn-secondary">確定送出</a>
                                     </div>
                                 </div>
                             </div>

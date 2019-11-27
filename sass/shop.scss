@@ -1,0 +1,665 @@
+@import "layout.scss";
+
+//變數
+// @import "library/_variables";
+//混用
+// @import "library/_mixin";
+//繼承
+// @import "library/_extend";
+
+//－－－ Page Components －－－
+
+// 表單
+@import "library/_forms";
+
+//區塊內容
+@import "library/_content-block";
+
+//折疊內容
+@import "library/_accordion";
+
+//上傳檔案
+@import "library/_file-upload";
+
+//折疊式內容 ＋ toggle
+#pct-section-content {
+    .pct-ui.accordion {
+        .pct-ui.switch-toggle {
+            label {
+                margin-right: 0;
+            }
+        }
+        .accordion-caption {
+            position: relative;
+
+            .pct-ui.switch-toggle {
+                position: absolute;
+                right: 55px;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    #pct-section-content {
+        .pct-ui.accordion {
+            .pct-ui.switch-toggle {
+                label {
+                    margin-right: 0;
+                }
+            }
+            .accordion-caption {
+                padding: 10px 15px 10px 10px;
+
+                .caption-inner {
+                    .caption-figure {
+                        flex-basis: 34px;
+                    }
+
+                    .caption-title-box {
+                        flex-basis: 180px;
+
+                        .caption-title {
+                            font-size: 0.875rem;
+                            line-height: 16px;
+                        }
+                    }
+
+                    @media (max-width: $break-xxs) {
+                        .caption-title-box {
+                            flex-basis: 120px;
+                        }
+                    }
+                }
+
+                .pct-ui.switch-toggle {
+                    position: absolute;
+                    right: 40px;
+                }
+            }
+        }
+    }
+}
+.content-block .content-description label {
+}
+// 退過退款規定
+.content-block.rule-refunds {
+    .content-description {
+        .form-label {
+            .form {
+                display: flex;
+                // align-content: flex-start;
+                align-items: flex-start;
+                // align-items: stretch;
+                // align-items: center;
+
+                input {
+                    position: relative;
+                    top: 15px;
+                    margin-right: 6px;
+                }
+                label {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+//*********** 賣場介紹 ************//
+
+//賣場介紹
+.content-block.shop-intro {
+    .content-description {
+        .account-avatar-box {
+            margin-right: 30px;
+        }
+
+        @media (max-width: $break-sm) {
+            .account-avatar-box {
+                margin-right: 0px;
+
+                .account-avatar.lg {
+                    margin: 0 auto;
+                    width: 130px;
+                    height: 130px;
+                    padding: 3px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .pct-ui.form-label {
+            &.shop-intro-text {
+                align-items: flex-start;
+            }
+        }
+
+        .shop-address-box {
+            display: flex;
+            margin-top: 20px;
+
+            .form-column {
+                .break-label {
+                    label {
+                        font-weight: 400 !important;
+                    }
+                }
+            }
+
+            .break-label {
+                label {
+                    font-weight: 400 !important;
+                }
+            }
+
+            .shop-address {
+                flex-basis: 130px;
+            }
+
+            .address-form {
+                flex: 1;
+            }
+        }
+
+        .ec-certificate {
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+            label {
+                font-size: 0.875rem;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: $break-sm) {
+            .ec-certificate {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+#pct-lightbox-modifyphonenumber {
+    .description {
+        .pct-ui.form {
+            justify-content: center;
+            margin: 0 auto;
+        }
+    }
+}
+
+//*********** 賣場介紹RWD ************//
+
+@media (max-width: $break-lg) {
+    .content-block.shop-intro {
+        .content-description {
+            .shop-address-box {
+                display: block;
+            }
+        }
+    }
+}
+
+//*********** 購物說明 ************//
+
+// 燈箱
+#pct-lightbox-stockPrepare {
+    .description {
+        .pct-ui.form {
+            justify-content: center;
+        }
+    }
+}
+
+//*********** 物流設定 ************//
+
+//物流設定
+#pct-section-content {
+    &.logistic-option {
+        .pct-ui.accordion {
+            .pct-ui.switch-toggle {
+                label {
+                    margin-right: 0;
+                }
+            }
+
+            .accordion-caption {
+                .caption-title-box {
+                    .caption-text {
+                        color: $primaryColor;
+
+                        span {
+                            &.defaultOpen {
+                                color: $colorDeepGray;
+                            }
+
+                            &.defaultSeller {
+                                color: $primaryColor;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .accordion-liquid-container {
+                background-color: #ffffff;
+
+                .logistic-option-setting {
+                    display: flex;
+                    flex-direction: row-reverse;
+
+                    .operater-term {
+                        flex: 5;
+                        padding-right: 20px;
+                        min-height: 100px;
+
+                        a {
+                            color: $primaryColor;
+                            text-decoration: underline;
+
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+
+                        ul li {
+                            font-size: 0.8125rem;
+                            line-height: 18px;
+                            color: $colorDeepGray;
+                            margin-bottom: 6px;
+                            font-weight: 300;
+                            text-align: justify;
+                        }
+                    }
+
+                    .more-setting {
+                        flex: 6;
+                        border-left: 1px solid #ececec;
+
+                        .set-delivery-text,
+                        .switch-toggle-text {
+                            font-size: 0.8125rem;
+                            flex-basis: 170px;
+                            word-break: break-word;
+                            font-weight: 500;
+                            text-align: right;
+                        }
+
+                        .logistic-toggle {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                        }
+
+                        .default-delivery-box {
+                            display: none;
+                        }
+
+                        .set-delivery {
+                            display: flex;
+                            justify-content: space-between;
+
+                            label {
+                                max-width: 260px;
+
+                                span {
+                                    font-size: 0.8125rem;
+                                    line-height: 18px;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 物流廠商圖示
+.postimg {
+    width: 45px;
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+// 國際物流公司清單
+.shop-logistic-list {
+    .content-description {
+        .pct-ui.modal {
+            width: auto;
+        }
+    }
+}
+
+//*********** 物流設定RWD ************//
+
+@media (max-width: $break-lg) {
+    #pct-section-content {
+        &.logistic-option {
+            .pct-ui.accordion {
+                .accordion-liquid-container {
+                    .logistic-option-setting {
+                        .operater-term {
+                            flex: 4;
+                        }
+
+                        .more-setting {
+                            flex: 6;
+
+                            .set-delivery-text,
+                            .switch-toggle-text {
+                                flex-basis: 170px;
+                                word-break: break-word;
+                            }
+
+                            .set-delivery {
+                                label {
+                                    max-width: 220px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    #pct-section-content {
+        &.logistic-option {
+            .pct-ui.accordion {
+                .accordion-liquid-container {
+                    .logistic-option-setting {
+                        display: block;
+
+                        .operater-term {
+                            min-height: auto;
+                            padding-right: 0;
+                        }
+
+                        .more-setting {
+                            border-left: none;
+                            margin-bottom: 30px;
+
+                            .set-delivery-text,
+                            .switch-toggle-text {
+                                text-align: left;
+                            }
+
+                            .set-delivery {
+                                label {
+                                    max-width: 280px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xs) {
+    #pct-section-content {
+        &.logistic-option {
+            .pct-ui.accordion {
+                .accordion-liquid-container {
+                    .logistic-option-setting {
+                        display: block;
+
+                        .operater-term {
+                            min-height: auto;
+                            padding-right: 0;
+                        }
+
+                        .more-setting {
+                            border-left: none;
+                            margin-bottom: 20px;
+
+                            .set-delivery-text,
+                            .switch-toggle-text {
+                                text-align: left;
+                            }
+
+                            .set-delivery {
+                                display: block;
+
+                                label {
+                                    max-width: auto;
+                                }
+
+                                .location-box {
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//*********** 物流設定燈箱 ************//
+
+.pct-ui.modal {
+    .icon-alert {
+        color: $brandColor;
+    }
+
+    .promote-logisitc {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+
+        .pct-ui.form.checkbox {
+            margin-right: 10px;
+        }
+    }
+
+    .promote-detail {
+        .promotion-detail-box {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        //輸入框旁邊有文字
+        .pct-ui.form.text-with-input {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-left: 10px;
+
+            input[type="text"] {
+                width: 150px;
+            }
+            .post-img {
+                width: 45px;
+            }
+
+            @media (max-width: $break-md) {
+                input[type="text"] {
+                    width: 100px;
+                }
+            }
+
+            @media (max-width: $break-sm) {
+                input[type="text"] {
+                    width: 120px;
+                }
+            }
+
+            p {
+                position: relative;
+                font-weight: 300;
+                font-size: 0.9375rem;
+
+                &.no-align {
+                    padding: 0 10px;
+                }
+
+                &.align-right {
+                    padding-left: 10px;
+                }
+
+                &.align-center {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                @media (max-width: $break-xs) {
+                    &.align-right {
+                        padding-left: 10px;
+                    }
+
+                    &.align-center {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+
+                &.align-left {
+                    padding-left: 0px;
+                    padding-right: 10px;
+                }
+
+                &.required:after {
+                    content: "*";
+                    position: absolute;
+                    font-size: 0.815rem;
+                    color: #c60022;
+                    font-weight: 400 !important;
+                    margin-top: -8px;
+                    margin-left: 3px;
+                }
+            }
+        }
+
+        //只有文字
+        .pct-ui.form.text-without-input {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding-top: 13px;
+            margin-left: 10px;
+
+            p {
+                font-weight: 300;
+                font-size: 0.9375rem;
+
+                &.no-align {
+                    padding: 0 10px;
+                }
+
+                &.align-right {
+                    padding-left: 10px;
+                }
+
+                &.align-left {
+                    padding-left: 0px;
+                    padding-right: 10px;
+                }
+                &.data-text {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .radio-wrap {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 1px;
+
+        .pct-ui.form.radio {
+            flex: 1;
+            text-align: left;
+        }
+    }
+
+    //出貨地切換
+    .shipfrom-location {
+        display: none;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    //輸入框旁邊有文字
+    .pct-ui.form.text-with-input {
+        display: flex;
+        align-items: center;
+        // flex-wrap: wrap;
+        // flex:1;
+
+        input {
+            max-width: 70px;
+        }
+        .post-img {
+            width: 45px;
+        }
+
+        p {
+            position: relative;
+            font-weight: 300;
+            font-size: 0.9375rem;
+
+            &.no-align {
+                padding: 0 10px;
+            }
+
+            &.align-right {
+                padding-left: 15px;
+            }
+
+            &.align-left {
+                padding-left: 0px;
+                padding-right: 15px;
+            }
+
+            &.required:after {
+                content: "*";
+                position: absolute;
+                font-size: 0.815rem;
+                color: #c60022;
+                font-weight: 400 !important;
+                margin-top: -8px;
+                margin-left: 3px;
+            }
+        }
+    }
+}
+
+//*********** 收款設定 ************//
+
+//銀行設定燈箱
+#pct-lightbox-mobilebanking {
+    //銀行表格
+    .normal-table {
+        .normallist-head {
+            th {
+                text-align: center;
+                padding: 10px 10px;
+                color: $colorGrayBlack;
+                letter-spacing: 1px;
+                font-weight: 500;
+            }
+        }
+
+        td:nth-child(1) img {
+            width: 30px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+    }
+}

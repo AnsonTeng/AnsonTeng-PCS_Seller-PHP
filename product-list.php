@@ -21,9 +21,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#e21e26">
-    <meta name="msapplication-TileColor" content="#e21e26">
-    <meta name="theme-color" content="#e21e26">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#00afeb">
+    <meta name="msapplication-TileColor" content="#00afeb">
+    <meta name="theme-color" content="#00afeb">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <!-- PAGE -->
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
-    <title>PChome Thai | มุมลูกค้า</title>
+    <title>PChome SEA | 商品列表</title>
     <!-- Google Tag Manager -->
     <script>
     (function(w, d, s, l, i) {

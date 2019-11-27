@@ -20,7 +20,7 @@
                         min-height: 44px;
                         padding: 10px 15px;
                         flex-basis: 180px;
-                        background-color: #eff3f6;
+                        background-color: $colorWhiteGreen;
                         margin-bottom: 2px;
                         margin-right: 1px;
                         text-align: right;
@@ -40,7 +40,8 @@
                         margin-bottom: 2px;
 
                         a {
-                            color: $accentColor;
+                            color: $primaryDeepColor;
+                            text-decoration: underline;
                         }
                     }
 
@@ -148,7 +149,7 @@
                         min-height: 44px;
                         padding: 10px 15px;
                         flex: 1;
-                        background-color: #eff3f6;
+                        background-color: $colorWhiteGreen;
                         margin-bottom: 2px;
                         margin-right: 1px;
                         text-align: right;
@@ -168,7 +169,7 @@
                         margin-bottom: 2px;
 
                         a {
-                            color: $accentColor;
+                            color: $primaryDeepColor;
                         }
                     }
 
@@ -181,7 +182,7 @@
                 }
 
                 .description-list-box:first-child {
-                    border-right: 2px solid #fff;
+                    border-right: 2px solid $colorWhite;
                 }
             }
 
@@ -194,7 +195,7 @@
                 margin-bottom: 2px;
 
                 .payment-img-preview {
-                    background-color: #ffffff;
+                    background-color: $colorWhite;
                     border-radius: 4px;
                     width: 400px;
                     height: 400px;
@@ -224,8 +225,8 @@
                             width: 100%;
                             line-height: 50px;
                             font-size: 0.9375rem;
-                            color: $accentColor;
-                            background-color: #ffffff;
+                            color: $primaryDeepColor;
+                            background-color: $colorWhite;
 
                             .pct-icon {
                                 display: inline-block;
@@ -233,7 +234,7 @@
                                 font-size: 18px;
                                 width: auto;
                                 height: auto;
-                                color: $accentColor;
+                                color: $primaryDeepColor;
                             }
                         }
                     }
@@ -268,6 +269,10 @@
                     .description-list-box {
                         display: block;
 
+                        &.box-displayflex {
+                            display: flex;
+                        }
+
                         .list-box-item {
                             display: flex;
                             align-items: center;
@@ -276,7 +281,7 @@
                             min-height: auto;
                             padding: 10px 15px;
                             flex-basis: 180px;
-                            background-color: #eff3f6;
+                            background-color: $colorWhiteGreen;
                             margin-bottom: 2px;
                             margin-right: 1px;
                         }
@@ -304,6 +309,10 @@
                     .description-list-box {
                         display: block;
 
+                        &.box-displayflex {
+                            display: flex;
+                        }
+
                         .list-box-item {
                             display: flex;
                             align-items: center;
@@ -312,7 +321,7 @@
                             min-height: auto;
                             padding: 10px 15px;
                             flex-basis: 180px;
-                            background-color: #eff3f6;
+                            background-color: $colorWhiteGreen;
                             margin-bottom: 2px;
                             margin-right: 1px;
                         }
@@ -334,6 +343,10 @@
                     &.description-list-shrink {
                         .description-list-box {
                             display: block;
+
+                            &.box-displayflex {
+                                display: flex;
+                            }
                             .list-box-item {
                                 //  Title 齊右
                                 justify-content: flex-start;
@@ -378,6 +391,11 @@
                     font-size: 1.2rem;
                     text-align: center !important;
                     margin-bottom: 0px;
+                    line-height: 1.6;
+                }
+                .remark {
+                    font-size: 0.75rem;
+                    margin-top: -7px;
                 }
 
                 .modal-icon-img {
@@ -399,7 +417,7 @@
                         font-size: 0.8125rem;
                         color: $colorGray;
                         line-height: 25px;
-                        background: white;
+                        background: $colorWhite;
                         padding: 0 20px;
                     }
 

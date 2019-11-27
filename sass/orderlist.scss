@@ -1,0 +1,338 @@
+@import "layout.scss";
+
+//變數
+// @import "library/_variables";
+//混用
+// @import "library/_mixin";
+//繼承
+// @import "library/_extend";
+
+//－－－ Page Components －－－
+
+//TAB導航
+@import "library/_tabnav";
+//頁碼
+@import "library/_pagination";
+
+//表格內容
+@import "library/_table";
+
+//表格－新增表格公用
+@import "library/_table-backendlist";
+
+//區塊內容
+@import "library/_content-block";
+
+//區塊－訂單清單
+@import "library/_section-InfoList";
+
+//表單－日曆
+@import "library/_forms_datepicker";
+
+//上傳檔案
+@import "library/_file-upload";
+
+// 展開隱藏選項用的按鈕
+a.add_condition {
+    position: relative;
+    top: -1px;
+    font-size: 0.875rem;
+    margin-left: 6px;
+    color: $colorDarkGray;
+}
+a.add_condition {
+    span.addBox:before {
+        color: $secondaryColor;
+    }
+}
+
+a.add_condition {
+    span:before {
+        position: absolute;
+        top: 1px;
+        right: -16px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: $secondaryColor;
+    }
+}
+
+@media (max-width: $break-sm) {
+    a.add_condition {
+        display: block;
+        top: 6px;
+    }
+}
+
+// 訂單搜尋＿新增條件
+.orderlistSearch__advanceSearch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $colorLightGray;
+    padding: 10px 20px 20px 20px;
+    border-radius: 5px;
+    margin: 12px 0 36px 0;
+    flex-wrap: nowrap;
+
+    .orderlistSearch__advanceSearch__list {
+        margin-right: 1vw;
+
+        .orderlistSearch__itemTitle {
+            font-size: 0.875rem;
+            font-weight: 400;
+            margin-top: 8px;
+            margin-bottom: 4px;
+        }
+
+        .orderlistSearch__items {
+            display: flex;
+            align-items: center;
+            // position: relative;
+            // top: 2px;
+            margin-right: 6px;
+
+            > span {
+                margin: 0 4px;
+                color: $colorDeepGray;
+            }
+
+            input {
+                margin: 0;
+            }
+        }
+    }
+}
+@media (max-width: $break-md) {
+    .orderlistSearch__advanceSearch {
+        flex-direction: column;
+        margin: 12px 0 24px 0;
+
+        .orderlistSearch__advanceSearch__list {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 6px;
+
+            .orderlistSearch__items {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+// 訂單列表總數 金額 與顯示筆數選單
+.orderlist_statistics {
+    display: flex;
+    justify-content: space-between;
+}
+
+// 商品資訊群組
+.product-infoGroup {
+    min-height: 72px;
+}
+
+// 商品資訊群組 - 商品資訊
+.product-info {
+    position: relative;
+    // top: 4px;
+}
+@media (max-width: $break-md) {
+    .product-info {
+        // top: -4px;
+    }
+}
+
+// 商品資訊群組 - 商品縮圖
+.product-tiny-img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid $colorLightGray;
+}
+
+@media (max-width: $break-md) {
+    .product-tiny-img {
+        width: 54px;
+        height: 54px;
+    }
+}
+
+@media (max-width: $break-md) {
+    .product-tiny-img {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.pct-section-header {
+    &.sub-header {
+        margin-top: 3px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+
+        h4 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            padding-left: 5px;
+            .sub-header-text {
+                word-break: break-word;
+                display: inline;
+                font-weight: 400;
+                font-size: 0.9375rem;
+                color: $colorDeepGray;
+                margin-right: 10px;
+                span {
+                    color: $secondaryColor;
+                    &.cat-now-text:before {
+                        content: '"';
+                        padding: 2px;
+                        color: $colorDeepGray;
+                    }
+                    &.cat-now-text:after {
+                        content: '"';
+                        padding: 2px;
+                        color: $colorDeepGray;
+                    }
+                }
+            }
+        }
+        .title {
+            padding-left: 5px;
+            width: auto;
+        }
+        @media (max-width: $break-md) {
+            .title {
+                width: 100%;
+                margin-top: 12px;
+                margin-right: 10px;
+            }
+        }
+    }
+    @media (max-width: $break-md) {
+        &.sub-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+
+// :::::::::::: 黑名單相關 (暫時不用) :::::::::::::::::::::
+
+// 禁止賣家結帳狀態
+.orderlist-disable {
+    opacity: 0.2;
+}
+
+// 警告文字
+.orderlist-warning {
+    color: $primaryColor;
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+
+// :::::::::::: 黑名單相關 (暫時不用) :::::::::::::::::::::
+
+// ------ 表格類型－訂單列表（覆寫_table-backendlist）--------------------------------------
+
+//MODALS  訂單頁面popup獨立樣式 -------------------------------------------
+.pct-ui.modal {
+    // 對話框內容
+    .modal-content {
+        .description {
+            //條列內容樣式
+            .description-list {
+                .description-list-box {
+                    .list-box-item {
+                        &.step-eng {
+                            font-size: 1.125rem;
+                            color: $colorGreen;
+                        }
+                    }
+
+                    .list-box-form {
+                        .upload-img-result {
+                            .edit-btn {
+                                li.pct-icon {
+                                    font-size: 1.7rem;
+                                    position: static;
+                                    width: auto;
+                                    height: auto;
+                                    color: $accentColor;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xs) {
+    //MODALS 後台使用的對話視窗樣式
+
+    .pct-ui.modal {
+        // 對話框內容
+        .modal-content {
+            // padding: 1rem 0.8rem 0 0.8rem;
+
+            .description {
+                .payment-img-wrap {
+                    padding: 20px 0px;
+
+                    .payment-img-preview {
+                        width: 230px;
+                        height: 230px;
+
+                        .payment-img {
+                            height: 170px;
+                        }
+                    }
+                }
+
+                //條列內容樣式
+                .description-list {
+                    .description-list-box {
+                        .list-box-form {
+                            .upload-img-wrap {
+                                padding: 0px;
+
+                                .pct-cion {
+                                    transform: translateY(-65%);
+                                }
+
+                                label#filedrag {
+                                    width: 230px;
+                                    height: 230px;
+                                    margin-top: 20px;
+
+                                    .filedrag-text {
+                                        font-size: 1.2rem;
+                                        font-weight: 500;
+                                        text-align: center;
+                                        color: $colorLightGreen;
+                                        letter-spacing: 1px;
+                                        transform: translateY(-200%);
+                                    }
+                                }
+
+                                input[type="file"] {
+                                    display: none;
+                                }
+                            }
+
+                            .upload-img-result {
+                                width: 230px;
+                                height: 230px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
