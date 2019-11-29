@@ -58,7 +58,7 @@
                     <div class="account-shop-link">
                         <a href="https://www.pchome.co.th/pro/sellers/show/20818021320"
                             class="pct-ui btn-xs btn-secondary">
-                            <!-- <li class="pct-btn-icon icon-seller-shop"></li> -->
+                            <!-- <li class="pct-icon icon-seller-shop"></li> -->
                             <!-- ดูร้านค้า --> 查看賣場 </a>
                     </div>
                     <div class="detail-box-wrap">

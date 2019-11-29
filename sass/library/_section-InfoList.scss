@@ -60,7 +60,7 @@
     margin-right: 8px;
     color: $colorDeepGray;
 
-    .pct-btn-icon {
+    .pct-icon {
         margin-right: 6px;
     }
 }
@@ -248,7 +248,7 @@ span.date-time {
 // 聊聊按鈕 （共）
 a.pct-ui.btn-xs.btn.btn_contanctSeller {
     // 按鈕icon
-    .pct-btn-icon {
+    > i {
         color: $secondaryColor;
         font-size: 0.875rem;
     }
@@ -264,7 +264,6 @@ a.pct-ui.btn-xs.btn.btn_contanctSeller {
     display: flex;
     flex-direction: row;
     align-items: center;
-    // padding: 6px 8px;
     min-height: 60px;
     margin-bottom: 6px;
 }

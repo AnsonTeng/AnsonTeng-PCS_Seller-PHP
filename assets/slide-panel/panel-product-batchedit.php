@@ -92,7 +92,7 @@
                                                         <div class="table_inlineBox">
                                                             <a class="pct-ui btn-xs btn pexhlistBtn"
                                                                 style="flex-shrink:0;">
-                                                                <li class="pct-btn-icon icon-edit"></li>修改
+                                                                <li class="pct-icon icon-edit"></li>修改
                                                             </a>
                                                         </div>
                                                         <div class="table_inlineBox">
@@ -128,7 +128,7 @@
                                                             สวย สมบูรณ์ หายากมาก<span>
                                                     </div>
                                                     <a class="pct-ui btn-xs btn batchedit-editNameBtn">
-                                                        <li class="pct-btn-icon icon-edit"></li>修改
+                                                        <li class="pct-icon icon-edit"></li>修改
                                                     </a>
                                                 </div>
                                             </div>
@@ -278,7 +278,7 @@
                                                         <div class="table_inlineBox">
                                                             <a class="pct-ui btn-xs btn pexhlistBtn"
                                                                 style="flex-shrink:0;">
-                                                                <li class="pct-btn-icon icon-edit"></li>修改
+                                                                <li class="pct-icon icon-edit"></li>修改
                                                             </a>
                                                         </div>
                                                     </div>
@@ -311,7 +311,7 @@
                                                             สวย สมบูรณ์ หายากมาก<span>
                                                     </div>
                                                     <a class="pct-ui btn-xs btn batchedit-editNameBtn">
-                                                        <li class="pct-btn-icon icon-edit"></li>修改
+                                                        <li class="pct-icon icon-edit"></li>修改
                                                     </a>
                                                 </div>
                                             </div>
@@ -366,7 +366,7 @@
                                             <div class="content-block">
                                                 <div class="content-description">
                                                     <a href="" class="pct-ui btn-sm btn batchedit-editspecstockBtn">
-                                                        <li class="pct-btn-icon icon-edit"></li>修改規格與數量
+                                                        <li class="pct-icon icon-edit"></li>修改規格與數量
                                                     </a>
                                                 </div>
                                             </div>

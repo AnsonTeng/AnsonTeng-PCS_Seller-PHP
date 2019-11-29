@@ -1,11 +1,11 @@
-@import "layout.scss";
-
 //變數
-// @import "library/_variables";
+@import "library/_variables";
 //混用
-// @import "library/_mixin";
+@import "library/_mixin";
 //繼承
-// @import "library/_extend";
+@import "library/_extend";
+
+@import "layout.scss";
 
 //－－－ Page Components －－－
 

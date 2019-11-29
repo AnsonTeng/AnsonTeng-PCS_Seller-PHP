@@ -1,0 +1,75 @@
+//變數
+@import "library/_variables";
+//混用
+@import "library/_mixin";
+//繼承
+@import "library/_extend";
+
+//全域設定
+@import "library/_global";
+
+//FOOTER
+@import "library/_footer";
+
+//區塊內容
+@import "library/_content-block";
+
+//首頁內容區
+#pct-main {
+    padding-top: $headerHeight_table;
+}
+@media (max-width: $break-sm) {
+    #pct-main {
+        padding-top: $headerHeight_mobile;
+    }
+}
+
+//內頁內容區
+.col-md-12 {
+    overflow: hidden;
+}
+
+#pct-main {
+    .title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding-bottom: 20px;
+        span.pct-icon {
+            color: $colorWhite;
+            background-color: $colorPinkRed;
+            border-radius: 50%;
+            position: relative;
+            top: 2px;
+        }
+    }
+    .content-block {
+        margin-bottom: 70px;
+        .content-description {
+            .content-note {
+                font-size: 1.125rem;
+                padding: 20px 0;
+            }
+            ul {
+                li {
+                    color: $colorDeepGray;
+                    font-size: 0.9375rem;
+                    line-height: 1.6;
+                    a {
+                        text-decoration: underline;
+                        color: $primaryDeepColor;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        .content-description-color {
+            ul {
+                li {
+                    color: $colorPinkRed;
+                }
+            }
+        }
+    }
+}

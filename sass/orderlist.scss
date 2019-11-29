@@ -1,5 +1,3 @@
-@import "layout.scss";
-
 //變數
 // @import "library/_variables";
 //混用
@@ -7,10 +5,13 @@
 //繼承
 // @import "library/_extend";
 
+@import "layout.scss";
+
 //－－－ Page Components －－－
 
 //TAB導航
 @import "library/_tabnav";
+
 //頁碼
 @import "library/_pagination";
 
@@ -32,6 +33,9 @@
 //上傳檔案
 @import "library/_file-upload";
 
+//折疊內容
+@import "library/_accordion";
+
 // 展開隱藏選項用的按鈕
 a.add_condition {
     position: relative;
@@ -45,7 +49,6 @@ a.add_condition {
         color: $secondaryColor;
     }
 }
-
 a.add_condition {
     span:before {
         position: absolute;
@@ -88,8 +91,6 @@ a.add_condition {
         .orderlistSearch__items {
             display: flex;
             align-items: center;
-            // position: relative;
-            // top: 2px;
             margin-right: 6px;
 
             > span {
@@ -131,16 +132,16 @@ a.add_condition {
     min-height: 72px;
 }
 
-// 商品資訊群組 - 商品資訊
-.product-info {
-    position: relative;
-    // top: 4px;
-}
-@media (max-width: $break-md) {
-    .product-info {
-        // top: -4px;
-    }
-}
+// // 商品資訊群組 - 商品資訊
+// .product-info {
+//     position: relative;
+// top: 4px;
+// }
+// @media (max-width: $break-md) {
+//     .product-info {
+// top: -4px;
+//     }
+// }
 
 // 商品資訊群組 - 商品縮圖
 .product-tiny-img {
@@ -248,7 +249,7 @@ a.add_condition {
                     .list-box-item {
                         &.step-eng {
                             font-size: 1.125rem;
-                            color: $colorGreen;
+                            color: $colorGrayGreen;
                         }
                     }
 
@@ -260,7 +261,7 @@ a.add_condition {
                                     position: static;
                                     width: auto;
                                     height: auto;
-                                    color: $accentColor;
+                                    color: $secondaryColor;
                                     text-align: center;
                                 }
                             }
@@ -301,7 +302,7 @@ a.add_condition {
                             .upload-img-wrap {
                                 padding: 0px;
 
-                                .pct-cion {
+                                .pct-icon {
                                     transform: translateY(-65%);
                                 }
 

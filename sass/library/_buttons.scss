@@ -195,17 +195,17 @@ $default-btn-font-size: 16px;
     // background-color: $colorLightGray;
 }
 
-.pct-btn-icon.click-toggle-follow {
-    font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "Noto Sans TC", "Hiragino Sans GB",
-        "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif" !important ;
+// .pct-btn-icon.click-toggle-follow {
+//     font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "Noto Sans TC", "Hiragino Sans GB",
+//         "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif" !important ;
 
-    &:before {
-        font-family: "pct-icon";
-        margin-right: 3px;
-    }
+//     &:before {
+//         font-family: "pct-icon";
+//         margin-right: 3px;
+//     }
 
-    &.active {
-        background-color: $colorPink;
-        border: 1px solid $colorPink;
-    }
-}
+//     &.active {
+//         background-color: $colorPink;
+//         border: 1px solid $colorPink;
+//     }
+// }

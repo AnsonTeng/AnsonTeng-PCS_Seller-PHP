@@ -1,0 +1,1278 @@
+// //變數
+// @import 'library/_variables';
+// //混用
+// @import 'library/_mixin';
+// //繼承
+// @import 'library/_extend';
+
+@import "layout.scss";
+
+//－－－ Page Components －－－
+
+//代收款項區塊
+@import "library/_section-bankPayment";
+
+//頁碼
+@import "library/_pagination";
+
+//表格內容
+@import "library/_table";
+
+//表格－新增表格公用
+@import "library/_table-backendlist";
+
+//區塊內容
+@import "library/_content-block";
+
+//區塊－訂單清單
+@import "library/_section-InfoList";
+
+// section 金額統計
+.section-accounting {
+    width: 100%;
+    background-color: $colorWhite;
+    padding: 15px 20px;
+    border-radius: 2px 2px 0px 0px;
+    position: relative;
+    margin-bottom: 0px;
+    @extend %shadow-style-card;
+
+    .accountingBox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        .accountingItem {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-items: flex-end;
+            justify-content: space-around;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            padding-right: 30px;
+
+            // 共用
+            .items {
+                padding: 9px 6px;
+                height: 78px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: stretch;
+                width: auto;
+
+                // 總計容器
+                .item-totalBox {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: stretch;
+                    // align-items: stretch;
+                    min-width: 228px;
+                }
+
+                .item-amountBox-pic {
+                    width: 60px;
+                    min-width: 60px;
+                    height: 60px;
+                    margin-right: 8px;
+                }
+
+                .item-amountBox-text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    // width: 100%;
+
+                    .subtitle {
+                        color: $colorGrayBlack;
+                        font-size: 0.75rem;
+                        font-weight: 300;
+                        display: inline-block;
+                        word-wrap: break-word;
+                        word-break: normal;
+                        min-height: 32px;
+                        position: relative;
+                        top: -2px;
+
+                        &:before {
+                            content: "";
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 0;
+                            height: 100%;
+                        }
+                        .subtitle-text {
+                            display: inline-block;
+                            vertical-align: middle;
+                            text-align: left;
+                        }
+
+                        // 幣別
+                        .currency {
+                            color: $colorDarkGray;
+                            position: relative;
+                            top: 2px;
+                        }
+                        .currency:before {
+                            content: "：";
+                            font-weight: 500;
+                        }
+                    }
+                    // 金額
+                    .amount {
+                        display: inline-block;
+                        font-size: 1.625rem;
+                        letter-spacing: -1px;
+                        color: $colorDeepGray;
+                        position: relative;
+                        top: -4px;
+                    }
+                }
+            }
+            // 總金額組合
+            .item-amountTotalBox {
+                width: auto;
+                .item-amountBox-text {
+                    .subtitle {
+                        color: $colorGrayBlack;
+                        font-weight: 400;
+                    }
+                    .amount {
+                        font-size: 2rem;
+                        color: $primaryColor;
+                    }
+                }
+            }
+
+            // 運算符
+            .item-operations {
+                display: flex;
+                align-items: center;
+                color: $colorGray;
+                text-align: center;
+                align-self: center;
+                padding: 0 6px;
+                height: auto;
+                width: 100%;
+                max-width: 60px;
+                i {
+                    padding-right: 0px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        // 按鈕容器
+        .item-btnBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 0px;
+            width: 100%;
+            max-width: 120px;
+            margin-left: auto;
+            margin: 0 auto;
+            position: relative;
+            top: 8px;
+            a {
+                padding: 10px 10px;
+                margin: 4px;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-lg) {
+    // section 金額統計
+    .section-accounting {
+        .accountingBox {
+            flex-wrap: wrap;
+
+            .accountingItem {
+                padding-right: 0px;
+                justify-content: space-between;
+                .items {
+                    // 總計容器
+                    .item-totalBox {
+                        min-width: 204px;
+                    }
+
+                    .item-amountBox-text {
+                        .amount {
+                            font-size: 1.5rem;
+                            top: 0px;
+                        }
+                    }
+                }
+
+                // 總金額組合
+                .item-amountTotalBox {
+                    width: auto;
+
+                    .item-amountBox-text {
+                        .amount {
+                            position: relative;
+                            top: -8px;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                // 運算符
+                .item-operations {
+                    max-width: 50px;
+                }
+            }
+
+            // 按鈕容器
+            .item-btnBox {
+                max-width: 80%;
+                width: 100%;
+                margin: 12px auto 12px auto;
+
+                a {
+                    max-width: 60%;
+                    // margin: 2px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-md) {
+    // section 金額統計
+    .section-accounting {
+        // margin-bottom: 20px;
+        margin-bottom: 0 px;
+        .accountingBox {
+            .accountingItem {
+                // 總金額組合
+                .item-amountTotalBox {
+                    width: auto;
+                }
+                // 運算符
+                .item-operations {
+                    max-width: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    // section 金額統計
+    .section-accounting {
+        padding: 15px 6vw;
+        .accountingBox {
+            .accountingItem {
+                flex-wrap: wrap;
+                .items {
+                    // 總計容器
+                    .item-totalBox {
+                        min-width: 204px;
+                        margin: 0 auto;
+
+                        .item-amountBox-text {
+                            align-items: center;
+
+                            .subtitle {
+                                display: inline-block;
+                            }
+                        }
+                    }
+
+                    // 共用（ 所有副標居中 ）
+                    .item-amountBox-text {
+                        .subtitle {
+                            .subtitle-text {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                // 總金額組合
+                .item-amountTotalBox {
+                    width: 100%;
+                }
+
+                // 運算符 =
+                .item-operations-equal {
+                    max-width: 10%;
+
+                    i {
+                        margin: 0 0 0 auto;
+                    }
+                }
+
+                .item-amountBox-left {
+                    width: 40%;
+                    .item-amountBox-text {
+                        align-items: center;
+                        width: auto;
+                        margin: 0 0 0 auto;
+                        margin: 0 auto;
+                    }
+                }
+
+                // 運算符 +/-
+                .item-operations-plus {
+                    max-width: 10%;
+                }
+
+                .item-amountBox-right {
+                    width: 40%;
+                    .item-amountBox-text {
+                        align-items: center;
+                        width: auto;
+                        margin: 0 auto 0 0;
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            // 按鈕容器
+            .item-btnBox {
+                max-width: 90%;
+                a {
+                    max-width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xs) {
+    // section 金額統計
+    .section-accounting {
+        padding: 15px;
+        .accountingBox {
+            .accountingItem {
+                .item-amountBox-left,
+                .item-amountBox-right {
+                    .item-amountBox-text {
+                        .subtitle {
+                            font-size: 0.875rem;
+                        }
+                    }
+                }
+            }
+            // 按鈕容器
+            .item-btnBox {
+                top: 2px;
+                max-width: 100%;
+                a {
+                    max-width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xxs) {
+    // section 金額統計
+    .section-accounting {
+        padding: 15px 5px;
+        .accountingBox {
+            .accountingItem {
+                .item-amountBox-left,
+                .item-amountBox-right {
+                    .item-amountBox-text {
+                        .subtitle {
+                            font-size: 0.75rem;
+                        }
+                    }
+                }
+            }
+            // 按鈕容器
+            .item-btnBox {
+                flex-direction: column;
+                margin-bottom: 0px;
+                max-width: 100%;
+                a {
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+}
+
+// 若是 “section 金額統計” 被包覆在燈箱之中時 左右的 padding 要清除
+.pct-ui.modal {
+    .modal-content {
+        padding: 1rem 1.25rem 0 1.25rem;
+        .section-accounting {
+            border-radius: 0 0 2px 2px;
+            padding: 15px 15px;
+            border: 0px solid $colorGreyishWhite;
+            border-top-width: 1px;
+            margin-bottom: 30px;
+
+            .accountingBox {
+                .accountingItem {
+                    padding-right: 0px;
+
+                    .items {
+                        // 總計容器
+                        .item-totalBox {
+                            min-width: 204px;
+                        }
+
+                        .item-amountBox-text {
+                            .amount {
+                                font-size: 1.5rem;
+                                top: 0px;
+                            }
+                        }
+                    }
+
+                    .item-amountTotalBox {
+                        width: auto;
+                        .item-amountBox-text {
+                            .amount {
+                                position: relative;
+                                top: -8px;
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+
+                    // 運算符 =
+                    .item-operations-equal {
+                        // max-width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-lg) {
+    // section 金額統計
+    .pct-ui.modal {
+        .modal-content {
+            .section-accounting {
+                .accountingBox {
+                    flex-wrap: wrap;
+
+                    .accountingItem {
+                        padding-right: 0px;
+                        justify-content: space-between;
+                        .items {
+                            // 總計容器
+                            .item-totalBox {
+                                min-width: 204px;
+                            }
+
+                            .item-amountBox-text {
+                                .amount {
+                                    font-size: 1.5rem;
+                                    top: 0px;
+                                }
+                            }
+                        }
+
+                        // 總金額組合
+                        .item-amountTotalBox {
+                            width: auto;
+                            .item-amountBox-text {
+                                .amount {
+                                    position: relative;
+                                    top: -8px;
+                                    font-size: 2rem;
+                                }
+                            }
+                        }
+
+                        // 運算符
+                        .item-operations {
+                            // max-width: 30px;
+                        }
+                    }
+
+                    // 按鈕容器
+                    .item-btnBox {
+                        flex-direction: row;
+                        max-width: 70%;
+                        width: 100%;
+                        margin: 12px auto 12px auto;
+
+                        a {
+                            max-width: 100%;
+                            margin: 8px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    .pct-ui.modal {
+        .modal-content {
+            .section-accounting {
+                .accountingBox {
+                    .accountingItem {
+                        .item-amountTotalBox {
+                            width: 100%;
+                        }
+
+                        // 運算符 =
+                        .item-operations-equal {
+                            max-width: 10%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xxs) {
+    .pct-ui.modal {
+        .modal-content {
+            padding: 1rem 1rem 0 1rem;
+
+            .section-accounting {
+                padding: 16px 3px;
+                .accountingBox {
+                    .accountingItem {
+                        .item-amountTotalBox {
+                            width: 100%;
+                        }
+
+                        // 運算符 =
+                        .item-operations-equal {
+                            max-width: 10%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ------ 表格類型－交易款項與交易費用（覆寫_table-backendlist）--------------------------------------
+
+.tableBox-selleracc-withdrawal,
+.tableBox-selleracc-fee {
+    .table__thead {
+        table {
+            thead {
+                tr {
+                    th {
+                        height: 55px;
+                        word-wrap: break-word;
+                        word-break: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    .table__tbody {
+        tbody {
+            // 每個個列表區塊間的間距
+            &:after {
+                content: " ";
+            }
+
+            tr {
+                background-color: $colorWhite;
+                padding: 8px;
+
+                td {
+                    position: relative;
+                    vertical-align: middle;
+                    padding: 10px 8px;
+                    font-size: 0.875rem;
+                    min-height: 46px;
+                    height: 46px;
+
+                    // 文字連結
+                    a {
+                        text-decoration: underline;
+                        color: $primaryDeepColor;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+                    // 按鈕連結
+                    > a.pct-ui {
+                        color: $colorGrayBlack;
+                        text-decoration: none;
+                    }
+                    span {
+                        display: block;
+                        margin: 2px 0;
+                    }
+                    span.negative {
+                        color: $colorPinkRed;
+                    }
+                    span.negative:before {
+                        content: "-";
+                        position: relative;
+                        left: -2px;
+                    }
+                }
+                td:first-child {
+                    background-color: rgba($colorWhite, 0);
+                    padding: 8px;
+                    // padding-left: 18px;
+                    font-weight: 500;
+                    text-align: left;
+
+                    span i {
+                        margin-right: 6px;
+                    }
+                }
+                td:last-child {
+                    a {
+                        width: 96%;
+                        text-align: center;
+                    }
+                }
+            }
+
+            //列表區塊最後一個區塊要陰影
+            tr:last-child {
+                td:last-child() {
+                    box-shadow: 0 8px 7px -7px rgba(225, 225, 225, 0);
+                }
+            }
+        }
+    }
+}
+
+.tableBox-selleracc-fee {
+    .table__tbody {
+        tr {
+            td {
+                padding-top: 20px !important;
+                padding-bottom: 20px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-lg) {
+    .tableBox-selleracc-withdrawal {
+        .table__tbody {
+            tbody {
+                // 每個個列表區塊間的間距
+                &:after {
+                    line-height: 15px;
+                    content: ".";
+                    color: $colorGreyishWhite;
+                    display: block;
+                }
+                //列表區塊最後一個區塊要陰影
+                tr:last-child() {
+                    box-shadow: 0 8px 7px -7px rgba(225, 225, 225, 0.8);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-md) {
+    .tableBox-selleracc-fee {
+        .table__tbody {
+            tbody {
+                // 每個個列表區塊間的間距
+                &:after {
+                    line-height: 15px;
+                    content: ".";
+                    color: $colorGreyishWhite;
+                    display: block;
+                }
+                tr {
+                    td {
+                        padding-top: 10px !important;
+                        padding-bottom: 10px !important;
+                    }
+                }
+                //列表區塊最後一個區塊要陰影
+                tr:last-child() {
+                    box-shadow: 0 8px 7px -7px rgba(225, 225, 225, 0.8);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-lg) {
+    // 表格類型－交易款項
+    .tableBox-selleracc-withdrawal {
+        .table__tbody {
+            tbody {
+                tr {
+                    td {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        padding: 10px 6% 10px 250px;
+                        text-align: left;
+                        min-height: 46px;
+                        height: 100%;
+
+                        .pct-ui {
+                            margin: 0;
+                        }
+                    }
+
+                    td:first-child {
+                        background-color: #eff3f6;
+                        padding: 10px 6% 10px 250px;
+                        text-align: left !important;
+                    }
+
+                    td:last-child {
+                        a {
+                            width: 150px;
+                            text-align: center;
+                        }
+                    }
+
+                    td:before {
+                        position: absolute;
+                        width: 210px;
+                        white-space: nowrap;
+                        content: attr(data-title);
+                        text-align: right;
+                        font-size: 0.8125rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-md) {
+    // 表格類型－交易費用
+    .tableBox-selleracc-fee {
+        .table__tbody {
+            tbody {
+                tr {
+                    td {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        padding: 10px 6% 10px 250px;
+                        text-align: left;
+                        min-height: 46px;
+                        height: 100%;
+
+                        .pct-ui {
+                            margin: 0;
+                        }
+                    }
+
+                    td:first-child {
+                        background-color: #eff3f6;
+                        padding: 10px 6% 10px 250px;
+                        text-align: left !important;
+                    }
+
+                    td:before {
+                        position: absolute;
+                        // position: relative;
+                        width: 210px;
+                        white-space: nowrap;
+                        content: attr(data-title);
+                        text-align: right;
+                        font-size: 0.8125rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    // 表格類型－交易款項與交易費用
+    .tableBox-selleracc-withdrawal,
+    .tableBox-selleracc-fee {
+        .table__tbody {
+            tbody {
+                tr {
+                    td {
+                        padding: 10px 6% 10px 250px;
+                    }
+                    td:first-child {
+                        padding: 10px 6% 10px 250px;
+                    }
+                    td:before {
+                        width: 210px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xs) {
+    // 表格類型－交易款項與交易費用
+    .tableBox-selleracc-withdrawal,
+    .tableBox-selleracc-fee {
+        .table__tbody {
+            tbody {
+                tr {
+                    td {
+                        padding: 10px 6% 10px 220px;
+                    }
+                    td:first-child {
+                        padding: 10px 6% 10px 220px;
+                    }
+                    td:before {
+                        width: 170px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xxs) {
+    // 表格類型－交易款項與交易費用
+    .tableBox-selleracc-withdrawal {
+        .table__tbody {
+            tbody {
+                border-bottom-width: 20px;
+                tr {
+                    td {
+                        padding: 10px 6% 10px 150px;
+                    }
+                    td:first-child {
+                        padding: 10px 6% 10px 150px;
+                    }
+                    td:before {
+                        width: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 359px) {
+    // 表格類型－交易款項與交易費用
+    .tableBox-selleracc-withdrawal,
+    .tableBox-selleracc-fee {
+        .table__tbody {
+            tbody {
+                tr {
+                    td {
+                        padding: 10px 20px;
+                    }
+                    td:first-child {
+                        padding: 10px 20px;
+                    }
+
+                    td:before {
+                        position: relative;
+                        top: 0px;
+                        left: 0px;
+                        width: 100%;
+                        line-height: 30px;
+                        text-align: left;
+                        font-size: 0.8125rem;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+// ------ 表格類型－大量編輯（覆寫_table-backendlist）End ----------------------
+
+// 新增／修改 提領帳戶
+.content-bankAccountSetting {
+    width: 100%;
+    background-color: $colorWhite;
+    border-radius: 3px;
+    padding: 20px 15px;
+
+    .accountFlexbox {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        // 按鈕容器
+        .accountFlexbox-btnBox {
+            border: 1px solid $colorGreyishWhite;
+            border-radius: 3px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-right: 24px;
+
+            .accountFlexbox-btnBox-btnGroup {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 150px;
+                height: 150px;
+                padding: 10px;
+
+                .btnGroup-img {
+                    display: block;
+                    width: 90px;
+                    height: 90px;
+                }
+                .btnGroup-btn {
+                    display: block;
+                }
+            }
+        }
+
+        // 資訊容器
+        .accountFlexbox-infoBox {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            flex: 1;
+            padding: 10px;
+            height: 100%;
+
+            .infoBox-item {
+                display: flex;
+                flex-direction: row;
+                padding: 0 15px 13px 0;
+
+                .infoBox-title {
+                    font-size: 0.875rem;
+                    font-weight: 400;
+                    padding: 0 0.75rem 0.25rem 0;
+                    color: $colorGrayBlack;
+                }
+
+                .infoBox-text {
+                    font-size: 0.875rem;
+                    font-weight: 400;
+                    padding: 0 0.75rem 0.25rem 0;
+                    color: $colorDeepGray;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $break-xs) {
+    // 新增／修改 提領帳戶
+    .content-bankAccountSetting {
+        .accountFlexbox {
+            // 按鈕容器
+            .accountFlexbox-btnBox {
+                margin-right: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xs) {
+    // 新增／修改 提領帳戶
+    .content-bankAccountSetting {
+        .accountFlexbox {
+            align-items: flex-start;
+
+            // 按鈕容器
+            .accountFlexbox-btnBox {
+                margin-top: 8px;
+                margin-bottom: 0px;
+                margin-right: 6px;
+            }
+
+            // 資訊容器
+            .accountFlexbox-infoBox {
+                .infoBox-item {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-xxs) {
+    // 新增／修改 提領帳戶
+    .content-bankAccountSetting {
+        .accountFlexbox {
+            flex-direction: column;
+            align-items: center;
+
+            // 按鈕容器
+            .accountFlexbox-btnBox {
+                margin-top: 0px;
+                margin-bottom: 16px;
+                margin-right: 0px;
+            }
+            // 資訊容器
+            .accountFlexbox-infoBox {
+                .infoBox-item {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 359px) {
+    // 新增／修改 提領帳戶
+    .content-bankAccountSetting {
+        .accountFlexbox {
+            // 資訊容器
+            .accountFlexbox-infoBox {
+                .infoBox-item {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+//帶有單位的表單-後
+.unit-after {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        font-size: 0.875rem;
+        right: 15px;
+        top: 13px;
+        color: #555555;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    }
+}
+
+//帶有單位的表單-前
+.unit-before {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        font-size: 0.875rem;
+        left: 15px;
+        top: 13px;
+        color: #c0c0c0;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    }
+}
+
+// 燈箱 Step 相關
+.withdrawal-step {
+    width: 100%;
+    padding: 18px 24px 24px 24px;
+    text-align: center;
+    ul {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+        width: 60%;
+
+        li.point {
+            position: relative;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 0px solid $colorBlack;
+            background-color: $colorBlack;
+            text-align: center;
+            box-sizing: border-box;
+            flex-grow: 0;
+            flex-shrink: 0;
+
+            span.title {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 48px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 0.8125rem;
+                font-weight: 400;
+                width: 240%;
+                height: 34px;
+                word-wrap: break-word;
+                word-break: normal;
+            }
+
+            span.num {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 1.25rem;
+                font-weight: 300;
+                color: $colorWhite;
+            }
+        }
+
+        // 線段－未完成
+        li.point-line {
+            width: 100%;
+            min-width: 48px;
+            height: 5px;
+            text-align: center;
+
+            background-color: $colorLightGray;
+            border-radius: 0%;
+            // border: 0px solid $colorBlack;
+        }
+        // 線段－已完成
+        li.point-line-solved {
+            background: #89dcea; /* Old browsers */
+            background: -moz-linear-gradient(left, #89dcea 50%, $secondaryColor 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #89dcea 50%, $secondaryColor 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(
+                to right,
+                #89dcea 50%,
+                $secondaryColor 100%
+            ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89dcea', endColorstr='#14B9D5',GradientType=1 ); /* IE6-9 */
+        }
+
+        // 點－已完成
+        li.point.point-solved {
+            background-color: rgba($secondaryColor, 0.5);
+
+            .num {
+                color: $colorWhite;
+            }
+            .title {
+                color: rgba($secondaryColor, 0.5);
+            }
+        }
+        // 點－進行中
+        li.point.point-processing {
+            background-color: $secondaryColor;
+            border: 4px solid $secondaryColor;
+            box-sizing: content-box;
+
+            .num {
+                color: $colorWhite;
+                font-weight: 500;
+                font-size: 1.5rem;
+            }
+            .title {
+                color: $secondaryColor;
+                font-weight: 500;
+                font-size: 0.9125rem;
+            }
+        }
+        // 點－未進行
+        li.point.point-pending {
+            background-color: $colorLightGray;
+            .title {
+                color: $colorLightGray;
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    // 燈箱 Step 相關
+    .withdrawal-step {
+        // padding: 18px 18px 24px 18px;
+        ul {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: $break-xxs) {
+    // 燈箱 Step 相關
+    .withdrawal-step {
+        padding: 18px 40px 24px 40px;
+        ul {
+            width: 100%;
+        }
+    }
+}
+
+// 按鈕－發票設定
+.setInvoiceBtnBox {
+    width: 100%;
+    // background-color: rgba(red, 0.5);
+    pointer-events: none;
+    position: absolute;
+    top: 10px;
+    // right: 15px;
+    left: 15px;
+    // text-align: right;
+
+    font-size: 0.875rem;
+    color: $accentColor;
+    a {
+        pointer-events: auto;
+    }
+}
+
+.setPersonalInvoiceBtn,
+.setCompanyInvoiceBtn {
+    position: relative;
+    top: -2px;
+    font-size: 0.9375rem;
+    color: $secondaryColor;
+    margin: 0;
+}
+
+.setCompanyInvoiceBtn {
+    .pct-icon {
+        font-size: 1.25rem;
+    }
+}
+
+#pct-lightbox-setInvoice-personal,
+#pct-lightbox-setInvoice-company {
+    // 燈箱－發票設定
+    .pct-ui.form textarea {
+        min-height: 3rem;
+    }
+}
+
+// 燈箱－提領款項燈箱
+#pct-lightbox-withdrawal {
+    .description {
+        label {
+            font-size: 0.9375rem;
+        }
+        p.alert-red {
+            font-size: 0.8125rem;
+            line-height: 1rem;
+        }
+    }
+}
+@media (max-width: $break-xs) {
+    // 燈箱－提領款項燈箱
+    #pct-lightbox-withdrawal {
+        .description {
+            p.alert-red {
+                font-size: 0.75rem;
+                line-height: 0.9125rem;
+            }
+        }
+    }
+}
+
+// 訂單明細不會顯示下方操作按鈕欄
+.pct-panel__content-actions {
+    display: none;
+}

@@ -123,7 +123,7 @@
                                 </ul>
                             </div>
                             <p class="product-add-alert"><span class="pct-icon icon-alert"></span>新增商品前，請先參閱 <a
-                                    href="prohibited_restricted.html" target="_blank">禁運及受限商品列表</a>，以維護您的權益。謝謝！</p>
+                                    href="prohibited_restricted.php" target="_blank">禁運及受限商品列表</a>，以維護您的權益。謝謝！</p>
                             <!--商品圖片-->
                             <div class="content-block">
                                 <div class="content-title">設定商品圖片 <span class="required">＊</span></div>
@@ -282,7 +282,7 @@
                                         <div class="pct-ui img-manager">
                                             <div class="content-upload">
                                                 <label id="filedrag">
-                                                    <div class="pct-cion icon-picture"></div>
+                                                    <div class="pct-icon icon-picture"></div>
                                                     <p><span class="pct-icon icon-plus"></span>上傳</p>
                                                     <input type="file" accept="image/*">
                                                 </label>
@@ -567,7 +567,7 @@
                                             <div class="pct-icon icon-trash"></div>
                                         </div>
                                         <a class="pct-ui btn add-variation">
-                                            <li class="pct-btn-icon icon-plus"></li>新增規格
+                                            <li class="pct-icon icon-plus"></li>新增規格
                                         </a>
                                     </div>
                                 </div>
@@ -783,7 +783,7 @@
                                             <div class="pct-ui form text-without-input">
                                                 <p class="align-left">自購買日起 <span class="eng-num">1</span>年。</p>
                                                 <a class="pct-ui btn-xs btn warrantytimeBtn">
-                                                    <li class="pct-btn-icon icon-edit"></li>修改
+                                                    <li class="pct-icon icon-edit"></li>修改
                                                 </a>
                                             </div>
                                         </div>

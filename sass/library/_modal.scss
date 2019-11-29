@@ -56,7 +56,11 @@
                 line-height: 1.5rem;
 
                 &.alert-red {
-                    color: $brandColor;
+                    color: $colorPinkRed;
+                }
+
+                &.alert-atc {
+                    color: $accentColor;
                 }
 
                 &.align-center {
@@ -64,7 +68,7 @@
                 }
             }
 
-            p a {
+            p > a {
                 color: $primaryDeepColor;
             }
 

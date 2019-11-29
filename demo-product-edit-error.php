@@ -193,7 +193,7 @@
                                         <div class="pct-ui img-manager">
                                             <div class="content-upload">
                                                 <label id="filedrag">
-                                                    <div class="pct-cion icon-picture"></div>
+                                                    <div class="pct-icon icon-picture"></div>
                                                     <p><span class="pct-icon icon-plus"></span>上傳</p>
                                                     <input type="file" accept="image/*">
                                                 </label>
@@ -319,7 +319,7 @@
                                                         <div class="pct-icon icon-trash"></div>
                                                     </div>
                                                     <a class="pct-ui btn add-variation">
-                                                        <li class="pct-btn-icon icon-plus"></li>新增規格
+                                                        <li class="pct-icon icon-plus"></li>新增規格
                                                     </a>
                                                 </div>
                                             </div>
@@ -407,7 +407,7 @@
                                             <div class="pct-ui form text-without-input">
                                                 <p class="align-left">自購買日起 <span class="eng-num">1</span>年。</p>
                                                 <a class="pct-ui btn-xs btn warrantytimeBtn">
-                                                    <li class="pct-btn-icon icon-edit"></li>修改
+                                                    <li class="pct-icon icon-edit"></li>修改
                                                 </a>
                                             </div>
                                         </div>

@@ -240,7 +240,7 @@
                                                 <div class="card-figure">
                                                     <div class="card-figure-inner">
                                                         <div class="card-figure-img">
-                                                            <div class="pct-cion icon-picture"></div>
+                                                            <div class="pct-icon icon-picture"></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1354,9 +1354,6 @@
                             </div>
                             <!--商品格子內容區 end-->
 
-
-
-
                             <!-- PC 版 列出所有頁碼 -->
                             <div class="pct-ui page-pagination">
                                 <ul class="eng-num">
@@ -1376,8 +1373,6 @@
                                     </li>
                                 </ul>
                             </div>
-
-
                             <!-- 手機版 Load more-->
                             <div class="pct-btn-loadcontent hidden-sm-up">
                                 <a href="#" class="pct-ui btn btn-cta btn-load">LOAD MORE</a>

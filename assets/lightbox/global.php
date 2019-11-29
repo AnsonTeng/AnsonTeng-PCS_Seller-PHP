@@ -80,7 +80,7 @@
                     <input type="tel" placeholder="請輸入您的銀行帳號">
                 </div>
 
-                <p class="alert-red">＊提醒您，銀行帳戶所有人必需與個人資料一致，否則會導致提領失敗。</p>
+                <p class="alert-atc">＊提醒您，銀行帳戶所有人必需與個人資料一致，否則會導致提領失敗。</p>
             </div>
         </div>
     </div>
@@ -202,7 +202,7 @@
                 <div class="pct-ui form text-without-input">
                     <p class="data-text align-left eng-num">+886 926693639</p>
                     <a href="shop-intro.php#editTel" class="pct-ui btn-xs btn">
-                        <li class="pct-btn-icon icon-edit"></li>修改號碼
+                        <li class="pct-icon icon-edit"></li>修改號碼
                     </a>
                 </div>
             </div>

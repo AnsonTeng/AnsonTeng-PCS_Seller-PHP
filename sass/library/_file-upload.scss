@@ -2,7 +2,7 @@
 .upload-img-wrap {
     padding: 20px;
 
-    .pct-cion {
+    .pct-icon {
         text-align: center;
         position: relative;
         top: 50%;
@@ -12,7 +12,7 @@
     }
 
     label#filedrag {
-        background-color: #ffffff;
+        background-color: $colorWhite;
         border-radius: 4px;
         display: block;
         width: 300px;
@@ -50,7 +50,7 @@
     height: 300px;
     margin: 0 auto;
     margin-top: 20px;
-    background-color: #EFF3F6;
+    background-color: $colorWhiteGreen;
     position: relative;
     display: flex;
     align-items: center;
@@ -69,15 +69,15 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background-color: #fff;
-        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+        background-color: $colorWhite;
+        box-shadow: 0 1px 1px 0 rgba($colorBlack, 0.15);
 
-        li.pct-icon {
+        lipct-icon {
             font-size: 1.7rem;
             position: static;
             width: auto;
             height: auto;
-            color: $accentColor!important;
+            color: $secondaryColor !important;
             text-align: center;
 
             &.icon-rotate {
@@ -86,13 +86,12 @@
         }
 
         &.delete-btn {
-            top: -15px!important;
-            right: -10px!important;
-            
-            .pct-icon{
+            top: -15px !important;
+            right: -10px !important;
+
+            .pct-icon {
                 line-height: 40px;
             }
-
         }
 
         &.rotate-btn {
@@ -111,7 +110,7 @@
     .upload-img-wrap {
         padding: 0px;
 
-        .pct-cion {
+        .pct-icon {
             transform: translateY(-65%);
         }
 
@@ -141,60 +140,57 @@
     }
 }
 
-
 //單行式 檔案上場
-.file-upload{
-    display:block;
-    text-align:center;
-    font-size:0.8125rem;
+.file-upload {
+    display: block;
+    text-align: center;
+    font-size: 0.8125rem;
 
-    .file-select{
-        display:block;
-        border: 1px solid #BBCCD4;
+    .file-select {
+        display: block;
+        border: 1px solid $colorDeepLightGreen;
         background-color: $colorWhite;
         color: $colorGrayBlack;
         border-radius: 2px;
-        cursor:pointer;
-        height:44px;
-        line-height:44px;
-        text-align:left;
-        overflow:hidden;
-        position:relative;
+        cursor: pointer;
+        height: 44px;
+        line-height: 44px;
+        text-align: left;
+        overflow: hidden;
+        position: relative;
 
-        .file-select-button{
+        .file-select-button {
             border-radius: 3px;
             background-color: $colorGreyishWhite;
-            border: 1px solid #CCCCCC;
-            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
-            padding:0 10px;
-            display:inline-block;
-            height:32px;
-            line-height:32px;
-            color:$colorGrayBlack;
-            min-width:100px;
+            border: 1px solid $colorGray;
+            box-shadow: 0 1px 1px 0 rgba($colorBlack, 0.15);
+            padding: 0 10px;
+            display: inline-block;
+            height: 32px;
+            line-height: 32px;
+            color: $colorGrayBlack;
+            min-width: 100px;
             text-align: center;
             margin-left: 10px;
         }
-        .file-select-name{
-            line-height:44px;
-            display:inline-block;
-            padding:0 10px;
+        .file-select-name {
+            line-height: 44px;
+            display: inline-block;
+            padding: 0 10px;
         }
-        input[type=file]{
-            z-index:100;
-            cursor:pointer;
-            position:absolute;
-            height:100%;
-            width:100%;
-            top:0;
-            left:0;
-            opacity:0;
-            filter:alpha(opacity=0);
+        input[type="file"] {
+            z-index: 100;
+            cursor: pointer;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            filter: alpha(opacity=0);
         }
-
     }
 }
-
 
 //拖拉式
 .file-drop-wrap {
@@ -232,22 +228,20 @@
     padding-left: 10px;
 }
 
-@media (max-width:$break-xs) {
+@media (max-width: $break-xs) {
+    .pct-icon.icon-cloud-uploading {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        color: $colorDeepLightGreen;
+        font-size: 4rem;
+        margin-left: -30px;
+    }
 
-        .pct-icon.icon-cloud-uploading {
-            position: absolute;
-            top: 30px;
-            left: 50%;
-            color: $colorDeepLightGreen;
-            font-size: 4rem;
-            margin-left: -30px;
-        }
-
-        .file-drop-wrap {
-            display: block;
-            text-align: center;
-            padding: 100px 25px 80px 25px;
-            min-height: auto;
-        }
-
+    .file-drop-wrap {
+        display: block;
+        text-align: center;
+        padding: 100px 25px 80px 25px;
+        min-height: auto;
+    }
 }

@@ -172,7 +172,7 @@
                         padding: 0.4375rem 0.5rem 0.3125rem 0.5rem;
 
                         &:hover {
-                            color: $colorGreen;
+                            color: $secondaryColor;
                             background-color: $colorWhite;
                             transform: translateY(-2px);
                         }
@@ -359,7 +359,7 @@
                 justify-content: center;
 
                 .inner-items {
-                    .pct-cion {
+                    .pct-icon {
                         font-size: 3.5rem;
                         color: $colorLightGreen;
                     }
@@ -372,8 +372,10 @@
                             display: inline-block;
                             vertical-align: bottom;
                             font-size: 1.3rem;
-                            color: $accentColor;
+                            color: $secondaryColor;
                             padding-right: 5px;
+                            position: relative;
+                            top: 1px;
                         }
                     }
                 }
@@ -517,7 +519,7 @@
                     justify-content: center;
 
                     .inner-items {
-                        .pct-cion {
+                        .pct-icon {
                             display: none;
                         }
 
@@ -526,7 +528,7 @@
                             font-weight: 500;
 
                             span {
-                                background-color: $accentColor;
+                                background-color: $secondaryColor;
                                 border-radius: 50%;
                                 margin-right: 10px;
                             }
@@ -669,7 +671,7 @@
             justify-content: center;
 
             .inner-items {
-                .pct-cion {
+                .pct-icon {
                     display: none;
                 }
 
@@ -678,7 +680,7 @@
                     font-weight: 500;
 
                     span {
-                        background-color: $accentColor;
+                        background-color: $secondaryColor;
                         border-radius: 50%;
                         margin-right: 10px;
                     }

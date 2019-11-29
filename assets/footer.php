@@ -12,7 +12,7 @@
             <div class="pct-footer-logoprivacy">
                 <ul>
                     <li class="pct-footerlogo"></li>
-                    <li class="pct-footer-privacy">Copyright © 2019 PChome.co.th All Rights Reserved.</li>
+                    <li class="pct-footer-privacy"> © 2020 LinkTel Inc. All Rights Reserved.</li>
                 </ul>
             </div>
         </div>

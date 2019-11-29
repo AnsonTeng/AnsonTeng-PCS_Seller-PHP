@@ -1,10 +1,10 @@
 @font-face {
     font-family: "pct-icon";
-    src: url("../../fonts/icon/pct-icon.eot?f6nyvu");
-    src: url("../../fonts/icon/pct-icon.eot?f6nyvu#iefix") format("embedded-opentype"),
-        url("../../fonts/icon/pct-icon.ttf?f6nyvu") format("truetype"),
-        url("../../fonts/icon/pct-icon.woff?f6nyvu") format("woff"),
-        url("../../fonts/icon/pct-icon.svg?f6nyvu#pct-icon") format("svg");
+    src: url("../../fonts/icon/pct-icon.eot?aocdbp");
+    src: url("../../fonts/icon/pct-icon.eot?aocdbp#iefix") format("embedded-opentype"),
+        url("../../fonts/icon/pct-icon.ttf?aocdbp") format("truetype"),
+        url("../../fonts/icon/pct-icon.woff?aocdbp") format("woff"),
+        url("../../fonts/icon/pct-icon.svg?aocdbp#pct-icon") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -25,6 +25,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-alert-nofill:before {
+    content: "\e93f";
+}
 .icon-search:before {
     content: "\e93e";
 }

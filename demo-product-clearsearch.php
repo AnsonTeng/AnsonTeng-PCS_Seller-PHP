@@ -138,7 +138,7 @@
                                     </div>
                                     <!--  <a href="#" class="pct-ui btn-sm btn-cta inputGroup-btn">搜尋</a> -->
                                     <a href="product-list.php" class="pct-ui btn-sm inputGroup-btn">
-                                        <li class="pct-btn-icon icon-delete"></li>清空
+                                        <li class="pct-icon icon-delete"></li>清空
                                     </a>
                                 </div>
                                 <!-- 商品搜尋結束-->
@@ -226,7 +226,7 @@
                                                 <div class="card-figure">
                                                     <div class="card-figure-inner">
                                                         <div class="card-figure-img">
-                                                            <div class="pct-cion icon-picture"></div>
+                                                            <div class="pct-icon icon-picture"></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -471,7 +471,7 @@
                             <!--商品格子內容區 end-->
 
                             <!-- PC 版 列出所有頁碼 -->
-                            <div class="pct-ui page-pagination hidden-sm-down">
+                            <div class="pct-ui page-pagination">
                                 <ul class="eng-num">
                                     <li class="active">1</li>
                                     <li><a href="#">2</a></li>
@@ -481,11 +481,12 @@
                                     <li><a href="#">6</a></li>
                                     <li><a href="#">7</a></li>
                                     <li><a href="#">8</a></li>
-                                    <li><a href="#">9</a></li>
                                     <li class="pagination-jump-next"></li>
-                                    <li><a href="#">50</a></li>
-                                    <li><a class="pagination-next" href="#"><span
-                                                class="pct-icon icon-angle-right"></span></a></li>
+                                    <li>
+                                        <a class="pagination-next" href="#">
+                                            <span class="pct-icon icon-angle-right"></span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
 

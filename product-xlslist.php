@@ -172,7 +172,7 @@
                                     <p class="description-text">
                                         以下為excel大量上架紀錄列表，上傳資料後需2-3個工作天處理，上傳結果會在列表中紀錄，紀錄只會保留最後20筆資料。</p>
                                     <a class="pct-ui btn-sm xlserrorBtn">
-                                        <li class="pct-btn-icon icon-information"></li>上傳結果錯誤說明
+                                        <li class="pct-icon icon-information"></li>上傳結果錯誤說明
                                     </a>
 
                                     <div class="bulklist-list-table lg-break-table">

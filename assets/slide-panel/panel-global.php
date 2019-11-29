@@ -46,7 +46,8 @@
                                 </div>
                                 <div class="description-list-box">
                                     <div class="list-box-item">收件地址</div>
-                                    <div class="list-box-text eng-num">191/54, 191/57, 18th Floor, CTI Tower, Ratchadapisek Road,, Klongtoey, Bangkok 10110 Thailand</div>
+                                    <div class="list-box-text eng-num">191/54, 191/57, 18th Floor, CTI Tower,
+                                        Ratchadapisek Road,, Klongtoey, Bangkok 10110 Thailand</div>
                                 </div>
                             </div>
                         </div>
@@ -76,12 +77,44 @@
                                 </div>
                                 <div class="description-list-box">
                                     <div class="list-box-item">收件地址</div>
-                                    <div class="list-box-text eng-num">191/54, 191/57, 18th Floor, CTI Tower, Ratchadapisek Road,, Klongtoey, Bangkok 10110 Thailand</div>
+                                    <div class="list-box-text eng-num">191/54, 191/57, 18th Floor, CTI Tower,
+                                        Ratchadapisek Road,, Klongtoey, Bangkok 10110 Thailand</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="content-block">
+                    <div class="content-description">
+
+
+                        <div class="pct-ui accordion">
+                            <!--摺疊標題-->
+                            <div class="accordion-caption">
+                                <div class="caption-inner">
+                                    <div class="caption-title-box">
+                                        <div class="caption-title">โอนเข้าบัญชีผู้ขาย</div>
+                                        <div class="caption-text">บัญชีที่ร้านค้าใช้รับโอนเงิน</div>
+                                    </div>
+                                </div>
+                                <div class="caption-icon">
+                                    <div class="pct-icon icon-angle-down"></div>
+                                </div>
+                            </div>
+                            <!--摺疊內容下拉-->
+                            <div class="accordion-liquid-container">
+                                <div class="liquid-container-inner">
+                                    內容
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
                 <!-- 訂單明細內容 -->
                 <div class="pct-ui modal">
                     <div class="modal-content">
@@ -102,11 +135,16 @@
                                                     <!-- 訂單狀態 -->
                                                     <div class="table_flexBox table_flexBox-between">
                                                         <div class="itemInfoGroup">
-                                                            <div class="list__itemInfo-userImg img-bg" style="background-image: url('img/buyer_avator_default.svg');"></div>
-                                                            <span class="list__itemInfo list__itemInfo-userName">so*****************om</span>
+                                                            <div class="list__itemInfo-userImg img-bg"
+                                                                style="background-image: url('img/buyer_avator_default.svg');">
+                                                            </div>
+                                                            <span
+                                                                class="list__itemInfo list__itemInfo-userName">so*****************om</span>
                                                         </div>
                                                         <div class="contanctSeller">
-                                                            <a class="pct-ui btn-xs btn btn_contanctSeller productscreenshotBtn" href="#contanctSeller"><i class="pct-btn-icon icon-picture"></i>Screenshot</a>
+                                                            <a class="pct-ui btn-xs btn btn_contanctSeller productscreenshotBtn"
+                                                                href="#contanctSeller"><i
+                                                                    class="pct-icon icon-picture"></i>Screenshot</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -120,17 +158,23 @@
                                                     <div class="productInfoGroup">
                                                         <!-- 商品圖片 -->
                                                         <div class="productInfo-img">
-                                                            <img class="img-fluid" src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02" alt="Product-Picture">
+                                                            <img class="img-fluid"
+                                                                src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
+                                                                alt="Product-Picture">
                                                         </div>
                                                         <!-- 商品資訊 -->
                                                         <div class="productInfo-info">
                                                             <!-- 商品名稱 -->
                                                             <div class="productInfo-info-title">
-                                                                <span class="productInfo-info-title-text">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร เก่ามาก สวย สมบูรณ์ หายากมาก<span>
+                                                                <span class="productInfo-info-title-text">เปลัดขิก
+                                                                    หลวงพ่อกลั่น วัดอินทราวาส อ่างทอง ไม้ดำดง ยุคต้น
+                                                                    2.5นิ้ว รอยจาร เก่ามาก สวย สมบูรณ์ หายากมาก<span>
                                                             </div>
                                                             <!-- 商品規格 -->
                                                             <div class="productInfo-info-subtitle">
-                                                                <span class="productInfo-info-subtitle-text">Size / Color / Type / Size / Color / Type / Size / Color / Type / Size / Color / Type<span>
+                                                                <span class="productInfo-info-subtitle-text">Size /
+                                                                    Color / Type / Size / Color / Type / Size / Color /
+                                                                    Type / Size / Color / Type<span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -166,17 +210,22 @@
                                                     <div class="productInfoGroup">
                                                         <!-- 商品圖片 -->
                                                         <div class="productInfo-img">
-                                                            <img class="img-fluid" src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02" alt="Product-Picture">
+                                                            <img class="img-fluid"
+                                                                src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
+                                                                alt="Product-Picture">
                                                         </div>
                                                         <!-- 商品資訊 -->
                                                         <div class="productInfo-info">
                                                             <!-- 商品名稱 -->
                                                             <div class="productInfo-info-title">
-                                                                <span class="productInfo-info-title-text">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร เก่ามาก สวย สมบูรณ์ หายากมาก<span>
+                                                                <span class="productInfo-info-title-text">เปลัดขิก
+                                                                    หลวงพ่อกลั่น วัดอินทราวาส อ่างทอง ไม้ดำดง ยุคต้น
+                                                                    2.5นิ้ว รอยจาร เก่ามาก สวย สมบูรณ์ หายากมาก<span>
                                                             </div>
                                                             <!-- 商品規格 -->
                                                             <div class="productInfo-info-subtitle">
-                                                                <span class="productInfo-info-subtitle-text">Size / Color / Type<span>
+                                                                <span class="productInfo-info-subtitle-text">Size /
+                                                                    Color / Type<span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -295,7 +344,8 @@
                                             <div class="flexbox-item-flexbox">
                                                 <div class="flexbox-item">
                                                     <span>信用卡</span>
-                                                    <img src="img/icon_pchomepay.svg" alt="PChomePay" class="icon-pchomepay">
+                                                    <img src="img/icon_pchomepay.svg" alt="PChomePay"
+                                                        class="icon-pchomepay">
                                                 </div>
                                                 <div class="flexbox-item">
                                                     <span class="status">已付款</span>
@@ -318,12 +368,15 @@
                                             </div>
                                             <!-- 操作按鈕 -->
                                             <div class="flexbox-btnbox">
-                                                <a target="_blank" href="https://www.pchome.co.th//guide/guide/swpage/8-3-guide_qna2" class="pct-ui btn-xs btn">暸解更多</a>
+                                                <a target="_blank"
+                                                    href="https://www.pchome.co.th//guide/guide/swpage/8-3-guide_qna2"
+                                                    class="pct-ui btn-xs btn">暸解更多</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="description-list-box">
-                                        <div class="list-box-item"><!-- 賣家指定物流 -->วิธีการจัดส่งที่พีซีโฮมสนับสนุน</div>
+                                        <div class="list-box-item">
+                                            <!-- 賣家指定物流 -->วิธีการจัดส่งที่พีซีโฮมสนับสนุน</div>
                                         <div class="list-box-flexbox">
                                             <div class="flexbox-item-flexbox">
                                                 <div class="flexbox-item">
@@ -406,7 +459,6 @@
                                     <div class="description-list-box">
                                         <div class="list-box-item">取消退款申請</div>
                                         <div class="list-box-text"><span class="eng-num">MM / DD / YYYY</span></div>
-                                        <!-- <div class="flexbox-btnbox"></div> -->
                                     </div>
                                 </div>
                             </div>
@@ -417,12 +469,12 @@
         </div>
         <!-- 操作按鈕 (共六種狀態按鈕 （手機版不會出現“列印出貨單”） － 最多會同時出現二顆按鈕)-->
         <div class="pct-panel__content-actions">
-            <a href="#" class="pct-ui btn btn-cta informdispatchBtn">通知已出貨</a>
-            <a href="#" class="pct-ui btn btn-cta agreecancelBtn" style="display:none;">回覆取消申請</a>
-            <a href="#" class="pct-ui btn btn-cta refundBtn" style="display:none;">回覆退款申請</a>
-            <a href="#" class="pct-ui btn btn-cta printdispatchBtn hidden-md-down" style="display:none;">列印出貨單</a>
-            <a href="#" class="pct-ui btn btn-cta confirmpaymentBtn" style="display:none;">確認收款</a>
-            <a href="#" class="pct-ui btn btn-cta cancelresonBtn">取消訂單</a>
+            <a href="#" class="pct-ui btn btn-secondary informdispatchBtn">通知已出貨</a>
+            <a href="#" class="pct-ui btn btn-secondary agreecancelBtn" style="display:none;">回覆取消申請</a>
+            <a href="#" class="pct-ui btn btn-secondary refundBtn" style="display:none;">回覆退款申請</a>
+            <a href="#" class="pct-ui btn btn-secondary printdispatchBtn hidden-md-down" style="display:none;">列印出貨單</a>
+            <a href="#" class="pct-ui btn btn-secondary confirmpaymentBtn" style="display:none;">確認收款</a>
+            <a href="#" class="pct-ui btn btn-secondary cancelresonBtn">取消訂單</a>
         </div>
     </div> <!-- pct-panel__container -->
 </div> <!-- pct-panel

@@ -8,7 +8,6 @@
 
 //海外代溝標
 .pct-icon-shopassist {
-    // width: 105px;
     width: 130px;
     height: 26px;
     font-weight: 400;
@@ -56,17 +55,16 @@
             margin: 0 -0.125rem;
 
             &.icon-star-on {
-                color: $colorOrange;
+                color: $accentColor;
             }
             &.icon-star-off {
                 color: $colorGray;
             }
             &.icon-star-half {
-                color: $colorOrange;
+                color: $accentColor;
             }
         }
     }
-
     .review-text {
         font-size: 0.8125rem;
 
@@ -80,31 +78,29 @@
 .pct-icon-salebadge {
     width: 40px;
     height: 32px;
-    background-color: rgba(253, 214, 65, 0.9);
+    background-color: rgba($accentColor, 0.9);
     position: absolute;
     z-index: 2;
     left: 8px;
 }
-
 .pct-icon-salebadge::after {
     content: "";
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 10px 20px 0 20px;
-    border-color: rgba(253, 214, 65, 0.9) transparent transparent transparent;
+    border-color: rgba($accentColor, 0.9) transparent transparent transparent;
     position: absolute;
     left: 0;
     bottom: -10px;
 }
-
 .pct-icon-salebadge {
     text-align: center;
     line-height: 35px;
 
     span {
         font-size: 0.875rem;
-        color: #d23131;
+        color: $colorPinkRed;
         font-weight: 600;
         span.percent-sign {
             display: inline-block;
@@ -124,7 +120,6 @@
     font-size: 1rem;
     padding-top: 2px;
     padding-left: 2px;
-
     background-color: #666;
 
     &.icon-wait {
@@ -141,27 +136,27 @@
     }
 }
 
-// 等待中（申請中 待付款）
+// 失敗 或是需儘速處理的事項（提領失敗 未回覆 退款訂單申請中）
 .icon-back-red {
-    background-color: $colorRed;
+    background-color: $colorPinkRed;
 }
 
-// 取消（退款完成）
+// 取消 無效（失效訂單 取消訂單）
 .icon-back-gray {
-    background-color: $colorDeepGray;
+    background-color: $colorWhiteGray;
 }
 
-// 半完成（已付款）
+// 等待中 或是流程進行中（提領準備中 提領中 結算中 退款中）
 .icon-back-orange {
-    background-color: $colorOrange;
+    background-color: $accentColor;
 }
 
-// 已完成（最終）
+// 已完成 所有流程（繳交成功 提領成功 完成退款）
 .icon-back-green {
-    background-color: $colorCrystalGreen;
+    background-color: $colorGreen;
 }
 
-// 起始
+// 半完成 階段性完成 後續還有流程 （已轉可提領）
 .icon-back-blue {
     background-color: $colorBlue;
 }

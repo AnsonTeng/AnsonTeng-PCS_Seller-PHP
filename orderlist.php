@@ -14,16 +14,16 @@
         content="หาได้ทุกอย่างที่ต้องการที่ พีซีโฮมไทย - เครื่องสำอาง,เสื้อผ้าแฟชั่น, อุปกรณ์ไฟฟ้า, หนังสือ, ของเล่น และอื่นอีกมากมาย" />
     <meta property="og:image" content="http://cimg.pchome.co.th/fb/PchomeShop.jpg" />
     <meta property="og:url" content="http://www.pchome.co.th" />
-    <meta property="og:site_name" content="PChome Thai" />
+    <meta property="og:site_name" content="PChome SEA" />
     <!-- favicon.ico-->
     <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#e21e26">
-    <meta name="msapplication-TileColor" content="#e21e26">
-    <meta name="theme-color" content="#e21e26">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#00afeb">
+    <meta name="msapplication-TileColor" content="#00afeb">
+    <meta name="theme-color" content="#00afeb">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <!-- PAGE -->
@@ -221,9 +221,9 @@
                                 <!-- <div class="table__thead">
                                     <table>
                                         <colgroup>
-                                            <col class="table--w50">
+                                            <col class="table--w45">
                                             <col class="table--w25">
-                                            <col class="table--w25">
+                                            <col class="table--w30">
                                         </colgroup>
 
                                         <thead>
@@ -252,7 +252,6 @@
                                                         <div class="table_flexBox table_flexBox-between">
                                                             <span class="list__itemInfo list_status"><i
                                                                     class="pct-btn-icon icon-wait icon-back icon-back-red"></i>待付款</span>
-
                                                             <div class="contanctSeller">
                                                                 <a
                                                                     class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
@@ -1315,7 +1314,8 @@
                                         <!-- 單筆訂單-改版 End -->
 
 
-                                        <!-- 單筆訂單 (黑名單相關 暫時不用)  -->
+                                        <!-- 暫時不用 -->
+                                        <!-- 單筆訂單 (黑名單)  -->
                                         <tbody>
                                             <tr class="table_row_header">
                                                 <td colspan="3">
@@ -1434,53 +1434,48 @@
                                                         <!-- 操作按鈕欄 -->
                                                         <div
                                                             class="table_flexBox table_flexBox-right table_flexBox-wrap">
-
                                                         </div>
-
                                                     </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- 單筆訂單-改版 End -->
+                                    </table>
                                 </div>
-                                </td>
-                                </tr>
-                                </tbody>
-                                <!-- 單筆訂單-改版 End -->
-
-
-
-                                </table>
                             </div>
+                            <!-- 整體表格結束 -->
+                            <!-- PC 版 列出所有頁碼 -->
+                            <div class="pct-ui page-pagination">
+                                <ul class="eng-num">
+                                    <li class="active">1</li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li class="pagination-jump-next"></li>
+                                    <li>
+                                        <a class="pagination-next" href="#">
+                                            <span class="pct-icon icon-angle-right"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 手機版 Load more-->
+                            <div class="pct-btn-loadcontent hidden-sm-up">
+                                <a href="#" class="pct-ui btn btn-secondary btn-load">LOAD MORE</a>
+                            </div>
+                        </section>
                     </div>
-                    <!-- 整體表格結束 -->
-                    <!-- PC 版 列出所有頁碼 -->
-                    <div class="pct-ui page-pagination hidden-sm-down">
-                        <ul class="eng-num">
-                            <li class="active">1</li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">6</a></li>
-                            <li><a href="#">7</a></li>
-                            <li><a href="#">8</a></li>
-                            <li><a href="#">9</a></li>
-                            <li class="pagination-jump-next"></li>
-                            <li><a href="#">50</a></li>
-                            <li><a class="pagination-next" href="#"><span class="pct-icon icon-angle-right"></span></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- 手機版 Load more-->
-                    <div class="pct-btn-loadcontent hidden-sm-up">
-                        <a href="#" class="pct-ui btn btn-secondary btn-load">LOAD MORE</a>
-                    </div>
-    </section>
-    </div>
-    </div>
-    </div>
-    </div>
-    <!-- 內容寬度 1200 區塊 end-->
-    <!-- PChome Thai footer -->
-    <?php include("assets/footer.php"); ?>
-    <!-- PChome Thai footer end-->
+                </div>
+            </div>
+        </div>
+        <!-- 內容寬度 1200 區塊 end-->
+        <!-- PChome Thai footer -->
+        <?php include("assets/footer.php"); ?>
+        <!-- PChome Thai footer end-->
     </section>
     <!-- PChome Thai Panel -->
     <?php include("assets/slide-panel/panel-global.php"); ?>

@@ -134,7 +134,8 @@
                                                         class="btn-xs" class="btn-xs">申請認證</a></div>
 
                                                 <!-- 說明For RD: 狀態02: KYC審核通過：有銀行帳號且提領成功過--->
-                                                <div class="bank-account"> <span>002 Bangkok Bank (BBL)</span></div>
+                                                <div class="bank-account" style="display: none"> <span>002 Bangkok Bank
+                                                        (BBL)</span></div>
 
                                                 <!-- 說明For RD: 狀態03: KYC審核通過：提領設定銀行狀態- 認證中--->
                                                 <div class="bank-account" style="display: none"> <span
@@ -161,9 +162,8 @@
 
                                                 <!-- 說明For RD: 狀態08: 無KYC有銀行帳號：舊會員無KYC資料  有設定過銀行帳號  無提領紀錄--->
                                                 <!-- 說明For RD: 若未過SMS OTP class請帶 class="btn-xs telveriBtn" 已通過SMS OTP 直接連結到kyc-identity.php--->
-                                                <div class="bank-account" style="display: none"><span
-                                                        class="txt">銀行待認證。</span> <a class="btn-xs telveriBtn"
-                                                        class="btn-xs">申請認證</a></div>
+                                                <div class="bank-account"><span class="txt">銀行待認證。</span> <a
+                                                        class="btn-xs telveriBtn" class="btn-xs">申請認證</a></div>
 
                                                 <!--說明 FOR RD: 若沒有帳號與戶名時，請整塊隱藏-->
                                                 <div class="bank-name-num">
@@ -190,7 +190,7 @@
 
                                                 <div class="upload-peoduct-inner">
                                                     <div class="inner-items">
-                                                        <div class="pct-cion icon-picture"></div>
+                                                        <div class="pct-icon icon-picture"></div>
                                                         <p><span class="pct-icon icon-plus"></span>新增商品到賣場</p>
                                                     </div>
                                                 </div>
@@ -214,7 +214,7 @@
                                                         <ul>
                                                             <li class="eng-num unread">20</li>
                                                             <li class="card-num-ttl">
-                                                                <!-- 待付款 --> รอการชำระเงิน</li>
+                                                                <!-- รอการชำระเงิน --> 待付款</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -235,7 +235,7 @@
                                                         <ul>
                                                             <li class="eng-num">0</li>
                                                             <li class="card-num-ttl">
-                                                                <!-- 待出貨 --> รอการจัดส่ง</li>
+                                                                <!-- รอการจัดส่ง --> 待出貨</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -278,7 +278,7 @@
                                                         <ul>
                                                             <li class="eng-num unread">17</li>
                                                             <li class="card-num-ttl">
-                                                                <!-- 訂單留言 --> ข้อความการสั่งซื้อ</li>
+                                                                <!-- ข้อความการสั่งซื้อ --> 訂單留言</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -299,8 +299,8 @@
                                                         <ul>
                                                             <li class="eng-num unread">6</li>
                                                             <li class="card-num-ttl">
-                                                                <!-- 商品詢問  -->
-                                                                <!-- ข้อความผลิตภัณฑ์ -->Product Chats</li>
+                                                                <!-- Product Chats  -->
+                                                                <!-- ข้อความผลิตภัณฑ์ -->商品留言</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -321,8 +321,8 @@
                                                         <ul>
                                                             <li class="eng-num unread">4</li>
                                                             <li class="card-num-ttl">
-                                                                <!-- 訂單取消 -->
-                                                                <!-- การสั่งซื้อถูกยกเลิก -->To Cancel</li>
+                                                                <!-- To Cancel -->
+                                                                <!-- การสั่งซื้อถูกยกเลิก --> 訂單取消</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -343,8 +343,8 @@
                                                         <ul>
                                                             <li class="eng-num">0</li>
                                                             <li class="card-num-ttl">
-                                                                <!-- 退款申請  -->
-                                                                <!-- ลงทะเบียนขอเงินคืน -->To refund </li>
+                                                                <!-- To refund  -->
+                                                                <!-- ลงทะเบียนขอเงินคืน --> 退款申請</li>
                                                         </ul>
                                                     </div>
                                                 </div>

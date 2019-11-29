@@ -3,66 +3,36 @@
     font-size: 0.875rem;
     line-height: 1.125rem;
     font-weight: 300;
-    padding: 0 0;
     margin-bottom: 20px;
 
-    a {
-        color: $primaryDeepColor;
-        text-decoration: underline;
-    }
-
-    div {
+    //  警告
+    .alert {
         position: relative;
-        border-radius: 2px;
+        background-color: #fee4e4;
+        color: $colorPinkRed;
+        font-weight: 500;
         padding: 16px 40px 16px 40px;
-        margin-bottom: 8px;
+        border-radius: 2px;
 
-        .pct-icon.icon-alert {
+        .pct-icon {
             position: absolute;
             font-size: 1.125rem;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .pct-icon.icon-alert {
             left: 15px;
         }
 
         .pct-icon.icon-delete {
-            position: absolute;
-            font-size: 1.125rem;
             right: 15px;
         }
-    }
 
-    //  警告
-    .alert {
-        background-color: $accentLightColor;
-        color: $accentColor;
-
-        background-color: #fee4e4;
-        // background-color: $colorPink;
-        color: $colorPinkRed;
-        font-weight: 500;
-        // color: $colorPink;
-    }
-}
-
-@media (max-width: $break-md) {
-    .msgbar {
-        padding: 0 3%;
-    }
-}
-
-@media (max-width: $break-sm) {
-    .msgbar {
-        div {
-            position: relative;
-            border-radius: 2px;
-            padding: 16px 40px 16px 40px;
-
-            .pct-icon {
-                position: absolute;
-                font-size: 1.125rem;
-                right: 10px;
-                top: 50%;
-                margin-top: -10px;
-            }
+        > a {
+            color: $primaryDeepColor;
+            text-decoration: underline;
         }
     }
 }

@@ -1,0 +1,294 @@
+//panel 訂單明細內容
+
+// --- 訂單明細 -------------------------------
+.orderlistDetail-status {
+    color: $secondaryColor;
+    font-weight: 500;
+}
+
+// 訂單明細小計欄位
+.orderlistDetail_subtotal {
+    background-color: #fcfcfc;
+    height: 48px;
+}
+// 訂單明細總計欄位
+.orderlistDetail_total {
+    background-color: $colorWhiteGreen;
+    height: 48px;
+    padding: 0 8px;
+}
+.orderlistDetail_subtotal,
+.orderlistDetail_total {
+    td:first-child {
+        padding-left: 8px;
+    }
+}
+
+// 訂單明細 數量
+.orderlistDetail_amount {
+    position: relative;
+    right: -90px;
+    display: inline-block;
+    text-align: right;
+    span {
+        text-align: left;
+        max-width: 72px;
+    }
+}
+@media (max-width: $break-sm) {
+    .orderlistDetail_amount {
+        right: -60px;
+    }
+}
+@media (max-width: $break-xs) {
+    .orderlistDetail_amount {
+        right: -30px;
+    }
+}
+@media (max-width: $break-xxs) {
+    .orderlistDetail_amount {
+        right: 0px;
+    }
+}
+
+// 訂單明細 價格
+.orderlistDetail_price {
+    text-align: right;
+    span {
+        display: inline-block;
+        text-align: left;
+        width: 72px;
+    }
+}
+
+// 折扣金額負號
+.orderlistDetail_discount {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: right;
+    line-height: 22px;
+    padding-right: 8px;
+}
+
+// 訂單明細 數量總計
+.orderlistDetail_totalamount {
+    text-align: right;
+    min-width: 90px;
+    position: absolute;
+    right: -90px;
+    top: -1px;
+
+    span.eng-num {
+        display: inline-block;
+        margin: 0 3px;
+    }
+}
+@media (max-width: $break-sm) {
+    .orderlistDetail_totalamount {
+        right: -60px;
+    }
+}
+@media (max-width: $break-xs) {
+    .orderlistDetail_totalamount {
+        right: -30px;
+    }
+}
+@media (max-width: $break-xxs) {
+    .orderlistDetail_totalamount {
+        right: 0px;
+    }
+}
+
+// 訂單明細 付款方式 icon
+.icon-pchomepay {
+    position: relative;
+    width: 80px;
+    top: 5px;
+    left: 4px;
+}
+
+// screenshot 按鈕
+a.pct-ui.btn-xs.productscreenshotBtn {
+    // border: 0px;
+    // 按鈕icon
+    .pct-icon {
+        color: $accentColor;
+        font-size: 0.875rem;
+    }
+}
+
+// 展開欄 toggle collapse
+.toggleBar {
+    position: relative;
+
+    .toggleBar_arrow.pct-icon {
+        font-size: 1rem;
+        color: $secondaryColor;
+        position: absolute;
+        z-index: 1;
+        right: 10px;
+        top: 5px;
+        display: block;
+        pointer-events: none;
+        transition: all 0.3s;
+        transform: rotate(0deg);
+        font-weight: 400;
+    }
+}
+
+.toggleBar.addBox {
+    .toggleBar_arrow.pct-icon {
+        transform: rotate(180deg);
+    }
+}
+
+//訂單明細（共用部分）
+.tableBox.tableBox-orderlistDetail {
+    // 表格斷點
+    colgroup {
+        display: table-column-group;
+    }
+    td {
+        display: table-cell;
+    }
+
+    // 訂單內容
+    .table__tbody {
+        tbody {
+            border-bottom: 0px !important;
+            .buyer-infoGroup {
+                flex-direction: row;
+            }
+
+            td {
+                display: table-cell;
+                padding: 10px 8px;
+            }
+
+            @media (max-width: $break-xxs) {
+                td {
+                    padding: 8px 4px;
+                }
+            }
+
+            tr.table_row_header {
+                background-color: #fcfcfc;
+                border-bottom: 2px solid $colorWhite;
+
+                .tableData-header {
+                    border-bottom: 0px solid $colorGreyishWhite;
+                    background-color: $colorWhiteGreen;
+                }
+
+                @media (max-width: $break-sm) {
+                    .tableData-header {
+                        padding: 0 8px;
+                    }
+                }
+
+                td {
+                    display: table-cell;
+                    padding: 0px;
+                }
+            }
+
+            tr.table_row_body {
+                td {
+                    display: table-cell;
+                    padding: 10px 8px;
+                }
+
+                @media (max-width: $break-xxs) {
+                    td {
+                        padding: 8px 6px;
+                    }
+                }
+
+                &.orderlistDetail_subtotal {
+                    background-color: #fcfcfc;
+                }
+
+                // 訂單明細總計欄位
+                &.orderlistDetail_total {
+                    background-color: $colorWhiteGreen;
+                }
+            }
+
+            //列表區塊最後一個區塊陰影刪除
+            tr:last-child() {
+                td:last-child {
+                    box-shadow: 0 0 0 0 rgba(225, 225, 225, 0) !important;
+                }
+            }
+        }
+    }
+
+    .orderlist_amount {
+        padding-left: 0;
+    }
+
+    // 買家資訊（覆寫）
+    .list__itemInfo-userName {
+        max-width: 100%;
+    }
+
+    @media (max-width: 400px) {
+        .list__itemInfo-userName {
+            max-width: 110px;
+        }
+    }
+    @media (max-width: 359px) {
+        .list__itemInfo-userName {
+            max-width: 80px;
+        }
+    }
+}
+
+.pct-panel__content {
+    .pct-ui.modal .modal-content {
+        padding: 1rem 1.5625rem 0 1.5625rem;
+    }
+
+    @media (max-width: $break-sm) {
+        .pct-ui.modal .modal-content {
+            padding: 1rem 0.75rem 0 0.75rem;
+        }
+    }
+}
+
+.view-img-original {
+    text-align: center;
+    border-top: 1px solid $colorLightGray;
+
+    a {
+        display: block;
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+        font-size: 0.9375rem;
+        color: $secondaryColor;
+        background-color: $colorWhite;
+
+        .pct-icon {
+            display: inline-block;
+            position: relative;
+            font-size: 18px;
+            width: auto;
+            height: auto;
+            color: $secondaryColor;
+            top: 2px;
+            left: 1px;
+            margin-right: 3px;
+        }
+    }
+}
+
+// 訂單明細：狀態
+.flexbox-item {
+    word-wrap: normal;
+
+    .status {
+        color: $secondaryColor;
+        font-weight: 400;
+    }
+}

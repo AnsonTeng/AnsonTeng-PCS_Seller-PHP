@@ -2,7 +2,7 @@
 $headerHeight_table: 64px;
 $headerHeight_mobile: 54px;
 
-// Nav  高度
+// Nav 高度
 $navHeight_table: 38px;
 
 // Nav 寬度
@@ -86,17 +86,17 @@ $colorOrange: #f88a51;
 // $colorDeepOrange: #ff7500;
 $colorPink: #eab2ba;
 $colorLightBlue: #f3f9fc;
-$colorRed: #ba0019;
+$colorRed: #ba0019; //PChome Thai Red
 
 // 輔助色（新增）
 $colorPinkRed: #e96886;
 // $colorWhiteBlue: #f3fcff;
-$colorBlue: #2da9fb;
+$colorBlue: $primaryColor;
 $colorLightGreen: #d2d9dd;
 $colorWhiteGreen: #eff3f6;
 $colorDeepLightGreen: #bbccd4;
-$colorGreen: #7c97a2;
-$colorCrystalGreen: #42cb69;
+$colorGrayGreen: #7c97a2;
+$colorGreen: #3ec968;
 
 //表格預設寬度
 .table--w8 {
