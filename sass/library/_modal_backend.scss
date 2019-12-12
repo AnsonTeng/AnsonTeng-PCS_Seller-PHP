@@ -219,6 +219,17 @@
                     }
                 }
             }
+
+            // 文字標籤 必填＊號
+            .required:after {
+                content: "*";
+                position: absolute;
+                font-size: 0.815rem;
+                color: $colorPinkRed;
+                font-weight: 400 !important;
+                margin-top: -8px;
+                margin-left: 3px;
+            }
         }
     }
 }
@@ -549,7 +560,6 @@
                         font-size: 1rem;
                         padding-bottom: 5px;
                     }
-
                     .modal-icon-img {
                         width: 70px;
                         height: 70px;
@@ -558,10 +568,9 @@
                         margin-top: 5px;
                     }
 
-                    //選責驗證方式
+                    //選擇驗證方式
                     ul.choose_verify {
                         justify-content: center;
-
                         li {
                             a.pct-ui.btn-sm {
                                 text-align: center;
@@ -570,6 +579,269 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+// 特殊規格
+/*======= 準備出貨 popup =========*/
+.pct-ui.modal .modal-content .description {
+    .dispatch_prepare_text {
+        text-align: left;
+        padding: 10px 20px;
+        .dispatch_prepare_block p {
+            font-size: 0.8125rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .dispatch_prepare_block {
+        margin-bottom: 48px;
+        .step__number {
+            margin-right: 6px;
+            color: $primaryColor;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .step__title {
+            font-size: 0.8125rem;
+            font-weight: 600;
+        }
+    }
+
+    .logistics_com {
+        margin: 30px 0 18px 0;
+        p.logistics_com-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .logistics_com-function {
+            margin-bottom: 24px;
+        }
+    }
+
+    .dispatch_prepare_block .dispatch_prepare_group {
+        display: flex;
+        align-items: center;
+    }
+
+    .dispatch_prepare_parcel {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 0;
+    }
+
+    .dispatch_prepare_block .dispatch_prepare_parcel .line_box {
+        display: inline;
+        flex-basis: 280px;
+        padding: 20px 15px;
+        position: relative;
+    }
+
+    .dispatch_prepare_block .dispatch_prepare_parcel .line_box:before {
+        content: attr(data-title);
+        position: absolute;
+        top: -8px;
+        left: 20px;
+        background-color: $colorWhite;
+        display: table;
+        padding: 0 6px;
+        font-size: 0.875rem;
+        font-weight: 400;
+
+        color: $secondaryColor;
+    }
+
+    .dispatch_prepare_text .dispatch_prepare_block ul {
+        margin: 10px 0;
+    }
+
+    .dispatch_prepare_text .dispatch_prepare_block ul li {
+        font-size: 0.8125rem;
+        line-height: 1.5rem;
+    }
+
+    .dispatch_prepare_block .line_box {
+        display: table;
+        border: 1px solid #dadada;
+        padding: 15px;
+        margin-bottom: 6px;
+    }
+
+    .dispatch_prepare_block .line_box .line_box_list {
+        display: flex;
+        flex-direction: row;
+        font-weight: 300;
+        margin-bottom: 4px;
+    }
+
+    .dispatch_prepare_block .line_box .line_box_list span {
+        font-size: 0.8125rem;
+    }
+
+    @media (max-width: $break-sm) {
+        .dispatch_prepare_block .line_box .line_box_list {
+            flex-direction: column;
+            margin-bottom: 8px;
+        }
+    }
+
+    .dispatch_prepare_block .line_box .line_box_list .title {
+        min-width: 80px;
+        font-weight: 500;
+    }
+
+    @media (max-width: $break-md) {
+        .dispatch_prepare_block .dispatch_prepare_parcel .line_box {
+            flex-basis: 195px;
+        }
+    }
+
+    @media (max-width: $break-sm) {
+        .dispatch_prepare_parcel {
+            display: block;
+        }
+
+        .dispatch_prepare_block .dispatch_prepare_parcel .line_box {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .dispatch_prepare_block .dispatch_prepare_group {
+            display: block;
+        }
+
+        .dispatch_prepare_block .dispatch_prepare_group .btn_secondary {
+            margin: 20px 0;
+        }
+    }
+}
+
+// 特殊規格
+/* =========== 包裹運送狀態popup =========== */
+
+// .shipping_head
+//     background-color: #A7D0EC
+//     padding: 10px
+
+// .shipping_head ul
+//     display: flex
+//     justify-content: center
+
+// .shipping_head ul li
+//     font-size: 0.8rem
+//     color: #fff
+//     padding: 0 10px
+
+.trakinglog_timeline {
+    position: relative;
+
+    // timeline 時間線
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: calc(120px + 20px);
+        bottom: 0px;
+        width: 2px;
+        background: $colorGreyishWhite;
+        z-index: 2;
+
+        @media (max-width: $break-xxs) {
+            left: calc(80px + 10px);
+        }
+    }
+}
+
+.trakinglog_timeline {
+    .trakinglog_timeline_block {
+        display: flex;
+        align-items: center;
+        padding: 30px 0 10px 0;
+
+        .parcel_status_time {
+            padding: 0 10px;
+            flex: 0 0 120px;
+
+            @media (max-width: $break-xxs) {
+                padding: 0px;
+                flex: 0 0 80px;
+            }
+
+            ul li {
+                text-align: right;
+                line-height: 1rem;
+
+                @media (max-width: $break-xxs) {
+                    text-align: left;
+                    line-height: 1rem;
+                }
+                //
+                &:first-child {
+                    font-size: 0.9375rem;
+                    @media (max-width: $break-xxs) {
+                        font-size: 0.875rem;
+                    }
+                }
+                &:last-child {
+                    font-size: 0.8125rem;
+                    color: $colorDeepGray;
+                    @media (max-width: $break-xxs) {
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+        }
+        .parcel_status_icon {
+            margin-left: 10px;
+            margin-right: 20px;
+            // flex: 0.5;
+            z-index: 3;
+            @media (max-width: $break-xxs) {
+                margin-left: 0px;
+                margin-right: 10px;
+            }
+
+            .parcel_status_icon_item {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: $colorBlue;
+                color: $colorWhite;
+
+                @media (max-width: $break-xxs) {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                span.pct-icon {
+                    position: relative;
+                    top: 3px;
+                    font-size: 1.125rem;
+                    @media (max-width: $break-xxs) {
+                        top: 2px;
+                        font-size: 1rem;
+                    }
+                }
+
+                &.active {
+                    background-color: $colorGreen;
+                }
+            }
+        }
+        .parcel_status_text {
+            padding: 0 10px;
+            flex: 1;
+            text-align: left;
+            font-size: 0.875rem;
+
+            @media (max-width: $break-xxs) {
+                padding: 0px;
             }
         }
     }

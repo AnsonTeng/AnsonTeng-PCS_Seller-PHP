@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>buyer_avator_default</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="buyer_avator_default" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="avatar_grey">
+            <path d="M12.5,0 C19.403125,0 25,5.596875 25,12.5 C25,19.403125 19.403125,25 12.5,25 C5.596875,25 0,19.403125 0,12.5 C0,5.596875 5.596875,0 12.5,0" id="Fill-1" fill="#D8D8D8"></path>
+            <g id="Group" transform="translate(5.729167, 8.333333)">
+                <path d="M1.5625,0 C2.42604167,0 3.125,0.698958333 3.125,1.5625 C3.125,2.42604167 2.42604167,3.125 1.5625,3.125 C0.698958333,3.125 0,2.42604167 0,1.5625 C0,0.698958333 0.698958333,0 1.5625,0" id="Fill-3" fill="#FFFFFF"></path>
+                <path d="M11.9791667,0 C12.8416667,0 13.5416667,0.698958333 13.5416667,1.5625 C13.5416667,2.42604167 12.8416667,3.125 11.9791667,3.125 C11.1166667,3.125 10.4166667,2.42604167 10.4166667,1.5625 C10.4166667,0.698958333 11.1166667,0 11.9791667,0" id="Fill-5" fill="#FFFFFF"></path>
+                <polygon id="Fill-7" fill="#FFFFFF" points="3.64583333 6.25 9.89583333 6.25 6.61979167 10.4166667"></polygon>
+                <polygon id="Stroke-9" points="3.64583333 6.25 9.89583333 6.25 6.61979167 10.4166667"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

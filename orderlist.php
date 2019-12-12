@@ -243,6 +243,7 @@
                                             <col class="table--w25">
                                             <col class="table--w30">
                                         </colgroup>
+
                                         <!-- 單筆訂單-改版 待付款 未出貨-->
                                         <tbody>
                                             <tr class="table_row_header">
@@ -335,8 +336,10 @@
                                                                 <span class="orderlist_title">未出貨<span>
                                                             </div>
                                                             <div class="orderlist_subtitleBox text__align--center">
-                                                                <span class="orderlist_subtitle">PChome Thai Supported
-                                                                    Shipping Internation Delivery(Without Tax)</span>
+                                                                <span class="orderlist_subtitle">
+                                                                    <!--PChome Thai Supported
+                                                                    Shipping Internation Delivery(Without Tax)-->
+                                                                    PChome Thai 支援的國際物流（不含稅）</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -370,6 +373,137 @@
 
 
 
+                                        <!-- 單筆訂單 （賣家）取消訂單申請中 -->
+                                        <tbody>
+                                            <tr class="table_row_header">
+                                                <td colspan="3">
+                                                    <div class="tableData-header">
+                                                        <!-- 訂單狀態 -->
+                                                        <div class="table_flexBox table_flexBox-between">
+                                                            <div class="table_inlineBox">
+                                                                <span class="list__itemInfo list_status"><i
+                                                                        class="pct-btn-icon icon-wait icon-back icon-back-red"></i>待付款</span>
+                                                            </div>
+                                                            <div class="contanctSeller">
+                                                                <a
+                                                                    class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
+                                                                        class="pct-btn-icon icon-comment"></i>聯絡買家
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="table_row_body">
+                                                <td data-title="商品">
+                                                    <div class="tableDeta-box">
+                                                        <!-- 商品資訊群組（圖＋文） -->
+                                                        <div class="productInfoGroup">
+                                                            <!-- 商品圖片 -->
+                                                            <div class="productInfo-img">
+                                                                <a href="#"><img class="img-fluid"
+                                                                        src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
+                                                                        alt="Product-Picture"></a>
+                                                            </div>
+                                                            <!-- </div> -->
+
+                                                            <!-- 商品資訊 -->
+                                                            <div class="productInfo-info">
+
+                                                                <!-- 訂單編號 -->
+                                                                <div class="productInfo-info-orderNum">
+                                                                    <span
+                                                                        class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                    <span
+                                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                </div>
+
+                                                                <!-- 商品名稱 -->
+                                                                <div class="productInfo-info-title">
+                                                                    <span class="productInfo-info-title-text"><a
+                                                                            href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
+                                                                            อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร
+                                                                            เก่ามาก สวย สมบูรณ์ หายากมาก</a><span>
+                                                                </div>
+
+                                                                <!-- 商品規格 -->
+                                                                <div class="productInfo-info-subtitle">
+                                                                    <span class="productInfo-info-subtitle-text">Size /
+                                                                        Color / Type / Size / Color / Type / Size /
+                                                                        Color / Type / Size / Color / Type<span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="訂單總金額">
+                                                    <div class="tableDeta-box">
+                                                        <!-- 訂單總金額 -->
+                                                        <div class="table_inlineBox-flex">
+                                                            <div class="orderlist_titleBox text__align--center">
+                                                                <span
+                                                                    class="orderlist_title-inline orderlist_title-icon"><img
+                                                                        src="img/icon_pcprotect_badge.svg"></span>
+                                                                <span
+                                                                    class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
+                                                            </div>
+                                                            <div
+                                                                class="orderlist_titleBox text__align--center hidden-md-up">
+                                                                <span class="orderlist_subtitle orderlist_amount">
+                                                                    <span>Total</span>
+                                                                    <span class="orderlist_amount_num eng-num">90</span>
+                                                                    <span>items</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="物流狀態">
+                                                    <div class="tableDeta-box">
+                                                        <!-- 物流狀態 -->
+                                                        <div class="table_inlineBox-flex">
+                                                            <div class="orderlist_titleBox text__align--center">
+                                                                <span class="orderlist_title">未出貨<span>
+                                                            </div>
+
+                                                            <div class="orderlist_subtitleBox text__align--center">
+                                                                <span class="orderlist_subtitle">中華郵政 EMS</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <!-- 按鈕 -->
+                                            <tr class="table_row_bottom">
+                                                <td colspan="3">
+                                                    <div class="table_flexBox table_flexBox-between">
+                                                        <!-- 訂單內商品數量 -->
+                                                        <div class="orderlist_amount hidden-md-down">
+                                                            <span>Total</span>
+                                                            <span class="orderlist_amount_num eng-num">90</span>
+                                                            <span>items</span>
+                                                        </div>
+
+                                                        <!-- 操作按鈕欄 -->
+                                                        <div
+                                                            class="table_flexBox table_flexBox-right table_flexBox-wrap">
+                                                            <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
+                                                                data-panel="orderDetails" href="#">訂單明細</a>
+                                                            <a class="pct-ui btn-xs btn-secondary cancelresonBtn"
+                                                                href="#">取消訂單</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- 單筆訂單-改版 End -->
+
+
+
+
                                         <!-- 單筆訂單-改版 已付款 未出貨-->
                                         <tbody>
                                             <tr class="table_row_header">
@@ -379,7 +513,7 @@
                                                         <div class="table_flexBox table_flexBox-between">
 
                                                             <span class="list__itemInfo list_status"><i
-                                                                    class="pct-btn-icon icon-checked icon-back icon-back-orange"></i>已付款
+                                                                    class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>已付款
                                                             </span>
 
                                                             <div class="contanctSeller">
@@ -466,8 +600,7 @@
                                                                 <span class="orderlist_title">未出貨<span>
                                                             </div>
                                                             <div class="orderlist_subtitleBox text__align--center">
-                                                                <span class="orderlist_subtitle">賣家指定物流
-                                                                    ThaiPost-EMS</span>
+                                                                <span class="orderlist_subtitle">中華郵政 EMS</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -492,10 +625,18 @@
                                                                 <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
                                                                     data-panel="orderDetails" href="#">訂單明細</a>
                                                             </div>
+
+                                                            <!--說明FOR RD: 判斷該商品選擇何種物流方式 只顯示一顆按鈕 並呼叫不同彈跳視窗 -->
                                                             <div class="table_inlineBox">
-                                                                <!-- 手機不顯示 -->
-                                                                <a class="pct-ui btn-xs btn-secondary printdispatchBtn hidden-md-down"
-                                                                    href="#">列印出貨單</a>
+                                                                <a class="pct-ui btn-xs btn-secondary dispatchListEmsBtn"
+                                                                    href="#">我要出貨
+                                                                    <!--中華郵政--></a>
+                                                                <a class="pct-ui btn-xs btn-secondary dispatchListSflBtn"
+                                                                    href="#">我要出貨(測:翔丰)</a>
+                                                                <a class="pct-ui btn-xs btn-secondary dispatchListAcsBtn"
+                                                                    href="#">我要出貨(測:ACS)</a>
+                                                                <a class="pct-ui btn-xs btn-secondary dispatchListSellerBtn"
+                                                                    href="#">我要出貨(測:賣家自配)</a>
                                                             </div>
                                                         </div>
 
@@ -504,7 +645,6 @@
                                             </tr>
                                         </tbody>
                                         <!-- 單筆訂單-改版 End -->
-
 
 
                                         <!-- 單筆訂單-改版 已付款 通知已出貨-->
@@ -516,9 +656,141 @@
                                                         <div class="table_flexBox table_flexBox-between">
                                                             <div class="table_inlineBox">
                                                                 <span class="list__itemInfo list_status"><i
-                                                                        class="pct-btn-icon icon-checked icon-back icon-back-orange"></i>已付款</span>
+                                                                        class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>已付款</span>
                                                             </div>
 
+                                                            <div class="contanctSeller">
+                                                                <a
+                                                                    class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
+                                                                        class="pct-btn-icon icon-comment"></i>聯絡買家
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="table_row_body">
+                                                <td data-title="商品">
+                                                    <div class="tableDeta-box">
+                                                        <!-- 商品資訊群組（圖＋文） -->
+                                                        <div class="productInfoGroup">
+                                                            <!-- 商品圖片 -->
+                                                            <div class="productInfo-img">
+                                                                <a href="#"><img class="img-fluid"
+                                                                        src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
+                                                                        alt="Product-Picture"></a>
+                                                            </div>
+                                                            <!-- </div> -->
+
+                                                            <!-- 商品資訊 -->
+                                                            <div class="productInfo-info">
+
+                                                                <!-- 訂單編號 -->
+                                                                <div class="productInfo-info-orderNum">
+                                                                    <span
+                                                                        class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                    <span
+                                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                </div>
+
+                                                                <!-- 商品名稱 -->
+                                                                <div class="productInfo-info-title">
+                                                                    <span class="productInfo-info-title-text"><a
+                                                                            href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
+                                                                            อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร
+                                                                            เก่ามาก สวย สมบูรณ์ หายากมาก</a><span>
+                                                                </div>
+
+                                                                <!-- 商品規格 -->
+                                                                <div class="productInfo-info-subtitle">
+                                                                    <span class="productInfo-info-subtitle-text">Size /
+                                                                        Color / Type / Size / Color / Type / Size /
+                                                                        Color / Type / Size / Color / Type<span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="訂單總金額">
+                                                    <div class="tableDeta-box">
+                                                        <!-- 訂單總金額 -->
+                                                        <div class="table_inlineBox-flex">
+                                                            <div class="orderlist_titleBox text__align--center">
+                                                                <span
+                                                                    class="orderlist_title-inline orderlist_title-icon"><img
+                                                                        src="img/icon_pcprotect_badge.svg"></span>
+                                                                <span
+                                                                    class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
+                                                            </div>
+                                                            <div
+                                                                class="orderlist_titleBox text__align--center hidden-md-up">
+                                                                <span class="orderlist_amount">
+                                                                    <span>Total</span>
+                                                                    <span class="orderlist_amount_num eng-num">90</span>
+                                                                    <span>items</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="物流狀態">
+                                                    <div class="tableDeta-box">
+                                                        <!-- 物流狀態 -->
+                                                        <div class="table_inlineBox-flex">
+                                                            <div class="orderlist_titleBox text__align--center">
+                                                                <span class="orderlist_title">未出貨<span>
+                                                            </div>
+                                                            <div class="orderlist_subtitleBox text__align--center">
+                                                                <span class="orderlist_subtitle">賣家自行配送</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <!-- 按鈕 -->
+                                            <tr class="table_row_bottom">
+                                                <td colspan="3">
+                                                    <div class="table_flexBox table_flexBox-between">
+                                                        <!-- 訂單內商品數量 -->
+                                                        <div class="orderlist_amount hidden-md-down">
+                                                            <span>Total</span>
+                                                            <span class="orderlist_amount_num eng-num">90</span>
+                                                            <span>items</span>
+                                                        </div>
+
+                                                        <!-- 操作按鈕欄 -->
+                                                        <div
+                                                            class="table_flexBox table_flexBox-right table_flexBox-wrap">
+                                                            <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
+                                                                data-panel="orderDetails" href="#">訂單明細</a>
+                                                            <a class="pct-ui btn-xs btn-secondary informdispatchBtn"
+                                                                href="#">通知已出貨</a>
+                                                        </div>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- 單筆訂單-改版 End -->
+
+
+
+
+
+                                        <!-- 單筆訂單 已完成 -->
+                                        <tbody>
+                                            <tr class="table_row_header">
+                                                <td colspan="3">
+                                                    <div class="tableData-header">
+                                                        <!-- 訂單狀態 -->
+                                                        <div class="table_flexBox table_flexBox-between">
+                                                            <div class="table_inlineBox">
+                                                                <span class="list__itemInfo list_status"><i
+                                                                        class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>已付款</span>
+                                                            </div>
                                                             <div class="contanctSeller">
                                                                 <a
                                                                     class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
@@ -602,13 +874,12 @@
 
                                                             <div class="orderlist_titleBox text__align--center">
                                                                 <span class="orderlist_title">
-                                                                    <a class="dispatchdetailBtn" href="#">已出貨</a>
+                                                                    <a class="trackingLogBtn" href="#">運送中</a>
                                                                     <span>
                                                             </div>
 
                                                             <div class="orderlist_subtitleBox text__align--center">
-                                                                <span class="orderlist_subtitle">賣家指定物流
-                                                                    ThaiPost-EMS</span>
+                                                                <span class="orderlist_subtitle">中華郵政 EMS</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -629,17 +900,152 @@
                                                         <!-- 操作按鈕欄 -->
                                                         <div
                                                             class="table_flexBox table_flexBox-right table_flexBox-wrap">
-                                                            <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
-                                                                data-panel="orderDetails" href="#">訂單明細</a>
-                                                            <a class="pct-ui btn-xs btn-secondary informdispatchBtn"
-                                                                href="#">通知已出貨</a>
+                                                            <div class="table_inlineBox">
+                                                                <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
+                                                                    data-panel="orderDetails" href="#">訂單明細</a>
+                                                            </div>
                                                         </div>
-
                                                     </div>
                                                 </td>
                                             </tr>
                                         </tbody>
-                                        <!-- 單筆訂單-改版 End -->
+                                        <!-- 單筆訂單 End -->
+
+
+
+                                        <!-- 單筆訂單 已完成 -->
+                                        <tbody>
+                                            <tr class="table_row_header">
+                                                <td colspan="3">
+                                                    <div class="tableData-header">
+                                                        <!-- 訂單狀態 -->
+                                                        <div class="table_flexBox table_flexBox-between">
+                                                            <div class="table_inlineBox">
+                                                                <span class="list__itemInfo list_status"><i
+                                                                        class="pct-btn-icon icon-checked icon-back icon-back-green"></i>已完成</span>
+                                                            </div>
+                                                            <div class="contanctSeller">
+                                                                <a
+                                                                    class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
+                                                                        class="pct-btn-icon icon-comment"></i>聯絡買家
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="table_row_body">
+                                                <td data-title="商品">
+                                                    <div class="tableDeta-box">
+                                                        <!-- 商品資訊群組（圖＋文） -->
+                                                        <div class="productInfoGroup">
+                                                            <!-- 商品圖片 -->
+                                                            <div class="productInfo-img">
+                                                                <a href="#"><img class="img-fluid"
+                                                                        src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
+                                                                        alt="Product-Picture"></a>
+                                                            </div>
+                                                            <!-- </div> -->
+
+                                                            <!-- 商品資訊 -->
+                                                            <div class="productInfo-info">
+
+                                                                <!-- 訂單編號 -->
+                                                                <div class="productInfo-info-orderNum">
+                                                                    <span
+                                                                        class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                    <span
+                                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                </div>
+
+                                                                <!-- 商品名稱 -->
+                                                                <div class="productInfo-info-title">
+                                                                    <span class="productInfo-info-title-text"><a
+                                                                            href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
+                                                                            อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร
+                                                                            เก่ามาก สวย สมบูรณ์ หายากมาก</a><span>
+                                                                </div>
+
+                                                                <!-- 商品規格 -->
+                                                                <div class="productInfo-info-subtitle">
+                                                                    <span class="productInfo-info-subtitle-text">Size /
+                                                                        Color / Type / Size / Color / Type / Size /
+                                                                        Color / Type / Size / Color / Type<span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="訂單總金額">
+                                                    <div class="tableDeta-box">
+                                                        <!-- 訂單總金額 -->
+                                                        <div class="table_inlineBox-flex">
+                                                            <div class="orderlist_titleBox text__align--center">
+                                                                <span
+                                                                    class="orderlist_title-inline orderlist_title-icon"><img
+                                                                        src="img/icon_pcprotect_badge.svg"></span>
+                                                                <span
+                                                                    class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
+                                                            </div>
+                                                            <div
+                                                                class="orderlist_titleBox text__align--center hidden-md-up">
+                                                                <span class="orderlist_amount">
+                                                                    <span>Total</span>
+                                                                    <span class="orderlist_amount_num eng-num">90</span>
+                                                                    <span>items</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="物流狀態">
+                                                    <div class="tableDeta-box">
+                                                        <!-- 物流狀態 -->
+                                                        <div class="table_inlineBox-flex">
+
+                                                            <div class="orderlist_titleBox text__align--center">
+                                                                <span class="orderlist_title">
+                                                                    <a class="dispatchdetailBtn" href="#">已收貨</a>
+                                                                    <span>
+                                                            </div>
+
+                                                            <div class="orderlist_subtitleBox text__align--center">
+                                                                <span class="orderlist_subtitle">中華郵政 EMS</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <!-- 按鈕 -->
+                                            <tr class="table_row_bottom">
+                                                <td colspan="3">
+                                                    <div class="table_flexBox table_flexBox-between">
+                                                        <!-- 訂單內商品數量 -->
+                                                        <div class="orderlist_amount hidden-md-down">
+                                                            <span>Total</span>
+                                                            <span class="orderlist_amount_num eng-num">90</span>
+                                                            <span>items</span>
+                                                        </div>
+
+                                                        <!-- 操作按鈕欄 -->
+                                                        <div
+                                                            class="table_flexBox table_flexBox-right table_flexBox-wrap">
+                                                            <div class="table_inlineBox">
+                                                                <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
+                                                                    data-panel="orderDetails" href="#">訂單明細</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- 單筆訂單 End -->
+
+
+
 
 
 
@@ -738,14 +1144,11 @@
                                                         <div class="table_inlineBox-flex">
 
                                                             <div class="orderlist_titleBox text__align--center">
-                                                                <span class="orderlist_title">
-                                                                    <a class="dispatchdetailBtn" href="#">已出貨</a>
-                                                                    <span>
+                                                                <span class="orderlist_title">未出貨<span>
                                                             </div>
 
                                                             <div class="orderlist_subtitleBox text__align--center">
-                                                                <span class="orderlist_subtitle">賣家指定物流
-                                                                    ThaiPost-EMS</span>
+                                                                <span class="orderlist_subtitle">中華郵政 EMS</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -873,14 +1276,11 @@
                                                         <div class="table_inlineBox-flex">
 
                                                             <div class="orderlist_titleBox text__align--center">
-                                                                <span class="orderlist_title">
-                                                                    <a class="dispatchdetailBtn" href="#">已出貨</a>
-                                                                    <span>
+                                                                <span class="orderlist_title">未出貨<span>
                                                             </div>
 
                                                             <div class="orderlist_subtitleBox text__align--center">
-                                                                <span class="orderlist_subtitle">賣家指定物流
-                                                                    ThaiPost-EMS</span>
+                                                                <span class="orderlist_subtitle">中華郵政 EMS</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -909,140 +1309,6 @@
 
                                                             <a class="pct-ui btn-xs btn-secondary disputeBtn"
                                                                 href="#">申請爭議處理</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                        <!-- 單筆訂單-改版 End -->
-
-
-
-                                        <!-- 單筆訂單 已完成 -->
-                                        <tbody>
-                                            <tr class="table_row_header">
-                                                <td colspan="3">
-                                                    <div class="tableData-header">
-                                                        <!-- 訂單狀態 -->
-                                                        <div class="table_flexBox table_flexBox-between">
-                                                            <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i
-                                                                        class="pct-btn-icon icon-checked icon-back icon-back-green"></i>已完成</span>
-                                                            </div>
-                                                            <div class="contanctSeller">
-                                                                <a
-                                                                    class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
-                                                                        class="pct-btn-icon icon-comment"></i>聯絡買家
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr class="table_row_body">
-                                                <td data-title="商品">
-                                                    <div class="tableDeta-box">
-                                                        <!-- 商品資訊群組（圖＋文） -->
-                                                        <div class="productInfoGroup">
-                                                            <!-- 商品圖片 -->
-                                                            <div class="productInfo-img">
-                                                                <a href="#"><img class="img-fluid"
-                                                                        src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
-                                                                        alt="Product-Picture"></a>
-                                                            </div>
-                                                            <!-- </div> -->
-
-                                                            <!-- 商品資訊 -->
-                                                            <div class="productInfo-info">
-
-                                                                <!-- 訂單編號 -->
-                                                                <div class="productInfo-info-orderNum">
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                                </div>
-
-                                                                <!-- 商品名稱 -->
-                                                                <div class="productInfo-info-title">
-                                                                    <span class="productInfo-info-title-text"><a
-                                                                            href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
-                                                                            อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร
-                                                                            เก่ามาก สวย สมบูรณ์ หายากมาก</a><span>
-                                                                </div>
-
-                                                                <!-- 商品規格 -->
-                                                                <div class="productInfo-info-subtitle">
-                                                                    <span class="productInfo-info-subtitle-text">Size /
-                                                                        Color / Type / Size / Color / Type / Size /
-                                                                        Color / Type / Size / Color / Type<span>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td data-title="訂單總金額">
-                                                    <div class="tableDeta-box">
-                                                        <!-- 訂單總金額 -->
-                                                        <div class="table_inlineBox-flex">
-                                                            <div class="orderlist_titleBox text__align--center">
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-icon"><img
-                                                                        src="img/icon_pcprotect_badge.svg"></span>
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
-                                                            </div>
-                                                            <div
-                                                                class="orderlist_titleBox text__align--center hidden-md-up">
-                                                                <span class="orderlist_amount">
-                                                                    <span>Total</span>
-                                                                    <span class="orderlist_amount_num eng-num">90</span>
-                                                                    <span>items</span>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td data-title="物流狀態">
-                                                    <div class="tableDeta-box">
-                                                        <!-- 物流狀態 -->
-                                                        <div class="table_inlineBox-flex">
-
-                                                            <div class="orderlist_titleBox text__align--center">
-                                                                <span class="orderlist_title">
-                                                                    <a class="dispatchdetailBtn" href="#">已出貨</a>
-                                                                    <span>
-                                                            </div>
-
-                                                            <div class="orderlist_subtitleBox text__align--center">
-                                                                <span class="orderlist_subtitle">賣家指定物流
-                                                                    ThaiPost-EMS</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!-- 按鈕 -->
-                                            <tr class="table_row_bottom">
-                                                <td colspan="3">
-                                                    <div class="table_flexBox table_flexBox-between">
-                                                        <!-- 訂單內商品數量 -->
-                                                        <div class="orderlist_amount hidden-md-down">
-                                                            <span>Total</span>
-                                                            <span class="orderlist_amount_num eng-num">90</span>
-                                                            <span>items</span>
-                                                        </div>
-
-                                                        <!-- 操作按鈕欄 -->
-                                                        <div
-                                                            class="table_flexBox table_flexBox-right table_flexBox-wrap">
-                                                            <div class="table_inlineBox">
-                                                                <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
-                                                                    data-panel="orderDetails" href="#">訂單明細</a>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -1146,142 +1412,11 @@
                                                         <div class="table_inlineBox-flex">
 
                                                             <div class="orderlist_titleBox text__align--center">
-                                                                <span class="orderlist_title">
-                                                                    <a class="dispatchdetailBtn" href="#">已出貨</a>
-                                                                    <span>
-                                                            </div>
-
-                                                            <div class="orderlist_subtitleBox text__align--center">
-                                                                <span class="orderlist_subtitle">賣家指定物流
-                                                                    ThaiPost-EMS</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!-- 按鈕 -->
-                                            <tr class="table_row_bottom">
-                                                <td colspan="3">
-                                                    <div class="table_flexBox table_flexBox-between">
-                                                        <!-- 訂單內商品數量 -->
-                                                        <div class="orderlist_amount hidden-md-down">
-                                                            <span>Total</span>
-                                                            <span class="orderlist_amount_num eng-num">90</span>
-                                                            <span>items</span>
-                                                        </div>
-
-                                                        <!-- 操作按鈕欄 -->
-                                                        <div
-                                                            class="table_flexBox table_flexBox-right table_flexBox-wrap">
-                                                            <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
-                                                                data-panel="orderDetails" href="#">訂單明細</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                        <!-- 單筆訂單-改版 End -->
-
-
-                                        <!-- 單筆訂單 （賣家）取消訂單申請中 -->
-                                        <tbody>
-                                            <tr class="table_row_header">
-                                                <td colspan="3">
-                                                    <div class="tableData-header">
-                                                        <!-- 訂單狀態 -->
-                                                        <div class="table_flexBox table_flexBox-between">
-                                                            <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i
-                                                                        class="pct-btn-icon icon-wait icon-back icon-back-red"></i>待付款</span>
-                                                            </div>
-                                                            <div class="contanctSeller">
-                                                                <a
-                                                                    class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
-                                                                        class="pct-btn-icon icon-comment"></i>聯絡買家
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr class="table_row_body">
-                                                <td data-title="商品">
-                                                    <div class="tableDeta-box">
-                                                        <!-- 商品資訊群組（圖＋文） -->
-                                                        <div class="productInfoGroup">
-                                                            <!-- 商品圖片 -->
-                                                            <div class="productInfo-img">
-                                                                <a href="#"><img class="img-fluid"
-                                                                        src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
-                                                                        alt="Product-Picture"></a>
-                                                            </div>
-                                                            <!-- </div> -->
-
-                                                            <!-- 商品資訊 -->
-                                                            <div class="productInfo-info">
-
-                                                                <!-- 訂單編號 -->
-                                                                <div class="productInfo-info-orderNum">
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                                </div>
-
-                                                                <!-- 商品名稱 -->
-                                                                <div class="productInfo-info-title">
-                                                                    <span class="productInfo-info-title-text"><a
-                                                                            href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
-                                                                            อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร
-                                                                            เก่ามาก สวย สมบูรณ์ หายากมาก</a><span>
-                                                                </div>
-
-                                                                <!-- 商品規格 -->
-                                                                <div class="productInfo-info-subtitle">
-                                                                    <span class="productInfo-info-subtitle-text">Size /
-                                                                        Color / Type / Size / Color / Type / Size /
-                                                                        Color / Type / Size / Color / Type<span>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td data-title="訂單總金額">
-                                                    <div class="tableDeta-box">
-                                                        <!-- 訂單總金額 -->
-                                                        <div class="table_inlineBox-flex">
-                                                            <div class="orderlist_titleBox text__align--center">
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-icon"><img
-                                                                        src="img/icon_pcprotect_badge.svg"></span>
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
-                                                            </div>
-                                                            <div
-                                                                class="orderlist_titleBox text__align--center hidden-md-up">
-                                                                <span class="orderlist_subtitle orderlist_amount">
-                                                                    <span>Total</span>
-                                                                    <span class="orderlist_amount_num eng-num">90</span>
-                                                                    <span>items</span>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td data-title="物流狀態">
-                                                    <div class="tableDeta-box">
-                                                        <!-- 物流狀態 -->
-                                                        <div class="table_inlineBox-flex">
-                                                            <div class="orderlist_titleBox text__align--center">
                                                                 <span class="orderlist_title">未出貨<span>
                                                             </div>
 
                                                             <div class="orderlist_subtitleBox text__align--center">
-                                                                <span class="orderlist_subtitle">賣家指定物流
-                                                                    ThaiPost-EMS</span>
+                                                                <span class="orderlist_subtitle">中華郵政 EMS</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1304,14 +1439,13 @@
                                                             class="table_flexBox table_flexBox-right table_flexBox-wrap">
                                                             <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
                                                                 data-panel="orderDetails" href="#">訂單明細</a>
-                                                            <a class="pct-ui btn-xs btn-secondary cancelresonBtn"
-                                                                href="#">取消訂單</a>
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
                                         </tbody>
                                         <!-- 單筆訂單-改版 End -->
+
 
 
                                         <!-- 暫時不用 -->
@@ -1325,7 +1459,7 @@
 
                                                             <div class="table_inlineBox">
                                                                 <span class="list__itemInfo list_status"><i
-                                                                        class="pct-btn-icon icon-checked icon-back icon-back-orange"></i>已付款</span>
+                                                                        class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>已付款</span>
                                                             </div>
 
                                                             <div class="contanctSeller">
@@ -1412,8 +1546,7 @@
                                                                 <span class="orderlist_title">未出貨<span>
                                                             </div>
                                                             <div class="orderlist_subtitleBox text__align--center">
-                                                                <span class="orderlist_subtitle">賣家指定物流
-                                                                    ThaiPost-EMS</span>
+                                                                <span class="orderlist_subtitle">中華郵政 EMS</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1495,14 +1628,8 @@
     <!-- PChome Thai JS -->
     <?php include("assets/js-include.php"); ?>
     <!-- PChome Thai JS end-->
-    <!-- 主選單預設開啟（編號） -->
-    <script>
-    $(document).ready(function() {
-        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(2)');
-        menuItem.find('ul').show();
-        menuItem.addClass('active');
-    });
-    </script>
+
+
     <!--訂單管理 JS-->
     <script type="text/javascript" src="js/js_orderlist.js"></script>
     <!-- 滑動面板 -->
@@ -1522,6 +1649,8 @@
         //language: 'th' 泰文語系
     });
     </script>
+
+
 </body>
 
 </html>

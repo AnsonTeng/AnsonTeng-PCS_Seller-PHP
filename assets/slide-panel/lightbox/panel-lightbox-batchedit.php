@@ -2666,28 +2666,36 @@
     </div>
 </div>
 
+
+
 <!-- 商品管理－大量編輯－編輯商品名稱-->
 <div id="pct-lightbox-batchedit-editName" class="pct-ui modal medium">
-    <!--說明 FOR RD: 若送出需較長時間請執行以下loading-->
-    <div class="pct-ui loading-overlay" style="display: none;">
-        <div class="loading-circle small"></div>
-    </div>
     <i class="pct-icon icon-delete lightbox_close"></i>
     <div class="modal-header">編輯商品名稱</div>
     <div class="scrolling-tall modal-content">
         <div class="description">
-            <div class="pct-ui form-select-label break-label">
+            <div class="pct-ui form-label break-label">
+                <label for="">商品名稱</label>
                 <div class="pct-ui form">
-                    <textarea placeholder="原本的商品名稱 原本的商品名稱 原本的商品名稱 原本的商品名稱 原本的商品名稱"></textarea>
+                    <input type="text" placeholder="商品中文名稱">
+                    <a href="#" class="pct-ui btn-sm btn-secondary-outlined inputGroup-btn">Google翻譯
+                        中翻泰</a>
+                    <input type="text" placeholder="商品泰文名稱">
+                    <p class="break-text">自動翻譯功能由 Google
+                        翻譯所提供，PChome不保證翻譯內容之正確性！您可自行修正翻譯結果。
+                    </p>
                 </div>
             </div>
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined">取消重填</a>
+        <a href="#" class="pct-ui btn btn-secondary-outlined">取消</a>
         <a href="#" class="pct-ui btn btn-secondary">確定送出</a>
     </div>
 </div>
+
+
+
 
 <!-- 商品管理-大量編輯－確認套用-->
 <div id="pct-lightbox-batchedit-applyAll" class="pct-ui modal">
@@ -2704,6 +2712,9 @@
     </div>
 </div>
 
+
+
+
 <!-- 商品管理-大量編輯－修改商品數量與規格-->
 <div id="pct-lightbox-editspenstock" class="pct-ui modal large">
     <i class="pct-icon icon-delete lightbox_close"></i>
@@ -2713,7 +2724,6 @@
             <p>範例：A商品有「顏色」、「尺寸」等2種規格，規格可填寫成「紅色 > M」等。單一商品庫存數量上限為499。</p><br />
             <!--說明 FOR RD: 只能針對現有規格做編輯-->
             <div class="variation-box">
-
                 <div class="spec-wrap">
                     <div class="pct-ui form-label break-label">
                         <label for="">商品規格 1</label>
@@ -2729,7 +2739,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="pct-ui form-label break-label spec-stock">
                     <label for="">庫存數</label>
                     <div class="pct-ui form">
@@ -2737,9 +2746,7 @@
                     </div>
                 </div>
             </div>
-
             <div class="variation-box">
-
                 <div class="spec-wrap">
                     <div class="pct-ui form-label break-label">
                         <label for="">商品規格 2</label>
@@ -2755,7 +2762,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="pct-ui form-label break-label spec-stock">
                     <label for="">庫存數</label>
                     <div class="pct-ui form">
@@ -2763,9 +2769,7 @@
                     </div>
                 </div>
             </div>
-
             <div class="variation-box">
-
                 <div class="spec-wrap">
                     <div class="pct-ui form-label break-label">
                         <label for="">商品規格 3</label>
@@ -2781,7 +2785,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="pct-ui form-label break-label spec-stock">
                     <label for="">庫存數</label>
                     <div class="pct-ui form">

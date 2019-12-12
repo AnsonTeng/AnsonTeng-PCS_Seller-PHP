@@ -288,7 +288,7 @@
             <div class="description-list">
                 <div class="description-list-box">
                     <div class="list-box-item">匯款日期</div>
-                    <div class="list-box-text eng-num">2018/09/13</div>
+                    <div class="list-box-text eng-num">2020/09/13</div>
                 </div>
                 <div class="description-list-box">
                     <div class="list-box-item">匯款銀行</div>
@@ -335,7 +335,7 @@
             <div class="description-list">
                 <div class="description-list-box">
                     <div class="list-box-item">退款日</div>
-                    <div class="list-box-text eng-num">2018/09/13 14:13:18</div>
+                    <div class="list-box-text eng-num">2020/09/13 14:13:18</div>
                 </div>
                 <div class="description-list-box">
                     <div class="list-box-item">退款原因</div>
@@ -371,7 +371,7 @@
             <div class="description-list">
                 <div class="description-list-box">
                     <div class="list-box-item">出貨日期</div>
-                    <div class="list-box-text eng-num">2018/09/13 14:13:18</div>
+                    <div class="list-box-text eng-num">2020/09/13 14:13:18</div>
                 </div>
                 <div class="description-list-box">
                     <div class="list-box-item">寄送方式</div>
@@ -385,6 +385,116 @@
         </div>
     </div>
 </div>
+
+
+<!--訂單--出貨包裹運送狀態-->
+<div id="pct-lightbox-trackingLog" class="pct-ui modal medium">
+    <i class="pct-icon icon-delete lightbox_close"></i>
+    <div class="modal-header">包裹運送狀態</div>
+    <div class="modal-content scrolling">
+        <div class="description">
+            <div class="description-list-column">
+                <div class="list-column-up">
+                    <div class="description-list-box">
+                        <div class="list-box-item">物流方式</div>
+                        <div class="list-box-text eng-num">中華郵政-ePacket</div>
+                    </div>
+                    <div class="description-list-box">
+                        <div class="list-box-item">貨運號碼</div>
+                        <div class="list-box-text eng-num">EE123456789TW</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="modal__body__text">
+                <div class="trakinglog_timeline">
+                    <div class="trakinglog_timeline_block">
+                        <div class="parcel_status_time">
+                            <ul>
+                                <li class="eng">2020/10/12</li>
+                                <li class="eng">04:25:00 PM</li>
+                            </ul>
+                        </div>
+                        <div class="parcel_status_icon">
+                            <div class="parcel_status_icon_item active"><span class="pct-icon icon-checked"></span>
+                            </div>
+                        </div>
+                        <div class="parcel_status_text">包裹已簽收 Order paid, waiting shipment</div>
+                    </div>
+                    <div class="trakinglog_timeline_block">
+                        <div class="parcel_status_time">
+                            <ul>
+                                <li class="eng">2020/10/11</li>
+                                <li class="eng">04:25:00 PM</li>
+                            </ul>
+                        </div>
+                        <div class="parcel_status_icon">
+                            <div class="parcel_status_icon_item"><span class="pct-icon icon-checked"></div>
+                        </div>
+                        <div class="parcel_status_text">包裹正在派送中。</div>
+                    </div>
+                    <div class="trakinglog_timeline_block">
+                        <div class="parcel_status_time">
+                            <ul>
+                                <li class="eng">2020/10/09</li>
+                                <li class="eng">04:25:00 PM</li>
+                            </ul>
+                        </div>
+                        <div class="parcel_status_icon">
+                            <div class="parcel_status_icon_item"><span class="pct-icon icon-checked"></div>
+                        </div>
+                        <div class="parcel_status_text">包裹已清關完成，等待提貨。</div>
+                    </div>
+                    <div class="trakinglog_timeline_block">
+                        <div class="parcel_status_time">
+                            <ul>
+                                <li class="eng">2020/10/08</li>
+                                <li class="eng">04:25:00 PM</li>
+                            </ul>
+                        </div>
+                        <div class="parcel_status_icon">
+                            <div class="parcel_status_icon_item"><span class="pct-icon icon-checked"></div>
+                        </div>
+                        <div class="parcel_status_text">包裹已抵達泰國，等待提貨清關。</div>
+                    </div>
+                    <div class="trakinglog_timeline_block">
+                        <div class="parcel_status_time">
+                            <ul>
+                                <li class="eng">2020/10/08</li>
+                                <li class="eng">04:25:00 PM</li>
+                            </ul>
+                        </div>
+                        <div class="parcel_status_icon">
+                            <div class="parcel_status_icon_item"><span class="pct-icon icon-checked"></div>
+                        </div>
+                        <div class="parcel_status_text">包裹已安排航班，離開起運港。</div>
+                    </div>
+                    <div class="trakinglog_timeline_block">
+                        <div class="parcel_status_time">
+                            <ul>
+                                <li class="eng">2020/10/06</li>
+                                <li class="eng">04:25:00 PM</li>
+                            </ul>
+                        </div>
+                        <div class="parcel_status_icon">
+                            <div class="parcel_status_icon_item"><span class="pct-icon icon-checked"></div>
+                        </div>
+                        <div class="parcel_status_text">包裹在高雄海關清關完成，等待發大財。</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
 
 
 <?php include("assets/lightbox/notification/lightbox-notification.php"); ?>

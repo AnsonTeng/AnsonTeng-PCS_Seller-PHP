@@ -409,7 +409,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="card-content-pricestock eng-num">
-                                                        <div class="current-stock">Inventory<span>499</span></div>
+                                                        <div class="current-stock">
+                                                            <!--Inventory-->庫存<span>499</span></div>
                                                         <div class="current-price"><span>฿</span>1,620</div>
                                                     </div>
                                                     <div class="card-footer">
@@ -426,10 +427,12 @@
                                             </div>
                                         </a>
                                         <div class="card-edit-action">
-                                            <a href="#"><span class="pct-icon icon-arrow-down"></span>List</a>
+                                            <a href="#"><span class="pct-icon icon-arrow-down"></span>
+                                                <!--List-->下架</a>
                                             <a href="https://www.pchome.co.th/pro/content/show/3031804163971"
                                                 target="blank" class="previewProductBtn"> <span
-                                                    class="pct-icon icon-preview"></span>Preview</a>
+                                                    class="pct-icon icon-preview"></span>
+                                                <!--Preview-->預覽</a>
                                         </div>
                                     </div>
                                 </div>
@@ -472,8 +475,9 @@
                                                     <div class="card-content-pricestock eng-num">
                                                         <div class="current-stock">
                                                             <div class="replen-stock-block"> <span
-                                                                    class="pct-icon icon-alert"></span> <!-- 補庫存再賣 -->
-                                                                Refill to sell</div>
+                                                                    class="pct-icon icon-alert"></span>
+                                                                <!-- Refill to sell -->補庫存再賣
+                                                            </div>
                                                             庫存 <span>0</span>
                                                         </div>
                                                         <div class="current-price"><span>฿</span>1,620</div>
@@ -531,8 +535,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="card-content-pricestock">
-                                                        <div class="current-stock">สินค้าเหลือ<span
-                                                                class="eng-num">499</span></div>
+                                                        <div class="current-stock">
+                                                            <!--สินค้าเหลือ-->庫存<span class="eng-num">499</span></div>
                                                         <div class="current-price eng-num"><span>฿</span>1,620</div>
                                                     </div>
                                                     <div class="card-footer">
@@ -549,10 +553,12 @@
                                             </div>
                                         </a>
                                         <div class="card-edit-action">
-                                            <a href="#"><span class="pct-icon icon-arrow-down"></span>เก็บสินค้า</a>
+                                            <a href="#"><span class="pct-icon icon-arrow-down"></span>
+                                                <!--เก็บสินค้า-->下架</a>
                                             <a href="https://www.pchome.co.th/pro/content/show/3031804163971"
                                                 target="blank" class="previewProductBtn"> <span
-                                                    class="pct-icon icon-preview"></span>ลบ</a>
+                                                    class="pct-icon icon-preview"></span>
+                                                <!--ลบ-->預覽</a>
                                         </div>
                                     </div>
                                 </div>
@@ -762,7 +768,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="card-content-pricestock eng-num">
-                                                        <div class="current-stock">Inventory<span>499</span></div>
+                                                        <div class="current-stock">
+                                                            <!--Inventory-->庫存<span>499</span></div>
                                                         <div class="current-price"><span>฿</span>1,620</div>
                                                     </div>
                                                     <div class="card-footer">
@@ -779,10 +786,12 @@
                                             </div>
                                         </a>
                                         <div class="card-edit-action">
-                                            <a href="#"><span class="pct-icon icon-arrow-up"></span>แสดงสินค้า</a>
+                                            <a href="#"><span class="pct-icon icon-arrow-up"></span>
+                                                <!--แสดงสินค้า-->上架</a>
                                             <a href="https://www.pchome.co.th/pro/content/show/3031804163971"
                                                 target="blank" class="previewProductBtn"> <span
-                                                    class="pct-icon icon-preview"></span>ลบ</a>
+                                                    class="pct-icon icon-preview"></span>
+                                                <!--ลบ-->預覽</a>
                                         </div>
                                     </div>
                                 </div>
@@ -816,7 +825,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="card-content-pricestock eng-num">
-                                                        <div class="current-stock">Inventory<span>499</span></div>
+                                                        <div class="current-stock">
+                                                            <!--Inventory-->庫存<span>499</span></div>
                                                         <div class="current-price"><span>฿</span>1,620</div>
                                                     </div>
                                                     <div class="card-footer">
@@ -833,10 +843,12 @@
                                             </div>
                                         </a>
                                         <div class="card-edit-action">
-                                            <a href="#"><span class="pct-icon icon-arrow-down"></span>Unlist</a>
+                                            <a href="#"><span class="pct-icon icon-arrow-down"></span>
+                                                <!--Unlist-->下架</a>
                                             <a href="https://www.pchome.co.th/pro/content/show/3031804163971"
                                                 target="blank" class="previewProductBtn"> <span
-                                                    class="pct-icon icon-preview"></span>Preview</a>
+                                                    class="pct-icon icon-preview"></span>
+                                                <!--Preview-->預覽</a>
                                         </div>
                                     </div>
                                 </div>
@@ -872,8 +884,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="card-content-pricestock">
-                                                        <div class="current-stock">สินค้าเหลือ<span
-                                                                class="eng-num">499</span></div>
+                                                        <div class="current-stock">
+                                                            <!--สินค้าเหลือ-->庫存<span class="eng-num">499</span></div>
                                                         <div class="current-price eng-num"><span>฿</span>1,620</div>
                                                     </div>
                                                     <div class="card-footer">
@@ -890,10 +902,12 @@
                                             </div>
                                         </a>
                                         <div class="card-edit-action">
-                                            <a href="#"><span class="pct-icon icon-arrow-down"></span>เก็บสินค้า</a>
+                                            <a href="#"><span class="pct-icon icon-arrow-down"></span>
+                                                <!--เก็บสินค้า-->下架</a>
                                             <a href="https://www.pchome.co.th/pro/content/show/3031804163971"
                                                 target="blank" class="previewProductBtn"> <span
-                                                    class="pct-icon icon-preview"></span>ลบ</a>
+                                                    class="pct-icon icon-preview"></span>
+                                                <!--ลบ-->預覽</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1039,7 +1053,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="card-content-pricestock eng-num">
-                                                        <div class="current-stock">Inventory<span>499</span></div>
+                                                        <div class="current-stock">
+                                                            <!--Inventory-->庫存<span>499</span></div>
                                                         <div class="current-price"><span>฿</span>1,620</div>
                                                     </div>
                                                     <div class="card-footer">
@@ -1056,10 +1071,12 @@
                                             </div>
                                         </a>
                                         <div class="card-edit-action">
-                                            <a href="#"><span class="pct-icon icon-arrow-down"></span>Unlist</a>
+                                            <a href="#"><span class="pct-icon icon-arrow-down"></span>
+                                                <!--Unlist-->下架</a>
                                             <a href="https://www.pchome.co.th/pro/content/show/3031804163971"
                                                 target="blank" class="previewProductBtn"> <span
-                                                    class="pct-icon icon-preview"></span>Preview</a>
+                                                    class="pct-icon icon-preview"></span>
+                                                <!--Preview-->預覽</a>
                                         </div>
                                     </div>
                                 </div>

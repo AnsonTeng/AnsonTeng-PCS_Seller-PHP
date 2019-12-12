@@ -110,21 +110,18 @@
                                 </ul>
                             </div>
 
-
                             <div class="content-block">
                                 <div class="content-title">注意事項</div>
                                 <div class="content-description">
-                                    <p class="description-text">The table below shows the payable fees PChome collects
-                                        from you to pay to providers including delivery fee, bank surcharge, refund
-                                        surcharge, etc.; these fees are accumulated and will be shown in negative
-                                        numbers in this table.</p>
-                                    <p class="description-text">These payable fees will be deducted from your balance
-                                        when you request to withdraw from your PChomePay account, and the accumulated
-                                        fees will be reset to 0.</p>
+                                    <p class="description-text alert">成交手續費(商品價格5%+7%VAT)待訂單7天保護期過後列出，由PChome Thai
+                                        從貨款中扣除。
+                                    </p>
+                                    <p class="description-text"><b>代寄運費：</b>買家支付的國際運費 (按照賣家設定的商品重量、材積計算出的國際運費)
+                                        ，須扣除給PChomeThai
+                                        台北轉運中心。<br /><b>代寄運費差額：</b>PChomeThai
+                                        台北轉運中心寄送時，支付給物流商的實際運費。若比買家支付的運費高，會從貨款中扣除差額，若比買家支付的運費低，會退還差額到賣家貨款中。</p>
                                 </div>
                             </div>
-
-
 
                             <!-- 表格－交易費用清單 -->
                             <div class="tableBox tableBox-selleracc-fee">
@@ -135,234 +132,204 @@
                                         <!-- colgroup -->
                                         <colgroup>
                                             <col class="table--w15">
-                                            <col class="table--w18">
-                                            <col class="table--w18">
-                                            <col class="table--w25">
-                                            <col class="table--w12">
-                                            <col class="table--w12">
+                                            <col class="table--w20">
+                                            <col class="table--w10">
+                                            <col class="table--w10">
+                                            <col class="table--w15">
+                                            <col class="table--w15">
+                                            <col class="table--w15">
                                         </colgroup>
                                         <!-- thead -->
                                         <thead>
                                             <tr>
-                                                <th>Date</th>
-                                                <th>Statement Number</th>
-                                                <th>Type</th>
-                                                <th>Item</th>
-                                                <th>Amount</th>
-                                                <th>Total</th>
+                                                <th>日期</th>
+                                                <th>單據號碼</th>
+                                                <th>交易類別</th>
+                                                <th>項目</th>
+                                                <th>金額 THB</th>
+                                                <th>金額 TWD</th>
+                                                <th>費用累計</th>
                                             </tr>
                                         </thead>
                                     </table>
                                 </div>
-
-
-
 
                                 <!-- 表格（單一筆交易費用） -->
                                 <div class="table__tbody md-break-table">
                                     <table class="normal-table">
                                         <colgroup>
                                             <col class="table--w15">
-                                            <col class="table--w18">
-                                            <col class="table--w18">
-                                            <col class="table--w25">
-                                            <col class="table--w12">
-                                            <col class="table--w12">
+                                            <col class="table--w20">
+                                            <col class="table--w10">
+                                            <col class="table--w10">
+                                            <col class="table--w15">
+                                            <col class="table--w15">
+                                            <col class="table--w15">
                                         </colgroup>
 
-                                        <!-- 單筆交易費用01 -->
                                         <tbody>
                                             <tr class="normallist-item">
-
                                                 <td data-title="日期">
-                                                    <span class="eng-num">2018/12/20</span>
+                                                    <span class="eng-num">2020/12/20</span>
                                                 </td>
-
-                                                <td data-title="訂單編號">
+                                                <td data-title="單據號碼">
                                                     <span class="eng-num"><a class="js-pct-panel-trigger"
                                                             data-panel="orderDetails" href="#">9121800007684</a></span>
                                                 </td>
-
                                                 <td data-title="交易類別">
                                                     <span>新增費用</span>
                                                 </td>
-
                                                 <td data-title="項目">
                                                     <span>金流服務費</span>
                                                 </td>
-
-                                                <td data-title="金額">
+                                                <td data-title="金額 THB">
                                                     <span class="eng-num negative">2,895</span>
                                                 </td>
-
-                                                <td data-title="結餘">
-                                                    <span class="eng-num negative">112,895</span>
+                                                <td data-title="金額 TWD ">
+                                                    <span class="eng-num negative">2,895</span>
+                                                </td>
+                                                <td data-title="費用累計">
+                                                    <span class="eng-num">112,895</span>
                                                 </td>
                                             </tr>
                                         </tbody>
-                                        <!-- 單筆交易費用01 End -->
 
-                                        <!-- 單筆交易費用01 -->
                                         <tbody>
                                             <tr class="normallist-item">
-
                                                 <td data-title="日期">
-                                                    <span class="eng-num">2018/12/20</span>
+                                                    <span class="eng-num">2020/12/20</span>
                                                 </td>
-
-                                                <td data-title="訂單編號">
-                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
-                                                            data-panel="orderDetails" href="#">9121800007684</a></span>
+                                                <td data-title="單據號碼">
+                                                    <span class="eng-num">
+                                                        <a class="js-pct-panel-trigger" data-panel="orderDetails"
+                                                            href="#">PT201905081824</a></span>
                                                 </td>
-
                                                 <td data-title="交易類別">
-                                                    <span>ค่าบริการใหม่</span>
-                                                </td>
-
-                                                <td data-title="項目">
-                                                    <span>ค่าบริการชำระเงิน</span>
-                                                </td>
-
-                                                <td data-title="金額">
-                                                    <span class="eng-num negative">2,895</span>
-                                                </td>
-
-                                                <td data-title="結餘">
-                                                    <span class="eng-num negative">112,895</span>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                        <!-- 單筆交易費用01 End -->
-
-                                        <!-- 單筆交易費用01 -->
-                                        <tbody>
-                                            <tr class="normallist-item">
-
-                                                <td data-title="日期">
-                                                    <span class="eng-num">2018/12/20</span>
-                                                </td>
-
-                                                <td data-title="訂單編號">
-                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
-                                                            data-panel="orderDetails" href="#">9121800007684</a></span>
-                                                </td>
-
-                                                <td data-title="交易類別">
-                                                    <span>New Fee</span>
-                                                </td>
-
-                                                <td data-title="項目">
-                                                    <span>Surchage</span>
-                                                </td>
-
-                                                <td data-title="金額">
-                                                    <span class="eng-num negative">2,895</span>
-                                                </td>
-
-                                                <td data-title="結餘">
-                                                    <span class="eng-num negative">112,895</span>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                        <!-- 單筆交易費用01 End -->
-
-
-
-                                        <!-- 單筆交易費用02 -->
-                                        <tbody>
-                                            <tr class="normallist-item">
-
-                                                <td data-title="Date">
-                                                    <span class="eng-num">2018/12/19</span>
-                                                </td>
-
-                                                <td data-title="Statement Number">
-                                                    <span class="eng-num"><a href="#"
-                                                            class="payFeeBtn">PT2019031000078</a></span>
-                                                </td>
-
-                                                <td data-title="Type">
                                                     <span>繳交費用</span>
                                                 </td>
-
-                                                <td data-title="Item">
-                                                    <span>繳交成功</span>
+                                                <td data-title="項目">
+                                                    <span>成交手續費</span>
                                                 </td>
-
-                                                <td data-title="Amount">
-                                                    <span class="eng-num negative">95</span>
+                                                <td data-title="金額 THB">
+                                                    <span class="eng-num negative">98</span>
                                                 </td>
-
-                                                <td data-title="Total">
-                                                    <span class="eng-num">0</span>
+                                                <td data-title="金額 TWD ">
+                                                    <span class="eng-num negative">100</span>
+                                                </td>
+                                                <td data-title="費用累計">
+                                                    <span class="eng-num">112,895</span>
                                                 </td>
                                             </tr>
                                         </tbody>
-                                        <!-- 單筆交易費用02 End -->
 
-                                        <!-- 單筆交易費用02 -->
                                         <tbody>
                                             <tr class="normallist-item">
-
-                                                <td data-title="Date">
-                                                    <span class="eng-num">2018/12/19</span>
+                                                <td data-title="日期">
+                                                    <span class="eng-num">2020/12/20</span>
                                                 </td>
-
-                                                <td data-title="Statement Number">
-                                                    <span class="eng-num"><a href="#"
-                                                            class="payFeeBtn">PT2019031000078</a></span>
+                                                <td data-title="單據號碼">
+                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
+                                                            data-panel="orderDetails" href="#">PR201905251824</a></span>
                                                 </td>
-
-                                                <td data-title="Type">
-                                                    <span>จ่ายค่าธรรมเนียม</span>
+                                                <td data-title="交易類別">
+                                                    <span>繳交費用</span>
                                                 </td>
-
-                                                <td data-title="Item">
-                                                    <span>ค่าบริการชำระเงิน</span>
+                                                <td data-title="項目">
+                                                    <span>退款轉帳手續費</span>
                                                 </td>
-
-                                                <td data-title="Amount">
-                                                    <span class="eng-num negative">95</span>
+                                                <td data-title="金額 THB">
+                                                    <span class="eng-num negative">208</span>
                                                 </td>
-
-                                                <td data-title="Total">
-                                                    <span class="eng-num">0</span>
+                                                <td data-title="金額 TWD ">
+                                                    <span class="eng-num negative">201</span>
+                                                </td>
+                                                <td data-title="費用累計">
+                                                    <span class="eng-num">112,895</span>
                                                 </td>
                                             </tr>
                                         </tbody>
-                                        <!-- 單筆交易費用02 End -->
 
-                                        <!-- 單筆交易費用02 -->
                                         <tbody>
                                             <tr class="normallist-item">
-
-                                                <td data-title="Date">
-                                                    <span class="eng-num">2018/12/19</span>
+                                                <td data-title="日期">
+                                                    <span class="eng-num">2020/12/20</span>
                                                 </td>
-
-                                                <td data-title="Statement Number">
-                                                    <span class="eng-num"><a href="#"
-                                                            class="payFeeBtn">PT2019031000078</a></span>
+                                                <td data-title="單據號碼">
+                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
+                                                            data-panel="orderDetails" href="#">9121800007684</a></span>
                                                 </td>
-
-                                                <td data-title="Type">
-                                                    <span>Pay the fee(s)</span>
+                                                <td data-title="交易類別">
+                                                    <span>新增費用</span>
                                                 </td>
-
-                                                <td data-title="Item">
-                                                    <span>Surchage</span>
+                                                <td data-title="項目">
+                                                    <span>交易手續費</span>
                                                 </td>
-
-                                                <td data-title="Amount">
-                                                    <span class="eng-num negative">95</span>
+                                                <td data-title="金額 THB">
+                                                    <span class="eng-num ">1,895</span>
                                                 </td>
-
-                                                <td data-title="Total">
-                                                    <span class="eng-num">0</span>
+                                                <td data-title="金額 TWD ">
+                                                    <span class="eng-num ">1,890</span>
+                                                </td>
+                                                <td data-title="費用累計">
+                                                    <span class="eng-num">112,895</span>
                                                 </td>
                                             </tr>
                                         </tbody>
-                                        <!-- 單筆交易費用02 End -->
+
+                                        <tbody>
+                                            <tr class="normallist-item">
+                                                <td data-title="日期">
+                                                    <span class="eng-num">2020/12/20</span>
+                                                </td>
+                                                <td data-title="單據號碼">
+                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
+                                                            data-panel="orderDetails" href="#">9121800007684</a></span>
+                                                </td>
+                                                <td data-title="交易類別">
+                                                    <span>新增費用</span>
+                                                </td>
+                                                <td data-title="項目">
+                                                    <span>運費</span>
+                                                </td>
+                                                <td data-title="金額 THB">
+                                                    <span class="eng-num ">1,895</span>
+                                                </td>
+                                                <td data-title="金額 TWD ">
+                                                    <span class="eng-num ">1,890</span>
+                                                </td>
+                                                <td data-title="費用累計">
+                                                    <span class="eng-num">112,895</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                        <tbody>
+                                            <tr class="normallist-item">
+                                                <td data-title="日期">
+                                                    <span class="eng-num">2020/12/20</span>
+                                                </td>
+                                                <td data-title="單據號碼">
+                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
+                                                            data-panel="orderDetails" href="#">9121800007684</a></span>
+                                                </td>
+                                                <td data-title="交易類別">
+                                                    <span>新增費用</span>
+                                                </td>
+                                                <td data-title="項目">
+                                                    <span>運費補收</span>
+                                                </td>
+                                                <td data-title="金額 THB">
+                                                    <span class="eng-num ">1,895</span>
+                                                </td>
+                                                <td data-title="金額 TWD ">
+                                                    <span class="eng-num ">1,890</span>
+                                                </td>
+                                                <td data-title="費用累計">
+                                                    <span class="eng-num">112,895</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
                                     </table>
                                 </div>
 

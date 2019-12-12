@@ -121,8 +121,9 @@
                                         <div class="accountFlexbox-btnBox">
                                             <div class="accountFlexbox-btnBox-btnGroup">
                                                 <img class="btnGroup-img" src="img/bankaccount_setting.svg">
-                                                <a href="#" class="pct-ui btn-sm btn-fluid btn-cta selleridveriBtn">
-                                                    <li class="pct-icon icon-plus"></li> 修改帳戶
+                                                <a href="#"
+                                                    class="pct-ui btn-sm btn-fluid btn-secondary selleridveriBtn">
+                                                    <li class="pct-btn-icon icon-plus"></li> 修改帳戶
                                                 </a>
                                             </div>
                                         </div>

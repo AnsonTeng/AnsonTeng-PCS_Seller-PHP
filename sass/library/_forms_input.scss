@@ -95,10 +95,10 @@
 }
 
 // 僅能閱讀
-.pct-ui.form-readonly input {
+.pct-ui.form.form-readonly input {
     border: 0px;
     box-shadow: none;
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 0.75rem 0.5rem 0rem;
     margin: 2px 0 6px 0;
     width: 100%;
     font-size: 0.875rem;
@@ -117,7 +117,7 @@
         font-size: 0.875rem;
         right: 15px;
         top: 13px;
-        color: #555555;
+        color: $colorWhiteGray;
         font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     }
 }
@@ -131,7 +131,7 @@
         font-size: 0.875rem;
         left: 15px;
         top: 13px;
-        color: #c0c0c0;
+        color: $colorWhiteGray;
         font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     }
 }
@@ -287,16 +287,42 @@
     }
 }
 
+//重量 - 公斤
+.pct-ui.form.product-weight-kilogram {
+    input[type="text"],
+    input[type="tel"] {
+        padding-right: 43px;
+        right: 6px;
+    }
+    &:after {
+        position: absolute;
+        content: "kg";
+    }
+}
+
+//長度 - 公分
+.pct-ui.form.product-length-centimeter {
+    input[type="text"],
+    input[type="tel"] {
+        padding-right: 43px;
+        right: 6px;
+    }
+    &:after {
+        position: absolute;
+        content: "cm";
+    }
+}
+
 // 文字說明（搭配）
 .form-introduction {
     position: relative;
-    top: -1rem;
+    // top: -1rem;
     font-size: 0.875rem;
     color: $colorDeepGray;
     margin-bottom: 1rem;
     text-align: left;
 
     @media (max-width: $break-xs) {
-        top: -1rem;
+        // top: -1rem;
     }
 }

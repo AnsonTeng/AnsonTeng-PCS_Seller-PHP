@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
-    <title>PChome SEA | 款項提領</title>
+    <title>PChome SEA | 貨款結算</title>
     <!-- Google Tag Manager -->
     <script>
     (function(w, d, s, l, i) {
@@ -104,19 +104,9 @@
                                     <li class="pct-icon icon-angle-right"></li>
                                     <li>PChome 代收款項</li>
                                     <li class="pct-icon icon-angle-right"></li>
-                                    <li>款項查詢</li>
+                                    <li>貨款結算</li>
                                 </ul>
                             </div>
-
-                            <!-- PChome Thai Alert -->
-                            <div class="msgbar">
-                                <div class="alert">
-                                    <span class="pct-icon icon-delete"
-                                        onclick="this.parentElement.style.display='none';"></span>
-                                    ＊ 您尚未提供銀行帳號，請前往設定。
-                                </div>
-                            </div>
-                            <!-- PChome Thai Alert end-->
 
 
                             <!-- 區塊－金額統計 -->
@@ -135,9 +125,9 @@
                                                 </div>
                                                 <!-- 文字包 -->
                                                 <div class="item-amountBox-text">
-                                                    <div class="subtitle"><span class="subtitle-text">貨款總金額</span><span
+                                                    <div class="subtitle"><span class="subtitle-text">可結算金額</span><span
                                                             class="currency">TWD</span></div>
-                                                    <div class="amount eng-num">179,843.87</div>
+                                                    <div class="amount eng-num">17,843.87</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -157,43 +147,56 @@
                                         </div>
                                         <!-- 運算符號 +/- -->
                                         <div class="items item-operations item-operations-plus">
-                                            <i class="pct-icon icon-plus"></i>
+                                            <i class="pct-icon icon-minus"></i>
                                         </div>
                                         <!-- 細項金額組合－右 -->
                                         <div class="items item-amountBox-right">
                                             <!-- 文字包 -->
                                             <div class="item-amountBox-text">
                                                 <div class="subtitle"><span class="subtitle-text">
-                                                        <!-- In Progress -->待轉可用貨款金額</span></div>
-                                                <div class="amount eng-num">157,946.45</div>
+                                                        <!-- In Progress -->未繳費用</span></div>
+                                                <div class="amount eng-num">7,946.45</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- 操作按鈕 -->
-                                    <!-- <div class="accountingItem"> -->
-                                    <div class="item-btnBox">
-                                        <a href="#" class="pct-ui btn btn-secondary btn-fluid withdrawalBtn">
-                                            <!-- Withdrawal -->貨款結算</a>
-
-                                        <!--說明For RD: 判斷是設定 "公司發票"" 還是 "個人發票"" -->
-                                        <!-- 公司發票 -->
-                                        <a class="setCompanyInvoiceBtn pct-ui btn-fluid">
-                                            <li class="pct-btn-icon icon-receipt"></li>
-                                            <!-- Invoice Settings -->發票設定
-                                        </a>
-                                        <!-- 個人發票 -->
-                                        <a class="setPersonalInvoiceBtn pct-ui btn-fluid" style="display: none;">
-                                            <li class="pct-icon icon-receipt"></li>發票設定
-                                        </a>
-                                    </div>
-                                    <!-- </div> -->
                                 </div>
+
+                                <!-- 輸入提領金額區 -->
+                                <div class="accountAmountBox">
+                                    <div class="pct-ui form-label">
+                                        <label for="" class="required">欲結算金額</label>
+                                        <div class="pct-ui form product-price-TWdollar unit-before">
+                                            <input type="text" placeholder="" value="6,571">
+                                            <p class="break-text alert">非上海銀行用戶，實際入帳金額為結算金額扣除轉帳手續費，轉帳手續費由銀行收取。</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 輸入提領金額區 -->
+                                <div class="accountAmountBox">
+                                    <div class="pct-ui form-label">
+                                        <label for="" class="required">撥款銀行帳號</label>
+                                        <div class="pct-ui form form-readonly">
+                                            <input type="text" placeholder="" readonly="readonly"
+                                                value="004 台灣銀行 9********01234">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accountActionBox">
+                                    <div class="pct-ui btn-group-horizontal">
+                                        <a href="#" class="pct-ui btn btn-secondary-outlined">回上一頁</a>
+                                        <a href="#" class="pct-ui btn btn-secondary">確定結算</a>
+                                    </div>
+                                </div>
+
                             </div>
 
 
-                            <!-- 結算狀態說 -->
+
+                            <!-- 結算狀態說明 -->
                             <a class="pct-ui btn-sm settlementStatusBtn">
-                                <li class="pct-btn-icon icon-information"></li>結算狀態說明
+                                <span class="pct-btn-icon icon-information"></span>結算狀態說明
                             </a>
 
                             <!-- 表格－交易款項清單 -->
@@ -202,33 +205,34 @@
                                 <div class="table__thead hidden-lg-down">
                                     <table>
                                         <colgroup>
+                                            <col class="table--w10">
+                                            <col class="table--w15">
                                             <col class="table--w20">
-                                            <col class="table--w10">
-                                            <col class="table--w18">
-                                            <col class="table--w10">
-                                            <col class="table--w10">
-                                            <col class="table--w10">
-                                            <col class="table--w10">
-                                            <col class="table--w12">
+                                            <col class="table--w20">
+                                            <col class="table--w20">
+                                            <col class="table--w15">
                                         </colgroup>
                                         <thead class="normallist-head">
                                             <tr>
                                                 <th>
-                                                    <!-- Status -->結算狀態</th>
+                                                    <div class="pct-ui form checkbox">
+                                                        <input type="checkbox" id="id-1" name="checkGroup" value="1"
+                                                            checked="">
+                                                        <label for="id-1">
+                                                            <span>全選</span>
+                                                        </label>
+                                                    </div>
+                                                </th>
                                                 <th>
                                                     <!-- Date -->日期</th>
                                                 <th>
                                                     <!-- Statement Numbe -->單據號碼</th>
                                                 <th>
-                                                    <!-- Transaction Type -->交易類別</th>
+                                                    <!-- Amount -->可結算金額 THB</th>
                                                 <th>
-                                                    <!-- Amount -->金額 THB</th>
+                                                    <!-- Amount -->可結算金額 TWD</th>
                                                 <th>
-                                                    <!-- Amount -->金額 TWD</th>
-                                                <th>
-                                                    <!-- Account Balance -->結餘 TWD</th>
-                                                <th>
-                                                    <!-- Details -->明細</th>
+                                                    <!-- Status -->結算狀態</th>
                                             </tr>
                                         </thead>
                                     </table>
@@ -237,23 +241,26 @@
                                 <div class="table__tbody lg-break-table">
                                     <table class="normal-table">
                                         <colgroup>
+                                            <col class="table--w10">
+                                            <col class="table--w15">
                                             <col class="table--w20">
-                                            <col class="table--w10">
-                                            <col class="table--w18">
-                                            <col class="table--w10">
-                                            <col class="table--w10">
-                                            <col class="table--w10">
-                                            <col class="table--w10">
-                                            <col class="table--w12">
+                                            <col class="table--w20">
+                                            <col class="table--w20">
+                                            <col class="table--w15">
                                         </colgroup>
 
 
-                                        <!-- 1.買家代理人收到貨款 -->
+                                        <!-- 準備結算 -->
                                         <tbody>
                                             <tr class="normallist-item">
                                                 <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>買家代理人收到貨款</span>
+                                                    <div class="pct-ui form checkbox">
+                                                        <input type="checkbox" id="id-1" name="checkGroup" value="1"
+                                                            checked="">
+                                                        <label for="id-1">
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
                                                 </td>
                                                 <td data-title="日期">
                                                     <span class="eng-num">2020/05/10</span>
@@ -261,707 +268,112 @@
                                                 <td data-title="單據號碼">
                                                     <span class="eng-num">70519001863</span>
                                                 </td>
-                                                <td data-title="交易類別">
-                                                    <span>訂單</span>
-                                                </td>
                                                 <td data-title="金額 THB">
                                                     <span class="eng-num">฿45,699</span>
                                                 </td>
                                                 <td data-title="金額 TWD">
                                                     <span class="eng-num">$45,699</span>
                                                 </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">959,153.87</span>
-                                                </td>
-                                                <td data-title="明細">
-                                                    <a class="pct-ui btn-xs accountStepBtn"
-                                                        data-pttranid="8051900007184">貨款明細</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-
-                                        <!-- 2.轉可用貨款 -->
-                                        <tbody>
-                                            <tr class="normallist-item">
-                                                <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>轉可用貨款</span>
-                                                </td>
-                                                <td data-title="日期">
-                                                    <span class="eng-num">2020/05/20</span>
-                                                </td>
-                                                <td data-title="單據號碼">
-                                                    <span class="eng-num">70519001863</span>
-                                                </td>
-                                                <td data-title="交易類別">
-                                                    <span>訂單</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">฿45,699</span>
-                                                </td>
-                                                <td data-title="金額 TWD">
-                                                    <span class="eng-num">$45,699</span>
-                                                </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">959,153.87</span>
-                                                </td>
-                                                <td data-title="明細">
-                                                    <a class="pct-ui btn-xs accountStepCompleteBtn"
-                                                        data-pttranid="8051900007184">貨款明細</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-
-                                        <!-- 3.準備結算 -->
-                                        <tbody>
-                                            <tr class="normallist-item">
                                                 <td data-title="狀態">
                                                     <span><i
                                                             class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>準備結算</span>
                                                 </td>
-                                                <td data-title="日期">
-                                                    <span class="eng-num">2020/05/21</span>
-                                                </td>
-                                                <td data-title="單據號碼">
-                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
-                                                            data-panel="orderDetails" href="#"
-                                                            onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
-                                                </td>
-                                                <td data-title="交易類別">
-                                                    <span>結算</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">฿45,699</span>
-                                                </td>
-                                                <td data-title="金額 TWD">
-                                                    <span class="eng-num">$45,699</span>
-                                                </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">959,153.87</span>
-                                                </td>
-                                                <td data-title="明細">
-                                                    <a class="pct-ui btn-xs withdrawalStepBtn"
-                                                        data-pttranid="8051900007184">結算明細</a>
-                                                </td>
                                             </tr>
                                         </tbody>
 
-                                        <!-- ４.繳交成功 -->
+                                        <!-- 準備結算 -->
                                         <tbody>
                                             <tr class="normallist-item">
                                                 <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-checked icon-back icon-back-green"></i>繳交成功</span>
-                                                </td>
-                                                <td data-title="日期">
-                                                    <span class="eng-num">2020/05/23</span>
-                                                </td>
-                                                <td data-title="單據號碼">
-
-                                                    <span class="eng-num"><a href="#"
-                                                            class="payFeeBtn">PT2020051000002</a></span>
-                                                </td>
-                                                <td data-title="交易類別">
-                                                    <span>繳交費用</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num negative">฿1,271.34</span>
-                                                </td>
-                                                <td data-title="金額 TWD">
-                                                    <span class="eng-num negative">$1,271.34</span>
-                                                </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">283,568.87</span>
-                                                </td>
-                                                <td data-title="明細">
-                                                    <a target="_blank" class="pct-ui btn-xs"
-                                                        href="downloadPdf/PT2020051000002">發票</a>
-                                                    <a target="_blank" class="pct-ui btn-xs"
-                                                        href="downloadPdf/PT2020051000002">收據</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-
-                                        <!-- 5.匯款處理中 -->
-                                        <tbody>
-                                            <tr class="normallist-item">
-                                                <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>匯款處理中</span>
-                                                </td>
-                                                <td data-title="日期">
-                                                    <span class="eng-num">2020/05/24</span>
-                                                </td>
-                                                <td data-title="單據號碼">
-                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
-                                                            data-panel="orderDetails" href="#"
-                                                            onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
-                                                </td>
-                                                <td data-title="交易類別">
-                                                    <span>結算</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">฿45,699</span>
-                                                </td>
-                                                <td data-title="金額 TWD">
-                                                    <span class="eng-num">$45,699</span>
-                                                </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">959,153.87</span>
-                                                </td>
-                                                <td data-title="明細">
-                                                    <a class="pct-ui btn-xs withdrawalStepBtn"
-                                                        data-pttranid="8051900007184">結算明細</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-
-                                        <!-- 6.撥款成功 -->
-                                        <tbody>
-                                            <tr class="normallist-item">
-                                                <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-checked icon-back icon-back-green"></i>撥款成功</span>
-                                                </td>
-                                                <td data-title="日期">
-                                                    <span class="eng-num">2020/05/26</span>
-                                                </td>
-                                                <td data-title="單據號碼">
-                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
-                                                            data-panel="orderDetails" href="#"
-                                                            onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
-                                                </td>
-                                                <td data-title="交易類別">
-                                                    <span>結算</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">฿1,271.34</span>
-                                                </td>
-                                                <td data-title="金額 TWD">
-                                                    <span class="eng-num">$1,271.34</span>
-                                                </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">283,568.87</span>
-                                                </td>
-                                                <td data-title="明細">
-                                                    <a class="pct-ui btn-xs withdrawalStepBtn"
-                                                        data-pttranid="8051900007184">撥款明細</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-
-                                        <!-- ７.撥款失敗 -->
-                                        <tbody>
-                                            <tr class="normallist-item">
-                                                <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-alert-nofill icon-back icon-back-red"></i>撥款失敗</span>
-                                                </td>
-                                                <td data-title="日期">
-                                                    <span class="eng-num">2020/05/26</span>
-                                                </td>
-                                                <td data-title="單據號碼">
-                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
-                                                            data-panel="orderDetails" href="#"
-                                                            onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
-                                                </td>
-                                                <td data-title="交易類別">
-                                                    <span>結算</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">฿1,271.34</span>
-                                                </td>
-                                                <td data-title="金額 TWD">
-                                                    <span class="eng-num">$1,271.34</span>
-                                                </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">283,568.87</span>
-                                                </td>
-                                                <td data-title="明細">
-                                                    <a class="pct-ui btn-xs withdrawalStepBtn"
-                                                        data-pttranid="8051900007184">撥款明細</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-
-                                        <!-- 8.已轉可結算 -->
-                                        <tbody>
-                                            <tr class="normallist-item">
-                                                <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>已轉可結算</span>
-                                                </td>
-                                                <td data-title="日期">
-                                                    <span class="eng-num">2020/05/27</span>
-                                                </td>
-                                                <td data-title="單據號碼">
-                                                    <span class="eng-num">70519001863</span>
-                                                </td>
-                                                <td data-title="交易類別">
-                                                    <span>訂單</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">฿1,271.34</span>
-                                                </td>
-                                                <td data-title="金額 TWD">
-                                                    <span class="eng-num">$1,271.34</span>
-                                                </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">283,568.87</span>
-                                                </td>
-                                                <td data-title="明細">
-                                                    <a class="pct-ui btn-xs accountStepCompleteBtn"
-                                                        data-pttranid="8051900007184">貨款明細</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-
-
-
-
-
-
-
-
-
-                                        <tbody>
-                                            <tr class="normallist-item">
-                                                <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>In
-                                                        Progress</span>
+                                                    <div class="pct-ui form checkbox">
+                                                        <input type="checkbox" id="id-1" name="checkGroup" value="1"
+                                                            checked="">
+                                                        <label for="id-1">
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
                                                 </td>
                                                 <td data-title="日期">
                                                     <span class="eng-num">2020/05/10</span>
                                                 </td>
                                                 <td data-title="單據號碼">
-                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
-                                                            data-panel="orderDetails" href="#"
-                                                            onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
-                                                </td>
-                                                <td data-title="交易類別">
-                                                    <span>Order</span>
+                                                    <span class="eng-num">70519001863</span>
                                                 </td>
                                                 <td data-title="金額 THB">
-                                                    <span class="eng-num">45,699</span>
+                                                    <span class="eng-num">฿45,699</span>
                                                 </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">45,699</span>
+                                                <td data-title="金額 TWD">
+                                                    <span class="eng-num">$45,699</span>
                                                 </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">959,153.87</span>
-                                                </td>
-                                                <td data-title="明細">
-                                                    <a class="pct-ui btn-xs accountStepBtn"
-                                                        data-pttranid="8051900007184">Transferred Details</a>
+                                                <td data-title="狀態">
+                                                    <span><i
+                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>準備結算</span>
                                                 </td>
                                             </tr>
                                         </tbody>
 
-
+                                        <!-- 準備結算 -->
                                         <tbody>
                                             <tr class="normallist-item">
                                                 <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>In
-                                                        Progress</span>
+                                                    <div class="pct-ui form checkbox">
+                                                        <input type="checkbox" id="id-1" name="checkGroup" value="1"
+                                                            checked="">
+                                                        <label for="id-1">
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
                                                 </td>
                                                 <td data-title="日期">
-                                                    <span class="eng-num">2020/05/08</span>
-                                                </td>
-                                                <td data-title="單據號碼">
-                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
-                                                            data-panel="orderDetails" href="#"
-                                                            onmousedown="javascript:getOrderDtl(9051900009391);">9051900009391</a></span>
-                                                </td>
-                                                <td data-title="交易類別">
-                                                    <span>Order</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">629,986</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">629,986</span>
-                                                </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">913,454.87</span>
-                                                </td>
-                                                <td data-title="明細">
-                                                    <a class="pct-ui btn-xs accountStepBtn"
-                                                        data-pttranid="8051900007145">Transferred Details</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-
-
-
-                                        <tbody>
-                                            <tr class="normallist-item">
-                                                <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-checked icon-back icon-back-green"></i>Successfully
-                                                        Paid!</span>
-                                                </td>
-                                                <td data-title="日期">
-                                                    <span class="eng-num">2020/05/08</span>
-                                                </td>
-                                                <td data-title="單據號碼">
-
-                                                    <span class="eng-num"><a href="#"
-                                                            class="payFeeBtn">PT2020051000002</a></span>
-                                                </td>
-                                                <td data-title="交易類別">
-
-                                                    <span>Fees</span>
-
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">-1,271.34</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">-1,271.34</span>
-                                                </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">283,568.87</span>
-                                                </td>
-                                                <td data-title="明細">
-
-                                                    <a target="_blank" class="pct-ui btn-xs"
-                                                        href="downloadPdf/PT2020051000002">Invoice Download</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-
-
-
-                                        <tbody>
-                                            <tr class="normallist-item">
-                                                <td data-title="狀態">
-
-                                                    <span><i
-                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>Requesting
-                                                        for Withdrawal</span>
-                                                </td>
-                                                <td data-title="日期">
-                                                    <span class="eng-num">2020/05/08</span>
+                                                    <span class="eng-num">2020/05/10</span>
                                                 </td>
                                                 <td data-title="單據號碼">
                                                     <span class="eng-num">70519001863</span>
                                                 </td>
-                                                <td data-title="交易類別">
-                                                    <span>Withdrawal</span>
-
-                                                </td>
                                                 <td data-title="金額 THB">
-                                                    <span class="eng-num">-100</span>
+                                                    <span class="eng-num">฿45,699</span>
                                                 </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">-100</span>
+                                                <td data-title="金額 TWD">
+                                                    <span class="eng-num">$45,699</span>
                                                 </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">283,468.87</span>
-                                                </td>
-                                                <td data-title="明細">
-                                                    <a class="pct-ui btn-xs withdrawalStepBtn"
-                                                        data-pttranid="70519001863">Withdrawal Details</a>
+                                                <td data-title="狀態">
+                                                    <span><i
+                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>準備結算</span>
                                                 </td>
                                             </tr>
                                         </tbody>
 
-
+                                        <!-- 準備結算 -->
                                         <tbody>
                                             <tr class="normallist-item">
                                                 <td data-title="狀態">
-
-                                                    <span><i
-                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>Requesting
-                                                        for Withdrawal</span>
+                                                    <div class="pct-ui form checkbox">
+                                                        <input type="checkbox" id="id-1" name="checkGroup" value="1"
+                                                            checked="">
+                                                        <label for="id-1">
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
                                                 </td>
                                                 <td data-title="日期">
-                                                    <span class="eng-num">2020/05/08</span>
+                                                    <span class="eng-num">2020/05/10</span>
                                                 </td>
                                                 <td data-title="單據號碼">
-                                                    <span class="eng-num">70519001843</span>
-                                                </td>
-                                                <td data-title="交易類別">
-                                                    <span>Withdrawal</span>
+                                                    <span class="eng-num">70519001863</span>
                                                 </td>
                                                 <td data-title="金額 THB">
-                                                    <span class="eng-num">-100</span>
+                                                    <span class="eng-num">฿45,699</span>
                                                 </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">-100</span>
+                                                <td data-title="金額 TWD">
+                                                    <span class="eng-num">$45,699</span>
                                                 </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">239,141.21</span>
-                                                </td>
-                                                <td data-title="明細">
-                                                    <a class="pct-ui btn-xs withdrawalStepBtn"
-                                                        data-pttranid="70519001843">Withdrawal Details</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-
-
-                                        <tbody>
-                                            <tr class="normallist-item">
                                                 <td data-title="狀態">
                                                     <span><i
-                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>Requesting
-                                                        for Withdrawal</span>
-                                                </td>
-                                                <td data-title="日期">
-                                                    <span class="eng-num">2020/05/08</span>
-                                                </td>
-                                                <td data-title="單據號碼">
-                                                    <span class="eng-num">70519001842</span>
-                                                </td>
-                                                <td data-title="交易類別">
-                                                    <span>Withdrawal</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">-100</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">-100</span>
-                                                </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">239,241.21</span>
-                                                </td>
-                                                <td data-title="明細">
-
-                                                    <a class="pct-ui btn-xs withdrawalStepBtn"
-                                                        data-pttranid="70519001842">Withdrawal Details</a>
+                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>準備結算</span>
                                                 </td>
                                             </tr>
                                         </tbody>
-
-
-                                        <tbody>
-                                            <tr class="normallist-item">
-                                                <td data-title="狀態">
-
-
-                                                    <span><i
-                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>In
-                                                        Progress</span>
-
-
-                                                </td>
-                                                <td data-title="日期">
-                                                    <span class="eng-num">2020/05/08</span>
-                                                </td>
-                                                <td data-title="單據號碼">
-
-
-
-
-                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
-                                                            data-panel="orderDetails" href="#"
-                                                            onmousedown="javascript:getOrderDtl(9051900009371);">9051900009371</a></span>
-                                                </td>
-                                                <td data-title="交易類別">
-
-
-
-
-
-                                                    <span>Order</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">45,699</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">45,699</span>
-                                                </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">284,840.21</span>
-                                                </td>
-                                                <td data-title="明細">
-
-
-                                                    <a class="pct-ui btn-xs accountStepBtn"
-                                                        data-pttranid="8051900007125">Transferred Details</a>
-
-
-                                                </td>
-                                            </tr>
-                                        </tbody>
-
-                                        <tbody>
-                                            <tr class="normallist-item">
-                                                <td data-title="狀態">
-
-                                                    <span><i
-                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>Requesting
-                                                        for Withdrawal</span>
-
-
-
-
-                                                </td>
-                                                <td data-title="日期">
-                                                    <span class="eng-num">2020/05/08</span>
-                                                </td>
-                                                <td data-title="單據號碼">
-                                                    <span class="eng-num">70519001822</span>
-
-
-
-
-                                                </td>
-                                                <td data-title="交易類別">
-                                                    <span>Withdrawal</span>
-
-
-
-
-
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">-123</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">-123</span>
-                                                </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">239,341.21</span>
-                                                </td>
-                                                <td data-title="明細">
-
-
-
-                                                    <a class="pct-ui btn-xs withdrawalStepBtn"
-                                                        data-pttranid="70519001822">Withdrawal Details</a>
-
-                                                </td>
-                                            </tr>
-                                        </tbody>
-
-                                        <tbody>
-                                            <tr class="normallist-item">
-                                                <td data-title="狀態">
-
-                                                    <span><i
-                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>Requesting
-                                                        for Withdrawal</span>
-
-
-
-
-                                                </td>
-                                                <td data-title="日期">
-                                                    <span class="eng-num">2020/05/07</span>
-                                                </td>
-                                                <td data-title="單據號碼">
-                                                    <span class="eng-num">70519001782</span>
-
-
-
-
-                                                </td>
-                                                <td data-title="交易類別">
-                                                    <span>Withdrawal</span>
-
-
-
-
-
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">-3,000</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">-3,000</span>
-                                                </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">239,464.21</span>
-                                                </td>
-                                                <td data-title="明細">
-
-
-
-                                                    <a class="pct-ui btn-xs withdrawalStepBtn"
-                                                        data-pttranid="70519001782">Withdrawal Details</a>
-
-                                                </td>
-                                            </tr>
-                                        </tbody>
-
-                                        <tbody>
-                                            <tr class="normallist-item">
-                                                <td data-title="狀態">
-
-                                                    <span><i
-                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>Requesting
-                                                        for Withdrawal</span>
-
-
-
-
-                                                </td>
-                                                <td data-title="日期">
-                                                    <span class="eng-num">2020/05/03</span>
-                                                </td>
-                                                <td data-title="單據號碼">
-                                                    <span class="eng-num">70519001768</span>
-
-
-
-
-                                                </td>
-                                                <td data-title="交易類別">
-                                                    <span>Withdrawal</span>
-
-
-
-
-
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">-100,000.21</span>
-                                                </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">-100,000.21</span>
-                                                </td>
-                                                <td data-title="結餘 TWD">
-                                                    <span class="eng-num">242,464.21</span>
-                                                </td>
-                                                <td data-title="明細">
-
-
-
-                                                    <a class="pct-ui btn-xs withdrawalStepBtn"
-                                                        data-pttranid="70519001768">Withdrawal Details</a>
-
-                                                </td>
-                                            </tr>
-                                        </tbody>
-
                                     </table>
-                                </div>
-                                <!-- PC 版 列出所有頁碼 -->
-                                <div class="pct-ui page-pagination">
-                                    <ul class="eng-num">
-                                        <li class="active">1</li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#">6</a></li>
-                                        <li><a href="#">7</a></li>
-                                        <li><a href="#">8</a></li>
-                                        <li class="pagination-jump-next"></li>
-                                        <li>
-                                            <a class="pagination-next" href="#">
-                                                <span class="pct-icon icon-angle-right"></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- 手機版 Load more-->
-                                <div class="pct-btn-loadcontent hidden-xs-up">
-                                    <a href="#" class="pct-ui btn btn-secondary btn-load">LOAD MORE</a>
                                 </div>
                             </div>
                         </section>
@@ -974,9 +386,11 @@
         <?php include("assets/footer.php"); ?>
         <!-- PChome Thai footer end-->
     </section>
+
     <!-- PChome Thai Panel -->
     <?php include("assets/slide-panel/panel-global.php"); ?>
     <!-- PChome Thai Panel end-->
+
     <!-- PChome Thai lightBox -->
     <section id="pct-lightbox">
         <div class="pct-lightBox_backGround"></div>
@@ -988,9 +402,11 @@
         </div>
     </section>
     <!-- PChome Thai lightBox end-->
+
     <!-- PChome Thai JS -->
     <?php include("assets/js-include.php"); ?>
     <!-- PChome Thai JS end-->
+
     <!-- 滑動面板 -->
     <script type="text/javascript" src="js/plugin/slide-panel/slide-panel.js"></script>
 

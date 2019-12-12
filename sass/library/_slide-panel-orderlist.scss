@@ -16,6 +16,14 @@
     background-color: $colorWhiteGreen;
     height: 48px;
     padding: 0 8px;
+    .orderlist_titleBox {
+        .orderlist_title {
+            font-weight: 500;
+            &.orderlistDetail_price {
+                color: $primaryColor;
+            }
+        }
+    }
 }
 .orderlistDetail_subtotal,
 .orderlistDetail_total {
@@ -58,6 +66,10 @@
         display: inline-block;
         text-align: left;
         width: 72px;
+
+        &.through {
+            text-decoration: line-through;
+        }
     }
 }
 
@@ -76,7 +88,7 @@
     min-width: 90px;
     position: absolute;
     right: -90px;
-    top: -1px;
+    top: -6px;
 
     span.eng-num {
         display: inline-block;

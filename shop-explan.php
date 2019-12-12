@@ -128,8 +128,8 @@
                                             <label for="">送貨方式</label>
                                             <div class="pct-ui form text-without-input">
                                                 <p class="data-text align-left">中華郵政</p>
-                                                <div class="postimg"><img class="img-fluid" src="img/ROC_Post.png"
-                                                        alt="ROC_Post"></div>
+                                                <div class="postimg"><img class="img-fluid"
+                                                        src="img/icon-logistic_roc_post.png" alt="ROC_Post"></div>
                                             </div>
                                         </div>
                                     </div>

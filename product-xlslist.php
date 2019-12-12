@@ -90,7 +90,6 @@
         <!-- PChome Thai Menu_mobile end-->
 
         <!-- PChome Thai Account Header -->
-
         <!--說明For RD：手機版不出現-->
         <div class="hidden-sm-down">
             <?php include("assets/account-header.php"); ?>
@@ -158,11 +157,8 @@
                                             <div class="file-msg">或 直接拖曳 Zip 檔案到此上傳</div>
                                             <input class="file-input" type="file" multiple>
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
 
                             <!--商品詳細描述-->
@@ -172,7 +168,7 @@
                                     <p class="description-text">
                                         以下為excel大量上架紀錄列表，上傳資料後需2-3個工作天處理，上傳結果會在列表中紀錄，紀錄只會保留最後20筆資料。</p>
                                     <a class="pct-ui btn-sm xlserrorBtn">
-                                        <li class="pct-icon icon-information"></li>上傳結果錯誤說明
+                                        <li class="pct-btn-icon icon-information"></li>上傳結果錯誤說明
                                     </a>
 
                                     <div class="bulklist-list-table lg-break-table">
@@ -189,19 +185,26 @@
                                             <thead class="normallist-head">
                                                 <tr>
                                                     <th>
-                                                        <!-- ไฟล์ที่อัปโหลด -->Upload File Name</th>
+                                                        <!-- ไฟล์ที่อัปโหลด -->
+                                                        <!-- Upload File Name -->上傳檔名</th>
                                                     <th>
-                                                        <!-- วันที่อัปโหลด -->Upload Date</th>
+                                                        <!-- วันที่อัปโหลด -->
+                                                        <!-- Upload Date -->更新日期</th>
                                                     <th>
-                                                        <!-- สถานะอัปโหลด -->Upload Status</th>
+                                                        <!-- สถานะอัปโหลด -->
+                                                        <!-- Upload Status -->更新狀態</th>
                                                     <th>
-                                                        <!-- จำนวนครั้งที่อัปโหลด -->Total</th>
+                                                        <!-- จำนวนครั้งที่อัปโหลด -->
+                                                        <!-- Total -->商品總數</th>
                                                     <th>
-                                                        <!-- สำเร็จ -->Success</th>
+                                                        <!-- สำเร็จ -->
+                                                        <!-- Success -->成功</th>
                                                     <th>
-                                                        <!-- ไม่สำเร็จ -->Failure</th>
+                                                        <!-- ไม่สำเร็จ -->
+                                                        <!-- Failure -->失敗</th>
                                                     <th>
-                                                        <!-- ผลการอัปโหลด -->Upload result</th>
+                                                        <!-- ผลการอัปโหลด -->
+                                                        <!-- Upload result -->上傳結果</th>
                                                 </tr>
                                             </thead>
 
@@ -311,24 +314,16 @@
                                     </div>
 
 
-
-
                                     <!-- 手機版 Load more-->
-
                                     <div class="pct-btn-loadcontent hidden-xs-up">
                                         <a href="#" class="pct-ui btn btn-cta btn-load">LOAD MORE</a>
                                     </div>
-
                                 </div>
-
                             </div>
                         </section>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
         <!-- 內容寬度 1200 區塊 end-->
 
@@ -336,9 +331,7 @@
         <!-- PChome Thai footer -->
         <?php include("assets/footer.php"); ?>
         <!-- PChome Thai footer end-->
-
     </section>
-
 
 
     <!-- PChome Thai lightBox -->

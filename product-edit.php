@@ -129,11 +129,11 @@
                                 <div class="content-title">設定商品圖片 <span class="required">＊</span></div>
                                 <div class="content-description">
                                     <p class="description-text">尺寸600px x 600px 以上享有局部放大功能，買家能看到更多商品細節 (格式限JPG, PNG,
-                                        或GIF)</p>
+                                        或GIF)。</p>
 
                                     <div class="upload-product-img">
-                                        <div class="upload-img-num">共<span class="eng-num"> <span class="current">
-                                                    8</span>/10 </span>張照片</div>
+                                        <div class="upload-img-num"><span class="eng-num">
+                                                <span class="current">8</span>/10</span>張照片</div>
                                         <div class="pct-ui img-manager">
                                             <div class="content-fill primary">
                                                 <div class="upload-figure">
@@ -143,7 +143,7 @@
                                                     <div class="delete-btn edit-btn">
                                                         <li class="pct-icon icon-trash"></li>
                                                     </div>
-                                                    <div class="primary-tag">Cover Photo</div>
+                                                    <div class="primary-tag">封面照片</div>
                                                     <div class="figure-inner">
                                                         <div class="figure-img img-bg"
                                                             style="background-image: url('img/pro/pro_04.jpg');">
@@ -289,16 +289,18 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <p class="description-text">您可以拖曳圖片改變順序，設定商品封面照片。</p>
                                 </div>
                             </div>
 
                             <!--商品標題/規格-->
                             <div class="content-block">
-                                <div class="content-title">商品名稱與規格</div>
+                                <div class="content-title">商品名稱與價格</div>
                                 <div class="content-description">
                                     <!-- <div class="pct-ui tab-nav-bar"> -->
                                     <!--目前不分語系-->
-                                    <!--                                         <div class="pct-ui tab-pointing">
+                                    <!-- <div class="pct-ui tab-pointing">
                                             <ul class="tab-items" data-tabgroup="tab-panel">
                                                 <li><a href="#thai" class="active"><span class="icon-overseas th"></span>泰文</a></li>
                                             </ul>
@@ -324,8 +326,6 @@
                                         <div class="pct-ui form-label product-title form-m-break">
                                             <label></label>
                                             <div class="pct-ui form">
-
-
                                             </div>
                                         </div>
                                     </div>
@@ -374,31 +374,28 @@
                                                     <input type="tel" value="">
                                                 </div>
                                                 <div class="pct-ui form product-price-THbaht unit-before">
-                                                    <input type="tel" value="自動帶入" readonly="readonly">
+                                                    <input type="tel" value="">
                                                 </div>
                                             </div>
 
                                         </div>
-                                        <div class="pct-ui form-label two-column ">
+                                        <div class="pct-ui form-label two-column">
                                             <label>促銷售價</label>
                                             <div>
                                                 <div class="pct-ui form product-price-TWdollar unit-before">
                                                     <input type="tel" value="">
                                                 </div>
                                                 <div class="pct-ui form product-price-THbaht unit-before">
-                                                    <input type="tel" value="自動帶入" readonly="readonly">
+                                                    <input type="tel" value="">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="pct-ui form">
-                                        <div class="pct-ui form-label form-lg-break">
-                                            <label></label>
-                                            <span
-                                                class="form-introduction">按照每日浮動匯率計算泰銖價格，參考匯率：<span>0.991</span><span>(DD/MM/YYYY)</span>
-                                            </span>
-                                        </div>
+                                    <!-- 參考匯率說明文字 -->
+                                    <div class="pct-ui form exchangeRate">
+                                        <span
+                                            class="form-introduction">按照每日浮動匯率計算泰銖價格，參考匯率：<span>0.991</span><span>(DD/MM/YYYY)</span>
+                                        </span>
                                     </div>
 
 
@@ -427,10 +424,12 @@
                                     </div>
 
                                     <div class="pct-ui form-label product-title">
-                                        <label>HS CODE</label>
+                                        <label><a href="#" class="aboutHScodeBtn">HS CODE <span
+                                                    class="pct-icon icon-information"></span></a></label>
                                         <div class="pct-ui form ">
                                             <input type="text" placeholder="" value="">
-                                            <a href="#"
+                                            <a href="https://portal.sw.nat.gov.tw/APGQ/LoginFree?request_locale=zh_TW&breadCrumbs=JTdCJTIyYnJlYWRDcnVtYnMlMjIlM0ElNUIlN0IlMjJuYW1lJTIyJTNBJTIyJUU1JTg1JThEJUU4JUFEJTg5JUU2JTlGJUE1JUU4JUE5JUEyJUU2JTlDJThEJUU1JThCJTk5JTIyJTJDJTIydXJsJTIyJTNBJTIyJTIyJTdEJTJDJTdCJTIybmFtZSUyMiUzQSUyMiVFNyVBOCU4NSVFNSU4OSU4NyVFNyVBOCU4NSVFNyU4RSU4NyVFNiU5RiVBNSVFOCVBOSVBMiUyMiUyQyUyMnVybCUyMiUzQSUyMmNoYW5nZU1lbnVVcmwyKCclRTclQTglODUlRTUlODklODclRTclQTglODUlRTclOEUlODclRTYlOUYlQTUlRTglQTklQTInJTJDJ0FQR1FfNycpJTIyJTdEJTJDJTdCJTIybmFtZSUyMiUzQSUyMihHQzQxMSklRTclQTglODUlRTUlODklODclRTclQTglODUlRTclOEUlODclRTclQjYlOUMlRTUlOTAlODglRTYlOUYlQTUlRTglQTklQTIlRTQlQkQlOUMlRTYlQTUlQUQlMjIlMkMlMjJ1cmwlMjIlM0ElMjJvcGVuTWVudSgnJTJGQVBHUSUyRkdDNDExJyklMjIlN0QlMkMlN0IlN0QlMkMlN0IlN0QlNUQlMkMlMjJwYXRoVXJsJTIyJTNBJTIyJTIzTUVOVV9BUEdRJTJDJTIzTUVOVV9BUEdRXzclMkMlMkZBUEdRJTJGR0M0MTElMjIlN0Q="
+                                                target="_blank"
                                                 class="pct-ui btn-sm btn-secondary-outlined inputGroup-btn">代碼查詢</a>
                                         </div>
                                     </div>
@@ -473,8 +472,7 @@
                                             <label for="" class="required">庫存數</label>
                                             <div class="pct-ui form text-with-input">
                                                 <input type="text" placeholder="" value="0" class="stock-num">
-                                                <p class="align-right">單一商品庫存數量上限為 <span class="eng-num">499</span>。
-                                                </p>
+                                                <p class="align-right">單一商品庫存數量上限為 <span class="eng-num">499</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -491,14 +489,14 @@
 
                                             <div class="spec-wrap">
                                                 <div class="pct-ui form-label break-label">
-                                                    <label for="">Spec 1</label>
+                                                    <label for="">規格 <span>1</span></label>
                                                     <div class="pct-ui form">
                                                         <input type="text" placeholder="請輸入商品規格(建議英文)">
                                                     </div>
                                                 </div>
                                                 <div class="pct-icon icon-angle-right"></div>
                                                 <div class="pct-ui form-label break-label">
-                                                    <label for="">Spec</label>
+                                                    <label for="">規格</label>
                                                     <div class="pct-ui form">
                                                         <input type="text" placeholder="非必填">
                                                     </div>
@@ -506,9 +504,9 @@
                                             </div>
 
                                             <div class="pct-ui form-label break-label spec-stock">
-                                                <label for="">Stock</label>
+                                                <label for="">商品庫存數</label>
                                                 <div class="pct-ui form">
-                                                    <input type="text" placeholder="庫存數">
+                                                    <input type="text" placeholder="單一庫存數量上限為 499">
                                                 </div>
                                             </div>
                                         </div>
@@ -517,14 +515,14 @@
 
                                             <div class="spec-wrap">
                                                 <div class="pct-ui form-label break-label">
-                                                    <label for="">Spec 2</label>
+                                                    <label for="">規格 <span>2</span></label>
                                                     <div class="pct-ui form">
                                                         <input type="text" placeholder="請輸入商品規格(建議英文)">
                                                     </div>
                                                 </div>
                                                 <div class="pct-icon icon-angle-right"></div>
                                                 <div class="pct-ui form-label break-label">
-                                                    <label for="">Spec</label>
+                                                    <label for="">規格</label>
                                                     <div class="pct-ui form">
                                                         <input type="text" placeholder="非必填">
                                                     </div>
@@ -532,9 +530,9 @@
                                             </div>
 
                                             <div class="pct-ui form-label break-label spec-stock">
-                                                <label for="">Stock</label>
+                                                <label for="">商品庫存數</label>
                                                 <div class="pct-ui form">
-                                                    <input type="text" placeholder="庫存數">
+                                                    <input type="text" placeholder="單一庫存數量上限為 499">
                                                 </div>
                                             </div>
                                             <div class="pct-icon icon-trash"></div>
@@ -544,14 +542,14 @@
 
                                             <div class="spec-wrap">
                                                 <div class="pct-ui form-label break-label">
-                                                    <label for="">Spec 3</label>
+                                                    <label for="">規格 <span>3</span></label>
                                                     <div class="pct-ui form">
                                                         <input type="text" placeholder="請輸入商品規格(建議英文)">
                                                     </div>
                                                 </div>
                                                 <div class="pct-icon icon-angle-right"></div>
                                                 <div class="pct-ui form-label break-label">
-                                                    <label for="">Spec</label>
+                                                    <label for="">規格</label>
                                                     <div class="pct-ui form">
                                                         <input type="text" placeholder="非必填">
                                                     </div>
@@ -559,15 +557,15 @@
                                             </div>
 
                                             <div class="pct-ui form-label break-label spec-stock">
-                                                <label for="">Stock</label>
+                                                <label for="">商品庫存數</label>
                                                 <div class="pct-ui form">
-                                                    <input type="text" placeholder="庫存數">
+                                                    <input type="text" placeholder="單一庫存數量上限為 499">
                                                 </div>
                                             </div>
                                             <div class="pct-icon icon-trash"></div>
                                         </div>
-                                        <a class="pct-ui btn add-variation">
-                                            <li class="pct-icon icon-plus"></li>新增規格
+                                        <a class="pct-ui pct-icon-btn btn add-variation">
+                                            <span class="pct-icon icon-plus"></span>新增規格
                                         </a>
                                     </div>
                                 </div>
@@ -584,7 +582,7 @@
 
                                     <div class="pct-ui form-label form-m-break">
                                         <label for="">出貨地</label>
-                                        <div class="pct-ui form">
+                                        <div class="pct-ui form form-readonly">
                                             <input type="text" placeholder="" value="台灣 Taiwan" readonly="readonly">
                                         </div>
                                     </div>
@@ -612,16 +610,11 @@
                                     </div>
 
 
-
-
-
-
-
                                     <div class="pct-ui form-label form-m-break">
                                         <label for="">物流方式</label>
                                         <div class="pct-ui form form-textList">
                                             <p class="alert">(1) 請確實輸入商品包裹的重量及材積，我們會依照您所輸入的資訊向買家收取適當的國際運費。詳見【<a
-                                                    href="#">運費如何計算</a>】
+                                                    href="https://w3.pchome.co.th/guide_j/guide__ship__new_03">運費如何計算</a>】
                                             </p>
                                             <p>(2) 海外出貨目前以單一商品為一個包裹來計算運費，譬如買家購買同商品x2，會計算為兩個包裹、兩筆運費。</p>
                                             <p>(3) 提醒您，包裹重量小於
@@ -632,30 +625,108 @@
 
 
 
-
                                     <!--說明For RD:  若未選擇物流商，此區塊請整塊隱藏 包含 <div class="logistic-wrap operation"> 這層-->
                                     <div class="logistic-wrap operation">
-                                        <p class="description-text">已啟用物流 (有顯示為<img alt="pchome-protectiont"
+                                        <p class="description-text">PChome 支援物流 (有顯示<img alt="pchome-protectiont"
                                                 class="icon-img"
                                                 src="https://cimg.pchome.co.th/res/other/coth/img/icon_pcprotect_badge.svg"
-                                                style="width:18px;"> PChome支援物流）</p>
+                                                style="width:18px;">為 PChome 支援物流）</p>
 
+                                        <!--說明For RD:  已輸入材積的顯示狀態，自動帶入運費 -->
+                                        <div class="pct-ui accordion">
+                                            <!--摺疊標題-->
+                                            <div class="accordion-caption">
+                                                <div class="caption-inner">
+                                                    <div class="caption-figure">
+                                                        <img src="img/icon-logistic_roc_post.png" alt=""
+                                                            class="img-fluid">
+                                                    </div>
+                                                    <div class="caption-title-box">
+                                                        <div class="caption-title">中華郵政 EMS國際快捷</div>
+                                                        <div class="caption-subTitle">關稅-買家自付</div>
+                                                    </div>
+                                                </div>
+                                                <div class="caption-text-box">
+                                                    NT$ 500
+                                                </div>
+                                                <div class="caption-switch">
+                                                    <div class="pct-ui form">
+                                                        <div class="pct-ui switch-toggle">
+                                                            <input id="SwitchCheckbox_1" class="switch-checkbox"
+                                                                type="checkbox">
+                                                            <label for="SwitchCheckbox_1"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="caption-icon">
+                                                    <div class="pct-icon icon-angle-down"></div>
+                                                </div>
+                                            </div>
+                                            <!--摺疊內容下拉-->
+                                            <div class="accordion-liquid-container">
+                                                <div class="liquid-container-inner">
+                                                    <ul class="shipnotice">
+                                                        <li>可寄送地區: 泰國全區</li>
+                                                        <li>重量限制: <span class="highlight"> 30kg以下 </span></li>
+                                                        <li>尺寸限制: 任何一邊不得超過<span class="highlight"> 150cm
+                                                            </span>，長寬高總和不得超過<span class="highlight"> 300cm </span></li>
+                                                        <li>
+                                                            若材積重大於實重，則取材積重計價
+                                                            長 × 寬 × 高 (cm) ÷ 6,000 = 材積重量 (kg)
+                                                        </li>
+                                                        <li>預計寄達天數 3～4 天</li>
+                                                        <li>運費含保價費，依商品售價計算</li>
+                                                        <li>若有必要，買家需自行清關繳稅</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <!--說明For RD:  尚未輸入材積的顯示狀態 -->
                                         <div class="pct-ui accordion">
                                             <!--摺疊標題-->
                                             <div class="accordion-caption no-accordion">
                                                 <div class="caption-inner">
                                                     <div class="caption-figure">
-                                                        <img src="img/icon-logistic_thaipostEMS.svg" alt=""
+                                                        <img src="img/icon-logistic_roc_ePacket.png" alt=""
                                                             class="img-fluid">
                                                     </div>
                                                     <div class="caption-title-box">
-                                                        <div class="caption-title eng-num">THAI POST - EMS</div>
+                                                        <div class="caption-title eng-num">中華郵政 國際e小包</div>
+                                                        <div class="caption-subTitle">關稅-買家自付</div>
                                                     </div>
                                                 </div>
                                                 <div class="caption-text-box">
                                                     <div class="hint-text"><span
                                                             class="pct-icon icon-alert"></span>需輸入重量</div>
+                                                </div>
+                                                <div class="caption-switch">
+                                                    <div class="pct-ui form">
+                                                        <div class="pct-ui switch-toggle">
+                                                            <input id="SwitchCheckbox_2" class="switch-checkbox"
+                                                                type="checkbox">
+                                                            <label for="SwitchCheckbox_2"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="caption-icon">
+                                                    <div class="pct-icon icon-angle-down"></div>
+                                                </div>
+                                            </div>
+                                            <!--摺疊內容下拉-->
+                                            <div class="accordion-liquid-container">
+                                                <div class="liquid-container-inner">
+                                                    <ul class="shipnotice">
+                                                        <li>可寄送地區: 泰國全區</li>
+                                                        <li>重量限制: <span class="highlight"> 2kg以下 </span></li>
+                                                        <li>尺寸限制: 包裹不得小於 <span class="highlight">14 x
+                                                                9cm</span> ，單邊最長不超過 <span
+                                                                class="highlight">60cm</span>，長寬高總和不超過 <span
+                                                                class="highlight">90cm</span>
+                                                        </li>
+                                                        <li>預計寄達天數 6～8 天</li>
+                                                        <li>無保價費</li>
+                                                        <li>若有必要，買家需自行清關繳稅</li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
@@ -665,62 +736,74 @@
                                             <div class="accordion-caption no-accordion">
                                                 <div class="caption-inner">
                                                     <div class="caption-figure">
-                                                        <img src="img/icon-logistic_thaipost.svg" alt=""
-                                                            class="img-fluid">
+                                                        <img src="img/icon_logistic_sfl.png" alt="" class="img-fluid">
                                                     </div>
                                                     <div class="caption-title-box">
-                                                        <div class="caption-title eng-num">THAI POST - Registered Mail
+                                                        <div class="caption-title eng-num">翔丰物流 包稅快遞</div>
+                                                        <div class="caption-subTitle">關稅-內含</div>
+                                                    </div>
+                                                </div>
+                                                <div class="caption-text-box">
+                                                    不支援
+                                                </div>
+                                                <div class="caption-switch">
+                                                    <div class="pct-ui form">
+                                                        <div class="pct-ui switch-toggle">
+                                                            <input id="SwitchCheckbox_3" class="switch-checkbox"
+                                                                type="checkbox">
+                                                            <label for="SwitchCheckbox_3"></label>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="caption-text-box">
-                                                    ฿ 5000
+                                                <div class="caption-icon">
+                                                    <div class="pct-icon icon-angle-down"></div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!--說明For RD:  尚未輸入材積的顯示狀態 -->
-                                        <div class="pct-ui accordion">
-                                            <!--摺疊標題-->
-                                            <div class="accordion-caption no-accordion">
-                                                <div class="caption-inner">
-                                                    <div class="caption-figure">
-                                                        <img src="img/icon-logistic_kerry.svg" alt="" class="img-fluid">
-                                                    </div>
-                                                    <div class="caption-title-box">
-                                                        <div class="caption-title eng-num">Kerry Drop-off</div>
-                                                    </div>
-                                                </div>
-                                                <div class="caption-text-box hint-text">
-                                                    <div class="hint-text"><span class="pct-icon icon-alert"></span>Need
-                                                        to enter weight</div>
+                                            <!--摺疊內容下拉-->
+                                            <div class="accordion-liquid-container">
+                                                <div class="liquid-container-inner">
+                                                    <ul class="shipnotice">
+                                                        <li>可寄送地區: 曼谷及泰國大部分地區 (郵遞區號若為 9 開頭不配送，包括但不限於 Song
+                                                            Khla, Stoon, Trang, Pattalung, Pattani, Yala, Naratiwat )
+                                                        </li>
+                                                        <li>重量限制: <span class="highlight"> 30kg以下 </span></li>
+                                                        <li>尺寸限制: 任何一邊不得超過<span class="highlight"> 85cm </span>
+                                                        </li>
+                                                        <li>預計寄達天數 6～8 天</li>
+                                                        <li>商品金額限於 台幣 2700 元 / 美金 90 元 / 泰銖 3000 以內</li>
+                                                        <li>無保價費</li>
+                                                        <li>運費包含關稅，買家無需自行清關</li>
+                                                    </ul>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
 
-                                    <div class="logistic-wrap seller">
 
+                                    <p class="description-text">非支援物流</p>
+                                    <div class="logistic-wrap seller">
                                         <!--說明For RD:  以下兩個為兩種狀態Demo 判斷後呈現其中一種 -->
-                                        <!--說明For RD:  預設為設定運費的連結 -->
+                                        <!--說明For RD:  預設為設定運費的連結（未設定運費前） -->
                                         <div class="pct-ui accordion">
                                             <!--摺疊標題-->
-                                            <div class="accordion-caption no-accordion">
+                                            <div class="accordion-caption">
                                                 <div class="caption-inner">
                                                     <div class="caption-figure">
                                                         <img src="img/icon-logistic_sellerMethod.svg" alt=""
                                                             class="img-fluid">
                                                     </div>
                                                     <div class="caption-title-box">
-                                                        <div class="caption-title">Seller Appointed Methods</div>
+                                                        <div class="caption-title">
+                                                            <!--Seller Appointed Method -->賣家自行配送</div>
+                                                        <div class="caption-subTitle"></div>
                                                     </div>
                                                 </div>
                                                 <div class="caption-text-box">
-                                                    <a class="editshippingBtn">Set Shipping Costs</a>
+                                                    <a class="editshippingBtn">設定</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--說明For RD:  填入後為顯示運費與修改運費 -->
+                                        <!--說明For RD:  填入後為顯示運費與修改運費icon -->
                                         <div class="pct-ui accordion">
                                             <!--摺疊標題-->
                                             <div class="accordion-caption no-accordion">
@@ -730,7 +813,8 @@
                                                             class="img-fluid">
                                                     </div>
                                                     <div class="caption-title-box">
-                                                        <div class="caption-title">Seller Appointed Methods</div>
+                                                        <div class="caption-title">
+                                                            <!--Seller Appointed Method -->賣家自行配送</div>
                                                     </div>
                                                 </div>
                                                 <div class="caption-text-box">
@@ -744,22 +828,10 @@
                                         <label for="">備貨時間</label>
                                         <div class="pct-ui form text-with-input">
                                             <p class="align-left">我需要 </p>
-                                            <input type="text" placeholder="" value="0" class="processing-day">
+                                            <input type="text" placeholder="" value="3" class="processing-day">
                                             <p class="align-right">天備貨。</p>
                                         </div>
                                     </div>
-
-                                    <div class="variations single">
-                                        <div class="pct-ui form-label form-sm-break">
-                                            <label for="" class="required">庫存數</label>
-                                            <div class="pct-ui form text-with-input">
-                                                <input type="text" placeholder="" value="0" class="stock-num">
-                                                <p class="align-right">單一商品庫存數量上限為 <span class="eng-num">499</span>。
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
 
@@ -783,7 +855,7 @@
                                             <div class="pct-ui form text-without-input">
                                                 <p class="align-left">自購買日起 <span class="eng-num">1</span>年。</p>
                                                 <a class="pct-ui btn-xs btn warrantytimeBtn">
-                                                    <li class="pct-icon icon-edit"></li>修改
+                                                    <li class="pct-btn-icon icon-edit"></li>修改
                                                 </a>
                                             </div>
                                         </div>

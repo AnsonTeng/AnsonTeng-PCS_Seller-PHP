@@ -6,7 +6,7 @@
     margin-bottom: 0.9375rem;
 
     @extend %shadow-style-block;
-    background-color: #fff;
+    background-color: $colorWhite;
     border-radius: 2px;
 
     .pct-icon.icon-delete {
@@ -424,8 +424,9 @@
 }
 
 .pct-ui.modal-info {
-    font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "Noto Sans TC", "Hiragino Sans GB",
-        "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif" !important ;
+    font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica",
+        "Arial", "Noto Sans TC", "Hiragino Sans GB", "LiHei Pro", "Heiti TC",
+        "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif" !important ;
     display: none;
     // position: relative;
     padding: 0.9375rem 0;

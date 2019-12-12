@@ -85,35 +85,6 @@
                     </div>
                 </div>
 
-                <div class="content-block">
-                    <div class="content-description">
-
-
-                        <div class="pct-ui accordion">
-                            <!--摺疊標題-->
-                            <div class="accordion-caption">
-                                <div class="caption-inner">
-                                    <div class="caption-title-box">
-                                        <div class="caption-title">โอนเข้าบัญชีผู้ขาย</div>
-                                        <div class="caption-text">บัญชีที่ร้านค้าใช้รับโอนเงิน</div>
-                                    </div>
-                                </div>
-                                <div class="caption-icon">
-                                    <div class="pct-icon icon-angle-down"></div>
-                                </div>
-                            </div>
-                            <!--摺疊內容下拉-->
-                            <div class="accordion-liquid-container">
-                                <div class="liquid-container-inner">
-                                    內容
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
 
                 <!-- 訂單明細內容 -->
                 <div class="pct-ui modal">
@@ -124,13 +95,14 @@
                                 <table>
                                     <!-- colgroup -->
                                     <colgroup>
-                                        <col class="table--w60">
+                                        <col class="table--w50">
+                                        <col class="table--w10">
                                         <col class="table--w10">
                                         <col class="table--w30">
                                     </colgroup>
                                     <tbody>
                                         <tr class="table_row_header">
-                                            <td colspan="3">
+                                            <td colspan="4">
                                                 <div class="tableData-header">
                                                     <!-- 訂單狀態 -->
                                                     <div class="table_flexBox table_flexBox-between">
@@ -144,7 +116,8 @@
                                                         <div class="contanctSeller">
                                                             <a class="pct-ui btn-xs btn btn_contanctSeller productscreenshotBtn"
                                                                 href="#contanctSeller"><i
-                                                                    class="pct-icon icon-picture"></i>Screenshot</a>
+                                                                    class="pct-btn-icon icon-picture"></i>
+                                                                <!--Screenshot-->商品頁截圖</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -180,7 +153,7 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td data-title="訂單數量">
+                                            <td data-title="商品數量">
                                                 <div class="tableDeta-box">
                                                     <!-- 訂單數量 -->
                                                     <div class="orderlist_subtitleBox">
@@ -190,9 +163,19 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td data-title="訂單金額">
+                                            <td data-title="包裹重量">
                                                 <div class="tableDeta-box">
-                                                    <!-- 訂單金額 -->
+                                                    <!-- 訂單數量 -->
+                                                    <div class="orderlist_subtitleBox">
+                                                        <div class="orderlist_subtitle orderlistDetail_amount">
+                                                            <span class="eng-num">1.94 kg</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-title="金額小計">
+                                                <div class="tableDeta-box">
+                                                    <!-- 金額小計 -->
                                                     <div class="orderlist_titleBox">
                                                         <div class="orderlist_title orderlistDetail_price">
                                                             <span class="eng-num ">฿ 124,200</span>
@@ -231,7 +214,7 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td data-title="訂單數量">
+                                            <td data-title="商品數量">
                                                 <div class="tableDeta-box">
                                                     <!-- 訂單數量 -->
                                                     <div class="orderlist_subtitleBox">
@@ -241,9 +224,19 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td data-title="訂單金額">
+                                            <td data-title="包裹重量">
                                                 <div class="tableDeta-box">
-                                                    <!-- 訂單金額 -->
+                                                    <!-- 訂單數量 -->
+                                                    <div class="orderlist_subtitleBox">
+                                                        <div class="orderlist_subtitle orderlistDetail_amount">
+                                                            <span class="eng-num">1.94 kg</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-title="金額小計">
+                                                <div class="tableDeta-box">
+                                                    <!-- 金額小計 -->
                                                     <div class="orderlist_titleBox">
                                                         <div class="orderlist_title orderlistDetail_price">
                                                             <span class="eng-num ">฿ 200</span>
@@ -253,61 +246,93 @@
                                             </td>
                                         </tr>
                                         <!-- 商品明細 2結束 -->
+
                                         <!-- 運費小計-->
                                         <tr class="table_row_body orderlistDetail_subtotal">
-                                            <td class="td-inline" data-title="項目名稱">
+                                            <td colspan="3" class="td-inline" data-title="項目名稱">
                                                 <div class="tableDeta-box">
-                                                    <!-- 運費 -->
                                                     <div class="orderlist_titleBox">
                                                         <div class="orderlist_title text__align--left">
-                                                            <span>運費</span>
+                                                            <span>運費 - 中華郵政 EMS國際快捷</span>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="td-inline" data-title="運費備註">
-                                                <div class="tableDeta-box">
-                                                    <!-- 空值 -->
-                                                    <div class="orderlist_subtitleBox">
-                                                        <div class="orderlist_subtitle"></div>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="td-inline" data-title="運費">
                                                 <div class="tableDeta-box">
-                                                    <!-- 運費 -->
                                                     <div class="orderlist_titleBox">
                                                         <div class="orderlist_title orderlistDetail_price">
-                                                            <span class="eng-num">฿ 4,200</span>
+                                                            <!-- 免運活動可加上 through -->
+                                                            <span class="eng-num">฿ 236</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </td>
                                         </tr>
                                         <!-- 運費小計結束 -->
-                                        <!--  訂單金額總計-->
-                                        <tr class="table_row_body orderlistDetail_total">
-                                            <td class="td-inline" data-title="訂單金額">
+
+                                        <!-- 運費補助-->
+                                        <tr class="table_row_body orderlistDetail_subtotal">
+                                            <td colspan="3" class="td-inline" data-title="項目名稱">
                                                 <div class="tableDeta-box">
-                                                    <!-- 運費 -->
                                                     <div class="orderlist_titleBox">
-                                                        <span class="orderlist_title text__align--left">訂單金額</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="td-inline" data-title="商品數">
-                                                <div class="tableDeta-box">
-                                                    <!-- 商品數 -->
-                                                    <div class="orderlist_subtitleBox">
-                                                        <div class="orderlist_subtitle orderlistDetail_totalamount">
-                                                            <span>Total<span class="eng-num">180</span>item</span>
+                                                        <div class="orderlist_title text__align--left">
+                                                            <span>運費補助</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="td-inline" data-title="運費">
                                                 <div class="tableDeta-box">
-                                                    <!-- 訂單金額 -->
+                                                    <div class="orderlist_titleBox">
+                                                        <div class="orderlist_title orderlistDetail_price">
+                                                            <!-- 免運活動可加上 through -->
+                                                            <span class="eng-num through">฿ 236</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- 運費補助結束 -->
+
+                                        <!-- 訂單金額小計-->
+                                        <tr class="table_row_body orderlistDetail_subtotal">
+                                            <td colspan="3" class="td-inline" data-title="項目名稱">
+                                                <div class="tableDeta-box">
+                                                    <!-- 運費 -->
+                                                    <div class="orderlist_titleBox">
+                                                        <div class="orderlist_title text__align--left">
+                                                            <span>訂單金額</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="td-inline" data-title="訂單金額">
+                                                <div class="tableDeta-box">
+                                                    <!-- 運費 -->
+                                                    <div class="orderlist_titleBox">
+                                                        <div class="orderlist_title orderlistDetail_price">
+                                                            <span class="eng-num">฿ 236,480</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- 訂單金額小計結束 -->
+
+                                        <!--  繳款金額總計-->
+                                        <tr class="table_row_body orderlistDetail_total">
+                                            <td colspan="3" class="td-inline" data-title="項目名稱">
+                                                <div class="tableDeta-box">
+                                                    <!-- 繳款金額 -->
+                                                    <div class="orderlist_titleBox">
+                                                        <span class="orderlist_title text__align--left">繳款金額</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="td-inline" data-title="繳款金額">
+                                                <div class="tableDeta-box">
+                                                    <!-- 繳款金額 -->
                                                     <div class="orderlist_titleBox">
                                                         <div class="orderlist_title orderlistDetail_price">
                                                             <span class="eng-num">฿ 244,000</span>
@@ -316,7 +341,8 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                        <!-- 訂單金額總計結束 -->
+                                        <!-- 繳款金額總計結束 -->
+
                                     </tbody>
                                 </table>
                             </div>
@@ -467,14 +493,16 @@
                 </div>
             </div>
         </div>
-        <!-- 操作按鈕 (共六種狀態按鈕 （手機版不會出現“列印出貨單”） － 最多會同時出現二顆按鈕)-->
+        <!-- 操作按鈕 － 最多會同時出現二顆按鈕)-->
+
         <div class="pct-panel__content-actions">
             <a href="#" class="pct-ui btn btn-secondary informdispatchBtn">通知已出貨</a>
             <a href="#" class="pct-ui btn btn-secondary agreecancelBtn" style="display:none;">回覆取消申請</a>
             <a href="#" class="pct-ui btn btn-secondary refundBtn" style="display:none;">回覆退款申請</a>
-            <a href="#" class="pct-ui btn btn-secondary printdispatchBtn hidden-md-down" style="display:none;">列印出貨單</a>
             <a href="#" class="pct-ui btn btn-secondary confirmpaymentBtn" style="display:none;">確認收款</a>
             <a href="#" class="pct-ui btn btn-secondary cancelresonBtn">取消訂單</a>
+            <!--說明FOR RD: “我要出貨”按鈕，判斷該商品選擇何種物流方式 並呼叫不同彈跳視窗 -->
+            <a href="#" class="pct-ui btn btn-secondary dispatchListEmsBtn" style="display:none;">我要出貨</a>
         </div>
     </div> <!-- pct-panel__container -->
 </div> <!-- pct-panel

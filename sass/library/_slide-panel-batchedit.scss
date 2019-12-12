@@ -1,55 +1,46 @@
-
 //batchedit
-@import '_slide-panel-batchedit-pexhlist';
+@import "_slide-panel-batchedit-pexhlist";
 
 //panel 大量編輯內容
 
-
-
 // ------ 表格類型－大量編輯（覆寫_table-backendlist）--------------------------------------
 .tableBox-batchedit {
-
-    .pct-ui.btn{
-        margin-left:0;
-        margin-right:0;
+    .pct-ui.btn {
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    .table__thead{
+    .table__thead {
         position: sticky;
         top: -6px;
     }
-    .normal-table td{
-        border-bottom:0;
-    } 
+    .normal-table td {
+        border-bottom: 0;
+    }
 
     .table__tbody {
-
-        .categories{
-
-            td{
+        .categories {
+            td {
                 padding: 0;
             }
         }
 
-
         tbody {
             // border-bottom-width: 0px;
 
-
             tr {
                 background-color: $colorWhite;
-                padding: 8px; 
-
+                padding: 8px;
 
                 td {
                     vertical-align: top;
                     // border: 10px;
                     padding: 10px;
 
-                    &.single{
-                        vertical-align: middle;
+                    .single {
+                        padding: 8px 12px;
+                        line-height: 2rem;
                     }
-
 
                     .content-description {
                         margin-bottom: 0;
@@ -83,43 +74,32 @@
                         padding-left: 6px;
                     }
                 }
-                
             }
-                //列表區塊最後一個區塊要陰影
+            //列表區塊最後一個區塊要陰影
 
-                tr:last-child(){
-                    td:last-child(){
-                        box-shadow: 0 8px 7px -7px rgba(225, 225, 225, 0);
-                    }
+            tr:last-child() {
+                td:last-child() {
+                    box-shadow: 0 8px 7px -7px rgba(225, 225, 225, 0);
                 }
-
+            }
         }
     }
-
-
 }
 
-
-#pct-lightbox-editspenstock{
-
-    .pct-ui.form-label{
-
-        flex:1;
-
+#pct-lightbox-editspenstock {
+    .pct-ui.form-label {
+        flex: 1;
     }
 
-    .variation-box{
+    .variation-box {
         padding-bottom: 20px;
     }
 }
 
-@media (max-width:$break-md) {
-
+@media (max-width: $break-md) {
     // 表格類型－大量編輯
     .tableBox-batchedit {
-
         .table__tbody {
-
             .normal-table td {
                 padding: 15px 10% 15px 20%;
 
@@ -147,7 +127,6 @@
                 .btn-apply {
                     margin-top: 12px;
                 }
-
             }
 
             td:before {
@@ -162,30 +141,21 @@
                 font-weight: 500;
             }
 
-
-
             tbody {
-                tr:last-child(){
-                    
-                    td{
-                         box-shadow: 0 8px 8px -8px rgba(225, 225, 225, 0.0);
+                tr:last-child() {
+                    td {
+                        box-shadow: 0 8px 8px -8px rgba(225, 225, 225, 0);
                     }
-
                 }
             }
-
         }
     }
 }
 
-
-@media (max-width:$break-xs) {
-
+@media (max-width: $break-xs) {
     // 表格類型－大量編輯
     .tableBox-batchedit {
-
         .table__tbody {
-
             .normal-table td {
                 padding: 15px 10px 15px 10px;
 
@@ -212,32 +182,23 @@
     }
 }
 
-
-
-
-
 // ------ 表格類型－大量編輯（覆寫_table-backendlist）End --------------------------------------
-
-
 
 // 分類
 .tableBox-batchedit .table__tbody tbody .categories {
-
-    td{
-        border-bottom:0px;
+    td {
+        border-bottom: 0px;
     }
 
     .tableData-header {
         height: 46px;
         border-bottom: 2px solid $colorGreyishWhite;
-
     }
 }
 @media (max-width: $break-md) {
     .tableBox-batchedit .table__tbody tbody .categories {
-
-        td:first-child{
-         background-color: #EFF3F6;
+        td:first-child {
+            background-color: #eff3f6;
         }
         .tableData-header {
             height: auto;
@@ -249,8 +210,7 @@
 
 @media (max-width: $break-sm) {
     .tableBox-batchedit .table__tbody tbody .categories {
-
-        td:first-child{
+        td:first-child {
             padding: 10px 10px 10px 20%;
         }
         .tableData-header {
@@ -261,9 +221,8 @@
 
 @media (max-width: $break-xs) {
     .tableBox-batchedit .table__tbody tbody .categories {
-        td:first-child{
+        td:first-child {
             padding: 5px 15px 10px 15px;
-
         }
     }
 
@@ -274,10 +233,9 @@
     }
 }
 
-
 // 分類標題群組
-.table_flexBox.categoriesGroup{
-    height: auto;    
+.table_flexBox.categoriesGroup {
+    height: auto;
 }
 .categoriesGroup {
     text-align: left;
@@ -320,7 +278,7 @@
 @media (max-width: $break-xxs) {
     .categoriesGroup {
         .categoriesGroup-action {
-            a{
+            a {
                 margin-left: 0px;
                 margin-right: 0px;
             }
@@ -329,11 +287,10 @@
 }
 
 .tableBox-batchedit {
-    .md-break-table .normal-table td:first-child{
-        background-color: rgba(#EFF3F6, 0);
+    .md-break-table .normal-table td:first-child {
+        background-color: rgba(#eff3f6, 0);
     }
 }
-
 
 // 分類標題
 .categoriesTitle {
@@ -357,18 +314,15 @@
         font-size: 0.6875rem;
         color: $colorGray;
     }
-    
 }
 @media (max-width: $break-xxs) {
     .categoriesList {
         // align-items: flex-start;
         li {
             display: inline-block;
-
         }
     }
 }
-
 
 // 刪除 table 內陰影與四周間距
 .tableBox-batchedit {
@@ -384,10 +338,9 @@
     }
 }
 
-
 //重量輸入框(覆寫掉product-manage)
 .tableBox-batchedit {
-    .content-description{
+    .content-description {
         //重量(覆寫掉product-manage)
         .pct-ui.form.product-weight {
             input[type="text"] {
@@ -398,29 +351,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

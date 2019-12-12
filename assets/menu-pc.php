@@ -20,7 +20,7 @@
             <a class="seller-nav-link" href="#"><span class="pct-icon icon-payment"></span>代收款項
             </a>
             <ul>
-                <li><a href="" onclick="window.location.href='selleracc-withdrawal.php' ">款項查詢</a></li>
+                <li><a href="" onclick="window.location.href='selleracc-selleracc.php' ">款項查詢</a></li>
                 <li><a href="" onclick="window.location.href='selleracc-fee.php' ">費用查詢</a></li>
                 <li><a href="" onclick="window.location.href='selleracc-wdset.php' ">結算設定</a></li>
             </ul>

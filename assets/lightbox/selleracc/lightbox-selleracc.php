@@ -1,3 +1,96 @@
+<!--結算款項燈箱 -->
+<div id="pct-lightbox-withdrawal" class="pct-ui modal medium">
+    <i class="pct-icon icon-delete lightbox_close"></i>
+    <div class="modal-header">結算</div>
+    <div class="scrolling-tall modal-content">
+
+        <!-- 區塊－金額統計 -->
+        <div class="section-outer section-accounting">
+            <!-- 結算帳戶 -->
+            <div class="accountingBox">
+                <!-- 總金額 -->
+                <div class="accountingItem">
+                    <!-- 總金額組合 -->
+                    <div class="items item-amountTotalBox">
+                        <div class="item-totalBox">
+                            <!-- 圖片包 -->
+                            <div class="item-amountBox-pic">
+                                <img src="img/icon-selleracc-money.svg">
+                            </div>
+                            <!-- 文字包 -->
+                            <div class="item-amountBox-text">
+                                <!-- <div class="subtitle"><span class="subtitle-text">Amount Available for Withdrawal</span></div> -->
+                                <div class="subtitle"><span class="subtitle-text">
+                                        <!-- ยอดเงินที่เบิกถอนได้ -->可結算金額</span></div>
+                                <div class="amount eng-num">994,566.42</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 運算符號 = -->
+                    <div class="items item-operations item-operations-equal">
+                        <i class="pct-icon icon-equal"></i>
+                    </div>
+                    <!-- 細項金額 -->
+                    <div class="items item-amountBox-left">
+                        <!-- 文字包 -->
+                        <div class="item-amountBox-text">
+                            <div class="subtitle"><span class="subtitle-text">
+                                    <!-- Amount Available -->
+                                    <!-- ยอดที่ถอนได้ -->可用貨款金額</span></div>
+                            <div class="amount eng-num">102,130.32</div>
+                        </div>
+                    </div>
+                    <!-- 運算符號 +/- -->
+                    <div class="items item-operations item-operations-plus">
+                        <i class="pct-icon icon-minus"></i>
+                    </div>
+                    <!-- 細項金額 -->
+                    <div class="items item-amountBox-right">
+                        <!-- 文字包 -->
+                        <div class="item-amountBox-text">
+                            <div class="subtitle"><span class="subtitle-text"><a href="selleracc-fee.php"
+                                        target="_blank">
+                                        <!-- Due Fee -->
+                                        <!-- ค่าธรรมเนียมที่ต้องชำระ -->未繳費用<i
+                                            class="pct-icon icon-information"></i></a></span></div>
+                            <div class="amount eng-num">157,946.45</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <div class="pct-ui form-select-label break-label">
+                <label for="">選擇結算銀行</label>
+                <!-- 說明For RD: 第一筆為預設帳號"-->
+                <div class="pct-ui form select">
+                    <select>
+                        <option value="1">002 Bangkok Bank (BBL) [預設帳號]</option>
+                        <option value="2">024 United Overseas Bank (Thai) (UOBT)</option>
+                        <option value="3">034 Bank for Agriculture and Agricultural Cooperatives (AGRI)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pct-ui form-label break-label">
+                <label for="">輸入結算金額</label>
+                <!-- <div class="pct-ui form"> -->
+                <div class="pct-ui form product-price-THbaht unit-before">
+                    <input type="tel" placeholder="0">
+                </div>
+            </div>
+            <p class="alert-red">* 實際到帳金額，為結算金額扣除轉帳手續費，約10~30泰銖。此筆費用為銀行收取之作業費用。</p>
+        </div>
+    </div>
+    <div class="modal-actions">
+        <!--清除-->
+        <a href="#" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
+        <!--確定結算-->
+        <a href="#" class="pct-ui btn btn-secondary">確定結算</a>
+    </div>
+</div>
+<!-- 燈箱結束-->
+
+
 <!-- 發票設定  -->
 <div id="pct-lightbox-setInvoice-personal" class="pct-ui modal medium">
     <!--說明 FOR RD: 若送出需較長時間請執行以下loading-->
@@ -48,9 +141,6 @@
         <a href="#" class="pct-ui btn btn-secondary">確定儲存</a>
     </div>
 </div>
-
-
-
 
 <!-- 發票設定－公司  -->
 <div id="pct-lightbox-setInvoice-company" class="pct-ui modal medium">
@@ -114,98 +204,6 @@
 
 
 
-<!--結算款項燈箱 -->
-<div id="pct-lightbox-withdrawal" class="pct-ui modal medium">
-    <i class="pct-icon icon-delete lightbox_close"></i>
-    <div class="modal-header">結算</div>
-    <div class="scrolling-tall modal-content">
-
-        <!-- 區塊－金額統計 -->
-        <div class="section-outer section-accounting">
-            <!-- 結算帳戶 -->
-            <div class="accountingBox">
-                <!-- 總金額 -->
-                <div class="accountingItem">
-                    <!-- 總金額組合 -->
-                    <div class="items item-amountTotalBox">
-                        <div class="item-totalBox">
-                            <!-- 圖片包 -->
-                            <div class="item-amountBox-pic">
-                                <img src="img/icon-selleracc-money.svg">
-                            </div>
-                            <!-- 文字包 -->
-                            <div class="item-amountBox-text">
-                                <!-- <div class="subtitle"><span class="subtitle-text">Amount Available for Withdrawal</span></div> -->
-                                <div class="subtitle"><span class="subtitle-text">
-                                        <!-- 可結算金額 -->ยอดเงินที่เบิกถอนได้</span></div>
-                                <div class="amount eng-num">994,566.42</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 運算符號 = -->
-                    <div class="items item-operations item-operations-equal">
-                        <i class="pct-icon icon-equal"></i>
-                    </div>
-                    <!-- 細項金額 -->
-                    <div class="items item-amountBox-left">
-                        <!-- 文字包 -->
-                        <div class="item-amountBox-text">
-                            <div class="subtitle"><span class="subtitle-text">
-                                    <!-- Amount Available -->ยอดที่ถอนได้</span></div>
-                            <div class="amount eng-num">102,130.32</div>
-                        </div>
-                    </div>
-                    <!-- 運算符號 +/- -->
-                    <div class="items item-operations item-operations-plus">
-                        <i class="pct-icon icon-minus"></i>
-                    </div>
-                    <!-- 細項金額 -->
-                    <div class="items item-amountBox-right">
-                        <!-- 文字包 -->
-                        <div class="item-amountBox-text">
-                            <div class="subtitle"><span class="subtitle-text"><a href="selleracc-fee.php"
-                                        target="_blank">
-                                        <!-- Due Fee -->ค่าธรรมเนียมที่ต้องชำระ <i
-                                            class="pct-icon icon-information"></i></a></span></div>
-                            <div class="amount eng-num">0</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="description">
-            <div class="pct-ui form-select-label break-label">
-                <label for="">選擇結算銀行</label>
-                <!-- 說明For RD: 第一筆為預設帳號"-->
-                <div class="pct-ui form select">
-                    <select>
-                        <option value="1">002 Bangkok Bank (BBL) [預設帳號]</option>
-                        <option value="2">024 United Overseas Bank (Thai) (UOBT)</option>
-                        <option value="3">034 Bank for Agriculture and Agricultural Cooperatives (AGRI)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="pct-ui form-label break-label">
-                <label for="">輸入結算金額</label>
-                <!-- <div class="pct-ui form"> -->
-                <div class="pct-ui form product-price-THbaht unit-before">
-                    <input type="tel" placeholder="0">
-                </div>
-            </div>
-            <p class="alert-red">* 實際到帳金額，為結算金額扣除轉帳手續費，約10~30泰銖。此筆費用為銀行收取之作業費用。</p>
-        </div>
-
-    </div>
-    <div class="modal-actions">
-        <!--清除-->
-        <a href="#" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <!--確定結算-->
-        <a href="#" class="pct-ui btn btn-secondary">確定結算</a>
-    </div>
-</div>
-<!-- 燈箱結束-->
 
 
 
@@ -216,20 +214,28 @@
     <div class="scrolling-tall  modal-content">
         <div class="description">
             <!-- <div class="title">結算狀態說明</div> -->
+
+            <!-- 名稱 -->
             <div class="description-list">
                 <div class="description-list-box">
                     <div class="list-box-item">貨款總金額</div>
                     <div class="list-box-text eng-num">銷售出的商品總金額。</div>
                 </div>
                 <div class="description-list-box">
-                    <div class="list-box-item">可用貨款金額</div>
-                    <div class="list-box-text eng-num">已過PChome Thai的保護期，可申請撥款。</div>
+                    <div class="list-box-item">可結算金額</div>
+                    <div class="list-box-text eng-num">已過 PChome Thai 的保護期，可申請撥款。</div>
                 </div>
                 <div class="description-list-box">
                     <div class="list-box-item">待轉可用貨款金額</div>
-                    <div class="list-box-text eng-num">尚未過PChome Thai的保護期，無法申請撥款。</div>
+                    <div class="list-box-text eng-num">尚未過 PChome Thai 的保護期，無法申請撥款。</div>
+                </div>
+                <div class="description-list-box">
+                    <div class="list-box-item">可結算金額</div>
+                    <div class="list-box-text eng-num">已過 PChome Thai 的保護期，可申請撥款。金額為扣除 PChome
+                        Thai 成交手續費(商品價格5%+7%VAT)，與金流服務費等費用。</div>
                 </div>
 
+                <!-- 狀態 -->
                 <div class="description-list-box">
                     <div class="list-box-item">買家代理人收到貨款</div>
                     <div class="list-box-text eng-num">買家已經付款。</div>
@@ -238,11 +244,7 @@
                     <div class="list-box-item">轉可用貨款</div>
                     <div class="list-box-text eng-num">過PChome Thai的保護期可申請結算(金額尚未扣除相關費用)。</div>
                 </div>
-                <div class="description-list-box">
-                    <div class="list-box-item">可結算金額</div>
-                    <div class="list-box-text eng-num">已過PChome Thai的保護期，可申請撥款。金額為扣除PChome
-                        Thai成交手續費(商品價格5%+7%VAT)，與金流服務費等費用。</div>
-                </div>
+
                 <div class="description-list-box">
                     <div class="list-box-item">準備結算</div>
                     <div class="list-box-text eng-num">已申請結算，連科進行匯款程序。(實際入帳時間約需7-14個工作天)</div>

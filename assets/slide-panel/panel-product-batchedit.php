@@ -35,7 +35,7 @@
                                     <th>名稱</th>
                                     <th>價格</th>
                                     <th>重量</th>
-                                    <th>運費</th>
+                                    <th>材積</th>
                                     <th>規格</th>
                                     <th>數量</th>
                                     <th>狀態</th>
@@ -81,7 +81,7 @@
                                                         </li>
                                                         <li class="pct-icon icon-angle-right arrow"></li>
                                                         <li>
-                                                            <span>ชุดคิท เครื่องมือซ่อมแซมบ้าน</span>
+                                                            <span>４足以上</span>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -92,7 +92,7 @@
                                                         <div class="table_inlineBox">
                                                             <a class="pct-ui btn-xs btn pexhlistBtn"
                                                                 style="flex-shrink:0;">
-                                                                <li class="pct-icon icon-edit"></li>修改
+                                                                <span class="pct-btn-icon icon-edit"></span>修改
                                                             </a>
                                                         </div>
                                                         <div class="table_inlineBox">
@@ -109,7 +109,7 @@
 
                                 <tr>
                                     <!-- <td data-title="名稱"> -->
-                                    <td data-title="Name">
+                                    <td data-title="名稱">
                                         <div class="tableDeta-box">
                                             <div class="productInfoGroup">
                                                 <!-- 商品圖片 -->
@@ -128,14 +128,14 @@
                                                             สวย สมบูรณ์ หายากมาก<span>
                                                     </div>
                                                     <a class="pct-ui btn-xs btn batchedit-editNameBtn">
-                                                        <li class="pct-icon icon-edit"></li>修改
+                                                        <span class="pct-btn-icon icon-edit"></span>修改
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </td>
                                     <!-- <td data-title="價格"> -->
-                                    <td data-title="Price">
+                                    <td data-title="價格">
                                         <div class="tableDeta-box">
                                             <div class="content-block">
                                                 <div class="content-description">
@@ -150,11 +150,11 @@
 
 
                                     <!-- <td data-title="重量"> -->
-                                    <td data-title="Weight">
+                                    <td data-title="重量">
                                         <div class="tableDeta-box">
                                             <div class="content-block">
                                                 <div class="content-description">
-                                                    <div class="pct-ui form product-weight unit-after">
+                                                    <div class="pct-ui form product-weight-kilogram unit-after">
                                                         <input type="tel" placeholder="">
                                                     </div>
                                                 </div>
@@ -167,13 +167,19 @@
                                     </td>
 
 
-                                    <!-- <td data-title="指定運費"> -->
-                                    <td data-title="Freight">
+                                    <!-- <td data-title="材積"> -->
+                                    <td data-title="材積">
                                         <div class="tableDeta-box">
                                             <div class="content-block">
                                                 <div class="content-description">
-                                                    <div class="pct-ui form product-price-THbaht unit-before">
-                                                        <input type="tel" placeholder="">
+                                                    <div class="pct-ui form product-length-centimeter unit-after">
+                                                        <input type="tel" placeholder="長">
+                                                    </div>
+                                                    <div class="pct-ui form product-length-centimeter unit-after">
+                                                        <input type="tel" placeholder="寬">
+                                                    </div>
+                                                    <div class="pct-ui form product-length-centimeter unit-after">
+                                                        <input type="tel" placeholder="高">
                                                     </div>
                                                 </div>
                                             </div>
@@ -186,18 +192,18 @@
 
 
                                     <!-- <td data-title="規格"> -->
-                                    <td data-title="Specification" class="single">
+                                    <td data-title="規格">
                                         <div class="tableDeta-box">
                                             <div class="content-block">
                                                 <div class="pct-ui form text-with-input">
-                                                    <p>單一規格</p>
+                                                    <p class="single">單一規格</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </td>
 
                                     <!-- <td data-title="數量"> -->
-                                    <td data-title="Quantity">
+                                    <td data-title="數量">
                                         <div class="tableDeta-box">
                                             <div class="content-block">
                                                 <div class="content-description">
@@ -215,7 +221,7 @@
 
 
                                     <!-- <td data-title="狀態"> -->
-                                    <td data-title="Status">
+                                    <td data-title="狀態">
                                         <div class="tableDeta-box">
                                             <!-- <div class="content-block"> -->
                                             <!-- <div class="content-description"> -->
@@ -225,12 +231,12 @@
                                                 <div class="pct-ui form radio">
                                                     <input type="radio" id="1" name="radio-group">
                                                     <label for="1">
-                                                        <!-- 上架 -->แสดงสินค้า</label>
+                                                        <!-- แสดงสินค้า -->上架中</label>
                                                 </div>
                                                 <div class="pct-ui form radio">
-                                                    <input type="radio" id="2" name="radio-group">
+                                                    <input type="radio" id="2" name="radio-group" checked="">
                                                     <label for="2">
-                                                        <!-- 下架 -->เก็บสินค้า</label>
+                                                        <!-- เก็บสินค้า -->下架中</label>
                                                 </div>
                                             </div>
                                             <!-- </div>  -->
@@ -259,15 +265,15 @@
                                                     <span class="categoriesTitle hidden-md-down">分類：</span>
                                                     <ul class="categoriesList">
                                                         <li>
-                                                            <span>มือถือและอุปกรณ์สื่อสาร</span>
+                                                            <span>女生服裝</span>
                                                         </li>
                                                         <li class="pct-icon icon-angle-right arrow"></li>
                                                         <li>
-                                                            <span>สมาร์ตโฟนและโทรศัพท์มือถือ</span>
+                                                            <span>褲子</span>
                                                         </li>
                                                         <li class="pct-icon icon-angle-right arrow"></li>
                                                         <li>
-                                                            <span>อุปกรณ์แยกสายสำหรับธุรกิจ</span>
+                                                            <span>丹寧褲</span>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -278,7 +284,7 @@
                                                         <div class="table_inlineBox">
                                                             <a class="pct-ui btn-xs btn pexhlistBtn"
                                                                 style="flex-shrink:0;">
-                                                                <li class="pct-icon icon-edit"></li>修改
+                                                                <span class="pct-btn-icon icon-edit"></span>修改
                                                             </a>
                                                         </div>
                                                     </div>
@@ -292,7 +298,7 @@
 
                                 <tr>
                                     <!-- <td data-title="名稱"> -->
-                                    <td data-title="Name">
+                                    <td data-title="名稱">
                                         <div class="tableDeta-box">
                                             <div class="productInfoGroup">
                                                 <!-- 商品圖片 -->
@@ -311,16 +317,15 @@
                                                             สวย สมบูรณ์ หายากมาก<span>
                                                     </div>
                                                     <a class="pct-ui btn-xs btn batchedit-editNameBtn">
-                                                        <li class="pct-icon icon-edit"></li>修改
+                                                        <span class="pct-btn-icon icon-edit"></span>修改
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </td>
 
-
                                     <!-- <td data-title="價格"> -->
-                                    <td data-title="Price">
+                                    <td data-title="價格">
                                         <div class="tableDeta-box">
                                             <div class="content-block">
                                                 <div class="content-description">
@@ -331,15 +336,13 @@
                                             </div>
                                         </div>
                                     </td>
-
-
 
                                     <!-- <td data-title="重量"> -->
-                                    <td data-title="Weight">
+                                    <td data-title="重量">
                                         <div class="tableDeta-box">
                                             <div class="content-block">
                                                 <div class="content-description">
-                                                    <div class="pct-ui form product-weight unit-after">
+                                                    <div class="pct-ui form product-weight-kilogram unit-after">
                                                         <input type="tel" placeholder="">
                                                     </div>
                                                 </div>
@@ -347,14 +350,19 @@
                                         </div>
                                     </td>
 
-
-                                    <!-- <td data-title="指定運費"> -->
-                                    <td data-title="Freight">
+                                    <!-- <td data-title="材積"> -->
+                                    <td data-title="材積">
                                         <div class="tableDeta-box">
                                             <div class="content-block">
                                                 <div class="content-description">
-                                                    <div class="pct-ui form product-price-THbaht unit-before">
-                                                        <input type="tel" placeholder="">
+                                                    <div class="pct-ui form product-length-centimeter unit-after">
+                                                        <input type="tel" placeholder="長">
+                                                    </div>
+                                                    <div class="pct-ui form product-length-centimeter unit-after">
+                                                        <input type="tel" placeholder="寬">
+                                                    </div>
+                                                    <div class="pct-ui form product-length-centimeter unit-after">
+                                                        <input type="tel" placeholder="高">
                                                     </div>
                                                 </div>
                                             </div>
@@ -366,7 +374,7 @@
                                             <div class="content-block">
                                                 <div class="content-description">
                                                     <a href="" class="pct-ui btn-sm btn batchedit-editspecstockBtn">
-                                                        <li class="pct-icon icon-edit"></li>修改規格與數量
+                                                        <span class="pct-btn-icon icon-edit"></span>修改規格與數量
                                                     </a>
                                                 </div>
                                             </div>
@@ -376,7 +384,7 @@
 
 
                                     <!-- <td data-title="狀態"> -->
-                                    <td data-title="Status">
+                                    <td data-title="狀態">
                                         <div class="tableDeta-box">
                                             <!-- <div class="content-block"> -->
                                             <!-- <div class="content-description"> -->
@@ -386,12 +394,12 @@
                                                 <div class="pct-ui form radio">
                                                     <input type="radio" id="3" name="radio-group-001" checked="">
                                                     <label for="3">
-                                                        <!-- 上架 -->แสดงสินค้า</label>
+                                                        <!-- แสดงสินค้า -->上架中</label>
                                                 </div>
                                                 <div class="pct-ui form radio">
                                                     <input type="radio" id="4" name="radio-group-001">
                                                     <label for="4">
-                                                        <!-- 下架 -->เก็บสินค้า</label>
+                                                        <!-- เก็บสินค้า -->下架中</label>
                                                 </div>
                                             </div>
                                             <!-- </div>  -->

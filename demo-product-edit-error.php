@@ -452,11 +452,10 @@
                                     </div>
 
                                     <div class="logistic-wrap operation">
-                                        <p class="description-text">已啟用物流 (有顯示為<img alt="pchome-protectiont"
+                                        <p class="description-text">PChome支援物流 (有顯示為<img alt="pchome-protectiont"
                                                 class="icon-img"
                                                 src="https://cimg.pchome.co.th/res/other/coth/img/icon_pcprotect_badge.svg"
                                                 style="width:18px;"> PChome支援物流）</p>
-
                                         <div class="pct-ui accordion">
                                             <!--摺疊標題-->
                                             <div class="accordion-caption no-accordion">
@@ -509,12 +508,12 @@
                                                         to enter weight</div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
 
-                                    <div class="logistic-wrap seller">
 
+                                    <p class="description-text">非支援物流</p>
+                                    <div class="logistic-wrap seller">
                                         <div class="pct-ui accordion">
                                             <!--摺疊標題-->
                                             <div class="accordion-caption no-accordion">

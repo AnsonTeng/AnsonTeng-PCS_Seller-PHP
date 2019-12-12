@@ -1,0 +1,889 @@
+@import  'layout.scss';
+
+//變數
+@import 'library/_variables';
+//混用
+@import 'library/_mixin';
+//繼承
+@import 'library/_extend';
+
+//－－－ Page Components －－－
+
+//TAB導航
+@import 'library/_tabnav';
+//頁碼
+@import 'library/_pagination';
+
+//表格－新增表格公用
+@import 'library/_table-backendlist';
+
+//區塊內容
+@import 'library/_content-block';
+
+
+//區塊－訂單清單 
+@import 'library/_section-InfoList';
+
+
+
+//列表tabbar上方篩選區塊
+.searchBarGroup{
+
+        //商品評價圖表
+        .section-review-chart {
+            display: flex;
+            align-items: center;
+
+            .review-chart-figures {
+
+                //評價分數
+                .review-score {
+
+                    display: flex;
+                    align-items: flex-end;
+                    
+
+                    .review-score-text {
+                        display: flex;
+                        align-items: flex-end;
+                        font-size: 1.875rem;
+                        color: $colorGray;
+                        margin-right: 10px;
+
+                        .resault-score {
+                            font-size: 2.8125rem;
+                            color: $colorGrayBlack;
+
+                            &:after {
+                                content: '/';
+                                padding: 0 8px 0 6px;
+                                font-size: 0.9375rem;
+                                color: $colorGray;
+                            }
+                        }
+
+                        .total-score {
+                            padding-bottom: 5px;
+                        }
+
+                    }
+
+                    .pct-ui.review-star {
+                        margin: 5px 0;
+
+                        .pct-icon {
+                            font-size: 1.9rem;
+                        }
+
+                    }
+                }
+
+                //人數百分比
+                .review-pecentage-people {
+
+                    >ul {
+                        // margin-top: 10px;
+                        display: flex;
+
+                        li {
+                            font-size: 0.8125rem;
+                            line-height: 18px;
+                            color: $colorDeepGray;
+                            margin-right: 10px;
+
+                            span.eng-num{
+                                color:$colorGrayBlack;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+}
+
+@media (max-width:$break-sm) {
+
+    .searchBarGroup{
+
+        .section-review-chart {
+            margin-bottom: 15px;
+        }
+
+    }
+
+}
+
+// --- table 設定 （買賣留言＋商品留言） ---------------------------------------
+.tableBox-qareview-order,
+.tableBox-qareview-product {
+
+   // 留言對話框
+    .buyer-messageBox {
+        width: 100%;
+        text-align: left;
+        
+        // 留言對話框－留言
+        .msg-text {
+            // font-size: 0.875rem;
+            // font-weight: 300;
+            // line-height: 1.25rem;
+            color: $colorGrayBlack;            
+            text-align: left;
+            height: auto;
+            max-height: 2.5rem;
+        }
+    }
+
+    // 覆寫折行斷點
+    // // 覆寫 _table-backendlist.scss 中 .table_row_bottom 的斷點
+    .table_row_bottom{
+        .table_flexBox{
+            &.table_flexBox-right {
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    @media (max-width:$break-xs) {
+        .table_row_bottom{
+            .table_flexBox{
+                &.table_flexBox-right {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    // 表格斷點
+    colgroup {
+        display: table-column-group;
+    }
+    td {
+        display: table-cell;
+    }
+
+    tr.table_row_header-online td {
+        display: table-cell;
+    }
+
+    .table_inlineBox-flex {
+        border-top-width: 0;
+    }
+
+    @media (max-width: $break-md) {
+        .orderlist_titleBox {
+            width: 100%;
+        }
+    }
+
+}
+
+
+
+// 表格斷點
+@media (max-width: $break-xs) {
+    .tableBox-qareview-order,
+    .tableBox-qareview-product {
+        colgroup {
+            display: none;
+        }
+
+        td {
+            display: block;
+        }
+    }
+}
+
+
+@media (max-width:$break-md) {
+    
+    .tableBox-qareview-order{
+
+        .table_row_bottom{
+
+            .table_flexBox{
+                width::auto;
+
+                &.table_flexBox-right {
+                    
+                    justify-content: flex-end;
+
+                    .pct-ui.btn-xs{
+                        // margin: 5px 5px;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+@media (max-width:$break-xs) {
+    
+    .tableBox-qareview-order{
+
+        .table_row_bottom{
+
+            .table_flexBox{
+                width::100%;
+
+                &.table_flexBox-right {
+                    
+                    justify-content: center!important;
+
+                    .pct-ui.btn-xs{
+                        // margin: 5px 5px;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+
+// --- table 設定 （買賣留言） ---------------------------------------
+.tableBox-qareview-order {
+    margin-bottom: 36px;
+    
+    // 留言對話框
+    .buyer-messageBox {
+        padding: 16px 12px;
+        
+        // 留言對話框－留言
+        .msg-text {
+            @include text-overflow(2);
+        }
+    }
+
+    .table__tbody {
+        margin-bottom: 0px;
+    }
+}
+
+
+// --- table 設定 （商品留言） ---------------------------------------
+.tableBox-qareview-product {
+    margin-bottom: 36px;
+
+    // 留言對話框
+    .buyer-messageBox {
+        padding: 12px 12px;
+        position: relative;
+        top: -5px;
+
+        // 留言對話框－留言
+        .msg-text {
+            @include text-overflow(1);
+        }
+
+        // 留言對話框－買家頭像與帳號群組（覆寫）
+        .itemInfoGroup {
+            margin-bottom: 8px;
+            // 頭像
+            .list__itemInfo-userImg {
+                width: 20px;
+                height: 20px;
+            }
+            // 名稱
+            .list__itemInfo-userName {
+                max-width: 100%;
+                color: $colorDarkGray;
+            }
+        }
+    }
+}
+
+// 蓋掉_layout searchBarGroup 預設寬度
+// .inputGroup-inputBox {
+//     max-width: 240px;
+// }
+
+@media (max-width: $break-md) {
+    .table_inlineBox-flex {
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+// －－－ 回覆留言頁面相關 －－－－－－－－－－－－
+
+// 回覆留言群組
+.replyGroup {
+    padding: 24px 18px 20px 18px;
+    // @extend %shadow-style-block-3;
+
+
+    &.ProductreplyGroup{
+        padding: 0px 18px 20px 18px;
+
+        p.description-title{
+            padding-top: 24px;
+            border-top: 1px solid $colorLightGray;
+        }
+        
+    }
+
+    .productInfoGroup {
+        margin-bottom: 24px;
+    }
+
+    // 共用部分（訂單留言回覆／商品留言回覆）
+    .replyGroup-qa {
+        width: 100%;
+        margin-bottom: 24px;
+
+        // 標頭
+        .qa-titleBox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0px;
+
+            // 買家頭像與帳號群組（對話框內）
+            .itemInfoGroup {
+                padding-left: 8px;
+            }
+        }
+
+        // 內容
+        .qa-contentBox {
+            // 三角形
+            .triangle_top {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 8px 12px 8px;
+                border-color: transparent transparent $colorGreyishWhite
+                transparent;
+                position: relative;
+                left: 14px;
+                top:5px;
+            }
+            // 對話框
+            .contentBox-dialog {
+                background-color: $colorGreyishWhite;
+                border-radius: 6px;
+                width: 100%;
+                // height: 100px;
+                padding: 5px 15px;
+
+                &.input-msg{
+                    background-color: #fff;
+                    padding: 15px 0px;
+                    border-bottom: 1px solid $colorLightGray;
+                    border-radius:0;
+                }
+
+                > span {
+                    padding: 12px 0;
+                    font-size: 0.875rem;
+                    line-height: 22px;
+                    font-weight: 300;
+                    width: 100%;
+                    display: inline-block;
+                }
+
+                // 賣家回覆群組
+                .dialog-reply {
+                    // 下拉選單
+                    .select {
+                        margin-bottom: 3px;
+                    }
+                }
+                // 操作按鈕群組
+                .reply-action {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+        // 買家資訊（覆寫）
+        .list__itemInfo-userName {
+            max-width: 100%;
+            margin-right: 0px;
+        }
+
+        @media (max-width: 400px) {
+            .list__itemInfo-userName {
+                max-width: 120px;
+            }
+        }
+        @media (max-width: 359px) {
+            .list__itemInfo-userName {
+                max-width: 80px;
+            }
+        }
+    }
+
+    // 非共用部分
+
+    // 非共用部分（回覆）
+    .replyGroup-answer {
+        // padding-left: 18px;
+    }
+    @media (max-width: $break-sm) {
+        .replyGroup-answer{
+            padding-left: 15px;
+        }
+    }
+
+    // 非共用部分（回覆+包含輸入框）
+    .replyGroup-answer-reply{
+        padding-left: 0px;
+    }
+
+
+    // 非共用部分（提問）
+    .replyGroup-question {
+        // 內容
+        .qa-contentBox {
+            // 三角形
+            .triangle_top {
+                border-color: transparent transparent #FFF3F3 transparent;
+            }
+            // 對話框
+            .contentBox-dialog {
+                background-color: #FFF3F3;
+            }
+        }
+    }
+}
+
+
+
+// 訂單留言回覆 － 訂單明細群組
+.qareview-ordertListGroup{
+    background-color: $colorWhite;
+    padding: 12px 18px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    .qareview-ordertList-info{
+        flex: 5;
+        .orderlist_amount{
+            padding-left: 0;
+            margin-top: 0;
+        }
+    }
+
+    .qareview-ordertList-amount{
+        flex: 1;
+        text-align: center;
+
+        .orderlist_amount{
+            height: auto;
+            padding-left: 0;
+            margin-top: 0;
+            text-align: center;
+        }
+    }
+
+    .qareview-ordertList-action{
+        flex: 1;
+        text-align: center;
+    }
+
+
+    .orderlist_amount{
+        padding-left: 0;
+    }
+}
+
+
+
+@media (max-width: $break-lg) {
+    .qareview-ordertListGroup{
+        .qareview-ordertList-info{
+            flex: 3;
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    .qareview-ordertListGroup{
+        .qareview-ordertList-info{
+            flex: 3;
+        }
+    }
+}
+
+
+@media (max-width: $break-xxs) {
+    .qareview-ordertListGroup{
+        flex-direction: column;
+        text-align: center;
+
+        .qareview-ordertList-action{
+            width: 100%;
+            a.pct-ui{
+                min-width: 60%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+//滑動到留言區
+.scroll-to-message{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+
+@media (max-width: $break-xxs) {
+   .scroll-to-message{
+    flex-direction: column;
+  }
+
+}
+
+
+// 訂單明細不會顯示下方操作按鈕欄
+.pct-panel__content-actions{
+    display: none;
+}
+
+
+
+//評價燈箱
+.pct-ui.modal {
+
+    &.reviewlist {
+
+        .modal-content {
+
+            .description-list {
+
+                .description-list-box {
+
+                    .review-level-text {
+                        font-weight: 400;
+                        margin-left: 10px;
+                    }
+
+                    .pct-ui.review-star {
+
+                        .pct-icon {
+                            font-size: 1.3rem;
+                        }
+
+                        .review-text {
+                            font-size: 1.125rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+
+}
+
+
+//評價表格
+.tableBox-reviewlist{
+
+    .table_row_body td{
+        vertical-align: top;
+    }
+
+    
+    .review-account-wrap{
+
+        text-align: left;
+        padding:5px 15px;
+
+
+        
+        //評價分數
+        .listReview-score-wrap{
+
+            margin-top: 15px;
+            padding-left: 32px;
+
+            .scroe-text{
+                font-size:0.875rem;
+                margin-top: 5px;
+
+                span{
+                    color:$colorDeepGray;
+                }
+            }
+
+            .pct-ui.review-star{
+
+                .pct-icon{
+                    font-size:1.3rem;
+                }
+
+                .review-text{
+                    font-size:1.3rem;
+                    font-weight: 500;
+                }
+            }
+
+
+        }
+    }
+
+    .review-msg-wrap{
+        flex-direction:row;
+        align-items: flex-start;
+        text-align: left;
+        padding:10px 15px 10px 0px;
+
+        .orderlist-sm{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            max-width: 400px;
+            background-color: #F5F8F9;
+            margin: 13px 0 0 0;
+            overflow: hidden;
+
+            .productInfo-img{
+                border:none;
+                flex-basis: 58px;
+                margin-right: 8px;
+            }
+
+            .productInfo-info{
+                
+                flex:1;
+
+                .productInfo-info-title{
+                    padding-right: 10px;
+                }
+            }
+
+            .pct-icon{
+                padding-right: 5px;
+                flex-basis: 30px;
+                color:$accentColor;
+                text-align: center;
+            }
+        }
+    }
+
+
+    .listReview-reply-wrap{
+        padding:15px 10px;
+        border-top: 1px solid $colorGreyishWhite;
+        display: flex;
+
+        .msg-text{
+            margin-top: 5px;
+        }
+
+    }
+    .list-review-msg{
+        flex:1;
+
+        .review-msg-title{
+
+            display: flex;
+            justify-content: space-between;
+            
+            .msg-title-text{
+              font-size: 0.8125rem;
+              font-weight: 500;              
+            }
+
+            span.date-time{
+                font-weight: 300;  
+                margin-right: 0;
+            }
+
+
+        }
+
+    }
+}
+
+
+@media (max-width:$break-lg) {
+    .tableBox-reviewlist{
+
+        .review-account-wrap{
+            //評價分數
+            .listReview-score-wrap{
+
+                  margin-top: 10px;
+                  padding-left: 0px;
+
+                .scroe-text{
+                    font-size:0.875rem;
+
+                    span{
+                        color:$colorDeepGray;
+                    }
+                }
+
+                .pct-ui.review-star{
+
+                    .pct-icon{
+                        font-size:1.2rem;
+                    }
+
+                    .review-text{
+                        font-size:1.2rem;
+                        font-weight: 500;
+                    }
+                }
+
+
+            }
+ 
+        }
+
+        .listReview-reply-wrap{
+            padding:15px 20px;
+
+        }
+    }
+}
+
+
+
+
+@media (max-width:$break-md) {
+
+    .tableBox-reviewlist{
+
+        .review-account-wrap{
+            flex-direction:row;
+            align-items: flex-start;
+            text-align: left;
+            padding:10px 15px 0px 15px;
+
+            .listReview-account{
+
+              .list__itemInfo-userName{
+                max-width: 100%!important;
+              }
+
+            }
+
+            //評價分數
+            .listReview-score-wrap{
+                margin-top: 10px;
+                padding-left: 0px;
+                display: flex;
+                align-items: center;
+                justify-content:flex-start;
+
+                .scroe-text{
+                    padding-top: 5px;
+                    margin-top: 0px;
+                    margin-left: 10px;
+                }
+
+                .pct-ui.review-star{
+
+                
+                    .pct-icon{
+                        font-size:1.1rem;
+                    }
+
+                    .review-text{
+                        font-size:1.2rem;
+                    }
+                }
+            }
+
+
+        }
+        .review-msg-wrap{
+            padding:15px 15px 25px 15px;
+
+            .orderlist-sm{
+                max-width: 100%;
+                width: 100%
+            }
+        }
+
+    }
+
+}
+
+
+@media (max-width:$break-sm) {
+
+    .tableBox-reviewlist{
+
+        .table_inlineBox{
+            display: block;
+        }
+
+         .review-account-wrap{
+
+            .listReview-account{
+
+              .list__itemInfo-userName{
+                max-width: 100%!important;
+              }
+              
+            }
+
+            //評價分數
+            .listReview-score-wrap{
+              justify-content:space-between;
+            }
+
+         }
+    }
+}
+
+@media (max-width:$break-xs) {
+
+    .tableBox-reviewlist{
+
+         .review-account-wrap{
+
+            .listReview-account{
+
+              .list__itemInfo-userName{
+                max-width: 100%!important;
+              }
+              
+            }
+
+         }
+    }
+}
+
+@media (max-width: 350px) {
+
+    .tableBox-reviewlist{
+
+         .review-account-wrap{
+
+            .listReview-account{
+
+              .list__itemInfo-userName{
+                max-width: 100%!important;
+              }
+              
+            }
+
+         }
+    }
+}

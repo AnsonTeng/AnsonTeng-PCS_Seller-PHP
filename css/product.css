@@ -929,7 +929,7 @@ img {
   padding: 0.9375rem 0;
   width: 420px;
   margin-bottom: 0.9375rem;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 2px; }
   .pct-ui.modal .pct-icon.icon-delete {
     display: block;
@@ -1449,6 +1449,15 @@ img {
       -ms-flex-align: center;
       align-items: center; }
 
+.pct-ui.modal .modal-content .description .required:after {
+  content: "*";
+  position: absolute;
+  font-size: 0.815rem;
+  color: #e96886;
+  font-weight: 400 !important;
+  margin-top: -8px;
+  margin-left: 3px; }
+
 @media (max-width: 768px) {
   .pct-ui.modal .modal-content .description .payment-img-wrap {
     padding: 20px 0px; }
@@ -1710,6 +1719,218 @@ img {
     .lightbox-telverify.pct-ui.modal .modal-content .description ul.choose_verify li a.pct-ui.btn-sm {
       text-align: center;
       padding: 0.75rem 0.5rem 0.625rem 0.5rem !important; } }
+
+/*======= 準備出貨 popup =========*/
+.pct-ui.modal .modal-content .description .dispatch_prepare_text {
+  text-align: left;
+  padding: 10px 20px; }
+  .pct-ui.modal .modal-content .description .dispatch_prepare_text .dispatch_prepare_block p {
+    font-size: 0.8125rem;
+    line-height: 1.5rem; }
+
+.pct-ui.modal .modal-content .description .dispatch_prepare_block {
+  margin-bottom: 48px; }
+  .pct-ui.modal .modal-content .description .dispatch_prepare_block .step__number {
+    margin-right: 6px;
+    color: #00afeb;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600; }
+  .pct-ui.modal .modal-content .description .dispatch_prepare_block .step__title {
+    font-size: 0.8125rem;
+    font-weight: 600; }
+
+.pct-ui.modal .modal-content .description .logistics_com {
+  margin: 30px 0 18px 0; }
+  .pct-ui.modal .modal-content .description .logistics_com p.logistics_com-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px; }
+  .pct-ui.modal .modal-content .description .logistics_com .logistics_com-function {
+    margin-bottom: 24px; }
+
+.pct-ui.modal .modal-content .description .dispatch_prepare_block .dispatch_prepare_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.pct-ui.modal .modal-content .description .dispatch_prepare_parcel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 15px 0; }
+
+.pct-ui.modal .modal-content .description .dispatch_prepare_block .dispatch_prepare_parcel .line_box {
+  display: inline;
+  -ms-flex-preferred-size: 280px;
+  flex-basis: 280px;
+  padding: 20px 15px;
+  position: relative; }
+
+.pct-ui.modal .modal-content .description .dispatch_prepare_block .dispatch_prepare_parcel .line_box:before {
+  content: attr(data-title);
+  position: absolute;
+  top: -8px;
+  left: 20px;
+  background-color: #ffffff;
+  display: table;
+  padding: 0 6px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #14b9d5; }
+
+.pct-ui.modal .modal-content .description .dispatch_prepare_text .dispatch_prepare_block ul {
+  margin: 10px 0; }
+
+.pct-ui.modal .modal-content .description .dispatch_prepare_text .dispatch_prepare_block ul li {
+  font-size: 0.8125rem;
+  line-height: 1.5rem; }
+
+.pct-ui.modal .modal-content .description .dispatch_prepare_block .line_box {
+  display: table;
+  border: 1px solid #dadada;
+  padding: 15px;
+  margin-bottom: 6px; }
+
+.pct-ui.modal .modal-content .description .dispatch_prepare_block .line_box .line_box_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-weight: 300;
+  margin-bottom: 4px; }
+
+.pct-ui.modal .modal-content .description .dispatch_prepare_block .line_box .line_box_list span {
+  font-size: 0.8125rem; }
+
+@media (max-width: 768px) {
+  .pct-ui.modal .modal-content .description .dispatch_prepare_block .line_box .line_box_list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 8px; } }
+
+.pct-ui.modal .modal-content .description .dispatch_prepare_block .line_box .line_box_list .title {
+  min-width: 80px;
+  font-weight: 500; }
+
+@media (max-width: 992px) {
+  .pct-ui.modal .modal-content .description .dispatch_prepare_block .dispatch_prepare_parcel .line_box {
+    -ms-flex-preferred-size: 195px;
+    flex-basis: 195px; } }
+
+@media (max-width: 768px) {
+  .pct-ui.modal .modal-content .description .dispatch_prepare_parcel {
+    display: block; }
+  .pct-ui.modal .modal-content .description .dispatch_prepare_block .dispatch_prepare_parcel .line_box {
+    display: block;
+    margin-bottom: 20px; }
+  .pct-ui.modal .modal-content .description .dispatch_prepare_block .dispatch_prepare_group {
+    display: block; }
+  .pct-ui.modal .modal-content .description .dispatch_prepare_block .dispatch_prepare_group .btn_secondary {
+    margin: 20px 0; } }
+
+/* =========== 包裹運送狀態popup =========== */
+.trakinglog_timeline {
+  position: relative; }
+  .trakinglog_timeline:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: calc(120px + 20px);
+    bottom: 0px;
+    width: 2px;
+    background: #f6f6f6;
+    z-index: 2; }
+    @media (max-width: 441px) {
+      .trakinglog_timeline:before {
+        left: calc(80px + 10px); } }
+
+.trakinglog_timeline .trakinglog_timeline_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 30px 0 10px 0; }
+  .trakinglog_timeline .trakinglog_timeline_block .parcel_status_time {
+    padding: 0 10px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 120px;
+    flex: 0 0 120px; }
+    @media (max-width: 441px) {
+      .trakinglog_timeline .trakinglog_timeline_block .parcel_status_time {
+        padding: 0px;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 80px;
+        flex: 0 0 80px; } }
+    .trakinglog_timeline .trakinglog_timeline_block .parcel_status_time ul li {
+      text-align: right;
+      line-height: 1rem; }
+      @media (max-width: 441px) {
+        .trakinglog_timeline .trakinglog_timeline_block .parcel_status_time ul li {
+          text-align: left;
+          line-height: 1rem; } }
+      .trakinglog_timeline .trakinglog_timeline_block .parcel_status_time ul li:first-child {
+        font-size: 0.9375rem; }
+        @media (max-width: 441px) {
+          .trakinglog_timeline .trakinglog_timeline_block .parcel_status_time ul li:first-child {
+            font-size: 0.875rem; } }
+      .trakinglog_timeline .trakinglog_timeline_block .parcel_status_time ul li:last-child {
+        font-size: 0.8125rem;
+        color: #888888; }
+        @media (max-width: 441px) {
+          .trakinglog_timeline .trakinglog_timeline_block .parcel_status_time ul li:last-child {
+            font-size: 0.75rem; } }
+  .trakinglog_timeline .trakinglog_timeline_block .parcel_status_icon {
+    margin-left: 10px;
+    margin-right: 20px;
+    z-index: 3; }
+    @media (max-width: 441px) {
+      .trakinglog_timeline .trakinglog_timeline_block .parcel_status_icon {
+        margin-left: 0px;
+        margin-right: 10px; } }
+    .trakinglog_timeline .trakinglog_timeline_block .parcel_status_icon .parcel_status_icon_item {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: #00afeb;
+      color: #ffffff; }
+      @media (max-width: 441px) {
+        .trakinglog_timeline .trakinglog_timeline_block .parcel_status_icon .parcel_status_icon_item {
+          width: 20px;
+          height: 20px; } }
+      .trakinglog_timeline .trakinglog_timeline_block .parcel_status_icon .parcel_status_icon_item span.pct-icon {
+        position: relative;
+        top: 3px;
+        font-size: 1.125rem; }
+        @media (max-width: 441px) {
+          .trakinglog_timeline .trakinglog_timeline_block .parcel_status_icon .parcel_status_icon_item span.pct-icon {
+            top: 2px;
+            font-size: 1rem; } }
+      .trakinglog_timeline .trakinglog_timeline_block .parcel_status_icon .parcel_status_icon_item.active {
+        background-color: #3ec968; }
+  .trakinglog_timeline .trakinglog_timeline_block .parcel_status_text {
+    padding: 0 10px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: left;
+    font-size: 0.875rem; }
+    @media (max-width: 441px) {
+      .trakinglog_timeline .trakinglog_timeline_block .parcel_status_text {
+        padding: 0px; } }
 
 #img-crop {
   width: 100%;
@@ -2105,11 +2326,11 @@ img {
   font-weight: 300;
   -webkit-text-fill-color: #cccccc; }
 
-.pct-ui.form-readonly input {
+.pct-ui.form.form-readonly input {
   border: 0px;
   -webkit-box-shadow: none;
   box-shadow: none;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 0.75rem 0.5rem 0rem;
   margin: 2px 0 6px 0;
   width: 100%;
   font-size: 0.875rem;
@@ -2124,7 +2345,7 @@ img {
     font-size: 0.875rem;
     right: 15px;
     top: 13px;
-    color: #555555;
+    color: #a9a9a9;
     font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
 
 .unit-before {
@@ -2134,7 +2355,7 @@ img {
     font-size: 0.875rem;
     left: 15px;
     top: 13px;
-    color: #c0c0c0;
+    color: #a9a9a9;
     font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
 
 .pct-ui.form.inputGroup {
@@ -2286,16 +2507,30 @@ img {
   position: absolute;
   content: "NT$"; }
 
+.pct-ui.form.product-weight-kilogram input[type="text"],
+.pct-ui.form.product-weight-kilogram input[type="tel"] {
+  padding-right: 43px;
+  right: 6px; }
+
+.pct-ui.form.product-weight-kilogram:after {
+  position: absolute;
+  content: "kg"; }
+
+.pct-ui.form.product-length-centimeter input[type="text"],
+.pct-ui.form.product-length-centimeter input[type="tel"] {
+  padding-right: 43px;
+  right: 6px; }
+
+.pct-ui.form.product-length-centimeter:after {
+  position: absolute;
+  content: "cm"; }
+
 .form-introduction {
   position: relative;
-  top: -1rem;
   font-size: 0.875rem;
   color: #888888;
   margin-bottom: 1rem;
   text-align: left; }
-  @media (max-width: 576px) {
-    .form-introduction {
-      top: -1rem; } }
 
 .pct-ui.form-label.break-label {
   display: block;
@@ -2308,7 +2543,7 @@ img {
 
 .pct-ui.form-select-label.break-label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: left; }
   .pct-ui.form-select-label.break-label label {
     display: block;
@@ -3913,6 +4148,10 @@ header {
   background-color: #eff3f6;
   height: 48px;
   padding: 0 8px; }
+  .orderlistDetail_total .orderlist_titleBox .orderlist_title {
+    font-weight: 500; }
+    .orderlistDetail_total .orderlist_titleBox .orderlist_title.orderlistDetail_price {
+      color: #00afeb; }
 
 .orderlistDetail_subtotal td:first-child,
 .orderlistDetail_total td:first-child {
@@ -3945,6 +4184,8 @@ header {
     display: inline-block;
     text-align: left;
     width: 72px; }
+    .orderlistDetail_price span.through {
+      text-decoration: line-through; }
 
 .orderlistDetail_discount {
   font-size: 0.875rem;
@@ -3958,7 +4199,7 @@ header {
   min-width: 90px;
   position: absolute;
   right: -90px;
-  top: -1px; }
+  top: -6px; }
   .orderlistDetail_totalamount span.eng-num {
     display: inline-block;
     margin: 0 3px; }
@@ -5502,11 +5743,11 @@ a.pct-view-more-link .pct-ui.card-brandshop .pct-view-more {
   font-weight: 300;
   -webkit-text-fill-color: #cccccc; }
 
-.pct-ui.form-readonly input {
+.pct-ui.form.form-readonly input {
   border: 0px;
   -webkit-box-shadow: none;
   box-shadow: none;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 0.75rem 0.5rem 0rem;
   margin: 2px 0 6px 0;
   width: 100%;
   font-size: 0.875rem;
@@ -5521,7 +5762,7 @@ a.pct-view-more-link .pct-ui.card-brandshop .pct-view-more {
     font-size: 0.875rem;
     right: 15px;
     top: 13px;
-    color: #555555;
+    color: #a9a9a9;
     font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
 
 .unit-before {
@@ -5531,7 +5772,7 @@ a.pct-view-more-link .pct-ui.card-brandshop .pct-view-more {
     font-size: 0.875rem;
     left: 15px;
     top: 13px;
-    color: #c0c0c0;
+    color: #a9a9a9;
     font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
 
 .pct-ui.form.inputGroup {
@@ -5683,16 +5924,30 @@ a.pct-view-more-link .pct-ui.card-brandshop .pct-view-more {
   position: absolute;
   content: "NT$"; }
 
+.pct-ui.form.product-weight-kilogram input[type="text"],
+.pct-ui.form.product-weight-kilogram input[type="tel"] {
+  padding-right: 43px;
+  right: 6px; }
+
+.pct-ui.form.product-weight-kilogram:after {
+  position: absolute;
+  content: "kg"; }
+
+.pct-ui.form.product-length-centimeter input[type="text"],
+.pct-ui.form.product-length-centimeter input[type="tel"] {
+  padding-right: 43px;
+  right: 6px; }
+
+.pct-ui.form.product-length-centimeter:after {
+  position: absolute;
+  content: "cm"; }
+
 .form-introduction {
   position: relative;
-  top: -1rem;
   font-size: 0.875rem;
   color: #888888;
   margin-bottom: 1rem;
   text-align: left; }
-  @media (max-width: 576px) {
-    .form-introduction {
-      top: -1rem; } }
 
 .pct-ui.form select {
   font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei", "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
@@ -5840,7 +6095,7 @@ a.pct-view-more-link .pct-ui.card-brandshop .pct-view-more {
 
 .pct-ui.form-select-label.break-label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: left; }
   .pct-ui.form-select-label.break-label label {
     display: block;
@@ -6266,6 +6521,8 @@ input[type="checkbox"].switch-checkbox:not(:checked) + label {
       .content-block .content-description p.break-text .pct-icon {
         color: #00afeb;
         margin-right: 5px; }
+      .content-block .content-description p.break-text.alert {
+        color: #e96886; }
     @media (max-width: 768px) {
       .content-block .content-description p.break-text {
         margin-bottom: 25px; } }
@@ -6281,6 +6538,8 @@ input[type="checkbox"].switch-checkbox:not(:checked) + label {
         color: #0091d7; }
         .content-block .content-description p.description-text a:hover {
           text-decoration: none; }
+      .content-block .content-description p.description-text.alert {
+        color: #e96886; }
     .content-block .content-description .form-column {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -7899,8 +8158,9 @@ tbody .msg-text {
   .tableBox-batchedit .table__tbody tbody tr td {
     vertical-align: top;
     padding: 10px; }
-    .tableBox-batchedit .table__tbody tbody tr td.single {
-      vertical-align: middle; }
+    .tableBox-batchedit .table__tbody tbody tr td .single {
+      padding: 8px 12px;
+      line-height: 2rem; }
     .tableBox-batchedit .table__tbody tbody tr td .content-description {
       margin-bottom: 0; }
       .tableBox-batchedit .table__tbody tbody tr td .content-description .pct-ui.form {
@@ -8002,7 +8262,7 @@ tbody .msg-text {
 
 @media (max-width: 992px) {
   .tableBox-batchedit .table__tbody tbody .categories td:first-child {
-    background-color: #EFF3F6; }
+    background-color: #eff3f6; }
   .tableBox-batchedit .table__tbody tbody .categories .tableData-header {
     height: auto;
     background-color: rgba(255, 255, 255, 0);
@@ -8644,6 +8904,41 @@ tbody .msg-text {
 
 .content-description .logistic-wrap {
   margin-bottom: 20px; }
+  .content-description .logistic-wrap .pct-ui.accordion .accordion-caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .content-description .logistic-wrap .pct-ui.accordion .accordion-caption .caption-inner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .content-description .logistic-wrap .pct-ui.accordion .accordion-caption .caption-inner .caption-title-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .content-description .logistic-wrap .pct-ui.accordion .accordion-caption .caption-inner .caption-title-box .caption-title {
+          font-size: 0.9375rem;
+          line-height: 16px;
+          margin-right: 12px; }
+        .content-description .logistic-wrap .pct-ui.accordion .accordion-caption .caption-inner .caption-title-box .caption-subTitle {
+          color: #555555;
+          font-size: 0.8125rem;
+          line-height: 16px; }
+    .content-description .logistic-wrap .pct-ui.accordion .accordion-caption .caption-text-box {
+      margin-left: auto;
+      min-width: 90px;
+      text-align: right; }
+    .content-description .logistic-wrap .pct-ui.accordion .accordion-caption .caption-switch {
+      margin-left: 12px; }
+      .content-description .logistic-wrap .pct-ui.accordion .accordion-caption .caption-switch > .pct-ui.form {
+        margin-bottom: 0; }
+  .content-description .logistic-wrap .pct-ui.accordion .accordion-liquid-container .liquid-container-inner .shipnotice li {
+    font-size: 0.8125rem;
+    line-height: 1.25rem; }
+    .content-description .logistic-wrap .pct-ui.accordion .accordion-liquid-container .liquid-container-inner .shipnotice li .highlight {
+      color: #00afeb; }
+    .content-description .logistic-wrap .pct-ui.accordion .accordion-liquid-container .liquid-container-inner .shipnotice li .alert {
+      color: #e96886; }
 
 @media (max-width: 576px) {
   .content-description .logistic-wrap .pct-ui.accordion .accordion-caption .caption-inner .caption-title-box {
@@ -8782,14 +9077,15 @@ tbody .msg-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .pct-ui.modal .modal-content .warranty-wrap .pct-ui.form.select {
+    margin-left: 15px;
+    top: 8px; }
 
 .pct-ui.modal .modal-content .pct-ui.form.number input[type="number"] {
   width: 150px; }
 
 .pct-ui.modal .modal-content .pct-ui.form.select {
-  margin-top: 7px;
-  margin-bottom: 0px !important;
-  margin-left: 15px; }
+  margin-bottom: 0px !important; }
   .pct-ui.modal .modal-content .pct-ui.form.select select {
     min-width: 120px; }
 
@@ -9176,7 +9472,7 @@ tbody .msg-text {
 .td-inline .content-block {
   -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
   box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
-  background-color: #fff;
+  background-color: #ffffff;
   margin-bottom: 0px;
   overflow: hidden; }
   .td-inline .content-block .content-description {
@@ -9214,3 +9510,23 @@ tbody .msg-text {
     color: #0091d7; }
     .product-add-alert > a:hover {
       text-decoration: none; }
+
+.deliveryDays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .deliveryDays input {
+    max-width: 60px;
+    margin-right: 8px; }
+  .deliveryDays > p.align-right {
+    padding-left: 15px; }
+  .deliveryDays .secondary {
+    color: #555555; }
+
+.exchangeRate {
+  position: relative;
+  left: 130px;
+  top: -1.5rem; }

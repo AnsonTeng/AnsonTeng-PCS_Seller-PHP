@@ -91,7 +91,6 @@
             <img src="img/spec-sample-m.png" alt="" class="img-fluid hidden-md-up">
         </div>
     </div>
-
 </div>
 
 
@@ -132,13 +131,44 @@
 </div>
 
 <!--賣家指定運費編輯運費-->
-<div id="pct-lightbox-editShipping" class="pct-ui modal">
+<div id="pct-lightbox-editShipping" class="pct-ui modal medium">
     <i class="pct-icon icon-delete lightbox_close"></i>
     <div class="modal-header">賣家指定運費</div>
     <div class="modal-content">
         <div class="description">
-            <div class="pct-ui form fluid shippingcost">
-                <input class="form-control" type="text">
+
+            <div class="pct-ui form-select-label break-label">
+                <label class="required">出貨地</label>
+                <div class="pct-ui form select">
+                    <select>
+                        <option value="0">請選擇</option>
+                        <option value="1">Taiwan / 台灣</option>
+                        <option value="2">Japan / 日本</option>
+                        <option value="3">Korea / 韓國</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="pct-ui form-label break-label">
+                <label class="required">寄送天數</label>
+                <div class="pct-ui form text-with-input deliveryDays">
+                    <input type="tel" placeholder="5">
+                    <p class="align-right">天<span class="secondary">（不含備貨時間）</span></p>
+                </div>
+            </div>
+
+            <div class="pct-ui form-label break-label">
+                <label class="required">商品運費</label>
+                <div class="pct-ui form">
+                    <div class="pct-ui form product-price-TWdollar unit-before">
+                        <input type="tel" placeholder="">
+                    </div>
+                    <div class="pct-ui form product-price-THbaht unit-before">
+                        <input type="tel" placeholder="">
+                    </div>
+                    <span class="form-introduction">按照每日浮動匯率計算泰銖價格，參考匯率：<span>0.991</span><span>(DD/MM/YYYY)</span>
+                    </span>
+                </div>
             </div>
 
         </div>
@@ -230,6 +260,19 @@
             <div class="title"><span class="eng-num">STEP 03.</span> 查詢上架進度及成功/失敗筆數</div>
             <p>執行上傳，上傳檔案必需每筆商品資料均正確，才可成功上架整批資料。
                 賣家可自行下載錯誤參考檔，最後一欄會附上資料異常原因，賣家可自行修正後再重新上傳。整批資料上傳，系統將會於2-3個工作天批次處理，賣家可至商品上架>大量上架紀錄 中查詢 進度及成功失敗筆數。</p><br>
+        </div>
+    </div>
+</div>
+
+
+<!-- 購買多件商品 -->
+<div id="pct-lightbox-aboutHScode" class="pct-ui modal">
+    <i class="pct-icon icon-delete lightbox_close"></i>
+    <div class="modal-content">
+        <div class="description">
+            <div class="title">國際商品統一分類代碼 (HS Code)</div>
+            <p>HS CODE 預設為系統依商品分類分配的代碼，若您知道自己商品的 HS Code，可自行輸入。有利於買家結帳時，為您的商品取得更準確的稅率進行運算。若您所輸入的 HS CODE 系統暫時對應不到，可以提交至
+                PChome Thai，我們會盡快將您所提交的 HS CODE 建入資料庫內。</p>
         </div>
     </div>
 </div>

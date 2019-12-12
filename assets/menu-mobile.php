@@ -38,8 +38,8 @@
                     <div class="pct-icon icon-globe"></div>
                 </div>
                 <div class="languageBtnGroup">
-                    <div class="languageBtn languageBtn-select languageBtn-th"><span>ไทย</span></div>
-                    <div class="languageBtn languageBtn-ch"><span>中文</span></div>
+                    <div class="languageBtn languageBtn-th"><span>ไทย</span></div>
+                    <div class="languageBtn languageBtn-ch languageBtn-select"><span>中文</span></div>
                     <div class="languageBtn languageBtn-en"><span>English</span></div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                     <li class="hassub">
                         <a class="seller-nav-link" href="#"><span class="pct-icon icon-payment"></span>代收款項</a>
                         <ul class="nav__sublink">
-                            <li><a href="" onclick="window.location.href='selleracc-withdrawal.php' ">款項查詢</a></li>
+                            <li><a href="" onclick="window.location.href='selleracc-selleracc.php' ">款項查詢</a></li>
                             <li><a href="" onclick="window.location.href='selleracc-fee.php' ">費用查詢</a></li>
                             <li><a href="" onclick="window.location.href='selleracc-wdset.php' ">結算設定</a></li>
                         </ul>

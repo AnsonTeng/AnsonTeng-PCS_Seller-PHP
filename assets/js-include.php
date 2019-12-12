@@ -148,6 +148,16 @@ $(document).ready(function() {
         return false;
     });
 
+    // 燈箱－出貨包裹運送狀態
+    $('.trackingLogBtn').on('click', function() {
+        $('#pct-lightbox').children('.pct-lightBox_inner').children("div").hide();
+        // 要顯示的燈箱ＩＤ名稱
+        $('#pct-lightbox-trackingLog').show();
+        $('#pct-lightbox').toggle();
+        // 鎖住背景物件滑動函式
+        lockBody();
+        return false;
+    });
 
     // 燈箱－退款明細
     $('.refunddetailBtn').on('click', function() {

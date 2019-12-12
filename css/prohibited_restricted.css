@@ -359,6 +359,8 @@ img {
       .content-block .content-description p.break-text .pct-icon {
         color: #00afeb;
         margin-right: 5px; }
+      .content-block .content-description p.break-text.alert {
+        color: #e96886; }
     @media (max-width: 768px) {
       .content-block .content-description p.break-text {
         margin-bottom: 25px; } }
@@ -374,6 +376,8 @@ img {
         color: #0091d7; }
         .content-block .content-description p.description-text a:hover {
           text-decoration: none; }
+      .content-block .content-description p.description-text.alert {
+        color: #e96886; }
     .content-block .content-description .form-column {
       display: -webkit-box;
       display: -ms-flexbox;

@@ -42,6 +42,10 @@
                     color: $primaryColor;
                     margin-right: 5px;
                 }
+
+                &.alert {
+                    color: $colorPinkRed;
+                }
             }
         }
         @media (max-width: $break-sm) {
@@ -68,6 +72,9 @@
                 &:hover {
                     text-decoration: none;
                 }
+            }
+            &.alert {
+                color: $colorPinkRed;
             }
         }
 

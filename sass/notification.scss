@@ -1,0 +1,189 @@
+// 變數
+@import "library/_variables";
+//混用
+@import "library/_mixin";
+//繼承
+@import "library/_extend";
+
+@import "layout.scss";
+
+//Page Components
+//TAB導航
+@import "library/_tabnav";
+
+.pct-ui.tab-nav-bar {
+    position: -webkit-sticky;
+    /* for safari */
+    position: sticky;
+    top: calc(#{$headerHeight_table} + #{$navHeight_table} - 38px);
+    z-index: 100;
+}
+
+//全部設為已讀
+.notification-read-all {
+    // margin-top: 10px;
+    position: -webkit-sticky;
+    /* for safari */
+    position: sticky;
+    top: 132px;
+    z-index: 99;
+    background-color: $colorWhite;
+    display: flex;
+    justify-content: flex-end;
+    padding: 3px 10px;
+    border-bottom: 1px solid $colorLightGray;
+
+    a.pct-ui.btn-sm {
+        .pct-btn-icon {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.section-notification-list {
+    //通知列表
+    .notification-list-wrap {
+        background-color: $colorWhite;
+        // @extend %shadow-style-block-2;
+        padding-bottom: 50px;
+
+        .notification-list-item {
+            display: flex;
+            padding: 0.9375rem;
+            margin-bottom: 1px;
+            // border-bottom: 2px solid #FBFBFB;
+            text-align: left;
+            .list-figure {
+                width: 75px;
+                height: 75px;
+                flex-shrink: 0;
+                border: 1px solid $colorLightGray;
+                .list-figure-inner {
+                    @extend %figure-inner;
+                    background: $secondaryColor !important;
+                    background: -webkit-linear-gradient(left, $secondaryColor 0%, $secondaryColor 100%);
+                    background: linear-gradient(to right, $secondaryColor 0%, $secondaryColor 100%);
+                }
+                .list-figure-img {
+                    @extend %figure-img;
+                }
+            }
+            .notification-list-content {
+                width: 100%;
+                padding-left: 0.625rem;
+                .notification-list-title {
+                    display: flex;
+                    justify-content: space-between;
+                    p {
+                        @include text-overflow($line: 1);
+                        font-size: 0.9375rem;
+                        font-weight: 400;
+                        height: 1rem;
+                        width: 100%;
+                        flex-shrink: 0;
+                        margin-bottom: 0.3125rem;
+                        text-align: left;
+                    }
+                    .pct-icon {
+                        cursor: pointer;
+                        color: $colorGray;
+                    }
+                }
+                .notification-content {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+
+                    p {
+                        @include text-overflow;
+                        font-size: 0.9375rem;
+                        line-height: 1.375rem;
+                        height: 40px;
+                        font-weight: 300;
+                        color: $colorDarkGray;
+                    }
+                }
+            }
+            &.unread {
+                background-color: $colorLightBlue;
+            }
+            &.read {
+                background-color: #ffffff;
+            }
+            &.read:hover {
+                background-color: #fcfcfc;
+            }
+        }
+    }
+
+    .pct-btn-loadcontent {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: $break-lg) {
+    .pct-ui.tab-nav-bar {
+        .pct-ui.tab-pointing {
+            -webkit-overflow-scrolling: touch;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+
+            ul.tab-items {
+                li {
+                    a {
+                        padding: 1.375rem 1rem 1.1875rem 1rem;
+                        margin: 0 0.625rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: $break-md) {
+    .pct-ui.tab-nav-bar {
+        position: -webkit-sticky;
+        /* for safari */
+        position: sticky;
+        top: calc(#{$headerHeight_table} + #{$navHeight_table});
+        z-index: 100;
+
+        .pct-ui.tab-pointing {
+            -webkit-overflow-scrolling: touch;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+
+            ul.tab-items {
+                li {
+                    a {
+                        padding: 1.375rem 1rem 1.1875rem 1rem;
+                        margin: 0 0.625rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: $break-sm) {
+    .pct-ui.tab-nav-bar {
+        top: $headerHeight_mobile;
+    }
+
+    //全部設為已讀
+    .notification-read-all {
+        top: 114px;
+    }
+    .section-notification-list {
+        //通知列表
+        .notification-list-wrap {
+            .notification-list-item {
+                .list-figure {
+                    width: 55px;
+                    height: 55px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+}

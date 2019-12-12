@@ -27,16 +27,27 @@
 //區塊－訂單清單
 @import "library/_section-InfoList";
 
+//表單物件
+// 輸入框
+@import "library/_forms_input";
+// 下拉選單
+@import "library/_forms_select";
+// 表單標籤
+@import "library/_forms_label";
+// Checkbox 核取方塊
+@import "library/_forms_checkbox";
+
 // section 金額統計
 .section-accounting {
     width: 100%;
     background-color: $colorWhite;
     padding: 15px 20px;
-    border-radius: 2px 2px 0px 0px;
+    border-radius: 2px;
     position: relative;
-    margin-bottom: 0px;
+    margin-bottom: 1rem;
     @extend %shadow-style-card;
 
+    // 金額統計區
     .accountingBox {
         display: flex;
         flex-direction: row;
@@ -54,6 +65,7 @@
             width: 100%;
             margin: 0 auto;
             padding-right: 30px;
+            margin-bottom: 10px;
 
             // 共用
             .items {
@@ -186,6 +198,44 @@
                 margin: 4px;
             }
         }
+    }
+
+    // 輸入提領金額區
+    .accountAmountBox {
+        width: 100%;
+        margin: 1rem 0;
+
+        > .form-label {
+            display: flex;
+            flex-direction: row;
+
+            @media (max-width: $break-md) {
+                flex-direction: column;
+            }
+        }
+
+        .pct-ui.form-label label {
+            min-width: 120px;
+        }
+
+        .pct-ui.form-label input {
+            min-width: 300px;
+        }
+
+        p.alert {
+            color: $colorPinkRed;
+            font-size: 0.875rem;
+        }
+
+        .pct-ui.form.form-readonly input {
+            min-width: 300px;
+        }
+    }
+
+    // 提領操作按鈕區
+    .accountActionBox {
+        margin: 2rem 0 1rem 0;
+        text-align: center;
     }
 }
 
@@ -561,12 +611,14 @@
 }
 
 // ------ 表格類型－交易款項與交易費用（覆寫_table-backendlist）--------------------------------------
-
 .tableBox-selleracc-withdrawal,
 .tableBox-selleracc-fee {
     .table__thead {
         table {
             thead {
+                .pct-ui.form.checkbox {
+                    margin-bottom: 0px;
+                }
                 tr {
                     th {
                         height: 55px;
@@ -624,12 +676,16 @@
                         position: relative;
                         left: -2px;
                     }
+                    .pct-ui.form.checkbox {
+                        margin-bottom: 0px;
+                        text-align: center;
+                    }
                 }
                 td:first-child {
                     background-color: rgba($colorWhite, 0);
                     padding: 8px;
                     // padding-left: 18px;
-                    font-weight: 500;
+                    // font-weight: 500;
                     text-align: left;
 
                     span i {
@@ -656,10 +712,15 @@
 
 .tableBox-selleracc-fee {
     .table__tbody {
-        tr {
-            td {
-                padding-top: 20px !important;
-                padding-bottom: 20px !important;
+        tbody {
+            tr {
+                td {
+                    padding-top: 20px !important;
+                    padding-bottom: 20px !important;
+                }
+                td:first-child {
+                    text-align: center;
+                }
             }
         }
     }
@@ -899,6 +960,13 @@
     }
 }
 // ------ 表格類型－大量編輯（覆寫_table-backendlist）End ----------------------
+
+// 「結算狀態說明」 按鈕
+.settlementStatusBtn {
+    .pct-btn-icon {
+        color: $secondaryColor;
+    }
+}
 
 // 新增／修改 提領帳戶
 .content-bankAccountSetting {
