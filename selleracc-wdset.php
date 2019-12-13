@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
-    <title>PChome SEA | 提領設定</title>
+    <title>PChome SEA | 結算設定</title>
     <!-- Google Tag Manager -->
     <script>
     (function(w, d, s, l, i) {
@@ -106,14 +106,14 @@
                                     <li class="pct-icon icon-angle-right"></li>
                                     <li>PChome 代收款項</li>
                                     <li class="pct-icon icon-angle-right"></li>
-                                    <li>提領設定</li>
+                                    <li>結算設定</li>
                                 </ul>
                             </div>
 
 
                             <!-- 新增／修改 提領帳戶-->
                             <div class="content-block">
-                                <div class="content-title">提領設定</div>
+                                <div class="content-title">結算設定</div>
                                 <div class="content-description content-bankAccountSetting">
 
                                     <div class="accountFlexbox">
