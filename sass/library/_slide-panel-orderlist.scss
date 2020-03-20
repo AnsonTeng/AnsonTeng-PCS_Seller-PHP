@@ -17,8 +17,10 @@
     height: 48px;
     padding: 0 8px;
     .orderlist_titleBox {
+        position: relative;
         .orderlist_title {
-            font-weight: 500;
+            font-weight: 700;
+            font-size: 1rem;
             &.orderlistDetail_price {
                 color: $primaryColor;
             }
@@ -61,25 +63,25 @@
 
 // 訂單明細 價格
 .orderlistDetail_price {
+    position: relative;
     text-align: right;
     span {
         display: inline-block;
         text-align: left;
-        width: 72px;
+        width: 80px;
+    }
+    // 折扣金額負號
+    &.orderlistDetail_discount {
+        color: $colorPinkRed;
+        position: relative;
+        left: -9px;
 
-        &.through {
-            text-decoration: line-through;
+        span::before {
+            position: absolute;
+            content: "-";
+            color: $colorPinkRed;
         }
     }
-}
-
-// 折扣金額負號
-.orderlistDetail_discount {
-    font-size: 0.875rem;
-    font-weight: 500;
-    text-align: right;
-    line-height: 22px;
-    padding-right: 8px;
 }
 
 // 訂單明細 數量總計
@@ -135,7 +137,7 @@ a.pct-ui.btn-xs.productscreenshotBtn {
 
     .toggleBar_arrow.pct-icon {
         font-size: 1rem;
-        color: $secondaryColor;
+        color: $primaryColor;
         position: absolute;
         z-index: 1;
         right: 10px;
@@ -278,7 +280,7 @@ a.pct-ui.btn-xs.productscreenshotBtn {
         width: 100%;
         line-height: 50px;
         font-size: 0.9375rem;
-        color: $secondaryColor;
+        color: $primaryColor;
         background-color: $colorWhite;
 
         .pct-icon {
@@ -287,7 +289,7 @@ a.pct-ui.btn-xs.productscreenshotBtn {
             font-size: 18px;
             width: auto;
             height: auto;
-            color: $secondaryColor;
+            color: $primaryColor;
             top: 2px;
             left: 1px;
             margin-right: 3px;

@@ -83,9 +83,9 @@
     </div>
     <div class="modal-actions">
         <!--清除-->
-        <a href="#" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
         <!--確定結算-->
-        <a href="#" class="pct-ui btn btn-secondary">確定結算</a>
+        <a href="#" class="pct-ui btn btn-primary">確定結算</a>
     </div>
 </div>
 <!-- 燈箱結束-->
@@ -137,8 +137,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined">取消重填</a>
-        <a href="#" class="pct-ui btn btn-secondary">確定儲存</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined">取消重填</a>
+        <a href="#" class="pct-ui btn btn-primary">確定儲存</a>
     </div>
 </div>
 
@@ -196,8 +196,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined">取消重填</a>
-        <a href="#" class="pct-ui btn btn-secondary">確定儲存</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined">取消重填</a>
+        <a href="#" class="pct-ui btn btn-primary">確定儲存</a>
     </div>
 </div>
 
@@ -457,8 +457,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">確定</a>
+        <a href="" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">確定</a>
     </div>
 </div>
 <!-- 燈箱結束-->
@@ -473,8 +473,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">確定</a>
+        <a href="" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">確定</a>
     </div>
 </div>
 <!-- 燈箱結束-->
@@ -491,8 +491,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">確定</a>
+        <a href="" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">確定</a>
     </div>
 </div>
 <!-- 燈箱結束-->

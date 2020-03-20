@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport"
-        content="target-densitydpi=device-dpi, width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description"
-        content="PChome Online Inc. เป็นกลุ่มบริษัทอีคอมเมิร์ซที่ใหญ่ที่สุดในไต้หวัน ขณะนี้เราได้เปิดให้บริการในประเทศไทยฟรีสำหรับทั้งผู้ขายและผู้ซื้อ คุณอยากจะขายหรืออยากจะซื้อของอะไรก็ได้ทั้งนั้นที่ PChome Thai ไม่ว่าจะเครื่องสำอาง, เสื้อผ้าแฟชั่น, เครื่องใช้ไฟฟ้า, หนังสือ, ของเล่น และอื่นๆ อีกมากมาย">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="PChome Online Inc. เป็นกลุ่มบริษัทอีคอมเมิร์ซที่ใหญ่ที่สุดในไต้หวัน ขณะนี้เราได้เปิดให้บริการในประเทศไทยฟรีสำหรับทั้งผู้ขายและผู้ซื้อ คุณอยากจะขายหรืออยากจะซื้อของอะไรก็ได้ทั้งนั้นที่ PChome Thai ไม่ว่าจะเครื่องสำอาง, เสื้อผ้าแฟชั่น, เครื่องใช้ไฟฟ้า, หนังสือ, ของเล่น และอื่นๆ อีกมากมาย">
     <meta property="og:title" content="ออนไลน์ช้อปปิ้ง ที่ทุกสิ่งเป็นเรื่องแสนง่ายและสนุก" />
-    <meta property="og:description"
-        content="หาได้ทุกอย่างที่ต้องการที่ พีซีโฮมไทย - เครื่องสำอาง,เสื้อผ้าแฟชั่น, อุปกรณ์ไฟฟ้า, หนังสือ, ของเล่น และอื่นอีกมากมาย" />
+    <meta property="og:description" content="หาได้ทุกอย่างที่ต้องการที่ พีซีโฮมไทย - เครื่องสำอาง,เสื้อผ้าแฟชั่น, อุปกรณ์ไฟฟ้า, หนังสือ, ของเล่น และอื่นอีกมากมาย" />
     <meta property="og:image" content="http://cimg.pchome.co.th/fb/PchomeShop.jpg" />
     <meta property="og:url" content="http://www.pchome.co.th" />
     <meta property="og:site_name" content="PChome SEA" />
@@ -20,35 +17,35 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#00afeb">
     <meta name="msapplication-TileColor" content="#00afeb">
     <meta name="theme-color" content="#00afeb">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/normalize.css">
     <!-- PAGE -->
     <link rel="stylesheet" type="text/css" href="css/selleracc.css">
     <!-- Icon Font -->
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
     <title>PChome SEA | 款項提領</title>
     <!-- Google Tag Manager -->
     <script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-52F2P7M');
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-52F2P7M');
     </script>
     <!-- End Google Tag Manager -->
     <!--[if lt IE 9]>
@@ -60,8 +57,7 @@
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52F2P7M" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52F2P7M" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- 說明FOR RD: 填寫資料正確送出 請跑這一個區塊的LOADING-->
@@ -112,8 +108,7 @@
                             <div class="msgbar">
                                 <div class="alert">
                                     <span class="pct-icon icon-alert"></span>
-                                    <span class="pct-icon icon-delete"
-                                        onclick="this.parentElement.style.display='none';"></span>
+                                    <span class="pct-icon icon-delete" onclick="this.parentElement.style.display='none';"></span>
                                     您尚未提供銀行帳號，請前往設定。
                                 </div>
                             </div>
@@ -140,8 +135,7 @@
                                                 </div>
                                                 <!-- 文字包 -->
                                                 <div class="item-amountBox-text">
-                                                    <div class="subtitle"><span class="subtitle-text">貨款總金額</span><span
-                                                            class="currency">TWD</span></div>
+                                                    <div class="subtitle"><span class="subtitle-text">貨款總金額</span><span class="currency">TWD</span></div>
                                                     <div class="amount eng-num">179,843.87</div>
                                                 </div>
                                             </div>
@@ -177,9 +171,8 @@
                                     <!-- 操作按鈕 -->
                                     <!-- <div class="accountingItem"> -->
                                     <div class="item-btnBox">
-                                        <!-- <a href="#" class="pct-ui btn btn-secondary btn-fluid withdrawalBtn">貨款結算 Withdrawal </a>-->
-                                        <a href="#" class="pct-ui btn btn-secondary btn-fluid"
-                                            onclick="window.location.href='selleracc-withdrawal.php' ">貨款結算</a>
+                                        <!-- <a href="#" class="pct-ui btn btn-primary btn-fluid withdrawalBtn">貨款結算 Withdrawal </a>-->
+                                        <a href="#" class="pct-ui btn btn-primary btn-fluid" onclick="window.location.href='selleracc-withdrawal.php' ">貨款結算</a>
 
 
 
@@ -260,8 +253,7 @@
                                         <tbody>
                                             <tr class="normallist-item">
                                                 <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>買家代理人收到貨款</span>
+                                                    <span><i class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>買家代理人收到貨款</span>
                                                 </td>
                                                 <td data-title="日期">
                                                     <span class="eng-num">2020/05/10</span>
@@ -282,8 +274,7 @@
                                                     <span class="eng-num">959,153.87</span>
                                                 </td>
                                                 <td data-title="明細">
-                                                    <a class="pct-ui btn-xs accountStepBtn"
-                                                        data-pttranid="8051900007184">貨款明細</a>
+                                                    <a class="pct-ui btn-xs accountStepBtn" data-pttranid="8051900007184">貨款明細</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -292,8 +283,7 @@
                                         <tbody>
                                             <tr class="normallist-item">
                                                 <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>轉可用貨款</span>
+                                                    <span><i class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>轉可用貨款</span>
                                                 </td>
                                                 <td data-title="日期">
                                                     <span class="eng-num">2020/05/20</span>
@@ -314,8 +304,7 @@
                                                     <span class="eng-num">959,153.87</span>
                                                 </td>
                                                 <td data-title="明細">
-                                                    <a class="pct-ui btn-xs accountStepCompleteBtn"
-                                                        data-pttranid="8051900007184">貨款明細</a>
+                                                    <a class="pct-ui btn-xs accountStepCompleteBtn" data-pttranid="8051900007184">貨款明細</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -324,16 +313,13 @@
                                         <tbody>
                                             <tr class="normallist-item">
                                                 <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>準備結算</span>
+                                                    <span><i class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>準備結算</span>
                                                 </td>
                                                 <td data-title="日期">
                                                     <span class="eng-num">2020/05/21</span>
                                                 </td>
                                                 <td data-title="單據號碼">
-                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
-                                                            data-panel="orderDetails" href="#"
-                                                            onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
+                                                    <span class="eng-num"><a class="js-pct-panel-trigger" data-panel="orderDetails" href="#" onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
                                                 </td>
                                                 <td data-title="交易類別">
                                                     <span>結算</span>
@@ -348,8 +334,7 @@
                                                     <span class="eng-num">959,153.87</span>
                                                 </td>
                                                 <td data-title="明細">
-                                                    <a class="pct-ui btn-xs withdrawalStepBtn"
-                                                        data-pttranid="8051900007184">結算明細</a>
+                                                    <a class="pct-ui btn-xs withdrawalStepBtn" data-pttranid="8051900007184">結算明細</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -358,16 +343,14 @@
                                         <tbody>
                                             <tr class="normallist-item">
                                                 <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-checked icon-back icon-back-green"></i>繳交成功</span>
+                                                    <span><i class="pct-btn-icon icon-checked icon-back icon-back-green"></i>繳交成功</span>
                                                 </td>
                                                 <td data-title="日期">
                                                     <span class="eng-num">2020/05/23</span>
                                                 </td>
                                                 <td data-title="單據號碼">
 
-                                                    <span class="eng-num"><a href="#"
-                                                            class="payFeeBtn">PT2020051000002</a></span>
+                                                    <span class="eng-num"><a href="#" class="payFeeBtn">PT2020051000002</a></span>
                                                 </td>
                                                 <td data-title="交易類別">
                                                     <span>繳交費用</span>
@@ -382,10 +365,8 @@
                                                     <span class="eng-num">283,568.87</span>
                                                 </td>
                                                 <td data-title="明細">
-                                                    <a target="_blank" class="pct-ui btn-xs"
-                                                        href="downloadPdf/PT2020051000002">發票</a>
-                                                    <a target="_blank" class="pct-ui btn-xs"
-                                                        href="downloadPdf/PT2020051000002">收據</a>
+                                                    <a target="_blank" class="pct-ui btn-xs" href="downloadPdf/PT2020051000002">發票明細</a>
+                                                    <a target="_blank" class="pct-ui btn-xs" href="downloadPdf/PT2020051000002">收據明細</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -394,16 +375,13 @@
                                         <tbody>
                                             <tr class="normallist-item">
                                                 <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>匯款處理中</span>
+                                                    <span><i class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>匯款處理中</span>
                                                 </td>
                                                 <td data-title="日期">
                                                     <span class="eng-num">2020/05/24</span>
                                                 </td>
                                                 <td data-title="單據號碼">
-                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
-                                                            data-panel="orderDetails" href="#"
-                                                            onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
+                                                    <span class="eng-num"><a class="js-pct-panel-trigger" data-panel="orderDetails" href="#" onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
                                                 </td>
                                                 <td data-title="交易類別">
                                                     <span>結算</span>
@@ -418,8 +396,7 @@
                                                     <span class="eng-num">959,153.87</span>
                                                 </td>
                                                 <td data-title="明細">
-                                                    <a class="pct-ui btn-xs withdrawalStepBtn"
-                                                        data-pttranid="8051900007184">結算明細</a>
+                                                    <a class="pct-ui btn-xs withdrawalStepBtn" data-pttranid="8051900007184">結算明細</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -428,16 +405,13 @@
                                         <tbody>
                                             <tr class="normallist-item">
                                                 <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-checked icon-back icon-back-green"></i>撥款成功</span>
+                                                    <span><i class="pct-btn-icon icon-checked icon-back icon-back-green"></i>撥款成功</span>
                                                 </td>
                                                 <td data-title="日期">
                                                     <span class="eng-num">2020/05/26</span>
                                                 </td>
                                                 <td data-title="單據號碼">
-                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
-                                                            data-panel="orderDetails" href="#"
-                                                            onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
+                                                    <span class="eng-num"><a class="js-pct-panel-trigger" data-panel="orderDetails" href="#" onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
                                                 </td>
                                                 <td data-title="交易類別">
                                                     <span>結算</span>
@@ -452,8 +426,7 @@
                                                     <span class="eng-num">283,568.87</span>
                                                 </td>
                                                 <td data-title="明細">
-                                                    <a class="pct-ui btn-xs withdrawalStepBtn"
-                                                        data-pttranid="8051900007184">撥款明細</a>
+                                                    <a class="pct-ui btn-xs withdrawalStepBtn" data-pttranid="8051900007184">撥款明細</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -462,16 +435,13 @@
                                         <tbody>
                                             <tr class="normallist-item">
                                                 <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-alert-nofill icon-back icon-back-red"></i>撥款失敗</span>
+                                                    <span><i class="pct-btn-icon icon-alert-nofill icon-back icon-back-red"></i>撥款失敗</span>
                                                 </td>
                                                 <td data-title="日期">
                                                     <span class="eng-num">2020/05/26</span>
                                                 </td>
                                                 <td data-title="單據號碼">
-                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
-                                                            data-panel="orderDetails" href="#"
-                                                            onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
+                                                    <span class="eng-num"><a class="js-pct-panel-trigger" data-panel="orderDetails" href="#" onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
                                                 </td>
                                                 <td data-title="交易類別">
                                                     <span>結算</span>
@@ -486,8 +456,7 @@
                                                     <span class="eng-num">283,568.87</span>
                                                 </td>
                                                 <td data-title="明細">
-                                                    <a class="pct-ui btn-xs withdrawalStepBtn"
-                                                        data-pttranid="8051900007184">撥款明細</a>
+                                                    <a class="pct-ui btn-xs withdrawalStepBtn" data-pttranid="8051900007184">撥款明細</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -496,8 +465,7 @@
                                         <tbody>
                                             <tr class="normallist-item">
                                                 <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>已轉可結算</span>
+                                                    <span><i class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>已轉可結算</span>
                                                 </td>
                                                 <td data-title="日期">
                                                     <span class="eng-num">2020/05/27</span>
@@ -506,7 +474,7 @@
                                                     <span class="eng-num">70519001863</span>
                                                 </td>
                                                 <td data-title="交易類別">
-                                                    <span>訂單</span>
+                                                    <span>結算回沖</span>
                                                 </td>
                                                 <td data-title="金額 THB">
                                                     <span class="eng-num">฿1,271.34</span>
@@ -518,8 +486,7 @@
                                                     <span class="eng-num">283,568.87</span>
                                                 </td>
                                                 <td data-title="明細">
-                                                    <a class="pct-ui btn-xs accountStepCompleteBtn"
-                                                        data-pttranid="8051900007184">貨款明細</a>
+
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -529,8 +496,7 @@
                                         <tbody>
                                             <tr class="normallist-item">
                                                 <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>退款中</span>
+                                                    <span><i class="pct-btn-icon icon-wait icon-back icon-back-orange"></i>退款中</span>
                                                 </td>
                                                 <td data-title="日期">
                                                     <span class="eng-num">2020/05/20</span>
@@ -539,7 +505,7 @@
                                                     <span class="eng-num">70519001863</span>
                                                 </td>
                                                 <td data-title="交易類別">
-                                                    <span>訂單</span>
+                                                    <span>退款</span>
                                                 </td>
                                                 <td data-title="金額 THB">
                                                     <span class="eng-num">฿45,699</span>
@@ -551,8 +517,7 @@
                                                     <span class="eng-num">959,153.87</span>
                                                 </td>
                                                 <td data-title="明細">
-                                                    <a class="pct-ui btn-xs accountStepCompleteBtn"
-                                                        data-pttranid="8051900007184">貨款明細</a>
+                                                    <a class="pct-ui btn-xs accountStepCompleteBtn" data-pttranid="8051900007184">貨款明細</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -562,8 +527,7 @@
                                         <tbody>
                                             <tr class="normallist-item">
                                                 <td data-title="狀態">
-                                                    <span><i
-                                                            class="pct-btn-icon icon-checked icon-back icon-back-green"></i>完成退款</span>
+                                                    <span><i class="pct-btn-icon icon-checked icon-back icon-back-green"></i>完成退款</span>
                                                 </td>
                                                 <td data-title="日期">
                                                     <span class="eng-num">2020/05/23</span>
@@ -572,7 +536,7 @@
                                                     <span class="eng-num">70519001863</span>
                                                 </td>
                                                 <td data-title="交易類別">
-                                                    <span>訂單</span>
+                                                    <span>退款</span>
                                                 </td>
                                                 <td data-title="金額 THB">
                                                     <span class="eng-num">฿45,699</span>
@@ -584,8 +548,7 @@
                                                     <span class="eng-num">959,153.87</span>
                                                 </td>
                                                 <td data-title="明細">
-                                                    <a class="pct-ui btn-xs accountStepCompleteBtn"
-                                                        data-pttranid="8051900007184">貨款明細</a>
+                                                    <a class="pct-ui btn-xs accountStepCompleteBtn" data-pttranid="8051900007184">貨款明細</a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -602,7 +565,7 @@
                                     </table>
                                 </div>
                                 <!-- PC 版 列出所有頁碼 -->
-                                <div class="pct-ui page-pagination">
+                                <div class="pct-ui page-pagination hidden-sm-down">
                                     <ul class="eng-num">
                                         <li class="active">1</li>
                                         <li><a href="#">2</a></li>
@@ -622,7 +585,7 @@
                                 </div>
                                 <!-- 手機版 Load more-->
                                 <div class="pct-btn-loadcontent hidden-xs-up">
-                                    <a href="#" class="pct-ui btn btn-secondary btn-load">LOAD MORE</a>
+                                    <a href="#" class="pct-ui btn btn-primary btn-load">LOAD MORE</a>
                                 </div>
                             </div>
                         </section>
@@ -664,11 +627,11 @@
 
     <!-- 選單預設開啟 -->
     <script>
-    $(document).ready(function() {
-        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(3)');
-        menuItem.find('ul').show();
-        menuItem.addClass('active');
-    });
+        $(document).ready(function() {
+            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(3)');
+            menuItem.find('ul').show();
+            menuItem.addClass('active');
+        });
     </script>
 </body>
 

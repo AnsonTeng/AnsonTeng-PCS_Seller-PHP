@@ -2661,8 +2661,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">確定</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">確定</a>
     </div>
 </div>
 
@@ -2678,7 +2678,7 @@
                 <label for="">商品名稱</label>
                 <div class="pct-ui form">
                     <input type="text" placeholder="商品中文名稱">
-                    <a href="#" class="pct-ui btn-sm btn-secondary-outlined inputGroup-btn">Google翻譯
+                    <a href="#" class="pct-ui btn-sm btn-primary-outlined inputGroup-btn">Google翻譯
                         中翻泰</a>
                     <input type="text" placeholder="商品泰文名稱">
                     <p class="break-text">自動翻譯功能由 Google
@@ -2689,8 +2689,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">確定送出</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">確定送出</a>
     </div>
 </div>
 
@@ -2707,8 +2707,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">確認</a>
+        <a href="" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">確認</a>
     </div>
 </div>
 
@@ -2795,7 +2795,7 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="pct-ui btn btn-secondary-outlined lightbox_close">取消重填</a>
-        <a href="#" class="pct-ui btn btn-secondary">確認送出</a>
+        <a href="" class="pct-ui btn btn-primary-outlined lightbox_close">取消重填</a>
+        <a href="#" class="pct-ui btn btn-primary">確認送出</a>
     </div>
 </div>

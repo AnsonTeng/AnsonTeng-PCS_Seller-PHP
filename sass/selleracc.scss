@@ -695,6 +695,7 @@
                 td:last-child {
                     a {
                         width: 96%;
+                        margin: 4px;
                         text-align: center;
                     }
                 }
@@ -964,7 +965,7 @@
 // 「結算狀態說明」 按鈕
 .settlementStatusBtn {
     .pct-btn-icon {
-        color: $secondaryColor;
+        color: $primaryColor;
     }
 }
 
@@ -1036,6 +1037,14 @@
                     font-weight: 400;
                     padding: 0 0.75rem 0.25rem 0;
                     color: $colorDeepGray;
+
+                    .alert-red-block {
+                        display: block;
+                        position: relative;
+                        top: 3px;
+                        color: $colorPinkRed;
+                        font-size: 0.75rem;
+                    }
                 }
             }
         }
@@ -1206,32 +1215,43 @@
         }
         // 線段－已完成
         li.point-line-solved {
-            background: #89dcea; /* Old browsers */
-            background: -moz-linear-gradient(left, #89dcea 50%, $secondaryColor 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(left, #89dcea 50%, $secondaryColor 100%); /* Chrome10-25,Safari5.1-6 */
+            /* Old browsers */
+            background: #7fd7f5; // $primaryColor 的 alpha 50％
+
+            // firefox
+            background: -moz-linear-gradient(
+                left,
+                #7fd7f5 50%,
+                $primaryColor 100%
+            ); /* FF3.6-15 */
+            background: -webkit-linear-gradient(
+                left,
+                #7fd7f5 50%,
+                $primaryColor 100%
+            ); /* Chrome10-25,Safari5.1-6 */
             background: linear-gradient(
                 to right,
-                #89dcea 50%,
-                $secondaryColor 100%
+                #7fd7f5 50%,
+                $primaryColor 100%
             ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89dcea', endColorstr='#14B9D5',GradientType=1 ); /* IE6-9 */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fd7f5', endColorstr='#00afeb',GradientType=1 ); /* IE6-9 */
         }
 
         // 點－已完成
         li.point.point-solved {
-            background-color: rgba($secondaryColor, 0.5);
+            background-color: rgba($primaryColor, 0.5);
 
             .num {
                 color: $colorWhite;
             }
             .title {
-                color: rgba($secondaryColor, 0.5);
+                color: rgba($primaryColor, 0.5);
             }
         }
         // 點－進行中
         li.point.point-processing {
-            background-color: $secondaryColor;
-            border: 4px solid $secondaryColor;
+            background-color: $primaryColor;
+            border: 4px solid $primaryColor;
             box-sizing: content-box;
 
             .num {
@@ -1240,7 +1260,7 @@
                 font-size: 1.5rem;
             }
             .title {
-                color: $secondaryColor;
+                color: $primaryColor;
                 font-weight: 500;
                 font-size: 0.9125rem;
             }
@@ -1298,7 +1318,7 @@
     position: relative;
     top: -2px;
     font-size: 0.9375rem;
-    color: $secondaryColor;
+    color: $primaryColor;
     margin: 0;
 }
 

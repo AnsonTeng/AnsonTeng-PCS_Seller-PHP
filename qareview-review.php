@@ -20,18 +20,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#e21e26">
     <meta name="msapplication-TileColor" content="#e21e26">
     <meta name="theme-color" content="#e21e26">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/normalize.css">
     <!-- PAGE -->
     <link rel="stylesheet" type="text/css" href="css/qareview.css">
     <!-- Icon Font -->
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
     <title>PChome SEA | 賣場評價</title>
     <!-- Google Tag Manager -->
     <script>
@@ -96,6 +96,7 @@
                     </div>
                     <div class="col-md-9">
                         <section id="pct-section-content">
+                            <!-- 頁面標題與麵包屑 -->
                             <div class="pct-ui breadcrumb-back">
                                 <span class="pct-icon icon-callcenter"></span>
                                 <ul>
@@ -106,7 +107,9 @@
                                     <li>評價</li>
                                 </ul>
                             </div>
+                            <!-- 頁面標題與麵包屑結束 -->
 
+                            <!-- 搜尋-->
                             <div class="searchBarGroup">
                                 <div class="section-review-chart">
                                     <div class="review-chart-figures">
@@ -163,10 +166,10 @@
                                     </ul>
                                 </div>
                             </div>
+
                             <!-- 整體表格 -->
                             <div class="tableBox tableBox-reviewlist">
                                 <div class="table__tbody">
-
 
                                     <!--說明FOR RD: 沒有任何評價紀錄時 -->
                                     <div class="table_default_empaty" style="display: none;">
@@ -281,412 +284,404 @@
                                                 <td colspan="2">
                                                     <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
                                                         <!-- 操作按鈕欄 -->
-                                                        <a class="pct-ui btn-xs btn-secondary replyreviewsBtn"
+                                                        <a class="pct-ui btn-xs btn-primary replyreviewsBtn"
                                                             href="#">回覆評價</a>
                                                     </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- 單筆評價  End -->
+
+                                        <!-- 單筆評價  一般已回覆 -->
+                                        <tbody>
+                                            <tr class="table_row_header">
+                                                <td colspan="2">
+                                                    <div class="tableData-header">
+                                                        <!-- 回覆狀態 -->
+                                                        <div class="table_flexBox table_flexBox-between">
+
+                                                            <div class="table_inlineBox">
+                                                                <span class="list__itemInfo list_status"><i
+                                                                        class="pct-btn-icon icon-checked icon-back icon-back-green"></i>已回覆</span>
+                                                            </div>
+
+                                                            <div class="table_inlineBox table_inlineBox-alignRight">
+                                                                <span class="eng-num date-time">2018/05/28 <time
+                                                                        class="hidden-xs-down">01:28</time></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="table_row_body">
+                                                <td data-title="評價人">
+                                                    <div class="tableDeta-box review-account-wrap">
+
+                                                        <div class="itemInfoGroup">
+                                                            <div class="list__itemInfo-userImg img-bg"
+                                                                style="background-image: url('img/buyer_avator_default.svg');">
+                                                            </div>
+                                                            <span
+                                                                class="list__itemInfo list__itemInfo-userName eng-num">
+                                                                th*********tm </span>
+                                                        </div>
+                                                        <div class="listReview-score-wrap">
+                                                            <!-- 說明FOR RD-->
+                                                            <!-- 評價星星 class 滿星：class="pct-icon icon-star-on" / 半星：class="pct-icon icon-star-off" / 空星：class="pct-icon icon-star-off" -->
+                                                            <div class="pct-ui review-star">
+                                                                <ul>
+                                                                    <li class="pct-icon icon-star-on"></li>
+                                                                    <li class="pct-icon icon-star-on"></li>
+                                                                    <li class="pct-icon icon-star-on"></li>
+                                                                    <li class="pct-icon icon-star-on"></li>
+                                                                    <li class="pct-icon icon-star-on"></li>
+                                                                </ul>
+                                                                <div class="review-text eng-num">5.0</div>
+                                                            </div>
+                                                            <div class="scroe-text"><span>評價：</span>優良</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="評價留言">
+                                                    <div class="tableDeta-box">
+                                                        <!--評價留言 -->
+                                                        <div class="review-msg-wrap">
+                                                            <div class="list-review-msg">
+                                                                <div class="msg-text">
+                                                                    商品跟照片沒有差別，版型剪裁與布料都很有質感。會推薦朋友購買!
+                                                                </div>
+                                                            </div>
+                                                            <div class="orderlist-sm js-pct-panel-trigger"
+                                                                data-panel="orderDetails">
+                                                                <div class="productInfo-img small">
+                                                                    <img class="img-fluid"
+                                                                        src="https://cf.shopee.tw/file/0fbe22a6c159638b8b5a6858a9841ea3_tn"
+                                                                        alt="Product-Picture">
+                                                                </div>
+                                                                <div class="productInfo-info">
+
+                                                                    <!-- 訂單編號 -->
+                                                                    <div class="productInfo-info-orderNum">
+                                                                        <span
+                                                                            class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                        <span
+                                                                            class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                    </div>
+                                                                    <!-- 商品名稱 -->
+                                                                    <div class="productInfo-info-title">
+                                                                        <span
+                                                                            class="productInfo-info-title-text">เปลัดขิก
+                                                                            หลวงพ่อกลั่น วัดอินทราวาส อ่างทอง ไม้ดำดง
+                                                                            ยุคต้น
+                                                                            2.5นิ้ว รอยจาร เก่ามาก สวย สมบูรณ์
+                                                                            หายากมาก<span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pct-icon icon-angle-right"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <!-- 賣家回覆 -->
+                                            <tr class="table_row_white">
+                                                <td></td>
+                                                <td>
+                                                    <div class="tableData-bottom">
+                                                        <!-- 賣家回覆欄 -->
+                                                        <div class="listReview-reply-wrap">
+                                                            <div class="list-review-msg">
+                                                                <div class="review-msg-title">
+                                                                    <div class="msg-title-text">您的回覆</div>
+                                                                    <span class="eng-num date-time">2018/05/28 <time
+                                                                            class="hidden-xs-down">01:28</time></span>
+                                                                </div>
+                                                                <div class="msg-text">
+                                                                    匯款迅速的好買家，很愉快！
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                        <!-- 單筆評價  End -->
+
+                                        <!-- 單筆評價  買家更新一次評價-->
+                                        <tbody>
+                                            <tr class="table_row_header">
+                                                <td colspan="2">
+                                                    <div class="tableData-header">
+                                                        <!-- 回覆狀態 -->
+                                                        <div class="table_flexBox table_flexBox-between">
+
+                                                            <div class="table_inlineBox">
+                                                                <span class="list__itemInfo list_status"><i
+                                                                        class="pct-btn-icon icon-alert-nofill icon-back icon-back-red"></i>買家已更新評價</span>
+                                                            </div>
+
+                                                            <div class="table_inlineBox table_inlineBox-alignRight">
+                                                                <span class="eng-num date-time">2018/05/28 <time
+                                                                        class="hidden-xs-down">01:28</time></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="table_row_body">
+                                                <td data-title="評價人">
+                                                    <div class="tableDeta-box review-account-wrap">
+                                                        <div class="itemInfoGroup">
+                                                            <div class="list__itemInfo-userImg img-bg"
+                                                                style="background-image: url('img/buyer_avator_default.svg');">
+                                                            </div>
+                                                            <span
+                                                                class="list__itemInfo list__itemInfo-userName eng-num">ke***********ri
+                                                            </span>
+                                                        </div>
+                                                        <div class="listReview-score-wrap">
+                                                            <!-- 說明FOR RD-->
+                                                            <!-- 評價星星 class 滿星：class="pct-icon icon-star-on" / 半星：class="pct-icon icon-star-off" / 空星：class="pct-icon icon-star-off" -->
+                                                            <div class="pct-ui review-star">
+                                                                <ul>
+                                                                    <li class="pct-icon icon-star-on"></li>
+                                                                    <li class="pct-icon icon-star-on"></li>
+                                                                    <li class="pct-icon icon-star-off"></li>
+                                                                    <li class="pct-icon icon-star-off"></li>
+                                                                    <li class="pct-icon icon-star-off"></li>
+                                                                </ul>
+                                                                <div class="review-text eng-num">2.0</div>
+                                                            </div>
+                                                            <div class="scroe-text"><span>評價：</span>待加強</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="評價留言">
+                                                    <div class="tableDeta-box">
+                                                        <!--評價留言 -->
+                                                        <div class="review-msg-wrap">
+                                                            <div class="list-review-msg">
+                                                                <div class="msg-text">
+                                                                    下水洗後開始褪色，線也脫落了！品質沒有想像中的好。
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="orderlist-sm js-pct-panel-trigger"
+                                                                data-panel="orderDetails">
+                                                                <div class="productInfo-img small">
+                                                                    <img class="img-fluid"
+                                                                        src="https://cf.shopee.tw/file/0fbe22a6c159638b8b5a6858a9841ea3_tn"
+                                                                        alt="Product-Picture">
+                                                                </div>
+                                                                <div class="productInfo-info">
+
+                                                                    <!-- 訂單編號 -->
+                                                                    <div class="productInfo-info-orderNum">
+                                                                        <span
+                                                                            class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                        <span
+                                                                            class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                    </div>
+                                                                    <!-- 商品名稱 -->
+                                                                    <div class="productInfo-info-title">
+                                                                        <span
+                                                                            class="productInfo-info-title-text">เปลัดขิก
+                                                                            หลวงพ่อกลั่น วัดอินทราวาส อ่างทอง ไม้ดำดง
+                                                                            ยุคต้น
+                                                                            2.5นิ้ว รอยจาร เก่ามาก สวย สมบูรณ์
+                                                                            หายากมาก<span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pct-icon icon-angle-right"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <!-- 按鈕 -->
+                                            <tr class="table_row_bottom">
+                                                <td colspan="2">
+                                                    <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
+                                                        <!-- 操作按鈕欄 -->
+                                                        <div class="table_flexBox table_flexBox-right column_action">
+                                                            <a class="pct-ui btn-xs btn-primary-outlined historyreviewsBtn"
+                                                                href="#">查看過去評價</a>
+                                                            <a class="pct-ui btn-xs btn-primary replyreviewsBtn"
+                                                                href="#">回覆評價</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- 單筆評價  End -->
+
+                                        <!-- 單筆評價  賣家回覆更新後評價-->
+                                        <tbody>
+                                            <tr class="table_row_header">
+                                                <td colspan="2">
+                                                    <div class="tableData-header">
+                                                        <!-- 回覆狀態 -->
+                                                        <div class="table_flexBox table_flexBox-between">
+                                                            <div class="table_inlineBox">
+                                                                <span class="list__itemInfo list_status"><i
+                                                                        class="pct-btn-icon icon-checked icon-back icon-back-green"></i>已回覆</span>
+                                                            </div>
+                                                            <div class="table_inlineBox table_inlineBox-alignRight">
+                                                                <span class="eng-num date-time">2018/05/28 <time
+                                                                        class="hidden-xs-down">01:28</time></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="table_row_body">
+                                                <td data-title="評價人">
+                                                    <div class="tableDeta-box review-account-wrap">
+                                                        <div class="itemInfoGroup">
+                                                            <div class="list__itemInfo-userImg img-bg"
+                                                                style="background-image: url('img/buyer_avator_default.svg');">
+                                                            </div>
+                                                            <span
+                                                                class="list__itemInfo list__itemInfo-userName eng-num">do*********ex
+                                                            </span>
+                                                        </div>
+                                                        <div class="listReview-score-wrap">
+                                                            <!-- 說明FOR RD-->
+                                                            <!-- 評價星星 class 滿星：class="pct-icon icon-star-on" / 半星：class="pct-icon icon-star-off" / 空星：class="pct-icon icon-star-off" -->
+                                                            <div class="pct-ui review-star">
+                                                                <ul>
+                                                                    <li class="pct-icon icon-star-on"></li>
+                                                                    <li class="pct-icon icon-star-off"></li>
+                                                                    <li class="pct-icon icon-star-off"></li>
+                                                                    <li class="pct-icon icon-star-off"></li>
+                                                                    <li class="pct-icon icon-star-off"></li>
+                                                                </ul>
+                                                                <div class="review-text eng-num">1.0</div>
+                                                            </div>
+                                                            <div class="scroe-text"><span>評價：</span>待加強</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="評價留言">
+                                                    <div class="tableDeta-box">
+                                                        <!--評價留言 -->
+                                                        <div class="review-msg-wrap">
+                                                            <div class="list-review-msg">
+                                                                <div class="msg-text">
+                                                                    原本很喜歡，用了一陣子以後又沒有這麼喜歡了。
+                                                                </div>
+                                                            </div>
+                                                            <div class="orderlist-sm js-pct-panel-trigger"
+                                                                data-panel="orderDetails">
+                                                                <div class="productInfo-img small">
+                                                                    <img class="img-fluid"
+                                                                        src="https://cf.shopee.tw/file/0fbe22a6c159638b8b5a6858a9841ea3_tn"
+                                                                        alt="Product-Picture">
+                                                                </div>
+                                                                <div class="productInfo-info">
+
+                                                                    <!-- 訂單編號 -->
+                                                                    <div class="productInfo-info-orderNum">
+                                                                        <span
+                                                                            class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                        <span
+                                                                            class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                    </div>
+                                                                    <!-- 商品名稱 -->
+                                                                    <div class="productInfo-info-title">
+                                                                        <span
+                                                                            class="productInfo-info-title-text">เปลัดขิก
+                                                                            หลวงพ่อกลั่น
+                                                                            วัดอินทราวาส อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว
+                                                                            รอยจาร
+                                                                            เก่ามาก สวย
+                                                                            สมบูรณ์ หายากมาก<span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pct-icon icon-angle-right"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- 賣家回覆 -->
+                                            <tr class="table_row_white">
+                                                <td></td>
+                                                <td>
+                                                    <div class="tableData-bottom">
+                                                        <!-- 賣家回覆欄 -->
+                                                        <div class="listReview-reply-wrap">
+                                                            <div class="list-review-msg">
+                                                                <div class="review-msg-title">
+                                                                    <div class="msg-title-text">您的回覆</div>
+                                                                    <span class="eng-num date-time">2018/05/28 <time
+                                                                            class="hidden-xs-down">01:28</time></span>
+                                                                </div>
+                                                                <div class="msg-text">
+                                                                    反反覆覆的你有什麼病！
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <!-- 按鈕 -->
+                                            <tr class="table_row_bottom">
+                                                <td colspan="2">
+                                                    <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
+                                                        <!-- 操作按鈕欄 -->
+                                                        <div class="table_flexBox table_flexBox-right column_action">
+                                                            <a class="pct-ui btn-xs btn-primary-outlined historyreviewsBtn"
+                                                                href="#">查看過去評價</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- 單筆評價  End -->
+                                    </table>
                                 </div>
-                                </td>
-                                </tr>
-
-                                </tbody>
-
-                                <!-- 單筆評價  End -->
-                                <!-- 單筆評價  一般已回覆 -->
-
-                                <tbody>
-                                    <tr class="table_row_header">
-                                        <td colspan="2">
-                                            <div class="tableData-header">
-                                                <!-- 回覆狀態 -->
-                                                <div class="table_flexBox table_flexBox-between">
-
-                                                    <div class="table_inlineBox">
-                                                        <span class="list__itemInfo list_status"><i
-                                                                class="pct-btn-icon icon-checked icon-back icon-back-green"></i>已回覆</span>
-                                                    </div>
-
-                                                    <div class="table_inlineBox table_inlineBox-alignRight">
-                                                        <span class="eng-num date-time">2018/05/28 <time
-                                                                class="hidden-xs-down">01:28</time></span>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr class="table_row_body">
-                                        <td data-title="評價人">
-                                            <div class="tableDeta-box review-account-wrap">
-
-                                                <div class="itemInfoGroup">
-                                                    <div class="list__itemInfo-userImg img-bg"
-                                                        style="background-image: url('img/buyer_avator_default.svg');">
-                                                    </div>
-                                                    <span class="list__itemInfo list__itemInfo-userName eng-num">
-                                                        th*********tm </span>
-                                                </div>
-                                                <div class="listReview-score-wrap">
-                                                    <!-- 說明FOR RD-->
-                                                    <!-- 評價星星 class 滿星：class="pct-icon icon-star-on" / 半星：class="pct-icon icon-star-off" / 空星：class="pct-icon icon-star-off" -->
-                                                    <div class="pct-ui review-star">
-                                                        <ul>
-                                                            <li class="pct-icon icon-star-on"></li>
-                                                            <li class="pct-icon icon-star-on"></li>
-                                                            <li class="pct-icon icon-star-on"></li>
-                                                            <li class="pct-icon icon-star-on"></li>
-                                                            <li class="pct-icon icon-star-on"></li>
-                                                        </ul>
-                                                        <div class="review-text eng-num">5.0</div>
-                                                    </div>
-                                                    <div class="scroe-text"><span>評價：</span>優良</div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td data-title="評價留言">
-                                            <div class="tableDeta-box">
-                                                <!--評價留言 -->
-                                                <div class="review-msg-wrap">
-                                                    <div class="list-review-msg">
-                                                        <div class="msg-text">
-                                                            商品跟照片沒有差別，版型剪裁與布料都很有質感。會推薦朋友購買!
-                                                        </div>
-                                                    </div>
-                                                    <div class="orderlist-sm js-pct-panel-trigger"
-                                                        data-panel="orderDetails">
-                                                        <div class="productInfo-img small">
-                                                            <img class="img-fluid"
-                                                                src="https://cf.shopee.tw/file/0fbe22a6c159638b8b5a6858a9841ea3_tn"
-                                                                alt="Product-Picture">
-                                                        </div>
-                                                        <div class="productInfo-info">
-
-                                                            <!-- 訂單編號 -->
-                                                            <div class="productInfo-info-orderNum">
-                                                                <span
-                                                                    class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                <span
-                                                                    class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                            </div>
-                                                            <!-- 商品名稱 -->
-                                                            <div class="productInfo-info-title">
-                                                                <span class="productInfo-info-title-text">เปลัดขิก
-                                                                    หลวงพ่อกลั่น วัดอินทราวาส อ่างทอง ไม้ดำดง ยุคต้น
-                                                                    2.5นิ้ว รอยจาร เก่ามาก สวย สมบูรณ์ หายากมาก<span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pct-icon icon-angle-right"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <!-- 賣家回覆 -->
-                                    <tr class="table_row_white">
-                                        <td></td>
-                                        <td>
-                                            <div class="tableData-bottom">
-                                                <!-- 賣家回覆欄 -->
-                                                <div class="listReview-reply-wrap">
-                                                    <div class="list-review-msg">
-                                                        <div class="review-msg-title">
-                                                            <div class="msg-title-text">您的回覆</div>
-                                                            <span class="eng-num date-time">2018/05/28 <time
-                                                                    class="hidden-xs-down">01:28</time></span>
-                                                        </div>
-                                                        <div class="msg-text">
-                                                            匯款迅速的好買家，很愉快！
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-
-                                <!-- 單筆評價  End -->
-                                <!-- 單筆評價  買家更新一次評價-->
-                                <tbody>
-                                    <tr class="table_row_header">
-                                        <td colspan="2">
-                                            <div class="tableData-header">
-                                                <!-- 回覆狀態 -->
-                                                <div class="table_flexBox table_flexBox-between">
-
-                                                    <div class="table_inlineBox">
-                                                        <span class="list__itemInfo list_status"><i
-                                                                class="pct-btn-icon icon-alert-nofill icon-back icon-back-red"></i>買家已更新評價</span>
-                                                    </div>
-
-                                                    <div class="table_inlineBox table_inlineBox-alignRight">
-                                                        <span class="eng-num date-time">2018/05/28 <time
-                                                                class="hidden-xs-down">01:28</time></span>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr class="table_row_body">
-                                        <td data-title="評價人">
-                                            <div class="tableDeta-box review-account-wrap">
-
-                                                <div class="itemInfoGroup">
-                                                    <div class="list__itemInfo-userImg img-bg"
-                                                        style="background-image: url('img/buyer_avator_default.svg');">
-                                                    </div>
-                                                    <span
-                                                        class="list__itemInfo list__itemInfo-userName eng-num">ke***********ri
-                                                    </span>
-                                                </div>
-                                                <div class="listReview-score-wrap">
-                                                    <!-- 說明FOR RD-->
-                                                    <!-- 評價星星 class 滿星：class="pct-icon icon-star-on" / 半星：class="pct-icon icon-star-off" / 空星：class="pct-icon icon-star-off" -->
-                                                    <div class="pct-ui review-star">
-                                                        <ul>
-                                                            <li class="pct-icon icon-star-on"></li>
-                                                            <li class="pct-icon icon-star-on"></li>
-                                                            <li class="pct-icon icon-star-off"></li>
-                                                            <li class="pct-icon icon-star-off"></li>
-                                                            <li class="pct-icon icon-star-off"></li>
-                                                        </ul>
-                                                        <div class="review-text eng-num">2.0</div>
-                                                    </div>
-                                                    <div class="scroe-text"><span>評價：</span>待加強</div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td data-title="評價留言">
-                                            <div class="tableDeta-box">
-                                                <!--評價留言 -->
-                                                <div class="review-msg-wrap">
-                                                    <div class="list-review-msg">
-                                                        <div class="msg-text">
-                                                            下水洗後開始褪色，線也脫落了！品質沒有想像中的好。
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="orderlist-sm js-pct-panel-trigger"
-                                                        data-panel="orderDetails">
-                                                        <div class="productInfo-img small">
-                                                            <img class="img-fluid"
-                                                                src="https://cf.shopee.tw/file/0fbe22a6c159638b8b5a6858a9841ea3_tn"
-                                                                alt="Product-Picture">
-                                                        </div>
-                                                        <div class="productInfo-info">
-
-                                                            <!-- 訂單編號 -->
-                                                            <div class="productInfo-info-orderNum">
-                                                                <span
-                                                                    class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                <span
-                                                                    class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                            </div>
-                                                            <!-- 商品名稱 -->
-                                                            <div class="productInfo-info-title">
-                                                                <span class="productInfo-info-title-text">เปลัดขิก
-                                                                    หลวงพ่อกลั่น วัดอินทราวาส อ่างทอง ไม้ดำดง ยุคต้น
-                                                                    2.5นิ้ว รอยจาร เก่ามาก สวย สมบูรณ์ หายากมาก<span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pct-icon icon-angle-right"></div>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
                             </div>
-                            </td>
-                            </tr>
-
-                            <!-- 按鈕 -->
-                            <tr class="table_row_bottom">
-                                <td colspan="2">
-                                    <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
-                                        <!-- 操作按鈕欄 -->
-                                        <div class="table_flexBox table_flexBox-right column_action">
-                                            <a class="pct-ui btn-xs btn-secondary-outlined historyreviewsBtn"
-                                                href="#">查看過去評價</a>
-                                            <a class="pct-ui btn-xs btn-secondary replyreviewsBtn" href="#">回覆評價</a>
-                                        </div>
-                                    </div>
+                            <!-- 整體表格結束 -->
+                            <!-- PC 版 列出所有頁碼 -->
+                            <div class="pct-ui page-pagination hidden-sm-down">
+                                <ul class="eng-num">
+                                    <li class="active">1</li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li class="pagination-jump-next"></li>
+                                    <li>
+                                        <a class="pagination-next" href="#">
+                                            <span class="pct-icon icon-angle-right"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 手機版 Load more-->
+                            <div class="pct-btn-loadcontent hidden-sm-up">
+                                <a href="#" class="pct-ui btn btn-primary btn-load">LOAD MORE</a>
+                            </div>
+                        </section>
                     </div>
-                    </td>
-                    </tr>
-
-                    </tbody>
-
-                    <!-- 單筆評價  End -->
-
-                    <!-- 單筆評價  賣家回覆更新後評價-->
-
-                    <tbody>
-                        <tr class="table_row_header">
-                            <td colspan="2">
-                                <div class="tableData-header">
-                                    <!-- 回覆狀態 -->
-                                    <div class="table_flexBox table_flexBox-between">
-
-                                        <div class="table_inlineBox">
-                                            <span class="list__itemInfo list_status"><i
-                                                    class="pct-btn-icon icon-checked icon-back icon-back-green"></i>已回覆</span>
-                                        </div>
-
-                                        <div class="table_inlineBox table_inlineBox-alignRight">
-                                            <span class="eng-num date-time">2018/05/28 <time
-                                                    class="hidden-xs-down">01:28</time></span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr class="table_row_body">
-                            <td data-title="評價人">
-                                <div class="tableDeta-box review-account-wrap">
-
-                                    <div class="itemInfoGroup">
-                                        <div class="list__itemInfo-userImg img-bg"
-                                            style="background-image: url('img/buyer_avator_default.svg');"></div>
-                                        <span class="list__itemInfo list__itemInfo-userName eng-num">do*********ex
-                                        </span>
-                                    </div>
-                                    <div class="listReview-score-wrap">
-                                        <!-- 說明FOR RD-->
-                                        <!-- 評價星星 class 滿星：class="pct-icon icon-star-on" / 半星：class="pct-icon icon-star-off" / 空星：class="pct-icon icon-star-off" -->
-                                        <div class="pct-ui review-star">
-                                            <ul>
-                                                <li class="pct-icon icon-star-on"></li>
-                                                <li class="pct-icon icon-star-off"></li>
-                                                <li class="pct-icon icon-star-off"></li>
-                                                <li class="pct-icon icon-star-off"></li>
-                                                <li class="pct-icon icon-star-off"></li>
-                                            </ul>
-                                            <div class="review-text eng-num">1.0</div>
-                                        </div>
-                                        <div class="scroe-text"><span>評價：</span>待加強</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td data-title="評價留言">
-                                <div class="tableDeta-box">
-                                    <!--評價留言 -->
-                                    <div class="review-msg-wrap">
-                                        <div class="list-review-msg">
-                                            <div class="msg-text">
-                                                原本很喜歡，用了一陣子以後又沒有這麼喜歡了。
-                                            </div>
-                                        </div>
-                                        <div class="orderlist-sm js-pct-panel-trigger" data-panel="orderDetails">
-                                            <div class="productInfo-img small">
-                                                <img class="img-fluid"
-                                                    src="https://cf.shopee.tw/file/0fbe22a6c159638b8b5a6858a9841ea3_tn"
-                                                    alt="Product-Picture">
-                                            </div>
-                                            <div class="productInfo-info">
-
-                                                <!-- 訂單編號 -->
-                                                <div class="productInfo-info-orderNum">
-                                                    <span class="productInfo-info-orderNum-title">訂單編號</span>
-                                                    <span
-                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                </div>
-                                                <!-- 商品名稱 -->
-                                                <div class="productInfo-info-title">
-                                                    <span class="productInfo-info-title-text">เปลัดขิก หลวงพ่อกลั่น
-                                                        วัดอินทราวาส อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร เก่ามาก สวย
-                                                        สมบูรณ์ หายากมาก<span>
-                                                </div>
-                                            </div>
-                                            <div class="pct-icon icon-angle-right"></div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
                 </div>
-                </td>
-                </tr>
-                <!-- 賣家回覆 -->
-                <tr class="table_row_white">
-                    <td></td>
-                    <td>
-                        <div class="tableData-bottom">
-                            <!-- 賣家回覆欄 -->
-                            <div class="listReview-reply-wrap">
-                                <div class="list-review-msg">
-                                    <div class="review-msg-title">
-                                        <div class="msg-title-text">您的回覆</div>
-                                        <span class="eng-num date-time">2018/05/28 <time
-                                                class="hidden-xs-down">01:28</time></span>
-                                    </div>
-                                    <div class="msg-text">
-                                        反反覆覆的你有什麼病！
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-
-                <!-- 按鈕 -->
-                <tr class="table_row_bottom">
-                    <td colspan="2">
-                        <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
-                            <!-- 操作按鈕欄 -->
-                            <div class="table_flexBox table_flexBox-right column_action">
-                                <a class="pct-ui btn-xs btn-secondary-outlined historyreviewsBtn" href="#">查看過去評價</a>
-                            </div>
-                        </div>
             </div>
-            </td>
-            </tr>
-
-
-            </tbody>
-
-            <!-- 單筆評價  End -->
-            </table>
-
         </div>
-        </div>
-        <!-- 整體表格結束 -->
-        <!-- PC 版 列出所有頁碼 -->
-        <div class="pct-ui page-pagination">
-            <ul class="eng-num">
-                <li class="active">1</li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-                <li><a href="#">8</a></li>
-                <li class="pagination-jump-next"></li>
-                <li>
-                    <a class="pagination-next" href="#">
-                        <span class="pct-icon icon-angle-right"></span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- 手機版 Load more-->
-        <div class="pct-btn-loadcontent hidden-sm-up">
-            <a href="#" class="pct-ui btn btn-secondary btn-load">LOAD MORE</a>
-        </div>
-    </section>
-    </div>
-    </div>
-    </div>
-    </div>
-    <!-- 內容寬度 1200 區塊 end-->
-    <!-- PChome Thai footer -->
-    <?php include("assets/footer.php"); ?>
-    <!-- PChome Thai footer end-->
+        <!-- 內容寬度 1200 區塊 end-->
+        <!-- PChome Thai footer -->
+        <?php include("assets/footer.php"); ?>
+        <!-- PChome Thai footer end-->
     </section>
 
 

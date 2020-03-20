@@ -36,7 +36,7 @@
         .pct-icon {
             display: inline-block;
             vertical-align: bottom;
-            color: $secondaryColor;
+            color: $primaryColor;
             font-size: 1.25rem;
             padding-right: 5px;
         }
@@ -172,7 +172,7 @@
                         padding: 0.4375rem 0.5rem 0.3125rem 0.5rem;
 
                         &:hover {
-                            color: $secondaryColor;
+                            color: $primaryColor;
                             background-color: $colorWhite;
                             transform: translateY(-2px);
                         }
@@ -372,7 +372,7 @@
                             display: inline-block;
                             vertical-align: bottom;
                             font-size: 1.3rem;
-                            color: $secondaryColor;
+                            color: $primaryColor;
                             padding-right: 5px;
                             position: relative;
                             top: 1px;
@@ -457,7 +457,8 @@
                             height: 10px;
                             background-color: rgba($colorPinkRed, 0.6);
                             border-radius: 50%;
-                            -webkit-animation: rippleAnimation 1s ease-out infinite;
+                            -webkit-animation: rippleAnimation 1s ease-out
+                                infinite;
                             animation: rippleAnimation 1s ease-out infinite;
                         }
                     }
@@ -528,7 +529,7 @@
                             font-weight: 500;
 
                             span {
-                                background-color: $secondaryColor;
+                                background-color: $primaryColor;
                                 border-radius: 50%;
                                 margin-right: 10px;
                             }
@@ -680,7 +681,7 @@
                     font-weight: 500;
 
                     span {
-                        background-color: $secondaryColor;
+                        background-color: $primaryColor;
                         border-radius: 50%;
                         margin-right: 10px;
                     }

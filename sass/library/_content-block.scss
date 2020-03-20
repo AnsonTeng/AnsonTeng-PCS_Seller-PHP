@@ -65,6 +65,10 @@
             margin-bottom: 15px;
             word-break: normal;
 
+            b {
+                font-weight: 700;
+            }
+
             a {
                 text-decoration: underline;
                 color: $primaryDeepColor;
@@ -161,7 +165,8 @@
                 right: 15px;
                 top: 13px;
                 color: #555555;
-                font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+                font-family: "Helvetica Neue", "Helvetica", "Arial",
+                    "sans-serif";
             }
         }
 
@@ -175,7 +180,8 @@
                 left: 15px;
                 top: 13px;
                 color: #c0c0c0;
-                font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+                font-family: "Helvetica Neue", "Helvetica", "Arial",
+                    "sans-serif";
             }
         }
 
@@ -389,11 +395,11 @@
 
             span {
                 display: none;
-                color: $primaryColor;
+                color: $colorPinkRed;
             }
 
             ul li {
-                color: $primaryColor;
+                color: $colorPinkRed;
                 font-weight: 400;
                 margin-right: 3px;
                 line-height: 18px;

@@ -21,14 +21,14 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#00afeb">
     <meta name="msapplication-TileColor" content="#00afeb">
     <meta name="theme-color" content="#00afeb">
 
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/normalize.css">
 
     <!-- PAGE -->
     <link rel="stylesheet" type="text/css" href="css/notification.css">
@@ -36,7 +36,7 @@
     <!-- Icon Font -->
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
 
     <title>PChome Thai | ออนไลน์ช้อปปิ้ง ที่ทุกสิ่งเป็นเรื่องแสนง่ายและสนุก</title>
     <!-- Google Tag Manager -->
@@ -128,7 +128,7 @@
                             <!-- 說明FOR RD-->
                             <!-- .notification-list-item 通知列表預設都帶入：unread 已讀項目為：read -->
                             <div class="notification-read-all">
-                                <a href="#" class="pct-ui btn-sm btn-cta btn-read-all">
+                                <a href="#" class="pct-ui btn-sm btn-secondary btn-read-all">
                                     <li class="pct-btn-icon icon-checked"></li>全部設為已讀
                                 </a>
                             </div>
@@ -372,7 +372,7 @@
                                 </div>
 
                                 <!-- PC 版 列出所有頁碼 -->
-                                <div class="pct-ui page-pagination">
+                                <div class="pct-ui page-pagination hidden-sm-down">
                                     <ul class="eng-num">
                                         <li class="active">1</li>
                                         <li><a href="#">2</a></li>
@@ -392,12 +392,11 @@
                                 </div>
                                 <!-- 手機版 Load more-->
                                 <div class="pct-btn-loadcontent hidden-xs-up">
-                                    <a href="#" class="pct-ui btn btn-secondary btn-load">LOAD MORE</a>
+                                    <a href="#" class="pct-ui btn btn-primary btn-load">LOAD MORE</a>
                                 </div>
                             </div>
                         </section>
                     </div>
-
                 </div>
             </div>
         </div>

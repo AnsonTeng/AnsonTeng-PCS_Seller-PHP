@@ -20,7 +20,7 @@
                         <input type="text" maxlength="10" name="verifycode" placeholder="請輸入驗證碼">
                     </div>
                 </div>
-                <a href="#" class="pct-ui btn btn-fluid btn-secondary">確定送出</a>
+                <a href="#" class="pct-ui btn btn-fluid btn-primary">確定送出</a>
             </div>
 
         </div>
@@ -49,7 +49,7 @@
                     <input type="text" placeholder="請輸入您的電話">
                 </div>
             </div>
-            <a href="#" class="pct-ui btn btn-fluid btn-secondary">確定送出</a>
+            <a href="#" class="pct-ui btn btn-fluid btn-primary">確定送出</a>
         </div>
     </div>
 </div>
@@ -76,11 +76,11 @@
                 </div>
 
                 <div class="modal-actions">
-                    <a href="#" class="pct-ui btn btn-secondary-outlined">重新傳送</a>
-                    <a href="#" class="pct-ui btn btn-secondary">確定送出</a>
+                    <a href="#" class="pct-ui btn btn-primary-outlined">重新傳送</a>
+                    <a href="#" class="pct-ui btn btn-primary">確定送出</a>
                 </div>
 
-                <!-- <a href="#" class="pct-ui btn btn-fluid btn-secondary">送出驗證碼</a> -->
+                <!-- <a href="#" class="pct-ui btn btn-fluid btn-primary">送出驗證碼</a> -->
             </div>
 
         </div>
@@ -181,8 +181,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">送出</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">送出</a>
     </div>
 </div>
 <!-- 燈箱結束 -->
@@ -202,7 +202,7 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">送出</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">送出</a>
     </div>
 </div>

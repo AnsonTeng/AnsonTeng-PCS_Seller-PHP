@@ -154,7 +154,7 @@
                 <div class="pct-ui form fluid">
                     <input type="password" placeholder="請輸入您的密碼">
                 </div>
-                <a href="#" class="pct-ui btn btn-fluid btn-cta">確認送出</a>
+                <a href="#" class="pct-ui btn btn-fluid btn-primary">確認送出</a>
             </div>
 
             <div class="pct-item-link">

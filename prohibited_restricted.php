@@ -20,18 +20,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#00afeb">
     <meta name="msapplication-TileColor" content="#00afeb">
     <meta name="theme-color" content="#00afeb">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/normalize.css">
     <!-- PAGE -->
     <link rel="stylesheet" type="text/css" href="css/prohibited_restricted.css">
     <!-- Icon Font -->
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
     <title>PChome SEA | 禁運及受限商品列表</title>
     <!-- Google Tag Manager -->
     <script>

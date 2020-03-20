@@ -37,7 +37,7 @@
     <!-- BS grid -->
     <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
 
-    <title>PChome SEA | 編輯商品</title>
+    <title>PChome SEA | 新增商品</title>
     <!-- Google Tag Manager -->
     <script>
     (function(w, d, s, l, i) {
@@ -131,146 +131,9 @@
 
                                     <div class="upload-product-img">
                                         <div class="upload-img-num"><span class="eng-num">
-                                                <span class="current">8</span>/10</span>張照片</div>
-                                        <div class="pct-ui img-manager">
-                                            <div class="content-fill primary">
-                                                <div class="upload-figure">
-                                                    <div class="rotate-btn">
-                                                        <li class="pct-icon icon-rotate"></li>
-                                                    </div>
-                                                    <div class="delete-btn edit-btn">
-                                                        <li class="pct-icon icon-trash"></li>
-                                                    </div>
-                                                    <div class="primary-tag">封面照片</div>
-                                                    <div class="figure-inner">
-                                                        <div class="figure-img img-bg"
-                                                            style="background-image: url('img/pro/pro_04.jpg');">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pct-ui img-manager">
-                                            <div class="content-fill">
-                                                <div class="upload-figure">
-                                                    <div class="rotate-btn">
-                                                        <li class="pct-icon icon-rotate"></li>
-                                                    </div>
-                                                    <div class="delete-btn edit-btn">
-                                                        <li class="pct-icon icon-trash"></li>
-                                                    </div>
-                                                    <div class="figure-inner">
-                                                        <div class="figure-img img-bg"
-                                                            style="background-image: url('img/pro/pro_03.jpg');">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pct-ui img-manager">
-                                            <div class="content-fill">
-                                                <div class="upload-figure">
-                                                    <div class="rotate-btn">
-                                                        <li class="pct-icon icon-rotate"></li>
-                                                    </div>
-                                                    <div class="delete-btn edit-btn">
-                                                        <li class="pct-icon icon-trash"></li>
-                                                    </div>
-                                                    <div class="figure-inner">
-                                                        <div class="figure-img img-bg"
-                                                            style="background-image: url('img/pro/pro_02.jpg');">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pct-ui img-manager">
-                                            <div class="content-fill">
-                                                <div class="upload-figure">
-                                                    <div class="rotate-btn">
-                                                        <li class="pct-icon icon-rotate"></li>
-                                                    </div>
-                                                    <div class="delete-btn edit-btn">
-                                                        <li class="pct-icon icon-trash"></li>
-                                                    </div>
-                                                    <div class="figure-inner">
-                                                        <div class="figure-img img-bg"
-                                                            style="background-image: url('img/pro/pro_01.jpg');">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pct-ui img-manager">
-                                            <div class="content-fill">
-                                                <div class="upload-figure">
-                                                    <div class="rotate-btn">
-                                                        <li class="pct-icon icon-rotate"></li>
-                                                    </div>
-                                                    <div class="delete-btn edit-btn">
-                                                        <li class="pct-icon icon-trash"></li>
-                                                    </div>
-                                                    <div class="figure-inner">
-                                                        <div class="figure-img img-bg"
-                                                            style="background-image: url('img/pro/pro_01.jpg');">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pct-ui img-manager">
-                                            <div class="content-fill">
-                                                <div class="upload-figure">
-                                                    <div class="rotate-btn">
-                                                        <li class="pct-icon icon-rotate"></li>
-                                                    </div>
-                                                    <div class="delete-btn edit-btn">
-                                                        <li class="pct-icon icon-trash"></li>
-                                                    </div>
-                                                    <div class="figure-inner">
-                                                        <div class="figure-img img-bg"
-                                                            style="background-image: url('img/pro/pro_01.jpg');">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pct-ui img-manager">
-                                            <div class="content-fill">
-                                                <div class="upload-figure">
-                                                    <div class="rotate-btn">
-                                                        <li class="pct-icon icon-rotate"></li>
-                                                    </div>
-                                                    <div class="delete-btn edit-btn">
-                                                        <li class="pct-icon icon-trash"></li>
-                                                    </div>
-                                                    <div class="figure-inner">
-                                                        <div class="figure-img img-bg"
-                                                            style="background-image: url('img/pro/pro_01.jpg');">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pct-ui img-manager">
-                                            <div class="content-fill">
-                                                <div class="upload-figure">
-                                                    <div class="rotate-btn">
-                                                        <li class="pct-icon icon-rotate"></li>
-                                                    </div>
-                                                    <div class="delete-btn edit-btn">
-                                                        <li class="pct-icon icon-trash"></li>
-                                                    </div>
-                                                    <div class="figure-inner">
-                                                        <div class="figure-img img-bg"
-                                                            style="background-image: url('img/pro/pro_01.jpg');">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                                <span class="current">0</span>/10</span>張照片</div>
                                         <!--說明For RD: 上傳照片送出後等待過場loading-->
-                                        <div class="pct-ui img-manager">
+                                        <div class="pct-ui img-manager" style="display:none;">
                                             <div class="content-fill processing">
                                                 <div class="pct-ui loading-overlay">
                                                     <div class="loading-circle small"></div>
@@ -309,13 +172,11 @@
                                     <div class="pct-ui form-label form-m-break">
                                         <label for="" class="required">商品名稱</label>
                                         <div class="pct-ui form">
-                                            <input type="text" placeholder="請輸入商品名稱"
-                                                value="Casio G-Shock Analog-Digital GA-800SC-6ADR CMG">
-                                            <div class="error-notification-tooltip-inline">商品名稱為必填且不可超過500字元</div>
+                                            <input type="text" placeholder="請輸入商品名稱">
                                             <a href="#"
                                                 class="pct-ui btn-sm btn-primary-outlined inputGroup-btn">Google翻譯
                                                 中翻泰</a>
-                                            <input type="text" placeholder="商品泰文名稱" value="นาฬิกาข้อมือ รุ่น ประกัน">
+                                            <input type="text" placeholder="商品泰文名稱">
                                             <p class="break-text">自動翻譯功能由 Google
                                                 翻譯所提供，PChome不保證翻譯內容之正確性！您可自行修正翻譯結果。
                                             </p>
@@ -333,8 +194,7 @@
                                     <div class="pct-ui form-textarea-label fluid form-m-break">
                                         <label for="" class="required">商品描述</label>
                                         <div class="pct-ui form">
-                                            <textarea
-                                                placeholder="請輸入商品簡介（上限 150 字）">มาตรวัดความชื้น วัดอุณหภูมิดิจิตอล (DIGITAL HYGROMETER) วัดได้ทั้งอุณหภูมิ และความชื้น</textarea>
+                                            <textarea placeholder="請輸入商品簡介（上限 150 字）"></textarea>
                                         </div>
                                     </div>
 
@@ -372,10 +232,10 @@
                                             <label for="" class="required">商品售價</label>
                                             <div>
                                                 <div class="pct-ui form product-price-TWdollar unit-before">
-                                                    <input type="tel" value="2497">
+                                                    <input type="tel" value="">
                                                 </div>
                                                 <div class="pct-ui form product-price-THbaht unit-before">
-                                                    <input type="tel" value="2480">
+                                                    <input type="tel" value="">
                                                 </div>
                                             </div>
 
@@ -384,10 +244,10 @@
                                             <label>促銷售價</label>
                                             <div>
                                                 <div class="pct-ui form product-price-TWdollar unit-before">
-                                                    <input type="tel" value="1626">
+                                                    <input type="tel" value="">
                                                 </div>
                                                 <div class="pct-ui form product-price-THbaht unit-before">
-                                                    <input type="tel" value="1620">
+                                                    <input type="tel" value="">
                                                 </div>
                                             </div>
                                         </div>
@@ -425,10 +285,10 @@
                                     </div>
 
                                     <div class="pct-ui form-label product-title">
-                                        <label><a href="#" class="aboutHScodeBtn">HS CODE <span
+                                        <label><a href="#" class="aboutHScodeBtn">HS CODE<span
                                                     class="pct-icon icon-information tooltips-blue"></span></a></label>
                                         <div class="pct-ui form ">
-                                            <input type="text" placeholder="" value="91011100007">
+                                            <input type="text" placeholder="" value="">
                                             <a href="https://portal.sw.nat.gov.tw/APGQ/LoginFree?request_locale=zh_TW&breadCrumbs=JTdCJTIyYnJlYWRDcnVtYnMlMjIlM0ElNUIlN0IlMjJuYW1lJTIyJTNBJTIyJUU1JTg1JThEJUU4JUFEJTg5JUU2JTlGJUE1JUU4JUE5JUEyJUU2JTlDJThEJUU1JThCJTk5JTIyJTJDJTIydXJsJTIyJTNBJTIyJTIyJTdEJTJDJTdCJTIybmFtZSUyMiUzQSUyMiVFNyVBOCU4NSVFNSU4OSU4NyVFNyVBOCU4NSVFNyU4RSU4NyVFNiU5RiVBNSVFOCVBOSVBMiUyMiUyQyUyMnVybCUyMiUzQSUyMmNoYW5nZU1lbnVVcmwyKCclRTclQTglODUlRTUlODklODclRTclQTglODUlRTclOEUlODclRTYlOUYlQTUlRTglQTklQTInJTJDJ0FQR1FfNycpJTIyJTdEJTJDJTdCJTIybmFtZSUyMiUzQSUyMihHQzQxMSklRTclQTglODUlRTUlODklODclRTclQTglODUlRTclOEUlODclRTclQjYlOUMlRTUlOTAlODglRTYlOUYlQTUlRTglQTklQTIlRTQlQkQlOUMlRTYlQTUlQUQlMjIlMkMlMjJ1cmwlMjIlM0ElMjJvcGVuTWVudSgnJTJGQVBHUSUyRkdDNDExJyklMjIlN0QlMkMlN0IlN0QlMkMlN0IlN0QlNUQlMkMlMjJwYXRoVXJsJTIyJTNBJTIyJTIzTUVOVV9BUEdRJTJDJTIzTUVOVV9BUEdRXzclMkMlMkZBUEdRJTJGR0M0MTElMjIlN0Q="
                                                 target="_blank"
                                                 class="pct-ui btn-sm btn-primary-outlined inputGroup-btn">代碼查詢</a>
@@ -438,7 +298,7 @@
                                     <div class="pct-ui form-label">
                                         <label>預估關稅</label>
                                         <div class="pct-ui form text-with-input">
-                                            <input type="text" placeholder="" value="15">
+                                            <input type="text" placeholder="" value="0">
                                             <p class="align-right">％</p>
                                         </div>
                                     </div>
@@ -472,7 +332,7 @@
                                         <div class="pct-ui form-label form-sm-break">
                                             <label for="" class="required">庫存數</label>
                                             <div class="pct-ui form text-with-input">
-                                                <input type="text" placeholder="" value="499" class="stock-num">
+                                                <input type="text" placeholder="" value="0" class="stock-num">
                                                 <p class="align-right">單一商品庫存數量上限為 <span class="eng-num">499</span></p>
                                             </div>
                                         </div>
@@ -593,8 +453,9 @@
                                             <a href="#" class="parcelWeightBtn">包裹重量<span
                                                     class="pct-icon icon-information tooltips-blue "></span></a>
                                         </label>
+
                                         <div class="pct-ui form product-weight unit-after">
-                                            <input type="text" placeholder="" value="1.96">
+                                            <input type="text" placeholder="">
                                         </div>
                                     </div>
 
@@ -605,13 +466,13 @@
                                         </label>
                                         <div class="column-form">
                                             <div class="pct-ui form product-volumatic unit-after">
-                                                <input type="text" placeholder="長" value="13.6">
+                                                <input type="text" placeholder="長">
                                             </div>
                                             <div class="pct-ui form product-volumatic unit-after">
-                                                <input type="text" placeholder="寬" value="11.2">
+                                                <input type="text" placeholder="寬">
                                             </div>
                                             <div class="pct-ui form product-volumatic unit-after">
-                                                <input type="text" placeholder="高" value="8.4">
+                                                <input type="text" placeholder="高">
                                             </div>
                                         </div>
                                     </div>
@@ -1342,6 +1203,7 @@
                         </section>
                     </div>
                 </div>
+
 
                 <!--說明For RD:  有錯誤訊息時 請帶入 error 的 class <div class="seller-action-bar-fixed error">  alert-box 就會顯示-->
                 <div class="seller-action-bar-fixed">

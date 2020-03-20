@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport"
-        content="target-densitydpi=device-dpi, width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description"
-        content="PChome Online Inc. เป็นกลุ่มบริษัทอีคอมเมิร์ซที่ใหญ่ที่สุดในไต้หวัน ขณะนี้เราได้เปิดให้บริการในประเทศไทยฟรีสำหรับทั้งผู้ขายและผู้ซื้อ คุณอยากจะขายหรืออยากจะซื้อของอะไรก็ได้ทั้งนั้นที่ PChome Thai ไม่ว่าจะเครื่องสำอาง, เสื้อผ้าแฟชั่น, เครื่องใช้ไฟฟ้า, หนังสือ, ของเล่น และอื่นๆ อีกมากมาย">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="PChome Online Inc. เป็นกลุ่มบริษัทอีคอมเมิร์ซที่ใหญ่ที่สุดในไต้หวัน ขณะนี้เราได้เปิดให้บริการในประเทศไทยฟรีสำหรับทั้งผู้ขายและผู้ซื้อ คุณอยากจะขายหรืออยากจะซื้อของอะไรก็ได้ทั้งนั้นที่ PChome Thai ไม่ว่าจะเครื่องสำอาง, เสื้อผ้าแฟชั่น, เครื่องใช้ไฟฟ้า, หนังสือ, ของเล่น และอื่นๆ อีกมากมาย">
     <meta property="og:title" content="ออนไลน์ช้อปปิ้ง ที่ทุกสิ่งเป็นเรื่องแสนง่ายและสนุก" />
-    <meta property="og:description"
-        content="หาได้ทุกอย่างที่ต้องการที่ พีซีโฮมไทย - เครื่องสำอาง,เสื้อผ้าแฟชั่น, อุปกรณ์ไฟฟ้า, หนังสือ, ของเล่น และอื่นอีกมากมาย" />
+    <meta property="og:description" content="หาได้ทุกอย่างที่ต้องการที่ พีซีโฮมไทย - เครื่องสำอาง,เสื้อผ้าแฟชั่น, อุปกรณ์ไฟฟ้า, หนังสือ, ของเล่น และอื่นอีกมากมาย" />
     <meta property="og:image" content="http://cimg.pchome.co.th/fb/PchomeShop.jpg" />
     <meta property="og:url" content="http://www.pchome.co.th" />
     <meta property="og:site_name" content="PChome Thai" />
@@ -21,13 +18,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#e21e26">
-    <meta name="msapplication-TileColor" content="#e21e26">
-    <meta name="theme-color" content="#e21e26">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#00afeb">
+    <meta name="msapplication-TileColor" content="#00afeb">
+    <meta name="theme-color" content="#00afeb">
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/normalize.css">
 
     <!-- PAGE -->
     <link rel="stylesheet" type="text/css" href="css/product.css">
@@ -35,9 +32,9 @@
     <!-- Icon Font -->
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
 
-    <title>PChome Thai | มุมลูกค้า</title>
+    <title>PChome Thai | 編輯商品</title>
     <!-- Google Tag Manager -->
     <script>
     (function(w, d, s, l, i) {
@@ -65,16 +62,23 @@
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52F2P7M" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52F2P7M" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <!-- 說明FOR RD: 填寫資料正確送出 請跑這一個區塊的LOADING-->
+    <div class="pct-ui loading-overlay-main" style="display: none;">
+        <div class="loading-circle-main">
+            <div class="circle-loader">
+                <div class="checkmark draw"></div>
+            </div>
+        </div>
+    </div>
 
     <section id="pct-main">
         <!-- PChome Thai Header -->
         <?php include("assets/header.php"); ?>
         <!-- PChome Thai Header end-->
-
 
         <!-- PChome Thai Menu_mobile -->
         <?php include("assets/menu-mobile.php"); ?>
@@ -112,14 +116,14 @@
                                     <li>新增商品</li>
                                 </ul>
                             </div>
-
+                            <p class="product-add-alert"><span class="pct-icon icon-alert"></span>新增商品前，請先參閱 <a href="prohibited_restricted.php" target="_blank">禁運及受限商品列表</a>，以維護您的權益。謝謝！</p>
+                            <!--商品圖片-->
                             <div class="content-block">
-                                <div class="content-title">設定商品圖片 <span class="required">＊</span></div>
+                                <div class="content-title">設定商品圖片</span></div>
                                 <div class="content-description">
                                     <p class="description-text">尺寸600px x 600px 以上享有局部放大功能，買家能看到更多商品細節 (格式限JPG, PNG,
                                         或GIF)
-                                        <span class="error-notification-tooltip-inline"><span
-                                                class="pct-icon icon-alert"></span> 至少上傳一張圖片</span>
+                                        <span class="error-notification-tooltip-inline"><span class="pct-icon icon-alert"></span> 至少上傳一張圖片</span>
                                     </p>
 
 
@@ -132,8 +136,7 @@
                                                     </div>
                                                     <div class="primary-tag">封面照片</div>
                                                     <div class="figure-inner">
-                                                        <div class="figure-img img-bg"
-                                                            style="background-image: url('img/pro/pro_04.jpg');">
+                                                        <div class="figure-img img-bg" style="background-image: url('img/pro/pro_04.jpg');">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -146,8 +149,7 @@
                                                         <li class="pct-icon icon-trash"></li>
                                                     </div>
                                                     <div class="figure-inner">
-                                                        <div class="figure-img img-bg"
-                                                            style="background-image: url('img/pro/pro_03.jpg');">
+                                                        <div class="figure-img img-bg" style="background-image: url('img/pro/pro_03.jpg');">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -160,8 +162,7 @@
                                                         <li class="pct-icon icon-trash"></li>
                                                     </div>
                                                     <div class="figure-inner">
-                                                        <div class="figure-img img-bg"
-                                                            style="background-image: url('img/pro/pro_02.jpg');">
+                                                        <div class="figure-img img-bg" style="background-image: url('img/pro/pro_02.jpg');">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -174,8 +175,7 @@
                                                         <li class="pct-icon icon-trash"></li>
                                                     </div>
                                                     <div class="figure-inner">
-                                                        <div class="figure-img img-bg"
-                                                            style="background-image: url('img/pro/pro_01.jpg');">
+                                                        <div class="figure-img img-bg" style="background-image: url('img/pro/pro_01.jpg');">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -216,8 +216,7 @@
                                                         <!-- Product Name--></label>
                                                     <div class="pct-ui form error">
                                                         <input type="text" placeholder="請輸入商品名稱">
-                                                        <div class="error-notification-tooltip-inline">商品名稱為必填且不可超過500字元
-                                                        </div>
+                                                        <div class="error-notification-tooltip-inline">商品名稱為必填且不可超過500字元</div>
                                                     </div>
 
                                                 </div>
@@ -236,13 +235,11 @@
 
                                                     <div class="radio-wrap">
                                                         <div class="pct-ui form radio">
-                                                            <input type="radio" id="singleVaritation" name="radio-group"
-                                                                checked="">
+                                                            <input type="radio" id="singleVaritation" name="radio-group" checked="">
                                                             <label for="singleVaritation">單一規格</label>
                                                         </div>
                                                         <div class="pct-ui form radio">
-                                                            <input type="radio" id="multipleVaritation"
-                                                                name="radio-group">
+                                                            <input type="radio" id="multipleVaritation" name="radio-group">
                                                             <label for="multipleVaritation">多種規格</label>
                                                         </div>
                                                     </div>
@@ -252,10 +249,8 @@
                                                     <div class="pct-ui form-label form-sm-break">
                                                         <label for="" class="required">庫存數</label>
                                                         <div class="pct-ui form error text-with-input">
-                                                            <input type="text" placeholder="" value="0"
-                                                                class="stock-num">
-                                                            <p class="align-right">單一商品庫存數量上限為 <span
-                                                                    class="eng-num">499</span>。</p>
+                                                            <input type="text" placeholder="" value="0" class="stock-num">
+                                                            <p class="align-right">單一商品庫存數量上限為 <span class="eng-num">499</span>。</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -396,8 +391,7 @@
                                     <div class="pct-ui form-label product-warranty">
                                         <label for="">購買此商品的是否提供保固？</label>
                                         <div class="pct-ui switch-toggle">
-                                            <input id="switch-checkbox-warranty" class="switch-checkbox"
-                                                type="checkbox">
+                                            <input id="switch-checkbox-warranty" class="switch-checkbox" type="checkbox">
                                             <label for="switch-checkbox-warranty"></label>
                                         </div>
                                     </div>
@@ -452,25 +446,20 @@
                                     </div>
 
                                     <div class="logistic-wrap operation">
-                                        <p class="description-text">PChome支援物流 (有顯示為<img alt="pchome-protectiont"
-                                                class="icon-img"
-                                                src="https://cimg.pchome.co.th/res/other/coth/img/icon_pcprotect_badge.svg"
-                                                style="width:18px;"> PChome支援物流）</p>
+                                        <p class="description-text">PChome支援物流 (有顯示為<img alt="pchome-protectiont" class="icon-img" src="https://cimg.pchome.co.th/res/other/coth/img/icon_pcprotect_badge.svg" style="width:18px;"> PChome支援物流）</p>
                                         <div class="pct-ui accordion">
                                             <!--摺疊標題-->
                                             <div class="accordion-caption no-accordion">
                                                 <div class="caption-inner">
                                                     <div class="caption-figure">
-                                                        <img src="img/icon-logistic_thaipostEMS.svg" alt=""
-                                                            class="img-fluid">
+                                                        <img src="img/icon-logistic_thaipostEMS.svg" alt="" class="img-fluid">
                                                     </div>
                                                     <div class="caption-title-box">
                                                         <div class="caption-title eng-num">THAI POST - EMS</div>
                                                     </div>
                                                 </div>
                                                 <div class="caption-text-box">
-                                                    <div class="hint-text"><span
-                                                            class="pct-icon icon-alert"></span>需輸入重量</div>
+                                                    <div class="hint-text"><span class="pct-icon icon-alert"></span>需輸入重量</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -479,8 +468,7 @@
                                             <div class="accordion-caption no-accordion">
                                                 <div class="caption-inner">
                                                     <div class="caption-figure">
-                                                        <img src="img/icon-logistic_thaipost.svg" alt=""
-                                                            class="img-fluid">
+                                                        <img src="img/icon-logistic_thaipost.svg" alt="" class="img-fluid">
                                                     </div>
                                                     <div class="caption-title-box">
                                                         <div class="caption-title eng-num">THAI POST - Registered Mail
@@ -519,8 +507,7 @@
                                             <div class="accordion-caption no-accordion">
                                                 <div class="caption-inner">
                                                     <div class="caption-figure">
-                                                        <img src="img/icon-logistic_sellerMethod.svg" alt=""
-                                                            class="img-fluid">
+                                                        <img src="img/icon-logistic_sellerMethod.svg" alt="" class="img-fluid">
                                                     </div>
                                                     <div class="caption-title-box">
                                                         <div class="caption-title">Seller Appointed Methods</div>
@@ -536,8 +523,7 @@
                                             <div class="accordion-caption no-accordion">
                                                 <div class="caption-inner">
                                                     <div class="caption-figure">
-                                                        <img src="img/icon-logistic_sellerMethod.svg" alt=""
-                                                            class="img-fluid">
+                                                        <img src="img/icon-logistic_sellerMethod.svg" alt="" class="img-fluid">
                                                     </div>
                                                     <div class="caption-title-box">
                                                         <div class="caption-title">Seller Appointed Methods</div>

@@ -11,6 +11,7 @@
 
 //TAB導航
 @import 'library/_tabnav';
+
 //頁碼
 @import 'library/_pagination';
 
@@ -29,78 +30,70 @@
 //列表tabbar上方篩選區塊
 .searchBarGroup{
 
-        //商品評價圖表
-        .section-review-chart {
-            display: flex;
-            align-items: center;
+    //商品評價圖表
+    .section-review-chart {
+        display: flex;
+        align-items: center;
 
-            .review-chart-figures {
+        .review-chart-figures {
 
-                //評價分數
-                .review-score {
+            //評價分數
+            .review-score {
+                display: flex;
+                align-items: flex-end;
 
+                .review-score-text {
                     display: flex;
                     align-items: flex-end;
-                    
+                    font-size: 1.875rem;
+                    color: $colorGray;
+                    margin-right: 10px;
 
-                    .review-score-text {
-                        display: flex;
-                        align-items: flex-end;
-                        font-size: 1.875rem;
-                        color: $colorGray;
-                        margin-right: 10px;
+                    .resault-score {
+                        font-size: 2.8125rem;
+                        color: $colorGrayBlack;
 
-                        .resault-score {
-                            font-size: 2.8125rem;
-                            color: $colorGrayBlack;
-
-                            &:after {
-                                content: '/';
-                                padding: 0 8px 0 6px;
-                                font-size: 0.9375rem;
-                                color: $colorGray;
-                            }
+                        &:after {
+                            content: '/';
+                            padding: 0 8px 0 6px;
+                            font-size: 0.9375rem;
+                            color: $colorGray;
                         }
-
-                        .total-score {
-                            padding-bottom: 5px;
-                        }
-
                     }
 
-                    .pct-ui.review-star {
-                        margin: 5px 0;
-
-                        .pct-icon {
-                            font-size: 1.9rem;
-                        }
-
+                    .total-score {
+                        padding-bottom: 5px;
                     }
                 }
 
-                //人數百分比
-                .review-pecentage-people {
+                .pct-ui.review-star {
+                    margin: 5px 0;
 
-                    >ul {
-                        // margin-top: 10px;
-                        display: flex;
-
-                        li {
-                            font-size: 0.8125rem;
-                            line-height: 18px;
-                            color: $colorDeepGray;
-                            margin-right: 10px;
-
-                            span.eng-num{
-                                color:$colorGrayBlack;
-                            }
-                        }
+                    .pct-icon {
+                        font-size: 1.9rem;
                     }
                 }
             }
 
-        }
+            //人數百分比
+            .review-pecentage-people {
+                >ul {
+                    display: flex;
 
+                    li {
+                        font-size: 0.8125rem;
+                        line-height: 18px;
+                        color: $colorDeepGray;
+                        margin-right: 10px;
+
+                        span.eng-num{
+                            color:$colorGrayBlack;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:$break-sm) {
@@ -361,22 +354,21 @@
                 height: 0;
                 border-style: solid;
                 border-width: 0 8px 12px 8px;
-                border-color: transparent transparent $colorGreyishWhite
-                transparent;
+                border-color: transparent transparent $colorLightBlue transparent;
                 position: relative;
                 left: 14px;
                 top:5px;
             }
             // 對話框
             .contentBox-dialog {
-                background-color: $colorGreyishWhite;
+                background-color: $colorLightBlue;
                 border-radius: 6px;
                 width: 100%;
                 // height: 100px;
                 padding: 5px 15px;
 
                 &.input-msg{
-                    background-color: #fff;
+                    background-color: $colorWhite;
                     padding: 15px 0px;
                     border-bottom: 1px solid $colorLightGray;
                     border-radius:0;
@@ -450,11 +442,11 @@
         .qa-contentBox {
             // 三角形
             .triangle_top {
-                border-color: transparent transparent #FFF3F3 transparent;
+                border-color: transparent transparent $accentLightColor transparent;
             }
             // 對話框
             .contentBox-dialog {
-                background-color: #FFF3F3;
+                background-color: $accentLightColor;
             }
         }
     }

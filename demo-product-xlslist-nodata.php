@@ -209,84 +209,10 @@
                                             </thead>
 
                                             <!--說明FOR RD: 沒有任何上傳紀錄時 -->
-                                            <tbody style="display: none;">
+                                            <tbody>
                                                 <tr class="table_default_empaty">
                                                     <td colspan="7">
                                                         <div class="message-text">沒有大量上傳紀錄</div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                            <tbody>
-                                                <tr class="normallist-item">
-                                                    <td>
-                                                        <span class="eng-num">proexcel_zh.zip</span>
-                                                    </td>
-                                                    <td data-title="上傳時間">
-                                                        <span class="eng-num">2017/12/19 <br
-                                                                class="hidden-md-down">15:16:32
-                                                    </td>
-                                                    <td data-title="上傳狀態">
-                                                        上傳失敗
-                                                    </td>
-                                                    <td data-title="檔案數">
-                                                        <span class="eng-num">10</span>
-                                                    </td>
-                                                    <td data-title="成功">
-                                                        <span class="eng-num">5</span>
-                                                    </td>
-                                                    <td data-title="失敗">
-                                                        <span class="eng-num">4</span>
-                                                    </td>
-                                                    <td data-title="上傳結果">
-                                                        204
-                                                    </td>
-                                                </tr>
-                                                <tr class="normallist-item">
-                                                    <td>
-                                                        <span class="eng-num">proexcel_zh.zip</span>
-                                                    </td>
-                                                    <td data-title="上傳時間">
-                                                        <span class="eng-num">2017/12/19 <br class="hidden-md-down">
-                                                            15:16:32
-                                                    </td>
-                                                    <td data-title="上傳狀態">
-                                                        處理完畢
-                                                    </td>
-                                                    <td data-title="檔案數">
-                                                        <span class="eng-num">10</span>
-                                                    </td>
-                                                    <td data-title="成功">
-                                                        <span class="eng-num">10</span>
-                                                    </td>
-                                                    <td data-title="失敗">
-                                                        <span class="eng-num">0</span>
-                                                    </td>
-                                                    <td data-title="上傳結果">
-                                                        <a class="pct-ui btn-xs" href="">上傳結果</a>
-                                                    </td>
-                                                </tr>
-                                                <tr class="normallist-item">
-                                                    <td>
-                                                        <span class="eng-num">proexcel_zh.zip</span>
-                                                    </td>
-                                                    <td data-title="上傳時間">
-                                                        <span class="eng-num">2017/12/19 <br class="hidden-md-down">
-                                                            15:16:32
-                                                    </td>
-                                                    <td data-title="上傳狀態">
-                                                        等待處理
-                                                    </td>
-                                                    <td data-title="檔案數">
-                                                        <span class="eng-num">0</span>
-                                                    </td>
-                                                    <td data-title="成功">
-                                                        <span class="eng-num">0</span>
-                                                    </td>
-                                                    <td data-title="失敗">
-                                                        <span class="eng-num">0</span>
-                                                    </td>
-                                                    <td data-title="上傳結果">
-                                                        --
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -294,7 +220,7 @@
                                     </div>
 
                                     <!-- PC 版 列出所有頁碼 -->
-                                    <div class="pct-ui page-pagination hidden-sm-down">
+                                    <div class="pct-ui page-pagination hidden-sm-down" style="display: none;">
                                         <ul class="eng-num">
                                             <li class="active">1</li>
                                             <li><a href="#">2</a></li>

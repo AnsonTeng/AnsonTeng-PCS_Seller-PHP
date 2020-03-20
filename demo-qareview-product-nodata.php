@@ -17,18 +17,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#e21e26">
     <meta name="msapplication-TileColor" content="#e21e26">
     <meta name="theme-color" content="#e21e26">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/normalize.css">
     <!-- PAGE -->
     <link rel="stylesheet" type="text/css" href="css/qareview.css">
     <!-- Icon Font -->
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
     <title>PChome SEA | 商品留言</title>
     <!-- Google Tag Manager -->
     <script>
@@ -116,7 +116,7 @@
                                             <input type="text" placeholder="請輸入商品編號">
                                         </div>
                                     </div>
-                                    <a href="#" class="pct-ui btn-sm btn-secondary inputGroup-btn">搜尋</a>
+                                    <a href="#" class="pct-ui btn-sm btn-primary inputGroup-btn">搜尋</a>
                                 </div>
 
                                 <div class="hidden-sm-down">

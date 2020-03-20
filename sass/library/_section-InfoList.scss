@@ -160,7 +160,7 @@ span.date-time {
         @include text-overflow(1);
         height: 1.375rem;
         a {
-            color: $secondaryColor;
+            color: $primaryColor;
         }
     }
 
@@ -225,8 +225,14 @@ span.date-time {
         text-align: left;
 
         // 訂單內容－副標
-        .orderlist_subtitle {
-        }
+        // .orderlist_subtitle {
+        // }
+    }
+}
+@media (max-width: $break-xxs) {
+    // 訂單內容－副標容器
+    .orderlist_subtitleBox {
+        flex-basis: 200px;
     }
 }
 
@@ -249,7 +255,7 @@ span.date-time {
 a.pct-ui.btn-xs.btn.btn_contanctSeller {
     // 按鈕icon
     > i {
-        color: $secondaryColor;
+        color: $primaryColor;
         font-size: 0.875rem;
     }
 }

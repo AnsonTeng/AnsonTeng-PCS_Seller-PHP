@@ -97,7 +97,7 @@
                                                         </div>
                                                         <div class="table_inlineBox">
                                                             <a
-                                                                class="pct-ui btn-xs btn-secondary batchedit-applyAllBtn">套用以下館別
+                                                                class="pct-ui btn-xs btn-primary batchedit-applyAllBtn">套用以下館別
                                                                 <!-- มีหมวดหมู่ทั้งหมดดังต่อไปนี้ --></a>
                                                         </div>
                                                     </div>
@@ -423,8 +423,8 @@
         </div>
         <!-- 操作按鈕 -->
         <div class="pct-panel__content-actions">
-            <a href="#" class="pct-ui btn btn-secondary js-pct-close">取消</a>
-            <a href="#" class="pct-ui btn btn-secondary">確定</a>
+            <a href="#" class="pct-ui btn btn-primary js-pct-close">取消</a>
+            <a href="#" class="pct-ui btn btn-primary">確定</a>
         </div>
 
     </div> <!-- pct-panel__container -->

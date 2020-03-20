@@ -29,8 +29,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined">取消重填</a>
-        <a href="#" class="pct-ui btn btn-secondary">確定送出</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined">取消重填</a>
+        <a href="#" class="pct-ui btn btn-primary">確定送出</a>
     </div>
 </div>
 
@@ -44,7 +44,7 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">確認</a>
+        <a href="" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">確認</a>
     </div>
 </div>

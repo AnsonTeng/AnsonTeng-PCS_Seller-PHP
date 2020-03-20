@@ -20,18 +20,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#e21e26">
     <meta name="msapplication-TileColor" content="#e21e26">
     <meta name="theme-color" content="#e21e26">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/normalize.css">
     <!-- PAGE -->
     <link rel="stylesheet" type="text/css" href="css/product.css">
     <!-- Icon Font -->
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
     <title>PChome Thai | มุมลูกค้า</title>
     <!-- Google Tag Manager -->
     <script>
@@ -138,7 +138,7 @@
                                     </div>
                                     <!--  <a href="#" class="pct-ui btn-sm btn-cta inputGroup-btn">搜尋</a> -->
                                     <a href="product-list.php" class="pct-ui btn-sm inputGroup-btn">
-                                        <li class="pct-icon icon-delete"></li>清空
+                                        <li class="pct-btn-icon icon-delete"></li>清空
                                     </a>
                                 </div>
                                 <!-- 商品搜尋結束-->
@@ -193,10 +193,10 @@
                                     </div>
                                 </div>
                                 <div class="product-list-statistics-btnGroup">
-                                    <a href="#" class="pct-ui btn-xs btn-cta sellAllBtn">
+                                    <a href="#" class="pct-ui btn-xs btn-primary sellAllBtn">
                                         <!-- All List -->
                                         <!-- ชั้นวางทั้งหมด --> 全部上架</a>
-                                    <a href="#" class="pct-ui btn-xs btn-cta readyOnTheMarketBtn">搬家商品全部上架</a>
+                                    <!-- <a href="#" class="pct-ui btn-xs btn-cta readyOnTheMarketBtn">搬家商品全部上架</a> -->
                                 </div>
                             </div>
 
@@ -220,7 +220,7 @@
                             <!--商品格子內容區-->
                             <div class="grid-content">
                                 <div class="block-grid-2-4">
-                                    <a href="product-edit.php">
+                                    <a href="product-add.php">
                                         <div class="pct-ui card-edit-add">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
@@ -241,7 +241,7 @@
                                                     <div class="card-content-pricestock"></div>
                                                     <div class="card-footer">
                                                         <div class="card-footer-save"></div>
-                                                        <div class="card-footer-sold"></div>
+                                                        <div class="card-footer-price"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -289,9 +289,9 @@
                                                             <div class="pct-icon icon-heart-off"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1894</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -349,9 +349,9 @@
                                                             <div class="pct-icon icon-heart-off"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1894</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -403,9 +403,9 @@
                                                             <div class="pct-icon icon-heart-off"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1894</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -471,7 +471,7 @@
                             <!--商品格子內容區 end-->
 
                             <!-- PC 版 列出所有頁碼 -->
-                            <div class="pct-ui page-pagination">
+                            <div class="pct-ui page-pagination hidden-sm-down">
                                 <ul class="eng-num">
                                     <li class="active">1</li>
                                     <li><a href="#">2</a></li>

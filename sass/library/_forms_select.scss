@@ -1,11 +1,13 @@
 //表單--Input Select 下拉選單
 .pct-ui.form select {
-    font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei",
-        "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
+    font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica",
+        "Arial", "WenQuanYi Zen Hei", "Hiragino Sans GB", "LiHei Pro",
+        "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
     padding: 0.5rem 0.75rem 0.5rem 0.75rem;
     margin: 2px 0 6px 0;
     width: 100%;
     font-size: 0.875rem;
+    line-height: 1.375rem;
     border-radius: 2px;
     border: 1px solid #dadada;
     background-color: $colorWhite;
@@ -17,13 +19,13 @@
 
 .pct-ui.form select:focus {
     outline: none;
-    border-color: $secondaryColor;
-    box-shadow: 0 0 5px rgba(33, 144, 198, 0.4);
+    border-color: $primaryColor;
+    box-shadow: 0 0 5px rgba($primaryDeepColor, 0.5);
 }
 
 .pct-ui.form {
     select {
-        min-width: 200px;
+        // min-width: 200px;
         position: relative;
         margin: 0px 0;
         padding: 0.5rem 2rem 0.5rem 0.75rem;
@@ -46,7 +48,7 @@
     font-family: "pct-icon";
     content: $icon-angle-down;
     font-size: 0.75rem;
-    color: $secondaryColor;
+    color: $primaryColor;
     position: absolute;
     z-index: 1;
     top: 50%;
@@ -82,11 +84,11 @@
     margin: 0.125rem 0 0 0;
 }
 
-.error-notification-tooltip-inline {
-    display: none;
-}
-.pct-ui.form.error {
-    .error-notification-tooltip-inline {
-        display: block !important;
-    }
-}
+// .error-notification-tooltip-inline {
+//     display: none;
+// }
+// .pct-ui.form.error {
+//     .error-notification-tooltip-inline {
+//         display: block !important;
+//     }
+// }

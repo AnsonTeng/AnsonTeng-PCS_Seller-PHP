@@ -237,7 +237,7 @@ img {
   text-align: left;
   line-height: 24px; }
   #pct-lightbox-notification .description a {
-    color: #14b9d5; }
+    color: #00afeb; }
 
 .section-footer .pct-section-content p.footer-ttl {
   font-weight: 400;
@@ -371,6 +371,8 @@ img {
       line-height: 24px;
       margin-bottom: 15px;
       word-break: normal; }
+      .content-block .content-description p.description-text b {
+        font-weight: 700; }
       .content-block .content-description p.description-text a {
         text-decoration: underline;
         color: #0091d7; }
@@ -607,10 +609,10 @@ img {
     .seller-action-bar .action-bar-wrap .alert-box span,
     .seller-action-bar-fixed .action-bar-wrap .alert-box span {
       display: none;
-      color: #00afeb; }
+      color: #e96886; }
     .seller-action-bar .action-bar-wrap .alert-box ul li,
     .seller-action-bar-fixed .action-bar-wrap .alert-box ul li {
-      color: #00afeb;
+      color: #e96886;
       font-weight: 400;
       margin-right: 3px;
       line-height: 18px;

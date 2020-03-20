@@ -30,7 +30,7 @@
             </a>
             <ul>
                 <li><a href="" onclick="window.location.href='product-list.php' ">商品列表</a></li>
-                <li><a href="" onclick="window.location.href='product-edit.php' ">新增商品</a></li>
+                <li><a href="" onclick="window.location.href='product-add.php' ">新增商品</a></li>
                 <li><a href="" onclick="window.location.href='product-xlslist.php' ">大量上架</a></li>
             </ul>
         </li>

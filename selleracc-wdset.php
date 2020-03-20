@@ -20,18 +20,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#00afeb">
     <meta name="msapplication-TileColor" content="#00afeb">
     <meta name="theme-color" content="#00afeb">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/normalize.css">
     <!-- PAGE -->
     <link rel="stylesheet" type="text/css" href="css/selleracc.css">
     <!-- Icon Font -->
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
     <title>PChome SEA | 結算設定</title>
     <!-- Google Tag Manager -->
     <script>
@@ -121,8 +121,7 @@
                                         <div class="accountFlexbox-btnBox">
                                             <div class="accountFlexbox-btnBox-btnGroup">
                                                 <img class="btnGroup-img" src="img/bankaccount_setting.svg">
-                                                <a href="#"
-                                                    class="pct-ui btn-sm btn-fluid btn-secondary selleridveriBtn">
+                                                <a href="#" class="pct-ui btn-sm btn-fluid btn-primary selleridveriBtn">
                                                     <li class="pct-btn-icon icon-plus"></li> 修改帳戶
                                                 </a>
                                             </div>
@@ -131,16 +130,21 @@
                                         <div class="accountFlexbox-infoBox">
                                             <div class="infoBox-item">
                                                 <div class="infoBox-title"><span>銀行名稱</span></div>
-                                                <div class="infoBox-text"><span>002 Bangkok Bank (BBL)</span></div>
+                                                <div class="infoBox-text"><span>004 臺灣銀行</span></div>
+                                            </div>
+                                            <div class="infoBox-item">
+                                                <div class="infoBox-title"><span>分行代碼</span></div>
+                                                <div class="infoBox-text"><span class="eng-num">0457</span></div>
                                             </div>
                                             <div class="infoBox-item">
                                                 <div class="infoBox-title"><span>銀行帳號</span></div>
-                                                <div class="infoBox-text"><span class="eng-num">**********26522</span>
+                                                <div class="infoBox-text"><span class="eng-num">08**********26522</span>
                                                 </div>
                                             </div>
                                             <div class="infoBox-item">
                                                 <div class="infoBox-title"><span>銀行戶名</span></div>
-                                                <div class="infoBox-text"><span>Sherry Hsu Snow Lily</span></div>
+                                                <div class="infoBox-text"><span>小松菜奇阿<span class="alert-red-block">*
+                                                            銀行戶名需與身分認證的公司名稱相同</span></span></div>
                                             </div>
                                         </div>
 

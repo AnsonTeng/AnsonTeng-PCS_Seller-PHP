@@ -20,18 +20,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#00afeb">
     <meta name="msapplication-TileColor" content="#00afeb">
     <meta name="theme-color" content="#00afeb">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/normalize.css">
     <!-- PAGE -->
     <link rel="stylesheet" type="text/css" href="css/product.css">
     <!-- Icon Font -->
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
     <title>PChome SEA | 商品列表</title>
     <!-- Google Tag Manager -->
     <script>
@@ -144,7 +144,7 @@
                                         </div>
                                     </div>
                                     <!-- <a href="demo-product-clearsearch.php"
-                                        class="pct-ui btn-sm btn-secondary inputGroup-btn">搜尋</a> -->
+                                        class="pct-ui btn-sm btn-primary inputGroup-btn">搜尋</a> -->
                                     <a href="demo-product-clearsearch.php"
                                         class="inputGroup-btn searchBarGroup-searchBtn"><span
                                             class="pct-icon icon-search"></span></a>
@@ -201,10 +201,10 @@
                                     </div>
                                 </div>
                                 <div class="product-list-statistics-btnGroup">
-                                    <a href="#" class="pct-ui btn-xs btn-secondary sellAllBtn">
+                                    <a href="#" class="pct-ui btn-xs btn-primary sellAllBtn">
                                         <!-- All List -->
                                         <!-- ชั้นวางทั้งหมด --> 全部上架</a>
-                                    <!-- <a href="#" class="pct-ui btn-xs btn-secondary readyOnTheMarketBtn">搬家商品全部上架</a> -->
+                                    <!-- <a href="#" class="pct-ui btn-xs btn-primary readyOnTheMarketBtn">搬家商品全部上架</a> -->
                                 </div>
                             </div>
 
@@ -255,7 +255,7 @@
                                                     <div class="card-content-pricestock"></div>
                                                     <div class="card-footer">
                                                         <div class="card-footer-save"></div>
-                                                        <div class="card-footer-sold"></div>
+                                                        <div class="card-footer-price"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -303,9 +303,9 @@
                                                             <div class="pct-icon icon-heart-off"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -363,9 +363,9 @@
                                                             <div class="pct-icon icon-heart-off"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -418,9 +418,9 @@
                                                             <div class="pct-icon icon-heart-off"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -487,9 +487,9 @@
                                                             <div class="pct-icon icon-heart-off no-js"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -544,9 +544,9 @@
                                                             <div class="pct-icon icon-heart-off"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -602,9 +602,9 @@
                                                             <div class="pct-icon icon-heart-off no-js"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -658,9 +658,9 @@
                                                             <div class="pct-icon icon-heart-off"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -718,9 +718,9 @@
                                                             <div class="pct-icon icon-heart-off no-js"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -777,9 +777,9 @@
                                                             <div class="pct-icon icon-heart-off"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -834,9 +834,9 @@
                                                             <div class="pct-icon icon-heart-off"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -893,9 +893,9 @@
                                                             <div class="pct-icon icon-heart-off"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -951,9 +951,9 @@
                                                             <div class="pct-icon icon-heart-off no-js"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1007,9 +1007,9 @@
                                                             <div class="pct-icon icon-heart-off"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1062,9 +1062,9 @@
                                                             <div class="pct-icon icon-heart-off"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1124,9 +1124,9 @@
                                                             <div class="pct-icon icon-heart-off no-js"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1180,9 +1180,9 @@
                                                             <div class="pct-icon icon-heart-off no-js"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1236,9 +1236,9 @@
                                                             <div class="pct-icon icon-heart-off"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1296,9 +1296,9 @@
                                                             <div class="pct-icon icon-heart-off no-js"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1352,9 +1352,9 @@
                                                             <div class="pct-icon icon-heart-off"></div>
                                                             <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer-sold">
-                                                            <div class="card-footer-sold-title">已售出</div>
-                                                            <div class="card-footer-sold-text eng-num">1894</div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1372,7 +1372,7 @@
                             <!--商品格子內容區 end-->
 
                             <!-- PC 版 列出所有頁碼 -->
-                            <div class="pct-ui page-pagination">
+                            <div class="pct-ui page-pagination hidden-sm-down">
                                 <ul class="eng-num">
                                     <li class="active">1</li>
                                     <li><a href="#">2</a></li>
@@ -1423,7 +1423,7 @@
 
                                         <!-- 說明For RD: 若已選取商品２項以上 則開啟“大量編輯“面板（加上 js-pct-panel-trigger 這個樣式） -->
                                         <a href="#"
-                                            class="pct-ui btn btn-secondary js-pct-panel-trigger action-btn-box-batchedit"
+                                            class="pct-ui btn btn-primary js-pct-panel-trigger action-btn-box-batchedit"
                                             data-panel="batchedit">
                                             <span class="pct-icon icon-edit hidden-xxs-up"></span>
                                             <span class="hidden-xxs-down">大量編輯</span>

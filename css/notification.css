@@ -462,7 +462,7 @@ img {
   text-align: left;
   line-height: 24px; }
   #pct-lightbox-notification .description a {
-    color: #14b9d5; }
+    color: #00afeb; }
 
 #pct-main {
   padding-top: calc(64px - 2px); }
@@ -2331,17 +2331,17 @@ img {
     height: 25px;
     border-radius: 50%;
     margin-right: 10px;
-    background: #14b9d5;
+    background: #00afeb;
     /* Old browsers */
-    background: -moz-linear-gradient(left, #14b9d5 50%, #14b9d5 100%);
+    background: -moz-linear-gradient(left, #00afeb 50%, #14b9d5 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #14b9d5 50%, #14b9d5 100%);
+    background: -webkit-linear-gradient(left, #00afeb 50%, #14b9d5 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #14b9d5), to(#14b9d5));
-    background: -o-linear-gradient(left, #14b9d5 50%, #14b9d5 100%);
-    background: linear-gradient(to right, #14b9d5 50%, #14b9d5 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #00afeb), to(#14b9d5));
+    background: -o-linear-gradient(left, #00afeb 50%, #14b9d5 100%);
+    background: linear-gradient(to right, #00afeb 50%, #14b9d5 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14B9D5', endColorstr='#14B9D5',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afeb', endColorstr='#14b9d5',GradientType=1 );
     /* IE6-9 */ }
     .pct-ui.breadcrumb-back span.pct-icon {
       color: #ffffff;
@@ -2381,13 +2381,13 @@ img {
 .pct-ui.form input[type="text"],
 .pct-ui.form input[type="time"],
 .pct-ui.form input[type="url"],
-.pct-ui.form textarea,
-.pct-ui.form select {
+.pct-ui.form textarea {
   font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei", "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   margin: 2px 0 6px 0;
   width: 100%;
   font-size: 0.875rem;
+  line-height: 1.375rem;
   border-radius: 2px;
   border: 1px solid #dadada;
   background-color: #ffffff;
@@ -2398,20 +2398,6 @@ img {
   -moz-appearance: none;
   appearance: none;
   font-weight: 300; }
-
-.pct-ui.form select {
-  position: relative;
-  min-width: 12.5rem;
-  margin: 0px 0;
-  padding: 0.5rem 2rem 0.5rem 0.75rem;
-  font-weight: 300;
-  overflow: hidden;
-  word-break: break-all;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: horizontal; }
 
 .pct-ui.form input:not([type]):focus,
 .pct-ui.form input[type="date"]:focus,
@@ -2425,12 +2411,11 @@ img {
 .pct-ui.form input[type="text"]:focus,
 .pct-ui.form input[type="time"]:focus,
 .pct-ui.form input[type="url"]:focus,
-.pct-ui.form textarea:focus,
-.pct-ui.form select:focus {
+.pct-ui.form textarea:focus {
   outline: none;
-  border-color: #14b9d5;
-  -webkit-box-shadow: 0 0 5px rgba(33, 144, 198, 0.4);
-  box-shadow: 0 0 5px rgba(33, 144, 198, 0.4); }
+  border-color: #00afeb;
+  -webkit-box-shadow: 0 0 5px rgba(0, 145, 215, 0.5);
+  box-shadow: 0 0 5px rgba(0, 145, 215, 0.5); }
 
 .pct-ui.form-disabled input:disabled,
 .pct-ui.form-disabled input.disabled,
@@ -2583,17 +2568,15 @@ img {
 .fluid input[type="text"],
 .fluid input[type="time"],
 .fluid input[type="url"],
-.fluid textarea,
-.fluid select {
+.fluid textarea {
   display: block;
   width: 100%;
   margin-left: auto;
   margin-right: auto; }
 
 .pct-ui.form.error input,
-.pct-ui.form.error textarea,
-.pct-ui.form.error select {
-  border-color: #ba0019;
+.pct-ui.form.error textarea {
+  border-color: #e96886;
   -webkit-box-shadow: none;
   box-shadow: none;
   margin: 0.125rem 0 0 0; }
@@ -2628,7 +2611,7 @@ img {
 .error-notification-tooltip-inline {
   font-size: 0.75rem;
   font-weight: 300;
-  color: #ba0019;
+  color: #e96886;
   line-height: 1.5rem;
   padding-left: 0.3125rem;
   margin: 0rem 0 0.375rem 0;
@@ -2769,6 +2752,7 @@ img {
   margin: 2px 0 6px 0;
   width: 100%;
   font-size: 0.875rem;
+  line-height: 1.375rem;
   border-radius: 2px;
   border: 1px solid #dadada;
   background-color: #ffffff;
@@ -2782,12 +2766,11 @@ img {
 
 .pct-ui.form select:focus {
   outline: none;
-  border-color: #14b9d5;
-  -webkit-box-shadow: 0 0 5px rgba(33, 144, 198, 0.4);
-  box-shadow: 0 0 5px rgba(33, 144, 198, 0.4); }
+  border-color: #00afeb;
+  -webkit-box-shadow: 0 0 5px rgba(0, 145, 215, 0.5);
+  box-shadow: 0 0 5px rgba(0, 145, 215, 0.5); }
 
 .pct-ui.form select {
-  min-width: 200px;
   position: relative;
   margin: 0px 0;
   padding: 0.5rem 2rem 0.5rem 0.75rem;
@@ -2809,7 +2792,7 @@ img {
   font-family: "pct-icon";
   content: "";
   font-size: 0.75rem;
-  color: #14b9d5;
+  color: #00afeb;
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -2835,12 +2818,6 @@ img {
   -webkit-box-shadow: none;
   box-shadow: none;
   margin: 0.125rem 0 0 0; }
-
-.error-notification-tooltip-inline {
-  display: none; }
-
-.pct-ui.form.error .error-notification-tooltip-inline {
-  display: block !important; }
 
 .pct-icon-overseas {
   width: 25px;
@@ -2975,10 +2952,10 @@ header {
   position: fixed;
   width: 100%;
   background-color: #00afeb;
-  background: -webkit-gradient(linear, left top, right top, from(#00AFEB), to(#0091D7));
-  background: -webkit-linear-gradient(left, #00AFEB 0%, #0091D7 100%);
-  background: -o-linear-gradient(left, #00AFEB 0%, #0091D7 100%);
-  background: linear-gradient(to right, #00AFEB 0%, #0091D7 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#00afeb), to(#0091d7));
+  background: -webkit-linear-gradient(left, #00afeb 0%, #0091d7 100%);
+  background: -o-linear-gradient(left, #00afeb 0%, #0091d7 100%);
+  background: linear-gradient(to right, #00afeb 0%, #0091d7 100%);
   z-index: 1001;
   text-align: center;
   top: 0;
@@ -3395,7 +3372,7 @@ header {
     #language .drawer .drawer-triangle {
       left: 124px; }
     #language .drawer .drawer-content .drawer-link li.active > a {
-      color: #14b9d5; }
+      color: #00afeb; }
 
 .account-header {
   background-color: #ffffff;
@@ -3717,7 +3694,7 @@ header {
   padding: 0.9375rem 0;
   width: 340px;
   margin-bottom: 0.9375rem;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 2px; }
   .pct-ui.drawer .pct-icon.icon-delete {
     display: block;
@@ -3834,7 +3811,7 @@ header {
           .pct-ui.drawer .drawer-content .drawer-list-item .drawer-list-content .drawer-list-content-list .drawer-content-price span {
             font-size: 0.75rem; }
     .pct-ui.drawer .drawer-content .drawer-list-item.unread {
-      background-color: #f3f9fc; }
+      background-color: #fdf7ec; }
     .pct-ui.drawer .drawer-content .drawer-list-item.nostock .list-figure {
       opacity: 0.3; }
     .pct-ui.drawer .drawer-content .drawer-list-item.nostock .drawer-list-content-title p {
@@ -3860,7 +3837,7 @@ header {
         width: 100%;
         height: 0;
         padding-top: 100%;
-        background-color: #fff; }
+        background-color: #ffffff; }
     .pct-ui.drawer .drawer-content .drawer-info p {
       text-align: center;
       font-weight: 400;
@@ -3872,7 +3849,7 @@ header {
     text-align: left; }
     .pct-ui.drawer .drawer-content .drawer-link > ul > li.active {
       font-weight: 400;
-      color: #14b9d5;
+      color: #00afeb;
       padding: 0 0.9375rem; }
     .pct-ui.drawer .drawer-content .drawer-link > ul > li.account-logout a {
       color: #888888; }
@@ -3884,7 +3861,7 @@ header {
       color: #333333;
       font-size: 0.875rem; }
     .pct-ui.drawer .drawer-content .drawer-link > ul > li a:hover {
-      color: #14b9d5;
+      color: #00afeb;
       background-color: #f6f6f6; }
   .pct-ui.drawer .drawer-content.scrolling {
     position: relative;
@@ -3943,7 +3920,7 @@ header {
           padding: 0.8125rem 0;
           padding-left: 51px; }
           .sidebar-panel-wrap ul li ul li a:hover {
-            color: #14b9d5; }
+            color: #00afeb; }
     .sidebar-panel-wrap ul li.nosub a.seller-nav-link {
       font-weight: 700; }
       .sidebar-panel-wrap ul li.nosub a.seller-nav-link:after {
@@ -3955,7 +3932,7 @@ header {
       color: #555555;
       position: relative; }
       .sidebar-panel-wrap ul li a.seller-nav-link:hover {
-        color: #14b9d5;
+        color: #00afeb;
         background-color: #ececec; }
       .sidebar-panel-wrap ul li a.seller-nav-link:after {
         content: "";
@@ -3964,7 +3941,7 @@ header {
         top: 38%;
         font-family: "pct-icon" !important;
         content: "";
-        color: #14b9d5;
+        color: #00afeb;
         font-size: 0.7rem; }
       .sidebar-panel-wrap ul li a.seller-nav-link.active a.guide-category-link {
         font-weight: 400;
@@ -3975,17 +3952,17 @@ header {
         height: 25px;
         border-radius: 50%;
         margin-right: 10px;
-        background: #14b9d5;
+        background: #00afeb;
         /* Old browsers */
-        background: -moz-linear-gradient(left, #14b9d5 50%, #14b9d5 100%);
+        background: -moz-linear-gradient(left, #00afeb 50%, #14b9d5 100%);
         /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, #14b9d5 50%, #14b9d5 100%);
+        background: -webkit-linear-gradient(left, #00afeb 50%, #14b9d5 100%);
         /* Chrome10-25,Safari5.1-6 */
-        background: -webkit-gradient(linear, left top, right top, color-stop(50%, #14b9d5), to(#14b9d5));
-        background: -o-linear-gradient(left, #14b9d5 50%, #14b9d5 100%);
-        background: linear-gradient(to right, #14b9d5 50%, #14b9d5 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(50%, #00afeb), to(#14b9d5));
+        background: -o-linear-gradient(left, #00afeb 50%, #14b9d5 100%);
+        background: linear-gradient(to right, #00afeb 50%, #14b9d5 100%);
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14B9D5', endColorstr='#14B9D5',GradientType=1 );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afeb', endColorstr='#14b9d5',GradientType=1 );
         /* IE6-9 */ }
         .sidebar-panel-wrap ul li a.seller-nav-link span.pct-icon {
           color: #ffffff;
@@ -3994,7 +3971,7 @@ header {
         .sidebar-panel-wrap ul li a.seller-nav-link span.no-circle {
           background: none; }
           .sidebar-panel-wrap ul li a.seller-nav-link span.no-circle.pct-icon.icon-homepage {
-            color: #14b9d5;
+            color: #00afeb;
             font-size: 20px;
             position: relative;
             top: 2px; }
@@ -4298,10 +4275,13 @@ header {
   background-color: #eff3f6;
   height: 48px;
   padding: 0 8px; }
-  .orderlistDetail_total .orderlist_titleBox .orderlist_title {
-    font-weight: 500; }
-    .orderlistDetail_total .orderlist_titleBox .orderlist_title.orderlistDetail_price {
-      color: #00afeb; }
+  .orderlistDetail_total .orderlist_titleBox {
+    position: relative; }
+    .orderlistDetail_total .orderlist_titleBox .orderlist_title {
+      font-weight: 700;
+      font-size: 1rem; }
+      .orderlistDetail_total .orderlist_titleBox .orderlist_title.orderlistDetail_price {
+        color: #00afeb; }
 
 .orderlistDetail_subtotal td:first-child,
 .orderlistDetail_total td:first-child {
@@ -4329,20 +4309,20 @@ header {
     right: 0px; } }
 
 .orderlistDetail_price {
+  position: relative;
   text-align: right; }
   .orderlistDetail_price span {
     display: inline-block;
     text-align: left;
-    width: 72px; }
-    .orderlistDetail_price span.through {
-      text-decoration: line-through; }
-
-.orderlistDetail_discount {
-  font-size: 0.875rem;
-  font-weight: 500;
-  text-align: right;
-  line-height: 22px;
-  padding-right: 8px; }
+    width: 80px; }
+  .orderlistDetail_price.orderlistDetail_discount {
+    color: #e96886;
+    position: relative;
+    left: -9px; }
+    .orderlistDetail_price.orderlistDetail_discount span::before {
+      position: absolute;
+      content: "-";
+      color: #e96886; }
 
 .orderlistDetail_totalamount {
   text-align: right;
@@ -4380,7 +4360,7 @@ a.pct-ui.btn-xs.productscreenshotBtn .pct-icon {
   position: relative; }
   .toggleBar .toggleBar_arrow.pct-icon {
     font-size: 1rem;
-    color: #14b9d5;
+    color: #00afeb;
     position: absolute;
     z-index: 1;
     right: 10px;
@@ -4475,7 +4455,7 @@ a.pct-ui.btn-xs.productscreenshotBtn .pct-icon {
     width: 100%;
     line-height: 50px;
     font-size: 0.9375rem;
-    color: #14b9d5;
+    color: #00afeb;
     background-color: #ffffff; }
     .view-img-original a .pct-icon {
       display: inline-block;
@@ -4483,7 +4463,7 @@ a.pct-ui.btn-xs.productscreenshotBtn .pct-icon {
       font-size: 18px;
       width: auto;
       height: auto;
-      color: #14b9d5;
+      color: #00afeb;
       top: 2px;
       left: 1px;
       margin-right: 3px; }
@@ -4637,7 +4617,7 @@ a.pct-ui.btn-xs.productscreenshotBtn .pct-icon {
   .pct-panel__container {
     width: 90%; } }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1200px) {
   .pct-panel__container {
     width: 75%; } }
 
@@ -4654,6 +4634,9 @@ a.pct-ui.btn-xs.productscreenshotBtn .pct-icon {
   padding: 70px 8px;
   overflow: auto;
   -webkit-overflow-scrolling: touch; }
+  @media (max-width: 1200px) {
+    .pct-panel__content {
+      padding: 70px 0px; } }
   .pct-panel__content .pct-ui.modal {
     width: 100%;
     -webkit-box-shadow: 0 0 0 0;
@@ -4782,6 +4765,58 @@ a.pct-ui.btn-xs.productscreenshotBtn .pct-icon {
   background-color: #ffffff;
   border-bottom: none; }
 
+.pct-ui.page-pagination > ul {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .pct-ui.page-pagination > ul li {
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: 400; }
+    .pct-ui.page-pagination > ul li.pagination-jump-next {
+      background: url("../img/icon-page-jump-next.svg") center no-repeat;
+      background-size: 18px 18px; }
+    .pct-ui.page-pagination > ul li.active {
+      color: #00afeb; }
+    .pct-ui.page-pagination > ul li a {
+      width: 35px;
+      height: 35px;
+      border-radius: 2px;
+      display: inline-block;
+      color: #333333;
+      background-color: rgba(238, 238, 238, 0); }
+      .pct-ui.page-pagination > ul li a .pct-icon {
+        font-size: 0.75rem;
+        color: #555555; }
+      .pct-ui.page-pagination > ul li a:hover {
+        color: #00afeb;
+        background-color: #eeeeee; }
+        .pct-ui.page-pagination > ul li a:hover .pct-icon {
+          color: #00afeb; }
+
+.pct-ui.page-pagination.group > ul {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .pct-ui.page-pagination.group > ul li {
+    width: auto;
+    height: 35px;
+    margin: 0 5px; }
+    .pct-ui.page-pagination.group > ul li span.icon-plus {
+      padding-left: 5px;
+      font-size: 12px; }
+  .pct-ui.page-pagination.group > ul.align-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
 .pct-ui.tab-nav-bar {
   position: -webkit-sticky;
   /* for safari */
@@ -4824,11 +4859,11 @@ a.pct-ui.btn-xs.productscreenshotBtn .pct-icon {
       flex-shrink: 0;
       border: 1px solid #ececec; }
       .section-notification-list .notification-list-wrap .notification-list-item .list-figure .list-figure-inner {
-        background: #14b9d5 !important;
-        background: -webkit-linear-gradient(left, #14b9d5 0%, #14b9d5 100%);
-        background: -webkit-gradient(linear, left top, right top, from(#14b9d5), to(#14b9d5));
-        background: -o-linear-gradient(left, #14b9d5 0%, #14b9d5 100%);
-        background: linear-gradient(to right, #14b9d5 0%, #14b9d5 100%); }
+        background: #00afeb !important;
+        background: -webkit-linear-gradient(left, #00afeb 0%, #00afeb 100%);
+        background: -webkit-gradient(linear, left top, right top, from(#00afeb), to(#00afeb));
+        background: -o-linear-gradient(left, #00afeb 0%, #00afeb 100%);
+        background: linear-gradient(to right, #00afeb 0%, #00afeb 100%); }
     .section-notification-list .notification-list-wrap .notification-list-item .notification-list-content {
       width: 100%;
       padding-left: 0.625rem; }
@@ -4880,7 +4915,7 @@ a.pct-ui.btn-xs.productscreenshotBtn .pct-icon {
           font-weight: 300;
           color: #555555; }
     .section-notification-list .notification-list-wrap .notification-list-item.unread {
-      background-color: #f3f9fc; }
+      background-color: #fdf7ec; }
     .section-notification-list .notification-list-wrap .notification-list-item.read {
       background-color: #ffffff; }
     .section-notification-list .notification-list-wrap .notification-list-item.read:hover {

@@ -214,7 +214,7 @@
                                 </div>
 
                                 <div class="drawer-actions login">
-                                    <a href="notification.php" class="pct-ui btn-sm btn-cta">ดูเพิ่มเติม</a>
+                                    <a href="notification.php" class="pct-ui btn-sm btn-secondary">ดูเพิ่มเติม</a>
                                 </div>
                             </div>
                             <!-- 電腦版_通知中心_未登入 end -->

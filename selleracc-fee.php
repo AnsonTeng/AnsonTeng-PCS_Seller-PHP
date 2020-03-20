@@ -20,18 +20,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#00afeb">
     <meta name="msapplication-TileColor" content="#00afeb">
     <meta name="theme-color" content="#00afeb">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/normalize.css">
     <!-- PAGE -->
     <link rel="stylesheet" type="text/css" href="css/selleracc.css">
     <!-- Icon Font -->
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
     <title>PChome SEA | 費用查詢</title>
     <!-- Google Tag Manager -->
     <script>
@@ -132,11 +132,11 @@
                                         <!-- colgroup -->
                                         <colgroup>
                                             <col class="table--w15">
-                                            <col class="table--w20">
-                                            <col class="table--w10">
-                                            <col class="table--w10">
-                                            <col class="table--w15">
-                                            <col class="table--w15">
+                                            <col class="table--w18">
+                                            <col class="table--w11">
+                                            <col class="table--w17">
+                                            <col class="table--w12">
+                                            <col class="table--w12">
                                             <col class="table--w15">
                                         </colgroup>
                                         <!-- thead -->
@@ -159,11 +159,11 @@
                                     <table class="normal-table">
                                         <colgroup>
                                             <col class="table--w15">
-                                            <col class="table--w20">
-                                            <col class="table--w10">
-                                            <col class="table--w10">
-                                            <col class="table--w15">
-                                            <col class="table--w15">
+                                            <col class="table--w18">
+                                            <col class="table--w11">
+                                            <col class="table--w17">
+                                            <col class="table--w12">
+                                            <col class="table--w12">
                                             <col class="table--w15">
                                         </colgroup>
 
@@ -201,8 +201,7 @@
                                                 </td>
                                                 <td data-title="單據號碼">
                                                     <span class="eng-num">
-                                                        <a class="js-pct-panel-trigger" data-panel="orderDetails"
-                                                            href="#">PT201905081824</a></span>
+                                                        PT201905081824</span>
                                                 </td>
                                                 <td data-title="交易類別">
                                                     <span>繳交費用</span>
@@ -211,10 +210,10 @@
                                                     <span>成交手續費</span>
                                                 </td>
                                                 <td data-title="金額 THB">
-                                                    <span class="eng-num negative">98</span>
+                                                    <span class="eng-num">98</span>
                                                 </td>
                                                 <td data-title="金額 TWD ">
-                                                    <span class="eng-num negative">100</span>
+                                                    <span class="eng-num">100</span>
                                                 </td>
                                                 <td data-title="費用累計">
                                                     <span class="eng-num">112,895</span>
@@ -228,8 +227,7 @@
                                                     <span class="eng-num">2020/12/20</span>
                                                 </td>
                                                 <td data-title="單據號碼">
-                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
-                                                            data-panel="orderDetails" href="#">PR201905251824</a></span>
+                                                    <span class="eng-num">PR201905251824</span>
                                                 </td>
                                                 <td data-title="交易類別">
                                                     <span>繳交費用</span>
@@ -238,10 +236,10 @@
                                                     <span>退款轉帳手續費</span>
                                                 </td>
                                                 <td data-title="金額 THB">
-                                                    <span class="eng-num negative">208</span>
+                                                    <span class="eng-num">208</span>
                                                 </td>
                                                 <td data-title="金額 TWD ">
-                                                    <span class="eng-num negative">201</span>
+                                                    <span class="eng-num">201</span>
                                                 </td>
                                                 <td data-title="費用累計">
                                                     <span class="eng-num">112,895</span>
@@ -265,13 +263,13 @@
                                                     <span>交易手續費</span>
                                                 </td>
                                                 <td data-title="金額 THB">
-                                                    <span class="eng-num ">1,895</span>
+                                                    <span class="eng-num negative">1,895</span>
                                                 </td>
                                                 <td data-title="金額 TWD ">
-                                                    <span class="eng-num ">1,890</span>
+                                                    <span class="eng-num negative">1,890</span>
                                                 </td>
                                                 <td data-title="費用累計">
-                                                    <span class="eng-num">112,895</span>
+                                                    <span class="eng-num negative">112,895</span>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -289,13 +287,13 @@
                                                     <span>新增費用</span>
                                                 </td>
                                                 <td data-title="項目">
-                                                    <span>運費</span>
+                                                    <span>代寄運費</span>
                                                 </td>
                                                 <td data-title="金額 THB">
-                                                    <span class="eng-num ">1,895</span>
+                                                    <span class="eng-num negative">1,895</span>
                                                 </td>
                                                 <td data-title="金額 TWD ">
-                                                    <span class="eng-num ">1,890</span>
+                                                    <span class="eng-num negative">1,890</span>
                                                 </td>
                                                 <td data-title="費用累計">
                                                     <span class="eng-num">112,895</span>
@@ -319,10 +317,10 @@
                                                     <span>運費補收</span>
                                                 </td>
                                                 <td data-title="金額 THB">
-                                                    <span class="eng-num ">1,895</span>
+                                                    <span class="eng-num negative">1,895</span>
                                                 </td>
                                                 <td data-title="金額 TWD ">
-                                                    <span class="eng-num ">1,890</span>
+                                                    <span class="eng-num negative">1,890</span>
                                                 </td>
                                                 <td data-title="費用累計">
                                                     <span class="eng-num">112,895</span>
@@ -330,11 +328,37 @@
                                             </tr>
                                         </tbody>
 
+                                        <tbody>
+                                            <tr class="normallist-item">
+                                                <td data-title="日期">
+                                                    <span class="eng-num">2020/12/20</span>
+                                                </td>
+                                                <td data-title="單據號碼">
+                                                    <span class="eng-num"><a class="js-pct-panel-trigger"
+                                                            data-panel="orderDetails" href="#">9121800007684</a></span>
+                                                </td>
+                                                <td data-title="交易類別">
+                                                    <span>新增費用</span>
+                                                </td>
+                                                <td data-title="項目">
+                                                    <span>VAT稅</span>
+                                                </td>
+                                                <td data-title="金額 THB">
+                                                    <span class="eng-num negative">1,895</span>
+                                                </td>
+                                                <td data-title="金額 TWD ">
+                                                    <span class="eng-num negative">1,890</span>
+                                                </td>
+                                                <td data-title="費用累計">
+                                                    <span class="eng-num">112,895</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
                                     </table>
                                 </div>
 
                                 <!-- PC 版 列出所有頁碼 -->
-                                <div class="pct-ui page-pagination">
+                                <div class="pct-ui page-pagination hidden-sm-down">
                                     <ul class="eng-num">
                                         <li class="active">1</li>
                                         <li><a href="#">2</a></li>

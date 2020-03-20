@@ -20,18 +20,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#e21e26">
     <meta name="msapplication-TileColor" content="#e21e26">
     <meta name="theme-color" content="#e21e26">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/normalize.css">
     <!-- PAGE -->
     <link rel="stylesheet" type="text/css" href="css/qareview.css">
     <!-- Icon Font -->
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
     <title>PChome SEA | 商品留言</title>
     <!-- Google Tag Manager -->
     <script>
@@ -120,7 +120,7 @@
                                             <input type="text" placeholder="請輸入商品編號">
                                         </div>
                                     </div>
-                                    <a href="#" class="pct-ui btn-sm btn-secondary inputGroup-btn">搜尋</a>
+                                    <a href="#" class="pct-ui btn-sm btn-primary inputGroup-btn">搜尋</a>
                                 </div>
 
                                 <div class="hidden-sm-down">
@@ -247,7 +247,7 @@
 
                                                     <!-- 操作按鈕欄 -->
                                                     <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
-                                                        <a class="pct-ui btn-xs btn-secondary"
+                                                        <a class="pct-ui btn-xs btn-primary"
                                                             href="qareview-product-reply.php">回覆留言</a>
                                                     </div>
 
@@ -341,7 +341,7 @@
 
                                                     <!-- 操作按鈕欄 -->
                                                     <div class="table_flexBox table_flexBox-right">
-                                                        <a class="pct-ui btn-xs btn-secondary"
+                                                        <a class="pct-ui btn-xs btn-primary"
                                                             href="qareview-product-reply.php">回覆留言</a>
                                                     </div>
 
@@ -435,7 +435,7 @@
                                                 <td colspan="2">
                                                     <!-- 操作按鈕欄 -->
                                                     <div class="table_flexBox table_flexBox-right">
-                                                        <a class="pct-ui btn-xs btn-secondary"
+                                                        <a class="pct-ui btn-xs btn-primary"
                                                             href="qareview-product-reply.php">留言</a>
                                                     </div>
                                                 </td>
@@ -449,7 +449,7 @@
                             </div>
                             <!-- 整體表格結束 -->
                             <!-- PC 版 列出所有頁碼 -->
-                            <div class="pct-ui page-pagination">
+                            <div class="pct-ui page-pagination hidden-sm-down">
                                 <ul class="eng-num">
                                     <li class="active">1</li>
                                     <li><a href="#">2</a></li>
@@ -469,7 +469,7 @@
                             </div>
                             <!-- 手機版 Load more-->
                             <div class="pct-btn-loadcontent hidden-sm-up">
-                                <a href="#" class="pct-ui btn btn-secondary btn-load">LOAD MORE</a>
+                                <a href="#" class="pct-ui btn btn-primary btn-load">LOAD MORE</a>
                             </div>
                         </section>
                     </div>

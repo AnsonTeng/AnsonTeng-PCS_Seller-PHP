@@ -20,18 +20,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#e21e26">
     <meta name="msapplication-TileColor" content="#e21e26">
     <meta name="theme-color" content="#e21e26">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/normalize.css">
     <!-- PAGE -->
     <link rel="stylesheet" type="text/css" href="css/qareview.css">
     <!-- Icon Font -->
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
     <title>PChome SEA | 商品留言回覆</title>
     <!-- Google Tag Manager -->
     <script>
@@ -164,7 +164,7 @@
                                                     <span
                                                         class="list__itemInfo list__itemInfo-userName orderlistDetail__itemInfo-userName">so*****************om</span>
                                                     <div class=""><a href=""
-                                                            class="pct-ui btn-xs btn btn-secondary-outlined buymanyBtn">購買多件商品</a>
+                                                            class="pct-ui btn-xs btn btn-primary-outlined buymanyBtn">購買多件商品</a>
                                                     </div>
                                                 </div>
                                                 <div class="">
@@ -248,8 +248,8 @@
 
                                                         <div class="reply-action">
                                                             <!-- <a class="pct-ui btn-sm btn-cta-outlined" href="qareview-order.php">返回列表</a> -->
-                                                            <a class="pct-ui btn btn-secondary-outlined">取消重填</a>
-                                                            <a class="pct-ui btn btn-secondary">確定送出</a>
+                                                            <a class="pct-ui btn btn-primary-outlined">取消重填</a>
+                                                            <a class="pct-ui btn btn-primary">確定送出</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -364,9 +364,9 @@
 
 
                                         <div class="scroll-to-message">
-                                            <a class="pct-ui btn btn-secondary-outlined"
+                                            <a class="pct-ui btn btn-primary-outlined"
                                                 href="qareview-product.php">返回列表</a>
-                                            <a class="pct-ui btn btn-secondary scroll-link" href="#replyGroup">回覆留言</a>
+                                            <a class="pct-ui btn btn-primary scroll-link" href="#replyGroup">回覆留言</a>
                                         </div>
                                     </div>
 

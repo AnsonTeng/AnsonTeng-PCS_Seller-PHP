@@ -42,7 +42,7 @@
         .number-btn {
             flex-shrink: 0;
             @extend %number-btn;
-            color: $secondaryColor;
+            color: $primaryColor;
 
             .number__decrement {
                 border-right: none;

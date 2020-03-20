@@ -219,6 +219,34 @@ $(document).ready(function() {
         lockBody();
         return false;
     });
+
+    // 關於 包裹重量 說明
+    $(".parcelWeightBtn").on("click", function() {
+        $("#pct-lightbox")
+            .children(".pct-lightBox_inner")
+            .children("div")
+            .hide();
+        // 要顯示的燈箱ＩＤ名稱
+        $("#pct-lightbox-parcelWeight").show();
+        $("#pct-lightbox").toggle();
+        // 鎖住背景物件滑動函式
+        lockBody();
+        return false;
+    });
+
+    // 關於 包裹材積 說明
+    $(".parcelVolumeBtn").on("click", function() {
+        $("#pct-lightbox")
+            .children(".pct-lightBox_inner")
+            .children("div")
+            .hide();
+        // 要顯示的燈箱ＩＤ名稱
+        $("#pct-lightbox-parcelVolume").show();
+        $("#pct-lightbox").toggle();
+        // 鎖住背景物件滑動函式
+        lockBody();
+        return false;
+    });
 });
 
 $(document).ready(function() {

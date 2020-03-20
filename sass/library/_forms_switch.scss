@@ -51,7 +51,7 @@ input[type="checkbox"].switch-checkbox:not(:checked) + label {
 }
 
 .switch-checkbox:checked + label {
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
 }
 
 .switch-checkbox:not(:checked) + label {
@@ -64,5 +64,5 @@ input[type="checkbox"].switch-checkbox:not(:checked) + label {
 }
 
 .switch-checkbox:checked + label:before {
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
 }

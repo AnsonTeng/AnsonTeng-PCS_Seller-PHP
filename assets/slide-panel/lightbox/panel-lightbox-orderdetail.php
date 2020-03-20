@@ -37,8 +37,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined">取消重填</a>
-        <a href="#" class="pct-ui btn btn-secondary">確定送出</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined">取消重填</a>
+        <a href="#" class="pct-ui btn btn-primary">確定送出</a>
     </div>
 </div>
 
@@ -92,8 +92,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined">取消重填</a>
-        <a href="#" class="pct-ui btn btn-secondary">確定送出</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined">取消重填</a>
+        <a href="#" class="pct-ui btn btn-primary">確定送出</a>
     </div>
 </div>
 
@@ -255,7 +255,7 @@
         <div class="loading-circle small"></div>
     </div>
     <i class="pct-icon icon-delete lightbox_close"></i>
-    <div class="modal-header">準備出貨 － ACS快遞(賞味開放)</div>
+    <div class="modal-header">準備出貨 － ACS快遞(尚未開放)</div>
     <div class="scrolling-tall modal-content">
         <div class="description">
 
@@ -374,7 +374,7 @@
                         <div class="line_box_list"><span class="title">收件地址：</span><span>191/54, 191/57, 18th Floor, CTI
                                 Tower, Ratchadapisek Road,, Klongtoey, Bangkok 10110 Thailand</span></div>
                         <div class="line_box_list"> <span class="title">電話：</span><span>(+66) 0987654321</span></div>
-                    </div><a class="pct-ui btn-secondary-outlined btn-xs" href="#">複製收件資訊</a>
+                    </div><a class="pct-ui btn-primary-outlined btn-xs" href="#">複製收件資訊</a>
                 </div>
                 <div class="dispatch_prepare_block"><span class="step__number">STEP 03. 通知出貨</span>
                     <p>由於賣家自行寄送為 PChome 非支援物流方式，無法由系統進行物流追蹤；</p>
@@ -429,7 +429,7 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary">確認收款</a>
+        <a href="#" class="pct-ui btn btn-primary">確認收款</a>
     </div>
 </div>
 
@@ -454,8 +454,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined">不同意取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">同意取消</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined">不同意取消</a>
+        <a href="#" class="pct-ui btn btn-primary">同意取消</a>
     </div>
 </div>
 
@@ -526,8 +526,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined">取消重填</a>
-        <a href="#" class="pct-ui btn btn-secondary">確認送出</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined">取消重填</a>
+        <a href="#" class="pct-ui btn btn-primary">確認送出</a>
     </div>
 </div>
 
@@ -562,8 +562,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined">取消重填</a>
-        <a href="#" class="pct-ui btn btn-secondary">確定送出</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined">取消重填</a>
+        <a href="#" class="pct-ui btn btn-primary">確定送出</a>
     </div>
 </div>
 
@@ -577,8 +577,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">同意退款</a>
+        <a href="" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">同意退款</a>
     </div>
 </div>
 

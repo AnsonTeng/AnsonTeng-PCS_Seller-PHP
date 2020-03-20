@@ -90,7 +90,7 @@
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
     color: $colorWhite;
     font-size: 0.875rem;
     padding: 2px;
@@ -153,7 +153,7 @@
         margin-left: auto;
         position: relative;
         left: 10px;
-        color: $secondaryColor;
+        color: $primaryColor;
     }
 
     span.icon-checked {
@@ -164,16 +164,16 @@
         padding-left: 0.0625rem;
         position: relative;
         border-radius: 50%;
-        border: 1px solid $secondaryColor;
+        border: 1px solid $primaryColor;
         background-color: $colorWhite;
-        color: $secondaryColor;
+        color: $primaryColor;
     }
 }
 
 // 選單單位  Hover
 .no-touch .catalog__menuWrapper li a:hover {
     background: $colorLightBlue;
-    color: $secondaryColor;
+    color: $primaryColor;
 }
 
 .catalog__menuWrapper li > a:not(:only-child) {
@@ -190,7 +190,7 @@
 /*Hover 的狀態*/
 .catalog__menuWrapper li > a:only-child:hover {
     span.icon-checked {
-        background-color: rgba($secondaryColor, 0.65);
+        background-color: rgba($primaryColor, 0.65);
         color: $colorWhite;
     }
 }
@@ -198,7 +198,7 @@
 /*點選到後的狀態*/
 .catalog__menuWrapper li > a:only-child.active {
     span.icon-checked {
-        background-color: $secondaryColor;
+        background-color: $primaryColor;
         color: $colorWhite;
     }
 }
@@ -270,7 +270,10 @@
 .catalog__menu.catalog__subview li.catalog__subview .catalog__submenu,
 .catalog__menu.catalog__subview li.catalog__subviewopen,
 .catalog__menu.catalog__subview li.catalog__subviewopen > .catalog__submenu,
-.catalog__menu.catalog__subview li.catalog__subviewopen > .catalog__submenu > li {
+.catalog__menu.catalog__subview
+    li.catalog__subviewopen
+    > .catalog__submenu
+    > li {
     display: block;
 }
 
@@ -295,7 +298,6 @@
     }
 
     .catalog__menuWrapper li > a:only-child:after {
-        top: 14px;
         top: 0px;
         right: 10px;
         width: 20px;
@@ -303,7 +305,6 @@
     }
 
     .catalog__menuWrapper li > a:only-child:active:after {
-        top: 14px;
         top: 0px;
         right: 10px;
         width: 20px;
@@ -317,7 +318,6 @@
     }
 
     .catalog__menuWrapper li > a:not(:only-child):after {
-        top: 16px;
         top: 0px;
         right: 10px;
         width: 12px;
@@ -325,7 +325,6 @@
     }
 
     .catalog__menuWrapper li.catalog__back:after {
-        top: 16px;
         top: 0px;
         left: 15px;
         width: 12px;

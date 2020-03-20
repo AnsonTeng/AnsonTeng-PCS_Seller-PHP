@@ -8,8 +8,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">確認</a>
+        <a href="" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">確認</a>
     </div>
 </div>
 
@@ -23,8 +23,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">確認</a>
+        <a href="" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">確認</a>
     </div>
 </div>
 
@@ -38,8 +38,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">確認</a>
+        <a href="" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">確認</a>
     </div>
 </div>
 
@@ -53,8 +53,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">確認</a>
+        <a href="" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">確認</a>
     </div>
 </div>
 
@@ -67,16 +67,15 @@
             <div class="title">確定要將所有待上架商品上架？</div>
             <div class="pct-ui form checkbox">
                 <label for="ok">
-                    <input type="checkbox" name="ok" value="ok" checked><span>我已了解並同意<a
-                            href="http://www.sophia-0.com/PCH/seller/shopmoving-term.php"
-                            target="_blank">委託刊登同意書</a></span>
+                    <input type="checkbox" name="ok" value="ok"
+                        checked><span>我已了解並同意<a href="http://www.sophia-0.com/PCH/seller/shopmoving-term.php" target="_blank">委託刊登同意書</a></span>
                 </label>
             </div>
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">確定</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">確定</a>
     </div>
 </div>
 
@@ -125,8 +124,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">確定送出</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">確定送出</a>
     </div>
 </div>
 
@@ -174,8 +173,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined">取消重填</a>
-        <a href="#" class="pct-ui btn btn-secondary">確定送出</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined">取消重填</a>
+        <a href="#" class="pct-ui btn btn-primary">確定送出</a>
     </div>
 </div>
 
@@ -190,8 +189,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-secondary-outlined">取消</a>
-        <a href="#" class="pct-ui btn btn-secondary">確定</a>
+        <a href="#" class="pct-ui btn btn-primary-outlined">取消</a>
+        <a href="#" class="pct-ui btn btn-primary">確定</a>
     </div>
 </div>
 
@@ -252,20 +251,28 @@
         <div class="description">
             <div class="xsl-download-img"><img src="img/icon-bulklist-xsl.svg" alt="" class="img-fluid"></div>
             <div class="title"><span class="eng-num">STEP 01.</span> 最新大量上架範本 </div>
-            <p>請先<a href="/sellers/batchprod/downloadxls">下載excel上架資料</a>，按照上面說明填寫，單次excel上架資料筆數上限為1000筆。 一天最多只能上傳3次。
-            </p><br><br>
-            <div class="title"><span class="eng-num">STEP 02.</span> 最新大量上架範本 </div>
-            <p>資料填寫完畢後，請將檔案以csv格式轉存。上傳檔案，請上傳您的csv檔及相關圖檔。請務必將所有檔案壓縮成zip檔上傳(壓縮檔內不可含資料夾)。圖檔格式只接受.jpg或.gif
-                ，圖檔名稱請勿使用中文，請使用英文小寫。</p><br><br>
+            <p>請先<a href="/sellers/batchprod/downloadxls">下載excel上架資料</a>，按照上面說明填寫，單次excel上架資料筆數上限為1000筆。 一天最多只能上傳3次。</p>
+            <br />
+            <br />
+            <div class="title"><span class="eng-num">STEP 02.</span> 編輯 excel 商品資料完成後上傳 </div>
+            <p>
+                1. 資料填寫完畢後，請將檔案以csv格式轉存。<br />
+                2. 上傳檔案，請上傳您的csv檔及相關圖檔。請務必將所有檔案壓縮成zip檔上傳(壓縮檔內不可含資料夾)。<br />
+                3. 圖檔格式只接受.jpg或.gif，圖檔名稱請勿使用中文，請使用英文小寫。<br />
+            </p>
+            <p class="alert-red">* 受限於出口快遞貨物申報作業規定，商品價格請勿設定超過五萬元。</p>
+            <br />
+            <br />
             <div class="title"><span class="eng-num">STEP 03.</span> 查詢上架進度及成功/失敗筆數</div>
-            <p>執行上傳，上傳檔案必需每筆商品資料均正確，才可成功上架整批資料。
-                賣家可自行下載錯誤參考檔，最後一欄會附上資料異常原因，賣家可自行修正後再重新上傳。整批資料上傳，系統將會於2-3個工作天批次處理，賣家可至商品上架>大量上架紀錄 中查詢 進度及成功失敗筆數。</p><br>
+            <p>
+                1. 上傳檔案必需每筆商品資料均正確，才可成功上架整批資料。 賣家可自行下載錯誤參考檔，最後一欄會附上資料異常原因，賣家可自行修正後再重新上傳。<br />
+                2. 整批資料上傳，系統將會於2-3個工作天批次處理，賣家可至商品上架>大量上架紀錄 中查詢 進度及成功失敗筆數。</p><br>
         </div>
     </div>
 </div>
 
 
-<!-- 購買多件商品 -->
+<!-- 國際商品統一分類代碼 -->
 <div id="pct-lightbox-aboutHScode" class="pct-ui modal">
     <i class="pct-icon icon-delete lightbox_close"></i>
     <div class="modal-content">
@@ -273,6 +280,28 @@
             <div class="title">國際商品統一分類代碼 (HS Code)</div>
             <p>HS CODE 預設為系統依商品分類分配的代碼，若您知道自己商品的 HS Code，可自行輸入。有利於買家結帳時，為您的商品取得更準確的稅率進行運算。若您所輸入的 HS CODE 系統暫時對應不到，可以提交至
                 PChome Thai，我們會盡快將您所提交的 HS CODE 建入資料庫內。</p>
+        </div>
+    </div>
+</div>
+
+<!-- 包裹重量 -->
+<div id="pct-lightbox-parcelWeight" class="pct-ui modal">
+    <i class="pct-icon icon-delete lightbox_close"></i>
+    <div class="modal-content">
+        <div class="description">
+            <div class="title">包裹重量</div>
+            <p>請仔細評估包裹重量，以便系統能更精準計算應代收的國際運費。</p>
+        </div>
+    </div>
+</div>
+
+<!-- 包裹材積 -->
+<div id="pct-lightbox-parcelVolume" class="pct-ui modal">
+    <i class="pct-icon icon-delete lightbox_close"></i>
+    <div class="modal-content">
+        <div class="description">
+            <div class="title">包裹材積</div>
+            <p>若材積重大於實重，則取材積重計價。（詳細規則請見各物流商規範）</p>
         </div>
     </div>
 </div>

@@ -4,8 +4,8 @@
 header
     position: fixed
     width: 100%
-    background-color: $brandColor
-    background: linear-gradient(to right, #00AFEB 0%, #0091D7 100%)
+    background-color: $primaryColor
+    background: linear-gradient(to right, $primaryColor 0%, $primaryDeepColor 100%)
     z-index: 1001
     text-align: center
     top: 0
@@ -345,8 +345,8 @@ header
     //     top: -7px
     //     left: 14px
     //     background-color: $colorWhite
-    //     color: $brandColor
-    //     border: 2px solid $brandColor
+    //     color: $primaryColor
+    //     border: 2px solid $primaryColor
     
     // 通知中心 未讀訊息數量
     .noti-redDot:after
@@ -545,4 +545,4 @@ header
             
                 li.active
                     > a
-                        color: $secondaryColor
+                        color: $primaryColor

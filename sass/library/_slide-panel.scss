@@ -161,19 +161,19 @@
     transition-delay: 0s;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $break-sm) {
     .pct-panel__container {
         width: 90%;
     }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: $break-lg) {
     .pct-panel__container {
         width: 75%;
     }
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: $break-xl) {
     .pct-panel__container {
         width: 50%;
     }
@@ -188,6 +188,9 @@
     padding: 70px 8px;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+    @media (max-width: $break-lg) {
+        padding: 70px 0px;
+    }
 
     .pct-ui.modal {
         width: 100%;
@@ -211,10 +214,6 @@
             font-size: 1.125rem;
         }
     }
-    // .pct-panel__content p {
-    //     font-size: 1.5rem;
-    //     line-height: 1.5;
-    // }
 }
 
 .pct-panel__content-actions {

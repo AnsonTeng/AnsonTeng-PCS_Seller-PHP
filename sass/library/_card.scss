@@ -1,7 +1,8 @@
 %cardhover {
     cursor: pointer;
     transform: translateY(-2px);
-    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.02), 0 2px 2px 0px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.02),
+        0 2px 2px 0px rgba(0, 0, 0, 0.02);
 }
 
 //Card 商品卡片
@@ -54,7 +55,7 @@ a.pct-item-card-link .pct-ui.card {
             position: static;
             width: auto;
             height: auto;
-            color: $secondaryColor;
+            color: $primaryColor;
             text-align: center;
             line-height: 35px;
         }
@@ -85,6 +86,7 @@ a.pct-item-card-link .pct-ui.card {
                 margin: 15px 0 0px 0;
                 height: 20px;
 
+                // 價格欄位
                 .current-price {
                     color: $colorPinkRed;
                     font-size: 0.875rem;
@@ -95,7 +97,7 @@ a.pct-item-card-link .pct-ui.card {
                         font-size: 0.75rem;
                     }
                 }
-
+                // 補庫存再賣
                 .current-stock {
                     position: relative;
                     font-size: 0.75rem;
@@ -116,7 +118,8 @@ a.pct-item-card-link .pct-ui.card {
                         font-size: 0.75rem;
                         border-radius: 4px;
                         box-shadow: 0 0.5px 3px 0px rgba(0, 0, 0, 0.2);
-                        animation: floatAnimation-noshadow 1.3s ease-in-out infinite;
+                        animation: floatAnimation-noshadow 1.3s ease-in-out
+                            infinite;
 
                         .pct-icon {
                             font-size: 0.75rem;
@@ -131,7 +134,8 @@ a.pct-item-card-link .pct-ui.card {
                             height: 0;
                             border-style: solid;
                             border-width: 10px 7.5px 0 7.5px;
-                            border-color: $accentColor transparent transparent transparent;
+                            border-color: $accentColor transparent transparent
+                                transparent;
                             bottom: -7px;
                             left: 20%;
                         }
@@ -151,7 +155,7 @@ a.pct-item-card-link .pct-ui.card {
                 align-items: stretch;
                 width: 100%;
                 color: $colorGray;
-                height: 25px;
+                height: 20px;
                 font-size: 0.75rem;
 
                 .card-footer-save {
@@ -172,13 +176,13 @@ a.pct-item-card-link .pct-ui.card {
                     }
                 }
 
-                .card-footer-sold {
+                .card-footer-price {
                     flex: 5;
                     display: flex;
                     align-items: center;
                     justify-content: flex-end;
 
-                    .card-footer-sold-title {
+                    .card-footer-price-title {
                         padding-right: 3px;
                     }
                 }
@@ -294,9 +298,9 @@ a.pct-item-card-link .pct-ui.card {
             display: flex;
             align-items: center;
 
-            > div {
-                // margin-right: 0.3125rem;
-            }
+            // > div {
+            // margin-right: 0.3125rem;
+            // }
 
             .pct-icon-overseas {
                 width: 18px;
@@ -367,7 +371,7 @@ a.pct-item-card-link .pct-ui.card {
             align-items: stretch;
             width: 100%;
             color: $colorGray;
-            height: 25px;
+            height: 20px;
 
             .card-footer-save {
                 flex: 5;
@@ -669,8 +673,18 @@ a.pct-item-card-link .pct-ui.card-blog {
         width: 100%;
         height: 100%;
         border-radius: 2px;
-        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 63.7%, rgba(0, 0, 0, 0.75) 100%);
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 63.7%, rgba(0, 0, 0, 0.75) 100%);
+        background: -webkit-linear-gradient(
+            top,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0) 63.7%,
+            rgba(0, 0, 0, 0.75) 100%
+        );
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0) 63.7%,
+            rgba(0, 0, 0, 0.75) 100%
+        );
 
         .card-content-title {
             @include text-overflow;

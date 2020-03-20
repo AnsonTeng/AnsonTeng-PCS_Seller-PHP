@@ -130,7 +130,7 @@
 // .pct-ui.form textarea:focus,
 // .pct-ui.form select:focus {
 //     outline: none;
-//     border-color: $secondaryColor;
+//     border-color: $primaryColor;
 //     box-shadow: 0 0 5px rgba(33, 144, 198, 0.4);
 // }
 
@@ -375,7 +375,7 @@
 //         content: $icon-checked;
 //         color: $colorWhite;
 //         font-size: 1.05rem;
-//         background: $secondaryColor;
+//         background: $primaryColor;
 //     }
 
 //     label span {
@@ -470,7 +470,7 @@
         content: "";
         width: 14px;
         height: 14px;
-        background: $secondaryColor;
+        background: $primaryColor;
         position: absolute;
         top: 3px;
         left: 3px;
@@ -545,7 +545,7 @@
 // }
 
 // .switch-checkbox:checked + label {
-//     background-color: $secondaryColor;
+//     background-color: $primaryColor;
 // }
 
 // .switch-checkbox:not(:checked) + label {
@@ -558,7 +558,7 @@
 // }
 
 // .switch-checkbox:checked + label:before {
-//     background-color: $secondaryColor;
+//     background-color: $primaryColor;
 // }
 
 // //表單--Input Number 數量輸入

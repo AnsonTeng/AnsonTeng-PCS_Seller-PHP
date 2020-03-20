@@ -74,7 +74,7 @@
                         <ul class="nav__sublink">
                             <li><a href="shop-intro.php" onclick="window.location.href='product-list.php' ">商品列表</a>
                             </li>
-                            <li><a href="shop-logistic.php" onclick="window.location.href='product-edit.php' ">新增商品</a>
+                            <li><a href="shop-logistic.php" onclick="window.location.href='product-add.php' ">新增商品</a>
                             </li>
                             <li><a href="shop-pay.php" onclick="window.location.href='product-xlslist.php' ">大量上架</a>
                             </li>

@@ -46,7 +46,7 @@ a.add_condition {
 }
 a.add_condition {
     span.addBox:before {
-        color: $secondaryColor;
+        color: $primaryColor;
     }
 }
 a.add_condition {
@@ -56,7 +56,7 @@ a.add_condition {
         right: -16px;
         font-size: 0.875rem;
         font-weight: 500;
-        color: $secondaryColor;
+        color: $primaryColor;
     }
 }
 
@@ -186,7 +186,7 @@ a.add_condition {
                 color: $colorDeepGray;
                 margin-right: 10px;
                 span {
-                    color: $secondaryColor;
+                    color: $primaryColor;
                     &.cat-now-text:before {
                         content: '"';
                         padding: 2px;
@@ -261,13 +261,16 @@ a.add_condition {
                                     position: static;
                                     width: auto;
                                     height: auto;
-                                    color: $secondaryColor;
+                                    color: $primaryColor;
                                     text-align: center;
                                 }
                             }
                         }
                     }
                 }
+            }
+            p > .alert {
+                color: $colorPinkRed;
             }
         }
     }

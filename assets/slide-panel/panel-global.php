@@ -95,10 +95,10 @@
                                 <table>
                                     <!-- colgroup -->
                                     <colgroup>
-                                        <col class="table--w50">
+                                        <col class="table--w45">
                                         <col class="table--w10">
-                                        <col class="table--w10">
-                                        <col class="table--w30">
+                                        <col class="table--w25">
+                                        <col class="table--w20">
                                     </colgroup>
                                     <tbody>
                                         <tr class="table_row_header">
@@ -262,7 +262,6 @@
                                                 <div class="tableDeta-box">
                                                     <div class="orderlist_titleBox">
                                                         <div class="orderlist_title orderlistDetail_price">
-                                                            <!-- 免運活動可加上 through -->
                                                             <span class="eng-num">฿ 236</span>
                                                         </div>
                                                     </div>
@@ -285,15 +284,16 @@
                                             <td class="td-inline" data-title="運費">
                                                 <div class="tableDeta-box">
                                                     <div class="orderlist_titleBox">
-                                                        <div class="orderlist_title orderlistDetail_price">
-                                                            <!-- 免運活動可加上 through -->
-                                                            <span class="eng-num through">฿ 236</span>
+                                                        <div
+                                                            class="orderlist_title orderlistDetail_price orderlistDetail_discount">
+                                                            <span class="eng-num">- ฿ 236</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </td>
                                         </tr>
                                         <!-- 運費補助結束 -->
+
 
                                         <!-- 訂單金額小計-->
                                         <tr class="table_row_body orderlistDetail_subtotal">
@@ -402,11 +402,11 @@
                                     </div>
                                     <div class="description-list-box">
                                         <div class="list-box-item">
-                                            <!-- 賣家指定物流 -->วิธีการจัดส่งที่พีซีโฮมสนับสนุน</div>
+                                            <!-- วิธีการจัดส่งที่พีซีโฮมสนับสนุน -->PChome 支援物流</div>
                                         <div class="list-box-flexbox">
                                             <div class="flexbox-item-flexbox">
                                                 <div class="flexbox-item">
-                                                    <span>Kerry</span>
+                                                    <span>中華郵政 EMS國際快捷</span>
                                                 </div>
                                             </div>
                                             <!-- 操作按鈕 -->
@@ -496,13 +496,13 @@
         <!-- 操作按鈕 － 最多會同時出現二顆按鈕)-->
 
         <div class="pct-panel__content-actions">
-            <a href="#" class="pct-ui btn btn-secondary informdispatchBtn">通知已出貨</a>
-            <a href="#" class="pct-ui btn btn-secondary agreecancelBtn" style="display:none;">回覆取消申請</a>
-            <a href="#" class="pct-ui btn btn-secondary refundBtn" style="display:none;">回覆退款申請</a>
-            <a href="#" class="pct-ui btn btn-secondary confirmpaymentBtn" style="display:none;">確認收款</a>
-            <a href="#" class="pct-ui btn btn-secondary cancelresonBtn">取消訂單</a>
+            <a href="#" class="pct-ui btn btn-primary informdispatchBtn">通知已出貨</a>
+            <a href="#" class="pct-ui btn btn-primary agreecancelBtn" style="display:none;">回覆取消申請</a>
+            <a href="#" class="pct-ui btn btn-primary refundBtn" style="display:none;">回覆退款申請</a>
+            <a href="#" class="pct-ui btn btn-primary confirmpaymentBtn" style="display:none;">確認收款</a>
+            <a href="#" class="pct-ui btn btn-primary cancelresonBtn">取消訂單</a>
             <!--說明FOR RD: “我要出貨”按鈕，判斷該商品選擇何種物流方式 並呼叫不同彈跳視窗 -->
-            <a href="#" class="pct-ui btn btn-secondary dispatchListEmsBtn" style="display:none;">我要出貨</a>
+            <a href="#" class="pct-ui btn btn-primary dispatchListEmsBtn" style="display:none;">我要出貨</a>
         </div>
     </div> <!-- pct-panel__container -->
 </div> <!-- pct-panel

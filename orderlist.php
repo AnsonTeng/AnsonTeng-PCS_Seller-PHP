@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport"
-        content="target-densitydpi=device-dpi, width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description"
-        content="PChome Online Inc. เป็นกลุ่มบริษัทอีคอมเมิร์ซที่ใหญ่ที่สุดในไต้หวัน ขณะนี้เราได้เปิดให้บริการในประเทศไทยฟรีสำหรับทั้งผู้ขายและผู้ซื้อ คุณอยากจะขายหรืออยากจะซื้อของอะไรก็ได้ทั้งนั้นที่ PChome Thai ไม่ว่าจะเครื่องสำอาง, เสื้อผ้าแฟชั่น, เครื่องใช้ไฟฟ้า, หนังสือ, ของเล่น และอื่นๆ อีกมากมาย">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="PChome Online Inc. เป็นกลุ่มบริษัทอีคอมเมิร์ซที่ใหญ่ที่สุดในไต้หวัน ขณะนี้เราได้เปิดให้บริการในประเทศไทยฟรีสำหรับทั้งผู้ขายและผู้ซื้อ คุณอยากจะขายหรืออยากจะซื้อของอะไรก็ได้ทั้งนั้นที่ PChome Thai ไม่ว่าจะเครื่องสำอาง, เสื้อผ้าแฟชั่น, เครื่องใช้ไฟฟ้า, หนังสือ, ของเล่น และอื่นๆ อีกมากมาย">
     <meta property="og:title" content="ออนไลน์ช้อปปิ้ง ที่ทุกสิ่งเป็นเรื่องแสนง่ายและสนุก" />
-    <meta property="og:description"
-        content="หาได้ทุกอย่างที่ต้องการที่ พีซีโฮมไทย - เครื่องสำอาง,เสื้อผ้าแฟชั่น, อุปกรณ์ไฟฟ้า, หนังสือ, ของเล่น และอื่นอีกมากมาย" />
+    <meta property="og:description" content="หาได้ทุกอย่างที่ต้องการที่ พีซีโฮมไทย - เครื่องสำอาง,เสื้อผ้าแฟชั่น, อุปกรณ์ไฟฟ้า, หนังสือ, ของเล่น และอื่นอีกมากมาย" />
     <meta property="og:image" content="http://cimg.pchome.co.th/fb/PchomeShop.jpg" />
     <meta property="og:url" content="http://www.pchome.co.th" />
     <meta property="og:site_name" content="PChome SEA" />
@@ -20,18 +17,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#00afeb">
     <meta name="msapplication-TileColor" content="#00afeb">
     <meta name="theme-color" content="#00afeb">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/normalize.css">
     <!-- PAGE -->
     <link rel="stylesheet" type="text/css" href="css/orderlist.css">
     <!-- Icon Font -->
     <link rel="stylesheet" type="text/css" href="css/fonts/pct-icon.css">
     <!-- BS grid -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
 
     <title>PChome SEA | 所有訂單</title>
     <!-- Google Tag Manager -->
@@ -61,8 +58,7 @@
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52F2P7M" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52F2P7M" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- 說明FOR RD: 填寫資料正確送出 請跑這一個區塊的LOADING-->
@@ -123,7 +119,7 @@
                                                     <input type="text" placeholder="請輸入訂單編號或商品名稱查詢">
                                                 </div>
                                             </div>
-                                            <a href="#" class="pct-ui btn-sm btn-secondary inputGroup-btn">搜尋</a>
+                                            <a href="#" class="pct-ui btn-sm btn-secondary inputGroup-btn">搜尋訂單</a>
                                         </div>
                                     </div>
                                     <a class="add_condition">新增更多搜尋條件<span class="pct-icon icon-plus"></span></a>
@@ -136,13 +132,11 @@
                                         <p class="orderlistSearch__itemTitle">訂單成立日期</p>
                                         <div class="orderlistSearch__items">
                                             <div class="pct-ui form">
-                                                <input class="form-control datepicker" type="text"
-                                                    placeholder="開始：MM/DD/YYYY" readonly="true">
+                                                <input class="form-control datepicker" type="text" placeholder="開始：MM/DD/YYYY" readonly="true">
                                             </div>
                                             <span> </span>
                                             <div class="pct-ui form">
-                                                <input class="form-control datepicker" type="text"
-                                                    placeholder="結束：MM/DD/YYYY" readonly="true">
+                                                <input class="form-control datepicker" type="text" placeholder="結束：MM/DD/YYYY" readonly="true">
                                             </div>
                                         </div>
                                     </div>
@@ -197,6 +191,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!-- 標籤導航 -->
                             <div class="pct-ui tab-nav-bar tab-nav tab-nav-fluid">
                                 <div class="pct-ui tab-pointing">
@@ -216,6 +211,7 @@
                                     </ul>
                                 </div>
                             </div>
+
                             <!-- 整體表格 -->
                             <div class="tableBox tableBox-orderlist">
                                 <!-- <div class="table__thead">
@@ -251,12 +247,9 @@
                                                     <div class="tableData-header">
                                                         <!-- 訂單狀態 -->
                                                         <div class="table_flexBox table_flexBox-between">
-                                                            <span class="list__itemInfo list_status"><i
-                                                                    class="pct-btn-icon icon-wait icon-back icon-back-red"></i>待付款</span>
+                                                            <span class="list__itemInfo list_status"><i class="pct-btn-icon icon-wait icon-back icon-back-red"></i>待付款</span>
                                                             <div class="contanctSeller">
-                                                                <a
-                                                                    class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
-                                                                        class="pct-btn-icon icon-comment"></i>聯絡買家
+                                                                <a class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="pct-btn-icon icon-comment"></i>聯絡買家
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -271,9 +264,7 @@
                                                         <div class="productInfoGroup">
                                                             <!-- 商品圖片 -->
                                                             <div class="productInfo-img">
-                                                                <a href="#"><img class="img-fluid"
-                                                                        src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
-                                                                        alt="Product-Picture"></a>
+                                                                <a href="#"><img class="img-fluid" src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02" alt="Product-Picture"></a>
                                                             </div>
                                                             <!-- </div> -->
 
@@ -282,16 +273,13 @@
 
                                                                 <!-- 訂單編號 -->
                                                                 <div class="productInfo-info-orderNum">
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                    <span class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                    <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
                                                                 </div>
 
                                                                 <!-- 商品名稱 -->
                                                                 <div class="productInfo-info-title">
-                                                                    <span class="productInfo-info-title-text"><a
-                                                                            href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
+                                                                    <span class="productInfo-info-title-text"><a href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
                                                                             อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร
                                                                             เก่ามาก สวย สมบูรณ์ หายากมาก</a><span>
                                                                 </div>
@@ -312,21 +300,18 @@
                                                         <!-- 訂單總金額 -->
                                                         <div class="table_inlineBox-flex">
                                                             <div class="orderlist_titleBox text__align--center">
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-icon"><img
-                                                                        src="img/icon_pcprotect_badge.svg"></span>
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
+                                                                <span class="orderlist_title-inline orderlist_title-icon"><img src="img/icon_pcprotect_badge.svg"></span>
+                                                                    <span class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
                                                             </div>
                                                             <!-- 訂單內商品數量 -->
                                                             <div class="orderlist_amount hidden-md-up">
                                                                 <span>Total</span>
-                                                                <span class="orderlist_amount_num eng-num">90</span>
-                                                                <span>items</span>
-                                                            </div>
+                                                                    <span class="orderlist_amount_num eng-num">90</span>
+                                                                    <span>items</span>
+                                                                </div>
 
+                                                            </div>
                                                         </div>
-                                                    </div>
                                                 </td>
                                                 <td data-title="物流狀態">
                                                     <div class="tableDeta-box">
@@ -358,12 +343,9 @@
                                                         </div>
 
                                                         <!-- 操作按鈕欄 -->
-                                                        <div
-                                                            class="table_flexBox table_flexBox-right table_flexBox-wrap">
-                                                            <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
-                                                                data-panel="orderDetails" href="#">訂單明細</a>
-                                                            <a class="pct-ui btn-xs btn-secondary confirmpaymentBtn"
-                                                                href="#">確認收款</a>
+                                                        <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
+                                                            <a class="pct-ui btn-xs btn-primary-outlined js-pct-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
+                                                            <a class="pct-ui btn-xs btn-primary confirmpaymentBtn" href="#">確認收款</a>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -381,13 +363,10 @@
                                                         <!-- 訂單狀態 -->
                                                         <div class="table_flexBox table_flexBox-between">
                                                             <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i
-                                                                        class="pct-btn-icon icon-wait icon-back icon-back-red"></i>待付款</span>
+                                                                <span class="list__itemInfo list_status"><i class="pct-btn-icon icon-wait icon-back icon-back-red"></i>待付款</span>
                                                             </div>
                                                             <div class="contanctSeller">
-                                                                <a
-                                                                    class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
-                                                                        class="pct-btn-icon icon-comment"></i>聯絡買家
+                                                                <a class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="pct-btn-icon icon-comment"></i>聯絡買家
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -402,9 +381,7 @@
                                                         <div class="productInfoGroup">
                                                             <!-- 商品圖片 -->
                                                             <div class="productInfo-img">
-                                                                <a href="#"><img class="img-fluid"
-                                                                        src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
-                                                                        alt="Product-Picture"></a>
+                                                                <a href="#"><img class="img-fluid" src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02" alt="Product-Picture"></a>
                                                             </div>
                                                             <!-- </div> -->
 
@@ -413,16 +390,13 @@
 
                                                                 <!-- 訂單編號 -->
                                                                 <div class="productInfo-info-orderNum">
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                    <span class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                    <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
                                                                 </div>
 
                                                                 <!-- 商品名稱 -->
                                                                 <div class="productInfo-info-title">
-                                                                    <span class="productInfo-info-title-text"><a
-                                                                            href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
+                                                                    <span class="productInfo-info-title-text"><a href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
                                                                             อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร
                                                                             เก่ามาก สวย สมบูรณ์ หายากมาก</a><span>
                                                                 </div>
@@ -443,22 +417,18 @@
                                                         <!-- 訂單總金額 -->
                                                         <div class="table_inlineBox-flex">
                                                             <div class="orderlist_titleBox text__align--center">
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-icon"><img
-                                                                        src="img/icon_pcprotect_badge.svg"></span>
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
+                                                                <span class="orderlist_title-inline orderlist_title-icon"><img src="img/icon_pcprotect_badge.svg"></span>
+                                                                    <span class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
                                                             </div>
-                                                            <div
-                                                                class="orderlist_titleBox text__align--center hidden-md-up">
+                                                            <div class="orderlist_titleBox text__align--center hidden-md-up">
                                                                 <span class="orderlist_subtitle orderlist_amount">
                                                                     <span>Total</span>
                                                                     <span class="orderlist_amount_num eng-num">90</span>
                                                                     <span>items</span>
-                                                                </span>
+                                                                    </span>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
                                                 </td>
                                                 <td data-title="物流狀態">
                                                     <div class="tableDeta-box">
@@ -488,12 +458,9 @@
                                                         </div>
 
                                                         <!-- 操作按鈕欄 -->
-                                                        <div
-                                                            class="table_flexBox table_flexBox-right table_flexBox-wrap">
-                                                            <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
-                                                                data-panel="orderDetails" href="#">訂單明細</a>
-                                                            <a class="pct-ui btn-xs btn-secondary cancelresonBtn"
-                                                                href="#">取消訂單</a>
+                                                        <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
+                                                            <a class="pct-ui btn-xs btn-primary-outlined js-pct-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
+                                                            <a class="pct-ui btn-xs btn-primary cancelresonBtn" href="#">取消訂單</a>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -512,14 +479,11 @@
                                                         <!-- 訂單狀態 -->
                                                         <div class="table_flexBox table_flexBox-between">
 
-                                                            <span class="list__itemInfo list_status"><i
-                                                                    class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>已付款
+                                                            <span class="list__itemInfo list_status"><i class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>已付款
                                                             </span>
 
                                                             <div class="contanctSeller">
-                                                                <a
-                                                                    class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
-                                                                        class="pct-btn-icon icon-comment"></i>聯絡買家
+                                                                <a class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="pct-btn-icon icon-comment"></i>聯絡買家
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -534,9 +498,7 @@
                                                         <div class="productInfoGroup">
                                                             <!-- 商品圖片 -->
                                                             <div class="productInfo-img">
-                                                                <a href="#"><img class="img-fluid"
-                                                                        src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
-                                                                        alt="Product-Picture"></a>
+                                                                <a href="#"><img class="img-fluid" src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02" alt="Product-Picture"></a>
                                                             </div>
                                                             <!-- </div> -->
 
@@ -545,16 +507,13 @@
 
                                                                 <!-- 訂單編號 -->
                                                                 <div class="productInfo-info-orderNum">
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                    <span class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                    <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
                                                                 </div>
 
                                                                 <!-- 商品名稱 -->
                                                                 <div class="productInfo-info-title">
-                                                                    <span class="productInfo-info-title-text"><a
-                                                                            href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
+                                                                    <span class="productInfo-info-title-text"><a href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
                                                                             อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร
                                                                             เก่ามาก สวย สมบูรณ์ หายากมาก</a><span>
                                                                 </div>
@@ -575,22 +534,18 @@
                                                         <!-- 訂單總金額 -->
                                                         <div class="table_inlineBox-flex">
                                                             <div class="orderlist_titleBox text__align--center">
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-icon"><img
-                                                                        src="img/icon_pcprotect_badge.svg"></span>
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
+                                                                <span class="orderlist_title-inline orderlist_title-icon"><img src="img/icon_pcprotect_badge.svg"></span>
+                                                                    <span class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
                                                             </div>
-                                                            <div
-                                                                class="orderlist_titleBox text__align--center hidden-md-up">
+                                                            <div class="orderlist_titleBox text__align--center hidden-md-up">
                                                                 <span class="orderlist_amount">
                                                                     <span>Total</span>
                                                                     <span class="orderlist_amount_num eng-num">90</span>
                                                                     <span>items</span>
-                                                                </span>
+                                                                    </span>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
                                                 </td>
                                                 <td data-title="物流狀態">
                                                     <div class="tableDeta-box">
@@ -619,24 +574,18 @@
                                                         </div>
 
                                                         <!-- 操作按鈕欄 -->
-                                                        <div
-                                                            class="table_flexBox table_flexBox-right table_flexBox-wrap">
+                                                        <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
                                                             <div class="table_inlineBox">
-                                                                <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
-                                                                    data-panel="orderDetails" href="#">訂單明細</a>
+                                                                <a class="pct-ui btn-xs btn-primary-outlined js-pct-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
                                                             </div>
 
                                                             <!--說明FOR RD: 判斷該商品選擇何種物流方式 只顯示一顆按鈕 並呼叫不同彈跳視窗 -->
                                                             <div class="table_inlineBox">
-                                                                <a class="pct-ui btn-xs btn-secondary dispatchListEmsBtn"
-                                                                    href="#">我要出貨
+                                                                <a class="pct-ui btn-xs btn-primary dispatchListEmsBtn" href="#">我要出貨
                                                                     <!--中華郵政--></a>
-                                                                <a class="pct-ui btn-xs btn-secondary dispatchListSflBtn"
-                                                                    href="#">我要出貨(測:翔丰)</a>
-                                                                <a class="pct-ui btn-xs btn-secondary dispatchListAcsBtn"
-                                                                    href="#">我要出貨(測:ACS)</a>
-                                                                <a class="pct-ui btn-xs btn-secondary dispatchListSellerBtn"
-                                                                    href="#">我要出貨(測:賣家自配)</a>
+                                                                <a class="pct-ui btn-xs btn-primary dispatchListSflBtn" href="#">我要出貨(測:翔丰)</a>
+                                                                <a class="pct-ui btn-xs btn-primary dispatchListAcsBtn" href="#">我要出貨(測:ACS)</a>
+                                                                <a class="pct-ui btn-xs btn-primary dispatchListSellerBtn" href="#">我要出貨(測:賣家自配)</a>
                                                             </div>
                                                         </div>
 
@@ -655,14 +604,11 @@
                                                         <!-- 訂單狀態 -->
                                                         <div class="table_flexBox table_flexBox-between">
                                                             <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i
-                                                                        class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>已付款</span>
+                                                                <span class="list__itemInfo list_status"><i class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>已付款</span>
                                                             </div>
 
                                                             <div class="contanctSeller">
-                                                                <a
-                                                                    class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
-                                                                        class="pct-btn-icon icon-comment"></i>聯絡買家
+                                                                <a class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="pct-btn-icon icon-comment"></i>聯絡買家
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -677,9 +623,7 @@
                                                         <div class="productInfoGroup">
                                                             <!-- 商品圖片 -->
                                                             <div class="productInfo-img">
-                                                                <a href="#"><img class="img-fluid"
-                                                                        src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
-                                                                        alt="Product-Picture"></a>
+                                                                <a href="#"><img class="img-fluid" src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02" alt="Product-Picture"></a>
                                                             </div>
                                                             <!-- </div> -->
 
@@ -688,16 +632,13 @@
 
                                                                 <!-- 訂單編號 -->
                                                                 <div class="productInfo-info-orderNum">
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                    <span class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                    <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
                                                                 </div>
 
                                                                 <!-- 商品名稱 -->
                                                                 <div class="productInfo-info-title">
-                                                                    <span class="productInfo-info-title-text"><a
-                                                                            href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
+                                                                    <span class="productInfo-info-title-text"><a href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
                                                                             อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร
                                                                             เก่ามาก สวย สมบูรณ์ หายากมาก</a><span>
                                                                 </div>
@@ -718,22 +659,18 @@
                                                         <!-- 訂單總金額 -->
                                                         <div class="table_inlineBox-flex">
                                                             <div class="orderlist_titleBox text__align--center">
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-icon"><img
-                                                                        src="img/icon_pcprotect_badge.svg"></span>
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
+                                                                <span class="orderlist_title-inline orderlist_title-icon"><img src="img/icon_pcprotect_badge.svg"></span>
+                                                                    <span class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
                                                             </div>
-                                                            <div
-                                                                class="orderlist_titleBox text__align--center hidden-md-up">
+                                                            <div class="orderlist_titleBox text__align--center hidden-md-up">
                                                                 <span class="orderlist_amount">
                                                                     <span>Total</span>
                                                                     <span class="orderlist_amount_num eng-num">90</span>
                                                                     <span>items</span>
-                                                                </span>
+                                                                    </span>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
                                                 </td>
                                                 <td data-title="物流狀態">
                                                     <div class="tableDeta-box">
@@ -762,12 +699,9 @@
                                                         </div>
 
                                                         <!-- 操作按鈕欄 -->
-                                                        <div
-                                                            class="table_flexBox table_flexBox-right table_flexBox-wrap">
-                                                            <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
-                                                                data-panel="orderDetails" href="#">訂單明細</a>
-                                                            <a class="pct-ui btn-xs btn-secondary informdispatchBtn"
-                                                                href="#">通知已出貨</a>
+                                                        <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
+                                                            <a class="pct-ui btn-xs btn-primary-outlined js-pct-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
+                                                            <a class="pct-ui btn-xs btn-primary informdispatchBtn" href="#">通知已出貨</a>
                                                         </div>
 
                                                     </div>
@@ -788,13 +722,10 @@
                                                         <!-- 訂單狀態 -->
                                                         <div class="table_flexBox table_flexBox-between">
                                                             <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i
-                                                                        class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>已付款</span>
+                                                                <span class="list__itemInfo list_status"><i class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>已付款</span>
                                                             </div>
                                                             <div class="contanctSeller">
-                                                                <a
-                                                                    class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
-                                                                        class="pct-btn-icon icon-comment"></i>聯絡買家
+                                                                <a class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="pct-btn-icon icon-comment"></i>聯絡買家
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -809,9 +740,7 @@
                                                         <div class="productInfoGroup">
                                                             <!-- 商品圖片 -->
                                                             <div class="productInfo-img">
-                                                                <a href="#"><img class="img-fluid"
-                                                                        src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
-                                                                        alt="Product-Picture"></a>
+                                                                <a href="#"><img class="img-fluid" src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02" alt="Product-Picture"></a>
                                                             </div>
                                                             <!-- </div> -->
 
@@ -820,16 +749,13 @@
 
                                                                 <!-- 訂單編號 -->
                                                                 <div class="productInfo-info-orderNum">
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                    <span class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                    <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
                                                                 </div>
 
                                                                 <!-- 商品名稱 -->
                                                                 <div class="productInfo-info-title">
-                                                                    <span class="productInfo-info-title-text"><a
-                                                                            href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
+                                                                    <span class="productInfo-info-title-text"><a href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
                                                                             อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร
                                                                             เก่ามาก สวย สมบูรณ์ หายากมาก</a><span>
                                                                 </div>
@@ -850,22 +776,18 @@
                                                         <!-- 訂單總金額 -->
                                                         <div class="table_inlineBox-flex">
                                                             <div class="orderlist_titleBox text__align--center">
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-icon"><img
-                                                                        src="img/icon_pcprotect_badge.svg"></span>
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
+                                                                <span class="orderlist_title-inline orderlist_title-icon"><img src="img/icon_pcprotect_badge.svg"></span>
+                                                                    <span class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
                                                             </div>
-                                                            <div
-                                                                class="orderlist_titleBox text__align--center hidden-md-up">
+                                                            <div class="orderlist_titleBox text__align--center hidden-md-up">
                                                                 <span class="orderlist_amount">
                                                                     <span>Total</span>
                                                                     <span class="orderlist_amount_num eng-num">90</span>
                                                                     <span>items</span>
-                                                                </span>
+                                                                    </span>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
                                                 </td>
                                                 <td data-title="物流狀態">
                                                     <div class="tableDeta-box">
@@ -898,11 +820,9 @@
                                                         </div>
 
                                                         <!-- 操作按鈕欄 -->
-                                                        <div
-                                                            class="table_flexBox table_flexBox-right table_flexBox-wrap">
+                                                        <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
                                                             <div class="table_inlineBox">
-                                                                <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
-                                                                    data-panel="orderDetails" href="#">訂單明細</a>
+                                                                <a class="pct-ui btn-xs btn-primary-outlined js-pct-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -921,13 +841,10 @@
                                                         <!-- 訂單狀態 -->
                                                         <div class="table_flexBox table_flexBox-between">
                                                             <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i
-                                                                        class="pct-btn-icon icon-checked icon-back icon-back-green"></i>已完成</span>
+                                                                <span class="list__itemInfo list_status"><i class="pct-btn-icon icon-checked icon-back icon-back-green"></i>已完成</span>
                                                             </div>
                                                             <div class="contanctSeller">
-                                                                <a
-                                                                    class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
-                                                                        class="pct-btn-icon icon-comment"></i>聯絡買家
+                                                                <a class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="pct-btn-icon icon-comment"></i>聯絡買家
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -942,9 +859,7 @@
                                                         <div class="productInfoGroup">
                                                             <!-- 商品圖片 -->
                                                             <div class="productInfo-img">
-                                                                <a href="#"><img class="img-fluid"
-                                                                        src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
-                                                                        alt="Product-Picture"></a>
+                                                                <a href="#"><img class="img-fluid" src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02" alt="Product-Picture"></a>
                                                             </div>
                                                             <!-- </div> -->
 
@@ -953,16 +868,13 @@
 
                                                                 <!-- 訂單編號 -->
                                                                 <div class="productInfo-info-orderNum">
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                    <span class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                    <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
                                                                 </div>
 
                                                                 <!-- 商品名稱 -->
                                                                 <div class="productInfo-info-title">
-                                                                    <span class="productInfo-info-title-text"><a
-                                                                            href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
+                                                                    <span class="productInfo-info-title-text"><a href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
                                                                             อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร
                                                                             เก่ามาก สวย สมบูรณ์ หายากมาก</a><span>
                                                                 </div>
@@ -983,22 +895,18 @@
                                                         <!-- 訂單總金額 -->
                                                         <div class="table_inlineBox-flex">
                                                             <div class="orderlist_titleBox text__align--center">
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-icon"><img
-                                                                        src="img/icon_pcprotect_badge.svg"></span>
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
+                                                                <span class="orderlist_title-inline orderlist_title-icon"><img src="img/icon_pcprotect_badge.svg"></span>
+                                                                    <span class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
                                                             </div>
-                                                            <div
-                                                                class="orderlist_titleBox text__align--center hidden-md-up">
+                                                            <div class="orderlist_titleBox text__align--center hidden-md-up">
                                                                 <span class="orderlist_amount">
                                                                     <span>Total</span>
                                                                     <span class="orderlist_amount_num eng-num">90</span>
                                                                     <span>items</span>
-                                                                </span>
+                                                                    </span>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
                                                 </td>
                                                 <td data-title="物流狀態">
                                                     <div class="tableDeta-box">
@@ -1031,11 +939,9 @@
                                                         </div>
 
                                                         <!-- 操作按鈕欄 -->
-                                                        <div
-                                                            class="table_flexBox table_flexBox-right table_flexBox-wrap">
+                                                        <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
                                                             <div class="table_inlineBox">
-                                                                <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
-                                                                    data-panel="orderDetails" href="#">訂單明細</a>
+                                                                <a class="pct-ui btn-xs btn-primary-outlined js-pct-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1057,15 +963,12 @@
                                                         <!-- 訂單狀態 -->
                                                         <div class="table_flexBox table_flexBox-between">
                                                             <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i
-                                                                        class="pct-btn-icon icon-wait icon-back icon-back-red"></i>取消訂單申請中</span>
+                                                                <span class="list__itemInfo list_status"><i class="pct-btn-icon icon-wait icon-back icon-back-red"></i>取消訂單申請中</span>
                                                             </div>
 
 
                                                             <div class="contanctSeller">
-                                                                <a
-                                                                    class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
-                                                                        class="pct-btn-icon icon-comment"></i>聯絡買家
+                                                                <a class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="pct-btn-icon icon-comment"></i>聯絡買家
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -1080,9 +983,7 @@
                                                         <div class="productInfoGroup">
                                                             <!-- 商品圖片 -->
                                                             <div class="productInfo-img">
-                                                                <a href="#"><img class="img-fluid"
-                                                                        src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
-                                                                        alt="Product-Picture"></a>
+                                                                <a href="#"><img class="img-fluid" src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02" alt="Product-Picture"></a>
                                                             </div>
                                                             <!-- </div> -->
 
@@ -1091,16 +992,13 @@
 
                                                                 <!-- 訂單編號 -->
                                                                 <div class="productInfo-info-orderNum">
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                    <span class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                    <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
                                                                 </div>
 
                                                                 <!-- 商品名稱 -->
                                                                 <div class="productInfo-info-title">
-                                                                    <span class="productInfo-info-title-text"><a
-                                                                            href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
+                                                                    <span class="productInfo-info-title-text"><a href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
                                                                             อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร
                                                                             เก่ามาก สวย สมบูรณ์ หายากมาก</a><span>
                                                                 </div>
@@ -1121,22 +1019,18 @@
                                                         <!-- 訂單總金額 -->
                                                         <div class="table_inlineBox-flex">
                                                             <div class="orderlist_titleBox text__align--center">
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-icon"><img
-                                                                        src="img/icon_pcprotect_badge.svg"></span>
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
+                                                                <span class="orderlist_title-inline orderlist_title-icon"><img src="img/icon_pcprotect_badge.svg"></span>
+                                                                    <span class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
                                                             </div>
-                                                            <div
-                                                                class="orderlist_titleBox text__align--center hidden-md-up">
+                                                            <div class="orderlist_titleBox text__align--center hidden-md-up">
                                                                 <span class="orderlist_amount">
                                                                     <span>Total</span>
                                                                     <span class="orderlist_amount_num eng-num">90</span>
                                                                     <span>items</span>
-                                                                </span>
+                                                                    </span>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
                                                 </td>
                                                 <td data-title="物流狀態">
                                                     <div class="tableDeta-box">
@@ -1167,12 +1061,9 @@
                                                         </div>
 
                                                         <!-- 操作按鈕欄 -->
-                                                        <div
-                                                            class="table_flexBox table_flexBox-right table_flexBox-wrap">
-                                                            <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
-                                                                data-panel="orderDetails" href="#">訂單明細</a>
-                                                            <a class="pct-ui btn-xs btn-secondary agreecancelBtn"
-                                                                href="#">回覆取消申請</a>
+                                                        <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
+                                                            <a class="pct-ui btn-xs btn-primary-outlined js-pct-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
+                                                            <a class="pct-ui btn-xs btn-primary agreecancelBtn" href="#">回覆取消申請</a>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -1190,14 +1081,11 @@
                                                         <!-- 訂單狀態 -->
                                                         <div class="table_flexBox table_flexBox-between">
                                                             <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i
-                                                                        class="pct-btn-icon icon-wait icon-back icon-back-red"></i>取消訂單申請中</span>
+                                                                <span class="list__itemInfo list_status"><i class="pct-btn-icon icon-wait icon-back icon-back-red"></i>取消訂單申請中</span>
                                                             </div>
 
                                                             <div class="contanctSeller">
-                                                                <a
-                                                                    class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
-                                                                        class="pct-btn-icon icon-comment"></i>聯絡買家
+                                                                <a class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="pct-btn-icon icon-comment"></i>聯絡買家
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -1212,9 +1100,7 @@
                                                         <div class="productInfoGroup">
                                                             <!-- 商品圖片 -->
                                                             <div class="productInfo-img">
-                                                                <a href="#"><img class="img-fluid"
-                                                                        src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
-                                                                        alt="Product-Picture"></a>
+                                                                <a href="#"><img class="img-fluid" src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02" alt="Product-Picture"></a>
                                                             </div>
                                                             <!-- </div> -->
 
@@ -1223,16 +1109,13 @@
 
                                                                 <!-- 訂單編號 -->
                                                                 <div class="productInfo-info-orderNum">
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                    <span class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                    <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
                                                                 </div>
 
                                                                 <!-- 商品名稱 -->
                                                                 <div class="productInfo-info-title">
-                                                                    <span class="productInfo-info-title-text"><a
-                                                                            href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
+                                                                    <span class="productInfo-info-title-text"><a href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
                                                                             อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร
                                                                             เก่ามาก สวย สมบูรณ์ หายากมาก</a><span>
                                                                 </div>
@@ -1253,22 +1136,18 @@
                                                         <!-- 訂單總金額 -->
                                                         <div class="table_inlineBox-flex">
                                                             <div class="orderlist_titleBox text__align--center">
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-icon"><img
-                                                                        src="img/icon_pcprotect_badge.svg"></span>
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
+                                                                <span class="orderlist_title-inline orderlist_title-icon"><img src="img/icon_pcprotect_badge.svg"></span>
+                                                                    <span class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
                                                             </div>
-                                                            <div
-                                                                class="orderlist_titleBox text__align--center hidden-md-up">
+                                                            <div class="orderlist_titleBox text__align--center hidden-md-up">
                                                                 <span class="orderlist_amount">
                                                                     <span>Total</span>
                                                                     <span class="orderlist_amount_num eng-num">90</span>
                                                                     <span>items</span>
-                                                                </span>
+                                                                    </span>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
                                                 </td>
                                                 <td data-title="物流狀態">
                                                     <div class="tableDeta-box">
@@ -1299,16 +1178,12 @@
                                                         </div>
 
                                                         <!-- 操作按鈕欄 -->
-                                                        <div
-                                                            class="table_flexBox table_flexBox-right table_flexBox-wrap">
-                                                            <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
-                                                                data-panel="orderDetails" href="#">訂單明細</a>
+                                                        <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
+                                                            <a class="pct-ui btn-xs btn-primary-outlined js-pct-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
 
-                                                            <a class="pct-ui btn-xs btn-secondary refundBtn"
-                                                                href="#">同意退款申請</a>
+                                                            <a class="pct-ui btn-xs btn-primary refundBtn" href="#">同意退款申請</a>
 
-                                                            <a class="pct-ui btn-xs btn-secondary disputeBtn"
-                                                                href="#">申請爭議處理</a>
+                                                            <a class="pct-ui btn-xs btn-primary disputeBtn" href="#">申請爭議處理</a>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -1326,14 +1201,11 @@
                                                         <!-- 訂單狀態 -->
                                                         <div class="table_flexBox table_flexBox-between">
                                                             <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i
-                                                                        class="pct-btn-icon icon-delete icon-back icon-back-gray"></i>失效訂單</span>
+                                                                <span class="list__itemInfo list_status"><i class="pct-btn-icon icon-delete icon-back icon-back-gray"></i>失效訂單</span>
                                                             </div>
 
                                                             <div class="contanctSeller">
-                                                                <a
-                                                                    class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
-                                                                        class="pct-btn-icon icon-comment"></i>聯絡買家
+                                                                <a class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="pct-btn-icon icon-comment"></i>聯絡買家
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -1348,9 +1220,7 @@
                                                         <div class="productInfoGroup">
                                                             <!-- 商品圖片 -->
                                                             <div class="productInfo-img">
-                                                                <a href="#"><img class="img-fluid"
-                                                                        src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
-                                                                        alt="Product-Picture"></a>
+                                                                <a href="#"><img class="img-fluid" src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02" alt="Product-Picture"></a>
                                                             </div>
                                                             <!-- </div> -->
 
@@ -1359,16 +1229,13 @@
 
                                                                 <!-- 訂單編號 -->
                                                                 <div class="productInfo-info-orderNum">
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                    <span class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                    <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
                                                                 </div>
 
                                                                 <!-- 商品名稱 -->
                                                                 <div class="productInfo-info-title">
-                                                                    <span class="productInfo-info-title-text"><a
-                                                                            href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
+                                                                    <span class="productInfo-info-title-text"><a href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
                                                                             อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร
                                                                             เก่ามาก สวย สมบูรณ์ หายากมาก</a><span>
                                                                 </div>
@@ -1389,22 +1256,18 @@
                                                         <!-- 訂單總金額 -->
                                                         <div class="table_inlineBox-flex">
                                                             <div class="orderlist_titleBox text__align--center">
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-icon"><img
-                                                                        src="img/icon_pcprotect_badge.svg"></span>
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
+                                                                <span class="orderlist_title-inline orderlist_title-icon"><img src="img/icon_pcprotect_badge.svg"></span>
+                                                                    <span class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
                                                             </div>
-                                                            <div
-                                                                class="orderlist_titleBox text__align--center hidden-md-up">
+                                                            <div class="orderlist_titleBox text__align--center hidden-md-up">
                                                                 <span class="orderlist_subtitle orderlist_amount">
                                                                     <span>Total</span>
                                                                     <span class="orderlist_amount_num eng-num">90</span>
                                                                     <span>items</span>
-                                                                </span>
+                                                                    </span>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
                                                 </td>
                                                 <td data-title="物流狀態">
                                                     <div class="tableDeta-box">
@@ -1435,10 +1298,8 @@
                                                         </div>
 
                                                         <!-- 操作按鈕欄 -->
-                                                        <div
-                                                            class="table_flexBox table_flexBox-right table_flexBox-wrap">
-                                                            <a class="pct-ui btn-xs btn-secondary-outlined js-pct-panel-trigger"
-                                                                data-panel="orderDetails" href="#">訂單明細</a>
+                                                        <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
+                                                            <a class="pct-ui btn-xs btn-primary-outlined js-pct-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -1458,14 +1319,11 @@
                                                         <div class="table_flexBox table_flexBox-between">
 
                                                             <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i
-                                                                        class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>已付款</span>
+                                                                <span class="list__itemInfo list_status"><i class="pct-btn-icon icon-checked icon-back icon-back-blue"></i>已付款</span>
                                                             </div>
 
                                                             <div class="contanctSeller">
-                                                                <a
-                                                                    class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i
-                                                                        class="pct-btn-icon icon-comment"></i>聯絡買家
+                                                                <a class="pct-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="pct-btn-icon icon-comment"></i>聯絡買家
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -1480,9 +1338,7 @@
                                                         <div class="productInfoGroup">
                                                             <!-- 商品圖片 -->
                                                             <div class="productInfo-img">
-                                                                <a href="#"><img class="img-fluid"
-                                                                        src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
-                                                                        alt="Product-Picture"></a>
+                                                                <a href="#"><img class="img-fluid" src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02" alt="Product-Picture"></a>
                                                             </div>
                                                             <!-- </div> -->
 
@@ -1491,16 +1347,13 @@
 
                                                                 <!-- 訂單編號 -->
                                                                 <div class="productInfo-info-orderNum">
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                    <span
-                                                                        class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                                    <span class="productInfo-info-orderNum-title">訂單編號</span>
+                                                                    <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
                                                                 </div>
 
                                                                 <!-- 商品名稱 -->
                                                                 <div class="productInfo-info-title">
-                                                                    <span class="productInfo-info-title-text"><a
-                                                                            href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
+                                                                    <span class="productInfo-info-title-text"><a href="#">เปลัดขิก หลวงพ่อกลั่น วัดอินทราวาส
                                                                             อ่างทอง ไม้ดำดง ยุคต้น 2.5นิ้ว รอยจาร
                                                                             เก่ามาก สวย สมบูรณ์ หายากมาก</a><span>
                                                                 </div>
@@ -1521,22 +1374,18 @@
                                                         <!-- 訂單總金額 -->
                                                         <div class="table_inlineBox-flex">
                                                             <div class="orderlist_titleBox text__align--center">
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-icon"><img
-                                                                        src="img/icon_pcprotect_badge.svg"></span>
-                                                                <span
-                                                                    class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
+                                                                <span class="orderlist_title-inline orderlist_title-icon"><img src="img/icon_pcprotect_badge.svg"></span>
+                                                                    <span class="orderlist_title-inline orderlist_title-withicon eng-num">฿124,200<span>
                                                             </div>
-                                                            <div
-                                                                class="orderlist_titleBox text__align--center hidden-md-up">
+                                                            <div class="orderlist_titleBox text__align--center hidden-md-up">
                                                                 <span class="orderlist_subtitle orderlist_amount">
                                                                     <span>Total</span>
                                                                     <span class="orderlist_amount_num eng-num">90</span>
                                                                     <span>items</span>
-                                                                </span>
+                                                                    </span>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
                                                 </td>
                                                 <td data-title="物流狀態">
                                                     <div class="tableDeta-box">
@@ -1565,8 +1414,7 @@
                                                         </div>
 
                                                         <!-- 操作按鈕欄 -->
-                                                        <div
-                                                            class="table_flexBox table_flexBox-right table_flexBox-wrap">
+                                                        <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
                                                         </div>
                                                     </div>
                                                 </td>
@@ -1578,7 +1426,7 @@
                             </div>
                             <!-- 整體表格結束 -->
                             <!-- PC 版 列出所有頁碼 -->
-                            <div class="pct-ui page-pagination">
+                            <div class="pct-ui page-pagination hidden-sm-down">
                                 <ul class="eng-num">
                                     <li class="active">1</li>
                                     <li><a href="#">2</a></li>
@@ -1598,7 +1446,7 @@
                             </div>
                             <!-- 手機版 Load more-->
                             <div class="pct-btn-loadcontent hidden-sm-up">
-                                <a href="#" class="pct-ui btn btn-secondary btn-load">LOAD MORE</a>
+                                <a href="#" class="pct-ui btn btn-primary btn-load">LOAD MORE</a>
                             </div>
                         </section>
                     </div>

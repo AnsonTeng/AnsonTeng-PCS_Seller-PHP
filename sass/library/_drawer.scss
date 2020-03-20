@@ -5,7 +5,7 @@
     width: 340px;
     margin-bottom: 0.9375rem;
     @extend %shadow-style-block;
-    background-color: #fff;
+    background-color: $colorWhite;
     border-radius: 2px;
     .pct-icon.icon-delete {
         display: block;
@@ -25,7 +25,7 @@
         height: 0;
         border-style: solid;
         border-width: 0 10px 13px 10px;
-        border-color: transparent transparent #ffffff transparent;
+        border-color: transparent transparent $colorWhite transparent;
         position: absolute;
         top: -10px;
     } // 下拉對話視窗大標
@@ -116,7 +116,7 @@
                 }
             }
             &.unread {
-                background-color: #f3f9fc;
+                background-color: $accentLightColor;
             }
 
             &.nostock {
@@ -141,9 +141,17 @@
             .drawer-list-item {
                 .list-figure {
                     .list-figure-inner {
-                        background: $brandColor;
-                        background: -webkit-linear-gradient(left, #00afeb 0%, #0091d7 100%);
-                        background: linear-gradient(to right, #00afeb 0%, #0091d7 100%);
+                        background: $primaryColor;
+                        background: -webkit-linear-gradient(
+                            left,
+                            $primaryColor 0%,
+                            $primaryDeepColor 100%
+                        );
+                        background: linear-gradient(
+                            to right,
+                            $primaryColor 0%,
+                            $primaryDeepColor 100%
+                        );
                     }
                 }
             }
@@ -160,7 +168,7 @@
                     width: 100%;
                     height: 0;
                     padding-top: 100%;
-                    background-color: #fff;
+                    background-color: $colorWhite;
                 }
                 .info-figure-img {
                     @extend %figure-img;
@@ -181,7 +189,7 @@
                     text-align: left;
                     &.active {
                         font-weight: 400;
-                        color: $secondaryColor;
+                        color: $primaryColor;
                         padding: 0 0.9375rem;
                     }
                     &.account-logout {
@@ -198,7 +206,7 @@
                         font-size: 0.875rem;
                     }
                     a:hover {
-                        color: $secondaryColor;
+                        color: $primaryColor;
                         background-color: $colorGreyishWhite;
                     }
                 }

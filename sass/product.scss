@@ -69,6 +69,10 @@
                 max-width: 150px;
                 position: relative;
                 left: 1px;
+                border-radius: 2px 0 0 2px;
+            }
+            input {
+                border-radius: 0 2px 2px 0;
             }
         }
     }
@@ -78,7 +82,7 @@
 .searchBarGroup-searchBtn {
     line-height: 40px;
     width: 36px;
-    color: $secondaryColor;
+    color: $primaryColor;
     > .pct-icon {
         position: relative;
         top: 2px;
@@ -103,7 +107,7 @@
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: $secondaryColor;
+        background-color: $primaryColor;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
         top: 50%;
         left: 50%;
@@ -209,7 +213,7 @@
                     font-size: 0.875rem;
 
                     .pct-icon {
-                        color: $secondaryColor;
+                        color: $primaryColor;
                         font-size: 1.2rem;
                         vertical-align: bottom;
                     }
@@ -257,7 +261,7 @@
                         position: static;
                         width: auto;
                         height: auto;
-                        color: $secondaryColor;
+                        color: $primaryColor;
                         text-align: center;
                         line-height: 30px;
                     }
@@ -455,7 +459,7 @@
     //新增規格
     .pct-ui.btn.add-variation {
         .pct-icon {
-            color: $secondaryColor;
+            color: $primaryColor;
         }
     }
 
@@ -608,7 +612,7 @@
                         text-align: right;
 
                         a {
-                            color: $secondaryColor;
+                            color: $primaryColor;
 
                             &.pct-icon {
                                 vertical-align: middle;
@@ -672,7 +676,7 @@
             margin-top: -10px;
 
             &:hover {
-                color: $secondaryColor;
+                color: $primaryColor;
             }
         }
     }
@@ -1380,6 +1384,19 @@
     position: relative;
     left: 130px;
     top: -1.5rem;
-    @media (max-width: $break-xs) {
+
+    @media (max-width: $break-lg) {
+        left: 0px;
     }
+
+    @media (max-width: $break-xs) {
+        left: 130px;
+    }
+}
+
+.tooltips-blue {
+    color: $colorBlue;
+    margin: 0 3px;
+    position: relative;
+    top: 1px;
 }

@@ -11,6 +11,9 @@
 //TAB導航
 @import "library/_tabnav";
 
+//頁碼
+@import "library/_pagination";
+
 .pct-ui.tab-nav-bar {
     position: -webkit-sticky;
     /* for safari */
@@ -60,9 +63,17 @@
                 border: 1px solid $colorLightGray;
                 .list-figure-inner {
                     @extend %figure-inner;
-                    background: $secondaryColor !important;
-                    background: -webkit-linear-gradient(left, $secondaryColor 0%, $secondaryColor 100%);
-                    background: linear-gradient(to right, $secondaryColor 0%, $secondaryColor 100%);
+                    background: $primaryColor !important;
+                    background: -webkit-linear-gradient(
+                        left,
+                        $primaryColor 0%,
+                        $primaryColor 100%
+                    );
+                    background: linear-gradient(
+                        to right,
+                        $primaryColor 0%,
+                        $primaryColor 100%
+                    );
                 }
                 .list-figure-img {
                     @extend %figure-img;
@@ -105,7 +116,7 @@
                 }
             }
             &.unread {
-                background-color: $colorLightBlue;
+                background-color: $accentLightColor;
             }
             &.read {
                 background-color: #ffffff;
