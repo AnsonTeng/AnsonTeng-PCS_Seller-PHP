@@ -1,20 +1,20 @@
 //TABS NAVIGATIONS 標籤導航
 $(".tab-panel > div").show();
-setTimeout(function() {
+setTimeout(function () {
     $(".tab-panel > div").hide();
 }, 100);
-setTimeout(function() {
+setTimeout(function () {
     $(".tab-panel > div:first-of-type").show();
 }, 100);
 
-$(".tab-items a").click(function(e) {
+$(".tab-items a").click(function (e) {
     e.preventDefault();
     var $this = $(this),
         tabpanel = "#" + $this.parents(".tab-items").data("tabgroup"),
         others = $this
-            .closest("li")
-            .siblings()
-            .children("a"),
+        .closest("li")
+        .siblings()
+        .children("a"),
         target = $this.attr("href");
     others.removeClass("active");
     $this.addClass("active");
@@ -29,7 +29,7 @@ var accordionebox = document.getElementsByClassName("accordion-caption");
 var i;
 
 for (i = 0; i < accordionebox.length; i++) {
-    accordionebox[i].onclick = function() {
+    accordionebox[i].onclick = function () {
         this.classList.toggle("active");
 
         var panel = this.nextElementSibling;
@@ -37,27 +37,27 @@ for (i = 0; i < accordionebox.length; i++) {
             panel.style.maxHeight = null;
 
             $(this)
-                .find(".pct-ui.switch-toggle.mainToggle")
+                .find(".sea-ui.switch-toggle.mainToggle")
                 .show();
         } else {
             panel.style.maxHeight = panel.scrollHeight + 300 + "px";
             $(this)
-                .find(".pct-ui.switch-toggle.mainToggle")
+                .find(".sea-ui.switch-toggle.mainToggle")
                 .hide();
         }
     };
 }
 
 // LightBox 燈箱（背景點擊偵聽）
-$(".pct-lightBox_backGround , .lightbox_close").click(function() {
-    $("#pct-lightbox").toggle();
+$(".sea-lightBox_backGround , .lightbox_close").click(function () {
+    $("#sea-lightbox").toggle();
     // 解鎖背景物件滑動函式
     unlockBody();
 });
 
 //操作bar顯示/隱藏
 
-$(window).scroll(function(event) {
+$(window).scroll(function (event) {
     if ($(".breadcrumb-back").length === 0) {
         return;
     }
@@ -83,11 +83,11 @@ $(window).scroll(function(event) {
 
 //-- 展開隱藏選單 --
 // 進階搜尋＋－
-$(".add_condition").click(function() {
+$(".add_condition").click(function () {
     if (
         $(this)
-            .children()
-            .hasClass("icon-plus")
+        .children()
+        .hasClass("icon-plus")
     ) {
         $(this)
             .children()

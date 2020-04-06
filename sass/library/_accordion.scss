@@ -1,7 +1,8 @@
 //ACCORDION 折疊式內容
-.pct-ui.accordion {
+.sea-ui.accordion {
     background-color: $colorWhite;
     border: 1px solid $colorLightGray;
+    margin-bottom: 0.75rem;
 
     //摺疊標題
     .accordion-caption {
@@ -52,7 +53,7 @@
             a {
                 color: $primaryDeepColor;
 
-                &.pct-icon {
+                &.sea-seller-icon {
                     vertical-align: middle;
                     font-size: 1.25rem;
                     color: $primaryColor;
@@ -62,7 +63,7 @@
             .hint-text {
                 color: $colorPinkRed;
 
-                .pct-icon {
+                .sea-seller-icon {
                     margin-right: 5px;
 
                     &.icon-alert {
@@ -72,11 +73,11 @@
             }
         }
 
-        .pct-icon {
+        .sea-seller-icon {
             color: $colorGray;
         }
 
-        &.active .pct-icon {
+        &.active .sea-seller-icon {
             transform: rotate(180deg);
         }
 
@@ -100,6 +101,19 @@
                 line-height: 20px;
                 font-weight: 300;
 
+
+                .liquid-container-text-gray {
+                    color: $colorDeepGray;
+                }
+
+                .liquid-container-text-line {
+                    text-decoration: line-through;
+                }
+
+                .liquid-container-text-red {
+                    color: $colorPinkRed;
+                }
+
                 a {
                     text-decoration: underline;
                     color: $primaryDeepColor;
@@ -108,12 +122,17 @@
                         text-decoration: none;
                     }
                 }
+
+
+
+
+
             }
 
-            > dl {
+            >dl {
                 margin: 5px 0;
 
-                > dd {
+                >dd {
                     width: 35px;
                     display: inline-block;
                     vertical-align: top;

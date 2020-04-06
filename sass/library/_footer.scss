@@ -1,5 +1,9 @@
 .section-footer {
-    .pct-section-content {
+    // padding: 16px 0;
+    height: 40px;
+    background-color: $colorGrayBlack;
+
+    .sea-section-content {
         p.footer-ttl {
             font-weight: 400;
             font-size: 0.9375rem;
@@ -27,7 +31,6 @@
             width: 100%;
             text-align: center;
             font-size: 0.75rem;
-            background-color: #424242;
             color: $colorWhite;
             height: auto;
             padding: 0 0.9375rem;
@@ -38,23 +41,24 @@
                 justify-content: space-between;
                 align-items: center;
 
-                .pct-footer-logoprivacy {
-                    margin: 5px 0 5px 0;
+                .sea-footer-logoprivacy {
+                    margin: 8px 0 5px 0;
+                    color: $colorDeepGray;
 
-                    > ul {
+                    >ul {
                         display: flex;
                         align-items: center;
                         position: relative;
                         top: 5px;
 
                         li {
-                            &.pct-footerlogo {
+                            &.sea-footerlogo {
                                 width: 156px;
                                 height: 52px;
                                 background-image: url(../img/img_pchomesea_white.svg);
                                 margin-right: 12px;
                                 position: relative;
-                                top: -5px;
+                                top: -0px;
                                 background-repeat: no-repeat;
                                 background-position: center center;
                             }
@@ -62,26 +66,27 @@
                     }
                 }
 
-                .pct-footer-contact {
+                .sea-footer-contact {
                     margin: 5px 0 5px 0;
                     position: relative;
                     top: 5px;
 
-                    > ul {
+                    >ul {
                         color: $colorDeepGray;
                         display: flex;
                         justify-content: center;
 
-                        > li {
+                        >li {
                             line-height: 1rem;
 
-                            .pct-icon {
+                            .sea-seller-icon {
                                 padding-right: 5px;
                             }
 
                             a {
                                 color: $colorDeepGray;
                             }
+
                             padding: 0 10px;
                         }
                     }
@@ -91,32 +96,35 @@
     }
 }
 
-@media (max-width: $break-md) {
+@media (max-width: $break-sm) {
     .section-footer {
-        .pct-section-content {
+        height: auto;
+
+        .sea-section-content {
+
             //隱私條款
             &.privacy {
-                padding: 0.9375rem 0.9375rem;
+                padding: 0.75rem 0.9375rem 0.9375rem 0.9375rem;
 
                 .privacy-wrap {
                     display: block;
 
-                    .pct-footer-logoprivacy {
+                    .sea-footer-logoprivacy {
                         margin: 5px 0;
 
-                        > ul {
+                        >ul {
                             display: block;
 
                             li {
-                                &.pct-footerlogo {
+                                &.sea-footerlogo {
                                     display: none;
                                 }
                             }
                         }
                     }
 
-                    .pct-footer-contact {
-                        > ul {
+                    .sea-footer-contact {
+                        >ul {
                             display: block;
                         }
                     }

@@ -2,7 +2,7 @@
 @import "_slide-panel-orderlist";
 
 // --- 面板 ---------------------
-.pct-panel {
+.sea-panel {
     position: fixed;
     top: 0;
     left: 0;
@@ -27,7 +27,7 @@
         transition: background 0.3s 0.3s;
     }
 
-    &.pct-panel--is-visible {
+    &.sea-panel--is-visible {
         visibility: visible;
         -webkit-transition: visibility 0s 0s;
         transition: visibility 0s 0s;
@@ -40,11 +40,11 @@
     }
 }
 
-.pct-panel__content-addMarginBottom {
+.sea-panel__content-addMarginBottom {
     margin-bottom: 70px;
 }
 
-.pct-panel__header {
+.sea-panel__header {
     position: fixed;
     width: 100%;
     height: $headerHeight_table;
@@ -64,20 +64,20 @@
     -ms-transform: translateY(calc(0px - #{$headerHeight_table}));
     transform: translateY(calc(0px - #{$headerHeight_table}));
 
-    .pct-panel__header-title {
+    .sea-panel__header-title {
         font-size: 1.125rem;
     }
 }
 
-.pct-panel--from-right .pct-panel__header {
+.sea-panel--from-right .sea-panel__header {
     right: 0;
 }
 
-.pct-panel--from-left .pct-panel__header {
+.sea-panel--from-left .sea-panel__header {
     left: 0;
 }
 
-.pct-panel--is-visible .pct-panel__header {
+.sea-panel--is-visible .sea-panel__header {
     -webkit-transition: -webkit-transform 0.3s 0.3s;
     transition: -webkit-transform 0.3s 0.3s;
     transition: transform 0.3s 0.3s;
@@ -88,24 +88,24 @@
 }
 
 @media only screen and (min-width: $break-sm) {
-    .pct-panel__header {
+    .sea-panel__header {
         width: 90%;
     }
 }
 
 @media only screen and (min-width: 1170px) {
-    .pct-panel__header {
+    .sea-panel__header {
         width: 75%;
     }
 }
 
 @media only screen and (min-width: 1920px) {
-    .pct-panel__header {
+    .sea-panel__header {
         width: 50%;
     }
 }
 
-.pct-panel__close {
+.sea-panel__close {
     position: absolute;
     top: 0;
     right: 0;
@@ -114,8 +114,8 @@
     text-align: center;
 }
 
-.pct-panel__close {
-    .pct-icon {
+.sea-panel__close {
+    .sea-seller-icon {
         width: $headerHeight_table;
         height: $headerHeight_table;
         z-index: 990000;
@@ -127,7 +127,7 @@
     }
 }
 
-.pct-panel__container {
+.sea-panel__container {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -142,19 +142,19 @@
     padding-bottom: 90px;
 }
 
-.pct-panel--from-right .pct-panel__container {
+.sea-panel--from-right .sea-panel__container {
     right: 0;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
 }
 
-.pct-panel--from-left .pct-panel__container {
+.sea-panel--from-left .sea-panel__container {
     left: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
 }
 
-.pct-panel--is-visible .pct-panel__container {
+.sea-panel--is-visible .sea-panel__container {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     -webkit-transition-delay: 0s;
@@ -162,24 +162,24 @@
 }
 
 @media only screen and (min-width: $break-sm) {
-    .pct-panel__container {
+    .sea-panel__container {
         width: 90%;
     }
 }
 
 @media only screen and (min-width: $break-lg) {
-    .pct-panel__container {
+    .sea-panel__container {
         width: 75%;
     }
 }
 
 @media only screen and (min-width: $break-xl) {
-    .pct-panel__container {
+    .sea-panel__container {
         width: 50%;
     }
 }
 
-.pct-panel__content {
+.sea-panel__content {
     position: absolute;
     top: 0;
     left: 0;
@@ -188,11 +188,12 @@
     padding: 70px 8px;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+
     @media (max-width: $break-lg) {
         padding: 70px 0px;
     }
 
-    .pct-ui.modal {
+    .sea-ui.modal {
         width: 100%;
         box-shadow: 0 0 0 0;
         padding: 0;
@@ -209,14 +210,14 @@
 }
 
 @media only screen and (max-width: $break-md) {
-    .pct-panel__header {
-        .pct-panel__header-title {
+    .sea-panel__header {
+        .sea-panel__header-title {
             font-size: 1.125rem;
         }
     }
 }
 
-.pct-panel__content-actions {
+.sea-panel__content-actions {
     position: fixed;
     z-index: 10;
     bottom: 0px;
@@ -228,14 +229,14 @@
 }
 
 @media only screen and (max-width: $break-xs) {
-    .pct-panel__header {
-        .pct-panel__header-title {
+    .sea-panel__header {
+        .sea-panel__header-title {
             font-size: 1.125rem;
             line-height: 54px;
         }
     }
 
-    .pct-panel__close {
+    .sea-panel__close {
         top: -5px;
     }
 }

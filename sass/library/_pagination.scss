@@ -1,6 +1,6 @@
 //頁碼--標準
-.pct-ui.page-pagination {
-    > ul {
+.sea-ui.page-pagination {
+    >ul {
         margin: 20px 0;
         display: flex;
         justify-content: center;
@@ -30,7 +30,7 @@
                 color: $colorGrayBlack;
                 background-color: rgba(238, 238, 238, 0);
 
-                .pct-icon {
+                .sea-seller-icon {
                     font-size: 0.75rem;
                     color: $colorDarkGray;
                 }
@@ -38,7 +38,8 @@
                 &:hover {
                     color: $primaryColor;
                     background-color: rgba(238, 238, 238, 1);
-                    .pct-icon {
+
+                    .sea-seller-icon {
                         color: $primaryColor;
                     }
                 }
@@ -47,7 +48,7 @@
     }
 
     &.group {
-        > ul {
+        >ul {
             justify-content: flex-end;
 
             li {

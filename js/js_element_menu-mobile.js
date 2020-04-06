@@ -76,8 +76,8 @@ $(document).ready(function() {
             if ($(this).hasClass('menuMobileTitle-close')) {
                 $(this).removeClass('menuMobileTitle-close');
                 $(this).addClass('menuMobileTitle-open');
-                $(this).children('div').children('.pct-icon').removeClass('icon-plus');
-                $(this).children('div').children('.pct-icon').addClass('icon-minus');
+                $(this).children('div').children('.sea-seller-icon').removeClass('icon-plus');
+                $(this).children('div').children('.sea-seller-icon').addClass('icon-minus');
                 $(this).next().slideDown(300, showCategoryItemInner);
 
                 
@@ -85,8 +85,8 @@ $(document).ready(function() {
             } else if($(this).hasClass('menuMobileTitle-open')) {
                 $(this).removeClass('menuMobileTitle-open');
                 $(this).addClass('menuMobileTitle-close');
-                $(this).children('div').children('.pct-icon').removeClass('icon-minus');
-                $(this).children('div').children('.pct-icon').addClass('icon-plus');
+                $(this).children('div').children('.sea-seller-icon').removeClass('icon-minus');
+                $(this).children('div').children('.sea-seller-icon').addClass('icon-plus');
                 $(this).next().slideUp(300, hideCategoryItemInner);
                 // console.log("CLOSE");
             }
@@ -98,12 +98,12 @@ $(document).ready(function() {
     // 商品類別選單、其他類別選單、幫助中心、關於我們...預設展開
     $(".menuMobileTitle-open").next().slideDown(0);
     // icon -
-    $(".menuMobileTitle-open").children('div').children('.pct-icon').addClass('icon-minus');    
+    $(".menuMobileTitle-open").children('div').children('.sea-seller-icon').addClass('icon-minus');    
 
     // 商品類別選單、其他類別選單、幫助中心、關於我們...預設關閉
     $(".menuMobileTitle-close").next().slideUp(0);
     // icon +
-    $(".menuMobileTitle-close").children('div').children('.pct-icon').addClass('icon-plus');
+    $(".menuMobileTitle-close").children('div').children('.sea-seller-icon').addClass('icon-plus');
 
     // 
     // showCategoryItemInner();

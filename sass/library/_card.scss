@@ -6,7 +6,7 @@
 }
 
 //Card 商品卡片
-a.pct-item-card-link .pct-ui.card {
+a.sea-item-card-link .sea-ui.card {
     &:hover {
         @extend %cardhover;
         border: 1px solid $primaryColor;
@@ -14,7 +14,7 @@ a.pct-item-card-link .pct-ui.card {
 }
 
 //編輯相關商品卡片
-.pct-ui.card-edit {
+.sea-ui.card-edit {
     border: none !important;
 
     &:hover {
@@ -22,9 +22,9 @@ a.pct-item-card-link .pct-ui.card {
     }
 }
 
-.pct-ui.card,
-.pct-ui.card-edit,
-.pct-ui.card-edit-add {
+.sea-ui.card,
+.sea-ui.card-edit,
+.sea-ui.card-edit-add {
     @extend %shadow-style-card;
     background-color: $colorWhite;
     border: 1px solid $colorWhite;
@@ -33,12 +33,13 @@ a.pct-item-card-link .pct-ui.card {
     margin-bottom: 0.5rem;
     position: relative;
 
-    .pct-ui.form.checkbox {
+    .sea-ui.form.checkbox {
         position: absolute;
         top: 10px;
         left: 10px;
         z-index: 7;
     }
+
     .edit-btn {
         position: absolute;
         cursor: pointer;
@@ -50,7 +51,7 @@ a.pct-item-card-link .pct-ui.card {
         background-color: $colorWhite;
         box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
 
-        li.pct-icon {
+        li.sea-seller-icon {
             font-size: 1.3rem;
             position: static;
             width: auto;
@@ -97,6 +98,7 @@ a.pct-item-card-link .pct-ui.card {
                         font-size: 0.75rem;
                     }
                 }
+
                 // 補庫存再賣
                 .current-stock {
                     position: relative;
@@ -112,16 +114,15 @@ a.pct-item-card-link .pct-ui.card {
                         height: 24px;
                         line-height: 24px;
                         // background-color: #FEE4E4;
-                        background-color: $accentColor;
+                        background-color: $colorPinkRed;
                         // color:#D3818A;
                         color: $colorWhite;
                         font-size: 0.75rem;
                         border-radius: 4px;
                         box-shadow: 0 0.5px 3px 0px rgba(0, 0, 0, 0.2);
-                        animation: floatAnimation-noshadow 1.3s ease-in-out
-                            infinite;
+                        animation: floatAnimation-noshadow 1.3s ease-in-out infinite;
 
-                        .pct-icon {
+                        .sea-seller-icon {
                             font-size: 0.75rem;
                             // color:#D3818A;
                             color: $colorWhite;
@@ -134,8 +135,7 @@ a.pct-item-card-link .pct-ui.card {
                             height: 0;
                             border-style: solid;
                             border-width: 10px 7.5px 0 7.5px;
-                            border-color: $accentColor transparent transparent
-                                transparent;
+                            border-color: $colorPinkRed transparent transparent transparent;
                             bottom: -7px;
                             left: 20%;
                         }
@@ -163,7 +163,7 @@ a.pct-item-card-link .pct-ui.card {
                     display: flex;
                     align-items: center;
 
-                    .pct-icon {
+                    .sea-seller-icon {
                         pointer-events: none;
 
                         &.icon-heart-on {
@@ -204,13 +204,14 @@ a.pct-item-card-link .pct-ui.card {
             text-align: center;
             line-height: 34px;
 
-            .pct-icon {
+            .sea-seller-icon {
                 color: $colorDeepGray;
                 padding-right: 2px;
 
                 &.icon-arrow-down {
                     font-size: 0.75rem;
                 }
+
                 &.icon-preview {
                     font-size: 0.9375rem;
                 }
@@ -224,7 +225,7 @@ a.pct-item-card-link .pct-ui.card {
                 background-color: #fcfcfc;
                 color: $primaryColor;
 
-                .pct-icon {
+                .sea-seller-icon {
                     color: $primaryColor;
                 }
             }
@@ -302,12 +303,12 @@ a.pct-item-card-link .pct-ui.card {
             // margin-right: 0.3125rem;
             // }
 
-            .pct-icon-overseas {
+            .sea-seller-icon-overseas {
                 width: 18px;
                 height: 18px;
             }
 
-            .pct-icon-shopassist {
+            .sea-seller-icon-shopassist {
                 width: auto;
                 max-width: 138px;
                 transform: scale(0.7);
@@ -324,7 +325,7 @@ a.pct-item-card-link .pct-ui.card {
                 border-radius: 40px;
                 padding: 3px 10px 2px 8px;
 
-                .pct-icon {
+                .sea-seller-icon {
                     color: #a3bfcc;
                     margin-right: 2px;
                 }
@@ -378,7 +379,7 @@ a.pct-item-card-link .pct-ui.card {
                 display: flex;
                 align-items: center;
 
-                .pct-icon {
+                .sea-seller-icon {
                     margin-right: 0.3125rem;
                     cursor: pointer;
 
@@ -393,15 +394,15 @@ a.pct-item-card-link .pct-ui.card {
             }
 
             .card-footer-review {
-                .pct-ui.review-star {
+                .sea-ui.review-star {
                     display: flex;
                     align-items: center;
                     padding-top: 0.125rem;
 
-                    > ul {
+                    >ul {
                         margin-right: 0.3125rem;
 
-                        > li.pct-icon {
+                        >li.sea-seller-icon {
                             display: inline-block;
                             font-size: 0.75rem;
                             margin: 0 -0.125rem;
@@ -426,10 +427,11 @@ a.pct-item-card-link .pct-ui.card {
 }
 
 @media (max-width: $break-xs) {
-    .pct-ui.card,
-    .pct-ui.card-edit,
-    .pct-ui.card-edit-add {
-        .pct-ui.form.checkbox {
+
+    .sea-ui.card,
+    .sea-ui.card-edit,
+    .sea-ui.card-edit-add {
+        .sea-ui.form.checkbox {
             position: absolute;
             top: 12px;
             left: 10px;
@@ -449,7 +451,7 @@ a.pct-item-card-link .pct-ui.card {
                 text-align: center;
                 line-height: 34px;
 
-                .pct-icon {
+                .sea-seller-icon {
                     color: $colorDeepGray;
                     padding-right: 2px;
 
@@ -476,7 +478,7 @@ a.pct-item-card-link .pct-ui.card {
 
             .card-footer {
                 .card-footer-save {
-                    .pct-icon {
+                    .sea-seller-icon {
                         margin-right: 0.1875rem;
                         cursor: pointer;
 
@@ -491,14 +493,14 @@ a.pct-item-card-link .pct-ui.card {
                 }
 
                 .card-footer-review {
-                    .pct-ui.review-star {
+                    .sea-ui.review-star {
                         display: flex;
                         align-items: center;
 
-                        > ul {
+                        >ul {
                             margin-right: 0.1875rem;
 
-                            > li.pct-icon {
+                            >li.sea-seller-icon {
                                 display: inline-block;
                                 font-size: 0.75rem;
                                 margin: 0 -0.125rem;
@@ -524,11 +526,12 @@ a.pct-item-card-link .pct-ui.card {
 }
 
 @media (max-width: $break-xxs) {
-    .pct-ui.card,
-    .pct-ui.card-edit {
+
+    .sea-ui.card,
+    .sea-ui.card-edit {
         .card-edit-action {
             a {
-                .pct-icon {
+                .sea-seller-icon {
                     display: none;
                 }
             }
@@ -538,7 +541,7 @@ a.pct-item-card-link .pct-ui.card {
 
 //品牌卡片
 
-.pct-ui.card-brandshop {
+.sea-ui.card-brandshop {
     position: relative;
     transition: 0.3s;
     // min-height:100px;
@@ -589,7 +592,7 @@ a.pct-item-card-link .pct-ui.card {
                 font-size: 0.8125rem;
             }
 
-            .pct-icon {
+            .sea-seller-icon {
                 font-size: 1.325rem;
                 margin-left: 0.3125rem;
                 cursor: pointer;
@@ -602,9 +605,9 @@ a.pct-item-card-link .pct-ui.card {
     }
 }
 
-a.pct-view-more-link {
-    .pct-ui.card-brandshop {
-        .pct-view-more {
+a.sea-view-more-link {
+    .sea-ui.card-brandshop {
+        .sea-view-more {
             color: $primaryColor;
             font-size: 1.25rem;
             font-weight: 400;
@@ -616,13 +619,14 @@ a.pct-view-more-link {
 }
 
 @media (max-width: $break-sm) {
-    .pct-ui.card-brandshop {
+    .sea-ui.card-brandshop {
         padding: 0.75rem;
 
         .card-figure {
             width: 60px;
             height: 60px;
         }
+
         .card-content {
             padding-top: 0.2rem;
             margin-left: 0.65rem;
@@ -638,7 +642,7 @@ a.pct-view-more-link {
                 right: 10px;
                 bottom: 10px;
 
-                .pct-icon {
+                .sea-seller-icon {
                     font-size: 1.2rem;
                     margin-left: 0.125rem;
                     cursor: pointer;
@@ -650,13 +654,13 @@ a.pct-view-more-link {
 
 //文章卡片
 
-a.pct-item-card-link .pct-ui.card-blog {
+a.sea-item-card-link .sea-ui.card-blog {
     &:hover {
         @extend %cardhover;
     }
 }
 
-.pct-ui.card-blog {
+.sea-ui.card-blog {
     @extend %shadow-style-card;
     background-color: #f2f2f2;
     height: 265px;
@@ -673,18 +677,14 @@ a.pct-item-card-link .pct-ui.card-blog {
         width: 100%;
         height: 100%;
         border-radius: 2px;
-        background: -webkit-linear-gradient(
-            top,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0) 63.7%,
-            rgba(0, 0, 0, 0.75) 100%
-        );
-        background: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0) 63.7%,
-            rgba(0, 0, 0, 0.75) 100%
-        );
+        background: -webkit-linear-gradient(top,
+                rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 0) 63.7%,
+                rgba(0, 0, 0, 0.75) 100%);
+        background: linear-gradient(to bottom,
+                rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 0) 63.7%,
+                rgba(0, 0, 0, 0.75) 100%);
 
         .card-content-title {
             @include text-overflow;
@@ -702,13 +702,13 @@ a.pct-item-card-link .pct-ui.card-blog {
 }
 
 @media (max-width: $break-md) {
-    a.pct-item-card-link .pct-ui.card {
+    a.sea-item-card-link .sea-ui.card {
         &:hover {
             border: 1px solid $colorWhite;
         }
     }
 
-    .pct-ui.card-blog {
+    .sea-ui.card-blog {
         .card-mask {
             .card-content-title {
                 position: absolute;
@@ -722,7 +722,7 @@ a.pct-item-card-link .pct-ui.card-blog {
 
 //店家卡片
 
-.pct-ui.card-shop {
+.sea-ui.card-shop {
     @extend %shadow-style-card;
     background-color: $colorWhite;
     margin-bottom: 10px;
@@ -780,7 +780,7 @@ a.pct-item-card-link .pct-ui.card-blog {
                 position: relative;
                 width: 100%;
 
-                .pct-icon-overseas {
+                .sea-seller-icon-overseas {
                     width: 25px;
                     height: 25px;
                     margin-left: 5px;
@@ -811,6 +811,7 @@ a.pct-item-card-link .pct-ui.card-blog {
                 height: 38px;
                 @include text-overflow;
             }
+
             .seller-product-num {
                 font-size: 0.8125rem;
                 color: $colorDeepGray;
@@ -823,7 +824,7 @@ a.pct-item-card-link .pct-ui.card-blog {
         }
 
         .seller-visit-follow {
-            .pct-ui.btn-group-horizontal {
+            .sea-ui.btn-group-horizontal {
                 padding: 10px 15px 15px 15px;
                 display: flex;
 
@@ -844,9 +845,10 @@ a.pct-item-card-link .pct-ui.card-blog {
 }
 
 @media (max-width: $break-lg) {
-    .pct-ui.card-shop {
+    .sea-ui.card-shop {
         .card-shop-content {
             .seller-profile-up {
+
                 //商家頭像
                 .seller-profile-figure {
                     flex-shrink: 0;
@@ -856,7 +858,7 @@ a.pct-item-card-link .pct-ui.card-blog {
 
                 //統計資料
                 .seller-profile-data {
-                    .pct-icon-overseas {
+                    .sea-seller-icon-overseas {
                         width: 22px;
                         height: 22px;
                         // position:absolute;
@@ -873,6 +875,7 @@ a.pct-item-card-link .pct-ui.card-blog {
 
                     .seller-product-num {
                         font-size: 0.8125rem;
+
                         .eng-num {
                             font-size: 1rem;
                         }
@@ -882,13 +885,15 @@ a.pct-item-card-link .pct-ui.card-blog {
         }
     }
 }
+
 @media (max-width: $break-sm) {
-    .pct-ui.card-shop {
+    .sea-ui.card-shop {
         margin-bottom: 10px;
 
         .card-shop-content {
             .seller-profile-up {
                 padding: 15px 15px 10px 15px;
+
                 //商家頭像
                 .seller-profile-figure {
                     flex-shrink: 0;
@@ -898,7 +903,7 @@ a.pct-item-card-link .pct-ui.card-blog {
 
                 //統計資料
                 .seller-profile-data {
-                    .pct-icon-overseas {
+                    .sea-seller-icon-overseas {
                         width: 25px;
                         height: 25px;
                     }

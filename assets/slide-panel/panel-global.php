@@ -1,36 +1,47 @@
 <!--滑動面板 -->
 <!-- orderListDetail 訂單明細 -->
-<div class="pct-panel pct-panel--from-right js-pct-panel-orderDetails">
+<div class="sea-panel sea-panel--from-right js-sea-panel-orderDetails">
     <!-- 標題與關閉按鈕 -->
-    <header class="pct-panel__header">
-        <div class="pct-panel__header-title">訂單明細</div>
-        <a href="#0" class="pct-panel__close js-pct-close"><i class="pct-icon icon-delete"></i></a>
+    <header class="sea-panel__header">
+        <div class="sea-panel__header-title">訂單明細</div>
+        <a href="#0" class="sea-panel__close js-sea-close"><i class="sea-seller-icon icon-delete"></i></a>
     </header>
     <!-- 內容容器 -->
-    <div class="pct-panel__container">
-        <div class="pct-panel__content">
-            <div class="pct-panel__content-addMarginBottom">
+    <div class="sea-panel__container">
+        <div class="sea-panel__content">
+            <div class="sea-panel__content-addMarginBottom">
+
                 <!-- 收件人資訊 （同燈箱內容樣式）-->
-                <div class="pct-ui modal">
+                <div class="sea-ui modal">
                     <div class="modal-content">
                         <div class="description">
                             <div class="title">訂單狀態：<span class="orderlistDetail-status">回覆取消申請</span></div>
                             <div class="description-list-column">
-                                <div class="description-list-box">
+                                <div class="list-column-up">
                                     <div class="description-list-box">
                                         <div class="list-box-item">訂單編號</div>
                                         <div class="list-box-text eng-num">9041800006091</div>
+                                    </div>
+                                    <div class="description-list-box">
+                                        <div class="list-box-item">訂單日期</div>
+                                        <div class="list-box-text eng-num">2020/07/26</div>
+                                    </div>
+                                    <div class="description-list-box">
+                                        <div class="list-box-item">訂單來源</div>
+                                        <div class="list-box-text eng-num">SG</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
                 <!-- 收件人資訊 （同燈箱內容樣式）-->
-                <div class="pct-ui modal">
+                <div class="sea-ui modal">
                     <div class="modal-content">
                         <div class="description">
-                            <div class="title">收件人</div>
+                            <div class="title">收件人 (只有TH泰國訂單才有此欄)</div>
                             <div class="description-list-column">
                                 <div class="list-column-up">
                                     <div class="description-list-box">
@@ -54,12 +65,12 @@
                     </div>
                 </div>
                 <!-- 訂購人資訊 （同燈箱內容樣式）-->
-                <div class="pct-ui modal">
+                <div class="sea-ui modal">
                     <div class="modal-content">
                         <div class="description">
                             <div class="toggleBar addBtn_buyerInfo">
                                 <div class="title">訂購人</div>
-                                <div class="toggleBar_arrow pct-icon icon-angle-down">
+                                <div class="toggleBar_arrow sea-seller-icon icon-angle-down">
                                 </div>
                             </div>
                             <div class="description-list-column buyerInfoBox">
@@ -87,7 +98,7 @@
 
 
                 <!-- 訂單明細內容 -->
-                <div class="pct-ui modal">
+                <div class="sea-ui modal">
                     <div class="modal-content">
                         <!-- 表格 -->
                         <div class="tableBox tableBox-orderlistDetail">
@@ -107,16 +118,12 @@
                                                     <!-- 訂單狀態 -->
                                                     <div class="table_flexBox table_flexBox-between">
                                                         <div class="itemInfoGroup">
-                                                            <div class="list__itemInfo-userImg img-bg"
-                                                                style="background-image: url('img/buyer_avator_default.svg');">
+                                                            <div class="list__itemInfo-userImg img-bg" style="background-image: url('img/buyer_avator_default.svg');">
                                                             </div>
-                                                            <span
-                                                                class="list__itemInfo list__itemInfo-userName">so*****************om</span>
+                                                            <span class="list__itemInfo list__itemInfo-userName">so*****************om</span>
                                                         </div>
                                                         <div class="contanctSeller">
-                                                            <a class="pct-ui btn-xs btn btn_contanctSeller productscreenshotBtn"
-                                                                href="#contanctSeller"><i
-                                                                    class="pct-btn-icon icon-picture"></i>
+                                                            <a class="sea-ui btn-xs btn btn_contanctSeller productscreenshotBtn" href="#contanctSeller"><i class="sea-btn-icon icon-picture"></i>
                                                                 <!--Screenshot-->商品頁截圖</a>
                                                         </div>
                                                     </div>
@@ -131,23 +138,17 @@
                                                     <div class="productInfoGroup">
                                                         <!-- 商品圖片 -->
                                                         <div class="productInfo-img">
-                                                            <img class="img-fluid"
-                                                                src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
-                                                                alt="Product-Picture">
+                                                            <img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture">
                                                         </div>
                                                         <!-- 商品資訊 -->
                                                         <div class="productInfo-info">
                                                             <!-- 商品名稱 -->
                                                             <div class="productInfo-info-title">
-                                                                <span class="productInfo-info-title-text">เปลัดขิก
-                                                                    หลวงพ่อกลั่น วัดอินทราวาส อ่างทอง ไม้ดำดง ยุคต้น
-                                                                    2.5นิ้ว รอยจาร เก่ามาก สวย สมบูรณ์ หายากมาก<span>
+                                                                <span class="productInfo-info-title-text">Winter short tube Chelsea boots Martin work boots<span>
                                                             </div>
                                                             <!-- 商品規格 -->
                                                             <div class="productInfo-info-subtitle">
-                                                                <span class="productInfo-info-subtitle-text">Size /
-                                                                    Color / Type / Size / Color / Type / Size / Color /
-                                                                    Type / Size / Color / Type<span>
+                                                                <span class="productInfo-info-subtitle-text">Size / Color / Type / Size / Color / Type / Size / Color / Type / Size / Color / Type<span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -178,7 +179,7 @@
                                                     <!-- 金額小計 -->
                                                     <div class="orderlist_titleBox">
                                                         <div class="orderlist_title orderlistDetail_price">
-                                                            <span class="eng-num ">฿ 124,200</span>
+                                                            <span class="eng-num ">$ 124,200</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -193,22 +194,17 @@
                                                     <div class="productInfoGroup">
                                                         <!-- 商品圖片 -->
                                                         <div class="productInfo-img">
-                                                            <img class="img-fluid"
-                                                                src="https://cimg.pchome.co.th/prods/052/047/3011905204743_b_0.jpg?uid=1a7c47e6cc2e4429ab18167d7a66ce02"
-                                                                alt="Product-Picture">
+                                                            <img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture">
                                                         </div>
                                                         <!-- 商品資訊 -->
                                                         <div class="productInfo-info">
                                                             <!-- 商品名稱 -->
                                                             <div class="productInfo-info-title">
-                                                                <span class="productInfo-info-title-text">เปลัดขิก
-                                                                    หลวงพ่อกลั่น วัดอินทราวาส อ่างทอง ไม้ดำดง ยุคต้น
-                                                                    2.5นิ้ว รอยจาร เก่ามาก สวย สมบูรณ์ หายากมาก<span>
+                                                                <span class="productInfo-info-title-text">Winter short tube Chelsea boots Martin work boots<span>
                                                             </div>
                                                             <!-- 商品規格 -->
                                                             <div class="productInfo-info-subtitle">
-                                                                <span class="productInfo-info-subtitle-text">Size /
-                                                                    Color / Type<span>
+                                                                <span class="productInfo-info-subtitle-text">Size / Color / Type<span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -239,7 +235,7 @@
                                                     <!-- 金額小計 -->
                                                     <div class="orderlist_titleBox">
                                                         <div class="orderlist_title orderlistDetail_price">
-                                                            <span class="eng-num ">฿ 200</span>
+                                                            <span class="eng-num ">$ 200</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -253,7 +249,7 @@
                                                 <div class="tableDeta-box">
                                                     <div class="orderlist_titleBox">
                                                         <div class="orderlist_title text__align--left">
-                                                            <span>運費 - 中華郵政 EMS國際快捷</span>
+                                                            <span>運費 - 中華郵政 EMS國際快捷（僅TH泰國訂單顯示）</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -262,7 +258,7 @@
                                                 <div class="tableDeta-box">
                                                     <div class="orderlist_titleBox">
                                                         <div class="orderlist_title orderlistDetail_price">
-                                                            <span class="eng-num">฿ 236</span>
+                                                            <span class="eng-num">$ 236</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -276,7 +272,7 @@
                                                 <div class="tableDeta-box">
                                                     <div class="orderlist_titleBox">
                                                         <div class="orderlist_title text__align--left">
-                                                            <span>運費補助</span>
+                                                            <span>運費補助（僅TH泰國訂單顯示）</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -284,9 +280,8 @@
                                             <td class="td-inline" data-title="運費">
                                                 <div class="tableDeta-box">
                                                     <div class="orderlist_titleBox">
-                                                        <div
-                                                            class="orderlist_title orderlistDetail_price orderlistDetail_discount">
-                                                            <span class="eng-num">- ฿ 236</span>
+                                                        <div class="orderlist_title orderlistDetail_price orderlistDetail_discount">
+                                                            <span class="eng-num">- $ 236</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -312,7 +307,7 @@
                                                     <!-- 運費 -->
                                                     <div class="orderlist_titleBox">
                                                         <div class="orderlist_title orderlistDetail_price">
-                                                            <span class="eng-num">฿ 236,480</span>
+                                                            <span class="eng-num">$ 236,480</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -335,7 +330,7 @@
                                                     <!-- 繳款金額 -->
                                                     <div class="orderlist_titleBox">
                                                         <div class="orderlist_title orderlistDetail_price">
-                                                            <span class="eng-num">฿ 244,000</span>
+                                                            <span class="eng-num">$ 244,000</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -350,7 +345,7 @@
                     </div>
                 </div>
                 <!-- 訂單訊息 （同燈箱內容樣式）-->
-                <div class="pct-ui modal ">
+                <div class="sea-ui modal ">
                     <div class="modal-content">
                         <div class="description">
                             <div class="title">訂單訊息</div>
@@ -370,8 +365,7 @@
                                             <div class="flexbox-item-flexbox">
                                                 <div class="flexbox-item">
                                                     <span>信用卡</span>
-                                                    <img src="img/icon_pchomepay.svg" alt="PChomePay"
-                                                        class="icon-pchomepay">
+                                                    <img src="img/icon_pchomepay.svg" alt="PChomePay" class="icon-pchomepay">
                                                 </div>
                                                 <div class="flexbox-item">
                                                     <span class="status">已付款</span>
@@ -379,7 +373,7 @@
                                             </div>
                                             <!-- 操作按鈕 -->
                                             <div class="flexbox-btnbox">
-                                                <a href="#" class="pct-ui btn-xs btn paymentdoneBtn">付款明細</a>
+                                                <a href="#" class="sea-ui btn-xs btn paymentdoneBtn">付款明細</a>
                                             </div>
                                         </div>
                                     </div>
@@ -394,24 +388,21 @@
                                             </div>
                                             <!-- 操作按鈕 -->
                                             <div class="flexbox-btnbox">
-                                                <a target="_blank"
-                                                    href="https://www.pchome.co.th//guide/guide/swpage/8-3-guide_qna2"
-                                                    class="pct-ui btn-xs btn">暸解更多</a>
+                                                <a target="_blank" href="https://www.pchome.co.th//guide/guide/swpage/8-3-guide_qna2" class="sea-ui btn-xs btn">暸解更多</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="description-list-box">
-                                        <div class="list-box-item">
-                                            <!-- วิธีการจัดส่งที่พีซีโฮมสนับสนุน -->PChome 支援物流</div>
+                                        <div class="list-box-item">PChomeSEA 支援物流</div>
                                         <div class="list-box-flexbox">
                                             <div class="flexbox-item-flexbox">
                                                 <div class="flexbox-item">
-                                                    <span>中華郵政 EMS國際快捷</span>
+                                                    <span>中華郵政 EMS 國際快捷</span>
                                                 </div>
                                             </div>
                                             <!-- 操作按鈕 -->
                                             <div class="flexbox-btnbox">
-                                                <a href="#" class="pct-ui btn-xs btn dispatchdetailBtn">出貨明細</a>
+                                                <a href="#" class="sea-ui btn-xs btn dispatchdetailBtn">出貨明細</a>
                                             </div>
                                         </div>
                                     </div>
@@ -423,6 +414,18 @@
                                         <!-- 操作按鈕 -->
                                         <div class="flexbox-btnbox"></div>
                                     </div>
+
+                                    <div class="description-list-box">
+                                        <div class="list-box-item">運單憑證</div>
+                                        <div class="list-box-flexbox">
+                                            <div class="flexbox-item-flexbox"></div>
+                                            <!-- 操作按鈕 -->
+                                            <div class="flexbox-btnbox">
+                                                <a href="#" class="sea-ui btn-xs btn certificateBtn">下載憑證</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="description-list-box">
                                         <div class="list-box-item">出貨時間</div>
                                         <div class="list-box-text"><span class="eng-num">MM / DD / YYYY</span></div>
@@ -461,7 +464,7 @@
                                             </div>
                                             <!-- 操作按鈕 -->
                                             <div class="flexbox-btnbox">
-                                                <a href="#" class="pct-ui btn-xs btn refunddetailBtn">退款明細</a>
+                                                <a href="#" class="sea-ui btn-xs btn refunddetailBtn">退款明細</a>
                                             </div>
                                         </div>
                                     </div>
@@ -495,14 +498,14 @@
         </div>
         <!-- 操作按鈕 － 最多會同時出現二顆按鈕)-->
 
-        <div class="pct-panel__content-actions">
-            <a href="#" class="pct-ui btn btn-primary informdispatchBtn">通知已出貨</a>
-            <a href="#" class="pct-ui btn btn-primary agreecancelBtn" style="display:none;">回覆取消申請</a>
-            <a href="#" class="pct-ui btn btn-primary refundBtn" style="display:none;">回覆退款申請</a>
-            <a href="#" class="pct-ui btn btn-primary confirmpaymentBtn" style="display:none;">確認收款</a>
-            <a href="#" class="pct-ui btn btn-primary cancelresonBtn">取消訂單</a>
+        <div class="sea-panel__content-actions">
+            <a href="#" class="sea-ui btn btn-primary informdispatchBtn">通知已出貨</a>
+            <a href="#" class="sea-ui btn btn-primary agreecancelBtn" style="display:none;">回覆取消申請</a>
+            <a href="#" class="sea-ui btn btn-primary refundBtn" style="display:none;">回覆退款申請</a>
+            <a href="#" class="sea-ui btn btn-primary confirmpaymentBtn" style="display:none;">確認收款</a>
+            <a href="#" class="sea-ui btn btn-primary cancelresonBtn">取消訂單</a>
             <!--說明FOR RD: “我要出貨”按鈕，判斷該商品選擇何種物流方式 並呼叫不同彈跳視窗 -->
-            <a href="#" class="pct-ui btn btn-primary dispatchListEmsBtn" style="display:none;">我要出貨</a>
+            <a href="#" class="sea-ui btn btn-primary dispatchListEmsBtn" style="display:none;">我要出貨</a>
         </div>
-    </div> <!-- pct-panel__container -->
-</div> <!-- pct-panel
+    </div> <!-- sea-panel__container -->
+</div> <!-- sea-panel

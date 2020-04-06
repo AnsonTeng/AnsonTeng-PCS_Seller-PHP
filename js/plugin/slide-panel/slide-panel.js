@@ -1,22 +1,22 @@
 (function () {
 	// Slide In Panel - by CodyHouse.co
-	var panelTriggers = document.getElementsByClassName('js-pct-panel-trigger');
+	var panelTriggers = document.getElementsByClassName('js-sea-panel-trigger');
 	if (panelTriggers.length > 0) {
 		for (var i = 0; i < panelTriggers.length; i++) {
 			(function (i) {
-				var panelClass = 'js-pct-panel-' + panelTriggers[i].getAttribute('data-panel'),
+				var panelClass = 'js-sea-panel-' + panelTriggers[i].getAttribute('data-panel'),
 					panel = document.getElementsByClassName(panelClass)[0];
 				// open panel when clicking on trigger btn
 				panelTriggers[i].addEventListener('click', function (event) {
 					event.preventDefault();
-					addClass(panel, 'pct-panel--is-visible');
+					addClass(panel, 'sea-panel--is-visible');
 				});
 				//close panel when clicking on 'x' or outside the panel
 				// panel.addEventListener('click', function (event) {
 				panel.addEventListener('mousedown', function (event) {
-					if (hasClass(event.target, 'js-pct-close') || hasClass(event.target, panelClass)) {
+					if (hasClass(event.target, 'js-sea-close') || hasClass(event.target, panelClass)) {
 						event.preventDefault();
-						removeClass(panel, 'pct-panel--is-visible');
+						removeClass(panel, 'sea-panel--is-visible');
 					}
 				});
 			})(i);

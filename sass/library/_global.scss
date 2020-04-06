@@ -10,8 +10,8 @@ html {
 body {
     width: 100%;
     -webkit-font-smoothing: auto;
-    font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "PingFang TC", "Microsoft JhengHei",
-        "Microsoft JhengHei UI", "LiHei Pro", "Heiti TC", "sans-serif";
+    // font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "PingFang TC", "Microsoft JhengHei", "Microsoft JhengHei UI", "LiHei Pro", "Heiti TC", "sans-serif";
+    font-family: 'Helvetica Neue', 'Tahoma', 'Helvetica', 'Arial', 'PingFang TC', 'Microsoft JhengHei', 'Microsoft JhengHei UI', 'LiHei Pro', 'Heiti TC', 'sans-serif';
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -75,6 +75,7 @@ img {
         display: none !important;
     }
 }
+
 .hidden-xs-down {
     @media (max-width: $break-xs) {
         display: none !important;
@@ -122,6 +123,7 @@ img {
         display: none !important;
     }
 }
+
 .hidden-xxs-up {
     @media (min-width: $break-xxs) {
         display: none !important;
@@ -137,9 +139,11 @@ img {
 .text__align--center {
     text-align: center;
 }
+
 .text__align--left {
     text-align: left;
 }
+
 .text__align--right {
     text-align: right;
 }
@@ -151,7 +155,7 @@ img {
     background-position: center center;
 }
 
-.pct-btn-loadcontent {
+.sea-btn-loadcontent {
     p {
         font-weight: 400;
         color: #c5c5c5;
@@ -161,12 +165,114 @@ img {
     }
 }
 
-//通知中心lightbox
-#pct-lightbox-notification {
+//燈箱-更換頭像
+#sea-lightbox-avataredit {
+    .scrolling.modal-content {
+        max-height: calc(90vh);
+        overflow: auto;
+    }
+}
+
+//燈箱-通知中心
+#sea-lightbox-notification {
     text-align: left;
     line-height: 24px;
 
     .description a {
         color: $primaryColor;
+    }
+}
+
+//燈箱-帳號設定
+#sea-lightbox-accountSettings {
+    .modal-content {
+        .block-aboutme {
+            padding: 15px 0 30px 0;
+
+            .account-header {
+                .account-wrap {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+
+                    .data-wrap {
+                        margin-top: 15px;
+
+                        .name {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                &.lightbox-accountheaderbg {
+                    background-color: $colorWhite;
+                }
+            }
+        }
+
+        .block-changepassword {
+            font-size: 0.9375rem;
+            word-break: break-all;
+
+            .sea-ui.form-label {
+                label {
+                    flex-basis: 100px;
+                    -ms-flex-negative: 0;
+                    flex-shrink: 0;
+                    text-align: right;
+                }
+
+                .sea-ui.form {
+                    flex: 1;
+                    padding-left: 20px;
+                    margin-bottom: 10px;
+                    text-align: left;
+
+                    .level-box {
+                        ul {
+                            margin: 0;
+                            padding: 0;
+                            list-style-type: none;
+                            display: flex;
+                            -webkit-box-pack: justify;
+                            justify-content: space-between;
+
+                            li {
+                                -webkit-box-flex: 1;
+                                flex: 1;
+                                height: 3px;
+                                background-color: #D8D8D8;
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+
+                    .level-text {
+                        font-size: 0.75rem;
+                        color: $colorDeepGray;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $break-sm) {
+    #sea-lightbox-accountSettings {
+        .modal-content {
+            .block-changepassword {
+                .sea-ui.form-label {
+                    label {
+                        flex-basis: 80px;
+                    }
+
+                    .sea-ui.form {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
     }
 }

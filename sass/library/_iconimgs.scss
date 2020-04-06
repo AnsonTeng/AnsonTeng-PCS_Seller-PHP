@@ -1,5 +1,5 @@
 //海外商品
-.pct-icon-overseas {
+.sea-seller-icon-overseas {
     width: 25px;
     height: 25px;
     background: url(../img/icon-badge-overseas.svg);
@@ -7,7 +7,7 @@
 }
 
 //海外代溝標
-.pct-icon-shopassist {
+.sea-seller-icon-shopassist {
     width: 130px;
     height: 26px;
     font-weight: 400;
@@ -24,32 +24,35 @@
 }
 
 //海外國旗
-.pct-icon-flag {
+.sea-seller-icon-flag {
     width: 20px;
     height: 14px;
     background-size: cover;
     display: inline-block;
     vertical-align: middle;
+
     &.th {
         background: url(../img/icon-flag-thailand.svg);
     }
+
     &.tw {
         background: url(../img/icon-flag-taiwan.svg);
     }
+
     &.jp {
         background: url(../img/icon-flag-japan.svg);
     }
 }
 
 //評價樣式
-.pct-ui.review-star {
+.sea-ui.review-star {
     display: flex;
     align-items: center;
 
-    > ul {
+    >ul {
         margin-right: 0.3125rem;
 
-        > li.pct-icon {
+        >li.sea-seller-icon {
             display: inline-block;
             font-size: 1rem;
             margin: 0 -0.125rem;
@@ -57,14 +60,17 @@
             &.icon-star-on {
                 color: $accentColor;
             }
+
             &.icon-star-off {
                 color: $colorGray;
             }
+
             &.icon-star-half {
                 color: $accentColor;
             }
         }
     }
+
     .review-text {
         font-size: 0.8125rem;
 
@@ -75,7 +81,7 @@
 }
 
 //特價標
-.pct-icon-salebadge {
+.sea-seller-icon-salebadge {
     width: 40px;
     height: 32px;
     background-color: rgba($accentColor, 0.9);
@@ -83,7 +89,8 @@
     z-index: 2;
     left: 8px;
 }
-.pct-icon-salebadge::after {
+
+.sea-seller-icon-salebadge::after {
     content: "";
     width: 0;
     height: 0;
@@ -94,7 +101,8 @@
     left: 0;
     bottom: -10px;
 }
-.pct-icon-salebadge {
+
+.sea-seller-icon-salebadge {
     text-align: center;
     line-height: 35px;
 
@@ -102,6 +110,7 @@
         font-size: 0.875rem;
         color: $colorPinkRed;
         font-weight: 600;
+
         span.percent-sign {
             display: inline-block;
             transform: scale(0.65);
@@ -148,7 +157,7 @@
 
 // 等待中 或是流程進行中（提領準備中 提領中 結算中 退款中）
 .icon-back-orange {
-    background-color: $accentColor;
+    background-color: $colorOrange;
 }
 
 // 已完成 所有流程（繳交成功 提領成功 完成退款）
@@ -158,5 +167,5 @@
 
 // 半完成 階段性完成 後續還有流程 （已轉可提領）
 .icon-back-blue {
-    background-color: $colorBlue;
+    background-color: $primaryDeepColor;
 }

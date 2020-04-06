@@ -1,5 +1,5 @@
 //MODALS  對話視窗
-.pct-ui.modal {
+.sea-ui.modal {
     position: relative;
     padding: 0.9375rem 0;
     width: 420px;
@@ -9,7 +9,7 @@
     background-color: $colorWhite;
     border-radius: 2px;
 
-    .pct-icon.icon-delete {
+    .sea-seller-icon.icon-delete {
         display: block;
         width: 40px;
         height: 40px;
@@ -49,6 +49,7 @@
                 }
             }
 
+
             p {
                 text-align: left;
                 font-weight: 300;
@@ -68,11 +69,11 @@
                 }
             }
 
-            p > a {
+            p>a {
                 color: $primaryDeepColor;
             }
 
-            .pct-ui.form.select {
+            .sea-ui.form.select {
                 margin-bottom: 0.9375rem;
             }
 
@@ -114,9 +115,11 @@
         &::-webkit-scrollbar-track {
             @extend %scrollbar-track;
         }
+
         &::-webkit-scrollbar {
             @extend %scrollbar;
         }
+
         &::-webkit-scrollbar-thumb {
             @extend %scrollbar-thumb;
         }
@@ -131,7 +134,8 @@
 @media (max-width: $break-xs) {
     //MODALS 後台使用的對話視窗樣式
 
-    .pct-ui.modal {
+    .sea-ui.modal {
+
         // 對話框內容
         .modal-content {
             padding: 1rem 1rem 0 1rem;
@@ -140,7 +144,7 @@
 }
 
 //LightBox 背景
-#pct-lightbox {
+#sea-lightbox {
     display: none;
     position: fixed;
     top: 0;
@@ -151,7 +155,7 @@
     text-align: center;
 }
 
-.pct-lightBox_backGround {
+.sea-lightBox_backGround {
     position: absolute;
     top: 0;
     left: 0;
@@ -160,7 +164,7 @@
     background-color: rgba(#000, 0.5);
 }
 
-.pct-lightBox_inner {
+.sea-lightBox_inner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,7 +174,7 @@
 }
 
 @media (max-width: $break-sm) {
-    .pct-lightBox_inner {
+    .sea-lightBox_inner {
         padding: 0 10px;
     }
 }
@@ -179,7 +183,7 @@
 
 // Medium 中型
 
-.pct-ui.modal.medium {
+.sea-ui.modal.medium {
     width: 600px;
 
     .scrolling.modal-content {
@@ -218,7 +222,7 @@
 }
 
 // Large 大型
-.pct-ui.modal.large {
+.sea-ui.modal.large {
     width: 990px;
 
     .scrolling.modal-content {
@@ -259,7 +263,7 @@
 // ********** RWD ************ //
 
 @media (max-width: $break-lg) {
-    .pct-ui.modal {
+    .sea-ui.modal {
         &.large {
             width: 680px;
         }
@@ -267,9 +271,10 @@
 }
 
 @media (max-width: $break-sm) {
-    .pct-ui.modal {
+    .sea-ui.modal {
         &.medium {
             width: 420px;
+
             .scrolling.modal-content {
                 max-height: calc(55vh);
                 overflow: auto;
@@ -280,6 +285,7 @@
                 overflow: auto;
             }
         }
+
         &.large {
             width: 420px;
 
@@ -307,7 +313,7 @@
 }
 
 @media (max-width: $break-xs) {
-    .pct-ui.modal {
+    .sea-ui.modal {
         width: 100%;
 
         &.medium {
@@ -332,7 +338,7 @@
     }
 }
 
-.pct-ui.modal {
+.sea-ui.modal {
     &.login {
         .login-divide-line {
             position: relative;
@@ -367,7 +373,8 @@
             align-items: center;
             justify-content: space-between;
             margin: 0.625rem 0;
-            .pct-ui.form.checkbox {
+
+            .sea-ui.form.checkbox {
                 margin: 0 0 0 0;
             }
 
@@ -397,24 +404,27 @@
             flex: 1;
             text-align: left;
         }
-        .pct-ui.form {
+
+        .sea-ui.form {
             flex: 7;
         }
-        .pct-ui.form.select {
+
+        .sea-ui.form.select {
             margin-right: 0;
         }
     }
 }
 
 @media (max-width: $break-sm) {
-    .pct-ui.modal {
+    .sea-ui.modal {
         &.contactus {
-            .pct-ui.form-label {
+            .sea-ui.form-label {
                 display: block;
                 text-align: left;
                 margin-bottom: 15px;
             }
-            .pct-ui.form-select-label {
+
+            .sea-ui.form-select-label {
                 display: block;
                 text-align: left;
                 margin-bottom: 15px;
@@ -423,10 +433,10 @@
     }
 }
 
-.pct-ui.modal-info {
+.sea-ui.modal-info {
     font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica",
         "Arial", "Noto Sans TC", "Hiragino Sans GB", "LiHei Pro", "Heiti TC",
-        "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif" !important ;
+        "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif" !important;
     display: none;
     // position: relative;
     padding: 0.9375rem 0;
@@ -446,7 +456,7 @@
     z-index: 1003;
 
     &:before {
-        font-family: "pct-icon";
+        font-family: "sea-seller-icon";
         font-size: 3rem;
         margin-bottom: 5px;
         display: block;

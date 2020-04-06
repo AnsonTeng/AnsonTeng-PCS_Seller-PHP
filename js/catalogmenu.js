@@ -78,7 +78,7 @@ $(function() {
             this.$el
                 .find("ul.catalog__submenu")
                 .prepend(
-                    '<li class="catalog__back"><a href="#"><i class="pct-icon icon-angle-left"> 返回</a></li>'
+                    '<li class="catalog__back"><a href="#"><i class="sea-seller-icon icon-angle-left"> 返回</a></li>'
                 );
             this.$back = this.$menu.find("li.catalog__back");
         },

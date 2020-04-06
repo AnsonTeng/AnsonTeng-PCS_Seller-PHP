@@ -34,7 +34,7 @@
     background-color: rgba(black, 0.8);
     transition: opacity 0.2s;
 
-    .pct-icon {
+    .sea-seller-icon {
         position: relative;
         top: 6px;
         left: calc(6px + #{$navWidth_mobile});
@@ -45,7 +45,7 @@
 
 @media (max-width: $break-sm) {
     .menuBackGround {
-        .pct-icon {
+        .sea-seller-icon {
             left: calc(6px + #{$navWidth_mobile});
             font-size: 36px;
         }
@@ -54,7 +54,7 @@
 
 @media (max-width: 320px) {
     .menuBackGround {
-        .pct-icon {
+        .sea-seller-icon {
             left: $navWidth_mobile;
             font-size: 30px;
         }

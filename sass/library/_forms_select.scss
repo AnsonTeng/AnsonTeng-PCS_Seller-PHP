@@ -1,5 +1,5 @@
 //表單--Input Select 下拉選單
-.pct-ui.form select {
+.sea-ui.form select {
     font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica",
         "Arial", "WenQuanYi Zen Hei", "Hiragino Sans GB", "LiHei Pro",
         "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
@@ -17,13 +17,13 @@
     font-weight: 300;
 }
 
-.pct-ui.form select:focus {
+.sea-ui.form select:focus {
     outline: none;
     border-color: $primaryColor;
     box-shadow: 0 0 5px rgba($primaryDeepColor, 0.5);
 }
 
-.pct-ui.form {
+.sea-ui.form {
     select {
         // min-width: 200px;
         position: relative;
@@ -39,13 +39,13 @@
     }
 }
 
-.pct-ui.form.select {
+.sea-ui.form.select {
     position: relative;
     align-self: flex-start;
 }
 
-.pct-ui.form.select:after {
-    font-family: "pct-icon";
+.sea-ui.form.select:after {
+    font-family: "sea-seller-icon";
     content: $icon-angle-down;
     font-size: 0.75rem;
     color: $primaryColor;
@@ -58,13 +58,13 @@
     pointer-events: none;
 }
 
-.pct-ui.form-select-label {
-    .pct-ui.form.select {
+.sea-ui.form-select-label {
+    .sea-ui.form.select {
         margin-right: 12px;
     }
 }
 
-.pct-ui.form.select.error {
+.sea-ui.form.select.error {
     &:after {
         top: 32%;
     }
@@ -77,7 +77,7 @@
     margin-right: auto;
 }
 
-.pct-ui.form.error select {
+.sea-ui.form.error select {
     border-color: $colorPinkRed;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -87,7 +87,7 @@
 // .error-notification-tooltip-inline {
 //     display: none;
 // }
-// .pct-ui.form.error {
+// .sea-ui.form.error {
 //     .error-notification-tooltip-inline {
 //         display: block !important;
 //     }

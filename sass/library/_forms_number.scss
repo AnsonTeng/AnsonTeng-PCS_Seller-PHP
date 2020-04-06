@@ -18,7 +18,7 @@
     line-height: 40px;
 }
 
-.pct-ui.form.number {
+.sea-ui.form.number {
     display: flex;
     align-items: center;
 
@@ -47,11 +47,19 @@
             .number__decrement {
                 border-right: none;
                 margin-left: -2px;
-            }
-            .number__decrement {
                 border-left: none;
                 margin-right: -2px;
             }
+        }
+
+        .number-btn:first-child {
+            position: relative;
+            left: 1px;
+        }
+
+        .number-btn:last-child {
+            position: relative;
+            right: 1px;
         }
     }
 }
@@ -62,7 +70,7 @@ input[type="number"]::-webkit-outer-spin-button {
     appearance: none;
 }
 
-.pct-ui.form-disabled.number {
+.sea-ui.form-disabled.number {
     display: flex;
     align-items: center;
 
@@ -93,11 +101,15 @@ input[type="number"]::-webkit-outer-spin-button {
             .number__decrement {
                 border-right: none;
                 margin-left: -2px;
-            }
-            .number__decrement {
                 border-left: none;
                 margin-right: -2px;
             }
+        }
+
+        .number-btn:first-child {
+
+            background-color: red;
+            color: red;
         }
     }
 }
@@ -124,7 +136,7 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-top: 2px;
 }
 
-.pct-ui.form.number-responsive {
+.sea-ui.form.number-responsive {
     label {
         font-size: 0.875rem;
         padding: 0rem 0.5rem 0 0rem;
@@ -152,11 +164,14 @@ input[type="number"]::-webkit-outer-spin-button {
             .number__decrement {
                 border-right: none;
                 margin-left: -2px;
-            }
-            .number__decrement {
                 border-left: none;
                 margin-right: -2px;
             }
+        }
+
+        .number-btn:first-child {
+            background-color: red;
+            color: red;
         }
     }
 }
@@ -168,13 +183,14 @@ input[type="number"]::-webkit-outer-spin-button {
         max-width: 72px;
         height: 30px;
     }
+
     %number-btn-responsive-md {
         width: 30px;
         height: 30px;
         line-height: 30px;
     }
 
-    .pct-ui.form.number-responsive {
+    .sea-ui.form.number-responsive {
         .number-controller {
             input[type="number"] {
                 @extend %input-number-responsive-md;
@@ -195,13 +211,14 @@ input[type="number"]::-webkit-outer-spin-button {
         height: 26px;
         font-size: 0.8125rem;
     }
+
     %number-btn-responsive-xxs {
         width: 26px;
         height: 26px;
         line-height: 26px;
     }
 
-    .pct-ui.form.number-responsive {
+    .sea-ui.form.number-responsive {
         .number-controller {
             input[type="number"] {
                 @extend %input-number-responsive-xxs;

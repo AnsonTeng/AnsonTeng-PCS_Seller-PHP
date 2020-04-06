@@ -1,9 +1,11 @@
 //MODALS  後台使用的對話視窗樣式
 
-.pct-ui.modal {
+.sea-ui.modal {
+
     // 對話框內容
     .modal-content {
         .description {
+
             //條列內容樣式-1
             .description-list {
                 margin-top: 10px;
@@ -42,6 +44,7 @@
                         a {
                             color: $primaryDeepColor;
                             text-decoration: underline;
+
                             &:hover {
                                 text-decoration: none;
                             }
@@ -63,6 +66,7 @@
                             background-color: $colorLightGreen;
                             justify-content: center;
                         }
+
                         .list-box-text {
                             text-align: center;
                             font-weight: 400;
@@ -103,7 +107,7 @@
                                 }
                             }
 
-                            > div {
+                            >div {
                                 flex: 1;
 
                                 .flexbox-item-icon {
@@ -120,6 +124,7 @@
                                 justify-content: flex-end;
                                 height: auto;
                                 background-color: #fcfcfc;
+
                                 a {
                                     padding: 0.25rem 0.9375rem 0.25rem 0.9375rem;
                                     margin: 0;
@@ -144,6 +149,7 @@
                     display: flex;
                     flex-direction: column;
                     flex: 1;
+                    border-right: 2px solid $colorWhite;
 
                     .list-box-item {
                         display: flex;
@@ -184,8 +190,8 @@
                     }
                 }
 
-                .description-list-box:first-child {
-                    border-right: 2px solid $colorWhite;
+                .description-list-box:last-child {
+                    border-right: 0px solid $colorWhite;
                 }
             }
 
@@ -237,7 +243,8 @@
 // ********** RWD ************ //
 
 @media (max-width: $break-sm) {
-    .pct-ui.modal {
+    .sea-ui.modal {
+
         // 對話框內容
         .modal-content {
             .description {
@@ -275,11 +282,13 @@
                             margin-bottom: 2px;
                             margin-right: 1px;
                         }
+
                         // 作為標頭
                         &.description-list-box-title {
                             .list-box-item {
                                 display: none;
                             }
+
                             .list-box-text {
                                 display: none;
                             }
@@ -323,12 +332,15 @@
 }
 
 @media (max-width: $break-sm) {
-    .pct-ui.modal {
+    .sea-ui.modal {
+
         // 對話框內容
         .modal-content {
             .description {
+
                 //條列內容樣式-1
                 .description-list {
+
                     //條列內容樣式-shrink (寬度壓縮後不折行)
                     &.description-list-shrink {
                         .description-list-box {
@@ -337,6 +349,7 @@
                             &.box-displayflex {
                                 display: flex;
                             }
+
                             .list-box-item {
                                 //  Title 齊右
                                 justify-content: flex-start;
@@ -361,7 +374,8 @@
 
 .lightbox-setbank,
 .lightbox-telverify {
-    &.pct-ui.modal {
+    &.sea-ui.modal {
+
         // 對話框內容
         .modal-content {
             &::-webkit-scrollbar-track {
@@ -383,6 +397,7 @@
                     margin-bottom: 0px;
                     line-height: 1.6;
                 }
+
                 .remark {
                     font-size: 0.75rem;
                     margin-top: -7px;
@@ -430,7 +445,7 @@
                     justify-content: center;
 
                     li {
-                        a.pct-ui.btn-sm {
+                        a.sea-ui.btn-sm {
                             padding: 0.75rem 0.5rem 0.625rem 0.5rem !important;
                         }
                     }
@@ -441,14 +456,14 @@
                     display: flex;
                     align-items: center;
 
-                    .pct-icon {
+                    .sea-seller-icon {
                         text-align: center;
                         font-size: 1.2rem;
                         color: $colorGray;
                         flex-basis: 30px;
                     }
 
-                    .pct-ui.form {
+                    .sea-ui.form {
                         &.national-code {
                             flex-basis: 80px;
                             margin-right: 10px;
@@ -468,7 +483,7 @@
                 .verify-box {
                     display: flex;
 
-                    .pct-ui.form {
+                    .sea-ui.form {
                         padding-left: 10px;
 
                         input[type="text"] {
@@ -481,11 +496,11 @@
                     }
                 }
 
-                .pct-ui.form.text-without-input {
+                .sea-ui.form.text-without-input {
                     display: flex;
                     align-items: center;
 
-                    .pct-ui.btn {
+                    .sea-ui.btn {
                         margin-left: 10px;
                     }
 
@@ -495,7 +510,7 @@
                     }
                 }
 
-                .pct-item-link {
+                .sea-item-link {
                     margin: 15px 0 10px 0;
                     text-align: center;
                     font-weight: 400;
@@ -509,6 +524,7 @@
                         display: none;
                         font-size: 0.8125rem;
                     }
+
                     p {
                         display: none;
                         font-weight: 400;
@@ -550,7 +566,7 @@
 
 @media (max-width: $break-sm) {
     .lightbox-telverify {
-        &.pct-ui.modal {
+        &.sea-ui.modal {
             .modal-content {
                 // max-height: calc(60vh);
                 // overflow: auto;
@@ -560,6 +576,7 @@
                         font-size: 1rem;
                         padding-bottom: 5px;
                     }
+
                     .modal-icon-img {
                         width: 70px;
                         height: 70px;
@@ -571,8 +588,9 @@
                     //選擇驗證方式
                     ul.choose_verify {
                         justify-content: center;
+
                         li {
-                            a.pct-ui.btn-sm {
+                            a.sea-ui.btn-sm {
                                 text-align: center;
                                 padding: 0.75rem 0.5rem 0.625rem 0.5rem !important;
                             }
@@ -586,10 +604,11 @@
 
 // 特殊規格
 /*======= 準備出貨 popup =========*/
-.pct-ui.modal .modal-content .description {
+.sea-ui.modal .modal-content .description {
     .dispatch_prepare_text {
         text-align: left;
         padding: 10px 20px;
+
         .dispatch_prepare_block p {
             font-size: 0.8125rem;
             line-height: 1.5rem;
@@ -598,6 +617,7 @@
 
     .dispatch_prepare_block {
         margin-bottom: 48px;
+
         .step__number {
             margin-right: 6px;
             color: $primaryColor;
@@ -614,6 +634,7 @@
 
     .logistics_com {
         margin: 30px 0 18px 0;
+
         p.logistics_com-title {
             font-size: 1rem;
             font-weight: 600;
@@ -641,6 +662,10 @@
         flex-basis: 280px;
         padding: 20px 15px;
         position: relative;
+    }
+
+    .dispatch_prepare_block .dispatch_prepare_parcel .line_box.line_box-wide {
+        flex-basis: 100%;
     }
 
     .dispatch_prepare_block .dispatch_prepare_parcel .line_box:before {
@@ -780,27 +805,33 @@
                     text-align: left;
                     line-height: 1rem;
                 }
+
                 //
                 &:first-child {
                     font-size: 0.9375rem;
+
                     @media (max-width: $break-xxs) {
                         font-size: 0.875rem;
                     }
                 }
+
                 &:last-child {
                     font-size: 0.8125rem;
                     color: $colorDeepGray;
+
                     @media (max-width: $break-xxs) {
                         font-size: 0.75rem;
                     }
                 }
             }
         }
+
         .parcel_status_icon {
             margin-left: 10px;
             margin-right: 20px;
             // flex: 0.5;
             z-index: 3;
+
             @media (max-width: $break-xxs) {
                 margin-left: 0px;
                 margin-right: 10px;
@@ -818,10 +849,11 @@
                     height: 20px;
                 }
 
-                span.pct-icon {
+                span.sea-seller-icon {
                     position: relative;
                     top: 3px;
                     font-size: 1.125rem;
+
                     @media (max-width: $break-xxs) {
                         top: 2px;
                         font-size: 1rem;
@@ -833,6 +865,7 @@
                 }
             }
         }
+
         .parcel_status_text {
             padding: 0 10px;
             flex: 1;

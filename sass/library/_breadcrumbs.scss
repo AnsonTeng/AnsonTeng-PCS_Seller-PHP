@@ -1,14 +1,14 @@
 //麵包屑
-.pct-ui.breadcrumb {
+.sea-ui.breadcrumb {
     font-size: 0.8125rem;
     font-weight: 300;
     margin-bottom: 20px;
 
-    > ul {
+    >ul {
         overflow: hidden;
         height: 25px;
 
-        > li {
+        >li {
             display: inline;
             line-height: 22px;
 
@@ -28,14 +28,14 @@
                 }
             }
 
-            &:nth-last-child() {
+            &:last-child() {
                 -webkit-line-clamp: 1;
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
             }
 
-            &.pct-icon {
+            &.sea-seller-icon {
                 font-size: 0.75rem;
                 color: $colorGray;
                 margin: 0 10px;
@@ -43,13 +43,14 @@
         }
     }
 }
+
 @media (max-width: $break-sm) {
-    .pct-ui.breadcrumb {
+    .sea-ui.breadcrumb {
         margin-top: 20px;
     }
 }
 
-.pct-ui.breadcrumb-back {
+.sea-ui.breadcrumb-back {
     font-size: 0.875rem;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -57,48 +58,47 @@
 
     span {
         display: inline-block;
-        // vertical-align: -33%;
-        width: 25px;
-        height: 25px;
+        width: 26px;
+        height: 26px;
         border-radius: 50%;
         margin-right: 10px;
-        background: $primaryColor; /* Old browsers */
-        background: -moz-linear-gradient(
-            left,
-            $primaryColor 50%,
-            $secondaryColor 100%
-        ); /* FF3.6-15 */
-        background: -webkit-linear-gradient(
-            left,
-            $primaryColor 50%,
-            $secondaryColor 100%
-        ); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(
-            to right,
-            $primaryColor 50%,
-            $secondaryColor 100%
-        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afeb', endColorstr='#14b9d5',GradientType=1 ); /* IE6-9 */
+        background: $primaryColor;
+        /* Old browsers */
+        background: -moz-linear-gradient(left,
+                primaryColor 0%,
+                primaryDeepColor 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,
+                primaryColor 0%,
+                primaryDeepColor 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,
+                primaryColor 0%,
+                primaryDeepColor 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00AFEB', endColorstr='#009CD2', GradientType=1);
+        /* IE6-9 */
 
-        &.pct-icon {
+        &.sea-seller-icon {
             color: $colorWhite;
             text-align: center;
-            font-size: 1.125rem;
-            line-height: 24px;
+            font-size: 1rem;
+            line-height: 26px;
         }
     }
 
-    > ul {
+    >ul {
         overflow: hidden;
         height: 24px;
 
-        > li {
+        >li {
             display: inline;
             line-height: 24px;
 
             & a {
                 font-weight: 400;
                 text-decoration: underline;
+
                 h3 {
                     display: inline;
                     font-size: 0.8125rem;
@@ -112,7 +112,7 @@
                 }
             }
 
-            &.pct-icon {
+            &.sea-seller-icon {
                 font-size: 0.75rem;
                 color: $colorGray;
                 margin: 0 3px;

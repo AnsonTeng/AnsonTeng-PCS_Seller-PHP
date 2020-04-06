@@ -14,11 +14,12 @@ $searchBarHeight: 45px;
 // 將欄距改成 左右各10px 共20px
 $custom-gutter-width: 20px;
 
-.pct-gutters {
+.sea-gutters {
     &.container {
         padding-left: $custom-gutter-width / 2;
         padding-right: $custom-gutter-width / 2;
     }
+
     .row {
         margin-left: -$custom-gutter-width / 4;
         margin-right: -$custom-gutter-width / 4;
@@ -36,8 +37,8 @@ $custom-gutter-width: 20px;
     margin-right: 0;
     margin-left: 0;
 
-    > .col,
-    > [class*="col-"] {
+    >.col,
+    >[class*="col-"] {
         padding-right: 0;
         padding-left: 0;
     }
@@ -53,24 +54,36 @@ $break-xl: 1920px;
 
 //Colours
 // 主要色
-$brandColor: #0073c3; // PChome Blue 深藍
-$primaryColor: #00afeb; // PChome Blue 藍
-$primaryDeepColor: #0091d7;
+// $brandColor: #0073C3; // PChome Blue 深藍
+$brandColor: #00AFEB; // PChome Blue 藍
+$primaryColor: #00AFEB; // PChome Blue 藍
+// $primaryDeepColor: #0091d7;
+$primaryDeepColor: #009CD2;
 
 // 次要色
-$secondaryColor: #14b9d5;
+// $secondaryColor: #14b9d5;
+$secondaryColor: #0073C3; // PChome Blue 深藍
+$secondaryDeepColor: #004575;
 
 // 亮點色
 $accentLightColor: #fdf7ec;
-$accentColor: #ff9800;
-$accentDeepColor: #ffb71a;
+// $accentColor: #ff9800;
+// $accentDeepColor: #ffb71a;
+$accentColor: #F55E3F;
+$accentDeepColor: #F0432A;
+
+// 漸層色
+$gradientColorBlue: linear-gradient(to right, #0077CA 0%, #00AFEB 100%);
+$gradientColorOrange: linear-gradient(to right, #EF3C25 0%, #F86F4C 100%);
+$gradientColorGreen: linear-gradient(to right, #14a9ba 0%, #21c8d9 100%);
 
 // 文字色
 $neutralColor: #333333;
 
 // 黑白灰階
 $colorWhite: #ffffff;
-$colorGreyishWhite: #f6f6f6;
+// $colorGreyishWhite: #f6f6f6;
+$colorGreyishWhite: #FBFBFB;
 $colorLightGray: #ececec;
 $colorGray: #cccccc;
 $colorWhiteGray: #a9a9a9; //新增
@@ -84,90 +97,118 @@ $colorYellow: #fdd641;
 // $colorLightOrange: #ff9430;
 $colorOrange: #f88a51;
 // $colorDeepOrange: #ff7500;
-$colorPink: #eab2ba;
-$colorLightBlue: #f3f9fc;
-$colorRed: #ba0019; //PChome Thai Red
+$colorPink: #EAB2BA;
+// $colorLightBlue: #f3f9fc;
+$colorLightBlue: #F8FDFF;
+// $colorRed: #ba0019; //PChomeSEA Red
+$colorRed: #DC3545;
 
 // 輔助色（新增）
 $colorPinkRed: #e96886;
 // $colorWhiteBlue: #f3fcff;
-$colorBlue: $primaryColor;
+// $colorBlue: $primaryColor;
+$colorBlue: #116ECF;
 $colorLightGreen: #d2d9dd;
 $colorWhiteGreen: #eff3f6;
 $colorDeepLightGreen: #bbccd4;
 $colorGrayGreen: #7c97a2;
 $colorGreen: #3ec968;
 
+
+
 //表格預設寬度
 .table--w8 {
     width: 8%;
 }
+
 .table--w9 {
     width: 9%;
 }
+
 .table--w10 {
     width: 10%;
 }
+
 .table--w11 {
     width: 11%;
 }
+
 .table--w12 {
     width: 12%;
 }
+
 .table--w15 {
     width: 15%;
 }
+
 .table--w17 {
     width: 17%;
 }
+
 .table--w18 {
     width: 18%;
 }
+
 .table--w19 {
     width: 19%;
 }
+
 .table--w20 {
     width: 20%;
 }
+
 .table--w22 {
     width: 22%;
 }
+
 .table--w23 {
     width: 23%;
 }
+
 .table--w24 {
     width: 24%;
 }
+
 .table--w25 {
     width: 25%;
 }
+
 .table--w30 {
     width: 30%;
 }
+
 .table--w35 {
     width: 35%;
 }
+
 .table--w40 {
     width: 40%;
 }
+
 .table--w45 {
     width: 45%;
 }
+
 .table--w50 {
     width: 50%;
 }
+
 .table--w55 {
     width: 55%;
 }
+
 .table--w60 {
     width: 60%;
 }
+
 .table--w70 {
     width: 70%;
 }
+
 .table--w75 {
     width: 75%;
 }
+
 //寫成content的icon-font
 $icon-checked: "\e902";
 $icon-angle-down: "\e936";

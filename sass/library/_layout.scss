@@ -1,10 +1,10 @@
 //首頁內容區
-#pct-main {
+#sea-main {
     padding-top: calc(#{$headerHeight_table} - #{2px});
 }
 
 //內頁內容區
-#pct-main-page {
+#sea-main-page {
     padding-top: calc(#{$headerHeight_table} + #{20px});
 }
 
@@ -14,7 +14,7 @@
 }
 
 //內頁內容區
-#pct-section-content {
+#sea-section-content {
     padding: 20px 0;
 
     .col-1,
@@ -92,19 +92,20 @@
 }
 
 @media (max-width: $break-md) {
+
     //內頁內容區
-    #pct-main-page {
+    #sea-main-page {
         padding-top: calc(#{$headerHeight_table} + #{$navHeight_table} + #{15px});
     }
 }
 
 @media (max-width: $break-sm) {
-    #pct-main {
+    #sea-main {
         padding-top: calc(#{$headerHeight_mobile} - #{2px});
     }
 
     //內頁內容區
-    #pct-main-page {
+    #sea-main-page {
         padding-top: calc(#{$headerHeight_mobile});
     }
 }
@@ -113,7 +114,7 @@
 .section-outer {
     margin-bottom: 40px;
 
-    .pct-seller-header {
+    .sea-seller-header {
         padding: 8px 0;
         padding-left: 0.3rem;
 
@@ -122,7 +123,7 @@
         }
     }
 
-    .pct-section-header {
+    .sea-section-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -138,14 +139,14 @@
             margin-bottom: -2px;
         }
 
-        a.pct-section-header-link {
+        a.sea-section-header-link {
             font-size: 0.8125rem;
             color: $primaryDeepColor;
             font-weight: 400;
         }
     }
 
-    .pct-section-header {
+    .sea-section-header {
         &.sub-header {
             border-bottom: none;
 
@@ -158,7 +159,8 @@
             }
         }
     }
-    .pct-section-content {
+
+    .sea-section-content {
         &.no-margin {
             margin-bottom: 0;
         }
@@ -166,13 +168,13 @@
 }
 
 //區塊排序
-.pct-reverse {
+.sea-reverse {
     display: flex;
     flex-direction: column;
 }
 
 @media (max-width: $break-sm) {
-    .pct-reverse {
+    .sea-reverse {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -202,7 +204,7 @@
     padding: 15px 0;
 
     // (輸入框＋按鈕) 群組
-    .pct-ui.form.inputGroup {
+    .sea-ui.form.inputGroup {
         flex-basis: 400px;
 
         .inputGroup-inputBox {
@@ -223,13 +225,15 @@
             margin: 0 0 0 4px;
 
             // 下拉選單
-            .pct-ui.form select {
+            .sea-ui.form select {
                 min-width: 120px;
             }
         }
+
         .selectBox.select-arrayOption {
+
             // 下拉選單-篩選
-            .pct-ui.form select {
+            .sea-ui.form select {
                 min-width: 160px;
             }
         }
@@ -246,7 +250,7 @@
         display: block;
 
         // (輸入框＋按鈕) 群組
-        .pct-ui.form.inputGroup {
+        .sea-ui.form.inputGroup {
             margin: 0 0 15px 0;
         }
 

@@ -14,7 +14,7 @@
 //頁碼
 @import "library/_pagination";
 
-.pct-ui.tab-nav-bar {
+.sea-ui.tab-nav-bar {
     position: -webkit-sticky;
     /* for safari */
     position: sticky;
@@ -36,17 +36,18 @@
     padding: 3px 10px;
     border-bottom: 1px solid $colorLightGray;
 
-    a.pct-ui.btn-sm {
-        .pct-btn-icon {
+    a.sea-ui.btn-sm {
+        .sea-btn-icon {
             font-size: 1.2rem;
         }
     }
 }
 
 .section-notification-list {
+
     //通知列表
     .notification-list-wrap {
-        background-color: $colorWhite;
+        // background-color: $colorWhite;
         // @extend %shadow-style-block-2;
         padding-bottom: 50px;
 
@@ -56,35 +57,33 @@
             margin-bottom: 1px;
             // border-bottom: 2px solid #FBFBFB;
             text-align: left;
+
             .list-figure {
                 width: 75px;
                 height: 75px;
                 flex-shrink: 0;
                 border: 1px solid $colorLightGray;
+
                 .list-figure-inner {
                     @extend %figure-inner;
                     background: $primaryColor !important;
-                    background: -webkit-linear-gradient(
-                        left,
-                        $primaryColor 0%,
-                        $primaryColor 100%
-                    );
-                    background: linear-gradient(
-                        to right,
-                        $primaryColor 0%,
-                        $primaryColor 100%
-                    );
+                    background: -webkit-linear-gradient(left, $primaryColor 0%, $primaryColor 100%);
+                    background: linear-gradient(to right, $primaryColor 0%, $primaryColor 100%);
                 }
+
                 .list-figure-img {
                     @extend %figure-img;
                 }
             }
+
             .notification-list-content {
                 width: 100%;
                 padding-left: 0.625rem;
+
                 .notification-list-title {
                     display: flex;
                     justify-content: space-between;
+
                     p {
                         @include text-overflow($line: 1);
                         font-size: 0.9375rem;
@@ -95,11 +94,13 @@
                         margin-bottom: 0.3125rem;
                         text-align: left;
                     }
-                    .pct-icon {
+
+                    .sea-seller-icon {
                         cursor: pointer;
                         color: $colorGray;
                     }
                 }
+
                 .notification-content {
                     display: flex;
                     align-items: flex-end;
@@ -115,26 +116,29 @@
                     }
                 }
             }
+
             &.unread {
                 background-color: $accentLightColor;
             }
+
             &.read {
-                background-color: #ffffff;
+                background-color: $colorWhite;
             }
+
             &.read:hover {
-                background-color: #fcfcfc;
+                background-color: $colorGreyishWhite;
             }
         }
     }
 
-    .pct-btn-loadcontent {
+    .sea-btn-loadcontent {
         margin-top: 30px;
     }
 }
 
 @media (max-width: $break-lg) {
-    .pct-ui.tab-nav-bar {
-        .pct-ui.tab-pointing {
+    .sea-ui.tab-nav-bar {
+        .sea-ui.tab-pointing {
             -webkit-overflow-scrolling: touch;
             overflow-x: scroll;
             overflow-y: hidden;
@@ -151,15 +155,16 @@
         }
     }
 }
+
 @media (max-width: $break-md) {
-    .pct-ui.tab-nav-bar {
+    .sea-ui.tab-nav-bar {
         position: -webkit-sticky;
         /* for safari */
         position: sticky;
         top: calc(#{$headerHeight_table} + #{$navHeight_table});
         z-index: 100;
 
-        .pct-ui.tab-pointing {
+        .sea-ui.tab-pointing {
             -webkit-overflow-scrolling: touch;
             overflow-x: scroll;
             overflow-y: hidden;
@@ -176,8 +181,9 @@
         }
     }
 }
+
 @media (max-width: $break-sm) {
-    .pct-ui.tab-nav-bar {
+    .sea-ui.tab-nav-bar {
         top: $headerHeight_mobile;
     }
 
@@ -185,7 +191,9 @@
     .notification-read-all {
         top: 114px;
     }
+
     .section-notification-list {
+
         //通知列表
         .notification-list-wrap {
             .notification-list-item {

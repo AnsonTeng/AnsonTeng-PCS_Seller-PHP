@@ -2,7 +2,7 @@
 .upload-img-wrap {
     padding: 20px;
 
-    .pct-icon {
+    .sea-seller-icon {
         text-align: center;
         position: relative;
         top: 50%;
@@ -72,7 +72,7 @@
         background-color: $colorWhite;
         box-shadow: 0 1px 1px 0 rgba($colorBlack, 0.15);
 
-        lipct-icon {
+        lisea-seller-icon {
             font-size: 1.7rem;
             position: static;
             width: auto;
@@ -89,7 +89,7 @@
             top: -15px !important;
             right: -10px !important;
 
-            .pct-icon {
+            .sea-seller-icon {
                 line-height: 40px;
             }
         }
@@ -110,7 +110,7 @@
     .upload-img-wrap {
         padding: 0px;
 
-        .pct-icon {
+        .sea-seller-icon {
             transform: translateY(-65%);
         }
 
@@ -173,11 +173,13 @@
             text-align: center;
             margin-left: 10px;
         }
+
         .file-select-name {
             line-height: 44px;
             display: inline-block;
             padding: 0 10px;
         }
+
         input[type="file"] {
             z-index: 100;
             cursor: pointer;
@@ -229,7 +231,7 @@
 }
 
 @media (max-width: $break-xs) {
-    .pct-icon.icon-cloud-uploading {
+    .sea-seller-icon.icon-cloud-uploading {
         position: absolute;
         top: 30px;
         left: 50%;

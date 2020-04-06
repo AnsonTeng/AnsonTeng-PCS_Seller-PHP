@@ -11,22 +11,27 @@
     background-color: #fcfcfc;
     height: 48px;
 }
+
 // 訂單明細總計欄位
 .orderlistDetail_total {
     background-color: $colorWhiteGreen;
     height: 48px;
     padding: 0 8px;
+
     .orderlist_titleBox {
         position: relative;
+
         .orderlist_title {
             font-weight: 700;
             font-size: 1rem;
+
             &.orderlistDetail_price {
                 color: $primaryColor;
             }
         }
     }
 }
+
 .orderlistDetail_subtotal,
 .orderlistDetail_total {
     td:first-child {
@@ -40,21 +45,25 @@
     right: -90px;
     display: inline-block;
     text-align: right;
+
     span {
         text-align: left;
         max-width: 72px;
     }
 }
+
 @media (max-width: $break-sm) {
     .orderlistDetail_amount {
         right: -60px;
     }
 }
+
 @media (max-width: $break-xs) {
     .orderlistDetail_amount {
         right: -30px;
     }
 }
+
 @media (max-width: $break-xxs) {
     .orderlistDetail_amount {
         right: 0px;
@@ -65,11 +74,13 @@
 .orderlistDetail_price {
     position: relative;
     text-align: right;
+
     span {
         display: inline-block;
         text-align: left;
         width: 80px;
     }
+
     // 折扣金額負號
     &.orderlistDetail_discount {
         color: $colorPinkRed;
@@ -97,16 +108,19 @@
         margin: 0 3px;
     }
 }
+
 @media (max-width: $break-sm) {
     .orderlistDetail_totalamount {
         right: -60px;
     }
 }
+
 @media (max-width: $break-xs) {
     .orderlistDetail_totalamount {
         right: -30px;
     }
 }
+
 @media (max-width: $break-xxs) {
     .orderlistDetail_totalamount {
         right: 0px;
@@ -122,10 +136,11 @@
 }
 
 // screenshot 按鈕
-a.pct-ui.btn-xs.productscreenshotBtn {
+a.sea-ui.btn-xs.productscreenshotBtn {
+
     // border: 0px;
     // 按鈕icon
-    .pct-icon {
+    .sea-seller-icon {
         color: $accentColor;
         font-size: 0.875rem;
     }
@@ -135,7 +150,7 @@ a.pct-ui.btn-xs.productscreenshotBtn {
 .toggleBar {
     position: relative;
 
-    .toggleBar_arrow.pct-icon {
+    .toggleBar_arrow.sea-seller-icon {
         font-size: 1rem;
         color: $primaryColor;
         position: absolute;
@@ -151,17 +166,19 @@ a.pct-ui.btn-xs.productscreenshotBtn {
 }
 
 .toggleBar.addBox {
-    .toggleBar_arrow.pct-icon {
+    .toggleBar_arrow.sea-seller-icon {
         transform: rotate(180deg);
     }
 }
 
 //訂單明細（共用部分）
 .tableBox.tableBox-orderlistDetail {
+
     // 表格斷點
     colgroup {
         display: table-column-group;
     }
+
     td {
         display: table-cell;
     }
@@ -170,6 +187,7 @@ a.pct-ui.btn-xs.productscreenshotBtn {
     .table__tbody {
         tbody {
             border-bottom: 0px !important;
+
             .buyer-infoGroup {
                 flex-direction: row;
             }
@@ -251,6 +269,7 @@ a.pct-ui.btn-xs.productscreenshotBtn {
             max-width: 110px;
         }
     }
+
     @media (max-width: 359px) {
         .list__itemInfo-userName {
             max-width: 80px;
@@ -258,13 +277,13 @@ a.pct-ui.btn-xs.productscreenshotBtn {
     }
 }
 
-.pct-panel__content {
-    .pct-ui.modal .modal-content {
+.sea-panel__content {
+    .sea-ui.modal .modal-content {
         padding: 1rem 1.5625rem 0 1.5625rem;
     }
 
     @media (max-width: $break-sm) {
-        .pct-ui.modal .modal-content {
+        .sea-ui.modal .modal-content {
             padding: 1rem 0.75rem 0 0.75rem;
         }
     }
@@ -283,7 +302,7 @@ a.pct-ui.btn-xs.productscreenshotBtn {
         color: $primaryColor;
         background-color: $colorWhite;
 
-        .pct-icon {
+        .sea-seller-icon {
             display: inline-block;
             position: relative;
             font-size: 18px;

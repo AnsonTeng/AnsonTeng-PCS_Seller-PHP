@@ -1,17 +1,17 @@
 //Forms_Input 輸入框相關
-.pct-ui.form input:not([type]),
-.pct-ui.form input[type="date"],
-.pct-ui.form input[type="datetime-local"],
-.pct-ui.form input[type="email"],
-.pct-ui.form input[type="file"],
-.pct-ui.form input[type="number"],
-.pct-ui.form input[type="password"],
-.pct-ui.form input[type="search"],
-.pct-ui.form input[type="tel"],
-.pct-ui.form input[type="text"],
-.pct-ui.form input[type="time"],
-.pct-ui.form input[type="url"],
-.pct-ui.form textarea {
+.sea-ui.form input:not([type]),
+.sea-ui.form input[type="date"],
+.sea-ui.form input[type="datetime-local"],
+.sea-ui.form input[type="email"],
+.sea-ui.form input[type="file"],
+.sea-ui.form input[type="number"],
+.sea-ui.form input[type="password"],
+.sea-ui.form input[type="search"],
+.sea-ui.form input[type="tel"],
+.sea-ui.form input[type="text"],
+.sea-ui.form input[type="time"],
+.sea-ui.form input[type="url"],
+.sea-ui.form textarea {
     font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica",
         "Arial", "WenQuanYi Zen Hei", "Hiragino Sans GB", "LiHei Pro",
         "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
@@ -29,31 +29,31 @@
     font-weight: 300;
 }
 
-.pct-ui.form input:not([type]):focus,
-.pct-ui.form input[type="date"]:focus,
-.pct-ui.form input[type="datetime-local"]:focus,
-.pct-ui.form input[type="email"]:focus,
-.pct-ui.form input[type="file"]:focus,
-.pct-ui.form input[type="number"]:focus,
-.pct-ui.form input[type="password"]:focus,
-.pct-ui.form input[type="search"]:focus,
-.pct-ui.form input[type="tel"]:focus,
-.pct-ui.form input[type="text"]:focus,
-.pct-ui.form input[type="time"]:focus,
-.pct-ui.form input[type="url"]:focus,
-.pct-ui.form textarea:focus {
+.sea-ui.form input:not([type]):focus,
+.sea-ui.form input[type="date"]:focus,
+.sea-ui.form input[type="datetime-local"]:focus,
+.sea-ui.form input[type="email"]:focus,
+.sea-ui.form input[type="file"]:focus,
+.sea-ui.form input[type="number"]:focus,
+.sea-ui.form input[type="password"]:focus,
+.sea-ui.form input[type="search"]:focus,
+.sea-ui.form input[type="tel"]:focus,
+.sea-ui.form input[type="text"]:focus,
+.sea-ui.form input[type="time"]:focus,
+.sea-ui.form input[type="url"]:focus,
+.sea-ui.form textarea:focus {
     outline: none;
     border-color: $primaryColor;
     box-shadow: 0 0 5px rgba($primaryDeepColor, 0.5);
 }
 
-.pct-ui.form-disabled input:disabled,
-.pct-ui.form-disabled input.disabled,
-.pct-ui.form-disabled input[disabled],
-.pct-ui.form-disabled input.disabled:hover,
-.pct-ui.form-disabled input[disabled]:hover,
-.pct-ui.form-disabled input.disabled:active,
-.pct-ui.form-disabled input[disabled]:active {
+.sea-ui.form-disabled input:disabled,
+.sea-ui.form-disabled input.disabled,
+.sea-ui.form-disabled input[disabled],
+.sea-ui.form-disabled input.disabled:hover,
+.sea-ui.form-disabled input[disabled]:hover,
+.sea-ui.form-disabled input.disabled:active,
+.sea-ui.form-disabled input[disabled]:active {
     @extend %ui-disabled;
     border: 1px solid #dadada;
     color: $colorGray;
@@ -71,15 +71,15 @@
 }
 
 // 文字框中顯示提示訊息
-.pct-ui.form input::placeholder,
-.pct-ui.form textarea::placeholder {
+.sea-ui.form input::placeholder,
+.sea-ui.form textarea::placeholder {
     color: $colorGray;
     font-weight: 300;
     -webkit-text-fill-color: $colorGray;
 }
 
 // 僅能閱讀
-.pct-ui.form.form-readonly input {
+.sea-ui.form.form-readonly input {
     border: 0px;
     box-shadow: none;
     padding: 0.5rem 0.75rem 0.5rem 0rem;
@@ -122,7 +122,7 @@
 }
 
 // (輸入框＋按鈕) 群組
-.pct-ui.form.inputGroup {
+.sea-ui.form.inputGroup {
     display: flex;
     flex-wrap: nowrap;
 
@@ -130,16 +130,18 @@
         flex: 1;
         // max-width: 240px;
 
-        .pct-ui.form {
+        .sea-ui.form {
             input {
                 margin: 0;
             }
+
             select {
                 position: relative;
                 left: 1px;
             }
         }
     }
+
     .inputGroup-btn {
         flex-shrink: 0;
         text-align: center;
@@ -175,7 +177,7 @@
     }
 }
 
-.pct-ui.form {
+.sea-ui.form {
     textarea {
         min-height: 8rem;
         max-height: 10rem;
@@ -206,26 +208,27 @@
     margin-right: auto;
 }
 
-.pct-ui.form.error input,
-.pct-ui.form.error textarea {
+.sea-ui.form.error input,
+.sea-ui.form.error textarea {
     border-color: $colorPinkRed;
     -webkit-box-shadow: none;
     box-shadow: none;
     margin: 0.125rem 0 0 0;
 }
 
-.pct-ui.form.error input::placeholder,
-.pct-ui.form.error textarea::placeholder {
+.sea-ui.form.error input::placeholder,
+.sea-ui.form.error textarea::placeholder {
     color: #e0b4b4;
     font-weight: 300;
     -webkit-text-fill-color: #e0b4b4;
 }
 
-.pct-ui.form.error {
+.sea-ui.form.error {
     .error-notification-tooltip-inline {
         display: block !important;
     }
 }
+
 .error-notification-tooltip-inline {
     font-size: 0.75rem;
     font-weight: 300;
@@ -238,32 +241,40 @@
 }
 
 //金額 - 泰銖
-.pct-ui.form.product-price-THbaht {
+.sea-ui.form.product-price-THbaht {
+
     input[type="text"],
     input[type="tel"] {
         padding-left: 36px;
     }
+
     &:before {
         content: "฿";
     }
 }
+
 //金額 - 美金
-.pct-ui.form.product-price-USdollar {
+.sea-ui.form.product-price-USdollar {
+
     input[type="text"],
     input[type="tel"] {
         padding-left: 30px;
     }
+
     &:before {
         content: "$";
     }
 }
+
 //金額 - 新台幣
-.pct-ui.form.product-price-TWdollar {
+.sea-ui.form.product-price-TWdollar {
+
     input[type="text"],
     input[type="tel"] {
         padding-left: 43px;
         left: -60px;
     }
+
     &:before {
         position: absolute;
         content: "NT$";
@@ -271,12 +282,14 @@
 }
 
 //重量 - 公斤
-.pct-ui.form.product-weight-kilogram {
+.sea-ui.form.product-weight-kilogram {
+
     input[type="text"],
     input[type="tel"] {
         padding-right: 43px;
         right: 6px;
     }
+
     &:after {
         position: absolute;
         content: "kg";
@@ -284,12 +297,14 @@
 }
 
 //長度 - 公分
-.pct-ui.form.product-length-centimeter {
+.sea-ui.form.product-length-centimeter {
+
     input[type="text"],
     input[type="tel"] {
         padding-right: 43px;
         right: 6px;
     }
+
     &:after {
         position: absolute;
         content: "cm";

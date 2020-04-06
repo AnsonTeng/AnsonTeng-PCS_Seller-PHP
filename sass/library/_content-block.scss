@@ -31,6 +31,7 @@
         }
 
         p {
+
             // form 內的文字欄位
             &.break-text {
                 font-weight: 300;
@@ -38,7 +39,7 @@
                 line-height: 20px;
                 margin-bottom: 10px;
 
-                .pct-icon {
+                .sea-seller-icon {
                     color: $primaryColor;
                     margin-right: 5px;
                 }
@@ -48,6 +49,7 @@
                 }
             }
         }
+
         @media (max-width: $break-sm) {
             p {
                 &.break-text {
@@ -77,10 +79,80 @@
                     text-decoration: none;
                 }
             }
+
             &.alert {
                 color: $colorPinkRed;
             }
         }
+
+        a {
+            .description-text {
+                color: $primaryDeepColor;
+                text-decoration: underline;
+            }
+        }
+
+        // form 裡的圖片
+        .content-block-img {
+            overflow: hidden;
+            white-space: normal;
+            display: flex;
+            flex-wrap: wrap;
+            // width: 100%;
+            justify-content: left;
+            align-items: center;
+            margin: 30px;
+
+            @media (max-width: $break-md) {
+                flex-wrap: nowrap;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                white-space: nowrap;
+                margin: 10px;
+                overflow: auto;
+                padding-bottom: 20px;
+            }
+
+
+            .content-block-imgtext {
+                text-align: center;
+
+                img {
+                    width: 160px;
+
+                    @media (max-width: $break-lg) {
+                        width: 136px;
+                    }
+                }
+
+                p {
+                    line-height: 1.6;
+                    font-size: 0.75rem;
+                    font-weight: 300;
+                }
+            }
+
+            &.img-second {
+                width: calc(50% - 60px);
+            }
+
+            span {
+                color: $primaryDeepColor;
+                font-size: 0.75rem;
+                margin: 0 5px 35px 5px;
+            }
+        }
+
+        ul.note {
+            background-color: $colorGreyishWhite;
+            padding: 15px;
+            // margin-top:40px;
+            font-size: 0.75rem;
+            line-height: 1.6;
+            color: $colorDeepGray;
+        }
+
+
 
         //左右欄位形式表單
         .form-column {
@@ -107,7 +179,7 @@
                     margin-left: 0;
                 }
 
-                .pct-ui.form {
+                .sea-ui.form {
                     flex: 1;
 
                     input[type="text"],
@@ -130,9 +202,9 @@
         }
 
         //關於表單的重新設定
-        .pct-ui.form,
-        .pct-ui.form-label,
-        .pct-ui.form-textarea-label {
+        .sea-ui.form,
+        .sea-ui.form-label,
+        .sea-ui.form-textarea-label {
             flex-wrap: wrap;
             margin-bottom: 24px;
 
@@ -140,17 +212,18 @@
                 margin-bottom: 15px;
             }
 
-            .pct-ui.form,
-            .pct-ui.form-label,
-            .pct-ui.form-textarea-label {
+            .sea-ui.form,
+            .sea-ui.form-label,
+            .sea-ui.form-textarea-label {
                 margin-bottom: 8px;
             }
         }
 
         @media (max-width: $break-sm) {
-            .pct-ui.form,
-            .pct-ui.form-label,
-            .pct-ui.form-textarea-label {
+
+            .sea-ui.form,
+            .sea-ui.form-label,
+            .sea-ui.form-textarea-label {
                 margin-bottom: 15px;
             }
         }
@@ -164,7 +237,7 @@
                 font-size: 0.875rem;
                 right: 15px;
                 top: 13px;
-                color: #555555;
+                color: $colorDarkGray;
                 font-family: "Helvetica Neue", "Helvetica", "Arial",
                     "sans-serif";
             }
@@ -207,6 +280,7 @@
         // 強制label後的元件折行
         .form-break {
             display: block;
+
             label {
                 margin-bottom: 8px;
             }
@@ -216,8 +290,9 @@
         .radio-wrap {
             display: flex;
         }
-        input[type="radio"]:checked + label,
-        input[type="radio"]:not(:checked) + label {
+
+        input[type="radio"]:checked+label,
+        input[type="radio"]:not(:checked)+label {
             font-weight: 400 !important;
         }
 
@@ -227,17 +302,17 @@
             word-break: normal;
         }
 
-        .pct-ui.form-label {
+        .sea-ui.form-label {
             .column-form {
                 display: flex;
 
-                .pct-ui.form {
+                .sea-ui.form {
                     margin-right: 15px;
                 }
             }
 
             //輸入框旁邊有文字
-            .pct-ui.form.text-with-input {
+            .sea-ui.form.text-with-input {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -276,7 +351,7 @@
             }
 
             //只有文字
-            .pct-ui.form.text-without-input {
+            .sea-ui.form.text-without-input {
                 display: flex;
                 align-items: center;
 
@@ -304,7 +379,7 @@
             }
         }
 
-        .pct-ui.accordion {
+        .sea-ui.accordion {
             margin-top: -1px;
         }
     }
@@ -313,6 +388,7 @@
         text-align: center;
     }
 }
+
 
 @media (max-width: $break-lg) {
     .content-description {
@@ -329,12 +405,13 @@
 
 @media (max-width: $break-md) {
     .content-description {
+
         //關於表單的重新設定
-        .pct-ui.form-textarea-label {
+        .sea-ui.form-textarea-label {
             margin-bottom: 20px !important;
         }
 
-        .pct-ui.form-textarea-label {
+        .sea-ui.form-textarea-label {
             label {
                 padding: 0 0.5rem 0.15rem 0;
                 display: block;
@@ -415,6 +492,7 @@
 
     &.error {
         .alert-box {
+
             p,
             span,
             ul {
@@ -475,6 +553,7 @@
 }
 
 @media (max-width: $break-lg) {
+
     .seller-action-bar,
     .seller-action-bar-fixed {
         &.error {
@@ -486,6 +565,7 @@
 }
 
 @media (max-width: $break-sm) {
+
     .seller-action-bar,
     .seller-action-bar-fixed {
         .action-bar-wrap {
@@ -510,6 +590,7 @@
     .seller-action-bar-fixed {
         .action-bar-wrap {
             .action-btn-box {
+
                 // justify-content: center;
                 a {
                     // width: 100%;

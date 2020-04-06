@@ -1,18 +1,17 @@
 <!-- footer -->
 <footer class="section-footer">
-    <div class="pct-section-content no-margin privacy">
-        <div class="container pct-gutters eng-num privacy-wrap">
-            <div class="pct-footer-contact">
+    <div class="sea-section-content no-margin privacy">
+        <div class="container sea-gutters eng-num privacy-wrap">
+            <div class="sea-footer-contact">
                 <ul>
-                    <li><span class="pct-icon icon-tel"></span> 02-261-5037 </li>
-                    <li><span class="pct-icon icon-email"></span> <a
-                            href="mailto:support@pchome.co.th">support@pchome.co.th</a></li>
+                    <li><span class="sea-seller-icon icon-tel"></span> 02-27000898 ext.9933 / 9920 </li>
+                    <li><span class="sea-seller-icon icon-email"></span> <a href="mailto:service@pchomesea.com">service@pchomesea.com</a></li>
                 </ul>
             </div>
-            <div class="pct-footer-logoprivacy">
+            <div class="sea-footer-logoprivacy">
                 <ul>
-                    <li class="pct-footerlogo"></li>
-                    <li class="pct-footer-privacy"> © 2020 LinkTel Inc. All Rights Reserved.</li>
+                    <!-- <li class="sea-footerlogo"></li> -->
+                    <li class="sea-footer-privacy"> © 2020 LinkTel Inc. All Rights Reserved.</li>
                 </ul>
             </div>
         </div>

@@ -19,23 +19,23 @@
 //     margin-right: auto;
 // }
 
-// .pct-ui.form-label.fluid,
-// .pct-ui.form-label,
-// .pct-ui.form-select-label {
+// .sea-ui.form-label.fluid,
+// .sea-ui.form-label,
+// .sea-ui.form-select-label {
 //     display: flex;
 //     align-items: baseline;
 // }
 
-// .pct-ui.form-textarea-label {
+// .sea-ui.form-textarea-label {
 //     display: flex;
 //     align-items: top;
 
-//     .pct-ui.form {
+//     .sea-ui.form {
 //         flex: 1;
 //     }
 // }
 
-// .pct-ui.form-label.break-label {
+// .sea-ui.form-label.break-label {
 //     display: block;
 //     margin-bottom: 10px;
 //     text-align: left;
@@ -46,7 +46,7 @@
 //     }
 // }
 
-// .pct-ui.form-select-label.break-label {
+// .sea-ui.form-select-label.break-label {
 //     display: block;
 //     margin-bottom: 10px;
 //     text-align: left;
@@ -56,50 +56,50 @@
 //         padding: 0rem 0rem 5px 0rem;
 //     }
 
-//     .pct-ui.form.select {
+//     .sea-ui.form.select {
 //         margin-right: 0px;
 //         margin-top: 2px;
 //     }
 // }
 
-// .pct-ui.form-label label {
+// .sea-ui.form-label label {
 //     font-size: 0.875rem;
 //     font-weight: 400;
 //     padding: 0rem 0.5rem 0 0rem;
 // }
 
-// .pct-ui.form-select-label label {
+// .sea-ui.form-select-label label {
 //     font-size: 0.875rem;
 //     font-weight: 400;
 //     padding: 0.75rem 0.5rem 0 0rem;
 // }
 
-// .pct-ui.form-textarea-label label {
+// .sea-ui.form-textarea-label label {
 //     font-size: 0.875rem;
 //     font-weight: 400;
 //     padding: 0.9375rem 0.5rem 0.5rem 0;
 // }
 
 // @media (max-width: $break-lg) {
-//     .pct-ui.form-textarea-label label {
+//     .sea-ui.form-textarea-label label {
 //         padding: 0rem 0.5rem 0.5rem 0;
 //     }
 // }
 
-// .pct-ui.form input:not([type]),
-// .pct-ui.form input[type="date"],
-// .pct-ui.form input[type="datetime-local"],
-// .pct-ui.form input[type="email"],
-// .pct-ui.form input[type="file"],
-// .pct-ui.form input[type="number"],
-// .pct-ui.form input[type="password"],
-// .pct-ui.form input[type="search"],
-// .pct-ui.form input[type="tel"],
-// .pct-ui.form input[type="text"],
-// .pct-ui.form input[type="time"],
-// .pct-ui.form input[type="url"],
-// .pct-ui.form textarea,
-// .pct-ui.form select {
+// .sea-ui.form input:not([type]),
+// .sea-ui.form input[type="date"],
+// .sea-ui.form input[type="datetime-local"],
+// .sea-ui.form input[type="email"],
+// .sea-ui.form input[type="file"],
+// .sea-ui.form input[type="number"],
+// .sea-ui.form input[type="password"],
+// .sea-ui.form input[type="search"],
+// .sea-ui.form input[type="tel"],
+// .sea-ui.form input[type="text"],
+// .sea-ui.form input[type="time"],
+// .sea-ui.form input[type="url"],
+// .sea-ui.form textarea,
+// .sea-ui.form select {
 //     font-family: "Sukhumvit Set", "Helvetica Neue", "Tahoma", "Helvetica", "Arial", "WenQuanYi Zen Hei",
 //         "Hiragino Sans GB", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", "sans-serif";
 //     padding: 0.5rem 0.75rem 0.5rem 0.75rem;
@@ -115,44 +115,44 @@
 //     font-weight: 300;
 // }
 
-// .pct-ui.form input:not([type]):focus,
-// .pct-ui.form input[type="date"]:focus,
-// .pct-ui.form input[type="datetime-local"]:focus,
-// .pct-ui.form input[type="email"]:focus,
-// .pct-ui.form input[type="file"]:focus,
-// .pct-ui.form input[type="number"]:focus,
-// .pct-ui.form input[type="password"]:focus,
-// .pct-ui.form input[type="search"]:focus,
-// .pct-ui.form input[type="tel"]:focus,
-// .pct-ui.form input[type="text"]:focus,
-// .pct-ui.form input[type="time"]:focus,
-// .pct-ui.form input[type="url"]:focus,
-// .pct-ui.form textarea:focus,
-// .pct-ui.form select:focus {
+// .sea-ui.form input:not([type]):focus,
+// .sea-ui.form input[type="date"]:focus,
+// .sea-ui.form input[type="datetime-local"]:focus,
+// .sea-ui.form input[type="email"]:focus,
+// .sea-ui.form input[type="file"]:focus,
+// .sea-ui.form input[type="number"]:focus,
+// .sea-ui.form input[type="password"]:focus,
+// .sea-ui.form input[type="search"]:focus,
+// .sea-ui.form input[type="tel"]:focus,
+// .sea-ui.form input[type="text"]:focus,
+// .sea-ui.form input[type="time"]:focus,
+// .sea-ui.form input[type="url"]:focus,
+// .sea-ui.form textarea:focus,
+// .sea-ui.form select:focus {
 //     outline: none;
 //     border-color: $primaryColor;
 //     box-shadow: 0 0 5px rgba(33, 144, 198, 0.4);
 // }
 
-// .pct-ui.form input::placeholder,
-// .pct-ui.form textarea::placeholder,
-// .pct-ui.form select::placeholder {
+// .sea-ui.form input::placeholder,
+// .sea-ui.form textarea::placeholder,
+// .sea-ui.form select::placeholder {
 //     color: $colorGray;
 //     font-weight: 300;
 //     -webkit-text-fill-color: $colorGray;
 // }
 
-// .pct-ui.form.error input,
-// .pct-ui.form.error textarea,
-// .pct-ui.form.error select {
+// .sea-ui.form.error input,
+// .sea-ui.form.error textarea,
+// .sea-ui.form.error select {
 //     border-color: $primaryColor;
 //     -webkit-box-shadow: none;
 //     box-shadow: none;
 //     margin: 0.125rem 0 0 0;
 // }
 
-// .pct-ui.form.error input::placeholder,
-// .pct-ui.form.error textarea::placeholder {
+// .sea-ui.form.error input::placeholder,
+// .sea-ui.form.error textarea::placeholder {
 //     color: #e0b4b4;
 //     font-weight: 300;
 //     -webkit-text-fill-color: #e0b4b4;
@@ -168,13 +168,13 @@
 //     text-align: left;
 // }
 
-// .pct-ui.form-disabled input:disabled,
-// .pct-ui.form-disabled input.disabled,
-// .pct-ui.form-disabled input[disabled],
-// .pct-ui.form-disabled input.disabled:hover,
-// .pct-ui.form-disabled input[disabled]:hover,
-// .pct-ui.form-disabled input.disabled:active,
-// .pct-ui.form-disabled input[disabled]:active {
+// .sea-ui.form-disabled input:disabled,
+// .sea-ui.form-disabled input.disabled,
+// .sea-ui.form-disabled input[disabled],
+// .sea-ui.form-disabled input.disabled:hover,
+// .sea-ui.form-disabled input[disabled]:hover,
+// .sea-ui.form-disabled input.disabled:active,
+// .sea-ui.form-disabled input[disabled]:active {
 //     @extend %ui-disabled;
 //     border: 1px solid #dadada;
 //     color: $colorGray;
@@ -190,7 +190,7 @@
 //     font-weight: 300;
 // }
 
-// .pct-ui.form {
+// .sea-ui.form {
 //     textarea {
 //         min-height: 8rem;
 //         max-height: 10rem;
@@ -230,7 +230,7 @@
 // }
 
 // // (輸入框＋按鈕) 群組
-// .pct-ui.form.inputGroup {
+// .sea-ui.form.inputGroup {
 //     display: flex;
 //     flex-wrap: nowrap;
 
@@ -239,7 +239,7 @@
 
 //         // max-width: 240px;
 
-//         .pct-ui.form {
+//         .sea-ui.form {
 //             input {
 //                 margin: 0;
 //             }
@@ -254,13 +254,13 @@
 // }
 
 // //表單--Input Select 下拉選單
-// .pct-ui.form.select {
+// .sea-ui.form.select {
 //     position: relative;
 //     align-self: flex-start;
 // }
 
-// .pct-ui.form.select:after {
-//     font-family: "pct-icon";
+// .sea-ui.form.select:after {
+//     font-family: "sea-seller-icon";
 //     content: $icon-angle-down;
 //     font-size: 0.75rem;
 //     color: $primaryColor;
@@ -273,27 +273,27 @@
 //     pointer-events: none;
 // }
 
-// .pct-ui.form-select-label {
-//     .pct-ui.form.select {
+// .sea-ui.form-select-label {
+//     .sea-ui.form.select {
 //         margin-right: 12px;
 //     }
 // }
 
-// .pct-ui.form-select-label {
-//     .pct-ui.form.error.select:after {
+// .sea-ui.form-select-label {
+//     .sea-ui.form.error.select:after {
 //         top: 32%;
 //     }
 // }
 
-// .pct-ui.form.select.error {
+// .sea-ui.form.select.error {
 //     &:after {
 //         top: 32%;
 //     }
 // }
 
 // //表單--Checkbox 選取框
-// .pct-ui.form.checkbox input[type="checkbox"]:checked,
-// .pct-ui.form.checkbox input[type="checkbox"]:not(:checked) {
+// .sea-ui.form.checkbox input[type="checkbox"]:checked,
+// .sea-ui.form.checkbox input[type="checkbox"]:not(:checked) {
 //     -moz-appearance: none;
 //     -webkit-appearance: none;
 //     -o-appearance: none;
@@ -302,7 +302,7 @@
 //     font-size: 0.8rem;
 // }
 
-// .pct-ui.form.checkbox input[type="checkbox"]:focus {
+// .sea-ui.form.checkbox input[type="checkbox"]:focus {
 //     outline: none;
 //     -moz-appearance: none;
 //     -webkit-appearance: none;
@@ -325,7 +325,7 @@
 //     z-index: 1;
 // }
 
-// .pct-ui.form.checkbox {
+// .sea-ui.form.checkbox {
 //     margin: 0 0 15px 0;
 //     font-weight: 300;
 
@@ -371,7 +371,7 @@
 //     }
 
 //     input[type="checkbox"]:after {
-//         font-family: "pct-icon";
+//         font-family: "sea-seller-icon";
 //         content: $icon-checked;
 //         color: $colorWhite;
 //         font-size: 1.05rem;
@@ -407,7 +407,7 @@
 //         height: 23px;
 //     }
 
-//     .pct-ui.form.checkbox {
+//     .sea-ui.form.checkbox {
 //         input[type="checkbox"] {
 //             vertical-align: middle;
 //         }
@@ -426,7 +426,7 @@
 // }
 
 //表單-- Radio Button
-.pct-ui.form.radio {
+.sea-ui.form.radio {
     margin: 0 0 15px 0;
 
     input[type="radio"]:checked,
@@ -439,8 +439,8 @@
         left: -9999px;
     }
 
-    input[type="radio"]:checked + label,
-    input[type="radio"]:not(:checked) + label {
+    input[type="radio"]:checked+label,
+    input[type="radio"]:not(:checked)+label {
         position: relative;
         padding-left: 28px;
         cursor: pointer;
@@ -451,8 +451,8 @@
     }
 
     /*radio未選取樣式*/
-    input[type="radio"]:checked + label:before,
-    input[type="radio"]:not(:checked) + label:before {
+    input[type="radio"]:checked+label:before,
+    input[type="radio"]:not(:checked)+label:before {
         content: "";
         position: absolute;
         left: 0;
@@ -465,8 +465,8 @@
     }
 
     /*radio已選取樣式*/
-    input[type="radio"]:checked + label:after,
-    input[type="radio"]:not(:checked) + label:after {
+    input[type="radio"]:checked+label:after,
+    input[type="radio"]:not(:checked)+label:after {
         content: "";
         width: 14px;
         height: 14px;
@@ -479,13 +479,13 @@
         transition: all 0.2s ease;
     }
 
-    input[type="radio"]:not(:checked) + label:after {
+    input[type="radio"]:not(:checked)+label:after {
         opacity: 0;
         -webkit-transform: scale(0);
         transform: scale(0);
     }
 
-    input[type="radio"]:checked + label:after {
+    input[type="radio"]:checked+label:after {
         opacity: 1;
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -581,7 +581,7 @@
 //     line-height: 40px;
 // }
 
-// .pct-ui.form.number {
+// .sea-ui.form.number {
 //     display: flex;
 //     align-items: center;
 
@@ -625,7 +625,7 @@
 //     appearance: none;
 // }
 
-// .pct-ui.form-disabled.number {
+// .sea-ui.form-disabled.number {
 //     display: flex;
 //     align-items: center;
 
@@ -687,7 +687,7 @@
 //     margin-top: 2px;
 // }
 
-// .pct-ui.form.number-responsive {
+// .sea-ui.form.number-responsive {
 //     label {
 //         font-size: 0.875rem;
 //         padding: 0rem 0.5rem 0 0rem;
@@ -737,7 +737,7 @@
 //         line-height: 30px;
 //     }
 
-//     .pct-ui.form.number-responsive {
+//     .sea-ui.form.number-responsive {
 //         .number-controller {
 //             input[type="number"] {
 //                 @extend %input-number-responsive-md;
@@ -764,7 +764,7 @@
 //         line-height: 26px;
 //     }
 
-//     .pct-ui.form.number-responsive {
+//     .sea-ui.form.number-responsive {
 //         .number-controller {
 //             input[type="number"] {
 //                 @extend %input-number-responsive-xxs;
@@ -795,17 +795,17 @@
 // }
 
 // //金額 - 泰銖
-// .pct-ui.form.product-price-THbaht {
+// .sea-ui.form.product-price-THbaht {
 //     input[type="text"],
 //     input[type="tel"] {
 //         padding-left: 36px;
 //     }
 //     &:before {
-//         content: "฿";
+//         content: "$";
 //     }
 // }
 // //金額 - 美金
-// .pct-ui.form.product-price-USdollar {
+// .sea-ui.form.product-price-USdollar {
 //     input[type="text"],
 //     input[type="tel"] {
 //         padding-left: 30px;
@@ -815,7 +815,7 @@
 //     }
 // }
 // //金額 - 新台幣
-// .pct-ui.form.product-price-TWdollar {
+// .sea-ui.form.product-price-TWdollar {
 //     input[type="text"],
 //     input[type="tel"] {
 //         padding-left: 43px;

@@ -15,11 +15,12 @@
 @import "library/_content-block";
 
 //首頁內容區
-#pct-main {
+#sea-main {
     padding-top: $headerHeight_table;
 }
+
 @media (max-width: $break-sm) {
-    #pct-main {
+    #sea-main {
         padding-top: $headerHeight_mobile;
     }
 }
@@ -29,12 +30,13 @@
     overflow: hidden;
 }
 
-#pct-main {
+#sea-main {
     .title {
         font-size: 1.5rem;
         font-weight: 700;
         padding-bottom: 20px;
-        span.pct-icon {
+
+        span.sea-seller-icon {
             color: $colorWhite;
             background-color: $colorPinkRed;
             border-radius: 50%;
@@ -42,21 +44,26 @@
             top: 2px;
         }
     }
+
     .content-block {
         margin-bottom: 70px;
+
         .content-description {
             .content-note {
                 font-size: 1.125rem;
                 padding: 20px 0;
             }
+
             ul {
                 li {
                     color: $colorDeepGray;
                     font-size: 0.9375rem;
                     line-height: 1.6;
+
                     a {
                         text-decoration: underline;
                         color: $primaryDeepColor;
+
                         &:hover {
                             text-decoration: none;
                         }
@@ -64,6 +71,7 @@
                 }
             }
         }
+
         .content-description-color {
             ul {
                 li {

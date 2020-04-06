@@ -1,6 +1,6 @@
 <!--結算款項燈箱 -->
-<div id="pct-lightbox-withdrawal" class="pct-ui modal medium">
-    <i class="pct-icon icon-delete lightbox_close"></i>
+<div id="sea-lightbox-withdrawal" class="sea-ui modal medium">
+    <i class="sea-seller-icon icon-delete lightbox_close"></i>
     <div class="modal-header">結算</div>
     <div class="scrolling-tall modal-content">
 
@@ -28,7 +28,7 @@
                     </div>
                     <!-- 運算符號 = -->
                     <div class="items item-operations item-operations-equal">
-                        <i class="pct-icon icon-equal"></i>
+                        <i class="sea-seller-icon icon-equal"></i>
                     </div>
                     <!-- 細項金額 -->
                     <div class="items item-amountBox-left">
@@ -42,17 +42,15 @@
                     </div>
                     <!-- 運算符號 +/- -->
                     <div class="items item-operations item-operations-plus">
-                        <i class="pct-icon icon-minus"></i>
+                        <i class="sea-seller-icon icon-minus"></i>
                     </div>
                     <!-- 細項金額 -->
                     <div class="items item-amountBox-right">
                         <!-- 文字包 -->
                         <div class="item-amountBox-text">
-                            <div class="subtitle"><span class="subtitle-text"><a href="selleracc-fee.php"
-                                        target="_blank">
+                            <div class="subtitle"><span class="subtitle-text"><a href="selleracc-fee.php" target="_blank">
                                         <!-- Due Fee -->
-                                        <!-- ค่าธรรมเนียมที่ต้องชำระ -->未繳費用<i
-                                            class="pct-icon icon-information"></i></a></span></div>
+                                        <!-- ค่าธรรมเนียมที่ต้องชำระ -->未繳費用<i class="sea-seller-icon icon-information"></i></a></span></div>
                             <div class="amount eng-num">157,946.45</div>
                         </div>
                     </div>
@@ -60,10 +58,10 @@
             </div>
         </div>
         <div class="description">
-            <div class="pct-ui form-select-label break-label">
+            <div class="sea-ui form-select-label break-label">
                 <label for="">選擇結算銀行</label>
                 <!-- 說明For RD: 第一筆為預設帳號"-->
-                <div class="pct-ui form select">
+                <div class="sea-ui form select">
                     <select>
                         <option value="1">002 Bangkok Bank (BBL) [預設帳號]</option>
                         <option value="2">024 United Overseas Bank (Thai) (UOBT)</option>
@@ -71,10 +69,10 @@
                     </select>
                 </div>
             </div>
-            <div class="pct-ui form-label break-label">
+            <div class="sea-ui form-label break-label">
                 <label for="">輸入結算金額</label>
-                <!-- <div class="pct-ui form"> -->
-                <div class="pct-ui form product-price-THbaht unit-before">
+                <!-- <div class="sea-ui form"> -->
+                <div class="sea-ui form product-price-USdollar unit-before">
                     <input type="tel" placeholder="0">
                 </div>
             </div>
@@ -83,34 +81,34 @@
     </div>
     <div class="modal-actions">
         <!--清除-->
-        <a href="#" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="sea-ui btn btn-primary-outlined lightbox_close">取消</a>
         <!--確定結算-->
-        <a href="#" class="pct-ui btn btn-primary">確定結算</a>
+        <a href="#" class="sea-ui btn btn-primary">確定結算</a>
     </div>
 </div>
 <!-- 燈箱結束-->
 
 
 <!-- 發票設定  -->
-<div id="pct-lightbox-setInvoice-personal" class="pct-ui modal medium">
+<div id="sea-lightbox-setInvoice-personal" class="sea-ui modal medium">
     <!--說明 FOR RD: 若送出需較長時間請執行以下loading-->
-    <div class="pct-ui loading-overlay" style="display: none;">
+    <div class="sea-ui loading-overlay" style="display: none;">
         <div class="loading-circle small"></div>
     </div>
-    <i class="pct-icon icon-delete lightbox_close"></i>
+    <i class="sea-seller-icon icon-delete lightbox_close"></i>
     <div class="modal-header">個人發票設定</div>
     <div class="scrolling-tall modal-content">
         <div class="description">
             <div class="title">發票抬頭：<span>（自動帶入）</span></div>
             <div class="title">Tax ID：<span>（自動帶入）</span></div>
 
-            <div class="pct-ui form-select-label break-label">
+            <div class="sea-ui form-select-label break-label">
                 <label for="">戶籍地址</label>
-                <div class="pct-ui form">
+                <div class="sea-ui form">
                     <textarea placeholder="請輸入戶籍地址"></textarea>
                 </div>
 
-                <div class="pct-ui form select">
+                <div class="sea-ui form select">
                     <select>
                         <option value="0">省／府</option>
                         <option value="1">Option 01</option>
@@ -118,7 +116,7 @@
                         <option value="3">Option 03</option>
                     </select>
                 </div>
-                <div class="pct-ui form select">
+                <div class="sea-ui form select">
                     <select>
                         <option value="4">區</option>
                         <option value="5">Option 01</option>
@@ -128,27 +126,27 @@
                 </div>
 
             </div>
-            <div class="pct-ui form-label break-label">
+            <div class="sea-ui form-label break-label">
                 <label for="">郵遞區號</label>
-                <div class="pct-ui form">
+                <div class="sea-ui form">
                     <input type="text" placeholder="請輸入郵遞區號">
                 </div>
             </div>
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-primary-outlined">取消重填</a>
-        <a href="#" class="pct-ui btn btn-primary">確定儲存</a>
+        <a href="#" class="sea-ui btn btn-primary-outlined">取消重填</a>
+        <a href="#" class="sea-ui btn btn-primary">確定儲存</a>
     </div>
 </div>
 
 <!-- 發票設定－公司  -->
-<div id="pct-lightbox-setInvoice-company" class="pct-ui modal medium">
+<div id="sea-lightbox-setInvoice-company" class="sea-ui modal medium">
     <!--說明 FOR RD: 若送出需較長時間請執行以下loading-->
-    <div class="pct-ui loading-overlay" style="display: none;">
+    <div class="sea-ui loading-overlay" style="display: none;">
         <div class="loading-circle small"></div>
     </div>
-    <i class="pct-icon icon-delete lightbox_close"></i>
+    <i class="sea-seller-icon icon-delete lightbox_close"></i>
 
     <div class="modal-header">公司發票設定</div>
     <div class="scrolling-tall modal-content">
@@ -156,19 +154,19 @@
             <div class="title">發票抬頭：<span>（自動帶入）</span></div>
             <div class="title">Tax ID：<span>（自動帶入）</span></div>
 
-            <div class="pct-ui form-label break-label">
+            <div class="sea-ui form-label break-label">
                 <label for="">Branch No.</label>
-                <div class="pct-ui form">
+                <div class="sea-ui form">
                     <input type="text" placeholder="請填寫 Branch No. 號碼">
                 </div>
             </div>
 
-            <div class="pct-ui form-select-label break-label">
+            <div class="sea-ui form-select-label break-label">
                 <label for="">公司登記地址</label>
-                <div class="pct-ui form">
+                <div class="sea-ui form">
                     <textarea placeholder="請輸入公司登記地址"></textarea>
                 </div>
-                <div class="pct-ui form select">
+                <div class="sea-ui form select">
                     <select>
                         <option value="0">省／府</option>
                         <option value="1">Option 01</option>
@@ -176,7 +174,7 @@
                         <option value="3">Option 03</option>
                     </select>
                 </div>
-                <div class="pct-ui form select">
+                <div class="sea-ui form select">
                     <select>
                         <option value="4">區</option>
                         <option value="5">Option 01</option>
@@ -186,9 +184,9 @@
                 </div>
             </div>
 
-            <div class="pct-ui form-label break-label">
+            <div class="sea-ui form-label break-label">
                 <label for="">郵遞區號</label>
-                <div class="pct-ui form">
+                <div class="sea-ui form">
                     <input type="text" placeholder="請輸入郵遞區號">
                 </div>
             </div>
@@ -196,8 +194,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="pct-ui btn btn-primary-outlined">取消重填</a>
-        <a href="#" class="pct-ui btn btn-primary">確定儲存</a>
+        <a href="#" class="sea-ui btn btn-primary-outlined">取消重填</a>
+        <a href="#" class="sea-ui btn btn-primary">確定儲存</a>
     </div>
 </div>
 
@@ -208,8 +206,8 @@
 
 
 <!-- 結算狀態說明 -->
-<div id="pct-lightbox-settlementStatus" class="pct-ui modal medium">
-    <i class="pct-icon icon-delete lightbox_close"></i>
+<div id="sea-lightbox-settlementStatus" class="sea-ui modal medium">
+    <i class="sea-seller-icon icon-delete lightbox_close"></i>
     <div class="modal-header">結算狀態說明</div>
     <div class="scrolling-tall  modal-content">
         <div class="description">
@@ -223,16 +221,15 @@
                 </div>
                 <div class="description-list-box">
                     <div class="list-box-item">可結算金額</div>
-                    <div class="list-box-text eng-num">已過 PChome Thai 的保護期，可申請撥款。</div>
+                    <div class="list-box-text eng-num">已過 PChomeSEA 的保護期，可申請撥款。</div>
                 </div>
                 <div class="description-list-box">
                     <div class="list-box-item">待轉可用貨款金額</div>
-                    <div class="list-box-text eng-num">尚未過 PChome Thai 的保護期，無法申請撥款。</div>
+                    <div class="list-box-text eng-num">尚未過 PChomeSEA 的保護期，無法申請撥款。</div>
                 </div>
                 <div class="description-list-box">
                     <div class="list-box-item">可結算金額</div>
-                    <div class="list-box-text eng-num">已過 PChome Thai 的保護期，可申請撥款。金額為扣除 PChome
-                        Thai 成交手續費(商品價格5%+7%VAT)，與金流服務費等費用。</div>
+                    <div class="list-box-text eng-num">已過 PChomeSEA 的保護期，可申請撥款。金額為扣除 PChomeSEA 成交手續費(商品價格5%+7%VAT)，與金流服務費等費用。</div>
                 </div>
 
                 <!-- 狀態 -->
@@ -242,7 +239,7 @@
                 </div>
                 <div class="description-list-box">
                     <div class="list-box-item">轉可用貨款</div>
-                    <div class="list-box-text eng-num">過PChome Thai的保護期可申請結算(金額尚未扣除相關費用)。</div>
+                    <div class="list-box-text eng-num">過 PChomeSEA 的保護期可申請結算(金額尚未扣除相關費用)。</div>
                 </div>
 
                 <div class="description-list-box">
@@ -273,8 +270,8 @@
 
 
 <!-- 款項狀態 (完成代收) -->
-<div id="pct-lightbox-accountStep" class="pct-ui modal medium">
-    <i class="pct-icon icon-delete lightbox_close"></i>
+<div id="sea-lightbox-accountStep" class="sea-ui modal medium">
+    <i class="sea-seller-icon icon-delete lightbox_close"></i>
     <div class="modal-header">款項狀態</div>
 
     <div class="withdrawal-step">
@@ -306,8 +303,8 @@
 <!-- 燈箱結束-->
 
 <!-- 款項狀態(已轉可結算) -->
-<div id="pct-lightbox-accountStep-complete" class="pct-ui modal medium">
-    <i class="pct-icon icon-delete lightbox_close"></i>
+<div id="sea-lightbox-accountStep-complete" class="sea-ui modal medium">
+    <i class="sea-seller-icon icon-delete lightbox_close"></i>
     <div class="modal-header">款項狀態</div>
     <div class="withdrawal-step">
         <ul>
@@ -341,8 +338,8 @@
 
 
 <!-- 結算狀態 -->
-<div id="pct-lightbox-withdrawalStep" class="pct-ui modal medium">
-    <i class="pct-icon icon-delete lightbox_close"></i>
+<div id="sea-lightbox-withdrawalStep" class="sea-ui modal medium">
+    <i class="sea-seller-icon icon-delete lightbox_close"></i>
     <div class="modal-header">結算狀態</div>
 
     <div class="withdrawal-step">
@@ -391,8 +388,8 @@
 
 
 <!--  繳交費用 -->
-<div id="pct-lightbox-payFee" class="pct-ui modal medium">
-    <i class="pct-icon icon-delete lightbox_close"></i>
+<div id="sea-lightbox-payFee" class="sea-ui modal medium">
+    <i class="sea-seller-icon icon-delete lightbox_close"></i>
     <div class="modal-header">繳交費用項目</div>
 
     <div class="scrolling-tall modal-content">
@@ -447,8 +444,8 @@
 
 
 <!--  結算設定--刪除已認證銀行-->
-<div id="pct-lightbox-delete-varified" class="pct-ui modal">
-    <i class="pct-icon icon-delete lightbox_close"></i>
+<div id="sea-lightbox-delete-varified" class="sea-ui modal">
+    <i class="sea-seller-icon icon-delete lightbox_close"></i>
     <div class="modal-header">刪除帳號</div>
     <div class="modal-content">
         <div class="description min-height">
@@ -457,15 +454,15 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-primary">確定</a>
+        <a href="" class="sea-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="sea-ui btn btn-primary">確定</a>
     </div>
 </div>
 <!-- 燈箱結束-->
 
 <!--  結算設定--刪除待認證/認證中銀行-->
-<div id="pct-lightbox-delete-verifyfailed" class="pct-ui modal">
-    <i class="pct-icon icon-delete lightbox_close"></i>
+<div id="sea-lightbox-delete-verifyfailed" class="sea-ui modal">
+    <i class="sea-seller-icon icon-delete lightbox_close"></i>
     <div class="modal-header">刪除帳號</div>
     <div class="modal-content">
         <div class="description min-height">
@@ -473,16 +470,16 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-primary">確定</a>
+        <a href="" class="sea-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="sea-ui btn btn-primary">確定</a>
     </div>
 </div>
 <!-- 燈箱結束-->
 
 
 <!--  結算設定--認證失敗原因-->
-<div id="pct-lightbox-delete-failedinfo" class="pct-ui modal">
-    <i class="pct-icon icon-delete lightbox_close"></i>
+<div id="sea-lightbox-delete-failedinfo" class="sea-ui modal">
+    <i class="sea-seller-icon icon-delete lightbox_close"></i>
     <div class="modal-header">認證失敗說明</div>
     <div class="modal-content">
         <div class="description min-height">
@@ -491,8 +488,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="pct-ui btn btn-primary-outlined lightbox_close">取消</a>
-        <a href="#" class="pct-ui btn btn-primary">確定</a>
+        <a href="" class="sea-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="sea-ui btn btn-primary">確定</a>
     </div>
 </div>
 <!-- 燈箱結束-->

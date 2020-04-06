@@ -134,7 +134,7 @@ $(document).ready(function() {
     if ($shoppingCartEmpty == false) {
         // 沒商品
         $("#shoppingCart .drawer-info").show();
-        $("#shoppingCart .pct-icon.icon-delete").hide();
+        $("#shoppingCart .sea-seller-icon.icon-delete").hide();
         $("#shoppingCart .drawer-header").hide();
         $("#shoppingCart .drawer-actions").hide();
         $("#shoppingCart .drawer-content").removeClass("scrolling");
@@ -144,7 +144,7 @@ $(document).ready(function() {
     } else {
         // 有商品
         $("#shoppingCart .drawer-info").hide();
-        $("#shoppingCart .pct-icon.icon-delete").show();
+        $("#shoppingCart .sea-seller-icon.icon-delete").show();
         $("#shoppingCart .drawer-header").show();
         $("#shoppingCart .drawer-actions").show();
         $("#shoppingCart .drawer-content").addClass("scrolling");
@@ -207,7 +207,7 @@ $(document).ready(function() {
 
     // 點擊『購物車』按鈕
     $(".header-cart")
-        .children(".pct-icon")
+        .children(".sea-seller-icon")
         .click(function(e) {
             // 如果使用手機時 點選購物車直接連去外部結帳頁面
             // console.log("useMobile = "+$useMobile);
@@ -231,10 +231,10 @@ $(document).ready(function() {
     if ($login == false) {
         //Header 頭像
         $(".header-account")
-            .children(".pct-icon")
+            .children(".sea-seller-icon")
             .removeClass("icon-avatar-face");
         $(".header-account")
-            .children(".pct-icon")
+            .children(".sea-seller-icon")
             .addClass("icon-avatar");
 
         // －Mobile 登入選單按鈕－
@@ -261,10 +261,10 @@ $(document).ready(function() {
     } else {
         //Header 頭像
         $(".header-account")
-            .children(".pct-icon")
+            .children(".sea-seller-icon")
             .addClass("icon-avatar-face");
         $(".header-account")
-            .children(".pct-icon")
+            .children(".sea-seller-icon")
             .removeClass("icon-avatar");
 
         // －Mobile 登入選單按鈕－
@@ -288,7 +288,7 @@ $(document).ready(function() {
         // 檢查通知中心內是否有訊息
         if ($notificationCenterEmpty == false) {
             $("#notificationCenter .drawer-info").show();
-            $("#notificationCenter .pct-icon.icon-delete").hide();
+            $("#notificationCenter .sea-seller-icon.icon-delete").hide();
             $("#notificationCenter .drawer-header").hide();
             $("#notificationCenter .drawer-content").removeClass("scrolling");
             // 測試用（ＲＤ會動態塞資料進去）
@@ -296,7 +296,7 @@ $(document).ready(function() {
             // console.log("通知中心沒訊息");
         } else {
             $("#notificationCenter .drawer-info").hide();
-            $("#notificationCenter .pct-icon.icon-delete").show();
+            $("#notificationCenter .sea-seller-icon.icon-delete").show();
             $("#notificationCenter .drawer-header").show();
             $("#notificationCenter .drawer-content").addClass("scrolling");
             // 測試用（ＲＤ會動態塞資料進去）

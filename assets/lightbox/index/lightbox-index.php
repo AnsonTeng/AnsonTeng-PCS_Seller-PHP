@@ -1,18 +1,18 @@
-<!--KYC泰國賣家/海外賣家 切換身份 捨棄資料 Lightbox -->   
-<!--說明Fro RD: 若資料輸入到一半要切換成不同的身份時，RD自動判斷跳出抓燈箱：id="pct-lightbox-change"，詢問user是否要捨棄已輸入規格，因為資料會清空-->
+<!--KYC泰國賣家/海外賣家 切換身份 捨棄資料 Lightbox -->
+<!--說明Fro RD: 若資料輸入到一半要切換成不同的身份時，RD自動判斷跳出抓燈箱：id="sea-lightbox-change"，詢問user是否要捨棄已輸入規格，因為資料會清空-->
 
 
 <!--申請成為P-Mall賣家-->
-<div id="pct-lightbox-PMallApply" class="pct-ui modal">
-    <i class="pct-icon icon-delete lightbox_close"></i>
+<div id="sea-lightbox-PMallApply" class="sea-ui modal">
+    <i class="sea-seller-icon icon-delete lightbox_close"></i>
     <div class="modal-header">申請成為P-Mall賣家</div>
     <div class="modal-content">
         <div class="description min-height">
             <div class="title align-center">
                 您的賣場/商品主要分類
             </div>
-            <div class="pct-ui form-select-label">
-                <div class="pct-ui form select">
+            <div class="sea-ui form-select-label">
+                <div class="sea-ui form select">
                     <select>
                         <option value="1">女生服裝</option>
                         <option value="2">女生包包</option>
@@ -44,20 +44,20 @@
                         <option value="28">樂器</option>
                     </select>
                 </div>
-                </div>
+            </div>
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="pct-ui btn btn-cta-outlined">取消</a>
-        <a href="#" class="pct-ui btn btn-cta">確定</a>
+        <a href="" class="sea-ui btn btn-cta-outlined">取消</a>
+        <a href="#" class="sea-ui btn btn-cta">確定</a>
     </div>
 </div>
 
 
 
 <!--歡迎成為P-Mall賣家-->
-<div id="pct-lightbox-PMallApplyComplete" class="pct-ui modal">
-    <i class="pct-icon icon-delete lightbox_close"></i>
+<div id="sea-lightbox-PMallApplyComplete" class="sea-ui modal">
+    <i class="sea-seller-icon icon-delete lightbox_close"></i>
     <div class="modal-header">歡迎成為P-Mall賣家</div>
     <div class="modal-content">
         <div class="description">
@@ -70,8 +70,8 @@
 
 
 <!--申請成為P-Mall賣家審核未通過-->
-<div id="pct-lightbox-PMallApplyFail" class="pct-ui modal">
-    <i class="pct-icon icon-delete lightbox_close"></i>
+<div id="sea-lightbox-PMallApplyFail" class="sea-ui modal">
+    <i class="sea-seller-icon icon-delete lightbox_close"></i>
     <div class="modal-header">審核未通過</div>
     <div class="modal-content">
         <div class="description">
@@ -80,8 +80,3 @@
         </div>
     </div>
 </div>
-
-
-
-
-
