@@ -1,7 +1,5 @@
 //區塊－買家訂單清單
-
 // ：：：：：  從 orderlist.scss 搬過來共用  ：：：：：：：：：：：：：：：：：：：：：：：：：：：
-
 // 訂單編號欄
 .column_orderNum {
     background-color: #f5f8f9;
@@ -239,7 +237,6 @@ span.date-time {
         flex-basis: 240px;
         padding: 10px 0;
         text-align: left;
-
         // 訂單內容－副標
         // .orderlist_subtitle {
         // }
@@ -330,7 +327,8 @@ a.sea-ui.btn-xs.btn.btn_contanctSeller {
     position: relative;
 }
 
-商品編號or訂單編號 .productInfo-info-orderNum-text {
+// 商品編號or訂單編號
+.productInfo-info-orderNum-text {
     margin-right: 5px;
 }
 

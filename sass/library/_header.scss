@@ -1,0 +1,630 @@
+@charset "UTF-8";
+//----- header Logo ------------
+
+header {
+    position: fixed;
+    width: 100%;
+    background: $gradientColorBlue;
+
+    z-index: 1001;
+    text-align: center;
+    top: 0;
+    min-height: $headerHeight_table;
+    max-height: $headerHeight_table;
+    height: $headerHeight_table;
+
+    @media(max-width: $break-sm) {
+        min-height: $headerHeight_mobile;
+        max-height: $headerHeight_mobile;
+        height: auto;
+    }
+}
+
+
+.container {
+    position: relative;
+}
+
+
+.clickBack {
+    display: none;
+    position: absolute;
+    top: $headerHeight_mobile;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($colorGrayBlack, 0.8);
+    padding-top: $headerHeight_mobile;
+    z-index: 10;
+}
+
+
+
+
+
+// ＝＝＝＝＝＝＝＝＝ Header內層 ＝＝＝＝＝＝＝＝＝＝＝
+.header-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: $break-lg;
+    padding: 0;
+    margin: 0 auto;
+    height: $headerHeight_table;
+
+    @media(max-width: $break-sm) {
+        height: auto;
+    }
+}
+
+
+
+
+
+
+// ＝＝＝＝＝＝＝＝＝ 漢堡選單按鈕 ＝＝＝＝＝＝＝＝＝＝＝
+.burgerBtnGroupBox {
+    display: none;
+    flex: 2;
+
+    @media(max-width: $break-sm) {
+        display: block;
+    }
+}
+
+
+
+.burgerBtnGroup {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.btnBurger {
+    display: none;
+    // height: $headerHeight_mobile;
+    height: 100%;
+    position: relative;
+    left: 0.25rem;
+    vertical-align: top;
+    z-index: 10;
+    cursor: pointer;
+    margin-right: 15px;
+
+    @media(max-width: $break-sm) {
+        display: block;
+    }
+
+    & .sea-seller-icon {
+        color: $colorWhite;
+        font-size: 20px;
+        line-height: $headerHeight_mobile;
+    }
+
+
+    & .line1,
+    & .line2,
+    & .line3 {
+        width: 20px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition-duration: 0.3s;
+    }
+
+
+    & .backbtn {
+        background-color: rgba(black, 0.8);
+        position: absolute;
+        left: -5px;
+        transition-duration: opacity 0.3s;
+    }
+
+}
+
+
+.btnBurger--close {
+    & .line1 {
+        transform: translateX(-50%) translateY(-400%);
+    }
+
+    & .line2 {
+        transform: translateX(-50%) translateY(-50%);
+        opacity: 1;
+    }
+
+    & .line3 {
+        transform: translateX(-50%) translateY(300%);
+    }
+
+
+    & .backbtn {
+        width: 36px;
+        height: 100%;
+        opacity: 0;
+    }
+}
+
+
+.btnBurger--open {
+    & .line1 {
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+
+    & .line2 {
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        opacity: 0;
+    }
+
+    & .line3 {
+        transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    }
+
+    & .backbtn {
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+// ＝＝＝＝＝＝＝＝＝ Logo 標準字 ＝＝＝＝＝＝＝＝＝＝＝
+
+.logotypeBox {
+    flex: 2;
+    display: flex;
+    align-items: center;
+
+    .sea-site-ttl {
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: 300;
+        padding-top: 12px;
+        padding-left: 10px;
+        letter-spacing: 1px;
+
+        .sea-link-item {
+            display: block;
+            width: auto;
+            color: #fff;
+            padding-bottom: 10px;
+        }
+    }
+
+    >a {
+        display: block;
+        width: 180px;
+        position: relative;
+        top: 3px;
+    }
+}
+
+@media(max-width: $break-lg) {
+    .logotypeBox {
+        .sea-site-ttl {
+            font-size: 1.125rem;
+            padding-left: 6px;
+            padding-top: 15px;
+        }
+
+        >a {
+            width: 165px;
+        }
+    }
+}
+
+@media(max-width: $break-md) {
+    .logotypeBox {
+        flex: 3.5;
+        padding: 0 1%;
+
+        .sea-site-ttl {
+            padding-left: 4px;
+            font-size: 1rem;
+        }
+
+        >a {
+            display: block;
+            width: 165px;
+        }
+    }
+}
+
+@media(max-width: $break-xs) {
+    .logotypeBox {
+        flex: 2;
+        padding: 0 1%;
+
+        .sea-site-ttl {
+            display: none;
+        }
+
+        a {
+            display: block;
+            width: 150px;
+        }
+    }
+}
+
+
+
+
+
+
+// ＝＝＝＝＝＝＝＝＝ 通知中心 帳戶 語言 按鈕群組 ＝＝＝＝＝＝＝＝＝＝＝
+.headerBtnGroupBox {
+    flex: 2;
+}
+
+
+.headerBtnGroup {
+    height: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    .headerBtn {
+        margin: 0 8px;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 0;
+
+        a.sea-seller-icon {
+            display: inline-block;
+            width: 100%;
+            height: 30px;
+            font-size: 26px;
+            color: $colorWhite;
+            position: relative;
+            top: 4px;
+        }
+    }
+
+
+
+    .header-cart {
+        margin: 0 12px 0 0;
+    }
+
+
+    .header-account {
+        display: inline-block;
+
+        img {
+            width: 26px;
+            height: 26px;
+            border: 2px solid $colorWhite;
+            border-radius: 50%;
+            margin-top: 4px;
+        }
+    }
+
+
+
+
+
+    .header-language {
+        display: inline-block;
+    }
+
+
+
+    .header-language {
+        >a {
+            display: inline-block;
+            background-color: $colorWhite;
+            margin-top: 4px;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 22px;
+        }
+
+        a.icon-overseas-th {
+            background-image: url('../img/icon-overseas-th.svg');
+        }
+
+        a.icon-overseas-tw {
+            background-image: url('../img/icon-overseas-tw.svg');
+        }
+
+        a.icon-overseas-us {
+            background-image: url('../img/icon-overseas-us.svg');
+        }
+    }
+
+
+
+
+    // 通知中心 未讀訊息數量
+    .noti-redDot:after {
+        content: attr(data-noti);
+        font-size: 0.875rem;
+        transform: scale(0.75);
+        font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+        font-weight: 700;
+        padding: 0px 5px 0px 5px;
+        min-width: 26px;
+        height: 22px;
+        line-height: 18px;
+        border-radius: 12px;
+        position: absolute;
+        top: -7px;
+        left: 12px;
+        background-color: $colorWhite;
+        color: $primaryDeepColor;
+        border: 2px solid $primaryDeepColor;
+    }
+
+}
+
+
+@media(max-width: $break-lg) {
+    .headerBtnGroup {
+        .headerBtn {
+            margin: 0 6px;
+        }
+
+        .header-notification {
+            display: inline-block;
+        }
+
+        .header-account {
+            display: inline-block;
+        }
+
+        .header-language {
+            display: inline-block;
+        }
+
+        .header-redDot:after {
+            left: 6px;
+        }
+    }
+}
+
+
+
+@media(max-width: $break-md) {
+    .headerBtnGroup {
+        width: auto;
+        height: 30px;
+        margin-right: 0;
+
+        .headerBtn {
+            margin: 0 6px;
+        }
+
+        .header-notification {
+            display: inline-block;
+        }
+
+        .header-account {
+            display: inline-block;
+        }
+
+        .header-language {
+            display: inline-block;
+        }
+
+        .header-redDot:after {
+            transform: scale(0.875);
+            padding: 0px 5px 0px 5px;
+            min-width: 16px;
+            height: 20px;
+            line-height: 16px;
+            border-radius: 12px;
+            top: -7px;
+            left: 12px;
+        }
+    }
+}
+
+
+
+
+
+
+@media(max-width: $break-sm) {
+    .headerBtnGroup {
+        .header-account {
+            display: none;
+        }
+
+        .header-language {
+            display: none;
+        }
+    }
+}
+
+
+// 下拉選單（共用樣式）
+.headerDropdown {
+    position: absolute;
+    top: 62px;
+    pointer-events: auto;
+    width: 100%;
+    color: $colorGrayBlack;
+    left: 0;
+
+    .drawer {
+        position: absolute;
+    }
+}
+
+
+@media (max-width: $break-sm) {
+    .headerDropdown {
+        width: 100vw;
+    }
+}
+
+
+購物車 #shoppingCart {
+    display: none;
+
+    .sea-ui.drawer {
+        right: -126px;
+
+        .drawer-triangle {
+            left: 190px;
+        }
+
+        .drawer-content {
+            .drawer-list-item {
+                .drawer-list-content {
+                    .drawer-list-content-list {
+                        ul li {
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: $break-md) {
+    #shoppingCart {
+        .drawer-triangle {
+            left: 180px;
+        }
+    }
+}
+
+
+// 通知中心
+#notificationCenter {
+    display: none;
+    position: absolute;
+    z-index: 20;
+
+    .drawer {
+        right: -84px;
+
+        .drawer-triangle {
+            left: 230px;
+        }
+    }
+}
+
+
+@media (max-width: $break-md) {
+    #notificationCenter {
+        position: absolute;
+
+        .drawer {
+            right: -6px;
+
+            .drawer-triangle {
+                left: 310px;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: $break-sm) {
+    #notificationCenter {
+        position: fixed;
+        width: 100%;
+
+        .drawer {
+            top: 0px;
+            left: 0px;
+        }
+    }
+}
+
+
+
+
+
+// 帳號管理
+#account {
+    display: none;
+
+    .drawer {
+        right: -48px;
+
+        .drawer-triangle {
+            left: 266px;
+        }
+
+        &.small {
+            right: -42px;
+
+            .drawer-triangle {
+                left: 82px;
+            }
+        }
+    }
+}
+
+
+
+
+// 買家頭像
+.header-userImg {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+
+    &.userImg-border {
+        border: 2px solid $colorWhite;
+        top: 3px;
+        width: 26px;
+        height: 26px;
+    }
+}
+
+
+
+// 網站語系
+#language {
+    display: none;
+
+    .drawer {
+        right: 0px;
+
+        .drawer-triangle {
+            left: 124px;
+        }
+
+        .drawer-content {
+            .drawer-link {
+                li.active {
+                    >a {
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+    }
+}

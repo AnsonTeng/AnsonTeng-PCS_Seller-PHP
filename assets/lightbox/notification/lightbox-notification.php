@@ -33,7 +33,7 @@
                 應繳金額： ${$otatm} 元<br>
                 * 完成轉帳後請至顧客中心的「<a href="https://cadm.pchome.co.th/buyer/border/list" target="_blank">我的訂單</a>」發送付款通知給賣家題醒出貨喔！<br>
                 【訂單查詢】您可以至顧客中心的「<a href="https://cadm.pchome.co.th/buyer/border/list" target="_blank">我的訂單</a>」，登入查詢您的訂單處理情形。<br>
-                【訂單疑問】如有相關疑問，歡迎至顧客中心使用「<a href="https://cadm.pchome.co.th/buyer/ombord/list" target="_blank">買賣留言版</a>」進行查詢及留言。<br>
+                【訂單疑問】如有相關疑問，歡迎至顧客中心使用「<a href="https://cadm.pchome.co.th/buyer/ombord/list" target="_blank">訂單留言版</a>」進行查詢及留言。<br>
                 感謝您的愛護與支持 !!
             </div>
         </div>

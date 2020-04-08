@@ -11,7 +11,7 @@
         <div class="sea-panel__content">
             <div class="sea-panel__content-addMarginBottom">
 
-                <!-- 收件人資訊 （同燈箱內容樣式）-->
+                <!-- 訂單資訊 -->
                 <div class="sea-ui modal">
                     <div class="modal-content">
                         <div class="description">
@@ -36,8 +36,7 @@
                     </div>
                 </div>
 
-
-                <!-- 收件人資訊 （同燈箱內容樣式）-->
+                <!-- 收件人資訊 （只有TH泰國訂單才有此欄)-->
                 <div class="sea-ui modal">
                     <div class="modal-content">
                         <div class="description">
@@ -57,14 +56,14 @@
                                 </div>
                                 <div class="description-list-box">
                                     <div class="list-box-item">收件地址</div>
-                                    <div class="list-box-text eng-num">191/54, 191/57, 18th Floor, CTI Tower,
-                                        Ratchadapisek Road,, Klongtoey, Bangkok 10110 Thailand</div>
+                                    <div class="list-box-text eng-num">191/54, 191/57, 18th Floor, CTI Tower, Ratchadapisek Road,, Klongtoey, Bangkok 10110 Thailand</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- 訂購人資訊 （同燈箱內容樣式）-->
+
+                <!-- 訂購人資訊 -->
                 <div class="sea-ui modal">
                     <div class="modal-content">
                         <div class="description">
@@ -88,8 +87,156 @@
                                 </div>
                                 <div class="description-list-box">
                                     <div class="list-box-item">收件地址</div>
-                                    <div class="list-box-text eng-num">191/54, 191/57, 18th Floor, CTI Tower,
-                                        Ratchadapisek Road,, Klongtoey, Bangkok 10110 Thailand</div>
+                                    <div class="list-box-text eng-num">191/54, 191/57, 18th Floor, CTI Tower, Ratchadapisek Road,, Klongtoey, Bangkok 10110 Thailand</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sea-ui modal">
+                    <div class="modal-content">
+                        <div class="description">
+                            <!-- 所有訂單容器 -->
+                            <div class="listBox">
+                                <!-- 單筆-->
+                                <div class="listBox-singlelist">
+                                    <!-- 單筆明細標頭-->
+                                    <div class="flexTable orderlist-header">
+                                        <div class="flexTable orderlist-buyer">
+                                            <img class="buyeeAvatar" src="img/brand/brand_01.jpg" alt="buyer">
+                                            <span class="buyerName">so**********************om</span>
+                                        </div>
+                                        <!-- 操作按鈕欄 -->
+                                        <a class="sea-ui btn-xs btn btn_contanctSeller productscreenshotBtn" href="#"><i class="sea-btn-icon icon-picture"></i>
+                                            <!--Screenshot-->商品頁截圖</a>
+                                    </div>
+                                </div>
+
+                                <!-- 單筆訂單-改版-->
+                                <div class="listBox-singlelist">
+                                    <!-- 訂單商品內容群組 -->
+                                    <div class="flexTable orderlist-productBar">
+                                        <!-- 商品圖文 -->
+                                        <div class="flexTable productBar-product">
+                                            <!-- 商品資訊群組（圖＋文） -->
+                                            <div class="productInfoGroup">
+                                                <!-- 商品圖片 -->
+                                                <div class="productInfo-img">
+                                                    <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
+                                                </div>
+                                                <!-- 商品資訊 -->
+                                                <div class="productInfo-info">
+                                                    <!-- 商品名稱 -->
+                                                    <div class="productInfo-info-title">
+                                                        <span class="productInfo-info-title-text">
+                                                            <a href="#">Winter short tube Chelsea boots Martin work boots</a>
+                                                        </span>
+                                                    </div>
+                                                    <!-- 商品規格 -->
+                                                    <div class="productInfo-info-subtitle">
+                                                        <span class="productInfo-info-subtitle-text">Size / Color / Type / Size / Color / Type / Size / Color / Type / Size / Color / Type</span>
+                                                    </div>
+                                                    <!-- 商品數量 -->
+                                                    <div class="productInfo-info-subtitle">
+                                                        <span class="productInfo-info-orderNum">
+                                                            <span class="productInfo-info-orderNum-title">x</span>
+                                                            <span class="productInfo-info-orderNum-text">42</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 商品金額 -->
+                                        <div class="flexTable productBar-total">
+                                            <!-- 商品金額 -->
+                                            <div class="total-amount">
+                                                <span class="orderlist-title eng-num">$ 4,200</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- 單筆訂單-改版-->
+                                <div class="listBox-singlelist">
+                                    <!-- 訂單商品內容群組 -->
+                                    <div class="flexTable orderlist-productBar">
+                                        <!-- 商品圖文 -->
+                                        <div class="flexTable productBar-product">
+                                            <!-- 商品資訊群組（圖＋文） -->
+                                            <div class="productInfoGroup">
+                                                <!-- 商品圖片 -->
+                                                <div class="productInfo-img">
+                                                    <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
+                                                </div>
+                                                <!-- 商品資訊 -->
+                                                <div class="productInfo-info">
+                                                    <!-- 商品名稱 -->
+                                                    <div class="productInfo-info-title">
+                                                        <span class="productInfo-info-title-text">
+                                                            <a href="#">Winter short tube Chelsea boots Martin work boots</a>
+                                                        </span>
+                                                    </div>
+                                                    <!-- 商品規格 -->
+                                                    <div class="productInfo-info-subtitle">
+                                                        <span class="productInfo-info-subtitle-text">Size / Color / Type / Size / Color / Type / Size / Color / Type / Size / Color / Type</span>
+                                                    </div>
+                                                    <!-- 商品數量 -->
+                                                    <div class="productInfo-info-subtitle">
+                                                        <span class="productInfo-info-orderNum">
+                                                            <span class="productInfo-info-orderNum-title">x</span>
+                                                            <span class="productInfo-info-orderNum-text">400</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 商品金額 -->
+                                        <div class="flexTable productBar-total">
+                                            <!-- 商品金額 -->
+                                            <div class="total-amount">
+                                                <span class="orderlist-title eng-num">$ 120,000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 單筆-->
+                                <div class="listBox-singlelist">
+                                    <!-- 單筆明細內容-->
+                                    <div class="flexTable orderlist-body">
+                                        <span>運費 - 中華郵政 EMS國際快捷（僅TH泰國訂單顯示）</span>
+                                        <span class="amount eng-num">$ 236</span>
+                                    </div>
+                                </div>
+
+                                <!-- 單筆-->
+                                <div class="listBox-singlelist">
+                                    <!-- 單筆明細內容-->
+                                    <div class="flexTable orderlist-body">
+                                        <span>運費補助（僅TH泰國訂單顯示）</span>
+                                        <span class="amount amount-discount eng-num">- $ 236</span>
+                                    </div>
+                                </div>
+
+                                <!-- 單筆-->
+                                <div class="listBox-singlelist">
+                                    <!-- 單筆明細內容-->
+                                    <div class="flexTable orderlist-body">
+                                        <span>訂單金額</span>
+                                        <span class="amount eng-num">$ 124,200</span>
+                                    </div>
+                                </div>
+
+                                <!-- 單筆-->
+                                <div class="listBox-singlelist">
+                                    <!-- 單筆明細結帳總金額-->
+                                    <div class="flexTable orderlist-footer">
+                                        <span>訂單總金額</span>
+                                        <span class="amount eng-num">$ 124,200</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -97,253 +244,8 @@
                 </div>
 
 
-                <!-- 訂單明細內容 -->
-                <div class="sea-ui modal">
-                    <div class="modal-content">
-                        <!-- 表格 -->
-                        <div class="tableBox tableBox-orderlistDetail">
-                            <div class="table__tbody">
-                                <table>
-                                    <!-- colgroup -->
-                                    <colgroup>
-                                        <col class="table--w45">
-                                        <col class="table--w10">
-                                        <col class="table--w25">
-                                        <col class="table--w20">
-                                    </colgroup>
-                                    <tbody>
-                                        <tr class="table_row_header">
-                                            <td colspan="4">
-                                                <div class="tableData-header">
-                                                    <!-- 訂單狀態 -->
-                                                    <div class="table_flexBox table_flexBox-between">
-                                                        <div class="itemInfoGroup">
-                                                            <div class="list__itemInfo-userImg img-bg" style="background-image: url('img/buyer_avator_default.svg');">
-                                                            </div>
-                                                            <span class="list__itemInfo list__itemInfo-userName">so*****************om</span>
-                                                        </div>
-                                                        <div class="contanctSeller">
-                                                            <a class="sea-ui btn-xs btn btn_contanctSeller productscreenshotBtn" href="#contanctSeller"><i class="sea-btn-icon icon-picture"></i>
-                                                                <!--Screenshot-->商品頁截圖</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- 商品明細１ -->
-                                        <tr class="table_row_body">
-                                            <td data-title="商品">
-                                                <div class="tableDeta-box">
-                                                    <!-- 商品資訊群組（圖＋文） -->
-                                                    <div class="productInfoGroup">
-                                                        <!-- 商品圖片 -->
-                                                        <div class="productInfo-img">
-                                                            <img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture">
-                                                        </div>
-                                                        <!-- 商品資訊 -->
-                                                        <div class="productInfo-info">
-                                                            <!-- 商品名稱 -->
-                                                            <div class="productInfo-info-title">
-                                                                <span class="productInfo-info-title-text">Winter short tube Chelsea boots Martin work boots<span>
-                                                            </div>
-                                                            <!-- 商品規格 -->
-                                                            <div class="productInfo-info-subtitle">
-                                                                <span class="productInfo-info-subtitle-text">Size / Color / Type / Size / Color / Type / Size / Color / Type / Size / Color / Type<span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td data-title="商品數量">
-                                                <div class="tableDeta-box">
-                                                    <!-- 訂單數量 -->
-                                                    <div class="orderlist_subtitleBox">
-                                                        <div class="orderlist_subtitle orderlistDetail_amount">
-                                                            <span class="eng-num">90</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td data-title="包裹重量">
-                                                <div class="tableDeta-box">
-                                                    <!-- 訂單數量 -->
-                                                    <div class="orderlist_subtitleBox">
-                                                        <div class="orderlist_subtitle orderlistDetail_amount">
-                                                            <span class="eng-num">1.94 kg</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td data-title="金額小計">
-                                                <div class="tableDeta-box">
-                                                    <!-- 金額小計 -->
-                                                    <div class="orderlist_titleBox">
-                                                        <div class="orderlist_title orderlistDetail_price">
-                                                            <span class="eng-num ">$ 124,200</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- 商品明細１結束 -->
-                                        <!-- 商品明細２ -->
-                                        <tr class="table_row_body">
-                                            <td data-title="商品">
-                                                <div class="tableDeta-box">
-                                                    <!-- 商品資訊群組（圖＋文） -->
-                                                    <div class="productInfoGroup">
-                                                        <!-- 商品圖片 -->
-                                                        <div class="productInfo-img">
-                                                            <img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture">
-                                                        </div>
-                                                        <!-- 商品資訊 -->
-                                                        <div class="productInfo-info">
-                                                            <!-- 商品名稱 -->
-                                                            <div class="productInfo-info-title">
-                                                                <span class="productInfo-info-title-text">Winter short tube Chelsea boots Martin work boots<span>
-                                                            </div>
-                                                            <!-- 商品規格 -->
-                                                            <div class="productInfo-info-subtitle">
-                                                                <span class="productInfo-info-subtitle-text">Size / Color / Type<span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td data-title="商品數量">
-                                                <div class="tableDeta-box">
-                                                    <!-- 訂單數量 -->
-                                                    <div class="orderlist_subtitleBox">
-                                                        <div class="orderlist_subtitle orderlistDetail_amount">
-                                                            <span class="eng-num">499</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td data-title="包裹重量">
-                                                <div class="tableDeta-box">
-                                                    <!-- 訂單數量 -->
-                                                    <div class="orderlist_subtitleBox">
-                                                        <div class="orderlist_subtitle orderlistDetail_amount">
-                                                            <span class="eng-num">1.94 kg</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td data-title="金額小計">
-                                                <div class="tableDeta-box">
-                                                    <!-- 金額小計 -->
-                                                    <div class="orderlist_titleBox">
-                                                        <div class="orderlist_title orderlistDetail_price">
-                                                            <span class="eng-num ">$ 200</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- 商品明細 2結束 -->
-
-                                        <!-- 運費小計-->
-                                        <tr class="table_row_body orderlistDetail_subtotal">
-                                            <td colspan="3" class="td-inline" data-title="項目名稱">
-                                                <div class="tableDeta-box">
-                                                    <div class="orderlist_titleBox">
-                                                        <div class="orderlist_title text__align--left">
-                                                            <span>運費 - 中華郵政 EMS國際快捷（僅TH泰國訂單顯示）</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="td-inline" data-title="運費">
-                                                <div class="tableDeta-box">
-                                                    <div class="orderlist_titleBox">
-                                                        <div class="orderlist_title orderlistDetail_price">
-                                                            <span class="eng-num">$ 236</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- 運費小計結束 -->
-
-                                        <!-- 運費補助-->
-                                        <tr class="table_row_body orderlistDetail_subtotal">
-                                            <td colspan="3" class="td-inline" data-title="項目名稱">
-                                                <div class="tableDeta-box">
-                                                    <div class="orderlist_titleBox">
-                                                        <div class="orderlist_title text__align--left">
-                                                            <span>運費補助（僅TH泰國訂單顯示）</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="td-inline" data-title="運費">
-                                                <div class="tableDeta-box">
-                                                    <div class="orderlist_titleBox">
-                                                        <div class="orderlist_title orderlistDetail_price orderlistDetail_discount">
-                                                            <span class="eng-num">- $ 236</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- 運費補助結束 -->
 
 
-                                        <!-- 訂單金額小計-->
-                                        <tr class="table_row_body orderlistDetail_subtotal">
-                                            <td colspan="3" class="td-inline" data-title="項目名稱">
-                                                <div class="tableDeta-box">
-                                                    <!-- 運費 -->
-                                                    <div class="orderlist_titleBox">
-                                                        <div class="orderlist_title text__align--left">
-                                                            <span>訂單金額</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="td-inline" data-title="訂單金額">
-                                                <div class="tableDeta-box">
-                                                    <!-- 運費 -->
-                                                    <div class="orderlist_titleBox">
-                                                        <div class="orderlist_title orderlistDetail_price">
-                                                            <span class="eng-num">$ 236,480</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- 訂單金額小計結束 -->
-
-                                        <!--  繳款金額總計-->
-                                        <tr class="table_row_body orderlistDetail_total">
-                                            <td colspan="3" class="td-inline" data-title="項目名稱">
-                                                <div class="tableDeta-box">
-                                                    <!-- 繳款金額 -->
-                                                    <div class="orderlist_titleBox">
-                                                        <span class="orderlist_title text__align--left">繳款金額</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="td-inline" data-title="繳款金額">
-                                                <div class="tableDeta-box">
-                                                    <!-- 繳款金額 -->
-                                                    <div class="orderlist_titleBox">
-                                                        <div class="orderlist_title orderlistDetail_price">
-                                                            <span class="eng-num">$ 244,000</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <!-- 繳款金額總計結束 -->
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- 訂單訊息 （同燈箱內容樣式）-->
                 <div class="sea-ui modal ">
                     <div class="modal-content">

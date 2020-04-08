@@ -113,7 +113,8 @@
                                                     <input type="text" placeholder="請輸入訂單編號或商品名稱查詢">
                                                 </div>
                                             </div>
-                                            <a href="#" class="sea-ui btn-sm btn-primary inputGroup-btn">搜尋訂單</a>
+                                            <a href="demo-product-list-clearsearch.php" class="sea-ui btn-sm btn-primary inputGroup-btn">搜尋訂單</a>
+                                            <a href="product-list.php" class="sea-ui btn-sm inputGroup-btn" style="display:none"><span class="sea-btn-icon icon-delete"></span>清空</a>
                                         </div>
                                     </div>
                                     <a class="add_condition">新增更多搜尋條件<span class="sea-seller-icon icon-plus"></span></a>
@@ -219,20 +220,17 @@
                             <!-- 標籤導航 結束 -->
 
                             <!-- 所有訂單容器 -->
-                            <div class="orderlistBox">
+                            <div class="listBox">
 
                                 <!--說明FOR RD: 沒有任何訂單時 -->
-                                <div class="table_default_empaty">
-                                    <div class="message-text">沒有訂單紀錄</div>
-                                </div>
                                 <div class="table_default_empaty" style="display: none;">
                                     <div class="message-text">沒有訂單紀錄</div>
                                 </div>
 
                                 <!-- 單筆訂單-改版 待付款 未出貨-->
-                                <div class="orderlistBox-orderlist">
+                                <div class="listBox-singlelist">
                                     <!-- 訂單狀態群組 -->
-                                    <div class="flexTable orderlist-statusBar">
+                                    <div class="flexTable singlelist-statusBar">
                                         <span class="statusBar-status"><i class="sea-btn-icon icon-wait icon-back icon-back-red"></i>待付款</span>
                                         <div class="statusBar-contanctSeller">
                                             <a class="sea-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="sea-btn-icon icon-comment"></i>聯絡買家</a>
@@ -332,9 +330,9 @@
 
 
                                 <!-- 單筆訂單 已付款 通知已出貨-->
-                                <div class="orderlistBox-orderlist">
+                                <div class="listBox-singlelist">
                                     <!-- 訂單狀態群組 -->
-                                    <div class="flexTable orderlist-statusBar">
+                                    <div class="flexTable singlelist-statusBar">
                                         <span class="statusBar-status"><i class="sea-btn-icon icon-checked icon-back icon-back-blue"></i>已付款</span>
                                         <div class="statusBar-contanctSeller">
                                             <a class="sea-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="sea-btn-icon icon-comment"></i>聯絡買家</a>
@@ -439,9 +437,9 @@
 
 
                                 <!-- 單筆訂單 已付款 未出貨-->
-                                <div class="orderlistBox-orderlist">
+                                <div class="listBox-singlelist">
                                     <!-- 訂單狀態群組 -->
-                                    <div class="flexTable orderlist-statusBar">
+                                    <div class="flexTable singlelist-statusBar">
                                         <span class="statusBar-status"><i class="sea-btn-icon icon-checked icon-back icon-back-blue"></i>已付款</span>
                                         <div class="statusBar-contanctSeller">
                                             <a class="sea-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="sea-btn-icon icon-comment"></i>聯絡買家</a>
@@ -542,9 +540,9 @@
 
 
                                 <!-- 單筆訂單 已付款 已出貨-->
-                                <div class="orderlistBox-orderlist">
+                                <div class="listBox-singlelist">
                                     <!-- 訂單狀態群組 -->
-                                    <div class="flexTable orderlist-statusBar">
+                                    <div class="flexTable singlelist-statusBar">
                                         <span class="statusBar-status"><i class="sea-btn-icon icon-checked icon-back icon-back-blue"></i>已付款</span>
                                         <div class="statusBar-contanctSeller">
                                             <a class="sea-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="sea-btn-icon icon-comment"></i>聯絡買家</a>
@@ -646,9 +644,9 @@
 
 
                                 <!-- 單筆訂單 已收款 已收貨-->
-                                <div class="orderlistBox-orderlist">
+                                <div class="listBox-singlelist">
                                     <!-- 訂單狀態群組 -->
-                                    <div class="flexTable orderlist-statusBar">
+                                    <div class="flexTable singlelist-statusBar">
                                         <span class="statusBar-status"><i class="sea-btn-icon icon-checked icon-back icon-back-blue"></i>已付款</span>
                                         <div class="statusBar-contanctSeller">
                                             <a class="sea-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="sea-btn-icon icon-comment"></i>聯絡買家</a>
@@ -750,9 +748,9 @@
 
 
                                 <!-- 單筆訂單（買家）取消訂單申請中-->
-                                <div class="orderlistBox-orderlist">
+                                <div class="listBox-singlelist">
                                     <!-- 訂單狀態群組 -->
-                                    <div class="flexTable orderlist-statusBar">
+                                    <div class="flexTable singlelist-statusBar">
                                         <span class="statusBar-status"><i class="sea-btn-icon icon-wait icon-back icon-back-red"></i>取消訂單申請中</span>
                                         <div class="statusBar-contanctSeller">
                                             <a class="sea-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="sea-btn-icon icon-comment"></i>聯絡買家</a>
@@ -855,9 +853,9 @@
 
 
                                 <!-- 單筆訂單（買家）取消訂單申請中-->
-                                <div class="orderlistBox-orderlist">
+                                <div class="listBox-singlelist">
                                     <!-- 訂單狀態群組 -->
-                                    <div class="flexTable orderlist-statusBar">
+                                    <div class="flexTable singlelist-statusBar">
                                         <span class="statusBar-status"><i class="sea-btn-icon icon-wait icon-back icon-back-red"></i>退款申請中</span>
                                         <div class="statusBar-contanctSeller">
                                             <a class="sea-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="sea-btn-icon icon-comment"></i>聯絡買家</a>
@@ -962,9 +960,9 @@
 
 
                                 <!-- 單筆訂單 失效訂單-->
-                                <div class="orderlistBox-orderlist">
+                                <div class="listBox-singlelist">
                                     <!-- 訂單狀態群組 -->
-                                    <div class="flexTable orderlist-statusBar">
+                                    <div class="flexTable singlelist-statusBar">
                                         <span class="statusBar-status"><i class="sea-btn-icon icon-delete icon-back icon-back-gray"></i>付款失敗</span>
                                         <div class="statusBar-contanctSeller">
                                             <a class="sea-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="sea-btn-icon icon-comment"></i>聯絡買家</a>

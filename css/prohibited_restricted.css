@@ -7,7 +7,7 @@
   margin-right: -5px;
 }
 .sea-gutters [class^=col-],
-.sea-gutters [class*=" col-"] {
+.sea-gutters [class*=col-] {
   padding-left: 5px;
   padding-right: 5px;
 }

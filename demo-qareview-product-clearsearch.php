@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="css/fonts/sea-seller-icon.css">
     <!-- BS grid -->
     <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
-    <title>PChomeSEA | 賣場評價</title>
+    <title>PChomeSEA | 商品留言</title>
     <!-- Google Tag Manager -->
     <script>
     (function(w, d, s, l, i) {
@@ -90,84 +90,126 @@
                             <div class="sea-ui breadcrumb-back">
                                 <span class="sea-seller-icon icon-callcenter"></span>
                                 <ul>
-                                    <li><a href="index.php">首頁</a></li>
+                                    <li>
+                                        <a href="index.php">首頁</a>
+                                    </li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
                                     <li>客服管理</li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
-                                    <li>評價</li>
+                                    <li>商品留言版</li>
                                 </ul>
                             </div>
                             <!-- 頁面標題與麵包屑結束 -->
 
-                            <!-- 搜尋-->
+                            <!-- 搜尋群組-->
                             <div class="searchBarGroup">
-                                <div class="section-review-chart">
-                                    <div class="review-chart-figures">
-                                        <div class="review-score">
-                                            <div class="review-score-text">
-                                                <div class="resault-score eng-num">0.0</div>
-                                                <div class="total-score eng-num">0.0</div>
-                                            </div>
-                                            <!-- 說明FOR RD-->
-                                            <!-- 評價星星 class 滿星：class="sea-seller-icon icon-star-on" / 半星：class="sea-seller-icon icon-star-off" / 空星：class="sea-seller-icon icon-star-off" -->
-                                            <div class="sea-ui review-star">
-                                                <ul>
-                                                    <li class="sea-seller-icon icon-star-on"></li>
-                                                    <li class="sea-seller-icon icon-star-on"></li>
-                                                    <li class="sea-seller-icon icon-star-on"></li>
-                                                    <li class="sea-seller-icon icon-star-half"></li>
-                                                    <li class="sea-seller-icon icon-star-off"></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="review-pecentage-people">
-                                            <ul>
-                                                <li><span class="eng-num">0</span> 個評價</li>
-                                                <li><span class="eng-num">0%</span> 店家優良百分比</li>
-                                            </ul>
+
+                                <div class="sea-ui form inputGroup">
+                                    <div class="inputGroup-inputBox">
+                                        <div class="sea-ui form">
+                                            <input type="text" placeholder="請輸入商品編號" value="9041800006091">
                                         </div>
                                     </div>
+                                    <a href="#" class="sea-ui btn-sm btn-primary inputGroup-btn" style="display: none">搜尋</a>
+                                    <a href="qareview-product.php" class="sea-ui btn-sm inputGroup-btn"><span class="sea-btn-icon icon-delete"></span>清空</a>
                                 </div>
-                                <div class="searchBarGroup-selectGroup">
-                                    <div class="selectBox select-arrayOption">
-                                        <div class="sea-ui form select">
-                                            <select>
-                                                <option value="a1">未回覆(0)</option>
-                                                <option value="a2">已回覆(0)</option>
-                                                <option value="a2">賣家修改評價(0)</option>
-                                            </select>
-                                        </div>
+
+                                <div class="hidden-sm-down">
+                                    <div class="sea-ui form select ">
+                                        <select>
+                                            <option value="20">顯示20筆</option>
+                                            <option value="10">顯示10筆</option>
+                                            <option value="30">顯示30筆</option>
+                                            <option value="50">顯示50筆</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
+                            <!-- 搜尋結束-->
 
                             <!-- 標籤導航 -->
                             <div class="sea-ui tab-nav-bar tab-nav tab-nav-fluid">
                                 <div class="sea-ui tab-pointing">
                                     <ul class="tab-items no-margin">
-                                        <li><a href="#tab1" class="active">所有評價 (0)</a></li>
-                                        <li><a href="#tab2">優良 (0)</a></li>
-                                        <li><a href="#tab3">普通 (0)</a></li>
-                                        <li><a href="#tab4">待加強 (0)</a></li>
+                                        <li><a href="#tab1" class="active">所有商品留言<span>(86)</span></a></li>
+                                        <li><a href="#tab2">未讀取<span>(70)</span></a></li>
+                                        <li><a href="#tab3">待回覆<span>(10)</span></a></li>
+                                        <li><a href="#tab4"><span>已回覆(6)</span></a></li>
                                     </ul>
                                 </div>
                             </div>
 
+
+
                             <!-- 所有清單容器 -->
                             <div class="listBox">
-                                <!--說明FOR RD: 沒有任何評價紀錄時 -->
-                                <div class="table_default_empaty">
-                                    <div class="message-text">沒有評價資料</div>
+                                <!--說明FOR RD: 沒有任何留言時 -->
+                                <div class="table_default_empaty" style="display: none;">
+                                    <div class="message-text">沒有留言紀錄</div>
                                 </div>
+
+                                <!-- 單筆商品留言 -->
+                                <div class="listBox-singlelist">
+                                    <!-- 訂單狀態群組 -->
+                                    <div class="flexTable singlelist-statusBar">
+                                        <span class="statusBar-status"><i class="sea-btn-icon icon-checked icon-back icon-back-green"></i>已回覆</span>
+                                        <div>
+                                            <span class="eng-num date-time">2020/05/28<time>01:28</time></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 商品留言內容群組 -->
+                                    <div class="flexTable qareview-productBar">
+                                        <!-- 商品圖文 -->
+                                        <div class="flexTable productBar-product">
+                                            <!-- 商品資訊群組（圖＋文） -->
+                                            <div class="productInfoGroup">
+                                                <!-- 商品圖片 -->
+                                                <div class="productInfo-img">
+                                                    <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
+                                                </div>
+                                                <!-- 商品資訊 -->
+                                                <div class="productInfo-info">
+
+                                                    <!-- 商品編號 -->
+                                                    <div class="productInfo-info-orderNum">
+                                                        <span class="productInfo-info-orderNum-title">商品編號</span>
+                                                        <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                    </div>
+                                                    <!-- 商品名稱 -->
+                                                    <div class="productInfo-info-title">
+                                                        <span class="productInfo-info-title-text">
+                                                            <a href="#">Winter short tube Chelsea boots Martin work boots</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 買家資訊內容群組 -->
+                                        <div class="flexTable productBar-buyerInfoBox">
+                                            <div class="flexTable buyerInfoBox-buyerInfo">
+                                                <img class="buyInfo-avatar" src="img/brand/brand_01.jpg" alt="buyer" style="background-image: url('img/buyer_avator_default.svg');">
+                                                <span class="buyInfo-name">so*****************om<span class="buyInfo-name-country">SG</span></span>
+                                            </div>
+                                            <span class="buyerInfoBox-message">請問有其他顏色可以選擇嗎？ 還有其他角度的照片嗎？ 想知道內裡有幾個夾層，謝謝！</span>
+                                        </div>
+                                    </div>
+                                    <!-- 訂單操作按鈕群組 -->
+                                    <div class="flexTable orderlist-actionBar-flex-end">
+                                        <!-- 操作按鈕欄 -->
+                                        <div class="actionBar">
+                                            <a class="sea-ui btn-xs btn-primary" href="qareview-product-reply.php">留言</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 單筆商品留言 結束 -->
                             </div>
-                            <!-- 所有清單容器 結束 -->
-
-
-
+                            <!-- 所有訂單容器 結束 -->
 
 
                             <!-- PC 版 列出所有頁碼 -->
-                            <div class="sea-ui page-pagination hidden-sm-down" style="display: none">
+                            <div class="sea-ui page-pagination hidden-sm-down">
                                 <ul class="eng-num">
                                     <li class="active">1</li>
                                     <li><a href="#">2</a></li>
@@ -186,7 +228,7 @@
                                 </ul>
                             </div>
                             <!-- 手機版 Load more-->
-                            <div class="sea-btn-loadcontent hidden-sm-up" style="display: none">
+                            <div class="sea-btn-loadcontent hidden-sm-up">
                                 <a href="#" class="sea-ui btn btn-primary btn-load">LOAD MORE</a>
                             </div>
                         </section>
@@ -200,34 +242,18 @@
         <!-- PChomeSEA footer end-->
     </section>
 
-
-    <!-- PChomeSEA Panel -->
-    <?php include("assets/slide-panel/panel-global.php"); ?>
-    <!-- PChomeSEA Panel end-->
-
-
     <!-- PChomeSEA lightBox -->
     <section id="sea-lightbox">
         <div class="sea-lightBox_backGround"></div>
         <div class="sea-lightBox_inner">
             <?php include("assets/lightbox/global.php"); ?>
-            <?php include("assets/lightbox/qareview/lightbox-qareview.php"); ?>
-            <!--頁面與面板都會出現的lightbox放這裡-->
-            <?php include("assets/slide-panel/lightbox/panel-lightbox-orderdetail.php"); ?>
         </div>
     </section>
     <!-- PChomeSEA lightBox end-->
     <!-- PChomeSEA JS -->
     <?php include("assets/js-include.php"); ?>
     <!-- PChomeSEA JS end-->
-
-
-    <!--評價 JS-->
-    <script type="text/javascript" src="js/js_qareview.js"></script>
-
-    <!-- 滑動面板 -->
-    <script type="text/javascript" src="js/plugin/slide-panel/slide-panel.js"></script>
-
+    <!-- 主選單預設開啟（編號） -->
     <script>
     $(document).ready(function() {
         var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(6)');
@@ -235,7 +261,8 @@
         menuItem.addClass('active');
     });
     </script>
-
+    <!-- 滑動面板 -->
+    <script type="text/javascript" src="js/plugin/slide-panel/slide-panel.js"></script>
 </body>
 
 </html>

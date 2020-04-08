@@ -36,20 +36,20 @@
 <title>PChomeSEA | 通知中心</title>
 <!-- Google Tag Manager -->
 <script>
-(function(w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-    });
-    var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-    f.parentNode.insertBefore(j, f);
-})(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
 </script>
 <!-- End Google Tag Manager -->
 </head>
@@ -149,10 +149,86 @@
                                             </div>
                                             <div class="notification-list-content">
                                                 <div class="notification-list-title">
-                                                    <p>PChomeSEA 通知：有買家於買賣留言板留言給您 (訂單編號：9011900008013)</p>
+                                                    <p>PChomeSEA 通知：有買家於訂單留言板留言給您 (訂單編號：9011900008013)</p>
                                                 </div>
                                                 <div class="notification-content">
-                                                    <p>親愛的 UserName 您好: 您的買賣留言板有新留言喔!<br />買家: BuyerName<br />訂單編號:9011900008013<br />留言時間:23/04/2020 17:04:06<br />留言內容: 了解！<br />請您至賣家中心的<b>買賣留言板</b>回覆留言。<br />若要查詢訂單內容可以到<b>訂單管理</b>查詢唷!<br /><br />感謝您的愛護與支持 !!</p>
+                                                    <p>親愛的 UserName 您好: 您的訂單留言板有新留言喔!<br />買家: BuyerName<br />訂單編號:9011900008013<br />留言時間:23/04/2020 17:04:06<br />留言內容: 了解！<br />請您至賣家中心的<b>訂單留言板</b>回覆留言。<br />若要查詢訂單內容可以到<b>訂單管理</b>查詢唷!<br /><br />感謝您的愛護與支持 !!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="notificationListBtn">
+                                        <div class="notification-list-item read">
+                                            <div class="list-figure">
+                                                <div class="list-figure-inner">
+                                                    <!-- 圖片規格： 1:1 正方形-->
+                                                    <div class="list-figure-img img-bg" style="background-image: url('img/drawer_notification_sales.svg');">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="notification-list-content">
+                                                <div class="notification-list-title">
+                                                    <p>11.11 年末聖誕狂歡!</p>
+                                                </div>
+                                                <div class="notification-content">
+                                                    <p>11月11日至12月25日，PChomeSEA 邀請您的賣場加入使用「1111」折價券活動，向您的忠實顧客們提供最棒的聖誕與新年禮物優惠。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="notificationListBtn">
+                                        <div class="notification-list-item unread">
+                                            <div class="list-figure">
+                                                <div class="list-figure-inner">
+                                                    <!-- 圖片規格： 1:1 正方形-->
+                                                    <div class="list-figure-img img-bg" style="background-image: url('img/drawer_notification_payment.svg');">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="notification-list-content">
+                                                <div class="notification-list-title">
+                                                    <p>PChomeSEA 通知：提領申請成功通知函 (提領單號：70519001767)</p>
+                                                </div>
+                                                <div class="notification-content">
+                                                    <p>親愛的 UserName 您好: 已收到您申請之提領作業，提領單號70519001767，提領金額998元，將轉帳至您預留的銀行帳號。提領內容請您到<b>代收款項</b>查詢。 感謝您的愛護與支持 !!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="notificationListBtn">
+                                        <div class="notification-list-item unread">
+                                            <div class="list-figure">
+                                                <div class="list-figure-inner">
+                                                    <!-- 圖片規格： 1:1 正方形-->
+                                                    <div class="list-figure-img img-bg" style="background-image: url('img/drawer_notification_order.svg');">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="notification-list-content">
+                                                <div class="notification-list-title">
+                                                    <p>PChomeSEA 通知：訂單成立通知函</p>
+                                                </div>
+                                                <div class="notification-content">
+                                                    <p>親愛的 UserName 您好: 買家已成立一筆訂單。 訂單編號9101900010687 訂單金額1817元 訂單明細及內容請您到<b>訂單管理</b>查詢。 感謝您的愛護與支持 !!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="notificationListBtn">
+                                        <div class="notification-list-item read">
+                                            <div class="list-figure">
+                                                <div class="list-figure-inner">
+                                                    <!-- 圖片規格： 1:1 正方形-->
+                                                    <div class="list-figure-img img-bg" style="background-image: url('img/drawer_notification_system.svg');">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="notification-list-content">
+                                                <div class="notification-list-title">
+                                                    <p>PChomeSEA 通知：有買家於訂單留言板留言給您 (訂單編號：9011900008013)</p>
+                                                </div>
+                                                <div class="notification-content">
+                                                    <p>親愛的 UserName 您好: 您的訂單留言板有新留言喔!<br />買家: BuyerName<br />訂單編號:9011900008013<br />留言時間:23/04/2020 17:04:06<br />留言內容: 了解！<br />請您至賣家中心的<b>訂單留言板</b>回覆留言。<br />若要查詢訂單內容可以到<b>訂單管理</b>查詢唷!<br /><br />感謝您的愛護與支持 !!</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -225,86 +301,10 @@
                                             </div>
                                             <div class="notification-list-content">
                                                 <div class="notification-list-title">
-                                                    <p>PChomeSEA 通知：有買家於買賣留言板留言給您 (訂單編號：9011900008013)</p>
+                                                    <p>PChomeSEA 通知：有買家於訂單留言板留言給您 (訂單編號：9011900008013)</p>
                                                 </div>
                                                 <div class="notification-content">
-                                                    <p>親愛的 UserName 您好: 您的買賣留言板有新留言喔!<br />買家: BuyerName<br />訂單編號:9011900008013<br />留言時間:23/04/2020 17:04:06<br />留言內容: 了解！<br />請您至賣家中心的<b>買賣留言板</b>回覆留言。<br />若要查詢訂單內容可以到<b>訂單管理</b>查詢唷!<br /><br />感謝您的愛護與支持 !!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="notificationListBtn">
-                                        <div class="notification-list-item unread">
-                                            <div class="list-figure">
-                                                <div class="list-figure-inner">
-                                                    <!-- 圖片規格： 1:1 正方形-->
-                                                    <div class="list-figure-img img-bg" style="background-image: url('img/drawer_notification_sales.svg');">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="notification-list-content">
-                                                <div class="notification-list-title">
-                                                    <p>11.11 年末聖誕狂歡!</p>
-                                                </div>
-                                                <div class="notification-content">
-                                                    <p>11月11日至12月25日，PChomeSEA 邀請您的賣場加入使用「1111」折價券活動，向您的忠實顧客們提供最棒的聖誕與新年禮物優惠。</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="notificationListBtn">
-                                        <div class="notification-list-item unread">
-                                            <div class="list-figure">
-                                                <div class="list-figure-inner">
-                                                    <!-- 圖片規格： 1:1 正方形-->
-                                                    <div class="list-figure-img img-bg" style="background-image: url('img/drawer_notification_payment.svg');">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="notification-list-content">
-                                                <div class="notification-list-title">
-                                                    <p>PChomeSEA 通知：提領申請成功通知函 (提領單號：70519001767)</p>
-                                                </div>
-                                                <div class="notification-content">
-                                                    <p>親愛的 UserName 您好: 已收到您申請之提領作業，提領單號70519001767，提領金額998元，將轉帳至您預留的銀行帳號。提領內容請您到<b>代收款項</b>查詢。 感謝您的愛護與支持 !!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="notificationListBtn">
-                                        <div class="notification-list-item unread">
-                                            <div class="list-figure">
-                                                <div class="list-figure-inner">
-                                                    <!-- 圖片規格： 1:1 正方形-->
-                                                    <div class="list-figure-img img-bg" style="background-image: url('img/drawer_notification_order.svg');">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="notification-list-content">
-                                                <div class="notification-list-title">
-                                                    <p>PChomeSEA 通知：訂單成立通知函</p>
-                                                </div>
-                                                <div class="notification-content">
-                                                    <p>親愛的 UserName 您好: 買家已成立一筆訂單。 訂單編號9101900010687 訂單金額1817元 訂單明細及內容請您到<b>訂單管理</b>查詢。 感謝您的愛護與支持 !!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="notificationListBtn">
-                                        <div class="notification-list-item read">
-                                            <div class="list-figure">
-                                                <div class="list-figure-inner">
-                                                    <!-- 圖片規格： 1:1 正方形-->
-                                                    <div class="list-figure-img img-bg" style="background-image: url('img/drawer_notification_system.svg');">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="notification-list-content">
-                                                <div class="notification-list-title">
-                                                    <p>PChomeSEA 通知：有買家於買賣留言板留言給您 (訂單編號：9011900008013)</p>
-                                                </div>
-                                                <div class="notification-content">
-                                                    <p>親愛的 UserName 您好: 您的買賣留言板有新留言喔!<br />買家: BuyerName<br />訂單編號:9011900008013<br />留言時間:23/04/2020 17:04:06<br />留言內容: 了解！<br />請您至賣家中心的<b>買賣留言板</b>回覆留言。<br />若要查詢訂單內容可以到<b>訂單管理</b>查詢唷!<br /><br />感謝您的愛護與支持 !!</p>
+                                                    <p>親愛的 UserName 您好: 您的訂單留言板有新留言喔!<br />買家: BuyerName<br />訂單編號:9011900008013<br />留言時間:23/04/2020 17:04:06<br />留言內容: 了解！<br />請您至賣家中心的<b>訂單留言板</b>回覆留言。<br />若要查詢訂單內容可以到<b>訂單管理</b>查詢唷!<br /><br />感謝您的愛護與支持 !!</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -372,11 +372,11 @@
 
     <!-- 主選單預設開啟（編號） -->
     <script>
-    $(document).ready(function() {
-        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(7)');
-        menuItem.find('ul').show();
-        menuItem.addClass('active');
-    });
+        $(document).ready(function() {
+            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(7)');
+            menuItem.find('ul').show();
+            menuItem.addClass('active');
+        });
     </script>
 
 

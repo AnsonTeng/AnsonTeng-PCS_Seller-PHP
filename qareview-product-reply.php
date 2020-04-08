@@ -32,20 +32,20 @@
     <title>PChomeSEA | 商品留言回覆</title>
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -96,80 +96,97 @@
                                     <li class="sea-seller-icon icon-angle-right"></li>
                                     <li>客服管理</li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
-                                    <li>商品留言版</li>
+                                    <li>
+                                        <a href="qareview-product.php">商品留言版</a>
+                                    </li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
                                     <li>內容回覆</li>
                                 </ul>
                             </div>
                             <!-- 頁面標題與麵包屑結束 -->
 
-                            <a id="replyGroup" name="replyGroup"></a>
+
+
+                            <!-- 所有清單容器 -->
+                            <div class="listBox">
+
+                                <!-- 單筆商品留言 -->
+                                <div class="listBox-singlelist">
+
+                                    <!-- 商品留言內容群組 -->
+                                    <div class="flexTable qareview-productBar">
+                                        <!-- 商品圖文 -->
+                                        <div class="flexTable productBar-product">
+                                            <!-- 商品資訊群組（圖＋文） -->
+                                            <div class="productInfoGroup">
+                                                <!-- 商品圖片 -->
+                                                <div class="productInfo-img">
+                                                    <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
+                                                </div>
+                                                <!-- 商品資訊 -->
+                                                <div class="productInfo-info">
+                                                    <!-- 商品編號 -->
+                                                    <div class="productInfo-info-orderNum">
+                                                        <span class="productInfo-info-orderNum-title">商品編號</span>
+                                                        <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                    </div>
+                                                    <!-- 商品名稱 -->
+                                                    <div class="productInfo-info-title">
+                                                        <span class="productInfo-info-title-text">
+                                                            <a href="#">Winter short tube Chelsea boots Martin work boots</a>
+                                                        </span>
+                                                    </div>
+                                                    <!-- 商品規格 -->
+                                                    <div class="productInfo-info-subtitle">
+                                                        <span class="productInfo-info-subtitle-text">Size / Color / Type / Size / Color / Type / Size / Color / Type / Size / Color / Type</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 單筆商品留言 結束 -->
+                            </div>
+                            <!-- 所有訂單容器 結束 -->
+
+
 
                             <div class="content-block">
 
                                 <div class="content-description no-padding">
 
-                                    <div class="qareview-ordertListGroup">
-                                        <!-- 商品資訊群組（圖＋文） -->
-                                        <div class="productInfoGroup">
-                                            <!-- 商品圖片 -->
-                                            <div class="productInfo-img">
-                                                <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
-                                            </div>
-                                            <!-- </div> -->
 
-                                            <!-- 商品資訊 -->
-                                            <div class="productInfo-info">
-
-                                                <!-- 訂單編號 -->
-                                                <div class="productInfo-info-orderNum">
-                                                    <span class="productInfo-info-orderNum-title">商品編號</span>
-                                                    <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                </div>
-
-                                                <!-- 商品名稱 -->
-                                                <div class="productInfo-info-title">
-                                                    <span class="productInfo-info-title-text"><a href="#">韓版氣質V領复古大擺裙純色收腰開叉洋裝韓版氣質</a><span>
-                                                        </span></span></div>
-
-                                            </div>
-                                        </div>
-                                    </div>
 
                                     <div class="replyGroup ProductreplyGroup">
                                         <p class="description-title">商品詢問留言</p>
-
+                                        <!-- 說明For RD：買家請求「購買多件商品」時才出現此按鈕 -->
+                                        <div class="buymanyBtnBox">
+                                            <a href="#" class="sea-ui btn-xs btn btn-primary-outlined buymanyBtn">購買多件商品</a>
+                                        </div>
                                         <!-- 問 -->
                                         <div class="replyGroup-qa replyGroup-question">
+
                                             <!-- 標頭 -->
                                             <div class="qa-titleBox">
                                                 <div class="itemInfoGroup">
-                                                    <div class="list__itemInfo-userImg img-bg" style="background-image: url('img/buyer_avator_default.svg');">
-                                                    </div>
+                                                    <img class="list__itemInfo-userImg" src="img/brand/brand_01.jpg" alt="buyer" style="background-image: url('img/buyer_avator_default.svg');">
                                                     <span class="list__itemInfo list__itemInfo-userName orderlistDetail__itemInfo-userName">so*****************om</span>
-                                                    <div class=""><a href="" class="sea-ui btn-xs btn btn-primary-outlined buymanyBtn">購買多件商品</a>
-                                                    </div>
+
                                                 </div>
                                                 <div class="">
-                                                    <span class="eng-num date-time">2018/05/27<time>10:56</time></span>
+                                                    <span class="eng-num date-time">2020/05/27<time>10:56</time></span>
                                                 </div>
                                             </div>
-
                                             <!-- 內容 -->
                                             <div class="qa-contentBox">
                                                 <div class="triangle_top"></div>
                                                 <div class="contentBox-dialog">
-                                                    <span>Hi, 我想購買此商品 x {quantity} 件，並且以同一訂單出貨，請問您是否可以為這個商品另開一個
-                                                        {quantity}入 的賣場讓我下單呢？謝謝。</span>
+                                                    <span>Hi, 我想購買此商品 x {quantity} 件，並且以同一訂單出貨，請問您是否可以為這個商品另開一個 {quantity}入 的賣場讓我下單呢？謝謝。</span>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
-
-
                                 </div>
-
                             </div>
 
 
@@ -182,9 +199,7 @@
                                         <div class="replyGroup-qa replyGroup-answer replyGroup-answer-reply">
                                             <!-- 內容 -->
                                             <div class="qa-contentBox">
-
                                                 <div class="contentBox-dialog input-msg">
-
                                                     <!-- 賣家回覆群組 -->
                                                     <div class="dialog-reply">
                                                         <div class="sea-ui form select">
@@ -238,7 +253,7 @@
                                                         Paris Shop</span>
                                                 </div>
                                                 <div class="date-time">
-                                                    <span class="eng-num date-time">2018/08/28<time>14:03</time></span>
+                                                    <span class="eng-num date-time">2020/08/28<time>14:03</time></span>
                                                 </div>
                                             </div>
 
@@ -261,7 +276,7 @@
                                                         Paris Shop</span>
                                                 </div>
                                                 <div class="date-time">
-                                                    <span class="eng-num date-time">2018/08/28<time>14:01</time></span>
+                                                    <span class="eng-num date-time">2020/08/28<time>14:01</time></span>
                                                 </div>
                                             </div>
 
@@ -284,7 +299,7 @@
                                                         Paris Shop</span>
                                                 </div>
                                                 <div class="date-time">
-                                                    <span class="eng-num date-time">2018/08/28<time>14:03</time></span>
+                                                    <span class="eng-num date-time">2020/08/28<time>14:03</time></span>
                                                 </div>
                                             </div>
 
@@ -307,7 +322,7 @@
                                                         Paris Shop</span>
                                                 </div>
                                                 <div class="date-time">
-                                                    <span class="eng-num date-time">2018/08/28<time>14:01</time></span>
+                                                    <span class="eng-num date-time">2020/08/28<time>14:01</time></span>
                                                 </div>
                                             </div>
 
@@ -326,10 +341,8 @@
                                             <a class="sea-ui btn btn-primary scroll-link" href="#replyGroup">回覆留言</a>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
-
                         </section>
                     </div>
                 </div>
@@ -359,11 +372,11 @@
 
     <!-- 主選單預設開啟（編號） -->
     <script>
-        $(document).ready(function() {
-            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(6)');
-            menuItem.find('ul').show();
-            menuItem.addClass('active');
-        });
+    $(document).ready(function() {
+        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(6)');
+        menuItem.find('ul').show();
+        menuItem.addClass('active');
+    });
     </script>
 
 </body>

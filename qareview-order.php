@@ -111,7 +111,8 @@
                                             <input type="text" placeholder="請輸入訂單編號">
                                         </div>
                                     </div>
-                                    <a href="#" class="sea-ui btn-sm btn-primary inputGroup-btn">搜尋</a>
+                                    <a href="demo-qareview-order-clearsearch.php" class="sea-ui btn-sm btn-primary inputGroup-btn">搜尋</a>
+                                    <a href="qareview-order.php" class="sea-ui btn-sm inputGroup-btn" style="display: none"><span class="sea-btn-icon icon-delete"></span>清空</a>
                                 </div>
 
                                 <div class="hidden-sm-down">
@@ -140,310 +141,296 @@
                                 </div>
                             </div>
 
-                            <!-- 整體表格 -->
-                            <div class="tableBox tableBox-qareview-product tableBox-qareview-order">
-                                <div class="table__tbody">
 
-                                    <!--說明FOR RD: 沒有任何留言時 -->
-                                    <div class="table_default_empaty" style="display: none;">
-                                        <div class="message-text">沒有留言紀錄</div>
+                            <!-- 所有清單容器 -->
+                            <div class="listBox">
+                                <!--說明FOR RD: 沒有任何留言時 -->
+                                <div class="table_default_empaty" style="display: none;">
+                                    <div class="message-text">沒有留言紀錄</div>
+                                </div>
+
+
+                                <!-- 單筆商品留言 -->
+                                <div class="listBox-singlelist">
+                                    <!-- 訂單狀態群組 -->
+                                    <div class="flexTable singlelist-statusBar">
+                                        <span class="statusBar-status"><i class="sea-btn-icon icon-alert-nofill icon-back icon-back-red"></i>未讀取</span>
+                                        <div>
+                                            <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                        </div>
                                     </div>
 
-                                    <table>
-                                        <!-- colgroup -->
-                                        <colgroup>
-                                            <col class="table--w45">
-                                            <col class="table--w55">
-                                        </colgroup>
+                                    <!-- 訂單資訊群組 -->
+                                    <div class="flexTable orderlist-infoBar">
+                                        <div class="flexTable infoBar-orderNumBox">
+                                            <!-- 訂單編號 -->
+                                            <div class="orderNumBox-orderNum">
+                                                <span class="orderlist-subtitle">訂單編號</span>
+                                                <span class="orderlist-title eng-num">9041800006091</span>
+                                            </div>
+                                            <!-- 訂單日期 -->
+                                            <div class="orderNumBox-orderNum">
+                                                <span class="orderlist-subtitle">訂單日期</span>
+                                                <span class="orderlist-title eng-num">2020/07/26</span>
+                                            </div>
+                                        </div>
+                                        <div class="flexTable infoBar-orderSourseBox">
+                                            <!-- 訂單來源 -->
+                                            <div class="orderNumBox-orderNum">
+                                                <span class="orderlist-subtitle">訂單來源</span>
+                                                <span class="orderlist-title eng-num">SG</span>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <!-- 商品留言內容群組 -->
+                                    <div class="flexTable qareview-productBar">
+                                        <!-- 商品圖文 -->
+                                        <div class="flexTable productBar-product">
+                                            <!-- 商品資訊群組（圖＋文） -->
+                                            <div class="productInfoGroup">
+                                                <!-- 商品圖片 -->
+                                                <div class="productInfo-img">
+                                                    <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
+                                                </div>
+                                                <!-- 商品資訊 -->
+                                                <div class="productInfo-info">
 
-                                        <!-- 單筆訂單留言 -->
-                                        <tbody>
-                                            <tr class="table_row_header">
-                                                <td colspan="2">
-                                                    <div class="tableData-header">
-
-                                                        <div class="table_flexBox table_flexBox-between">
-                                                            <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i class="sea-btn-icon icon-checked icon-back icon-back-green"></i>已回覆</span>
-                                                            </div>
-
-                                                            <div class="date-time">
-                                                                <span class="eng-num date-time">2018/05/28<time>01:28</time></span>
-                                                            </div>
-                                                        </div>
-
+                                                    <!-- 商品名稱 -->
+                                                    <div class="productInfo-info-title">
+                                                        <span class="productInfo-info-title-text">
+                                                            <a href="#">Winter short tube Chelsea boots Martin work boots</a>
+                                                        </span>
                                                     </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr class="table_row_body">
-                                                <td data-title="商品">
-                                                    <div class="tableDeta-box">
-                                                        <!-- 商品資訊群組（圖＋文） -->
-                                                        <div class="productInfoGroup">
-                                                            <!-- 商品圖片 -->
-                                                            <div class="productInfo-img">
-                                                                <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
-                                                            </div>
-                                                            <!-- </div> -->
-
-                                                            <!-- 商品資訊 -->
-                                                            <div class="productInfo-info">
-
-                                                                <!-- 訂單編號 -->
-                                                                <div class="productInfo-info-orderNum">
-                                                                    <span class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                    <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                                </div>
-
-                                                                <!-- 商品名稱 -->
-                                                                <div class="productInfo-info-title">
-                                                                    <span class="productInfo-info-title-text"><a href="#">韓版氣質V領复古大擺裙純色收腰開叉洋裝韓版氣質</a><span>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
+                                                    <!-- 商品規格 -->
+                                                    <div class="productInfo-info-subtitle">
+                                                        <span class="productInfo-info-subtitle-text">Size / Color / Type / Size / Color / Type / Size / Color / Type / Size / Color / Type</span>
                                                     </div>
-                                                </td>
-                                                <td data-title="買家留言">
-                                                    <div class="tableDeta-box">
-                                                        <div class="buyer-messageBox">
-                                                            <!-- 買家資訊 -->
-                                                            <div class="itemInfoGroup">
-                                                                <div class="list__itemInfo-userImg img-bg" style="background-image: url('img/buyer_avator_default.svg');">
-                                                                </div>
-                                                                <span class="list__itemInfo list__itemInfo-userName">so*****************om<span class="list__itemInfo-country">SG</span></span>
-                                                                </div>
-                                                                <!-- 買家留言 -->
-                                                                <span class="msg-text">我還沒有收到商品，請問什麼時候會到貨呢？請老闆麻煩幫忙確認一下。</span>
-                                                            </div>
-                                                        </div>
-                                                </td>
-                                            </tr>
-
-                                            <!-- 按鈕 -->
-                                            <tr class="table_row_bottom">
-                                                <td colspan="2">
-
-                                                    <div class="table_flexBox table_flexBox-between">
-                                                        <!-- 訂單內商品數量 -->
-                                                        <div class="orderlist_amount hidden-xs-down">
-                                                            <span>Total</span>
-                                                            <span class="orderlist_amount_num eng-num">90</span>
-                                                            <span>items</span>
-                                                        </div>
-
-                                                        <!-- 操作按鈕欄 -->
-                                                        <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
-
-                                                            <a class="sea-ui btn-xs btn-primary-outlined js-sea-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
-
-                                                            <a class="sea-ui btn-xs btn-primary" href="qareview-order-reply.php">留言</a>
-
-                                                        </div>
+                                                    <!-- 訂單內商品數量 -->
+                                                    <div class="total-quantity hidden-xs-up">
+                                                        <span class="orderlist-subtitle">共</span>
+                                                        <span class="orderlist-title eng-num">90</span>
+                                                        <span class="orderlist-subtitle">件商品</span>
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                        <!-- 單筆訂單留言 End -->
-
-
-
-
-                                        <!-- 單筆訂單留言 -->
-                                        <tbody>
-                                            <tr class="table_row_header">
-                                                <td colspan="2">
-                                                    <div class="tableData-header">
-                                                        <div class="table_flexBox table_flexBox-between">
-
-                                                            <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i class="sea-btn-icon icon-alert-nofill icon-back icon-back-red"></i>待回覆</span>
-                                                            </div>
-
-                                                            <div class="date-time">
-                                                                <span class="eng-num date-time">2018/05/28<time>01:28</time></span>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr class="table_row_body">
-                                                <td data-title="商品">
-                                                    <div class="tableDeta-box">
-                                                        <!-- 商品資訊群組（圖＋文） -->
-                                                        <div class="productInfoGroup">
-                                                            <!-- 商品圖片 -->
-                                                            <div class="productInfo-img">
-                                                                <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
-                                                            </div>
-                                                            <!-- </div> -->
-
-                                                            <!-- 商品資訊 -->
-                                                            <div class="productInfo-info">
-
-                                                                <!-- 訂單編號 -->
-                                                                <div class="productInfo-info-orderNum">
-                                                                    <span class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                    <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                                </div>
-
-                                                                <!-- 商品名稱 -->
-                                                                <div class="productInfo-info-title">
-                                                                    <span class="productInfo-info-title-text"><a href="#">韓版氣質V領复古大擺裙純色收腰開叉洋裝韓版氣質</a><span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td data-title="買家留言">
-                                                    <div class="tableDeta-box">
-                                                        <div class="buyer-messageBox">
-                                                            <!-- 買家資訊 -->
-                                                            <div class="itemInfoGroup">
-                                                                <div class="list__itemInfo-userImg img-bg" style="background-image: url('img/buyer_avator_default.svg');">
-                                                                </div>
-                                                                <span class="list__itemInfo list__itemInfo-userName">so*****************om<span class="list__itemInfo-country">SG</span></span>
-                                                                </div>
-                                                                <!-- 買家留言 -->
-                                                                <span class="msg-text">請幫忙取消訂單，因為我想重新下單一次。謝謝!!</span>
-                                                            </div>
-                                                        </div>
-                                                </td>
-                                            </tr>
-
-                                            <!-- 按鈕 -->
-                                            <tr class="table_row_bottom">
-                                                <td colspan="2">
-
-                                                    <div class="table_flexBox table_flexBox-between">
-                                                        <!-- 訂單內商品數量 -->
-                                                        <div class="orderlist_amount hidden-xs-down">
-                                                            <span>Total</span>
-                                                            <span class="orderlist_amount_num eng-num">90</span>
-                                                            <span>items</span>
-                                                        </div>
-
-                                                        <!-- 操作按鈕欄 -->
-                                                        <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
-
-                                                            <a class="sea-ui btn-xs btn-primary-outlined js-sea-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
-
-                                                            <a class="sea-ui btn-xs btn-primary" href="qareview-order-reply.php">回覆留言</a>
-
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                        <!-- 單筆訂單留言 End -->
-
-
-
-                                        <!-- 單筆訂單留言 -->
-                                        <tbody>
-                                            <tr class="table_row_header">
-                                                <td colspan="2">
-                                                    <div class="tableData-header">
-
-                                                        <div class="table_flexBox table_flexBox-between">
-
-                                                            <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i class="sea-btn-icon icon-alert-nofill icon-back icon-back-red"></i>未讀取</span>
-                                                            </div>
-
-                                                            <div class="date-time">
-                                                                <span class="eng-num date-time">2018/05/28<time>01:28</time></span>
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr class="table_row_body">
-                                                <td data-title="商品">
-                                                    <div class="tableDeta-box">
-                                                        <!-- 商品資訊群組（圖＋文） -->
-                                                        <div class="productInfoGroup">
-                                                            <!-- 商品圖片 -->
-                                                            <div class="productInfo-img">
-                                                                <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
-                                                            </div>
-                                                            <!-- </div> -->
-
-                                                            <!-- 商品資訊 -->
-                                                            <div class="productInfo-info">
-
-                                                                <!-- 訂單編號 -->
-                                                                <div class="productInfo-info-orderNum">
-                                                                    <span class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                    <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                                </div>
-
-                                                                <!-- 商品名稱 -->
-                                                                <div class="productInfo-info-title">
-                                                                    <span class="productInfo-info-title-text"><a href="#">韓版氣質V領复古大擺裙純色收腰開叉洋裝韓版氣質</a><span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td data-title="買家留言">
-                                                    <div class="tableDeta-box">
-                                                        <!-- 訂單總金額 -->
-                                                        <div class="buyer-messageBox">
-                                                            <!-- 買家資訊 -->
-                                                            <div class="itemInfoGroup">
-                                                                <div class="list__itemInfo-userImg img-bg" style="background-image: url('img/buyer_avator_default.svg');">
-                                                                </div>
-                                                                <span class="list__itemInfo list__itemInfo-userName">so*****************om<span class="list__itemInfo-country">SG</span></span>
-                                                                </div>
-                                                                <!-- 買家留言 -->
-                                                                <span class="msg-text">請問您已經出貨了嗎？請問您已經出貨了嗎？請問您已經出貨了嗎？我還沒有收到商品！我還沒有收到商品！我還沒有收到商品！請問什麼時候會到貨呢？請老闆麻煩幫忙確認一下。</span>
-                                                            </div>
-                                                        </div>
-                                                </td>
-                                            </tr>
-
-                                            <!-- 按鈕 -->
-                                            <tr class="table_row_bottom">
-                                                <td colspan="2">
-
-                                                    <div class="table_flexBox table_flexBox-between">
-                                                        <!-- 訂單內商品數量 -->
-                                                        <div class="orderlist_amount hidden-xs-down">
-                                                            <span>Total</span>
-                                                            <span class="orderlist_amount_num eng-num">90</span>
-                                                            <span>items</span>
-                                                        </div>
-
-                                                        <!-- 操作按鈕欄 -->
-                                                        <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
-
-                                                            <a class="sea-ui btn-xs btn-primary-outlined js-sea-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
-
-                                                            <a class="sea-ui btn-xs btn-primary" href="qareview-order-reply.php">回覆留言</a>
-
-                                                        </div>
-                                                    </div>
-
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                        <!-- 單筆訂單留言 End -->
-
-
-                                    </table>
+                                        <!-- 買家資訊內容群組 -->
+                                        <div class="flexTable productBar-buyerInfoBox">
+                                            <div class="flexTable buyerInfoBox-buyerInfo">
+                                                <img class="buyInfo-avatar" src="img/brand/brand_01.jpg" alt="buyer" style="background-image: url('img/buyer_avator_default.svg');">
+                                                <span class="buyInfo-name">so*****************om<span class="buyInfo-name-country">SG</span></span>
+                                            </div>
+                                            <span class="buyerInfoBox-message">請問您已經出貨了嗎？請問您已經出貨了嗎？請問您已經出貨了嗎？</span>
+                                        </div>
+                                    </div>
+                                    <!-- 訂單操作按鈕群組 -->
+                                    <div class="flexTable orderlist-actionBar-space-between">
+                                        <!-- 訂單內商品數量 -->
+                                        <div class="total-quantity hidden-xs-down">
+                                            <span class="orderlist-subtitle">共</span>
+                                            <span class="orderlist-title eng-num">90</span>
+                                            <span class="orderlist-subtitle">件商品</span>
+                                        </div>
+                                        <!-- 操作按鈕欄 -->
+                                        <div class="actionBar">
+                                            <a class="sea-ui btn-xs btn-primary-outlined js-sea-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
+                                            <a class="sea-ui btn-xs btn-primary" href="qareview-order-reply.php">回覆留言</a>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!-- 單筆商品留言 結束 -->
+
+
+                                <!-- 單筆商品留言 -->
+                                <div class="listBox-singlelist">
+                                    <!-- 訂單狀態群組 -->
+                                    <div class="flexTable singlelist-statusBar">
+                                        <span class="statusBar-status"><i class="sea-btn-icon icon-alert-nofill icon-back icon-back-red"></i>待回覆</span>
+                                        <div>
+                                            <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 訂單資訊群組 -->
+                                    <div class="flexTable orderlist-infoBar">
+                                        <div class="flexTable infoBar-orderNumBox">
+                                            <!-- 訂單編號 -->
+                                            <div class="orderNumBox-orderNum">
+                                                <span class="orderlist-subtitle">訂單編號</span>
+                                                <span class="orderlist-title eng-num">9041800006091</span>
+                                            </div>
+                                            <!-- 訂單日期 -->
+                                            <div class="orderNumBox-orderNum">
+                                                <span class="orderlist-subtitle">訂單日期</span>
+                                                <span class="orderlist-title eng-num">2020/07/26</span>
+                                            </div>
+                                        </div>
+                                        <div class="flexTable infoBar-orderSourseBox">
+                                            <!-- 訂單來源 -->
+                                            <div class="orderNumBox-orderNum">
+                                                <span class="orderlist-subtitle">訂單來源</span>
+                                                <span class="orderlist-title eng-num">SG</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 商品留言內容群組 -->
+                                    <div class="flexTable qareview-productBar">
+                                        <!-- 商品圖文 -->
+                                        <div class="flexTable productBar-product">
+                                            <!-- 商品資訊群組（圖＋文） -->
+                                            <div class="productInfoGroup">
+                                                <!-- 商品圖片 -->
+                                                <div class="productInfo-img">
+                                                    <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
+                                                </div>
+                                                <!-- 商品資訊 -->
+                                                <div class="productInfo-info">
+
+                                                    <!-- 商品名稱 -->
+                                                    <div class="productInfo-info-title">
+                                                        <span class="productInfo-info-title-text">
+                                                            <a href="#">Winter short tube Chelsea boots Martin work boots</a>
+                                                        </span>
+                                                    </div>
+                                                    <!-- 商品規格 -->
+                                                    <div class="productInfo-info-subtitle">
+                                                        <span class="productInfo-info-subtitle-text">Size / Color / Type / Size / Color / Type / Size / Color / Type / Size / Color / Type</span>
+                                                    </div>
+                                                    <!-- 訂單內商品數量 -->
+                                                    <div class="total-quantity hidden-xs-up">
+                                                        <span class="orderlist-subtitle">共</span>
+                                                        <span class="orderlist-title eng-num">90</span>
+                                                        <span class="orderlist-subtitle">件商品</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 買家資訊內容群組 -->
+                                        <div class="flexTable productBar-buyerInfoBox">
+                                            <div class="flexTable buyerInfoBox-buyerInfo">
+                                                <img class="buyInfo-avatar" src="img/brand/brand_01.jpg" alt="buyer" style="background-image: url('img/buyer_avator_default.svg');">
+                                                <span class="buyInfo-name">so*****************om<span class="buyInfo-name-country">SG</span></span>
+                                            </div>
+                                            <span class="buyerInfoBox-message">請幫忙取消訂單，因為我想重新下單一次。謝謝!!</span>
+                                        </div>
+                                    </div>
+                                    <!-- 訂單操作按鈕群組 -->
+                                    <div class="flexTable orderlist-actionBar-space-between">
+                                        <!-- 訂單內商品數量 -->
+                                        <div class="total-quantity hidden-xs-down">
+                                            <span class="orderlist-subtitle">共</span>
+                                            <span class="orderlist-title eng-num">90</span>
+                                            <span class="orderlist-subtitle">件商品</span>
+                                        </div>
+                                        <!-- 操作按鈕欄 -->
+                                        <div class="actionBar">
+                                            <a class="sea-ui btn-xs btn-primary-outlined js-sea-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
+                                            <a class="sea-ui btn-xs btn-primary" href="qareview-order-reply.php">回覆留言</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 單筆商品留言 結束 -->
+
+                                <!-- 單筆商品留言 -->
+                                <div class="listBox-singlelist">
+                                    <!-- 訂單狀態群組 -->
+                                    <div class="flexTable singlelist-statusBar">
+                                        <span class="statusBar-status"><i class="sea-btn-icon icon-checked icon-back icon-back-green"></i>已回覆</span>
+                                        <div>
+                                            <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 訂單資訊群組 -->
+                                    <div class="flexTable orderlist-infoBar">
+                                        <div class="flexTable infoBar-orderNumBox">
+                                            <!-- 訂單編號 -->
+                                            <div class="orderNumBox-orderNum">
+                                                <span class="orderlist-subtitle">訂單編號</span>
+                                                <span class="orderlist-title eng-num">9041800006091</span>
+                                            </div>
+                                            <!-- 訂單日期 -->
+                                            <div class="orderNumBox-orderNum">
+                                                <span class="orderlist-subtitle">訂單日期</span>
+                                                <span class="orderlist-title eng-num">2020/07/26</span>
+                                            </div>
+                                        </div>
+                                        <div class="flexTable infoBar-orderSourseBox">
+                                            <!-- 訂單來源 -->
+                                            <div class="orderNumBox-orderNum">
+                                                <span class="orderlist-subtitle">訂單來源</span>
+                                                <span class="orderlist-title eng-num">SG</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 商品留言內容群組 -->
+                                    <div class="flexTable qareview-productBar">
+                                        <!-- 商品圖文 -->
+                                        <div class="flexTable productBar-product">
+                                            <!-- 商品資訊群組（圖＋文） -->
+                                            <div class="productInfoGroup">
+                                                <!-- 商品圖片 -->
+                                                <div class="productInfo-img">
+                                                    <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
+                                                </div>
+                                                <!-- 商品資訊 -->
+                                                <div class="productInfo-info">
+
+                                                    <!-- 商品名稱 -->
+                                                    <div class="productInfo-info-title">
+                                                        <span class="productInfo-info-title-text">
+                                                            <a href="#">Winter short tube Chelsea boots Martin work boots</a>
+                                                        </span>
+                                                    </div>
+                                                    <!-- 商品規格 -->
+                                                    <div class="productInfo-info-subtitle">
+                                                        <span class="productInfo-info-subtitle-text">Size / Color / Type / Size / Color / Type / Size / Color / Type / Size / Color / Type</span>
+                                                    </div>
+                                                    <!-- 訂單內商品數量 -->
+                                                    <div class="total-quantity hidden-xs-up">
+                                                        <span class="orderlist-subtitle">共</span>
+                                                        <span class="orderlist-title eng-num">90</span>
+                                                        <span class="orderlist-subtitle">件商品</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 買家資訊內容群組 -->
+                                        <div class="flexTable productBar-buyerInfoBox">
+                                            <div class="flexTable buyerInfoBox-buyerInfo">
+                                                <img class="buyInfo-avatar" src="img/brand/brand_01.jpg" alt="buyer" style="background-image: url('img/buyer_avator_default.svg');">
+                                                <span class="buyInfo-name">so*****************om<span class="buyInfo-name-country">SG</span></span>
+                                            </div>
+                                            <span class="buyerInfoBox-message">我還沒有收到商品，請問什麼時候會到貨呢？請老闆麻煩幫忙確認一下。</span>
+                                        </div>
+                                    </div>
+                                    <!-- 訂單操作按鈕群組 -->
+                                    <div class="flexTable orderlist-actionBar-space-between">
+                                        <!-- 訂單內商品數量 -->
+                                        <div class="total-quantity hidden-xs-down">
+                                            <span class="orderlist-subtitle">共</span>
+                                            <span class="orderlist-title eng-num">90</span>
+                                            <span class="orderlist-subtitle">件商品</span>
+                                        </div>
+                                        <!-- 操作按鈕欄 -->
+                                        <div class="actionBar">
+                                            <a class="sea-ui btn-xs btn-primary-outlined js-sea-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
+                                            <a class="sea-ui btn-xs btn-primary" href="qareview-order-reply.php">留言</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 單筆商品留言 結束 -->
+
                             </div>
-                            <!-- 整體表格結束 -->
+                            <!-- 所有訂單容器 結束 -->
+
+
                             <!-- PC 版 列出所有頁碼 -->
                             <div class="sea-ui page-pagination hidden-sm-down">
                                 <ul class="eng-num">

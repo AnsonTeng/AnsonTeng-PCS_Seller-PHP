@@ -123,10 +123,8 @@
                                             <input type="text" placeholder="請輸入商品名稱" value="Casio G-Shock Analog-Digital">
                                         </div>
                                     </div>
-                                    <!--  <a href="#" class="sea-ui btn-sm btn-cta inputGroup-btn">搜尋</a> -->
-                                    <a href="product-list.php" class="sea-ui btn-sm inputGroup-btn">
-                                        <li class="sea-btn-icon icon-delete"></li>清空
-                                    </a>
+                                    <a href="demo-product-clearsearch.php" class="inputGroup-btn searchBarGroup-searchBtn" style="display:none"><span class="sea-seller-icon icon-search"></span></a>
+                                    <a href="orderlist.php" class="sea-ui btn-sm inputGroup-btn"><span class="sea-btn-icon icon-delete"></span>清空</a>
                                 </div>
                                 <!-- 商品搜尋結束-->
 
@@ -169,20 +167,19 @@
                                     <div class="subHeader-textBox">
                                         <div class="subHeader-text">
                                             已選擇
-                                            <span class="eng-num">2</span>
+                                            <span class="eng-num">1</span>
                                             項商品
                                         </div>
 
                                         <div class="subHeader-text">
                                             總商品數
-                                            <span class="eng-num">86</span>
+                                            <span class="eng-num">4</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="product-list-statistics-btnGroup">
                                     <a href="#" class="sea-ui btn-xs btn-primary sellAllBtn">
-                                        <!-- All List -->
-                                        <!-- ชั้นวางทั้งหมด --> 全部上架</a>
+                                        <!-- All List -->全部上架</a>
                                     <!-- <a href="#" class="sea-ui btn-xs btn-cta readyOnTheMarketBtn">搬家商品全部上架</a> -->
                                 </div>
                             </div>
@@ -192,14 +189,10 @@
                             <div class="sea-ui tab-nav-bar tab-nav tab-nav-fluid">
                                 <div class="sea-ui tab-pointing">
                                     <ul class="tab-items no-margin">
-                                        <li><a href="#tab1" class="active">
-                                                <!-- คำสั่งซื้อทั้งหมด --> 全部商品 (3)</a></li>
-                                        <li><a href="#tab2">
-                                                <!-- คำสั่งซื้อทั้งหมด --> 上架商品 (0)</a></li>
-                                        <li><a href="#tab3">
-                                                <!-- รอการจัดส่ง --> 無庫存 (0)</a></li>
-                                        <li><a href="#tab4">
-                                                <!-- อยู่ระหว่างการขนส่ง -->下架商品 (1)</a></li>
+                                        <li><a href="#tab1" class="active">全部商品 (3)</a></li>
+                                        <li><a href="#tab2">上架商品 (0)</a></li>
+                                        <li><a href="#tab3">無庫存 (0)</a></li>
+                                        <li><a href="#tab4">下架商品 (1)</a></li>
                                         <li><a href="#tab4">待上架 (0)</a></li>
                                     </ul>
                                 </div>
@@ -256,8 +249,7 @@
                                                 </div>
                                                 <div class="card-content">
                                                     <div class="card-content-title">
-                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                            ประกัน CMG</h2>
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR ประกัน CMG</h2>
                                                     </div>
                                                     <div class="card-content-tag">
                                                         <div class="card-content-tag">
@@ -313,8 +305,7 @@
                                                 </div>
                                                 <div class="card-content">
                                                     <div class="card-content-title">
-                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                            ประกัน CMG</h2>
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR ประกัน CMG</h2>
                                                     </div>
                                                     <div class="card-content-tag">
                                                         <div class="card-content-tag">
@@ -366,8 +357,7 @@
                                                 </div>
                                                 <div class="card-content">
                                                     <div class="card-content-title">
-                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                            ประกัน CMG</h2>
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR ประกัน CMG</h2>
                                                     </div>
                                                     <div class="card-content-tag">
                                                         <div class="mutiple-spec-tag" style="display: none;">

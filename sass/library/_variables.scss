@@ -26,7 +26,7 @@ $custom-gutter-width: 20px;
     }
 
     [class^="col-"],
-    [class*=" col-"] {
+    [class*="col-"] {
         padding-left: $custom-gutter-width / 4;
         padding-right: $custom-gutter-width / 4;
     }
@@ -98,8 +98,8 @@ $colorYellow: #fdd641;
 $colorOrange: #f88a51;
 // $colorDeepOrange: #ff7500;
 $colorPink: #EAB2BA;
-// $colorLightBlue: #f3f9fc;
-$colorLightBlue: #F8FDFF;
+$colorLightBlue: #f3f9fc;
+// $colorLightBlue: #F8FDFF;
 // $colorRed: #ba0019; //PChomeSEA Red
 $colorRed: #DC3545;
 
@@ -113,7 +113,6 @@ $colorWhiteGreen: #eff3f6;
 $colorDeepLightGreen: #bbccd4;
 $colorGrayGreen: #7c97a2;
 $colorGreen: #3ec968;
-
 
 
 //表格預設寬度

@@ -32,20 +32,20 @@
     <title>PChomeSEA | 訂單留言回覆</title>
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -96,72 +96,91 @@
                                     <li class="sea-seller-icon icon-angle-right"></li>
                                     <li>客服管理</li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
-                                    <li>訂單留言</li>
+                                    <li>
+                                        <a href="qareview-order.php">訂單留言版</a>
+                                    </li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
                                     <li>內容回覆</li>
                                 </ul>
                             </div>
                             <!-- 頁面標題與麵包屑結束 -->
 
-                            <a id="replyGroup" name="replyGroup"></a>
-                            <div class="content-block">
 
-                                <div class="content-description no-padding">
-                                    <!-- 訂單明細群組 -->
-                                    <div class="qareview-ordertListGroup">
 
-                                        <!-- 商品資訊群組（圖＋文） -->
-                                        <div class="qareview-ordertList-info productInfoGroup">
-                                            <!-- 商品圖片 -->
-                                            <div class="productInfo-img">
-                                                <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
+                            <!-- 所有清單容器 -->
+                            <div class="listBox">
+
+                                <!-- 單筆商品留言 -->
+                                <div class="listBox-singlelist listBox-singlelist-qareview">
+
+                                    <!-- 訂單資訊群組 -->
+                                    <div class="flexTable orderlist-infoBar">
+                                        <div class="flexTable infoBar-orderNumBox">
+                                            <!-- 訂單編號 -->
+                                            <div class="orderNumBox-orderNum">
+                                                <span class="orderlist-subtitle">訂單編號</span>
+                                                <span class="orderlist-title eng-num">9041800006091</span>
                                             </div>
-                                            <!-- </div> -->
+                                            <!-- 訂單日期 -->
+                                            <div class="orderNumBox-orderNum">
+                                                <span class="orderlist-subtitle">訂單日期</span>
+                                                <span class="orderlist-title eng-num">2020/07/26</span>
+                                            </div>
+                                        </div>
+                                        <div class="flexTable infoBar-orderSourseBox">
+                                            <!-- 訂單來源 -->
+                                            <div class="orderNumBox-orderNum">
+                                                <span class="orderlist-subtitle">訂單來源</span>
+                                                <span class="orderlist-title eng-num">SG</span>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                            <!-- 商品資訊 -->
-                                            <div class="productInfo-info">
 
-                                                <!-- 訂單編號 -->
-                                                <div class="productInfo-info-orderNum">
-                                                    <span class="productInfo-info-orderNum-title">訂單編號</span>
-                                                    <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+
+                                    <!-- 商品留言內容群組 -->
+                                    <div class="flexTable qareview-productBar">
+                                        <!-- 商品圖文 -->
+                                        <div class="flexTable productBar-product">
+                                            <!-- 商品資訊群組（圖＋文） -->
+                                            <div class="productInfoGroup">
+                                                <!-- 商品圖片 -->
+                                                <div class="productInfo-img">
+                                                    <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
                                                 </div>
+                                                <!-- 商品資訊 -->
+                                                <div class="productInfo-info">
 
-                                                <!-- 商品名稱 -->
-                                                <div class="productInfo-info-title">
-                                                    <span class="productInfo-info-title-text">
-                                                        <a href="#">韓版氣質V領复古大擺裙純色收腰開叉洋裝韓版氣質</a>
-                                                        <span>
-                                                </div>
-
-                                                <!-- 訂單內商品數量 -->
-                                                <div class="orderlist_amount hidden-xs-up">
-                                                    <span>Total</span>
-                                                    <span class="orderlist_amount_num eng-num">90</span>
-                                                    <span>items</span>
+                                                    <!-- 商品名稱 -->
+                                                    <div class="productInfo-info-title">
+                                                        <span class="productInfo-info-title-text">
+                                                            <a href="#">Winter short tube Chelsea boots Martin work boots</a>
+                                                        </span>
+                                                    </div>
+                                                    <!-- 商品規格 -->
+                                                    <div class="productInfo-info-subtitle">
+                                                        <span class="productInfo-info-subtitle-text">Size / Color / Type / Size / Color / Type / Size / Color / Type / Size / Color / Type</span>
+                                                    </div>
+                                                    <!-- 訂單內商品數量 -->
+                                                    <div class="total-quantity">
+                                                        <span class="orderlist-subtitle">共</span>
+                                                        <span class="orderlist-title eng-num">90</span>
+                                                        <span class="orderlist-subtitle">件商品</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-
-
-                                        <!-- 訂單內商品數量 -->
-                                        <div class="qareview-ordertList-amount hidden-xs-down">
-                                            <div class="orderlist_amount">
-                                                <span>Total</span>
-                                                <span class="orderlist_amount_num eng-num">90</span>
-                                                <span>items</span>
-                                            </div>
-                                        </div>
-
-
-                                        <!-- 訂單明細按鈕 -->
-                                        <div class="qareview-ordertList-action">
+                                        <!-- 操作按鈕欄 -->
+                                        <div class="actionBar">
                                             <a class="sea-ui btn-xs btn-primary-outlined js-sea-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
                                         </div>
                                     </div>
                                 </div>
-
+                                <!-- 單筆商品留言 結束 -->
                             </div>
+                            <!-- 所有清單容器 結束 -->
+
+
 
                             <div class="content-block">
                                 <div class="content-description no-padding">
@@ -453,11 +472,11 @@
 
     <!-- 主選單預設開啟（編號） -->
     <script>
-        $(document).ready(function() {
-            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(6)');
-            menuItem.find('ul').show();
-            menuItem.addClass('active');
-        });
+    $(document).ready(function() {
+        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(6)');
+        menuItem.find('ul').show();
+        menuItem.addClass('active');
+    });
     </script>
 
 

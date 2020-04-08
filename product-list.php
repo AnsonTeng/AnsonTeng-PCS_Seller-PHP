@@ -104,8 +104,7 @@
                             <div class="msgbar">
                                 <div class="alert">
                                     <span class="sea-seller-icon icon-alert"></span>
-                                    <span class="sea-seller-icon icon-delete" onclick="this.parentElement.style.display='none';"></span>
-                                    有 <span>4</span> 個商品售完，請儘快補庫存。
+                                    <span class="sea-seller-icon icon-delete" onclick="this.parentElement.style.display='none';"></span> 有 <span>4</span> 個商品售完，請儘快補庫存。
                                 </div>
                             </div>
                             <!-- PChomeSEA Alert end-->
@@ -128,9 +127,8 @@
                                             <input type="text" placeholder="請輸入商品名稱">
                                         </div>
                                     </div>
-                                    <!-- <a href="demo-product-clearsearch.php"
-                                        class="sea-ui btn-sm btn-primary inputGroup-btn">搜尋</a> -->
                                     <a href="demo-product-clearsearch.php" class="inputGroup-btn searchBarGroup-searchBtn"><span class="sea-seller-icon icon-search"></span></a>
+                                    <a href="product-list.php" class="sea-ui btn-sm inputGroup-btn" style="display: none"><span class="sea-btn-icon icon-delete"></span>清空</a>
                                 </div>
                                 <!-- 商品搜尋結束-->
 
@@ -163,7 +161,6 @@
 
                             <!-- 商品列表總數 金額 與顯示筆數選單 -->
                             <div class="product-list-statistics">
-                                <!-- <div> -->
                                 <div class="product-list-statistics-subHeader">
                                     <div class="sea-ui form checkbox selectBtn selectBtn-selected">
                                         <label for="scales">
@@ -174,1113 +171,1115 @@
                                         <div class="subHeader-text"> 已選擇 <span class="eng-num">2</span> 項商品</div>
                                         <div class="subHeader-text">總商品數 <span class="eng-num">86</span></div>
                                     </div>
-                                    <div class="product-list-statistics-btnGroup">
-                                        <a href="#" class="sea-ui btn-xs btn-primary sellAllBtn"></a>
-                                        <!-- <a href="#" class="sea-ui btn-xs btn-primary readyOnTheMarketBtn">搬家商品全部上架</a> -->
-                                    </div>
                                 </div>
+                                <div class="product-list-statistics-btnGroup">
+                                    <a href="#" class="sea-ui btn-xs btn-primary sellAllBtn">全部上架</a>
+                                    <!-- <a href="#" class="sea-ui btn-xs btn-primary readyOnTheMarketBtn">搬家商品全部上架</a> -->
+                                </div>
+                            </div>
 
 
-                                <!-- 標籤導航 -->
-                                <div class="sea-ui tab-nav-bar tab-nav tab-nav-fluid">
-                                    <div class="sea-ui tab-pointing">
-                                        <ul class="tab-items no-margin">
-                                            <li><a href="#tab1" class="active">全部商品 (15)</a></li>
-                                            <li><a href="#tab2">上架商品 (5)</a></li>
-                                            <li><a href="#tab3">無庫存 (4)</a></li>
-                                            <li><a href="#tab4">下架商品 (3)</a></li>
-                                            <li><a href="#tab4">垃圾桶 (93)</a></li>
-                                        </ul>
-                                    </div>
+                            <!-- 標籤導航 -->
+                            <div class="sea-ui tab-nav-bar tab-nav tab-nav-fluid">
+                                <div class="sea-ui tab-pointing">
+                                    <ul class="tab-items no-margin">
+                                        <li><a href="#tab1" class="active">全部商品 (15)</a></li>
+                                        <li><a href="#tab2">上架商品 (5)</a></li>
+                                        <li><a href="#tab3">無庫存 (4)</a></li>
+                                        <li><a href="#tab4">下架商品 (3)</a></li>
+                                        <li><a href="#tab4">垃圾桶 (93)</a></li>
+                                    </ul>
                                 </div>
-                                <!--商品格子內容區-->
-                                <div class="grid-content">
-                                    <!--說明FOR RD: 沒有任何商品時 還是要顯示「新增商品到賣場」 -->
-                                    <div class="block-grid-2-4">
-                                        <a href="product-edit.php">
-                                            <div class="sea-ui card-edit-add">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img">
-                                                                <div class="sea-seller-icon icon-picture"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="add-to-list"><span class="sea-seller-icon icon-plus"></span>
-                                                        </div>
-                                                        <div class="add-to-list-text">新增商品到賣場</div>
-                                                        <div class="card-content-title">
-                                                            <h2></h2>
-                                                        </div>
-                                                        <div class="card-content-tag"></div>
-                                                        <div class="card-content-pricestock"></div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save"></div>
-                                                            <div class="card-footer-price"></div>
+                            </div>
+
+                            <!--商品格子內容區-->
+                            <div class="grid-content">
+                                <!--說明FOR RD: 沒有任何商品時 還是要顯示「新增商品到賣場」 -->
+                                <div class="block-grid-2-4">
+                                    <a href="product-edit.php">
+                                        <div class="sea-ui card-edit-add">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img">
+                                                            <div class="sea-seller-icon icon-picture"></div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="card-edit-action"></div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/6577b8ee142362e1a43100fdd82d1619_tn');">
-                                                            </div>
-                                                        </div>
+                                                <div class="card-content">
+                                                    <div class="add-to-list"><span class="sea-seller-icon icon-plus"></span>
                                                     </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="card-content-tag">
-                                                                <div class="mutiple-spec-tag" style="display: none;"><span class="sea-seller-icon icon-productedit"></span>多種規格</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">庫存 <span>499</span></div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
-                                                        </div>
+                                                    <div class="add-to-list-text">新增商品到賣場</div>
+                                                    <div class="card-content-title">
+                                                        <h2></h2>
+                                                    </div>
+                                                    <div class="card-content-tag"></div>
+                                                    <div class="card-content-pricestock"></div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save"></div>
+                                                        <div class="card-footer-price"></div>
                                                     </div>
                                                 </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
                                             </div>
+                                            <div class="card-edit-action"></div>
                                         </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <!-- 說明 FOR RD: 商品下架中狀態 -->
-                                                        <div class="unlist-overlay">
-                                                            <p><span class="sea-seller-icon icon-arrow-down"></span> 商品下架中</p>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/d5e6600a34d04b156236833e579c498b_tn');">
-                                                            </div>
-                                                        </div>
+                                    </a>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="card-content-tag">
-                                                                <div class="mutiple-spec-tag"><span class="sea-seller-icon icon-productedit"></span>多種規格</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">庫存 <span>94</span></div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/6577b8ee142362e1a43100fdd82d1619_tn');">
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-up"></span>上架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/8bbd08cd09111faed7ce6904107f949b_tn');">
-                                                            </div>
-                                                        </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR ประกัน CMG</h2>
                                                     </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR ประกัน CMG</h2>
-                                                        </div>
+                                                    <div class="card-content-tag">
                                                         <div class="card-content-tag">
                                                             <div class="mutiple-spec-tag" style="display: none;"><span class="sea-seller-icon icon-productedit"></span>多種規格</div>
                                                         </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">
-                                                                <!--Inventory-->庫存<span>499</span></div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">庫存 <span>499</span></div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>
-                                                    <!--List-->下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>
-                                                    <!--Preview-->預覽</a>
                                             </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
                                         </div>
                                     </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <!-- 說明 FOR RD: 商品下架中狀態 -->
+                                                    <div class="unlist-overlay">
+                                                        <p><span class="sea-seller-icon icon-arrow-down"></span> 商品下架中</p>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/d5e6600a34d04b156236833e579c498b_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="card-content-tag">
+                                                            <div class="mutiple-spec-tag"><span class="sea-seller-icon icon-productedit"></span>多種規格</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">庫存 <span>94</span></div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-up"></span>上架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/8bbd08cd09111faed7ce6904107f949b_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="mutiple-spec-tag" style="display: none;"><span class="sea-seller-icon icon-productedit"></span>多種規格</div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">
+                                                            <!--Inventory-->庫存<span>499</span></div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>
+                                                <!--List-->下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>
+                                                <!--Preview-->預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
 
-                                                        <!-- 說明 FOR RD: 商品待上架狀態 -->
-                                                        <div class="unlist-overlay pending">
-                                                            <p><span class="sea-seller-icon icon-alert"></span> 商品待上架</p>
-                                                        </div>
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/bda6507fc563143a84c5d65fd956ea55_tn');">
-                                                            </div>
-                                                        </div>
+                                                    <!-- 說明 FOR RD: 商品待上架狀態 -->
+                                                    <div class="unlist-overlay pending">
+                                                        <p><span class="sea-seller-icon icon-alert"></span> 商品待上架</p>
                                                     </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="card-content-tag">
-                                                                <div class="mutiple-spec-tag"><span class="sea-seller-icon icon-productedit"></span>多種規格</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">
-                                                                <div class="replen-stock-block"> <span class="sea-seller-icon icon-alert"></span><!-- Refill to sell -->補庫存再賣</div> 庫存 <span>0</span>
-                                                            </div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off no-js"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/bda6507fc563143a84c5d65fd956ea55_tn');">
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/0fbe22a6c159638b8b5a6858a9841ea3_tn');">
-                                                            </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="card-content-tag">
+                                                            <div class="mutiple-spec-tag"><span class="sea-seller-icon icon-productedit"></span>多種規格</div>
                                                         </div>
                                                     </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                                ประกัน CMG</h2>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">
+                                                            <div class="replen-stock-block"> <span class="sea-seller-icon icon-alert"></span><!-- Refill to sell -->補庫存再賣</div> 庫存 <span>0</span>
                                                         </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="card-content-tag">
-                                                                <div class="mutiple-spec-tag">
-                                                                    <span class="sea-seller-icon icon-productedit"></span>多種規格
-                                                                </div>
-                                                            </div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off no-js"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-content-pricestock">
-                                                            <div class="current-stock">
-                                                                <!--สินค้าเหลือ-->庫存<span class="eng-num">499</span></div>
-                                                            <div class="current-price eng-num"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>
-                                                    <!--เก็บสินค้า-->下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>
-                                                    <!--ลบ-->預覽</a>
                                             </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
                                         </div>
                                     </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/66f156cc8015d87c0cb7db109cb772ab_tn');">
-                                                            </div>
-                                                        </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                                ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="card-content-tag">
-                                                                <div class="mutiple-spec-tag">
-                                                                    <span class="sea-seller-icon icon-productedit"></span>多種規格
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">庫存 <span>20</span></div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off no-js"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/0fbe22a6c159638b8b5a6858a9841ea3_tn');">
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/f26255f66b4b7a9a70c9e99a1d1ae6aa_tn');">
-                                                            </div>
-                                                        </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
+                                                            ประกัน CMG</h2>
                                                     </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                                ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="card-content-tag">
-                                                                <div class="mutiple-spec-tag">
-                                                                    <span class="sea-seller-icon icon-productedit"></span>多種規格
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">庫存 <span>499</span></div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a href="product-edit.php" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/bda6507fc563143a84c5d65fd956ea55_tn');">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                                ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="card-content-tag">
-                                                                <div class="mutiple-spec-tag" style="display: none;">
-                                                                    <span class="sea-seller-icon icon-productedit"></span>多種規格
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">
-                                                                <div class="replen-stock-block"> <span class="sea-seller-icon icon-alert"></span> 補庫存再賣</div>
-                                                                庫存 <span>0</span>
-                                                            </div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off no-js"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <!-- 說明 FOR RD: 商品下架中狀態 -->
-                                                        <div class="unlist-overlay">
-                                                            <p><span class="sea-seller-icon icon-arrow-down"></span> 商品下架中</p>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/fa5daeb3623c40fe11fcd0e9200d279b_tn');">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                                ประกัน CMG</h2>
-                                                        </div>
+                                                    <div class="card-content-tag">
                                                         <div class="card-content-tag">
                                                             <div class="mutiple-spec-tag">
                                                                 <span class="sea-seller-icon icon-productedit"></span>多種規格
                                                             </div>
                                                         </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">
-                                                                <!--Inventory-->庫存<span>499</span></div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-content-pricestock">
+                                                        <div class="current-stock">
+                                                            <!--สินค้าเหลือ-->庫存<span class="eng-num">499</span></div>
+                                                        <div class="current-price eng-num"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
                                                         </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-up"></span>
-                                                    <!--แสดงสินค้า-->上架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>
-                                                    <!--ลบ-->預覽</a>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a href="product-edit.php" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/8bbd08cd09111faed7ce6904107f949b_tn');">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                                ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="mutiple-spec-tag" style="display: none;">
-                                                                <span class="sea-seller-icon icon-productedit"></span>多種規格
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">
-                                                                <!--Inventory-->庫存<span>499</span></div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>
-                                                    <!--Unlist-->下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>
-                                                    <!--Preview-->預覽</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/0fbe22a6c159638b8b5a6858a9841ea3_tn');">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                                ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="card-content-tag">
-                                                                <div class="mutiple-spec-tag">
-                                                                    <span class="sea-seller-icon icon-productedit"></span>多種規格
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock">
-                                                            <div class="current-stock">
-                                                                <!--สินค้าเหลือ-->庫存<span class="eng-num">499</span></div>
-                                                            <div class="current-price eng-num"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>
-                                                    <!--เก็บสินค้า-->下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>
-                                                    <!--ลบ-->預覽</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a href="product-edit.php" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/66f156cc8015d87c0cb7db109cb772ab_tn');">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                                ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="card-content-tag">
-                                                                <div class="mutiple-spec-tag">
-                                                                    <span class="sea-seller-icon icon-productedit"></span>多種規格
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">庫存 <span>45</span></div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off no-js"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/f26255f66b4b7a9a70c9e99a1d1ae6aa_tn');">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                                ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="card-content-tag">
-                                                                <div class="mutiple-spec-tag">
-                                                                    <span class="sea-seller-icon icon-productedit"></span>多種規格
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">庫存 <span>499</span></div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/8bbd08cd09111faed7ce6904107f949b_tn');">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                                ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="mutiple-spec-tag" style="display: none;">
-                                                                <span class="sea-seller-icon icon-productedit"></span>多種規格
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">
-                                                                <!--Inventory-->庫存<span>499</span></div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>
-                                                    <!--Unlist-->下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>
-                                                    <!--Preview-->預覽</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/bda6507fc563143a84c5d65fd956ea55_tn');">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                                ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="card-content-tag">
-                                                                <div class="mutiple-spec-tag">
-                                                                    <span class="sea-seller-icon icon-productedit"></span>多種規格
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">
-                                                                <div class="replen-stock-block"> <span class="sea-seller-icon icon-alert"></span> 補庫存再賣</div>
-                                                                庫存 <span>0</span>
-                                                            </div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off no-js"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/66f156cc8015d87c0cb7db109cb772ab_tn');">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                                ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="card-content-tag">
-                                                                <div class="mutiple-spec-tag">
-                                                                    <span class="sea-seller-icon icon-productedit"></span>多種規格
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">庫存 <span>20</span></div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off no-js"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/f26255f66b4b7a9a70c9e99a1d1ae6aa_tn');">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                                ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="card-content-tag">
-                                                                <div class="mutiple-spec-tag">
-                                                                    <span class="sea-seller-icon icon-productedit"></span>多種規格
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">庫存 <span>499</span></div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/bda6507fc563143a84c5d65fd956ea55_tn');">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                                ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="card-content-tag">
-                                                                <div class="mutiple-spec-tag" style="display: none;">
-                                                                    <span class="sea-seller-icon icon-productedit"></span>多種規格
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">
-                                                                <div class="replen-stock-block"> <span class="sea-seller-icon icon-alert"></span> 補庫存再賣</div>
-                                                                庫存 <span>0</span>
-                                                            </div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off no-js"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="block-grid-2-4">
-                                        <div class="sea-ui card-edit">
-                                            <div class="sea-ui form checkbox md selectBtn">
-                                                <label for="productId">
-                                                    <input type="checkbox" name="productId" value="" />
-                                                </label>
-                                            </div>
-                                            <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
-                                                <div class="card-edit-info">
-                                                    <div class="card-figure">
-                                                        <div class="delete-btn edit-btn">
-                                                            <li class="sea-seller-icon icon-trash"></li>
-                                                        </div>
-                                                        <div class="card-figure-inner">
-                                                            <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/6577b8ee142362e1a43100fdd82d1619_tn');">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <div class="card-content-title">
-                                                            <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
-                                                                ประกัน CMG</h2>
-                                                        </div>
-                                                        <div class="card-content-tag">
-                                                            <div class="card-content-tag">
-                                                                <div class="mutiple-spec-tag" style="display: none;">
-                                                                    <span class="sea-seller-icon icon-productedit"></span>多種規格
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-content-pricestock eng-num">
-                                                            <div class="current-stock">庫存 <span>499</span></div>
-                                                            <div class="current-price"><span>$</span>1,620</div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-save">
-                                                                <div class="sea-seller-icon icon-heart-off"></div>
-                                                                <div class="card-footer-save-text eng-num">72</div>
-                                                            </div>
-                                                            <div class="card-footer-price">
-                                                                <div class="card-footer-price-title eng-num">NT$</div>
-                                                                <div class="card-footer-price-text eng-num">1,626</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="card-edit-action">
-                                                <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
-                                                <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
-                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>
+                                                <!--เก็บสินค้า-->下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>
+                                                <!--ลบ-->預覽</a>
                                         </div>
                                     </div>
                                 </div>
-                                <!--商品格子內容區 end-->
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/66f156cc8015d87c0cb7db109cb772ab_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
+                                                            ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="card-content-tag">
+                                                            <div class="mutiple-spec-tag">
+                                                                <span class="sea-seller-icon icon-productedit"></span>多種規格
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">庫存 <span>20</span></div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off no-js"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/f26255f66b4b7a9a70c9e99a1d1ae6aa_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
+                                                            ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="card-content-tag">
+                                                            <div class="mutiple-spec-tag">
+                                                                <span class="sea-seller-icon icon-productedit"></span>多種規格
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">庫存 <span>499</span></div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a href="product-edit.php" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/bda6507fc563143a84c5d65fd956ea55_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
+                                                            ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="card-content-tag">
+                                                            <div class="mutiple-spec-tag" style="display: none;">
+                                                                <span class="sea-seller-icon icon-productedit"></span>多種規格
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">
+                                                            <div class="replen-stock-block"> <span class="sea-seller-icon icon-alert"></span> 補庫存再賣</div>
+                                                            庫存 <span>0</span>
+                                                        </div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off no-js"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <!-- 說明 FOR RD: 商品下架中狀態 -->
+                                                    <div class="unlist-overlay">
+                                                        <p><span class="sea-seller-icon icon-arrow-down"></span> 商品下架中</p>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/fa5daeb3623c40fe11fcd0e9200d279b_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
+                                                            ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="mutiple-spec-tag">
+                                                            <span class="sea-seller-icon icon-productedit"></span>多種規格
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">
+                                                            <!--Inventory-->庫存<span>499</span></div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-up"></span>
+                                                <!--แสดงสินค้า-->上架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>
+                                                <!--ลบ-->預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a href="product-edit.php" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/8bbd08cd09111faed7ce6904107f949b_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
+                                                            ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="mutiple-spec-tag" style="display: none;">
+                                                            <span class="sea-seller-icon icon-productedit"></span>多種規格
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">
+                                                            <!--Inventory-->庫存<span>499</span></div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>
+                                                <!--Unlist-->下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>
+                                                <!--Preview-->預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/0fbe22a6c159638b8b5a6858a9841ea3_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
+                                                            ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="card-content-tag">
+                                                            <div class="mutiple-spec-tag">
+                                                                <span class="sea-seller-icon icon-productedit"></span>多種規格
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content-pricestock">
+                                                        <div class="current-stock">
+                                                            <!--สินค้าเหลือ-->庫存<span class="eng-num">499</span></div>
+                                                        <div class="current-price eng-num"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>
+                                                <!--เก็บสินค้า-->下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>
+                                                <!--ลบ-->預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a href="product-edit.php" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/66f156cc8015d87c0cb7db109cb772ab_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
+                                                            ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="card-content-tag">
+                                                            <div class="mutiple-spec-tag">
+                                                                <span class="sea-seller-icon icon-productedit"></span>多種規格
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">庫存 <span>45</span></div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off no-js"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/f26255f66b4b7a9a70c9e99a1d1ae6aa_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
+                                                            ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="card-content-tag">
+                                                            <div class="mutiple-spec-tag">
+                                                                <span class="sea-seller-icon icon-productedit"></span>多種規格
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">庫存 <span>499</span></div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/8bbd08cd09111faed7ce6904107f949b_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
+                                                            ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="mutiple-spec-tag" style="display: none;">
+                                                            <span class="sea-seller-icon icon-productedit"></span>多種規格
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">
+                                                            <!--Inventory-->庫存<span>499</span></div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>
+                                                <!--Unlist-->下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>
+                                                <!--Preview-->預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/bda6507fc563143a84c5d65fd956ea55_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
+                                                            ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="card-content-tag">
+                                                            <div class="mutiple-spec-tag">
+                                                                <span class="sea-seller-icon icon-productedit"></span>多種規格
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">
+                                                            <div class="replen-stock-block"> <span class="sea-seller-icon icon-alert"></span> 補庫存再賣</div>
+                                                            庫存 <span>0</span>
+                                                        </div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off no-js"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/66f156cc8015d87c0cb7db109cb772ab_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
+                                                            ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="card-content-tag">
+                                                            <div class="mutiple-spec-tag">
+                                                                <span class="sea-seller-icon icon-productedit"></span>多種規格
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">庫存 <span>20</span></div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off no-js"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/f26255f66b4b7a9a70c9e99a1d1ae6aa_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
+                                                            ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="card-content-tag">
+                                                            <div class="mutiple-spec-tag">
+                                                                <span class="sea-seller-icon icon-productedit"></span>多種規格
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">庫存 <span>499</span></div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/bda6507fc563143a84c5d65fd956ea55_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
+                                                            ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="card-content-tag">
+                                                            <div class="mutiple-spec-tag" style="display: none;">
+                                                                <span class="sea-seller-icon icon-productedit"></span>多種規格
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">
+                                                            <div class="replen-stock-block"> <span class="sea-seller-icon icon-alert"></span> 補庫存再賣</div>
+                                                            庫存 <span>0</span>
+                                                        </div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off no-js"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-grid-2-4">
+                                    <div class="sea-ui card-edit">
+                                        <div class="sea-ui form checkbox md selectBtn">
+                                            <label for="productId">
+                                                <input type="checkbox" name="productId" value="" />
+                                            </label>
+                                        </div>
+                                        <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
+                                            <div class="card-edit-info">
+                                                <div class="card-figure">
+                                                    <div class="delete-btn edit-btn">
+                                                        <li class="sea-seller-icon icon-trash"></li>
+                                                    </div>
+                                                    <div class="card-figure-inner">
+                                                        <div class="card-figure-img img-bg" style="background-image: url('https://cf.shopee.tw/file/6577b8ee142362e1a43100fdd82d1619_tn');">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <div class="card-content-title">
+                                                        <h2>นาฬิกาข้อมือ Casio G-Shock Analog-Digital รุ่น GA-800SC-6ADR
+                                                            ประกัน CMG</h2>
+                                                    </div>
+                                                    <div class="card-content-tag">
+                                                        <div class="card-content-tag">
+                                                            <div class="mutiple-spec-tag" style="display: none;">
+                                                                <span class="sea-seller-icon icon-productedit"></span>多種規格
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content-pricestock eng-num">
+                                                        <div class="current-stock">庫存 <span>499</span></div>
+                                                        <div class="current-price"><span>$</span>1,620</div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-save">
+                                                            <div class="sea-seller-icon icon-heart-off"></div>
+                                                            <div class="card-footer-save-text eng-num">72</div>
+                                                        </div>
+                                                        <div class="card-footer-price">
+                                                            <div class="card-footer-price-title eng-num">NT$</div>
+                                                            <div class="card-footer-price-text eng-num">1,626</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-edit-action">
+                                            <a href="#"><span class="sea-seller-icon icon-arrow-down"></span>下架</a>
+                                            <a href="https://www.pchome.co.th/pro/content/show/3031804163971" target="blank" class="previewProductBtn"> <span class="sea-seller-icon icon-preview"></span>預覽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--商品格子內容區 end-->
 
-                                <!-- PC 版 列出所有頁碼 -->
-                                <div class="sea-ui page-pagination hidden-sm-down">
-                                    <ul class="eng-num">
-                                        <li class="active">1</li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#">6</a></li>
-                                        <li><a href="#">7</a></li>
-                                        <li><a href="#">8</a></li>
-                                        <li class="pagination-jump-next"></li>
-                                        <li>
-                                            <a class="pagination-next" href="#">
-                                                <span class="sea-seller-icon icon-angle-right"></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- 手機版 Load more-->
-                                <div class="sea-btn-loadcontent hidden-sm-up">
-                                    <a href="#" class="sea-ui btn btn-cta btn-load">LOAD MORE</a>
-                                </div>
+                            <!-- PC 版 列出所有頁碼 -->
+                            <div class="sea-ui page-pagination hidden-sm-down">
+                                <ul class="eng-num">
+                                    <li class="active">1</li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li class="pagination-jump-next"></li>
+                                    <li>
+                                        <a class="pagination-next" href="#">
+                                            <span class="sea-seller-icon icon-angle-right"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 手機版 Load more-->
+                            <div class="sea-btn-loadcontent hidden-sm-up">
+                                <a href="#" class="sea-ui btn btn-cta btn-load">LOAD MORE</a>
+                            </div>
                         </section>
                     </div>
                 </div>

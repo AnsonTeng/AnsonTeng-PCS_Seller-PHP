@@ -45,7 +45,7 @@
             <a class="seller-nav-link" href="#"><span class="sea-seller-icon icon-callcenter"></span>客服管理</a>
             <ul class="nav__sublink">
                 <li><a href="" onclick="window.location.href='qareview-product.php' ">商品留言版</a></li>
-                <li><a href="" onclick="window.location.href='qareview-order.php' ">買賣留言版</a></li>
+                <li><a href="" onclick="window.location.href='qareview-order.php' ">訂單留言版</a></li>
                 <li><a href="" onclick="window.location.href='qareview-review.php' ">賣場評價</a></li>
             </ul>
         </li>

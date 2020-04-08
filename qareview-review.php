@@ -32,20 +32,20 @@
     <title>PChomeSEA | 賣場評價</title>
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -105,7 +105,7 @@
                                     <div class="review-chart-figures">
                                         <div class="review-score">
                                             <div class="review-score-text">
-                                                <div class="resault-score eng-num">4.5</div>
+                                                <div class="resault-score eng-num">3.5</div>
                                                 <div class="total-score eng-num">5.0</div>
                                             </div>
                                             <!-- 說明FOR RD-->
@@ -132,7 +132,7 @@
                                     <div class="selectBox select-arrayOption">
                                         <div class="sea-ui form select">
                                             <select>
-                                                <option value="a1">未回覆(15)</option>
+                                                <option value="a1">未回覆(12)</option>
                                                 <option value="a2">已回覆(2)</option>
                                                 <option value="a2">賣家修改評價(1)</option>
                                             </select>
@@ -145,439 +145,422 @@
                             <div class="sea-ui tab-nav-bar tab-nav tab-nav-fluid">
                                 <div class="sea-ui tab-pointing">
                                     <ul class="tab-items no-margin">
-                                        <li><a href="#tab1" class="active">
-                                                <!-- คำสั่งซื้อทั้งหมด -->所有評價 (15)</a></li>
-                                        <li><a href="#tab2">
-                                                <!-- คำสั่งซื้อทั้งหมด --> 優良 (5)</a></li>
-                                        <li><a href="#tab3">
-                                                <!-- รอการจัดส่ง -->普通 (4)</a></li>
-                                        <li><a href="#tab4">
-                                                <!-- อยู่ระหว่างการขนส่ง -->待加強 (3)</a></li>
+                                        <li><a href="#tab1" class="active">所有評價 (12)</a></li>
+                                        <li><a href="#tab2">優良 (5)</a></li>
+                                        <li><a href="#tab3">普通 (4)</a></li>
+                                        <li><a href="#tab4">待加強 (3)</a></li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <!-- 整體表格 -->
-                            <div class="tableBox tableBox-reviewlist">
-                                <div class="table__tbody">
 
-                                    <!--說明FOR RD: 沒有任何評價紀錄時 -->
-                                    <div class="table_default_empaty" style="display: none;">
-                                        <div class="message-text">沒有評價資料</div>
-                                    </div>
-
-                                    <table>
-                                        <!-- colgroup -->
-                                        <colgroup>
-                                            <col class="table--w25">
-                                            <col class="table--w75">
-                                        </colgroup>
-                                        <!-- 單筆評價  一般未回覆 -->
-
-                                        <tbody>
-                                            <tr class="table_row_header">
-                                                <td colspan="2">
-                                                    <div class="tableData-header">
-                                                        <!-- 回覆狀態 -->
-                                                        <div class="table_flexBox table_flexBox-between">
-
-                                                            <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i class="sea-btn-icon icon-alert-nofill icon-back icon-back-red"></i>未回覆</span>
-                                                            </div>
-
-                                                            <div class="table_inlineBox table_inlineBox-alignRight">
-                                                                <span class="eng-num date-time">2018/05/28 <time class="hidden-xs-down">01:28</time></span>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr class="table_row_body">
-                                                <td data-title="評價人">
-                                                    <div class="tableDeta-box review-account-wrap">
-                                                        <!--評價人-->
-
-                                                        <div class="itemInfoGroup">
-                                                            <div class="list__itemInfo-userImg img-bg" style="background-image: url('img/buyer_avator_default.svg');">
-                                                            </div>
-                                                            <span class="list__itemInfo list__itemInfo-userName eng-num">62*******24</span>
-                                                        </div>
-                                                        <!--評價分數-->
-                                                        <div class="listReview-score-wrap">
-                                                            <!-- 說明FOR RD-->
-                                                            <!-- 評價星星 class 滿星：class="sea-seller-icon icon-star-on" / 半星：class="sea-seller-icon icon-star-off" / 空星：class="sea-seller-icon icon-star-off" -->
-                                                            <div class="sea-ui review-star">
-                                                                <ul>
-                                                                    <li class="sea-seller-icon icon-star-on"></li>
-                                                                    <li class="sea-seller-icon icon-star-on"></li>
-                                                                    <li class="sea-seller-icon icon-star-on"></li>
-                                                                    <li class="sea-seller-icon icon-star-half"></li>
-                                                                    <li class="sea-seller-icon icon-star-off"></li>
-                                                                </ul>
-                                                                <div class="review-text eng-num">3.5</div>
-                                                            </div>
-                                                            <div class="scroe-text"><span>評價：</span>普通</div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td data-title="評價留言">
-                                                    <div class="tableDeta-box">
-                                                        <!--評價留言 -->
-                                                        <div class="review-msg-wrap">
-                                                            <div class="list-review-msg">
-                                                                <div class="msg-text">
-                                                                    盒子很有質感，出貨速度很快。收到貨時很喜歡，過程中賣家回覆很及時，也很有耐心回答商品相關問題。下次還會繼續再購買！
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="orderlist-sm js-sea-panel-trigger" data-panel="orderDetails">
-                                                                <div class="productInfo-img small">
-                                                                    <img class="img-fluid" src="https://cf.shopee.tw/file/0fbe22a6c159638b8b5a6858a9841ea3_tn" alt="Product-Picture">
-                                                                </div>
-                                                                <div class="productInfo-info">
-
-                                                                    <!-- 訂單編號 -->
-                                                                    <div class="productInfo-info-orderNum">
-                                                                        <span class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                        <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                                    </div>
-                                                                    <!-- 商品名稱 -->
-                                                                    <div class="productInfo-info-title">
-                                                                        <span class="productInfo-info-title-text">Winter short tube Chelsea boots Martin work boots<span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="sea-seller-icon icon-angle-right"></div>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!-- 按鈕 -->
-                                            <tr class="table_row_bottom">
-                                                <td colspan="2">
-                                                    <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
-                                                        <!-- 操作按鈕欄 -->
-                                                        <a class="sea-ui btn-xs btn-primary replyreviewsBtn" href="#">回覆評價</a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                        <!-- 單筆評價  End -->
-
-                                        <!-- 單筆評價  一般已回覆 -->
-                                        <tbody>
-                                            <tr class="table_row_header">
-                                                <td colspan="2">
-                                                    <div class="tableData-header">
-                                                        <!-- 回覆狀態 -->
-                                                        <div class="table_flexBox table_flexBox-between">
-
-                                                            <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i class="sea-btn-icon icon-checked icon-back icon-back-green"></i>已回覆</span>
-                                                            </div>
-
-                                                            <div class="table_inlineBox table_inlineBox-alignRight">
-                                                                <span class="eng-num date-time">2018/05/28 <time class="hidden-xs-down">01:28</time></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr class="table_row_body">
-                                                <td data-title="評價人">
-                                                    <div class="tableDeta-box review-account-wrap">
-
-                                                        <div class="itemInfoGroup">
-                                                            <div class="list__itemInfo-userImg img-bg" style="background-image: url('img/buyer_avator_default.svg');">
-                                                            </div>
-                                                            <span class="list__itemInfo list__itemInfo-userName eng-num">
-                                                                th*********tm </span>
-                                                        </div>
-                                                        <div class="listReview-score-wrap">
-                                                            <!-- 說明FOR RD-->
-                                                            <!-- 評價星星 class 滿星：class="sea-seller-icon icon-star-on" / 半星：class="sea-seller-icon icon-star-off" / 空星：class="sea-seller-icon icon-star-off" -->
-                                                            <div class="sea-ui review-star">
-                                                                <ul>
-                                                                    <li class="sea-seller-icon icon-star-on"></li>
-                                                                    <li class="sea-seller-icon icon-star-on"></li>
-                                                                    <li class="sea-seller-icon icon-star-on"></li>
-                                                                    <li class="sea-seller-icon icon-star-on"></li>
-                                                                    <li class="sea-seller-icon icon-star-on"></li>
-                                                                </ul>
-                                                                <div class="review-text eng-num">5.0</div>
-                                                            </div>
-                                                            <div class="scroe-text"><span>評價：</span>優良</div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td data-title="評價留言">
-                                                    <div class="tableDeta-box">
-                                                        <!--評價留言 -->
-                                                        <div class="review-msg-wrap">
-                                                            <div class="list-review-msg">
-                                                                <div class="msg-text">
-                                                                    商品跟照片沒有差別，版型剪裁與布料都很有質感。會推薦朋友購買!
-                                                                </div>
-                                                            </div>
-                                                            <div class="orderlist-sm js-sea-panel-trigger" data-panel="orderDetails">
-                                                                <div class="productInfo-img small">
-                                                                    <img class="img-fluid" src="https://cf.shopee.tw/file/0fbe22a6c159638b8b5a6858a9841ea3_tn" alt="Product-Picture">
-                                                                </div>
-                                                                <div class="productInfo-info">
-
-                                                                    <!-- 訂單編號 -->
-                                                                    <div class="productInfo-info-orderNum">
-                                                                        <span class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                        <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                                    </div>
-                                                                    <!-- 商品名稱 -->
-                                                                    <div class="productInfo-info-title">
-                                                                        <span class="productInfo-info-title-text">Winter short tube Chelsea boots Martin work boots<span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="sea-seller-icon icon-angle-right"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!-- 賣家回覆 -->
-                                            <tr class="table_row_white">
-                                                <td></td>
-                                                <td>
-                                                    <div class="tableData-bottom">
-                                                        <!-- 賣家回覆欄 -->
-                                                        <div class="listReview-reply-wrap">
-                                                            <div class="list-review-msg">
-                                                                <div class="review-msg-title">
-                                                                    <div class="msg-title-text">您的回覆</div>
-                                                                    <span class="eng-num date-time">2018/05/28 <time class="hidden-xs-down">01:28</time></span>
-                                                                </div>
-                                                                <div class="msg-text">
-                                                                    匯款迅速的好買家，很愉快！
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                        <!-- 單筆評價  End -->
-
-                                        <!-- 單筆評價  買家更新一次評價-->
-                                        <tbody>
-                                            <tr class="table_row_header">
-                                                <td colspan="2">
-                                                    <div class="tableData-header">
-                                                        <!-- 回覆狀態 -->
-                                                        <div class="table_flexBox table_flexBox-between">
-
-                                                            <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i class="sea-btn-icon icon-alert-nofill icon-back icon-back-red"></i>買家已更新評價</span>
-                                                            </div>
-
-                                                            <div class="table_inlineBox table_inlineBox-alignRight">
-                                                                <span class="eng-num date-time">2018/05/28 <time class="hidden-xs-down">01:28</time></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr class="table_row_body">
-                                                <td data-title="評價人">
-                                                    <div class="tableDeta-box review-account-wrap">
-                                                        <div class="itemInfoGroup">
-                                                            <div class="list__itemInfo-userImg img-bg" style="background-image: url('img/buyer_avator_default.svg');">
-                                                            </div>
-                                                            <span class="list__itemInfo list__itemInfo-userName eng-num">ke***********ri
-                                                            </span>
-                                                        </div>
-                                                        <div class="listReview-score-wrap">
-                                                            <!-- 說明FOR RD-->
-                                                            <!-- 評價星星 class 滿星：class="sea-seller-icon icon-star-on" / 半星：class="sea-seller-icon icon-star-off" / 空星：class="sea-seller-icon icon-star-off" -->
-                                                            <div class="sea-ui review-star">
-                                                                <ul>
-                                                                    <li class="sea-seller-icon icon-star-on"></li>
-                                                                    <li class="sea-seller-icon icon-star-on"></li>
-                                                                    <li class="sea-seller-icon icon-star-off"></li>
-                                                                    <li class="sea-seller-icon icon-star-off"></li>
-                                                                    <li class="sea-seller-icon icon-star-off"></li>
-                                                                </ul>
-                                                                <div class="review-text eng-num">2.0</div>
-                                                            </div>
-                                                            <div class="scroe-text"><span>評價：</span>待加強</div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td data-title="評價留言">
-                                                    <div class="tableDeta-box">
-                                                        <!--評價留言 -->
-                                                        <div class="review-msg-wrap">
-                                                            <div class="list-review-msg">
-                                                                <div class="msg-text">
-                                                                    下水洗後開始褪色，線也脫落了！品質沒有想像中的好。
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="orderlist-sm js-sea-panel-trigger" data-panel="orderDetails">
-                                                                <div class="productInfo-img small">
-                                                                    <img class="img-fluid" src="https://cf.shopee.tw/file/0fbe22a6c159638b8b5a6858a9841ea3_tn" alt="Product-Picture">
-                                                                </div>
-                                                                <div class="productInfo-info">
-
-                                                                    <!-- 訂單編號 -->
-                                                                    <div class="productInfo-info-orderNum">
-                                                                        <span class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                        <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                                    </div>
-                                                                    <!-- 商品名稱 -->
-                                                                    <div class="productInfo-info-title">
-                                                                        <span class="productInfo-info-title-text">Winter short tube Chelsea boots Martin work boots<span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="sea-seller-icon icon-angle-right"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!-- 按鈕 -->
-                                            <tr class="table_row_bottom">
-                                                <td colspan="2">
-                                                    <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
-                                                        <!-- 操作按鈕欄 -->
-                                                        <div class="table_flexBox table_flexBox-right column_action">
-                                                            <a class="sea-ui btn-xs btn-primary-outlined historyreviewsBtn" href="#">查看過去評價</a>
-                                                            <a class="sea-ui btn-xs btn-primary replyreviewsBtn" href="#">回覆評價</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                        <!-- 單筆評價  End -->
-
-                                        <!-- 單筆評價  賣家回覆更新後評價-->
-                                        <tbody>
-                                            <tr class="table_row_header">
-                                                <td colspan="2">
-                                                    <div class="tableData-header">
-                                                        <!-- 回覆狀態 -->
-                                                        <div class="table_flexBox table_flexBox-between">
-                                                            <div class="table_inlineBox">
-                                                                <span class="list__itemInfo list_status"><i class="sea-btn-icon icon-checked icon-back icon-back-green"></i>已回覆</span>
-                                                            </div>
-                                                            <div class="table_inlineBox table_inlineBox-alignRight">
-                                                                <span class="eng-num date-time">2018/05/28 <time class="hidden-xs-down">01:28</time></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr class="table_row_body">
-                                                <td data-title="評價人">
-                                                    <div class="tableDeta-box review-account-wrap">
-                                                        <div class="itemInfoGroup">
-                                                            <div class="list__itemInfo-userImg img-bg" style="background-image: url('img/buyer_avator_default.svg');">
-                                                            </div>
-                                                            <span class="list__itemInfo list__itemInfo-userName eng-num">do*********ex
-                                                            </span>
-                                                        </div>
-                                                        <div class="listReview-score-wrap">
-                                                            <!-- 說明FOR RD-->
-                                                            <!-- 評價星星 class 滿星：class="sea-seller-icon icon-star-on" / 半星：class="sea-seller-icon icon-star-off" / 空星：class="sea-seller-icon icon-star-off" -->
-                                                            <div class="sea-ui review-star">
-                                                                <ul>
-                                                                    <li class="sea-seller-icon icon-star-on"></li>
-                                                                    <li class="sea-seller-icon icon-star-off"></li>
-                                                                    <li class="sea-seller-icon icon-star-off"></li>
-                                                                    <li class="sea-seller-icon icon-star-off"></li>
-                                                                    <li class="sea-seller-icon icon-star-off"></li>
-                                                                </ul>
-                                                                <div class="review-text eng-num">1.0</div>
-                                                            </div>
-                                                            <div class="scroe-text"><span>評價：</span>待加強</div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td data-title="評價留言">
-                                                    <div class="tableDeta-box">
-                                                        <!--評價留言 -->
-                                                        <div class="review-msg-wrap">
-                                                            <div class="list-review-msg">
-                                                                <div class="msg-text">
-                                                                    原本很喜歡，用了一陣子以後又沒有這麼喜歡了。
-                                                                </div>
-                                                            </div>
-                                                            <div class="orderlist-sm js-sea-panel-trigger" data-panel="orderDetails">
-                                                                <div class="productInfo-img small">
-                                                                    <img class="img-fluid" src="https://cf.shopee.tw/file/0fbe22a6c159638b8b5a6858a9841ea3_tn" alt="Product-Picture">
-                                                                </div>
-                                                                <div class="productInfo-info">
-
-                                                                    <!-- 訂單編號 -->
-                                                                    <div class="productInfo-info-orderNum">
-                                                                        <span class="productInfo-info-orderNum-title">訂單編號</span>
-                                                                        <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                                    </div>
-                                                                    <!-- 商品名稱 -->
-                                                                    <div class="productInfo-info-title">
-                                                                        <span class="productInfo-info-title-text">Winter short tube Chelsea boots Martin work boots<span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="sea-seller-icon icon-angle-right"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <!-- 賣家回覆 -->
-                                            <tr class="table_row_white">
-                                                <td></td>
-                                                <td>
-                                                    <div class="tableData-bottom">
-                                                        <!-- 賣家回覆欄 -->
-                                                        <div class="listReview-reply-wrap">
-                                                            <div class="list-review-msg">
-                                                                <div class="review-msg-title">
-                                                                    <div class="msg-title-text">您的回覆</div>
-                                                                    <span class="eng-num date-time">2018/05/28 <time class="hidden-xs-down">01:28</time></span>
-                                                                </div>
-                                                                <div class="msg-text">
-                                                                    反反覆覆的你有什麼病！
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <!-- 按鈕 -->
-                                            <tr class="table_row_bottom">
-                                                <td colspan="2">
-                                                    <div class="table_flexBox table_flexBox-right table_flexBox-wrap">
-                                                        <!-- 操作按鈕欄 -->
-                                                        <div class="table_flexBox table_flexBox-right column_action">
-                                                            <a class="sea-ui btn-xs btn-primary-outlined historyreviewsBtn" href="#">查看過去評價</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                        <!-- 單筆評價  End -->
-                                    </table>
+                            <!-- 所有清單容器 -->
+                            <div class="listBox">
+                                <!--說明FOR RD: 沒有任何評價紀錄時 -->
+                                <div class="table_default_empaty" style="display: none;">
+                                    <div class="message-text">沒有評價資料</div>
                                 </div>
+
+                                <!-- 單筆評價 -->
+                                <div class="listBox-singlelist listBox-singlelist-review">
+                                    <!-- 評價狀態群組 -->
+                                    <div class="flexTable singlelist-statusBar">
+                                        <span class="statusBar-status"><i class="sea-btn-icon icon-alert-nofill icon-back icon-back-red"></i>未回覆</span>
+                                        <div>
+                                            <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                        </div>
+                                    </div>
+                                    <!-- 評價內容群組 -->
+                                    <div class="flexTable qareview-reviewBar">
+                                        <!-- 買家資訊內容群組 -->
+                                        <div class="flexTable productBar-buyerInfoBox">
+                                            <div class="flexTable buyerInfoBox-buyerInfo">
+                                                <img class="buyInfo-avatar" src="img/brand/brand_01.jpg" alt="buyer" style="background-image: url('img/buyer_avator_default.svg');">
+                                                <span class="buyInfo-name">so************om</span>
+                                            </div>
+                                            <!--評價分數-->
+                                            <div class="flexTable buyerInfoBox-reviewScore">
+                                                <!-- 說明FOR RD-->
+                                                <!-- 評價星星 class 滿星：class="sea-seller-icon icon-star-on" / 半星：class="sea-seller-icon icon-star-off" / 空星：class="sea-seller-icon icon-star-off" -->
+                                                <div class="sea-ui review-star">
+                                                    <ul>
+                                                        <li class="sea-seller-icon icon-star-on"></li>
+                                                        <li class="sea-seller-icon icon-star-on"></li>
+                                                        <li class="sea-seller-icon icon-star-on"></li>
+                                                        <li class="sea-seller-icon icon-star-half"></li>
+                                                        <li class="sea-seller-icon icon-star-off"></li>
+                                                    </ul>
+                                                    <div class="review-text eng-num">3.5</div>
+                                                </div>
+                                                <div class="scroe-text"><span>評價：</span>普通</div>
+                                            </div>
+                                        </div>
+                                        <!-- 商品圖文 -->
+                                        <div class="flexTable productBar-product">
+                                            <!-- 買家留言 -->
+                                            <div class="buyerReview">
+                                                <span>盒子很有質感，出貨速度很快。收到貨時很喜歡，過程中賣家回覆很即時，也很有耐心回答商品相關問題。下次還會繼續再購買！</span>
+                                            </div>
+                                            <!-- 商品資訊群組（圖＋文＋icon） -->
+                                            <div class="flexTable productBar-productBox js-sea-panel-trigger" data-panel="orderDetails">
+                                                <!-- 商品資訊群組（圖＋文） -->
+                                                <div class="productInfoGroup">
+                                                    <!-- 商品圖片 -->
+                                                    <div class="productInfo-img">
+                                                        <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
+                                                    </div>
+                                                    <!-- 商品資訊 -->
+                                                    <div class="productInfo-info">
+                                                        <!-- 商品編號 -->
+                                                        <div class="productInfo-info-orderNum">
+                                                            <span class="productInfo-info-orderNum-title">訂單編號</span>
+                                                            <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                        </div>
+                                                        <!-- 商品編號 -->
+                                                        <div class="productInfo-info-orderNum">
+                                                            <span class="productInfo-info-orderNum-title">訂單來源</span>
+                                                            <span class="productInfo-info-orderNum-text eng-num">SG</span>
+                                                        </div>
+                                                        <!-- 商品名稱 -->
+                                                        <div class="productInfo-info-title">
+                                                            <span class="productInfo-info-title-text">
+                                                                <a href="#">Winter short tube Chelsea boots Martin work boots</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="productBox-icon">
+                                                    <span class="sea-seller-icon icon-angle-right"></span>
+                                                </div>
+                                            </div>
+                                            <!-- 賣家回覆 -->
+                                            <!-- 說明FOR RD: 賣家尚未回覆評價時 不顯示此欄位 -->
+                                            <div class="sellerReview" style="display: none">
+                                                <div class="flexTable sellerReview-statusBar">
+                                                    <span class="statusBar-title">您的回覆</span>
+                                                    <div>
+                                                        <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                                    </div>
+                                                </div>
+                                                <div class="sellerReview-reply">
+                                                    <span>匯款迅速的好買家。您的建議與指教是我們精進的指標，能帶給您好的體驗是我們的初衷。希望還有機會能為您服務，歡迎再來本店參觀選購！</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 評價操作按鈕群組 -->
+                                    <!--說明FOR RD: 賣家第一次回覆評價後，不顯示此欄位。但買家更新評價後，仍要顯示此欄位。 -->
+                                    <div class="flexTable orderlist-actionBar-flex-end">
+                                        <!-- 操作按鈕欄 -->
+                                        <div class="actionBar">
+                                            <a class="sea-ui btn-xs btn-primary replyreviewsBtn" href="#">回覆評價</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 單筆評價 結束 -->
+
+
+                                <!-- 單筆評價 -->
+                                <div class="listBox-singlelist listBox-singlelist-review">
+                                    <!-- 評價狀態群組 -->
+                                    <div class="flexTable singlelist-statusBar">
+                                        <span class="statusBar-status"><i class="sea-btn-icon icon-checked icon-back icon-back-green"></i>已回覆</span>
+                                        <div>
+                                            <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                        </div>
+                                    </div>
+                                    <!-- 評價內容群組 -->
+                                    <div class="flexTable qareview-reviewBar">
+                                        <!-- 買家資訊內容群組 -->
+                                        <div class="flexTable productBar-buyerInfoBox">
+                                            <div class="flexTable buyerInfoBox-buyerInfo">
+                                                <img class="buyInfo-avatar" src="img/brand/brand_01.jpg" alt="buyer" style="background-image: url('img/buyer_avator_default.svg');">
+                                                <span class="buyInfo-name">so************om</span>
+                                            </div>
+                                            <!--評價分數-->
+                                            <div class="flexTable buyerInfoBox-reviewScore">
+                                                <!-- 說明FOR RD-->
+                                                <!-- 評價星星 class 滿星：class="sea-seller-icon icon-star-on" / 半星：class="sea-seller-icon icon-star-off" / 空星：class="sea-seller-icon icon-star-off" -->
+                                                <div class="sea-ui review-star">
+                                                    <ul>
+                                                        <li class="sea-seller-icon icon-star-on"></li>
+                                                        <li class="sea-seller-icon icon-star-on"></li>
+                                                        <li class="sea-seller-icon icon-star-on"></li>
+                                                        <li class="sea-seller-icon icon-star-on"></li>
+                                                        <li class="sea-seller-icon icon-star-on"></li>
+                                                    </ul>
+                                                    <div class="review-text eng-num">5.0</div>
+                                                </div>
+                                                <div class="scroe-text"><span>評價：</span>優良</div>
+                                            </div>
+                                        </div>
+                                        <!-- 商品圖文 -->
+                                        <div class="flexTable productBar-product">
+                                            <!-- 買家留言 -->
+                                            <div class="buyerReview">
+                                                <span>商品跟照片沒有差別，版型剪裁與布料都很有質感。會推薦朋友購買!</span>
+                                            </div>
+                                            <!-- 商品資訊群組（圖＋文＋icon） -->
+                                            <div class="flexTable productBar-productBox js-sea-panel-trigger" data-panel="orderDetails">
+                                                <!-- 商品資訊群組（圖＋文） -->
+                                                <div class="productInfoGroup">
+                                                    <!-- 商品圖片 -->
+                                                    <div class="productInfo-img">
+                                                        <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
+                                                    </div>
+                                                    <!-- 商品資訊 -->
+                                                    <div class="productInfo-info">
+                                                        <!-- 商品編號 -->
+                                                        <div class="productInfo-info-orderNum">
+                                                            <span class="productInfo-info-orderNum-title">訂單編號</span>
+                                                            <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                        </div>
+                                                        <!-- 商品編號 -->
+                                                        <div class="productInfo-info-orderNum">
+                                                            <span class="productInfo-info-orderNum-title">訂單來源</span>
+                                                            <span class="productInfo-info-orderNum-text eng-num">SG</span>
+                                                        </div>
+                                                        <!-- 商品名稱 -->
+                                                        <div class="productInfo-info-title">
+                                                            <span class="productInfo-info-title-text">
+                                                                <a href="#">Winter short tube Chelsea boots Martin work boots</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="productBox-icon">
+                                                    <span class="sea-seller-icon icon-angle-right"></span>
+                                                </div>
+                                            </div>
+                                            <!-- 賣家回覆 -->
+                                            <!-- 說明FOR RD: 賣家尚未回覆評價時 不顯示此欄位 -->
+                                            <div class="sellerReview">
+                                                <div class="flexTable sellerReview-statusBar">
+                                                    <span class="statusBar-title">您的回覆</span>
+                                                    <div>
+                                                        <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                                    </div>
+                                                </div>
+                                                <div class="sellerReview-reply">
+                                                    <span>匯款迅速的好買家。您的建議與指教是我們精進的指標，能帶給您好的體驗是我們的初衷。希望還有機會能為您服務，歡迎再來本店參觀選購！</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 評價操作按鈕群組 -->
+                                    <!--說明FOR RD: 賣家第一次回覆評價後，不顯示此欄位。但買家更新評價後，仍要顯示此欄位。 -->
+                                    <div class="flexTable orderlist-actionBar-flex-end" style="display:none">
+                                        <!-- 操作按鈕欄 -->
+                                        <div class="actionBar">
+                                            <a class="sea-ui btn-xs btn-primary replyreviewsBtn" href="#">回覆評價</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 單筆評價 結束 -->
+
+
+                                <!-- 單筆評價 -->
+                                <div class="listBox-singlelist listBox-singlelist-review">
+                                    <!-- 評價狀態群組 -->
+                                    <div class="flexTable singlelist-statusBar">
+                                        <span class="statusBar-status"><i class="sea-btn-icon icon-alert-nofill icon-back icon-back-red"></i>買家已更新評價</span>
+                                        <div>
+                                            <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                        </div>
+                                    </div>
+                                    <!-- 評價內容群組 -->
+                                    <div class="flexTable qareview-reviewBar">
+                                        <!-- 買家資訊內容群組 -->
+                                        <div class="flexTable productBar-buyerInfoBox">
+                                            <div class="flexTable buyerInfoBox-buyerInfo">
+                                                <img class="buyInfo-avatar" src="img/brand/brand_01.jpg" alt="buyer" style="background-image: url('img/buyer_avator_default.svg');">
+                                                <span class="buyInfo-name">so************om</span>
+                                            </div>
+                                            <!--評價分數-->
+                                            <div class="flexTable buyerInfoBox-reviewScore">
+                                                <!-- 說明FOR RD-->
+                                                <!-- 評價星星 class 滿星：class="sea-seller-icon icon-star-on" / 半星：class="sea-seller-icon icon-star-off" / 空星：class="sea-seller-icon icon-star-off" -->
+                                                <div class="sea-ui review-star">
+                                                    <ul>
+                                                        <li class="sea-seller-icon icon-star-on"></li>
+                                                        <li class="sea-seller-icon icon-star-on"></li>
+                                                        <li class="sea-seller-icon icon-star-off"></li>
+                                                        <li class="sea-seller-icon icon-star-off"></li>
+                                                        <li class="sea-seller-icon icon-star-off"></li>
+                                                    </ul>
+                                                    <div class="review-text eng-num">2.0</div>
+                                                </div>
+                                                <div class="scroe-text"><span>評價：</span>待加強</div>
+                                            </div>
+                                        </div>
+                                        <!-- 商品圖文 -->
+                                        <div class="flexTable productBar-product">
+                                            <!-- 買家留言 -->
+                                            <div class="buyerReview">
+                                                <span>下水洗後開始褪色，線也脫落了！品質沒有想像中的好。</span>
+                                            </div>
+                                            <!-- 商品資訊群組（圖＋文＋icon） -->
+                                            <div class="flexTable productBar-productBox js-sea-panel-trigger" data-panel="orderDetails">
+                                                <!-- 商品資訊群組（圖＋文） -->
+                                                <div class="productInfoGroup">
+                                                    <!-- 商品圖片 -->
+                                                    <div class="productInfo-img">
+                                                        <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
+                                                    </div>
+                                                    <!-- 商品資訊 -->
+                                                    <div class="productInfo-info">
+                                                        <!-- 商品編號 -->
+                                                        <div class="productInfo-info-orderNum">
+                                                            <span class="productInfo-info-orderNum-title">訂單編號</span>
+                                                            <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                        </div>
+                                                        <!-- 商品編號 -->
+                                                        <div class="productInfo-info-orderNum">
+                                                            <span class="productInfo-info-orderNum-title">訂單來源</span>
+                                                            <span class="productInfo-info-orderNum-text eng-num">SG</span>
+                                                        </div>
+                                                        <!-- 商品名稱 -->
+                                                        <div class="productInfo-info-title">
+                                                            <span class="productInfo-info-title-text">
+                                                                <a href="#">Winter short tube Chelsea boots Martin work boots</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="productBox-icon">
+                                                    <span class="sea-seller-icon icon-angle-right"></span>
+                                                </div>
+                                            </div>
+                                            <!-- 賣家回覆 -->
+                                            <!-- 說明FOR RD: 賣家尚未回覆評價時 不顯示此欄位 -->
+                                            <div class="sellerReview" style="display: none">
+                                                <div class="flexTable sellerReview-statusBar">
+                                                    <span class="statusBar-title">您的回覆</span>
+                                                    <div>
+                                                        <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                                    </div>
+                                                </div>
+                                                <div class="sellerReview-reply">
+                                                    <span>匯款迅速的好買家。您的建議與指教是我們精進的指標，能帶給您好的體驗是我們的初衷。希望還有機會能為您服務，歡迎再來本店參觀選購！</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 評價操作按鈕群組 -->
+                                    <!--說明FOR RD: 賣家第一次回覆評價後，不顯示此欄位。但買家更新評價後，仍要顯示此欄位。 -->
+                                    <div class="flexTable orderlist-actionBar-flex-end">
+                                        <!-- 操作按鈕欄 -->
+                                        <div class="actionBar">
+                                            <a class="sea-ui btn-xs btn-primary-outlined historyreviewsBtn" href="#">查看過去評價</a>
+                                            <a class="sea-ui btn-xs btn-primary replyreviewsBtn" href="#">回覆評價</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 單筆評價 結束 -->
+
+
+                                <!-- 單筆評價 -->
+                                <div class="listBox-singlelist listBox-singlelist-review">
+                                    <!-- 評價狀態群組 -->
+                                    <div class="flexTable singlelist-statusBar">
+                                        <span class="statusBar-status"><i class="sea-btn-icon icon-checked icon-back icon-back-green"></i>已回覆</span>
+                                        <div>
+                                            <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                        </div>
+                                    </div>
+                                    <!-- 評價內容群組 -->
+                                    <div class="flexTable qareview-reviewBar">
+                                        <!-- 買家資訊內容群組 -->
+                                        <div class="flexTable productBar-buyerInfoBox">
+                                            <div class="flexTable buyerInfoBox-buyerInfo">
+                                                <img class="buyInfo-avatar" src="img/brand/brand_01.jpg" alt="buyer" style="background-image: url('img/buyer_avator_default.svg');">
+                                                <span class="buyInfo-name">so************om</span>
+                                            </div>
+                                            <!--評價分數-->
+                                            <div class="flexTable buyerInfoBox-reviewScore">
+                                                <!-- 說明FOR RD-->
+                                                <!-- 評價星星 class 滿星：class="sea-seller-icon icon-star-on" / 半星：class="sea-seller-icon icon-star-off" / 空星：class="sea-seller-icon icon-star-off" -->
+                                                <div class="sea-ui review-star">
+                                                    <ul>
+                                                        <li class="sea-seller-icon icon-star-on"></li>
+                                                        <li class="sea-seller-icon icon-star-off"></li>
+                                                        <li class="sea-seller-icon icon-star-off"></li>
+                                                        <li class="sea-seller-icon icon-star-off"></li>
+                                                        <li class="sea-seller-icon icon-star-off"></li>
+                                                    </ul>
+                                                    <div class="review-text eng-num">1.0</div>
+                                                </div>
+                                                <div class="scroe-text"><span>評價：</span>待加強</div>
+                                            </div>
+                                        </div>
+                                        <!-- 商品圖文 -->
+                                        <div class="flexTable productBar-product">
+                                            <!-- 買家留言 -->
+                                            <div class="buyerReview">
+                                                <span>原本很喜歡，用了一陣子以後又沒有這麼喜歡了。</span>
+                                            </div>
+                                            <!-- 商品資訊群組（圖＋文＋icon） -->
+                                            <div class="flexTable productBar-productBox js-sea-panel-trigger" data-panel="orderDetails">
+                                                <!-- 商品資訊群組（圖＋文） -->
+                                                <div class="productInfoGroup">
+                                                    <!-- 商品圖片 -->
+                                                    <div class="productInfo-img">
+                                                        <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
+                                                    </div>
+                                                    <!-- 商品資訊 -->
+                                                    <div class="productInfo-info">
+                                                        <!-- 商品編號 -->
+                                                        <div class="productInfo-info-orderNum">
+                                                            <span class="productInfo-info-orderNum-title">訂單編號</span>
+                                                            <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
+                                                        </div>
+                                                        <!-- 商品編號 -->
+                                                        <div class="productInfo-info-orderNum">
+                                                            <span class="productInfo-info-orderNum-title">訂單來源</span>
+                                                            <span class="productInfo-info-orderNum-text eng-num">SG</span>
+                                                        </div>
+                                                        <!-- 商品名稱 -->
+                                                        <div class="productInfo-info-title">
+                                                            <span class="productInfo-info-title-text">
+                                                                <a href="#">Winter short tube Chelsea boots Martin work boots</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="productBox-icon">
+                                                    <span class="sea-seller-icon icon-angle-right"></span>
+                                                </div>
+                                            </div>
+                                            <!-- 賣家回覆 -->
+                                            <!-- 說明FOR RD: 賣家尚未回覆評價時 不顯示此欄位 -->
+                                            <div class="sellerReview">
+                                                <div class="flexTable sellerReview-statusBar">
+                                                    <span class="statusBar-title">您的回覆</span>
+                                                    <div>
+                                                        <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                                    </div>
+                                                </div>
+                                                <div class="sellerReview-reply">
+                                                    <span>反反覆覆的你有什麼毛病！</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 評價操作按鈕群組 -->
+                                    <!--說明FOR RD: 賣家第一次回覆評價後，不顯示此欄位。但買家更新評價後，仍要顯示此欄位。 -->
+                                    <div class="flexTable orderlist-actionBar-flex-end">
+                                        <!-- 操作按鈕欄 -->
+                                        <div class="actionBar">
+                                            <a class="sea-ui btn-xs btn-primary-outlined historyreviewsBtn" href="#">查看過去評價</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 單筆評價 結束 -->
+
                             </div>
-                            <!-- 整體表格結束 -->
+                            <!-- 所有清單容器 結束 -->
+
+
                             <!-- PC 版 列出所有頁碼 -->
                             <div class="sea-ui page-pagination hidden-sm-down">
                                 <ul class="eng-num">
@@ -641,11 +624,11 @@
     <script type="text/javascript" src="js/plugin/slide-panel/slide-panel.js"></script>
 
     <script>
-        $(document).ready(function() {
-            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(6)');
-            menuItem.find('ul').show();
-            menuItem.addClass('active');
-        });
+    $(document).ready(function() {
+        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(6)');
+        menuItem.find('ul').show();
+        menuItem.addClass('active');
+    });
     </script>
 
 </body>

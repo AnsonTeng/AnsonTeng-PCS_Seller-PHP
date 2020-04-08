@@ -31,7 +31,7 @@
                     </div>
                     <div class="description-list-box">
                         <div class="list-box-item">評價日期</div>
-                        <div class="list-box-text eng-num">2018/05/28 01:28 </div>
+                        <div class="list-box-text eng-num">2020/05/28 01:28 </div>
                     </div>
                     <div class="description-list-box">
                         <div class="list-box-item">評價分數</div>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="description-list-box">
                         <div class="list-box-item">評價內容</div>
-                        <div class="list-box-text">盒子很有質感，出貨速度很快。收到貨時很喜歡，過程中賣家回覆很及時，也很有耐心回答商品相關問題。下次還會繼續再購買!</div>
+                        <div class="list-box-text">盒子很有質感，出貨速度很快。收到貨時很喜歡，過程中賣家回覆很即時，也很有耐心回答商品相關問題。下次還會繼續再購買!</div>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="description-list-box">
                     <div class="list-box-item">評價日期</div>
-                    <div class="list-box-text eng-num">2018/05/28 01:28 </div>
+                    <div class="list-box-text eng-num">2020/05/28 01:28 </div>
                 </div>
                 <div class="description-list-box">
                     <div class="list-box-item">評價分數</div>
@@ -127,7 +127,7 @@
                 </div>
                 <div class="description-list-box">
                     <div class="list-box-item">評價內容</div>
-                    <div class="list-box-text">盒子很有質感，出貨速度很快。收到貨時很喜歡，過程中賣家回覆很及時，也很有耐心回答商品相關問題。下次還會繼續再購買!</div>
+                    <div class="list-box-text">盒子很有質感，出貨速度很快。收到貨時很喜歡，過程中賣家回覆很即時，也很有耐心回答商品相關問題。下次還會繼續再購買!</div>
                 </div>
             </div>
 
@@ -136,7 +136,7 @@
             <div class="description-list">
                 <div class="description-list-box">
                     <div class="list-box-item">回覆日期</div>
-                    <div class="list-box-text eng-num">2018/05/28 01:28 </div>
+                    <div class="list-box-text eng-num">2020/05/28 01:28 </div>
                 </div>
                 <div class="description-list-box">
                     <div class="list-box-item">賣家回覆</div>

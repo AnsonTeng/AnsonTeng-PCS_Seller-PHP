@@ -445,7 +445,7 @@
             <div class="description-list">
                 <div class="description-list-box">
                     <div class="list-box-item">匯款日期</div>
-                    <div class="list-box-text eng-num">2018/09/13</div>
+                    <div class="list-box-text eng-num">2020/09/13</div>
                 </div>
                 <div class="description-list-box">
                     <div class="list-box-item">匯款銀行</div>
@@ -583,7 +583,7 @@
                     </div>
                     <div class="description-list-box">
                         <div class="list-box-item">訂購日期</div>
-                        <div class="list-box-text eng-num">2018/09/13</div>
+                        <div class="list-box-text eng-num">2020/09/13</div>
                     </div>
                 </div>
                 <div class="description-list-box">

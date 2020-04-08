@@ -90,11 +90,11 @@
                                         </div>
                                         <div class="drawer-list-content">
                                             <div class="drawer-list-content-title">
-                                                <p>PChomeSEA 通知：有買家於買賣留言板留言給您 (訂單編號：9011900008013)</p>
+                                                <p>PChomeSEA 通知：有買家於訂單留言板留言給您 (訂單編號：9011900008013)</p>
                                             </div>
                                             <div class="drawer-list-content-list">
                                                 <ul>
-                                                    <li>親愛的 UserName 您好: 您的買賣留言板有新留言喔!<br />買家: BuyerName<br />訂單編號:9011900008013<br />留言時間:23/04/2020 17:04:06<br />留言內容: 了解！<br />請您至賣家中心的<b>買賣留言板</b>回覆留言。<br />若要查詢訂單內容可以到<b>訂單管理</b>查詢唷!<br /><br />感謝您的愛護與支持 !!</li>
+                                                    <li>親愛的 UserName 您好: 您的訂單留言板有新留言喔!<br />買家: BuyerName<br />訂單編號:9011900008013<br />留言時間:23/04/2020 17:04:06<br />留言內容: 了解！<br />請您至賣家中心的<b>訂單留言板</b>回覆留言。<br />若要查詢訂單內容可以到<b>訂單管理</b>查詢唷!<br /><br />感謝您的愛護與支持 !!</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -135,7 +135,6 @@
                                             </div>
                                         </div>
                                     </a>
-
                                 </div>
 
                                 <div class="drawer-actions nologin">
@@ -155,22 +154,25 @@
                     <div class="headerBtn hidden-sm-up">
                         <a class="sea-seller-icon icon-setting accountSettingsBtn" href="#""></a>
                     </div>
+
                     <!-- 帳號管理按鈕 -->
                     <div class=" headerBtn header-account">
-                            <a class="sea-seller-icon icon-avatar" href="#"></a>
+
+                            <a href="#"><img src="img/brand/brand_01.jpg" alt="sellerAvatar"></a>
+
                             <!-- 帳號管理 -->
                             <div id="account" class="headerDropdown">
-                                <!-- 帳號管理 (screen sm以下無） -->
+                                <!-- 帳號管理 (手機版不顯示） -->
                                 <div class="sea-ui drawer hidden-sm-down">
                                     <div class="drawer-triangle"></div>
                                     <div class="drawer-content">
                                         <div class="drawer-info">
                                             <div class="info-figure">
                                                 <div class="info-figure-inner">
-                                                    <div class="info-figure-img img-bg" style="background-image: url('img/drawer_account_nosignin.svg');"></div>
+                                                    <div class="info-figure-img img-bg" style="background-image: url('img/brand/brand_01.jpg');"></div>
                                                 </div>
                                             </div>
-                                            <p>กรุณาเข้าสู่ระบบหรือลงทะเบียน</p>
+                                            <p>登入／註冊</p>
                                         </div>
                                         <div class="drawer-link">
                                             <ul>

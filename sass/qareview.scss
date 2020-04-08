@@ -16,7 +16,10 @@
 @import 'library/_pagination';
 
 //表格－新增表格公用
-@import 'library/_table-backendlist';
+// @import 'library/_table-backendlist';
+
+// 新式表格 flexTable
+@import "library/_flexTable";
 
 //區塊內容
 @import 'library/_content-block';
@@ -107,7 +110,7 @@
 
 }
 
-// --- table 設定 （買賣留言＋商品留言） ---------------------------------------
+// --- table 設定 （訂單留言＋商品留言） ---------------------------------------
 .tableBox-qareview-order,
 .tableBox-qareview-product {
 
@@ -179,7 +182,7 @@
                 tr:last-child {
 
                     td:last-child {
-                        box-shadow: 0 8px 7px -7px rgba(189, 189, 189, 0.8);
+                        // box-shadow: 0 8px 7px -7px rgba(189, 189, 189, 0.8);
                     }
                 }
             }
@@ -238,7 +241,7 @@
 }
 
 
-// --- table 設定 （買賣留言） ---------------------------------------
+// --- table 設定 （訂單留言） ---------------------------------------
 .tableBox-qareview-order {
     margin-bottom: 36px;
 
@@ -281,6 +284,7 @@
             .list__itemInfo-userImg {
                 width: 20px;
                 height: 20px;
+                border: 50%;
             }
 
             // 名稱
@@ -300,7 +304,6 @@
 @media (max-width: $break-md) {
     .table_inlineBox-flex {
         display: flex;
-        flex-direction: row;
         flex-direction: column;
         height: auto;
     }
@@ -315,13 +318,20 @@
 
 
     &.ProductreplyGroup {
+        position: relative;
         padding: 0px 18px 20px 18px;
 
         p.description-title {
             padding-top: 24px;
-            border-top: 1px solid $colorLightGray;
+            // border-top: 1px solid $colorLightGray;
         }
 
+        // 「買更多」按鈕
+        .buymanyBtnBox {
+            position: absolute;
+            top: 14px;
+            right: 10px;
+        }
     }
 
     .productInfoGroup {

@@ -1,0 +1,544 @@
+//--- 新的表格架構 取代舊式表格  ---------------------------------
+
+// flexTable (共用)
+.flexTable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+// 所有訂單容器
+.listBox {
+    margin-bottom: 3rem;
+
+    @media (max-width: $break-md) {
+        margin-bottom: 1.5rem;
+    }
+
+    // 單筆訂單
+    .listBox-singlelist {
+        background-color: $colorWhite;
+        box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.1);
+        margin: 8px 0;
+
+        @media (max-width: $break-md) {
+            margin: 12px 0;
+        }
+
+        .flexTable {
+            padding: 10px 10px;
+            border-bottom: 0px;
+
+            @media (max-width: $break-md) {
+                padding: 8px 8px;
+            }
+
+            // 訂單狀態區（訂單管理 客服管理）
+            &.singlelist-statusBar {
+                border-bottom: 2px solid #f7f7f7;
+                min-height: 48px;
+
+                .statusBar-status {
+                    font-size: 0.9375rem;
+                }
+
+                .statusBar-contanctSeller {
+                    >a.sea-ui.btn {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            // 訂單資訊區（訂單管理） 
+            &.orderlist-infoBar {
+                padding: 0;
+                border-bottom: 2px solid #f7f7f7;
+                align-items: center;
+
+                @media (max-width: $break-xs) {
+                    align-items: flex-end;
+                }
+
+                // 訂單編號＆日期
+                .infoBar-orderNumBox {
+                    border-bottom: 0px;
+                    flex: 1;
+                    justify-content: flex-start;
+                    flex-direction: row;
+                    align-items: center;
+
+                    @media (max-width: $break-xs) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-end;
+                    }
+
+                    .orderNumBox-orderNum {
+                        width: auto;
+                        margin-right: 12px;
+                    }
+
+                    .orderNumBox-orderNum:last-child {
+                        margin-right: 0px;
+                    }
+                }
+
+                // 訂單來源
+                .infoBar-orderSourseBox {
+                    border-bottom: 0px;
+                    width: 100px;
+
+                    .orderNumBox-orderNum {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+
+            // 訂單商品區 （訂單管理） 
+            &.orderlist-productBar {
+                padding: 0;
+                border-bottom: 2px solid #f7f7f7;
+                flex-direction: row;
+
+                @media (max-width: $break-md) {
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 0px;
+                }
+
+                // 共用
+                .flexTable {
+                    padding: 10px 10px;
+                    border-bottom: 0px;
+
+                    @media (max-width: $break-md) {
+                        border-bottom: 0px;
+                        padding: 8px 8px;
+                    }
+                }
+
+                // 訂單商品圖文
+                .productBar-product {
+                    flex: 2;
+
+                    @media (max-width: $break-md) {
+                        border-bottom: 2px solid #f7f7f7;
+                        width: 100%;
+                    }
+                }
+
+                // 訂單商品總計
+                .productBar-total {
+                    flex: 1;
+                    font-size: 0.875rem;
+                    line-height: 2rem;
+                    font-weight: 400;
+
+                    @media (max-width: $break-md) {
+                        border-bottom: 2px solid #f7f7f7;
+                        width: 100%;
+                    }
+
+                    // 訂單商品數量總計
+                    .total-quantity {
+                        span.orderlist-title {
+                            margin: 0 3px;
+                        }
+
+                        @media (max-width: $break-md) {
+                            flex: 1;
+                        }
+                    }
+
+                    // 訂單商品金額總計
+                    .total-amount {
+                        width: 100%;
+                        text-align: center;
+
+                        @media (max-width: $break-md) {
+                            flex: 1;
+                            text-align: right;
+                        }
+
+                        span {
+                            display: inline-block;
+                            position: relative;
+                            font-size: 0.875rem;
+                            line-height: 1.375rem;
+                            font-weight: 400;
+
+                            >img {
+                                width: 22px;
+                                position: relative;
+                                top: 5px;
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+                }
+
+                // 訂單商品物流狀態
+                .productBar-logistic {
+                    flex: 1;
+                    flex-direction: column;
+                    text-align: center;
+
+                    @media (max-width: $break-md) {
+                        width: 100%;
+                        flex-direction: row-reverse;
+                    }
+
+                    .logistic-status {
+                        padding: 2px 0;
+
+                        @media (max-width: $break-md) {
+                            padding: 8px 0
+                        }
+                    }
+                }
+            }
+
+            // 訂單操作按鈕區 (訂單管理、客服管理)
+            &.orderlist-actionBar,
+            &.orderlist-actionBar-flex-end,
+            &.orderlist-actionBar-space-between {
+                border-bottom: 0px;
+                background-color: #f7f7f7;
+
+                .actionBar {
+                    >a {
+                        margin: 0.375rem 0.25rem;
+                    }
+                }
+
+                @media (max-width: $break-md) {
+                    .actionBar {
+                        >a {
+                            margin: 0px 3px 4px 3px;
+                            font-size: 0.875rem;
+                            padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+                        }
+                    }
+                }
+            }
+
+            // 訂單按鈕操作區（訂單管理）
+            &.orderlist-actionBar {
+                justify-content: space-between;
+
+                @media (max-width: $break-md) {
+                    justify-content: center;
+                }
+            }
+
+            // 訂單按鈕操作區（客服管理）
+            &.orderlist-actionBar-flex-end {
+                justify-content: flex-end;
+
+                @media (max-width: $break-xs) {
+                    justify-content: center;
+                }
+            }
+
+            // 訂單按鈕操作區（客服管理）
+            &.orderlist-actionBar-space-between {
+                justify-content: space-between;
+
+                @media (max-width: $break-xs) {
+                    justify-content: center;
+                }
+            }
+
+
+            // 商品問答區（客服管理）
+            &.qareview-productBar {
+                @media (max-width: $break-xs) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .productBar-product {
+                    flex: 45;
+
+                    // 圖文群組
+                    .productInfoGroup {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .productBar-buyerInfoBox {
+                    flex: 55;
+                }
+            }
+
+
+            // 買家資訊內容群組（客服管理）
+            &.productBar-buyerInfoBox {
+                flex-direction: column;
+                align-items: flex-start;
+                position: relative;
+                top: -2px;
+
+                // 買家留言
+                .buyerInfoBox-message {
+                    font-size: 0.8125rem;
+                    line-height: 1rem;
+                    @include text-overflow(1);
+                    height: 1rem;
+                    font-weight: 500;
+                }
+            }
+
+            // 買家資訊內容（客服管理）
+            &.buyerInfoBox-buyerInfo {
+                padding-top: 0;
+                padding-left: 0;
+                text-align: left;
+
+                @media (max-width: $break-xs) {
+                    padding-top: 8px;
+                }
+
+
+                //  買家頭像
+                .buyInfo-avatar {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    margin-right: 6px;
+                }
+
+                //  買家姓名
+                .buyInfo-name {
+                    color: $colorGrayBlack;
+                    position: relative;
+                    top: 2px;
+                    font-size: 0.8125rem;
+                    @include text-overflow(1);
+                    height: 1rem;
+
+                    //  買家訂單來源國家
+                    .buyInfo-name-country::before {
+                        content: "  ／  ";
+                        font-weight: 300;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    // 單筆訂單-回覆商品問答
+    .listBox-singlelist-order-reply {
+        .flexTable.orderlist-infoBar {
+            padding: 8px;
+
+            @media (max-width: $break-xs) {
+                padding: 4px;
+            }
+        }
+
+        .flexTable.qareview-productBar {
+            @media (max-width: $break-xs) {
+                padding: 4px;
+            }
+        }
+
+        .actionBar {
+            @media (max-width: $break-xs) {
+                width: 100%;
+                text-align: right;
+            }
+        }
+    }
+
+    // 單筆訂單-評價
+    .listBox-singlelist-review {
+
+        // 評價內容群組
+        .qareview-reviewBar {
+            align-items: flex-start;
+
+            @media (max-width: $break-md) {
+                flex-direction: column;
+            }
+
+            // 買家資訊內容群組
+            .productBar-buyerInfoBox {
+                flex: 1;
+
+                @media (max-width: $break-md) {
+                    padding: 0;
+                    padding-top: 8px;
+                    width: 100%;
+                }
+
+                // 評價分數
+                .buyerInfoBox-reviewScore {
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    @media (max-width: $break-md) {
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 0;
+                    }
+
+                    @media (max-width: $break-xs) {
+                        width: 100%;
+                        justify-content: space-between;
+                    }
+
+
+                    // 評價星等
+                    .review-star {
+                        font-size: 1.25rem;
+                        margin-bottom: 6px;
+
+                        @media (max-width: $break-md) {
+                            margin-bottom: 0px;
+                            margin-right: 1rem;
+                        }
+
+                        >ul {
+                            margin-right: 8px;
+                        }
+                    }
+
+                    // 評價星等分數
+                    .review-text {
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+
+                    // 評價結果文字
+                    .scroe-text {
+                        font-size: 0.8125rem;
+                        color: $colorGrayBlack;
+
+                        >span {
+                            color: $colorDeepGray;
+                        }
+                    }
+                }
+            }
+
+            // 商品圖文
+            .productBar-product {
+                flex: 3;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 0;
+                padding-right: 0;
+
+
+                // 商品資訊群組（圖＋文＋icon）
+                .productBar-productBox {
+                    padding-top: 6px;
+                    padding-bottom: 0;
+                    background-color: $colorWhiteGreen;
+                    width: 100%;
+
+                    // 商品資訊群組（圖＋文）
+                    .productInfoGroup {
+
+
+
+                        .productInfo-icon {
+                            position: relative;
+                            right: 0;
+                        }
+                    }
+
+                    .productBox-icon {
+                        >span {
+                            color: $secondaryColor;
+                            padding-right: 6px;
+
+                        }
+                    }
+                }
+
+
+                // 買家留言
+                .buyerReview {
+                    width: 100%;
+                    margin-bottom: 0.75rem;
+
+                    >span {
+                        font-size: 0.875rem;
+                        font-weight: 300;
+                        line-height: 1.25rem;
+                    }
+                }
+
+                // 賣家回覆
+                .sellerReview {
+                    width: 100%;
+
+                    .sellerReview-statusBar {
+                        padding: 0;
+                        margin-top: 12px;
+                        margin-bottom: 6px;
+
+                        .statusBar-title {
+                            font-size: 0.8125rem;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .sellerReview-reply {
+                        >span {
+                            font-size: 0.875rem;
+                            font-weight: 300;
+                            line-height: 1.25rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+
+
+
+
+    // －－ 共用物件 －－
+    // 內文標題
+    .orderlist-title {
+        color: $colorGrayBlack;
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+
+    // 內文副標
+    .orderlist-subtitle {
+        color: $colorGrayBlack;
+        font-size: 0.8125rem;
+        font-weight: 300;
+    }
+
+    //沒有資料時
+    .table_default_empaty {
+        .message-text {
+            width: 100%;
+            height: 300px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $colorGray;
+            text-align: center !important;
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+}

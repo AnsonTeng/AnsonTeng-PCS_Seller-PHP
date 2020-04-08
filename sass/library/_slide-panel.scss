@@ -240,3 +240,129 @@
         top: -5px;
     }
 }
+
+
+
+
+
+// 全站共用 panel (assets/slide-panel/panel-global.php)
+// 訂單明細
+// modal 內的所有訂單資訊
+.description {
+
+    // 所有訂單容器
+    .listBox {
+        margin-bottom: 3rem;
+
+        @media (max-width: $break-md) {
+            margin-bottom: 1.5rem;
+        }
+
+        // 單筆訂單
+        .listBox-singlelist {
+            background-color: $colorWhite;
+            box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
+            margin: 0;
+
+            >.flexTable {
+                padding: 10px 10px;
+                border-bottom: 2px solid #f7f7f7;
+
+                @media (max-width: $break-md) {
+                    padding: 8px 8px;
+                }
+
+                // 訂單商品區  
+                &.orderlist-productBar {
+                    flex-direction: row;
+
+
+                    .flexTable {
+                        border-bottom: 0px;
+                    }
+
+                    .productBar-total {
+                        max-width: 84px;
+                        min-width: 84px;
+
+                        .total-amount {
+                            width: 100%;
+                            text-align: right;
+                        }
+                    }
+                }
+
+                // 訂單明細標頭區, 訂單明細內容區,訂單明細結帳總金額區（訂單明細）
+                &.orderlist-header,
+                &.orderlist-body,
+                &.orderlist-footer {
+                    border-bottom: 0px;
+
+                    span {
+                        font-size: 0.875rem;
+                        @include text-overflow(1);
+                        line-height: 1rem;
+                        flex: 1;
+                    }
+
+                    span.amount {
+                        width: 68px;
+                        max-width: 68px;
+                        margin-left: 8px;
+                        text-align: right;
+                    }
+
+                    span.amount.amount-discount {
+                        color: $colorPinkRed;
+                    }
+                }
+
+                // 訂單明細標頭區 （訂單明細）
+                &.orderlist-header {
+                    background-color: $colorWhiteGreen;
+
+                    .orderlist-buyer {
+                        width: 100%;
+                        min-width: 120px;
+
+                        .buyeeAvatar {
+                            margin-right: 6px;
+                            border-radius: 50%;
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        .buyerName {
+                            width: 100%;
+                            @include text-overflow(1);
+                            line-height: 1rem;
+                        }
+                    }
+
+                    >a {
+                        width: auto;
+                        min-width: 126px;
+                    }
+                }
+
+                // 訂單明細內容區 （訂單明細）
+                &.orderlist-body {
+                    background-color: $colorGreyishWhite;
+                    border-bottom: 2px solid #f7f7f7;
+                }
+
+                // 訂單明細結帳總金額區 （訂單明細）
+                &.orderlist-footer {
+                    background-color: $colorWhiteGreen;
+
+                    span {
+                        font-size: 0.935rem;
+                        font-weight: 500;
+                        color: $secondaryColor;
+                    }
+                }
+
+            }
+        }
+    }
+}

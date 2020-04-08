@@ -13,7 +13,9 @@
                 <div class="headerInner">
                     <div class="header-user">
                         <div class="header-user-head">
-                            <div class="sea-seller-icon icon-avatar-face"></div>
+                            <!-- <div class="sea-seller-icon icon-avatar-face"></div> -->
+                            <a href="#"><img src="img/brand/brand_01.jpg" alt="sellerAvatar"></a>
+
                         </div>
                         <div class="header-user-name"><span>Hi, </span><span>User Name</span></div>
                     </div>
@@ -90,7 +92,7 @@
                         <a class="seller-nav-link" href="#"><span class="sea-seller-icon icon-callcenter"></span>客服管理</a>
                         <ul class="nav__sublink">
                             <li><a href="" onclick="window.location.href='qareview-product.php' ">商品留言版</a></li>
-                            <li><a href="" onclick="window.location.href='qareview-order.php' ">買賣留言版</a></li>
+                            <li><a href="" onclick="window.location.href='qareview-order.php' ">訂單留言版</a></li>
                             <li><a href="" onclick="window.location.href='qareview-review.php' ">賣場評價</a></li>
                         </ul>
                     </li>

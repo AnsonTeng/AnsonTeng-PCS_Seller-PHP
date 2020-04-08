@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="css/fonts/sea-seller-icon.css">
     <!-- BS grid -->
     <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
-    <title>PChomeSEA | 商品留言</title>
+    <title>PChomeSEA | 訂單留言</title>
     <!-- Google Tag Manager -->
     <script>
     (function(w, d, s, l, i) {
@@ -69,6 +69,7 @@
         <!-- PChomeSEA Menu_mobile -->
         <?php include("assets/menu-mobile.php"); ?>
         <!-- PChomeSEA Menu_mobile end-->
+        <!-- PChomeSEA Account Header -->
 
         <!-- 內容寬度 1200 區塊 -->
         <div class="container sea-gutters container-min-height">
@@ -96,7 +97,7 @@
                                     <li class="sea-seller-icon icon-angle-right"></li>
                                     <li>客服管理</li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
-                                    <li>商品留言版</li>
+                                    <li>訂單留言版</li>
                                 </ul>
                             </div>
                             <!-- 頁面標題與麵包屑結束 -->
@@ -107,11 +108,11 @@
                                 <div class="sea-ui form inputGroup">
                                     <div class="inputGroup-inputBox">
                                         <div class="sea-ui form">
-                                            <input type="text" placeholder="請輸入商品編號">
+                                            <input type="text" placeholder="請輸入訂單編號" value="9041800006091">
                                         </div>
                                     </div>
-                                    <a href="demo-qareview-product-clearsearch.php" class="sea-ui btn-sm btn-primary inputGroup-btn">搜尋</a>
-                                    <a href="qareview-product.php" class="sea-ui btn-sm inputGroup-btn" style="display: none"><span class="sea-btn-icon icon-delete"></span>清空</a>
+                                    <a href="#" class="sea-ui btn-sm btn-primary inputGroup-btn" style="display: none">搜尋</a>
+                                    <a href="qareview-order.php" class="sea-ui btn-sm inputGroup-btn"><span class="sea-btn-icon icon-delete"></span>清空</a>
                                 </div>
 
                                 <div class="hidden-sm-down">
@@ -127,18 +128,18 @@
                             </div>
                             <!-- 搜尋結束-->
 
+
                             <!-- 標籤導航 -->
                             <div class="sea-ui tab-nav-bar tab-nav tab-nav-fluid">
                                 <div class="sea-ui tab-pointing">
                                     <ul class="tab-items no-margin">
-                                        <li><a href="#tab1" class="active">所有商品留言<span>(86)</span></a></li>
+                                        <li><a href="#tab1" class="active">所有訂單留言<span>(86)</span></a></li>
                                         <li><a href="#tab2">未讀取<span>(70)</span></a></li>
                                         <li><a href="#tab3">待回覆<span>(10)</span></a></li>
-                                        <li><a href="#tab4"><span>已回覆(6)</span></a></li>
+                                        <li><a href="#tab4">已回覆<span>(6)</span></a></li>
                                     </ul>
                                 </div>
                             </div>
-
 
 
                             <!-- 所有清單容器 -->
@@ -154,64 +155,30 @@
                                     <div class="flexTable singlelist-statusBar">
                                         <span class="statusBar-status"><i class="sea-btn-icon icon-alert-nofill icon-back icon-back-red"></i>未讀取</span>
                                         <div>
-                                            <span class="eng-num date-time">2020/05/28<time>01:28</time></span>
+                                            <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
                                         </div>
                                     </div>
 
-                                    <!-- 商品留言內容群組 -->
-                                    <div class="flexTable qareview-productBar">
-                                        <!-- 商品圖文 -->
-                                        <div class="flexTable productBar-product">
-                                            <!-- 商品資訊群組（圖＋文） -->
-                                            <div class="productInfoGroup">
-                                                <!-- 商品圖片 -->
-                                                <div class="productInfo-img">
-                                                    <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
-                                                </div>
-                                                <!-- 商品資訊 -->
-                                                <div class="productInfo-info">
-                                                    <!-- 商品編號 -->
-                                                    <div class="productInfo-info-orderNum">
-                                                        <span class="productInfo-info-orderNum-title">商品編號</span>
-                                                        <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                    </div>
-                                                    <!-- 商品名稱 -->
-                                                    <div class="productInfo-info-title">
-                                                        <span class="productInfo-info-title-text">
-                                                            <a href="#">Winter short tube Chelsea boots Martin work boots</a>
-                                                        </span>
-                                                    </div>
-                                                </div>
+                                    <!-- 訂單資訊群組 -->
+                                    <div class="flexTable orderlist-infoBar">
+                                        <div class="flexTable infoBar-orderNumBox">
+                                            <!-- 訂單編號 -->
+                                            <div class="orderNumBox-orderNum">
+                                                <span class="orderlist-subtitle">訂單編號</span>
+                                                <span class="orderlist-title eng-num">9041800006091</span>
+                                            </div>
+                                            <!-- 訂單日期 -->
+                                            <div class="orderNumBox-orderNum">
+                                                <span class="orderlist-subtitle">訂單日期</span>
+                                                <span class="orderlist-title eng-num">2020/07/26</span>
                                             </div>
                                         </div>
-
-                                        <!-- 買家資訊內容群組 -->
-                                        <div class="flexTable productBar-buyerInfoBox">
-                                            <div class="flexTable buyerInfoBox-buyerInfo">
-                                                <img class="buyInfo-avatar" src="img/brand/brand_01.jpg" alt="buyer" style="background-image: url('img/buyer_avator_default.svg');">
-                                                <span class="buyInfo-name">so*****************om<span class="buyInfo-name-country">SG</span></span>
+                                        <div class="flexTable infoBar-orderSourseBox">
+                                            <!-- 訂單來源 -->
+                                            <div class="orderNumBox-orderNum">
+                                                <span class="orderlist-subtitle">訂單來源</span>
+                                                <span class="orderlist-title eng-num">SG</span>
                                             </div>
-                                            <span class="buyerInfoBox-message">買二個可以算便宜一點嗎？</span>
-                                        </div>
-                                    </div>
-                                    <!-- 訂單操作按鈕群組 -->
-                                    <div class="flexTable orderlist-actionBar-flex-end">
-                                        <!-- 操作按鈕欄 -->
-                                        <div class="actionBar">
-                                            <a class="sea-ui btn-xs btn-primary" href="qareview-product-reply.php">回覆留言</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 單筆商品留言 結束 -->
-
-
-                                <!-- 單筆商品留言 -->
-                                <div class="listBox-singlelist">
-                                    <!-- 訂單狀態群組 -->
-                                    <div class="flexTable singlelist-statusBar">
-                                        <span class="statusBar-status"><i class="sea-btn-icon icon-alert-nofill icon-back icon-back-red"></i>待回覆</span>
-                                        <div>
-                                            <span class="eng-num date-time">2020/05/28<time>01:28</time></span>
                                         </div>
                                     </div>
 
@@ -228,16 +195,21 @@
                                                 <!-- 商品資訊 -->
                                                 <div class="productInfo-info">
 
-                                                    <!-- 商品編號 -->
-                                                    <div class="productInfo-info-orderNum">
-                                                        <span class="productInfo-info-orderNum-title">商品編號</span>
-                                                        <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                    </div>
                                                     <!-- 商品名稱 -->
                                                     <div class="productInfo-info-title">
                                                         <span class="productInfo-info-title-text">
                                                             <a href="#">Winter short tube Chelsea boots Martin work boots</a>
                                                         </span>
+                                                    </div>
+                                                    <!-- 商品規格 -->
+                                                    <div class="productInfo-info-subtitle">
+                                                        <span class="productInfo-info-subtitle-text">Size / Color / Type / Size / Color / Type / Size / Color / Type / Size / Color / Type</span>
+                                                    </div>
+                                                    <!-- 訂單內商品數量 -->
+                                                    <div class="total-quantity hidden-xs-up">
+                                                        <span class="orderlist-subtitle">共</span>
+                                                        <span class="orderlist-title eng-num">90</span>
+                                                        <span class="orderlist-subtitle">件商品</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -249,77 +221,27 @@
                                                 <img class="buyInfo-avatar" src="img/brand/brand_01.jpg" alt="buyer" style="background-image: url('img/buyer_avator_default.svg');">
                                                 <span class="buyInfo-name">so*****************om<span class="buyInfo-name-country">SG</span></span>
                                             </div>
-                                            <span class="buyerInfoBox-message">請問這個包有多大呢？</span>
+                                            <span class="buyerInfoBox-message">請問您已經出貨了嗎？請問您已經出貨了嗎？請問您已經出貨了嗎？</span>
                                         </div>
                                     </div>
                                     <!-- 訂單操作按鈕群組 -->
-                                    <div class="flexTable orderlist-actionBar-flex-end">
+                                    <div class="flexTable orderlist-actionBar-space-between">
+                                        <!-- 訂單內商品數量 -->
+                                        <div class="total-quantity hidden-xs-down">
+                                            <span class="orderlist-subtitle">共</span>
+                                            <span class="orderlist-title eng-num">90</span>
+                                            <span class="orderlist-subtitle">件商品</span>
+                                        </div>
                                         <!-- 操作按鈕欄 -->
                                         <div class="actionBar">
-                                            <a class="sea-ui btn-xs btn-primary" href="qareview-product-reply.php">回覆留言</a>
+                                            <a class="sea-ui btn-xs btn-primary-outlined js-sea-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
+                                            <a class="sea-ui btn-xs btn-primary" href="qareview-order-reply.php">回覆留言</a>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- 單筆商品留言 結束 -->
 
 
-
-                                <!-- 單筆商品留言 -->
-                                <div class="listBox-singlelist">
-                                    <!-- 訂單狀態群組 -->
-                                    <div class="flexTable singlelist-statusBar">
-                                        <span class="statusBar-status"><i class="sea-btn-icon icon-checked icon-back icon-back-green"></i>已回覆</span>
-                                        <div>
-                                            <span class="eng-num date-time">2020/05/28<time>01:28</time></span>
-                                        </div>
-                                    </div>
-
-                                    <!-- 商品留言內容群組 -->
-                                    <div class="flexTable qareview-productBar">
-                                        <!-- 商品圖文 -->
-                                        <div class="flexTable productBar-product">
-                                            <!-- 商品資訊群組（圖＋文） -->
-                                            <div class="productInfoGroup">
-                                                <!-- 商品圖片 -->
-                                                <div class="productInfo-img">
-                                                    <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
-                                                </div>
-                                                <!-- 商品資訊 -->
-                                                <div class="productInfo-info">
-
-                                                    <!-- 商品編號 -->
-                                                    <div class="productInfo-info-orderNum">
-                                                        <span class="productInfo-info-orderNum-title">商品編號</span>
-                                                        <span class="productInfo-info-orderNum-text eng-num">9041800006091</span>
-                                                    </div>
-                                                    <!-- 商品名稱 -->
-                                                    <div class="productInfo-info-title">
-                                                        <span class="productInfo-info-title-text">
-                                                            <a href="#">Winter short tube Chelsea boots Martin work boots</a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- 買家資訊內容群組 -->
-                                        <div class="flexTable productBar-buyerInfoBox">
-                                            <div class="flexTable buyerInfoBox-buyerInfo">
-                                                <img class="buyInfo-avatar" src="img/brand/brand_01.jpg" alt="buyer" style="background-image: url('img/buyer_avator_default.svg');">
-                                                <span class="buyInfo-name">so*****************om<span class="buyInfo-name-country">SG</span></span>
-                                            </div>
-                                            <span class="buyerInfoBox-message">請問有其他顏色可以選擇嗎？ 還有其他角度的照片嗎？ 想知道內裡有幾個夾層，謝謝！</span>
-                                        </div>
-                                    </div>
-                                    <!-- 訂單操作按鈕群組 -->
-                                    <div class="flexTable orderlist-actionBar-flex-end">
-                                        <!-- 操作按鈕欄 -->
-                                        <div class="actionBar">
-                                            <a class="sea-ui btn-xs btn-primary" href="qareview-product-reply.php">留言</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 單筆商品留言 結束 -->
                             </div>
                             <!-- 所有訂單容器 結束 -->
 
@@ -357,12 +279,18 @@
         <?php include("assets/footer.php"); ?>
         <!-- PChomeSEA footer end-->
     </section>
-
+    <!-- PChomeSEA Panel -->
+    <?php include("assets/slide-panel/panel-global.php"); ?>
+    <!-- PChomeSEA Panel end-->
     <!-- PChomeSEA lightBox -->
     <section id="sea-lightbox">
         <div class="sea-lightBox_backGround"></div>
         <div class="sea-lightBox_inner">
             <?php include("assets/lightbox/global.php"); ?>
+            <!--頁面會出現的lightbox放這裡-->
+            <?php include("assets/lightbox/orderlist/lightbox-orderlist.php"); ?>
+            <!--頁面與面板都會出現的lightbox放這裡-->
+            <?php include("assets/slide-panel/lightbox/panel-lightbox-orderdetail.php"); ?>
         </div>
     </section>
     <!-- PChomeSEA lightBox end-->
@@ -377,8 +305,10 @@
         menuItem.addClass('active');
     });
     </script>
+
     <!-- 滑動面板 -->
     <script type="text/javascript" src="js/plugin/slide-panel/slide-panel.js"></script>
+
 </body>
 
 </html>

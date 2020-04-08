@@ -4,38 +4,28 @@
 // @import "library/_mixin";
 //繼承
 // @import "library/_extend";
-
 @import "layout.scss";
-
 //－－－ Page Components －－－
-
 //TAB導航
 @import "library/_tabnav";
-
 //頁碼
 @import "library/_pagination";
-
 //表格內容
-@import "library/_table";
-
+// @import "library/_table";
 //表格－新增表格公用
-@import "library/_table-backendlist";
-
+// @import "library/_table-backendlist";
+// 新式表格 flexTable
+@import "library/_flexTable";
 //區塊內容
 @import "library/_content-block";
-
 //區塊－訂單清單
 @import "library/_section-InfoList";
-
 //表單－日曆
 @import "library/_forms_datepicker";
-
 //上傳檔案
 @import "library/_file-upload";
-
 //折疊內容
 @import "library/_accordion";
-
 
 // 展開隱藏選項用的按鈕
 a.add_condition {
@@ -70,8 +60,6 @@ a.add_condition {
     }
 }
 
-
-
 // 訂單搜尋＿新增條件
 .orderlistSearch__advanceSearch {
     display: flex;
@@ -96,8 +84,8 @@ a.add_condition {
         .orderlistSearch__items {
             display: flex;
             align-items: center;
-            // margin-right: 6px;
 
+            // margin-right: 6px;
             >span {
                 margin: 0 4px;
                 color: $colorDeepGray;
@@ -147,8 +135,6 @@ a.add_condition {
         @media (max-width: 360px) {
             // flex-direction: column;
             align-items: flex-start;
-
-
         }
 
         // 匯出訂單按鈕
@@ -168,7 +154,6 @@ a.add_condition {
         width: auto;
     }
 }
-
 
 // 訂單列表總數 金額 與顯示筆數選單
 .orderlist_statistics {
@@ -191,7 +176,6 @@ a.add_condition {
 // top: -4px;
 //     }
 // }
-
 .table_flexBox.table_flexBox-between.productInfo-infoGroup {
     justify-content: space-between;
 
@@ -315,7 +299,6 @@ a.add_condition {
 }
 
 // :::::::::::: 黑名單相關 (暫時不用) :::::::::::::::::::::
-
 // 禁止賣家結帳狀態
 .orderlist-disable {
     opacity: 0.2;
@@ -329,9 +312,7 @@ a.add_condition {
 }
 
 // :::::::::::: 黑名單相關 (暫時不用) :::::::::::::::::::::
-
 // ------ 表格類型－訂單列表（覆寫_table-backendlist）--------------------------------------
-
 //MODALS  訂單頁面popup獨立樣式 -------------------------------------------
 .sea-ui.modal {
 
@@ -374,14 +355,14 @@ a.add_condition {
 }
 
 @media (max-width: $break-xs) {
-    //MODALS 後台使用的對話視窗樣式
 
+    //MODALS 後台使用的對話視窗樣式
     .sea-ui.modal {
 
         // 對話框內容
         .modal-content {
-            // padding: 1rem 0.8rem 0 0.8rem;
 
+            // padding: 1rem 0.8rem 0 0.8rem;
             .description {
                 .payment-img-wrap {
                     padding: 20px 0px;
@@ -441,259 +422,21 @@ a.add_condition {
 
 
 
-// 所有訂單容器
-.orderlistBox {
-    margin-bottom: 3rem;
-
-    @media (max-width: $break-md) {
-        margin-bottom: 1.5rem;
-    }
-
-    // 單筆訂單
-    .orderlistBox-orderlist {
-        background-color: $colorWhite;
-        box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.1);
-        margin: 8px 0;
-
-        @media (max-width: $break-md) {
-            margin: 12px 0;
-        }
-
-
-        >.flexTable {
-            padding: 10px 10px;
-            border-bottom: 2px solid #f7f7f7;
-
-            @media (max-width: $break-md) {
-                padding: 8px 8px;
-            }
-
-
-            // 訂單狀態區
-            &.orderlist-statusBar {
-                .statusBar-status {
-                    font-size: 0.9375rem;
-                }
-
-                .statusBar-contanctSeller {
-                    >a.sea-ui.btn {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                    }
-                }
-            }
-
-            // 訂單資訊區   
-            &.orderlist-infoBar {
-                align-items: center;
-
-                @media (max-width: $break-xs) {
-                    align-items: flex-end;
-                }
-
-
-                // 訂單編號＆日期
-                .infoBar-orderNumBox {
-                    flex: 1;
-                    justify-content: flex-start;
-                    flex-direction: row;
-                    align-items: center;
-
-                    @media (max-width: $break-xs) {
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: flex-end;
-                    }
-
-                    .orderNumBox-orderNum {
-                        width: auto;
-                        margin-right: 12px;
-                    }
-
-                    .orderNumBox-orderNum:last-child {
-                        margin-right: 0px;
-                    }
-                }
-
-                // 訂單來源
-                .infoBar-orderSourseBox {
-                    width: 100px;
-
-                    .orderNumBox-orderNum {
-                        width: 100%;
-                        text-align: center;
-                    }
-
-                }
-            }
-
-            // 訂單商品區  
-            &.orderlist-productBar {
-                flex-direction: row;
-
-                @media (max-width: $break-md) {
-                    flex-direction: column;
-                    justify-content: space-between;
-                    padding: 0px;
-
-                }
-
-                // 共用
-                .flexTable {
-                    border-bottom: 0px;
-
-                    @media (max-width: $break-md) {
-                        border-bottom: 2px solid #f7f7f7;
-                        padding: 8px 8px;
-                    }
-                }
-
-
-                // 訂單商品圖文
-                .productBar-product {
-                    flex: 2;
-
-                    @media (max-width: $break-md) {
-                        width: 100%;
-                    }
-                }
-
-                // 訂單商品總計
-                .productBar-total {
-                    flex: 1;
-                    font-size: 0.875rem;
-                    line-height: 2rem;
-                    font-weight: 400;
-
-                    @media (max-width: $break-md) {
-                        width: 100%;
-                    }
-
-                    // 訂單商品數量總計
-                    .total-quantity {
-                        span.orderlist-title {
-                            margin: 0 3px;
-                        }
-
-                        @media (max-width: $break-md) {
-                            flex: 1;
-                        }
-                    }
-
-                    // 訂單商品金額總計
-                    .total-amount {
-                        width: 100%;
-                        text-align: center;
-
-
-                        @media (max-width: $break-md) {
-                            flex: 1;
-                            text-align: right;
-                        }
-
-                        span {
-                            display: inline-block;
-                            position: relative;
-                            font-size: 0.875rem;
-                            line-height: 1.375rem;
-                            font-weight: 400;
-
-                            >img {
-                                width: 22px;
-                                position: relative;
-                                top: 5px;
-                                margin-right: 4px;
-                            }
-                        }
-                    }
-                }
-
-                // 訂單商品物流狀態
-                .productBar-logistic {
-                    flex: 1;
-                    flex-direction: column;
-                    text-align: center;
-
-                    @media (max-width: $break-md) {
-                        width: 100%;
-                        flex-direction: row-reverse;
-                    }
-
-                    .logistic-status {
-                        padding: 2px 0;
-
-                        @media (max-width: $break-md) {
-                            padding: 8px 0
-                        }
-                    }
-                }
-            }
-
-            // 訂單操作按鈕區
-            &.orderlist-actionBar {
-                border-bottom: 0px;
-                background-color: #f7f7f7;
-
-                .actionBar {
-                    >a {
-                        margin: 0.375rem 0.25rem;
-                    }
-                }
-
-
-                @media (max-width: $break-md) {
-                    justify-content: center;
-
-                    .actionBar {
-                        >a {
-                            margin: 0px 3px 4px 3px;
-                            font-size: 0.875rem;
-                            padding: 0.5rem 0.75rem 0.5rem 0.75rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-
-    // －－ 共用物件 －－
-    // 內文標題
-    .orderlist-title {
-        color: $colorGrayBlack;
-        font-size: 0.875rem;
-        font-weight: 400;
-    }
-
-    // 內文副標
-    .orderlist-subtitle {
-        color: $colorGrayBlack;
-        font-size: 0.8125rem;
-        font-weight: 300;
-    }
-}
-
-
-
-
 
 // .table_flexBox.productInfo-info-orderNumBox {
 //     flex: 1;
 //     justify-content: flex-start;
 //     flex-direction: row;
 //     align-items: center;
-
 //     @media (max-width: $break-xs) {
 //         flex-direction: column;
 //         align-items: flex-start;
 //         justify-content: flex-end;
 //     }
-
 //     .productInfo-info-orderNum {
 //         width: auto;
 //         margin-right: 12px;
 //     }
-
 //     .productInfo-info-orderNum:last-child {
 //         margin-right: 0px;
 //     }
