@@ -101,7 +101,7 @@
                             <div class="content-block">
                                 <div class="content-title">注意事項</div>
                                 <div class="content-description">
-                                    <p class="description-text alert">成交手續費(商品價格5%+7%VAT)待訂單7天保護期過後列出，由 PChomeSEA 從貨款中扣除。</p>
+                                    <p class="description-text alert">成交手續費( 商品價格 5% + 7% VAT )待訂單 7 天保護期過後列出，由 PChomeSEA 從貨款中扣除。</p>
                                     <p class="description-text"><b>代寄運費：</b>買家支付的國際運費 (按照賣家設定的商品重量、材積計算出的國際運費)，須扣除給 PChomeSEA 台北轉運中心。<br /><b>代寄運費差額：</b>PChomeSEA 台北轉運中心寄送時，支付給物流商的實際運費。若比買家支付的運費高，會從貨款中扣除差額，若比買家支付的運費低，會退還差額到賣家貨款中。</p>
                                 </div>
                             </div>
@@ -139,12 +139,10 @@
 
                                 <!-- 表格（單一筆交易費用） -->
                                 <div class="table__tbody md-break-table">
-
                                     <!--說明FOR RD: 沒有任何交易紀錄 -->
                                     <div class="table_default_empaty" style="display: none;">
                                         <div class=" message-text">沒有交易紀錄</div>
                                     </div>
-
 
                                     <table class="normal-table">
                                         <colgroup>

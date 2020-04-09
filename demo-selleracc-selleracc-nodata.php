@@ -125,7 +125,7 @@
                                                 <!-- 文字包 -->
                                                 <div class="item-amountBox-text">
                                                     <div class="subtitle"><span class="subtitle-text">貨款總金額</span><span class="currency">TWD</span></div>
-                                                    <div class="amount eng-num">179,843.87</div>
+                                                    <div class="amount eng-num">0</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -140,7 +140,7 @@
                                                 <div class="subtitle"><span class="subtitle-text">
                                                         <!-- Ready for withdrawal amount -->可用貨款金額
                                                     </span></div>
-                                                <div class="amount eng-num">21,897.42</div>
+                                                <div class="amount eng-num">0</div>
                                             </div>
                                         </div>
                                         <!-- 運算符號 +/- -->
@@ -153,7 +153,7 @@
                                             <div class="item-amountBox-text">
                                                 <div class="subtitle"><span class="subtitle-text">
                                                         <!-- In Progress -->待轉可用貨款金額</span></div>
-                                                <div class="amount eng-num">157,946.45</div>
+                                                <div class="amount eng-num">0</div>
                                             </div>
                                         </div>
                                     </div>

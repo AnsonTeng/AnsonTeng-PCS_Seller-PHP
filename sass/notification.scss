@@ -14,11 +14,12 @@
 //頁碼
 @import "library/_pagination";
 
+
 .sea-ui.tab-nav-bar {
     position: -webkit-sticky;
     /* for safari */
     position: sticky;
-    top: calc(#{$headerHeight_table} + #{$navHeight_table} - 38px);
+    top: calc(#{$headerHeight_table} + #{$navHeight_table} - #{$navHeight_table});
     z-index: 100;
 }
 
@@ -33,7 +34,7 @@
     background-color: $colorWhite;
     display: flex;
     justify-content: flex-end;
-    padding: 3px 10px;
+    padding: 13px 10px 3px 10px;
     border-bottom: 1px solid $colorLightGray;
 
     a.sea-ui.btn-sm {
@@ -161,7 +162,8 @@
         position: -webkit-sticky;
         /* for safari */
         position: sticky;
-        top: calc(#{$headerHeight_table} + #{$navHeight_table});
+        // top: calc(#{$headerHeight_table} + #{$navHeight_table});
+        top: calc(#{$headerHeight_table} + #{$navHeight_table} - #{$navHeight_table});
         z-index: 100;
 
         .sea-ui.tab-pointing {

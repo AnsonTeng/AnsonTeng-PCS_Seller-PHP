@@ -1,23 +1,4 @@
 <!--訂單相關LightBox-->
-<!-- <div id="sea-lightbox-notification" class="sea-ui modal large">
-    <i class="sea-seller-icon icon-delete lightbox_close"></i>
-    <div class="modal-header">PChome訂單確認通知</div>
-    <div class="scrolling modal-content">
-        <div class="description">
-            <div class="title">親愛的 Sophia Lin 您好：</div>
-                    <p>買家已完成付款：</p>
-                    <p>訂單編號：  <a class="eng-num" href="https://www.pchome.co.th" target="_blank">9041800006091</a> </p>
-                    <p>繳款金額：  <span class="eng-num">＄124,500 </span>元</p>
-                    <p>您確認收到款項後，請至賣家中心按下「確認已收款」以更新訂單狀態，並準備出貨囉！感謝您的愛護與支持。</p>
-        </div>
-    </div>
-        <div class="modal-actions">
-                <a class="sea-ui btn btn-cta-outlined lightbox_close">取消</a>
-                <a href="https://www.pchome.co.th" class="sea-ui btn btn-cta" target="_blank">查看訂單</a>
-        </div>
-</div> -->
-
-
 <div id="sea-lightbox-notification" class="sea-ui modal large">
     <i class="sea-seller-icon icon-delete lightbox_close"></i>
     <div class="modal-header">PChomeSEA 訂單確認通知</div>
@@ -38,8 +19,4 @@
             </div>
         </div>
     </div>
-    <!--         <div class="modal-actions">
-                <a class="sea-ui btn btn-cta-outlined lightbox_close">取消</a>
-                <a href="https://www.pchome.co.th" class="sea-ui btn btn-cta" target="_blank">查看訂單</a>
-        </div> -->
 </div>

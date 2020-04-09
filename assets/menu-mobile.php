@@ -24,16 +24,16 @@
                     </div>
                 </div>
             </div>
-
-
             <!-- 管理用選單 -->
-            <div class="managerBtnGroup">
-                <div class="headerBtn managerBtn-buyer"><span>買家中心</span></div>
-                <!-- <div class="headerBtn managerBtn-seller"><span>賣家中心</span></div> -->
-                <a href="http://sophia-0.com/PCH/seller/index.php">
+            <!-- <div class="managerBtnGroup" style="display: none">
+                <a href="#">
+                    <div class="headerBtn managerBtn-buyer"><span>買家中心</span></div>
+                </a>
+                <a href="#">
                     <div class="headerBtn managerBtn-seller"><span>賣家中心</span></div>
                 </a>
-            </div>
+            </div> -->
+
             <!-- 語言選單-->
             <div class="language">
                 <div class="language-icon">

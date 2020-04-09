@@ -92,10 +92,7 @@
         .form-label {
             .form {
                 display: flex;
-                // align-content: flex-start;
                 align-items: flex-start;
-                // align-items: stretch;
-                // align-items: center;
 
                 input {
                     position: relative;
@@ -105,6 +102,10 @@
 
                 label {
                     max-width: 100%;
+
+                    @media (max-width: $break-md) {
+                        max-width: calc(100% - 32px);
+                    }
                 }
             }
         }

@@ -116,7 +116,7 @@
                                                 <!-- 文字包 -->
                                                 <div class="item-amountBox-text">
                                                     <div class="subtitle"><span class="subtitle-text">可結算金額</span><span class="currency">TWD</span></div>
-                                                    <div class="amount eng-num">17,843.87</div>
+                                                    <div class="amount eng-num">0</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -131,7 +131,7 @@
                                                 <div class="subtitle"><span class="subtitle-text">
                                                         <!-- Ready for withdrawal amount -->可用貨款金額
                                                     </span></div>
-                                                <div class="amount eng-num">21,897.42</div>
+                                                <div class="amount eng-num">0</div>
                                             </div>
                                         </div>
                                         <!-- 運算符號 +/- -->
@@ -144,7 +144,7 @@
                                             <div class="item-amountBox-text">
                                                 <div class="subtitle"><span class="subtitle-text">
                                                         <!-- In Progress -->未繳費用</span></div>
-                                                <div class="amount eng-num">7,946.45</div>
+                                                <div class="amount eng-num">0</div>
                                             </div>
                                         </div>
                                     </div>
@@ -155,7 +155,7 @@
                                     <div class="sea-ui form-label">
                                         <label for="" class="required">欲結算金額</label>
                                         <div class="sea-ui form product-price-TWdollar unit-before">
-                                            <input type="text" placeholder="" value="6,571">
+                                            <input type="text" placeholder="" value="0">
                                             <p class="break-text alert">非上海銀行用戶，實際入帳金額為結算金額扣除轉帳手續費，轉帳手續費由銀行收取。</p>
                                         </div>
                                     </div>

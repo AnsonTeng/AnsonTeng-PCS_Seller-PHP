@@ -3889,13 +3889,32 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
+  text-align: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 768px) {
+  .account-header .account-wrap .data-wrap .data-box {
+    text-align: center;
+  }
+}
 .account-header .account-wrap .data-wrap .data-box .name {
+  max-width: calc(100% - 130px);
   font-size: 1.5rem;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  height: 1.75rem;
+}
+@media (max-width: 768px) {
+  .account-header .account-wrap .data-wrap .data-box .name {
+    text-align: center;
+    max-width: 100%;
+  }
 }
 .account-header .account-wrap .data-wrap .data-box > a.btn-gray {
   margin-left: 12px;
@@ -3909,11 +3928,11 @@ header {
 .account-header .account-wrap .setting-wrap {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -0.75rem;
   border: 0;
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
           box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  background-color: #FBFBFB;
+  background-color: rgba(251, 251, 251, 0);
 }
 .account-header .account-wrap .setting-wrap > a span {
   position: relative;
@@ -4402,7 +4421,7 @@ header {
 }
 .menuMobile-inner .header {
   height: 70px;
-  padding: 27px 20px 13px 20px;
+  padding: 24px 20px 24px 20px;
   background-color: #00AFEB;
 }
 .menuMobile-inner .header .headerInner {
