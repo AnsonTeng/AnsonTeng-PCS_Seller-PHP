@@ -371,8 +371,8 @@ header {
         top: -7px;
         left: 12px;
         background-color: $colorWhite;
-        color: $primaryDeepColor;
-        border: 2px solid $primaryDeepColor;
+        color: $primaryColor;
+        border: 2px solid $primaryColor;
     }
 
 }
@@ -617,14 +617,14 @@ header {
             left: 124px;
         }
 
-        .drawer-content {
-            .drawer-link {
-                li.active {
-                    >a {
-                        color: $primaryColor;
-                    }
-                }
-            }
-        }
+        //     .drawer-content {
+        //         .drawer-link {
+        //             li.active {
+        //                 >a {
+        //                     color: $primaryColor;
+        //                 }
+        //             }
+        // }
+        // }
     }
 }

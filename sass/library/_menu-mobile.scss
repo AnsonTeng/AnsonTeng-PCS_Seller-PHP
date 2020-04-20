@@ -97,11 +97,8 @@
 
             .header-user {
                 width: 100%;
-
-                .header-user-head,
-                .header-user-name {
-                    display: inline-block;
-                }
+                display: flex;
+                align-items: center;
 
                 .header-user-head {
                     font-size: 30px;
@@ -111,12 +108,16 @@
                         width: 30px;
                         height: 30px;
                         border-radius: 50%;
+                        position: relative;
+                        top: 3px;
                     }
                 }
 
                 .header-user-name {
-                    padding-top: 1px;
-                    vertical-align: top;
+                    // padding-top: 1px;
+                    // vertical-align: top;
+                    display: flex;
+                    align-items: center;
 
                     span {
                         display: inline-block;
@@ -124,6 +125,10 @@
                         font-size: 16px;
                         color: $colorWhite;
                         padding-left: 6px;
+
+                        &.shop-name {
+                            @include text-overflow(1);
+                        }
                     }
                 }
             }

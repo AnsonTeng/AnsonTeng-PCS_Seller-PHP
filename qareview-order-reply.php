@@ -32,20 +32,20 @@
     <title>PChomeSEA | 訂單留言回覆</title>
     <!-- Google Tag Manager -->
     <script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -81,10 +81,7 @@
                     </div>
                     <div class="col-md-9">
                         <section id="sea-section-content">
-                            <!-- PChomeSEA Account Header -->
-                            <!--說明For RD：手機版不出現-->
-                            <?php include("assets/account-header.php"); ?>
-                            <!-- PChomeSEA Account Header end-->
+
 
                             <!-- 頁面標題與麵包屑 -->
                             <div class="sea-ui breadcrumb-back">
@@ -223,7 +220,7 @@
                                                         </div>
 
                                                         <div class="reply-action">
-                                                            <!-- <a class="sea-ui btn-sm btn-cta-outlined" href="qareview-order.php">返回列表</a> -->
+                                                            <!-- <a class="sea-ui btn-sm btn-primary-outlined" href="qareview-order.php">返回列表</a> -->
                                                             <a class="sea-ui btn btn-primary-outlined">取消重填</a>
                                                             <a class="sea-ui btn btn-primary">確定送出</a>
                                                         </div>
@@ -472,11 +469,11 @@
 
     <!-- 主選單預設開啟（編號） -->
     <script>
-    $(document).ready(function() {
-        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(6)');
-        menuItem.find('ul').show();
-        menuItem.addClass('active');
-    });
+        $(document).ready(function() {
+            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(7)');
+            menuItem.find('ul').show();
+            menuItem.addClass('active');
+        });
     </script>
 
 

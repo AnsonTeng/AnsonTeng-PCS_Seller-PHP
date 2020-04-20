@@ -495,17 +495,15 @@
                 <div class="container sea-gutters">
                     <div class="account-wrap">
 
-                        <a href="" title="">
-                            <div class="avatar-wrap">
-                                <div class="avatar-img" style="background-image: url('img/brand/brand_01.jpg');"></div>
-                                <div class="avatar-edit"><span class="sea-seller-icon icon-camera"></span></div>
-                            </div>
-                        </a>
+                        <!-- <a href="" title=""> -->
+                        <div class="avatar-wrap">
+                            <div class="avatar-img" style="background-image: url('img/brand/brand_01.jpg');"></div>
+                            <!-- <div class="avatar-edit"><span class="sea-seller-icon icon-camera"></span></div> -->
+                        </div>
+                        <!-- </a> -->
                         <div class="data-wrap">
                             <div class="data-box">
-                                <div class="name">
-                                    Diptyque Paris Shop
-                                </div>
+                                <span class="name">Diptyque Paris Shop</span>
                             </div>
                         </div>
                     </div>

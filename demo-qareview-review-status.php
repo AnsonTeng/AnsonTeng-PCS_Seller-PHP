@@ -102,8 +102,8 @@
                                     <div class="review-chart-figures">
                                         <div class="review-score">
                                             <div class="review-score-text">
-                                                <div class="resault-score eng-num">0.0</div>
-                                                <div class="total-score eng-num">0.0</div>
+                                                <div class="resault-score eng-num">3.5</div>
+                                                <div class="total-score eng-num">5.0</div>
                                             </div>
                                             <!-- 說明FOR RD-->
                                             <!-- 評價星星 class 滿星：class="sea-seller-icon icon-star-on" / 半星：class="sea-seller-icon icon-star-off" / 空星：class="sea-seller-icon icon-star-off" -->
@@ -119,8 +119,8 @@
                                         </div>
                                         <div class="review-pecentage-people">
                                             <ul>
-                                                <li><span class="eng-num">0</span> 個評價</li>
-                                                <li><span class="eng-num">0%</span> 店家優良百分比</li>
+                                                <li><span class="eng-num">338</span> 個評價</li>
+                                                <li><span class="eng-num">92%</span> 店家優良百分比</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -129,9 +129,9 @@
                                     <div class="selectBox select-arrayOption">
                                         <div class="sea-ui form select">
                                             <select>
-                                                <option value="a1">待回覆(0)</option>
-                                                <option value="a2">已回覆(0)</option>
-                                                <option value="a2">賣家修改評價(0)</option>
+                                                <option value="a1">待回覆(12)</option>
+                                                <option value="a2">已回覆(2)</option>
+                                                <option value="a2">賣家修改評價(1)</option>
                                             </select>
                                         </div>
                                     </div>
@@ -142,46 +142,84 @@
                             <div class="sea-ui tab-nav-bar tab-nav tab-nav-fluid">
                                 <div class="sea-ui tab-pointing">
                                     <ul class="tab-items no-margin">
-                                        <li><a href="#tab1" class="active">所有評價 (0)</a></li>
-                                        <li><a href="#tab2">優良 (0)</a></li>
-                                        <li><a href="#tab3">普通 (0)</a></li>
-                                        <li><a href="#tab4">待加強 (0)</a></li>
+                                        <li><a href="#tab1" class="active">所有評價 (12)</a></li>
+                                        <li><a href="#tab2">優良 (5)</a></li>
+                                        <li><a href="#tab3">普通 (4)</a></li>
+                                        <li><a href="#tab4">待加強 (3)</a></li>
                                     </ul>
                                 </div>
                             </div>
 
+
                             <!-- 所有清單容器 -->
                             <div class="listBox">
-                                <!--說明FOR RD: 沒有任何評價紀錄時 -->
-                                <div class="table_default_empaty">
-                                    <div class="message-text">沒有評價資料</div>
-                                </div>
-                            </div>
-                            <!-- 所有清單容器 -->
 
-                            <!-- PC 版 列出所有頁碼 -->
-                            <div class="sea-ui page-pagination hidden-sm-down" style="display: none">
-                                <ul class="eng-num">
-                                    <li class="active">1</li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li><a href="#">6</a></li>
-                                    <li><a href="#">7</a></li>
-                                    <li><a href="#">8</a></li>
-                                    <li class="pagination-jump-next"></li>
-                                    <li>
-                                        <a class="pagination-next" href="#">
-                                            <span class="sea-seller-icon icon-angle-right"></span>
-                                        </a>
-                                    </li>
-                                </ul>
+                                <!-- 單筆評價 -->
+                                <div class="listBox-singlelist listBox-singlelist-review">
+                                    <!-- 評價狀態群組 -->
+                                    <div class="flexTable singlelist-statusBar">
+                                        <span class="statusBar-status"><i class="sea-btn-icon icon-alert-nofill icon-back icon-back-red"></i>未讀取</span>
+                                        <div>
+                                            <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 單筆評價 結束 -->
+
+
+                                <!-- 單筆評價 -->
+                                <div class="listBox-singlelist listBox-singlelist-review">
+                                    <!-- 評價狀態群組 -->
+                                    <div class="flexTable singlelist-statusBar">
+                                        <span class="statusBar-status"><i class="sea-btn-icon icon-alert-nofill icon-back icon-back-red"></i>待回覆</span>
+                                        <div>
+                                            <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 單筆評價 結束 -->
+
+
+                                <!-- 單筆評價 -->
+                                <div class="listBox-singlelist listBox-singlelist-review">
+                                    <!-- 評價狀態群組 -->
+                                    <div class="flexTable singlelist-statusBar">
+                                        <span class="statusBar-status"><i class="sea-btn-icon icon-checked icon-back icon-back-green"></i>已回覆</span>
+                                        <div>
+                                            <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 單筆評價 結束 -->
+
+
+                                <!-- 單筆評價 -->
+                                <div class="listBox-singlelist listBox-singlelist-review">
+                                    <!-- 評價狀態群組 -->
+                                    <div class="flexTable singlelist-statusBar">
+                                        <span class="statusBar-status"><i class="sea-btn-icon icon-alert-nofill icon-back icon-back-red"></i>買家已更新評價</span>
+                                        <div>
+                                            <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 單筆評價 結束 -->
+
+
+                                <!-- 單筆評價 -->
+                                <div class="listBox-singlelist listBox-singlelist-review">
+                                    <!-- 評價狀態群組 -->
+                                    <div class="flexTable singlelist-statusBar">
+                                        <span class="statusBar-status"><i class="sea-btn-icon icon-checked icon-back icon-back-green"></i>已回覆</span>
+                                        <div>
+                                            <span class="eng-num date-time">2020/07/28<time>01:28</time></span>
+                                        </div>
+                                    </div>
+                                    <!-- 評價內容群組 -->
+                                </div>
+                                <!-- 單筆評價 結束 -->
                             </div>
-                            <!-- 手機版 Load more-->
-                            <div class="sea-btn-loadcontent hidden-sm-up" style="display: none">
-                                <a href="#" class="sea-ui btn btn-primary btn-load">LOAD MORE</a>
-                            </div>
+                            <!-- 所有清單容器 結束 -->
                         </section>
                     </div>
                 </div>

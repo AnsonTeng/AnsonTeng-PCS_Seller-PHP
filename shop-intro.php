@@ -33,7 +33,7 @@
 <!-- BS grid -->
 <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
 
-<title>PChomeSEA | 賣場介紹</title>
+<title>PChomeSEA | 賣場管理</title>
 <!-- Google Tag Manager -->
 <script>
     (function(w, d, s, l, i) {
@@ -80,10 +80,7 @@
                     </div>
                     <div class="col-md-9">
                         <section id="sea-section-content">
-                            <!-- PChomeSEA Account Header -->
-                            <!--說明For RD：手機版不出現-->
-                            <?php include("assets/account-header.php"); ?>
-                            <!-- PChomeSEA Account Header end-->
+
 
                             <div class="sea-ui breadcrumb-back">
                                 <span class="sea-seller-icon icon-seller-shop"></span>
@@ -92,52 +89,13 @@
                                     <li class="sea-seller-icon icon-angle-right"></li>
                                     <li>賣場設定</li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
-                                    <li>賣場介紹</li>
+                                    <li>賣場管理</li>
                                 </ul>
                             </div>
 
-                            <!--賣場介紹-->
-                            <div class="content-block shop-intro">
-                                <div class="content-title">賣場介紹（泰國賣場限定）</div>
-                                <div class="content-description">
-                                    <div class="form-column">
-                                        <div class="account-avatar-box">
-                                            <div class="account-avatar lg">
-                                                <a href="#" class="avatareditBtn">
-                                                    <div class="account-avatar-inner">
-                                                        <div class="avatar-figure-edit"><span class="sea-seller-icon icon-camera"></span></div>
-                                                        <div class="avatar-figure-img img-bg" style="background-image: url('img/brand/brand_01.jpg');">
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="seller-info two-column">
-                                            <div class="sea-ui form-label form-m-break">
-                                                <label for="" class="required">賣場名稱</label>
-                                                <!--說明 FOR RD: 有錯誤訊息時可帶 class="sea-ui form error" -->
-                                                <div class="sea-ui form">
-                                                    <input type="text" placeholder="請輸入賣場名稱">
-                                                    <p class="break-text">買家會藉由搜尋找到您的賣場</p>
-                                                </div>
-                                            </div>
-                                            <div class="sea-ui form-label form-m-break shop-intro-text">
-                                                <label for="">賣場簡介</label>
-                                                <div class="sea-ui form">
-                                                    <textarea placeholder="請輸入賣場簡介（In English)"></textarea>
-                                                    <div class="form__keyin__btn">
-                                                        <a href="https://translate.google.com.tw/?hl=zh-TW" class="sea-ui btn-xs btn" target="_blank">使用 Google 翻譯</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <!--賣場可寄送的國家-->
                             <div class="content-block shop-intro">
-                                <div class="content-title">賣場寄送國家</div>
+                                <div class="content-title">商品寄送國家</div>
                                 <div class="content-description">
                                     <div class="form-column">
                                         <!--說明For RD:  尚未開放勾選時 請帶入 disabled 的 class <div class="ct-ui form checkbox disabled">  文字 就會變灰色-->
@@ -183,11 +141,45 @@
                                 </div>
                             </div>
 
-                            <!--賣家聯絡資料-->
-                            <div class="content-block shop-intro" id="editTel">
-                                <div class="content-title">賣場聯絡資料</div>
+                            <!--賣場管理-->
+                            <div class="content-block shop-intro">
+                                <div class="content-title">賣場聯絡資料（泰國賣場限定）</div>
                                 <div class="content-description">
-                                    <p class="description-text">您所修改的資料將於您在 PChomeSEA 會員的賣家帳戶資料同步更新</p>
+                                    <!-- <p class="description-text">您所修改的資料，將同步更新於您在 PChomeSEA 會員的賣家帳戶資料。</p> -->
+                                    <div class="form-column">
+                                        <div class="account-avatar-box">
+                                            <div class="account-avatar lg">
+                                                <a href="#" class="avatareditBtn">
+                                                    <div class="account-avatar-inner">
+                                                        <div class="avatar-figure-edit"><span class="sea-seller-icon icon-camera"></span></div>
+                                                        <div class="avatar-figure-img img-bg" style="background-image: url('img/brand/brand_01.jpg');">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="seller-info two-column">
+                                            <div class="sea-ui form-label form-m-break">
+                                                <label for="" class="required">賣場名稱</label>
+                                                <!--說明 FOR RD: 有錯誤訊息時可帶 class="sea-ui form error" -->
+                                                <div class="sea-ui form">
+                                                    <input type="text" placeholder="請輸入賣場名稱">
+                                                    <p class="break-text">買家會藉由搜尋找到您的賣場</p>
+                                                </div>
+                                            </div>
+                                            <div class="sea-ui form-label form-m-break shop-intro-text">
+                                                <label for="">賣場簡介</label>
+                                                <div class="sea-ui form">
+                                                    <textarea placeholder="請輸入賣場簡介（In English)"></textarea>
+                                                    <div class="form__keyin__btn">
+                                                        <a href="https://translate.google.com.tw/?hl=zh-TW" class="sea-ui btn-xs btn" target="_blank">使用 Google 翻譯</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="form-column">
                                         <div class="sea-ui form-label form-m-break two-column">
                                             <label for="" class="required">賣場聯絡人</label>
@@ -370,7 +362,7 @@
     <script type="text/javascript" src="js/js_shop.js"></script>
     <script>
         $(document).ready(function() {
-            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(5)');
+            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(6)');
             menuItem.find('ul').show();
             menuItem.addClass('active');
         });

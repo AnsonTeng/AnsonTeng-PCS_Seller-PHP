@@ -30,6 +30,12 @@
         text-align: left;
         padding: 0 1.25rem 0.9375rem 1.25rem;
         border-bottom: 1px solid $colorLightGray;
+
+        strong {
+            font-size: 1.125rem;
+            font-weight: 700;
+            // color: $accentColor;
+        }
     }
 
     // 對話框內容

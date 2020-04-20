@@ -4,9 +4,9 @@
 
     .sea-seller-icon {
         text-align: center;
-        position: relative;
-        top: 50%;
-        transform: translateY(-55%);
+        // position: relative;
+        // top: 50%;
+        // transform: translateY(-55%);
         font-size: 5rem;
         color: $colorLightGreen;
     }
@@ -90,7 +90,7 @@
             right: -10px !important;
 
             .sea-seller-icon {
-                line-height: 40px;
+                // line-height: 40px;
             }
         }
 
@@ -111,7 +111,7 @@
         padding: 0px;
 
         .sea-seller-icon {
-            transform: translateY(-65%);
+            // transform: translateY(-65%);
         }
 
         label#filedrag {
@@ -197,13 +197,31 @@
 //拖拉式
 .file-drop-wrap {
     position: relative;
-    padding-top: 40px;
+    // padding-top: 40px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 180px;
     transition: 0.2s;
     max-width: 100%;
+
+    @media (max-width: $break-sm) {
+        // display: block;
+        // text-align: center;
+        padding: 12px;
+        min-height: auto;
+    }
+
+    .sea-seller-icon {
+        // position: absolute;
+        // top: 30px;
+        // left: 50%;
+        color: $colorDeepLightGreen;
+        font-size: 4rem;
+        // margin-left: -30px;
+        // transform: translateX(-50%);
+    }
 }
 
 .file-input {
@@ -221,29 +239,14 @@
 }
 
 .file-msg {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     font-weight: 500;
-    line-height: 1.4;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-left: 10px;
-}
-
-@media (max-width: $break-xs) {
-    .sea-seller-icon.icon-cloud-uploading {
-        position: absolute;
-        top: 30px;
-        left: 50%;
-        color: $colorDeepLightGreen;
-        font-size: 4rem;
-        margin-left: -30px;
-    }
-
-    .file-drop-wrap {
-        display: block;
-        text-align: center;
-        padding: 100px 25px 80px 25px;
-        min-height: auto;
-    }
+    line-height: 1.25rem;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    padding: 0 12px;
+    color: $colorDarkGray;
+    // @include text-overflow(1);
+    // margin-top: 0.5rem;
 }

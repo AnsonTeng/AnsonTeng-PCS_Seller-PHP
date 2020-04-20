@@ -155,7 +155,10 @@ img {
     background-position: center center;
 }
 
+// 「 Load More 」 Buttom
 .sea-btn-loadcontent {
+    margin: 20px 0;
+
     p {
         font-weight: 400;
         color: #c5c5c5;
@@ -189,6 +192,10 @@ img {
         .block-aboutme {
             padding: 15px 0 30px 0;
 
+            @media (max-width: $break-xs) {
+                padding: 0px 0 20px 0;
+            }
+
             .account-header {
                 .account-wrap {
                     flex-direction: column;
@@ -207,6 +214,24 @@ img {
 
                 &.lightbox-accountheaderbg {
                     background-color: $colorWhite;
+
+                    .data-wrap {
+                        text-align: center;
+
+                        .data-box {
+                            text-align: center;
+
+                            .name {
+                                max-width: calc(100% - 40px);
+                                font-size: 1.5rem;
+                                @include text-overflow(1);
+                                height: 1.75rem;
+                                margin-bottom: 0.5rem;
+                                text-align: center;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
                 }
             }
         }

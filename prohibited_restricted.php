@@ -32,20 +32,20 @@
     <title>PChomeSEA | 禁運及受限商品列表</title>
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -115,7 +115,7 @@
                         <div class="content-title">重要提醒</div>
                         <div class="content-description">
                             <ul>
-                                <li>以上資訊皆是一般規範，並可能會隨時變動。若需最新及最完整的詳細資訊，請連至<a href="http://en.customs.go.th/cont_strc_simple.php?lang=en&left_menu=menu_prohibited_restricted_items&current_id=14223132414d505f4b" target="_blank">泰國海關網站</a>查詢。</li>
+                                <li>以上資訊皆是一般規範，並可能會隨時變動。若需最新及最完整的詳細資訊，請連至<a href="http://customs.go.th/cont_strc_simple.php?ini_content=individual_160426_01&lang=en&left_menu=menu_individual_submenu_03_01" target="_blank">泰國海關網站</a>查詢。</li>
                             </ul>
                         </div>
                     </div>

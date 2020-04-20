@@ -32,23 +32,23 @@
 <!-- BS grid -->
 <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
 
-<title>PChomeSEA | 大量新增</title>
+<title>PChomeSEA | 大量新增商品</title>
 <!-- Google Tag Manager -->
 <script>
-(function(w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-    });
-    var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-    f.parentNode.insertBefore(j, f);
-})(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
 </script>
 <!-- End Google Tag Manager -->
 </head>
@@ -89,10 +89,7 @@
                     </div>
                     <div class="col-md-9">
                         <section id="sea-section-content">
-                            <!-- PChomeSEA Account Header -->
-                            <!--說明For RD：手機版不出現-->
-                            <?php include("assets/account-header.php"); ?>
-                            <!-- PChomeSEA Account Header end-->
+
 
 
                             <div class="sea-ui breadcrumb-back">
@@ -102,7 +99,7 @@
                                     <li class="sea-seller-icon icon-angle-right"></li>
                                     <li>商品管理</li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
-                                    <li>大量新增</li>
+                                    <li>大量新增商品</li>
                                 </ul>
                             </div>
 
@@ -143,11 +140,11 @@
 
                             <!--商品詳細描述-->
                             <div class="content-block product-description">
-                                <div class="content-title">商品大量新增紀錄</div>
+                                <div class="content-title">商品大量新增商品紀錄</div>
                                 <div class="content-description">
-                                    <p class="description-text">以下為 excel 商品大量新增紀錄列表，上傳資料後需 2-3 個工作天處理，上傳結果會在列表中紀錄，紀錄只會保留最後 20 筆資料。</p>
+                                    <p class="description-text">以下為 excel 商品大量新增商品紀錄列表，上傳資料後需 2-3 個工作天處理，上傳結果會在列表中紀錄，紀錄只會保留最後 20 筆資料。</p>
                                     <a class="sea-ui btn-sm xlserrorBtn">
-                                        <li class="sea-btn-icon icon-information"></li>上傳結果錯誤說明
+                                        <li class="sea-btn-icon icon-information"></li>結果錯誤說明
                                     </a>
 
                                     <div class="bulklist-list-table lg-break-table">
@@ -213,7 +210,7 @@
 
                                     <!-- 手機版 Load more-->
                                     <div class="sea-btn-loadcontent hidden-xs-up" style="display: none;">
-                                        <a href="#" class="sea-ui btn btn-cta btn-load">LOAD MORE</a>
+                                        <a href="#" class="sea-ui btn btn-primary btn-load">LOAD MORE</a>
                                     </div>
                                 </div>
                             </div>
@@ -250,11 +247,11 @@
     <!--商品管理 JS-->
     <script type="text/javascript" src="js/js_product.js"></script>
     <script>
-    $(document).ready(function() {
-        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(4)');
-        menuItem.find('ul').show();
-        menuItem.addClass('active');
-    });
+        $(document).ready(function() {
+            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(5)');
+            menuItem.find('ul').show();
+            menuItem.addClass('active');
+        });
     </script>
 
 </body>

@@ -105,7 +105,7 @@
                                     <div class="flexTable orderlist-header">
                                         <div class="flexTable orderlist-buyer">
                                             <img class="buyeeAvatar" src="img/brand/brand_01.jpg" alt="buyer">
-                                            <span class="buyerName">so**********************om</span>
+                                            <span class="buyerName">so***************************om<span class="buyerCountry">SG</span></span>
                                         </div>
                                         <!-- 操作按鈕欄 -->
                                         <a class="sea-ui btn-xs btn btn_contanctSeller productscreenshotBtn" href="#"><i class="sea-btn-icon icon-picture"></i>
@@ -127,26 +127,34 @@
                                                 </div>
                                                 <!-- 商品資訊 -->
                                                 <div class="productInfo-info">
+                                                    <!-- 商品編號 -->
+                                                    <div class="orderNumBox-orderNum">
+                                                        <span class="orderlist-subtitle hidden-xxs-down">商品編號</span>
+                                                        <span class="orderlist-title eng-num">9041800006091</span>
+                                                    </div>
                                                     <!-- 商品名稱 -->
                                                     <div class="productInfo-info-title">
                                                         <span class="productInfo-info-title-text">
-                                                            <a href="#">Winter short tube Chelsea boots Martin work boots</a>
+                                                            <a href="#">Winter Martin work boots</a>
                                                         </span>
                                                     </div>
                                                     <!-- 商品規格 -->
                                                     <div class="productInfo-info-subtitle">
-                                                        <span class="productInfo-info-subtitle-text">Size / Color / Type / Size / Color / Type / Size / Color / Type / Size / Color / Type</span>
+                                                        <span class="productInfo-info-subtitle-text">Size / Color / Type</span>
                                                     </div>
                                                     <!-- 商品數量 -->
                                                     <div class="productInfo-info-subtitle">
-                                                        <span class="productInfo-info-orderNum">
+                                                        <p class="productInfo-info-orderNum">
                                                             <span class="productInfo-info-orderNum-title">x</span>
                                                             <span class="productInfo-info-orderNum-text">42</span>
-                                                        </span>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
+
+
                                         <!-- 商品金額 -->
                                         <div class="flexTable productBar-total">
                                             <!-- 商品金額 -->
@@ -173,6 +181,21 @@
                                                 </div>
                                                 <!-- 商品資訊 -->
                                                 <div class="productInfo-info">
+                                                    <!-- 商品編號 -->
+                                                    <div class="orderNumBox-orderNum">
+                                                        <span class="orderlist-subtitle hidden-xxs-down">商品編號</span>
+                                                        <span class="orderlist-title eng-num">9041800006091</span>
+                                                    </div>
+
+                                                    <!-- 商品編號 -->
+                                                    <!-- <div class="productInfo-info-subtitle">
+                                                        <p class="productInfo-info-orderNum">
+                                                            <span class="productInfo-info-orderNum-title hidden-xxs-down">商品編號</span>
+                                                            <span class="productInfo-info-orderNum-text">9041800006091</span>
+                                                        </p>
+                                                    </div> -->
+
+
                                                     <!-- 商品名稱 -->
                                                     <div class="productInfo-info-title">
                                                         <span class="productInfo-info-title-text">
@@ -185,10 +208,10 @@
                                                     </div>
                                                     <!-- 商品數量 -->
                                                     <div class="productInfo-info-subtitle">
-                                                        <span class="productInfo-info-orderNum">
+                                                        <p class="productInfo-info-orderNum">
                                                             <span class="productInfo-info-orderNum-title">x</span>
                                                             <span class="productInfo-info-orderNum-text">400</span>
-                                                        </span>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>

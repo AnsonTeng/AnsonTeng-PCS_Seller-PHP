@@ -329,11 +329,11 @@ a.sea-ui.btn-xs.btn.btn_contanctSeller {
 
 // 商品編號or訂單編號
 .productInfo-info-orderNum-text {
+    color: $secondaryDeepColor;
+    font-weight: 400;
     margin-right: 5px;
-}
 
-@media (max-width: 359px) {
-    .productInfo-info-orderNum-text {
+    @media (max-width: 359px) {
         margin-right: 2px;
     }
 }

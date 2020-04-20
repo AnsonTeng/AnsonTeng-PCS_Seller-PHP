@@ -8,44 +8,46 @@
         position: relative;
 
         //avatar頭像
-        a {
-            .avatar-wrap {
-                width: 106px;
-                height: 106px;
-                border-radius: 50%;
-                border: 3px solid $colorWhite;
-                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-                position: relative;
-                overflow: hidden;
+        // a {
+        .avatar-wrap {
+            width: 106px;
+            height: 106px;
+            border-radius: 50%;
+            border: 3px solid $colorWhite;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
 
-                .avatar-img {
-                    width: 100%;
-                    height: 100%;
-                    background-size: cover;
-                    background-position: center center;
-                }
+            .avatar-img {
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center center;
+            }
 
-                .avatar-edit {
-                    position: absolute;
-                    background-color: rgba(0, 0, 0, 0.6);
-                    bottom: 0;
-                    height: 35px;
-                    width: 100%;
-                    z-index: 10;
-                    text-align: center;
+            .avatar-edit {
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.5);
+                bottom: 0;
+                height: 24px;
+                width: 100%;
+                z-index: 10;
+                text-align: center;
 
-                    .icon-camera {
-                        color: $colorWhite;
-                        font-size: 1rem;
-                        line-height: 35px;
-                    }
+                .icon-camera {
+                    color: $colorWhite;
+                    font-size: 0.875rem;
+                    line-height: 24px;
                 }
             }
         }
 
+        // }
+
         //資料
         .data-wrap {
             margin: auto 20px;
+            width: 100%;
 
             .data-box {
                 display: flex;
@@ -61,6 +63,7 @@
                     font-size: 1.5rem;
                     @include text-overflow(1);
                     height: 1.75rem;
+                    margin-bottom: 0.5rem;
 
                     @media (max-width: $break-sm) {
                         text-align: center;
@@ -68,16 +71,9 @@
                     }
                 }
 
-                >a {
-                    &.btn-gray {
-                        margin-left: 12px;
-                        background-color: $colorLightGray;
-                        border: 1px solid $colorLightGray;
-                        color: $colorBlack;
-                    }
-                }
-
                 .product-num {
+                    margin-bottom: 1.5rem;
+
                     span {
                         color: $colorOrange;
                     }
@@ -107,10 +103,6 @@
 }
 
 
-
-
-
-
 @media (max-width: $break-sm) {
     .account-header {
         .container.sea-gutters {
@@ -124,13 +116,16 @@
                 justify-content: center;
                 margin: auto;
 
-                a {
-                    .avatar-wrap {
-                        margin: auto;
-                    }
+                // a {
+                .avatar-wrap {
+                    margin: auto;
                 }
 
+                // }
+
                 .data-wrap {
+                    margin: auto;
+
                     .data-box {
                         .name {
                             margin: 15px auto;

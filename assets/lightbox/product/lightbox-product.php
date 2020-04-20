@@ -161,10 +161,10 @@
                     <div class="sea-ui form product-price-TWdollar unit-before">
                         <input type="tel" placeholder="">
                     </div>
-                    <div class="sea-ui form product-price-USdollar unit-before">
+                    <!-- <div class="sea-ui form product-price-USdollar unit-before">
                         <input type="tel" placeholder="">
-                    </div>
-                    <span class="form-introduction">按照每日浮動匯率計算美金價格，參考匯率：<span>29.991</span><span>(DD/MM/YYYY)</span>
+                    </div> -->
+                    <!-- <span class="form-introduction">按照每日浮動匯率計算美金價格，參考匯率：<span>29.991</span><span>(DD/MM/YYYY)</span> -->
                     </span>
                 </div>
             </div>
@@ -197,7 +197,7 @@
 <!--大量上傳錯誤說明-->
 <div id="sea-lightbox-xlserror" class="sea-ui modal medium">
     <i class="sea-seller-icon icon-delete lightbox_close"></i>
-    <div class="modal-header">上傳結果錯誤說明</div>
+    <div class="modal-header">結果錯誤說明</div>
     <div class="scrolling modal-content">
         <div class="description">
             <div class="description-list">
@@ -249,7 +249,7 @@
     <div class="scrolling-tall modal-content">
         <div class="description">
             <div class="xsl-download-img"><img src="img/icon-bulklist-xsl.svg" alt="" class="img-fluid"></div>
-            <div class="title"><span class="eng-num">STEP 01.</span> 最新大量新增範本 </div>
+            <div class="title"><span class="eng-num">STEP 01.</span> 最新大量新增商品範本 </div>
             <p>請先<a href="/sellers/batchprod/downloadxls">下載excel上架資料</a>，按照上面說明填寫，單次excel上架資料筆數上限為1000筆。 一天最多只能上傳3次。</p>
             <br />
             <br />
@@ -265,7 +265,7 @@
             <div class="title"><span class="eng-num">STEP 03.</span> 查詢上架進度及成功/失敗筆數</div>
             <p>
                 1. 上傳檔案必需每筆商品資料均正確，才可成功上架整批資料。 賣家可自行下載錯誤參考檔，最後一欄會附上資料異常原因，賣家可自行修正後再重新上傳。<br />
-                2. 整批資料上傳，系統將會於2-3個工作天批次處理，賣家可至商品上架>商品大量新增紀錄 中查詢 進度及成功失敗筆數。</p><br>
+                2. 整批資料上傳，系統將會於2-3個工作天批次處理，賣家可至商品上架>商品大量新增商品紀錄 中查詢 進度及成功失敗筆數。</p><br>
         </div>
     </div>
 </div>

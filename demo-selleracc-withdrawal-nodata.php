@@ -32,20 +32,20 @@
     <title>PChomeSEA | 貨款結算</title>
     <!-- Google Tag Manager -->
     <script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -81,10 +81,7 @@
                     </div>
                     <div class="col-md-9">
                         <section id="sea-section-content">
-                            <!-- PChomeSEA Account Header -->
-                            <!--說明For RD：手機版不出現-->
-                            <?php include("assets/account-header.php"); ?>
-                            <!-- PChomeSEA Account Header end-->
+
 
                             <!-- 麵包屑 -->
                             <div class="sea-ui breadcrumb-back">
@@ -187,8 +184,6 @@
                             <div class="tableBox tableBox-selleracc-withdrawal">
                                 <!-- 表格（分類標題）-->
                                 <div class="table__thead hidden-lg-down">
-
-
                                     <table>
                                         <colgroup>
                                             <col class="table--w10">
@@ -213,7 +208,7 @@
                                                 <th>
                                                     <!-- Statement Numbe -->單據號碼</th>
                                                 <th>
-                                                    <!-- Amount -->可結算金額 THB</th>
+                                                    <!-- Amount -->訂單來源</th>
                                                 <th>
                                                     <!-- Amount -->可結算金額 TWD</th>
                                                 <th>
@@ -224,12 +219,10 @@
                                 </div>
                                 <!-- 表格（單一筆交易費用） -->
                                 <div class="table__tbody lg-break-table">
-
                                     <!--說明FOR RD: 沒有任何交易紀錄 -->
                                     <div class="table_default_empaty">
                                         <div class=" message-text">沒有交易紀錄</div>
                                     </div>
-
                                 </div>
                             </div>
                             <!-- PC 版 列出所有頁碼 -->
@@ -294,11 +287,11 @@
 
     <!-- 選單預設開啟 -->
     <script>
-    $(document).ready(function() {
-        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(3)');
-        menuItem.find('ul').show();
-        menuItem.addClass('active');
-    });
+        $(document).ready(function() {
+            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(4)');
+            menuItem.find('ul').show();
+            menuItem.addClass('active');
+        });
     </script>
 </body>
 

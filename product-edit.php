@@ -36,20 +36,20 @@
 <title>PChomeSEA | 編輯商品</title>
 <!-- Google Tag Manager -->
 <script>
-(function(w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-    });
-    var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-    f.parentNode.insertBefore(j, f);
-})(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
 </script>
 <!-- End Google Tag Manager -->
 </head>
@@ -90,10 +90,7 @@
                     <div class="col-md-9">
                         <section id="sea-section-content">
 
-                            <!-- PChomeSEA Account Header -->
-                            <!--說明For RD：手機版不出現-->
-                            <?php include("assets/account-header.php"); ?>
-                            <!-- PChomeSEA Account Header end-->
+
 
                             <div class="sea-ui breadcrumb-back">
                                 <span class="sea-seller-icon icon-productedit"></span>
@@ -110,7 +107,7 @@
                             <div class="content-block">
                                 <div class="content-title">設定商品圖片</span></div>
                                 <div class="content-description">
-                                    <p class="description-text">尺寸600px x 600px 以上享有局部放大功能，買家能看到更多商品細節 (格式限JPG, PNG, 或GIF)。</p>
+                                    <p class="description-text">尺寸 600px X 600px 以上享有局部放大功能，買家能看到更多商品細節 (格式限JPG, PNG, 或GIF)。</p>
                                     <div class="upload-product-img">
                                         <div class="upload-img-num"><span class="eng-num">
                                                 <span class="current">8</span>/10</span>張照片</div>
@@ -282,7 +279,7 @@
                                     <!-- <div id="thai"> -->
                                     <div class="sea-ui form-label form-m-break">
                                         <label for="" class="required">商品名稱</label>
-                                        <div class="sea-ui form error">
+                                        <div class="sea-ui form">
                                             <input type="text" placeholder="請輸入商品名稱" value="Casio G-Shock 雙衛星 GPS 全球定位腕錶">
                                             <div class="error-notification-tooltip-inline">商品名稱為必填且不可超過500字元</div>
                                             <a href="#" class="sea-ui btn-sm btn-primary-outlined inputGroup-btn">Google 翻譯中翻英</a>
@@ -303,25 +300,26 @@
                                         <div class="sea-ui form-label product-title">
                                             <label class="required">商品品牌</label>
                                             <div class="sea-ui form">
-                                                <input type="text" placeholder="請輸入商品品牌名稱">
+                                                <input type="text" placeholder="請輸入商品品牌名稱" value="Casio">
                                                 <div class="error-notification-tooltip-inline">商品品牌名稱為必填且不可超過500字元</div>
                                             </div>
                                         </div>
                                     </div>
 
+                                    <!-- 說明For RD: 尚未選擇分類時 只會出現一個下拉選單 選完第一層分層後 才會出現第二層分類的下拉選單 以此類推 -->
                                     <div class="sea-ui form-label product-category form-m-break">
                                         <label for="" class="required">商品分類</label>
                                         <div class="column-form">
                                             <div class="sea-ui form select">
                                                 <select>
-                                                    <option value="0">請選擇</option>
+                                                    <option value="0">手錶</option>
                                                     <option value="1">女生服裝</option>
                                                     <option value="2">男生服裝</option>
                                                 </select>
                                             </div>
                                             <div class="sea-ui form select">
                                                 <select>
-                                                    <option value="0">請選擇</option>
+                                                    <option value="0">男錶</option>
                                                     <option value="1">上衣</option>
                                                     <option value="2">褲子</option>
                                                     <option value="3">外套</option>
@@ -329,7 +327,7 @@
                                             </div>
                                             <div class="sea-ui form select">
                                                 <select>
-                                                    <option value="0">請選擇</option>
+                                                    <option value="0">運動錶</option>
                                                     <option value="1">長褲</option>
                                                     <option value="2">短褲</option>
                                                     <option value="3">內褲</option>
@@ -345,9 +343,9 @@
                                                 <div class="sea-ui form product-price-TWdollar unit-before">
                                                     <input type="tel" value="2497">
                                                 </div>
-                                                <div class="sea-ui form product-price-USdollar unit-before">
+                                                <!-- <div class="sea-ui form product-price-USdollar unit-before">
                                                     <input type="tel" value="2480">
-                                                </div>
+                                                </div> -->
                                             </div>
 
                                         </div>
@@ -357,41 +355,17 @@
                                                 <div class="sea-ui form product-price-TWdollar unit-before">
                                                     <input type="tel" value="1626">
                                                 </div>
-                                                <div class="sea-ui form product-price-USdollar unit-before">
+                                                <!-- <div class="sea-ui form product-price-USdollar unit-before">
                                                     <input type="tel" value="1620">
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
                                     <!-- 參考匯率說明文字 -->
-                                    <div class="sea-ui form exchangeRate">
+                                    <!-- <div class="sea-ui form exchangeRate">
                                         <span class="form-introduction">按照每日浮動匯率計算美金價格<br />參考匯率：<span>29.991</span><span>(DD/MM/YYYY)</span>
                                         </span>
-                                    </div>
-
-
-                                    <div class="sea-ui form-label form-sm-break">
-                                        <label for="">商品情況</label>
-                                        <div class="radio-wrap">
-                                            <div class="sea-ui form radio">
-                                                <input type="radio" id="newProduct" name="radio-group2" checked="">
-                                                <label for="newProduct">新品</label>
-                                            </div>
-                                            <div class="sea-ui form radio">
-                                                <input type="radio" id="usedProduct" name="radio-group2">
-                                                <label for="usedProduct">二手</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="sea-ui form">
-                                        <div class="sea-ui form-label product-title">
-                                            <label>自訂商品編號</label>
-                                            <div class="sea-ui form">
-                                                <input type="text" placeholder="自訂商品編號(上限150字)">
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="sea-ui form-label product-title">
                                         <label><a href="#" class="aboutHScodeBtn">HS CODE <span class="sea-seller-icon icon-information tooltips-blue"></span></a></label>
@@ -408,6 +382,15 @@
                                             <p class="align-right">％</p>
                                         </div>
                                     </div>
+
+                                    <div class="sea-ui form">
+                                        <div class="sea-ui form-label product-title">
+                                            <label>自訂商品編號</label>
+                                            <div class="sea-ui form">
+                                                <input type="text" placeholder="自訂商品編號(上限150字)">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -415,6 +398,20 @@
                             <div class="content-block">
                                 <div class="content-title">商品規格與庫存</div>
                                 <div class="content-description">
+
+                                    <div class="sea-ui form-label form-sm-break">
+                                        <label for="">商品情況</label>
+                                        <div class="radio-wrap">
+                                            <div class="sea-ui form radio">
+                                                <input type="radio" id="newProduct" name="radio-group2" checked="">
+                                                <label for="newProduct">新品</label>
+                                            </div>
+                                            <div class="sea-ui form radio">
+                                                <input type="radio" id="usedProduct" name="radio-group2">
+                                                <label for="usedProduct">二手</label>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <div class="sea-ui form-label form-sm-break">
                                         <label for="">商品規格</label>
@@ -568,15 +565,17 @@
                                     <div class="sea-ui form-label form-m-break">
                                         <label for="">物流方式</label>
                                         <div class="sea-ui form form-textList">
-                                            <p class="alert">(1) 請確實輸入商品包裹的重量及材積，我們會依照您所輸入的資訊向買家收取適當的國際運費。詳見【<a href="https://w3.pchome.co.th/guide_j/guide__ship__new_03">運費如何計算</a>】</p>
-                                            <p>(2) 海外出貨目前以單一商品為一個包裹來計算運費，譬如買家購買同商品x2，會計算為兩個包裹、兩筆運費。</p>
-                                            <p>(3) 提醒您，包裹重量小於 2kg，材積相加不超過 90cm 的包裹將優先以國際e小包計算運費並且進行配送，但若您輸入的包裹重量或材積與實際寄送時計量結果不符而導致運費少收，將以物流商計算的運費金額為主，並且列為運費補收項目於提領時補扣。</p>
+                                            <p>(1) 若訂單來源為泰國，且 PChomeSEA 支援物流方式不適用您的商品，您可選擇啟用＂賣家自行配送＂。</p>
+                                            <p class="alert">(2) 請確實輸入商品包裹的重量及材積，我們會依照您所輸入的資訊向買家收取適當的國際運費。詳見【<a href="https://w3.pchome.co.th/guide_j/guide__ship__new_03">運費如何計算</a>】</p>
+                                            <p>(3) 海外出貨目前以單一商品為一個包裹來計算運費，譬如：買家購買同商品x2，會計算為兩個包裹、兩筆運費。</p>
+                                            <p>(4) 提醒您，包裹重量小於 2kg，材積相加不超過 90cm 的包裹將優先以「國際e小包」計算運費並且進行配送，但若您輸入的包裹重量或材積與實際寄送時計量結果不符而導致運費少收，將以物流商計算的運費金額為主，並且列為運費補收項目於提領時補扣。</p>
+                                            <p>(5) 若您的商品重量或材積為 PChomeSEA 所支援的跨境物流無法配送的規格，則【賣家自行配送】為必須啟用，且可能無法支援開賣到其他地區。</p>
                                         </div>
                                     </div>
 
                                     <!--說明For RD:  若未選擇物流商，此區塊請整塊隱藏 包含 <div class="logistic-wrap operation"> 這層-->
                                     <div class="logistic-wrap operation">
-                                        <p class="description-text">PChomeSEA 支援物流 (有顯示<img alt="pchome-protectiont" class="icon-img" src="https://cimg.pchome.co.th/res/other/coth/img/icon_pcprotect_badge.svg" style="width:18px;">為 PChomeSEA 支援物流）</p>
+                                        <p class="description-text">PChomeSEA 支援物流 （泰國賣場限定）</p>
 
                                         <!--說明For RD:  已輸入材積的顯示狀態，自動帶入運費 -->
                                         <div class="sea-ui accordion">
@@ -593,7 +592,7 @@
                                                 </div>
                                                 <div class="caption-text-box"> NT$ 500 </div>
                                                 <div class="caption-switch">
-                                                    <div class="sea-ui form">
+                                                    <div class="sea-ui form-label">
                                                         <div class="sea-ui switch-toggle">
                                                             <input id="SwitchCheckbox_1" class="switch-checkbox" type="checkbox">
                                                             <label for="SwitchCheckbox_1"></label>
@@ -608,7 +607,6 @@
                                             <div class="accordion-liquid-container">
                                                 <div class="liquid-container-inner">
                                                     <ul class="shipnotice">
-                                                        <li>可寄送地區: 泰國全區</li>
                                                         <li>重量限制: <span class="highlight"> 30kg以下 </span></li>
                                                         <li>尺寸限制: 任何一邊不得超過<span class="highlight"> 150cm </span>，長寬高總和不得超過<span class="highlight"> 300cm </span></li>
                                                         <li>若材積重大於實重，則取材積重計價 長 × 寬 × 高 (cm) ÷ 6,000 = 材積重量 (kg)</li>
@@ -636,7 +634,7 @@
                                                     <div class="hint-text"><span class="sea-seller-icon icon-alert"></span>需輸入重量</div>
                                                 </div>
                                                 <div class="caption-switch">
-                                                    <div class="sea-ui form">
+                                                    <div class="sea-ui form-label">
                                                         <div class="sea-ui switch-toggle">
                                                             <input id="SwitchCheckbox_2" class="switch-checkbox" type="checkbox">
                                                             <label for="SwitchCheckbox_2"></label>
@@ -651,7 +649,6 @@
                                             <div class="accordion-liquid-container">
                                                 <div class="liquid-container-inner">
                                                     <ul class="shipnotice">
-                                                        <li>可寄送地區: 泰國全區</li>
                                                         <li>重量限制: <span class="highlight"> 2kg以下 </span></li>
                                                         <li>尺寸限制: 包裹不得小於 <span class="highlight">14 x 9cm</span> ，單邊最長不超過 <span class="highlight">60cm</span>，長寬高總和不超過 <span class="highlight">90cm</span></li>
                                                         <li>預計寄達天數 6～8 天</li>
@@ -676,7 +673,7 @@
                                                 </div>
                                                 <div class="caption-text-box">不支援</div>
                                                 <div class="caption-switch">
-                                                    <div class="sea-ui form">
+                                                    <div class="sea-ui form-label">
                                                         <div class="sea-ui switch-toggle">
                                                             <input id="SwitchCheckbox_3" class="switch-checkbox" type="checkbox">
                                                             <label for="SwitchCheckbox_3"></label>
@@ -691,7 +688,7 @@
                                             <div class="accordion-liquid-container">
                                                 <div class="liquid-container-inner">
                                                     <ul class="shipnotice">
-                                                        <li>可寄送地區: 曼谷及泰國大部分地區 (郵遞區號若為 9 開頭不配送，包括但不限於 Song Khla, Stoon, Trang, Pattalung, Pattani, Yala, Naratiwat )</li>
+                                                        <li><span class="alert">＊</span><span class="note">泰國部分郵遞區號為 9 開頭的地區，可能無法支援配送。包括但不限於 Song Khla, Stoon, Trang, Pattalung, Pattani, Yala, Naratiwat 等區。</span></li>
                                                         <li>重量限制: <span class="highlight"> 30kg以下 </span></li>
                                                         <li>尺寸限制: 任何一邊不得超過<span class="highlight"> 85cm </span></li>
                                                         <li>預計寄達天數 6～8 天</li>
@@ -705,7 +702,7 @@
                                     </div>
 
 
-                                    <p class="description-text">非支援物流</p>
+                                    <p class="description-text">非支援物流（泰國賣場限定）</p>
                                     <div class="logistic-wrap seller">
                                         <!--說明For RD:  以下兩個為兩種狀態Demo 判斷後呈現其中一種 -->
                                         <!--說明For RD:  預設為設定運費的連結（未設定運費前） -->
@@ -889,11 +886,11 @@
     <!--商品管理 JS-->
     <script type="text/javascript" src="js/js_product.js"></script>
     <script>
-    $(document).ready(function() {
-        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(4)');
-        menuItem.find('ul').show();
-        menuItem.addClass('active');
-    });
+        $(document).ready(function() {
+            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(5)');
+            menuItem.find('ul').show();
+            menuItem.addClass('active');
+        });
     </script>
 </body>
 

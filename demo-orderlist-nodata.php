@@ -33,20 +33,20 @@
     <title>PChomeSEA | 所有訂單</title>
     <!-- Google Tag Manager -->
     <script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -82,10 +82,7 @@
                     <div class="col-md-9">
                         <section id="sea-section-content">
 
-                            <!-- PChomeSEA Account Header -->
-                            <!--說明For RD：手機版不出現-->
-                            <?php include("assets/account-header.php"); ?>
-                            <!-- PChomeSEA Account Header end-->
+
 
                             <!-- 頁面標題與麵包屑 -->
                             <div class="sea-ui breadcrumb-back">
@@ -110,11 +107,11 @@
                                         <div class="sea-ui form inputGroup">
                                             <div class="inputGroup-inputBox">
                                                 <div class="sea-ui form">
-                                                    <input type="text" placeholder="請輸入訂單編號或商品名稱查詢" value="9041800006091">
+                                                    <input type="text" placeholder="請輸入訂單編號或商品名稱查詢">
                                                 </div>
                                             </div>
-                                            <a href="demo-product-list-clearsearch.php" class="sea-ui btn-sm btn-primary inputGroup-btn" style="display:none">搜尋訂單</a>
-                                            <a href="orderlist.php" class="sea-ui btn-sm inputGroup-btn"><span class="sea-btn-icon icon-delete"></span>清空</a>
+                                            <a href="demo-orderlist-clearsearch.php" class="sea-ui btn-sm btn-primary inputGroup-btn">搜尋訂單</a>
+                                            <a href="product-list.php" class="sea-ui btn-sm inputGroup-btn" style="display:none"><span class="sea-btn-icon icon-delete"></span>清空</a>
                                         </div>
                                     </div>
                                     <a class="add_condition">新增更多搜尋條件<span class="sea-seller-icon icon-plus"></span></a>
@@ -182,8 +179,8 @@
                             <div class="searchBarGroup">
                                 <div class="sea-section-header sub-header">
                                     <h4>
-                                        <div class="sub-header-text">共<span class="eng-num">23</span>筆</div>
-                                        <div class="sub-header-text">總金額<span class="eng-num">125,200</span>元</div>
+                                        <div class="sub-header-text">共 <span class="eng-num">0</span> 筆</div>
+                                        <div class="sub-header-text">總金額 <span class="eng-num">0</span> 元</div>
                                     </h4>
                                     <!-- 匯出訂單 -->
                                     <div class="exportOrderList">
@@ -194,8 +191,8 @@
                                 <div class="quantity-select hidden-sm-down">
                                     <div class="sea-ui form select ">
                                         <select>
-                                            <option value="20">顯示10筆</option>
-                                            <option value="10">顯示20筆</option>
+                                            <option value="10">顯示10筆</option>
+                                            <option value="20">顯示20筆</option>
                                             <option value="30">顯示30筆</option>
                                             <option value="50">顯示50筆</option>
                                         </select>
@@ -208,12 +205,12 @@
                             <div class="sea-ui tab-nav-bar tab-nav tab-nav-fluid">
                                 <div class="sea-ui tab-pointing">
                                     <ul class="tab-items no-margin">
-                                        <li><a href="#tab1" class="active">所有訂單 (15)</a></li>
-                                        <li><a href="#tab2">待付款 (5)</a></li>
-                                        <li><a href="#tab3">待出貨 (4)</a></li>
-                                        <li><a href="#tab4">運送中 (3)</a></li>
-                                        <li><a href="#tab5">訂單取消申請 (2)</a></li>
-                                        <li><a href="#tab6">退款申請 (1)</a></li>
+                                        <li><a href="#tab1" class="active">所有訂單 (0)</a></li>
+                                        <li><a href="#tab2">待付款 (0)</a></li>
+                                        <li><a href="#tab3">待出貨 (0)</a></li>
+                                        <li><a href="#tab4">運送中 (0)</a></li>
+                                        <li><a href="#tab5">訂單取消申請 (0)</a></li>
+                                        <li><a href="#tab6">退款申請 (0)</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -221,118 +218,14 @@
 
                             <!-- 所有訂單容器 -->
                             <div class="listBox">
-
                                 <!--說明FOR RD: 沒有任何訂單時 -->
-                                <div class="table_default_empaty" style="display: none;">
-                                    <div class="message-text">沒有訂單紀錄</div>
+                                <div class="table_default_empaty">
+                                    <div class=" message-text">沒有訂單紀錄</div>
                                 </div>
-
-                                <!-- 單筆訂單 已收款 已收貨-->
-                                <div class="listBox-singlelist">
-                                    <!-- 訂單狀態群組 -->
-                                    <div class="flexTable singlelist-statusBar">
-                                        <span class="statusBar-status"><i class="sea-btn-icon icon-checked icon-back icon-back-blue"></i>已付款</span>
-                                        <div class="statusBar-contanctSeller">
-                                            <a class="sea-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="sea-btn-icon icon-comment"></i>聯絡買家</a>
-                                        </div>
-                                    </div>
-
-                                    <!-- 訂單資訊群組 -->
-                                    <div class="flexTable orderlist-infoBar">
-                                        <div class="flexTable infoBar-orderNumBox">
-                                            <!-- 訂單編號 -->
-                                            <div class="orderNumBox-orderNum">
-                                                <span class="orderlist-subtitle">訂單編號</span>
-                                                <span class="orderlist-title eng-num">9041800006091</span>
-                                            </div>
-                                            <!-- 訂單日期 -->
-                                            <div class="orderNumBox-orderNum">
-                                                <span class="orderlist-subtitle">訂單日期</span>
-                                                <span class="orderlist-title eng-num">2020/07/26</span>
-                                            </div>
-                                        </div>
-                                        <div class="flexTable infoBar-orderSourseBox">
-                                            <!-- 訂單來源 -->
-                                            <div class="orderNumBox-orderNum">
-                                                <span class="orderlist-subtitle">訂單來源</span>
-                                                <span class="orderlist-title eng-num">SG</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- 訂單商品內容群組 -->
-                                    <div class="flexTable orderlist-productBar">
-                                        <!-- 商品圖文 -->
-                                        <div class="flexTable productBar-product">
-                                            <!-- 商品資訊群組（圖＋文） -->
-                                            <div class="productInfoGroup">
-                                                <!-- 商品圖片 -->
-                                                <div class="productInfo-img">
-                                                    <a href="#"><img class="img-fluid" src=" img/pro/pro_06.jpg" alt="Product-Picture"></a>
-                                                </div>
-
-                                                <!-- 商品資訊 -->
-                                                <div class="productInfo-info">
-                                                    <!-- 商品名稱 -->
-                                                    <div class="productInfo-info-title">
-                                                        <span class="productInfo-info-title-text">
-                                                            <a href="#">Winter short tube Chelsea boots Martin work boots</a>
-                                                        </span>
-                                                    </div>
-                                                    <!-- 商品規格 -->
-                                                    <div class="productInfo-info-subtitle">
-                                                        <span class="productInfo-info-subtitle-text">Size / Color / Type / Size / Color / Type / Size / Color / Type / Size / Color / Type</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- 商品金額 -->
-                                        <div class="flexTable productBar-total">
-                                            <!-- 訂單內商品數量（手機版顯示） -->
-                                            <div class="total-quantity hidden-md-up">
-                                                <span class="orderlist-subtitle">共</span>
-                                                <span class="orderlist-title eng-num">90</span>
-                                                <span class="orderlist-subtitle">件商品</span>
-                                            </div>
-                                            <!-- 訂單總金額 -->
-                                            <div class="total-amount">
-                                                <span class="orderlist-title eng-num"><img src="img/icon_pcprotect_badge.svg">$124,200</span>
-                                            </div>
-                                        </div>
-
-                                        <!-- 商品物流狀態 -->
-                                        <div class="flexTable productBar-logistic">
-                                            <div class="logistic-status">
-                                                <span class="orderlist-title">已收貨</span>
-                                            </div>
-                                            <div class="logistic-company" style="display: none">
-                                                <span class="orderlist-subtitle">中華郵政 EMS</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- 訂單操作按鈕群組 -->
-                                    <div class="flexTable orderlist-actionBar">
-                                        <!-- 訂單內商品數量 （電腦版顯示） -->
-                                        <div class="hidden-md-down">
-                                            <span class="orderlist-subtitle">共</span>
-                                            <span class="orderlist-title eng-num">90</span>
-                                            <span class="orderlist-subtitle">件商品</span>
-                                        </div>
-                                        <!-- 操作按鈕欄 -->
-                                        <div class="actionBar">
-                                            <a class="sea-ui btn-xs btn-primary-outlined js-sea-panel-trigger" data-panel="orderDetails" href="#">訂單明細</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 單筆訂單 結束 -->
-
                             </div> <!-- 所有訂單容器 結束 -->
 
-
                             <!-- PC 版 列出所有頁碼 -->
-                            <div class="sea-ui page-pagination hidden-sm-down">
+                            <div class="sea-ui page-pagination" style="display: none;">
                                 <ul class="eng-num">
                                     <li class="active">1</li>
                                     <li><a href="#">2</a></li>
@@ -388,11 +281,11 @@
     <script type="text/javascript" src="js/js_orderlist.js"></script>
 
     <script>
-    $(document).ready(function() {
-        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(2)');
-        menuItem.find('ul').show();
-        menuItem.addClass('active');
-    });
+        $(document).ready(function() {
+            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(3)');
+            menuItem.find('ul').show();
+            menuItem.addClass('active');
+        });
     </script>
 
 
@@ -404,15 +297,15 @@
     <script type="text/javascript" src="js/plugin/bootstrap/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="js/plugin/bootstrap/locales/bootstrap-datepicker.zh-TW.js"></script>
     <script>
-    //說明FOR RD: 多國語系月曆判斷在此 
-    //- bootstrap4 月曆
-    $('.datepicker').datepicker({
-        orientation: 'bottom',
-        autoclose: true,
-        language: 'zh-TW'
-        // language: 'uk' 英文語系
-        //language: 'th' 泰文語系
-    });
+        //說明FOR RD: 多國語系月曆判斷在此 
+        //- bootstrap4 月曆
+        $('.datepicker').datepicker({
+            orientation: 'bottom',
+            autoclose: true,
+            language: 'zh-TW'
+            // language: 'uk' 英文語系
+            //language: 'th' 泰文語系
+        });
     </script>
 
 

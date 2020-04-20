@@ -220,6 +220,10 @@
                         padding: 0 0.9375rem;
                     }
 
+                    &.account-name {
+                        @include text-overflow(1);
+                    }
+
                     &.account-logout {
                         a {
                             color: $colorDeepGray;

@@ -95,81 +95,6 @@
                                 </ul>
                             </div>
 
-                            <!-- PChomeSEA Alert -->
-                            <div class="msgbar">
-                                <div class="alert">
-                                    <span class="sea-seller-icon icon-alert"></span>
-                                    <span class="sea-seller-icon icon-delete" onclick="this.parentElement.style.display='none';"></span>
-                                    您尚未提供銀行帳號，請前往設定。
-                                </div>
-                            </div>
-                            <!-- PChomeSEA Alert end-->
-
-
-                            <!-- 區塊－金額統計 -->
-                            <div class="section-outer section-accounting">
-                                <!-- 提領帳戶 -->
-                                <div class="accountingBox">
-                                    <!-- 總金額 -->
-                                    <div class="accountingItem">
-                                        <!-- 總金額組合 -->
-                                        <div class="items item-amountTotalBox">
-                                            <div class="item-totalBox">
-                                                <!-- 圖片包 -->
-                                                <div class="item-amountBox-pic">
-                                                    <img src="img/icon-selleracc-moneybox.svg">
-                                                </div>
-                                                <!-- 文字包 -->
-                                                <div class="item-amountBox-text">
-                                                    <div class="subtitle"><span class="subtitle-text">貨款總金額</span><span class="currency">TWD</span></div>
-                                                    <div class="amount eng-num">179,843.87</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 運算符號 = -->
-                                        <div class="items item-operations item-operations-equal">
-                                            <i class="sea-seller-icon icon-equal"></i>
-                                        </div>
-                                        <!-- 細項金額組合－左 -->
-                                        <div class="items item-amountBox-left">
-                                            <!-- 文字包 -->
-                                            <div class="item-amountBox-text">
-                                                <div class="subtitle"><span class="subtitle-text">
-                                                        <!-- Ready for withdrawal amount -->可用貨款金額
-                                                    </span></div>
-                                                <div class="amount eng-num">21,897.42</div>
-                                            </div>
-                                        </div>
-                                        <!-- 運算符號 +/- -->
-                                        <div class="items item-operations item-operations-plus">
-                                            <i class="sea-seller-icon icon-plus"></i>
-                                        </div>
-                                        <!-- 細項金額組合－右 -->
-                                        <div class="items item-amountBox-right">
-                                            <!-- 文字包 -->
-                                            <div class="item-amountBox-text">
-                                                <div class="subtitle"><span class="subtitle-text">
-                                                        <!-- In Progress -->待轉可用貨款金額</span></div>
-                                                <div class="amount eng-num">157,946.45</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 操作按鈕 -->
-                                    <!-- <div class="accountingItem"> -->
-                                    <div class="item-btnBox">
-                                        <!-- <a href="#" class="sea-ui btn btn-primary btn-fluid withdrawalBtn">貨款結算 Withdrawal </a>-->
-                                        <a href="#" class="sea-ui btn btn-primary btn-fluid" onclick="window.location.href='selleracc-withdrawal.php' ">貨款結算</a>
-
-                                        <!--說明For RD: 判斷是設定 "公司發票"" 還是 "個人發票"" -->
-                                        <!-- 公司發票 -->
-                                        <a class="setCompanyInvoiceBtn sea-ui btn-fluid"><span class="sea-btn-icon icon-receipt"></span><!-- Invoice Settings -->發票設定</a>
-                                        <!-- 個人發票 -->
-                                        <a class="setPersonalInvoiceBtn sea-ui btn-fluid" style="display: none;"><span class="sea-seller-icon icon-receipt"></span>發票設定</a>
-                                    </div>
-                                    <!-- </div> -->
-                                </div>
-                            </div>
-
                             <!-- 結算狀態說明 -->
                             <a class="sea-ui btn-sm settlementStatusBtn"><span class="sea-btn-icon icon-information"></span>結算狀態說明</a>
 
@@ -199,7 +124,7 @@
                                                 <th>
                                                     <!-- Transaction Type -->交易類別</th>
                                                 <th>
-                                                    <!-- Country -->訂單來源</th>
+                                                    <!-- Amount -->訂單來源</th>
                                                 <th>
                                                     <!-- Amount -->金額 TWD</th>
                                                 <th>
@@ -238,7 +163,7 @@
                                                     <span><i class="sea-btn-icon icon-wait icon-back icon-back-orange"></i>買家代理人收到貨款</span>
                                                 </td>
                                                 <td data-title="日期">
-                                                    <span class="eng-num">2020/05/10</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="單據號碼">
                                                     <span class="eng-num">70519001863</span>
@@ -247,13 +172,13 @@
                                                     <span>訂單</span>
                                                 </td>
                                                 <td data-title="訂單來源">
-                                                    <span class="eng-num">SG</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="金額 TWD">
-                                                    <span class="eng-num">$45,699</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="結餘 TWD">
-                                                    <span class="eng-num">959,153.87</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="明細">
                                                     <a class="sea-ui btn-xs accountStepBtn" data-pttranid="8051900007184">貨款明細</a>
@@ -268,7 +193,7 @@
                                                     <span><i class="sea-btn-icon icon-checked icon-back icon-back-blue"></i>轉可用貨款</span>
                                                 </td>
                                                 <td data-title="日期">
-                                                    <span class="eng-num">2020/05/20</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="單據號碼">
                                                     <span class="eng-num">70519001863</span>
@@ -277,13 +202,13 @@
                                                     <span>訂單</span>
                                                 </td>
                                                 <td data-title="訂單來源">
-                                                    <span class="eng-num">SG</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="金額 TWD">
-                                                    <span class="eng-num">$45,699</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="結餘 TWD">
-                                                    <span class="eng-num">959,153.87</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="明細">
                                                     <a class="sea-ui btn-xs accountStepCompleteBtn" data-pttranid="8051900007184">貨款明細</a>
@@ -298,7 +223,7 @@
                                                     <span><i class="sea-btn-icon icon-wait icon-back icon-back-orange"></i>準備結算</span>
                                                 </td>
                                                 <td data-title="日期">
-                                                    <span class="eng-num">2020/05/21</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="單據號碼">
                                                     <span class="eng-num"><a class="js-sea-panel-trigger" data-panel="orderDetails" href="#" onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
@@ -307,13 +232,13 @@
                                                     <span>結算</span>
                                                 </td>
                                                 <td data-title="訂單來源">
-                                                    <span class="eng-num">SG</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="金額 TWD">
-                                                    <span class="eng-num">$45,699</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="結餘 TWD">
-                                                    <span class="eng-num">959,153.87</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="明細">
                                                     <a class="sea-ui btn-xs withdrawalStepBtn" data-pttranid="8051900007184">結算明細</a>
@@ -328,7 +253,7 @@
                                                     <span><i class="sea-btn-icon icon-checked icon-back icon-back-green"></i>繳交成功</span>
                                                 </td>
                                                 <td data-title="日期">
-                                                    <span class="eng-num">2020/05/23</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="單據號碼">
 
@@ -338,13 +263,13 @@
                                                     <span>繳交費用</span>
                                                 </td>
                                                 <td data-title="訂單來源">
-                                                    <span class="eng-num">SG</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="金額 TWD">
-                                                    <span class="eng-num negative">$1,271.34</span>
+                                                    <span class="eng-num negative"></span>
                                                 </td>
                                                 <td data-title="結餘 TWD">
-                                                    <span class="eng-num">283,568.87</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="明細">
                                                     <a target="_blank" class="sea-ui btn-xs" href="downloadPdf/PT2020051000002">發票明細</a>
@@ -360,7 +285,7 @@
                                                     <span><i class="sea-btn-icon icon-wait icon-back icon-back-orange"></i>匯款處理中</span>
                                                 </td>
                                                 <td data-title="日期">
-                                                    <span class="eng-num">2020/05/24</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="單據號碼">
                                                     <span class="eng-num"><a class="js-sea-panel-trigger" data-panel="orderDetails" href="#" onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
@@ -369,13 +294,13 @@
                                                     <span>結算</span>
                                                 </td>
                                                 <td data-title="訂單來源">
-                                                    <span class="eng-num">SG</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="金額 TWD">
-                                                    <span class="eng-num">$45,699</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="結餘 TWD">
-                                                    <span class="eng-num">959,153.87</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="明細">
                                                     <a class="sea-ui btn-xs withdrawalStepBtn" data-pttranid="8051900007184">結算明細</a>
@@ -390,7 +315,7 @@
                                                     <span><i class="sea-btn-icon icon-checked icon-back icon-back-green"></i>撥款成功</span>
                                                 </td>
                                                 <td data-title="日期">
-                                                    <span class="eng-num">2020/05/26</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="單據號碼">
                                                     <span class="eng-num"><a class="js-sea-panel-trigger" data-panel="orderDetails" href="#" onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
@@ -399,13 +324,13 @@
                                                     <span>結算</span>
                                                 </td>
                                                 <td data-title="訂單來源">
-                                                    <span class="eng-num">SG</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="金額 TWD">
-                                                    <span class="eng-num">$1,271.34</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="結餘 TWD">
-                                                    <span class="eng-num">283,568.87</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="明細">
                                                     <a class="sea-ui btn-xs withdrawalStepBtn" data-pttranid="8051900007184">撥款明細</a>
@@ -420,7 +345,7 @@
                                                     <span><i class="sea-btn-icon icon-alert-nofill icon-back icon-back-red"></i>撥款失敗</span>
                                                 </td>
                                                 <td data-title="日期">
-                                                    <span class="eng-num">2020/05/26</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="單據號碼">
                                                     <span class="eng-num"><a class="js-sea-panel-trigger" data-panel="orderDetails" href="#" onmousedown="javascript:getOrderDtl(9051900009430);">9051900009430</a></span>
@@ -429,13 +354,13 @@
                                                     <span>結算</span>
                                                 </td>
                                                 <td data-title="訂單來源">
-                                                    <span class="eng-num">SG</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="金額 TWD">
-                                                    <span class="eng-num">$1,271.34</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="結餘 TWD">
-                                                    <span class="eng-num">283,568.87</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="明細">
                                                     <a class="sea-ui btn-xs withdrawalStepBtn" data-pttranid="8051900007184">撥款明細</a>
@@ -450,7 +375,7 @@
                                                     <span><i class="sea-btn-icon icon-checked icon-back icon-back-blue"></i>已轉可結算</span>
                                                 </td>
                                                 <td data-title="日期">
-                                                    <span class="eng-num">2020/05/27</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="單據號碼">
                                                     <span class="eng-num">70519001863</span>
@@ -459,13 +384,13 @@
                                                     <span>結算回沖</span>
                                                 </td>
                                                 <td data-title="訂單來源">
-                                                    <span class="eng-num">SG</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="金額 TWD">
-                                                    <span class="eng-num">$1,271.34</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="結餘 TWD">
-                                                    <span class="eng-num">283,568.87</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="明細">
 
@@ -481,7 +406,7 @@
                                                     <span><i class="sea-btn-icon icon-wait icon-back icon-back-orange"></i>退款中</span>
                                                 </td>
                                                 <td data-title="日期">
-                                                    <span class="eng-num">2020/05/20</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="單據號碼">
                                                     <span class="eng-num">70519001863</span>
@@ -490,13 +415,13 @@
                                                     <span>退款</span>
                                                 </td>
                                                 <td data-title="訂單來源">
-                                                    <span class="eng-num">SG</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="金額 TWD">
-                                                    <span class="eng-num">$45,699</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="結餘 TWD">
-                                                    <span class="eng-num">959,153.87</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="明細">
                                                     <a class="sea-ui btn-xs accountStepCompleteBtn" data-pttranid="8051900007184">貨款明細</a>
@@ -512,7 +437,7 @@
                                                     <span><i class="sea-btn-icon icon-checked icon-back icon-back-green"></i>完成退款</span>
                                                 </td>
                                                 <td data-title="日期">
-                                                    <span class="eng-num">2020/05/23</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="單據號碼">
                                                     <span class="eng-num">70519001863</span>
@@ -521,13 +446,13 @@
                                                     <span>退款</span>
                                                 </td>
                                                 <td data-title="訂單來源">
-                                                    <span class="eng-num">SG</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="金額 TWD">
-                                                    <span class="eng-num">$45,699</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="結餘 TWD">
-                                                    <span class="eng-num">959,153.87</span>
+                                                    <span class="eng-num"></span>
                                                 </td>
                                                 <td data-title="明細">
                                                     <a class="sea-ui btn-xs accountStepCompleteBtn" data-pttranid="8051900007184">貨款明細</a>
@@ -535,29 +460,6 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                </div>
-                                <!-- PC 版 列出所有頁碼 -->
-                                <div class="sea-ui page-pagination hidden-sm-down">
-                                    <ul class="eng-num">
-                                        <li class="active">1</li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#">6</a></li>
-                                        <li><a href="#">7</a></li>
-                                        <li><a href="#">8</a></li>
-                                        <li class="pagination-jump-next"></li>
-                                        <li>
-                                            <a class="pagination-next" href="#">
-                                                <span class="sea-seller-icon icon-angle-right"></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- 手機版 Load more-->
-                                <div class="sea-btn-loadcontent hidden-xs-up">
-                                    <a href="#" class="sea-ui btn btn-primary btn-load">LOAD MORE</a>
                                 </div>
                             </div>
                         </section>

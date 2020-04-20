@@ -79,10 +79,7 @@
 
                     <div class="col-md-9">
                         <section id="sea-section-content">
-                            <!-- PChomeSEA Account Header -->
-                            <!--說明For RD：手機版不出現-->
-                            <?php include("assets/account-header.php"); ?>
-                            <!-- PChomeSEA Account Header end-->
+
 
                             <!-- 頁面標題與麵包屑 -->
                             <div class="sea-ui breadcrumb-back">
@@ -373,7 +370,7 @@
     <!-- 主選單預設開啟（編號） -->
     <script>
         $(document).ready(function() {
-            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(7)');
+            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(9)');
             menuItem.find('ul').show();
             menuItem.addClass('active');
         });

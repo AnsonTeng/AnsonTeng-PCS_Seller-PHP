@@ -144,8 +144,8 @@
                                     <div class="selectBox hidden-sm-down">
                                         <div class="sea-ui form select">
                                             <select>
-                                                <option value="20">顯示10筆</option>
-                                                <option value="10">顯示20筆</option>
+                                                <option value="10">顯示10筆</option>
+                                                <option value="20">顯示20筆</option>
                                                 <option value="30">顯示30筆</option>
                                                 <option value="50">顯示50筆</option>
                                             </select>
@@ -180,7 +180,7 @@
                                 <div class="product-list-statistics-btnGroup">
                                     <a href="#" class="sea-ui btn-xs btn-primary sellAllBtn">
                                         <!-- All List -->全部上架</a>
-                                    <!-- <a href="#" class="sea-ui btn-xs btn-cta readyOnTheMarketBtn">搬家商品全部上架</a> -->
+                                    <!-- <a href="#" class="sea-ui btn-xs btn-primary readyOnTheMarketBtn">搬家商品全部上架</a> -->
                                 </div>
                             </div>
 
@@ -239,7 +239,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn">
+                                                    <div class="delete-btn edit-btn" style="display:none">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -291,7 +291,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn">
+                                                    <div class="delete-btn edit-btn" style="display:none">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <!-- 說明 FOR RD: 商品下架中狀態 -->
@@ -347,7 +347,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn">
+                                                    <div class="delete-btn edit-btn" style="display:none">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -461,7 +461,7 @@
                             <!-- 手機版 Load more-->
 
                             <div class="sea-btn-loadcontent hidden-sm-up">
-                                <a href="#" class="sea-ui btn btn-cta btn-load">LOAD MORE</a>
+                                <a href="#" class="sea-ui btn btn-primary btn-load">LOAD MORE</a>
                             </div>
                         </section>
                     </div>
@@ -491,7 +491,7 @@
                                         </a>
 
                                         <!-- 說明For RD: 若已選取商品２項以上 則開啟“大量編輯“面板（加上 js-sea-panel-trigger 這個樣式） -->
-                                        <a href="#" class="sea-ui btn btn-cta js-sea-panel-trigger action-btn-box-batchedit" data-panel="batchedit">
+                                        <a href="#" class="sea-ui btn btn-primary js-sea-panel-trigger action-btn-box-batchedit" data-panel="batchedit">
                                             <span class="sea-seller-icon icon-edit hidden-xxs-up"></span>
                                             <span class="hidden-xxs-down">大量編輯</span>
                                         </a>
@@ -548,7 +548,7 @@
 
     <script>
     $(document).ready(function() {
-        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(4)');
+        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(5)');
         menuItem.find('ul').show();
         menuItem.addClass('active');
     });

@@ -33,23 +33,23 @@
     <!-- BS grid -->
     <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
 
-    <title>PChomeSEA | 大量新增</title>
+    <title>PChomeSEA | 大量新增商品</title>
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -118,7 +118,7 @@
                                         <div class="importexport-download-block">
                                             <div class="importexport-download">
                                                 <a href="/seller_j/product/batchUpload">
-                                                    <div class="download-btn"><span class="sea-seller-icon icon-download"></span></div>
+                                                    <!-- <div class="download-btn"><span class="sea-seller-icon icon-download"></span></div> -->
                                                     <img src="img/icon-bulklist-xsl.svg" alt="" class="img-fluid">
                                                 </a>
                                             </div>
@@ -127,28 +127,31 @@
                                         <div class="importexport-download-text btn-center">
                                             <p class="description-title">全部匯出匯入</p>
 
-                                            <p class="description-text"> 透過excel上架功能，只要賣家按照欄位說明填入，即可將您上架資料，快速刊登至賣場中。<a class="/sellers/batchprod/downloadxls">立刻下載範本</a> 或查看更多<a class="xlsstepBtn">上傳說明</a>。填寫完畢後，請將檔案以csv格式轉存。上傳檔案，請上傳您的csv檔。</p>
+                                            <p class="description-text"> 透過 excel 上架功能，只要賣家按照欄位說明填入，即可將您上架資料，快速刊登至賣場中。<a class="/sellers/batchprod/downloadxls">立刻下載範本</a> 或查看更多<a class="xlsstepBtn">上傳說明</a>。填寫完畢後，請將檔案以 csv 格式轉存。上傳檔案，請上傳您的 csv 檔。</p>
                                         </div>
                                     </div>
 
                                     <div class="importexport-file-drop-area">
-
-                                        <div class="sea-ui loading-overlay" style="display: none;">
-                                            <div class="loading-circle medium"></div>
-                                        </div>
-
-
-
                                         <div class="importexport-wrap">
                                             <div class="file-drop-wrap">
+                                                <!--說明For RD：上下傳檔案時的 Loading 效果-->
+                                                <div class="sea-ui loading-overlay" style="display: none">
+                                                    <div class=" loading-circle medium"></div>
+                                                </div>
+
                                                 <div class="sea-seller-icon icon-cloud-loading"></div>
                                                 <a class="fake-btn sea-ui btn-sm btn-primary">全部匯出</a>
-                                                <input class="file-input" type="file" multiple>
                                             </div>
 
                                             <div class="file-drop-wrap">
+                                                <!--說明For RD：上下傳檔案時的 Loading 效果-->
+                                                <div class="sea-ui loading-overlay" style="display: none">
+                                                    <div class=" loading-circle medium"></div>
+                                                </div>
+
                                                 <div class="sea-seller-icon icon-cloud-uploading"></div>
                                                 <a class="fake-btn sea-ui btn-sm btn-primary">全部匯入</a>
+                                                <div class="file-msg hidden-sm-down">或 直接拖曳 Zip 檔案到此上傳</div>
                                                 <input class="file-input" type="file" multiple>
                                             </div>
                                         </div>
@@ -157,10 +160,9 @@
                                             <li>說明：</li>
                                             <li>1 僅針對已上架的商品可做匯出、修改、匯入。 </li>
                                             <li>2 商品圖片和商品簡介無法透過【全部匯出】修改，請至【商品列表】搜尋商品後逐一修改。</li>
-                                            <li>3 每次匯出皆會匯出所有商品，筆數上限為 10,000 筆，若您的賣場商品數量超過 10,000 筆，
-                                                敬請聯絡客服。 </li>
+                                            <li>3 每次匯出皆會匯出所有商品，筆數上限為 10,000 筆，若您的賣場商品數量超過 10,000 筆，敬請聯絡客服。 </li>
                                             <li>4 匯出匯出格式需一致，請特別注意【商品ID】需正確對應到商品內容一致。 </li>
-                                            <li>5 檔案格式為 CSV，資料填寫完畢後，請記得將檔案以csv格式轉存後再匯入。 </li>
+                                            <li>5 檔案格式為 csv，資料填寫完畢後，請記得將檔案以 .csv 格式轉存後再匯入。 </li>
                                             <li class="alert">* 受限於出口快遞貨物申報作業規定，商品價格請勿設定超過五萬元。</li>
                                         </ul>
 
@@ -172,10 +174,9 @@
                             <div class="content-block product-description">
                                 <div class="content-title">全部匯出匯入紀錄</div>
                                 <div class="content-description">
-                                    <p class="description-text">
-                                        以下為excel全部匯出匯入紀錄列表，上傳資料後需2-3個工作天處理，上傳結果會在列表中紀錄，紀錄只會保留最後20筆資料。</p>
+                                    <p class="description-text">以下為 excel 全部匯出匯入紀錄列表，資料執行後需2-3個工作天處理，執行結果會在列表中紀錄，紀錄只會保留最後 20 筆資料。</p>
                                     <a class="sea-ui btn-sm xlserrorBtn">
-                                        <li class="sea-btn-icon icon-information"></li>上傳結果錯誤說明
+                                        <li class="sea-btn-icon icon-information"></li>執行結果錯誤說明
                                     </a>
 
                                     <div class="bulklist-list-table lg-break-table">
@@ -322,7 +323,7 @@
 
                                     <!-- 手機版 Load more-->
                                     <div class="sea-btn-loadcontent hidden-xs-up">
-                                        <a href="#" class="sea-ui btn btn-cta btn-load">LOAD MORE</a>
+                                        <a href="#" class="sea-ui btn btn-primary btn-load">LOAD MORE</a>
                                     </div>
                                 </div>
                             </div>
@@ -359,11 +360,11 @@
     <!--商品管理 JS-->
     <script type="text/javascript" src="js/js_product.js"></script>
     <script>
-        $(document).ready(function() {
-            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(4)');
-            menuItem.find('ul').show();
-            menuItem.addClass('active');
-        });
+    $(document).ready(function() {
+        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(5)');
+        menuItem.find('ul').show();
+        menuItem.addClass('active');
+    });
     </script>
 
 </body>

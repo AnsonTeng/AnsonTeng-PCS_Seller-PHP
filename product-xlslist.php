@@ -32,7 +32,7 @@
 <!-- BS grid -->
 <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
 
-<title>PChomeSEA | 大量新增</title>
+<title>PChomeSEA | 大量新增商品</title>
 <!-- Google Tag Manager -->
 <script>
 (function(w, d, s, l, i) {
@@ -89,11 +89,6 @@
                     </div>
                     <div class="col-md-9">
                         <section id="sea-section-content">
-                            <!-- PChomeSEA Account Header -->
-                            <!--說明For RD：手機版不出現-->
-                            <?php include("assets/account-header.php"); ?>
-                            <!-- PChomeSEA Account Header end-->
-
 
                             <div class="sea-ui breadcrumb-back">
                                 <span class="sea-seller-icon icon-productedit"></span>
@@ -102,7 +97,7 @@
                                     <li class="sea-seller-icon icon-angle-right"></li>
                                     <li>商品管理</li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
-                                    <li>大量新增</li>
+                                    <li>大量新增商品</li>
                                 </ul>
                             </div>
 
@@ -122,8 +117,8 @@
 
                                         <div class="xsl-download-text btn-center">
                                             <p class="description-title">大量新增商品</p>
-                                            <p class="description-text">透過excel上架功能，只要賣家按照欄位說明填入，即可將您上架資料，快速刊登至賣場中。<a class="/sellers/batchprod/downloadxls">立刻下載範本</a> 或查看更多<a class="xlsstepBtn">上傳說明</a>。 </p>
-                                            <p class="description-text">填寫完畢後，請將檔案以csv格式轉存。上傳檔案，請上傳您的 csv 檔及相關圖檔。請務必將所有檔案壓縮成zip檔上傳(壓縮檔內不可含資料夾)。圖檔格式只接受.jpg或.gif，圖檔名稱請勿使用中文，請使用英文小寫。</p>
+                                            <p class="description-text">透過 excel 上架功能，只要賣家按照欄位說明填入，即可將您上架資料，快速刊登至賣場中。<a class="/sellers/batchprod/downloadxls">立刻下載範本</a> 或查看更多<a class="xlsstepBtn">上傳說明</a>。 </p>
+                                            <p class="description-text">填寫完畢後，請將檔案以 csv 格式轉存。上傳檔案，請上傳您的 csv 檔及相關圖檔。請務必將所有檔案壓縮成 zip 檔上傳(壓縮檔內不可含資料夾)。圖檔格式只接受.jpg或.gif，圖檔名稱請勿使用中文，請使用英文小寫。</p>
                                         </div>
                                     </div>
 
@@ -134,7 +129,7 @@
                                         <div class="file-drop-wrap">
                                             <div class="sea-seller-icon icon-cloud-uploading"></div>
                                             <a class="fake-btn sea-ui btn-sm btn-primary">選擇檔案</a>
-                                            <div class="file-msg">或 直接拖曳 Zip 檔案到此上傳</div>
+                                            <div class="file-msg hidden-sm-down">或 直接拖曳 Zip 檔案到此上傳</div>
                                             <input class="file-input" type="file" multiple>
                                         </div>
                                     </div>
@@ -143,9 +138,9 @@
 
                             <!--商品詳細描述-->
                             <div class="content-block product-description">
-                                <div class="content-title">商品大量新增紀錄</div>
+                                <div class="content-title">商品大量新增商品紀錄</div>
                                 <div class="content-description">
-                                    <p class="description-text">以下為 excel 商品大量新增紀錄列表，上傳資料後需 2-3 個工作天處理，上傳結果會在列表中紀錄，紀錄只會保留最後 20 筆資料。</p>
+                                    <p class="description-text">以下為 excel 商品大量新增商品紀錄列表，上傳資料後需 2-3 個工作天處理，上傳結果會在列表中紀錄，紀錄只會保留最後 20 筆資料。</p>
                                     <a class="sea-ui btn-sm xlserrorBtn">
                                         <li class="sea-btn-icon icon-information"></li>上傳結果錯誤說明
                                     </a>
@@ -287,7 +282,7 @@
 
                                     <!-- 手機版 Load more-->
                                     <div class="sea-btn-loadcontent hidden-xs-up">
-                                        <a href="#" class="sea-ui btn btn-cta btn-load">LOAD MORE</a>
+                                        <a href="#" class="sea-ui btn btn-primary btn-load">LOAD MORE</a>
                                     </div>
                                 </div>
                             </div>
@@ -325,7 +320,7 @@
     <script type="text/javascript" src="js/js_product.js"></script>
     <script>
     $(document).ready(function() {
-        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(4)');
+        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(5)');
         menuItem.find('ul').show();
         menuItem.addClass('active');
     });

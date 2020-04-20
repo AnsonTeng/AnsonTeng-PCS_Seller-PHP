@@ -33,20 +33,20 @@
     <title>PChomeSEA | 所有訂單</title>
     <!-- Google Tag Manager -->
     <script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -82,10 +82,7 @@
                     <div class="col-md-9">
                         <section id="sea-section-content">
 
-                            <!-- PChomeSEA Account Header -->
-                            <!--說明For RD：手機版不出現-->
-                            <?php include("assets/account-header.php"); ?>
-                            <!-- PChomeSEA Account Header end-->
+
 
                             <!-- 頁面標題與麵包屑 -->
                             <div class="sea-ui breadcrumb-back">
@@ -113,7 +110,7 @@
                                                     <input type="text" placeholder="請輸入訂單編號或商品名稱查詢">
                                                 </div>
                                             </div>
-                                            <a href="demo-product-list-clearsearch.php" class="sea-ui btn-sm btn-primary inputGroup-btn">搜尋訂單</a>
+                                            <a href="demo-orderlist-clearsearch.php" class="sea-ui btn-sm btn-primary inputGroup-btn">搜尋訂單</a>
                                             <a href="product-list.php" class="sea-ui btn-sm inputGroup-btn" style="display:none"><span class="sea-btn-icon icon-delete"></span>清空</a>
                                         </div>
                                     </div>
@@ -182,8 +179,8 @@
                             <div class="searchBarGroup">
                                 <div class="sea-section-header sub-header">
                                     <h4>
-                                        <div class="sub-header-text">共<span class="eng-num">23</span>筆</div>
-                                        <div class="sub-header-text">總金額<span class="eng-num">125,200</span>元</div>
+                                        <div class="sub-header-text">共 <span class="eng-num">23</span> 筆</div>
+                                        <div class="sub-header-text">總金額 <span class="eng-num">125,200</span> 元</div>
                                     </h4>
                                     <!-- 匯出訂單 -->
                                     <div class="exportOrderList">
@@ -194,8 +191,8 @@
                                 <div class="quantity-select hidden-sm-down">
                                     <div class="sea-ui form select ">
                                         <select>
-                                            <option value="20">顯示10筆</option>
-                                            <option value="10">顯示20筆</option>
+                                            <option value="10">顯示10筆</option>
+                                            <option value="20">顯示20筆</option>
                                             <option value="30">顯示30筆</option>
                                             <option value="50">顯示50筆</option>
                                         </select>
@@ -567,7 +564,7 @@
                                             <!-- 訂單來源 -->
                                             <div class="orderNumBox-orderNum">
                                                 <span class="orderlist-subtitle">訂單來源</span>
-                                                <span class="orderlist-title eng-num">SG</span>
+                                                <span class="orderlist-title eng-num">TH</span>
                                             </div>
                                         </div>
                                     </div>
@@ -618,7 +615,7 @@
                                             <div class="logistic-status">
                                                 <span class="orderlist-title">已出貨</span>
                                             </div>
-                                            <div class="logistic-company" style="display: none">
+                                            <div class="logistic-company">
                                                 <span class="orderlist-subtitle">中華郵政 EMS</span>
                                             </div>
                                         </div>
@@ -647,7 +644,7 @@
                                 <div class="listBox-singlelist">
                                     <!-- 訂單狀態群組 -->
                                     <div class="flexTable singlelist-statusBar">
-                                        <span class="statusBar-status"><i class="sea-btn-icon icon-checked icon-back icon-back-blue"></i>已付款</span>
+                                        <span class="statusBar-status"><i class="sea-btn-icon icon-checked icon-back icon-back-green"></i>已完成</span>
                                         <div class="statusBar-contanctSeller">
                                             <a class="sea-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="sea-btn-icon icon-comment"></i>聯絡買家</a>
                                         </div>
@@ -856,7 +853,7 @@
                                 <div class="listBox-singlelist">
                                     <!-- 訂單狀態群組 -->
                                     <div class="flexTable singlelist-statusBar">
-                                        <span class="statusBar-status"><i class="sea-btn-icon icon-wait icon-back icon-back-red"></i>退款申請中</span>
+                                        <span class="statusBar-status"><i class="sea-btn-icon icon-wait icon-back icon-back-orange"></i>退款申請中</span>
                                         <div class="statusBar-contanctSeller">
                                             <a class="sea-ui btn-xs btn btn_contanctSeller contactbuyerBtn"><i class="sea-btn-icon icon-comment"></i>聯絡買家</a>
                                         </div>
@@ -1124,11 +1121,11 @@
     <script type="text/javascript" src="js/js_orderlist.js"></script>
 
     <script>
-    $(document).ready(function() {
-        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(2)');
-        menuItem.find('ul').show();
-        menuItem.addClass('active');
-    });
+        $(document).ready(function() {
+            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(3)');
+            menuItem.find('ul').show();
+            menuItem.addClass('active');
+        });
     </script>
 
 
@@ -1140,15 +1137,15 @@
     <script type="text/javascript" src="js/plugin/bootstrap/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="js/plugin/bootstrap/locales/bootstrap-datepicker.zh-TW.js"></script>
     <script>
-    //說明FOR RD: 多國語系月曆判斷在此 
-    //- bootstrap4 月曆
-    $('.datepicker').datepicker({
-        orientation: 'bottom',
-        autoclose: true,
-        language: 'zh-TW'
-        // language: 'uk' 英文語系
-        //language: 'th' 泰文語系
-    });
+        //說明FOR RD: 多國語系月曆判斷在此 
+        //- bootstrap4 月曆
+        $('.datepicker').datepicker({
+            orientation: 'bottom',
+            autoclose: true,
+            language: 'zh-TW'
+            // language: 'uk' 英文語系
+            //language: 'th' 泰文語系
+        });
     </script>
 
 

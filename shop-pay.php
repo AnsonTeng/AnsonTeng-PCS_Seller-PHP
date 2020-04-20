@@ -79,10 +79,7 @@
                     </div>
                     <div class="col-md-9">
                         <section id="sea-section-content">
-                            <!-- PChomeSEA Account Header -->
-                            <!--說明For RD：手機版不出現-->
-                            <?php include("assets/account-header.php"); ?>
-                            <!-- PChomeSEA Account Header end-->
+
 
                             <div class="sea-ui breadcrumb-back">
                                 <span class="sea-seller-icon icon-seller-shop"></span>
@@ -98,7 +95,7 @@
                             <div class="content-block shop-pay">
                                 <div class="content-title">PChomePay收款設定（泰國賣場限定）</div>
                                 <div class="content-description">
-                                    <p class="description-text">開啟 PChomePay 收款方式，可選擇讓買家使用信用卡，或泰國銀行帳戶轉帳的付款方式，並提供買家七天內可退貨的保護服務。</p>
+                                    <p class="description-text">以下設定為泰國賣場專用：<br />開啟 PChomePay 收款方式，可選擇讓買家使用信用卡，或泰國銀行帳戶轉帳的付款方式，並提供買家七天內可退貨的保護服務。</p>
                                     <div class="payment_up_wrap">
                                         <!-- 銀行臨櫃繳款 -->
                                         <div class="sea-ui accordion payment_counter">
@@ -263,7 +260,7 @@
     <script type="text/javascript" src="js/js_shop.js"></script>
     <script>
         $(document).ready(function() {
-            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(5)');
+            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(6)');
             menuItem.find('ul').show();
             menuItem.addClass('active');
         });

@@ -35,20 +35,20 @@
 <title>PChomeSEA | 購物說明</title>
 <!-- Google Tag Manager -->
 <script>
-(function(w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-    });
-    var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-    f.parentNode.insertBefore(j, f);
-})(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
 </script>
 <!-- End Google Tag Manager -->
 </head>
@@ -79,10 +79,7 @@
                     </div>
                     <div class="col-md-9">
                         <section id="sea-section-content" class="logistic-option">
-                            <!-- PChomeSEA Account Header -->
-                            <!--說明For RD：手機版不出現-->
-                            <?php include("assets/account-header.php"); ?>
-                            <!-- PChomeSEA Account Header end-->
+
 
                             <div class="sea-ui breadcrumb-back">
                                 <span class="sea-seller-icon icon-seller-shop"></span>
@@ -324,16 +321,16 @@
     <!--賣場設定 JS-->
     <script type="text/javascript" src="js/js_shop.js"></script>
     <script>
-    $(document).ready(function() {
-        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(5)');
-        menuItem.find('ul').show();
-        menuItem.addClass('active');
-    });
+        $(document).ready(function() {
+            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(6)');
+            menuItem.find('ul').show();
+            menuItem.addClass('active');
+        });
 
-    var collapsebox = document.getElementsByClassName("accordion-caption");
-    var i;
-    //賣家指定預設開啟
-    collapsebox[3].onclick()
+        var collapsebox = document.getElementsByClassName("accordion-caption");
+        var i;
+        //賣家指定預設開啟
+        collapsebox[3].onclick()
     </script>
 
 </body>

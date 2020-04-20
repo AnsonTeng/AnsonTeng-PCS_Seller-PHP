@@ -32,20 +32,20 @@
     <title>PChomeSEA | 費用查詢</title>
     <!-- Google Tag Manager -->
     <script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -81,10 +81,7 @@
                     </div>
                     <div class="col-md-9">
                         <section id="sea-section-content">
-                            <!-- PChomeSEA Account Header -->
-                            <!--說明For RD：手機版不出現-->
-                            <?php include("assets/account-header.php"); ?>
-                            <!-- PChomeSEA Account Header end-->
+
 
                             <!-- 麵包屑 -->
                             <div class="sea-ui breadcrumb-back">
@@ -101,7 +98,7 @@
                             <div class="content-block">
                                 <div class="content-title">注意事項</div>
                                 <div class="content-description">
-                                    <p class="description-text alert">成交手續費( 商品價格 5% + 7% VAT )待訂單 7 天保護期過後列出，由 PChomeSEA 從貨款中扣除。</p>
+                                    <p class="description-text alert">成交手續費（ 商品價格 5% + 營業稅 5% ）待訂單 7 天保護期過後列出，由 PChomeSEA 從貨款中扣除。</p>
                                     <p class="description-text"><b>代寄運費：</b>買家支付的國際運費 (按照賣家設定的商品重量、材積計算出的國際運費)，須扣除給 PChomeSEA 台北轉運中心。<br /><b>代寄運費差額：</b>PChomeSEA 台北轉運中心寄送時，支付給物流商的實際運費。若比買家支付的運費高，會從貨款中扣除差額，若比買家支付的運費低，會退還差額到賣家貨款中。</p>
                                 </div>
                             </div>
@@ -129,7 +126,7 @@
                                                 <th>單據號碼</th>
                                                 <th>交易類別</th>
                                                 <th>項目</th>
-                                                <th>金額 THB</th>
+                                                <th>訂單來源</th>
                                                 <th>金額 TWD</th>
                                                 <th>費用累計</th>
                                             </tr>
@@ -169,8 +166,8 @@
                                                 <td data-title="項目">
                                                     <span>金流服務費</span>
                                                 </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num negative">2,895</span>
+                                                <td data-title="訂單來源">
+                                                    <span class="eng-num">SG</span>
                                                 </td>
                                                 <td data-title="金額 TWD ">
                                                     <span class="eng-num negative">2,895</span>
@@ -196,8 +193,8 @@
                                                 <td data-title="項目">
                                                     <span>成交手續費</span>
                                                 </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">98</span>
+                                                <td data-title="訂單來源">
+                                                    <span class="eng-num">SG</span>
                                                 </td>
                                                 <td data-title="金額 TWD ">
                                                     <span class="eng-num">100</span>
@@ -222,8 +219,8 @@
                                                 <td data-title="項目">
                                                     <span>退款轉帳手續費</span>
                                                 </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num">208</span>
+                                                <td data-title="訂單來源">
+                                                    <span class="eng-num">SG</span>
                                                 </td>
                                                 <td data-title="金額 TWD ">
                                                     <span class="eng-num">201</span>
@@ -248,8 +245,8 @@
                                                 <td data-title="項目">
                                                     <span>交易手續費</span>
                                                 </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num negative">1,895</span>
+                                                <td data-title="訂單來源">
+                                                    <span class="eng-num">SG</span>
                                                 </td>
                                                 <td data-title="金額 TWD ">
                                                     <span class="eng-num negative">1,890</span>
@@ -274,8 +271,8 @@
                                                 <td data-title="項目">
                                                     <span>代寄運費</span>
                                                 </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num negative">1,895</span>
+                                                <td data-title="訂單來源">
+                                                    <span class="eng-num">SG</span>
                                                 </td>
                                                 <td data-title="金額 TWD ">
                                                     <span class="eng-num negative">1,890</span>
@@ -300,8 +297,8 @@
                                                 <td data-title="項目">
                                                     <span>運費補收</span>
                                                 </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num negative">1,895</span>
+                                                <td data-title="訂單來源">
+                                                    <span class="eng-num">SG</span>
                                                 </td>
                                                 <td data-title="金額 TWD ">
                                                     <span class="eng-num negative">1,890</span>
@@ -326,8 +323,8 @@
                                                 <td data-title="項目">
                                                     <span>VAT稅</span>
                                                 </td>
-                                                <td data-title="金額 THB">
-                                                    <span class="eng-num negative">1,895</span>
+                                                <td data-title="訂單來源">
+                                                    <span class="eng-num">SG</span>
                                                 </td>
                                                 <td data-title="金額 TWD ">
                                                     <span class="eng-num negative">1,890</span>
@@ -362,7 +359,7 @@
 
                                 <!-- 手機版 Load more-->
                                 <div class="sea-btn-loadcontent hidden-xs-up">
-                                    <a href="#" class="sea-ui btn btn-cta btn-load">LOAD MORE</a>
+                                    <a href="#" class="sea-ui btn btn-primary btn-load">LOAD MORE</a>
                                 </div>
 
                             </div>
@@ -403,11 +400,11 @@
 
     <!-- 選單預設開啟 -->
     <script>
-    $(document).ready(function() {
-        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(3)');
-        menuItem.find('ul').show();
-        menuItem.addClass('active');
-    });
+        $(document).ready(function() {
+            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(4)');
+            menuItem.find('ul').show();
+            menuItem.addClass('active');
+        });
     </script>
 
 </body>

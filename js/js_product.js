@@ -178,7 +178,7 @@ $(document).ready(function () {
         return false;
     });
 
-    // 大量新增說明
+    // 大量新增商品說明
     $(".xlserrorBtn").on("click", function () {
         $("#sea-lightbox")
             .children(".sea-lightBox_inner")
@@ -192,7 +192,7 @@ $(document).ready(function () {
         return false;
     });
 
-    // 大量新增
+    // 大量新增商品
     $(".xlsstepBtn").on("click", function () {
         $("#sea-lightbox")
             .children(".sea-lightBox_inner")

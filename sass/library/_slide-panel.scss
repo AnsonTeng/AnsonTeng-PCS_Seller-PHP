@@ -333,9 +333,18 @@
                         }
 
                         .buyerName {
-                            width: 100%;
                             @include text-overflow(1);
                             line-height: 1rem;
+
+                            //  買家訂單來源國家
+                            .buyerCountry {
+                                display: inline;
+                            }
+
+                            .buyerCountry::before {
+                                content: "  ／  ";
+                                font-weight: 300;
+                            }
                         }
                     }
 

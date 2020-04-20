@@ -49,7 +49,7 @@ for (i = 0; i < accordionebox.length; i++) {
 }
 
 // LightBox 燈箱（背景點擊偵聽）
-$(".sea-lightBox_backGround , .lightbox_close").click(function () {
+$(".sea-lightBox_backGround, .lightbox_close").click(function () {
     $("#sea-lightbox").toggle();
     // 解鎖背景物件滑動函式
     unlockBody();

@@ -107,13 +107,13 @@
         <div class="loading-circle small"></div>
     </div>
     <i class="sea-seller-icon icon-delete lightbox_close"></i>
-    <div class="modal-header">準備出貨 － 中華郵政</div>
+    <div class="modal-header">準備出貨 － <strong>中華郵政</strong></div>
     <div class="scrolling-tall modal-content">
         <div class="description">
             <div class="dispatch_prepare_text">
 
                 <div class="dispatch_prepare_block">
-                    <div class="dispatch_prepare_parcel">
+                    <div class="dispatch_prepare_parcel strong">
                         <div class="line_box line_box-wide" data-title="轉運中心地址">
                             <p>台北市大安區敦化南路二段105號12樓<br>連科通訊股份有限公司 (PChomeSEA 代理服務) 收</p>
                         </div>
@@ -185,7 +185,7 @@
                     <p>請將包裹寄送至以下指定收件倉庫地址。</p>
                     <p>轉運站收到您的包裹後，會代您將包裹寄送至泰國，您可透過【賣家中心】和【訂單明細】追蹤貨態。</p>
 
-                    <div class="dispatch_prepare_parcel">
+                    <div class="dispatch_prepare_parcel strong">
                         <div class="line_box line_box-wide" data-title="轉運中心地址">
                             <p>台北市大安區敦化南路二段105號12樓<br>連科通訊股份有限公司 (PChomeSEA 代理服務) 收</p>
                         </div>
@@ -203,13 +203,13 @@
         <div class="loading-circle small"></div>
     </div>
     <i class="sea-seller-icon icon-delete lightbox_close"></i>
-    <div class="modal-header">準備出貨 － 翔丰物流</div>
+    <div class="modal-header">準備出貨 － <strong>翔丰物流</strong></div>
     <div class="scrolling-tall modal-content">
         <div class="description">
             <div class="dispatch_prepare_text">
 
                 <div class="dispatch_prepare_block">
-                    <div class="dispatch_prepare_parcel">
+                    <div class="dispatch_prepare_parcel strong">
                         <div class="line_box line_box-wide" data-title="翔丰物流倉庫地址">
                             <p>地址：338 桃園市蘆竹區蘆興街10號3樓<br>電話：03-2121118<br>聯絡人：李小姐 (#11)</p>
                         </div>
@@ -260,7 +260,7 @@
                     <span class="step__number">STEP 03. 出貨</span>
                     <p>請將包裹寄送至以下指定收件倉庫地址。</p>
                     <p>轉運站收到您的包裹後，會代您將包裹寄送至泰國，您可透過【賣家中心】和【訂單明細】追蹤貨態。</p>
-                    <div class="dispatch_prepare_parcel">
+                    <div class="dispatch_prepare_parcel strong">
                         <div class="line_box line_box-wide" data-title="翔丰物流倉庫地址">
                             <p>地址：338 桃園市蘆竹區蘆興街10號3樓<br>電話：03-2121118<br>聯絡人：李小姐 (#11)</p>
                         </div>
@@ -279,14 +279,14 @@
         <div class="loading-circle small"></div>
     </div>
     <i class="sea-seller-icon icon-delete lightbox_close"></i>
-    <div class="modal-header">準備出貨 － ACS快遞(尚未開放)</div>
+    <div class="modal-header">準備出貨 － <strong>ACS快遞(尚未開放)</strong></div>
     <div class="scrolling-tall modal-content">
         <div class="description">
 
             <div class="dispatch_prepare_text">
 
                 <div class="dispatch_prepare_block">
-                    <div class="dispatch_prepare_parcel">
+                    <div class="dispatch_prepare_parcel strong">
                         <div class="line_box line_box-wide" data-title="ACS 物流倉庫地址">
                             <p>地址：(待提供)<br>電話：(待提供)<br>聯絡人：(待提供)</p>
                         </div>
@@ -363,7 +363,7 @@
                         <li class="span">2.全家店配倉店號：015358，收件人：李益全，手機：0966414093</li>
                     </ul>
                     <br>
-                    <div class="dispatch_prepare_parcel">
+                    <div class="dispatch_prepare_parcel strong">
                         <div class="line_box line_box-wide" data-title="ACS 物流倉庫地址">
                             <p>地址：(待提供)<br>電話：(待提供)<br>聯絡人：(待提供)</p>
                         </div>
@@ -384,7 +384,7 @@
         <div class="loading-circle small"></div>
     </div>
     <i class="sea-seller-icon icon-delete lightbox_close"></i>
-    <div class="modal-header">準備出貨 － 賣家自行配送</div>
+    <div class="modal-header">準備出貨 － <strong>賣家自行配送</strong></div>
     <div class="scrolling-tall modal-content">
         <div class="description">
 

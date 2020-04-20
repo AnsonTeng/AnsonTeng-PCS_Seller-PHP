@@ -10,20 +10,10 @@
 
             <div class="data-wrap">
                 <div class="data-box">
-                    <div class="name">
-                        Diptyque Paris Shop
-                    </div>
-                    <a href="" class="sea-ui btn-xs btn-primary btn-gray hidden-sm-down">
-                        前往泰國賣場
-                    </a>
+                    <div class="name">Diptyque Paris Shop</div>
                 </div>
                 <div class="data-box block-sm-down">
-                    <div class="product-num">
-                        商品數量 <span>7,325</span>
-                    </div>
-                    <a href="" class="sea-ui btn-xs btn-primary btn-gray hidden-sm-up">
-                        前往泰國賣場
-                    </a>
+                    <div class="product-num">上架商品數 <span>7,325</span></div>
                 </div>
             </div>
 

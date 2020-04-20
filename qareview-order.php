@@ -32,20 +32,20 @@
     <title>PChomeSEA | 訂單留言</title>
     <!-- Google Tag Manager -->
     <script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -82,10 +82,7 @@
                     </div>
                     <div class="col-md-9">
                         <section id="sea-section-content">
-                            <!-- PChomeSEA Account Header -->
-                            <!--說明For RD：手機版不出現-->
-                            <?php include("assets/account-header.php"); ?>
-                            <!-- PChomeSEA Account Header end-->
+
 
                             <!-- 頁面標題與麵包屑 -->
                             <div class="sea-ui breadcrumb-back">
@@ -220,7 +217,7 @@
                                         <div class="flexTable productBar-buyerInfoBox">
                                             <div class="flexTable buyerInfoBox-buyerInfo">
                                                 <img class="buyInfo-avatar" src="img/brand/brand_01.jpg" alt="buyer" style="background-image: url('img/buyer_avator_default.svg');">
-                                                <span class="buyInfo-name">so*****************om<span class="buyInfo-name-country">SG</span></span>
+                                                <span class="buyInfo-name">so*****************om</span>
                                             </div>
                                             <span class="buyerInfoBox-message">請問您已經出貨了嗎？請問您已經出貨了嗎？請問您已經出貨了嗎？</span>
                                         </div>
@@ -313,7 +310,7 @@
                                         <div class="flexTable productBar-buyerInfoBox">
                                             <div class="flexTable buyerInfoBox-buyerInfo">
                                                 <img class="buyInfo-avatar" src="img/brand/brand_01.jpg" alt="buyer" style="background-image: url('img/buyer_avator_default.svg');">
-                                                <span class="buyInfo-name">so*****************om<span class="buyInfo-name-country">SG</span></span>
+                                                <span class="buyInfo-name">so*****************om</span>
                                             </div>
                                             <span class="buyerInfoBox-message">請幫忙取消訂單，因為我想重新下單一次。謝謝!!</span>
                                         </div>
@@ -405,7 +402,7 @@
                                         <div class="flexTable productBar-buyerInfoBox">
                                             <div class="flexTable buyerInfoBox-buyerInfo">
                                                 <img class="buyInfo-avatar" src="img/brand/brand_01.jpg" alt="buyer" style="background-image: url('img/buyer_avator_default.svg');">
-                                                <span class="buyInfo-name">so*****************om<span class="buyInfo-name-country">SG</span></span>
+                                                <span class="buyInfo-name">so*****************om</span>
                                             </div>
                                             <span class="buyerInfoBox-message">我還沒有收到商品，請問什麼時候會到貨呢？請老闆麻煩幫忙確認一下。</span>
                                         </div>
@@ -484,11 +481,11 @@
     <!-- PChomeSEA JS end-->
     <!-- 主選單預設開啟（編號） -->
     <script>
-    $(document).ready(function() {
-        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(6)');
-        menuItem.find('ul').show();
-        menuItem.addClass('active');
-    });
+        $(document).ready(function() {
+            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(7)');
+            menuItem.find('ul').show();
+            menuItem.addClass('active');
+        });
     </script>
 
     <!-- 滑動面板 -->

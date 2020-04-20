@@ -34,7 +34,7 @@
     <!-- BS grid -->
     <link rel="stylesheet" type="text/css" href="css/plugin/bootstrap-grid.css">
 
-    <title>PChomeSEA | 物流設定</title>
+    <title>PChomeSEA | 物流說明</title>
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
@@ -81,10 +81,7 @@
                     </div>
                     <div class="col-md-9">
                         <section id="sea-section-content" class="logistic-option">
-                            <!-- PChomeSEA Account Header -->
-                            <!--說明For RD：手機版不出現-->
-                            <?php include("assets/account-header.php"); ?>
-                            <!-- PChomeSEA Account Header end-->
+
 
                             <div class="sea-ui breadcrumb-back">
                                 <span class="sea-seller-icon icon-seller-shop"></span>
@@ -100,6 +97,8 @@
                                 <div class="content-title">物流說明</div>
                                 <div class="content-description">
                                     <h2>國際物流寄送說明</h2>
+                                    <p class="description-text">寄送至泰國支援的物流方式，賣家亦可自行出貨；出貨至其他東南亞國家目前由連科通訊代為處理，若訂單來源為其他國家，敬請賣家依照指示將商品寄至連科通訊。</p>
+
                                     <h3>中華郵政</h3>
                                     <p class="description-text">現階段台灣出貨至東南亞的訂單，主要會透過中華郵政國際快捷 (EMS) 或 國際e小包 (ePacket) 寄送。運費會依照您所輸入的包裹重量和材積，採較重者計算。運費向買家預先收取。<br>
                                         包裹重量小於 2kg，材積相加不超過 90cm 的包裹，將優先以國際e小包計算運費並且進行配送。<br>提醒您，若您輸入的包裹重量或材積，與實際寄送時計量結果不符而導致運費少收；將以物流商計算的運費金額為主，並且列為運費補收項目於提領時補扣。</p>
@@ -148,10 +147,9 @@
                                     </div>
 
                                     <ul class="note">
-                                        <li> 注意事項：</li>
-                                        <li>1. 我們會提供您及買家追蹤貨號，讓您可全程追蹤貨物寄件狀態。</li>
-                                        <li>2. 提醒您，若您輸入的包裹重量與物流商實際秤重有差異，將以物流商實際秤重為準。若因包裹尺寸或重量不符導致寄送國際運費短收，將列為運費補收於提領時扣抵。</li>
-                                        <li>3. 退貨退款：PChomeSEA 目前尚未支援退換貨的物流服務。敬請賣家自行於【賣場設定】維護賣場英文地址供買家寄回處理。</li>
+                                        <li>注意事項：</li>
+                                        <li>1. 提醒您，若您輸入的包裹重量與物流商實際秤重有差異，將以物流商實際秤重為準。若因包裹尺寸或重量不符導致寄送國際運費短收，將列為運費補收於提領時扣抵。</li>
+                                        <li>2. 退貨退款：PChomeSEA 目前尚未支援國際包裹退換貨的物流服務。敬請賣家自行於【賣場設定】維護賣場英文地址，供買家寄回處理。</li>
                                     </ul>
                                 </div>
                             </div>
@@ -188,7 +186,7 @@
     <script type="text/javascript" src="js/js_shop.js"></script>
     <script>
         $(document).ready(function() {
-            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(5)');
+            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(6)');
             menuItem.find('ul').show();
             menuItem.addClass('active');
         });

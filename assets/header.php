@@ -13,10 +13,10 @@
                 </div>
             </div>
             <div class="logotypeBox">
-                <a class="logotype" href="index.php">
+                <a class="logotype" href="https://www.pchomesea.com/">
                     <img src="img/img_pchomesea_white.svg" alt="PChomeSEA" class="img-fluid">
                 </a>
-                <div class="sea-site-ttl"><a href="index.php" class="sea-link-item">賣家中心</a></div>
+                <!-- <div class="sea-site-ttl"><a href="index.php" class="sea-link-item">賣家中心</a></div> -->
             </div>
 
 
@@ -176,7 +176,7 @@
                                         </div>
                                         <div class="drawer-link">
                                             <ul>
-                                                <li class="account-name active">Hi UserName</li>
+                                                <li class="account-name active">Diptyque Paris Shop</li>
                                                 <!-- <li class="account-buyer"><a href="../buyer/">買家中心</a></li> -->
                                                 <!-- <li class="account-seller"><a href="../seller/">賣家中心</a></li> -->
                                                 <li class="account-logout"><a href="#"> <span class="sea-seller-icon icon-logout"></span>登出</a></li>

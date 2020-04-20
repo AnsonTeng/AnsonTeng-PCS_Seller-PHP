@@ -33,20 +33,20 @@
     <title>PChomeSEA | 海外賣家中心</title>
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -79,7 +79,7 @@
                         <section id="sea-section-content">
 
                             <!-- PChomeSEA Account Header -->
-                            <!--說明For RD：手機版不出現-->
+                            <!--說明For RD： 只有首頁會出現-->
                             <?php include("assets/account-header.php"); ?>
                             <!-- PChomeSEA Account Header end-->
 
@@ -119,8 +119,7 @@
                                                 <div class="bank-account" style="display: none"><span class="txt">未認證身分與銀行。</span> <a href="kyc-identity.php" class="btn-xs" class="btn-xs">申請認證</a></div>
 
                                                 <!-- 說明For RD: 狀態02: KYC審核通過：有銀行帳號且提領成功過--->
-                                                <div class="bank-account" style="display: none"> <span>002 Bangkok Bank
-                                                        (BBL)</span></div>
+                                                <div class="bank-account" style="display: none"> <span>002 Bangkok Bank (BBL)</span></div>
 
                                                 <!-- 說明For RD: 狀態03: KYC審核通過：提領設定銀行狀態- 認證中--->
                                                 <div class="bank-account" style="display: none"> <span class="txt">銀行認證中。</span></div>
@@ -212,7 +211,7 @@
                                             </a>
                                         </div>
                                         <div class="dashboard-card-wrap">
-                                            <a href="orderlist.php">
+                                            <a href="product-list.php">
                                                 <div class="dashboard-card">
                                                     <div class="dashboard-card-icon">
                                                         <!--未讀紅點-->
@@ -232,7 +231,7 @@
                                             </a>
                                         </div>
                                         <div class="dashboard-card-wrap">
-                                            <a href="orderlist.php">
+                                            <a href="qareview-order.php">
                                                 <div class="dashboard-card">
                                                     <div class="dashboard-card-icon">
                                                         <!--未讀紅點-->
@@ -252,7 +251,7 @@
                                             </a>
                                         </div>
                                         <div class="dashboard-card-wrap">
-                                            <a href="orderlist.php">
+                                            <a href="qareview-product.php">
                                                 <div class="dashboard-card">
                                                     <div class="dashboard-card-icon">
                                                         <!--未讀紅點-->
@@ -343,23 +342,14 @@
     <?php include("assets/js-include.php"); ?>
     <!-- PChomeSEA JS end-->
 
-
-
     <!--首頁 JS-->
-    <script>
-        $(document).ready(function() {
-            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(1)');
-            menuItem.find('ul').show();
-            menuItem.addClass('active');
-        });
-    </script>
 
     <!--系統公告 JS-->
     <script type="text/javascript" src="js/plugin/ticker/tickerme.min.js"></script>
     <script type="text/javascript">
-        $(function() {
-            $('#ticker').tickerme();
-        });
+    $(function() {
+        $('#ticker').tickerme();
+    });
     </script>
 </body>
 
