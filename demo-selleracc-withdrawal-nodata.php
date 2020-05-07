@@ -89,7 +89,7 @@
                                 <ul>
                                     <li><a href="index.php">首頁</a></li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
-                                    <li>代收款項</li>
+                                    <li>交易貨款</li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
                                     <li>貨款結算</li>
                                 </ul>
@@ -112,7 +112,7 @@
                                                 </div>
                                                 <!-- 文字包 -->
                                                 <div class="item-amountBox-text">
-                                                    <div class="subtitle"><span class="subtitle-text">可結算金額</span><span class="currency">TWD</span></div>
+                                                    <div class="subtitle"><span class="subtitle-text">可結算金額</span><span class="currency">NT$</span></div>
                                                     <div class="amount eng-num">0</div>
                                                 </div>
                                             </div>
@@ -260,7 +260,7 @@
     </section>
 
     <!-- PChomeSEA Panel -->
-    <?php include("assets/slide-panel/panel-global.php"); ?>
+    <?php include("assets/slide-panel/panel-orderdetail.php"); ?>
     <!-- PChomeSEA Panel end-->
 
     <!-- PChomeSEA lightBox -->
@@ -282,7 +282,7 @@
     <!-- 滑動面板 -->
     <script type="text/javascript" src="js/plugin/slide-panel/slide-panel.js"></script>
 
-    <!--代收款項 JS-->
+    <!--交易貨款 JS-->
     <script type="text/javascript" src="js/js_selleracc.js"></script>
 
     <!-- 選單預設開啟 -->

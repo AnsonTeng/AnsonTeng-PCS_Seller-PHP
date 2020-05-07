@@ -2,7 +2,7 @@
     <div class="alert">
         <span class="sea-seller-icon icon-alert"></span>
         <span class="sea-seller-icon icon-delete" onclick="this.parentElement.style.display='none';"></span>
-        您尚未通過賣家身分驗證，請聯繫客服人員了解詳情。<a href="#" class="contactUsBtn">聯繫客服</a>
+        您有商品已售罄，請儘速補貨。若有任何問題請聯繫客服人員。<a href="#" class="contactUsBtn">聯繫客服</a>
     </div>
 </div>
 

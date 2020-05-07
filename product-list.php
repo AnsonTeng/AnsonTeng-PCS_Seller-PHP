@@ -32,20 +32,20 @@
     <title>PChomeSEA | 商品列表</title>
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -184,7 +184,6 @@
                                         <li><a href="#tab2">上架商品 (5)</a></li>
                                         <li><a href="#tab3">無庫存 (4)</a></li>
                                         <li><a href="#tab4">下架商品 (3)</a></li>
-                                        <li><a href="#tab4">垃圾桶 (93)</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -232,7 +231,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -282,7 +281,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <!-- 說明 FOR RD: 商品下架中狀態 -->
@@ -336,7 +335,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -392,7 +391,7 @@
                                                     <div class="unlist-overlay pending">
                                                         <p><span class="sea-seller-icon icon-alert"></span> 商品待上架</p>
                                                     </div>
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -444,7 +443,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -500,7 +499,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -553,7 +552,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -606,7 +605,7 @@
                                         <a href="product-edit.php" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -662,7 +661,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <!-- 說明 FOR RD: 商品下架中狀態 -->
@@ -720,7 +719,7 @@
                                         <a href="product-edit.php" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -774,7 +773,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -830,7 +829,7 @@
                                         <a href="product-edit.php" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -883,7 +882,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -936,7 +935,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -990,7 +989,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -1046,7 +1045,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -1099,7 +1098,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -1152,7 +1151,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -1208,7 +1207,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -1338,7 +1337,7 @@
             <!--頁面內會出現的lightbox放這裡-->
             <?php include("assets/lightbox/product/lightbox-product.php"); ?>
             <!--滑動面板內會出現的lightbox放這裡-->
-            <?php include("assets/slide-panel/lightbox/panel-lightbox-batchedit.php"); ?>
+            <?php include("assets/lightbox/slide-panel/lightbox-batchedit.php"); ?>
         </div>
     </section>
     <!-- PChomeSEA lightBox end-->
@@ -1359,11 +1358,11 @@
     <script type="text/javascript" src="js/catalogmenu.js"></script>
 
     <script>
-        $(document).ready(function() {
-            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(5)');
-            menuItem.find('ul').show();
-            menuItem.addClass('active');
-        });
+    $(document).ready(function() {
+        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(5)');
+        menuItem.find('ul').show();
+        menuItem.addClass('active');
+    });
     </script>
 </body>
 

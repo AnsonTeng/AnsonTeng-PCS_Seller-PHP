@@ -333,24 +333,18 @@
                                     </div>
                                     <div class="description-list-box">
                                         <div class="list-box-item">貨物追蹤碼</div>
-                                        <div class="list-box-text">
-                                            <a href="#" class="eng-num">991256748935574</a>
-                                        </div>
-                                        <!-- 操作按鈕 -->
-                                        <div class="flexbox-btnbox"></div>
-                                    </div>
-
-                                    <div class="description-list-box">
-                                        <div class="list-box-item">運單憑證</div>
                                         <div class="list-box-flexbox">
-                                            <div class="flexbox-item-flexbox"></div>
+                                            <div class="flexbox-item-flexbox">
+                                                <div class="flexbox-item">
+                                                    <a href="#" class="eng-num">991256748935574</a>
+                                                </div>
+                                            </div>
                                             <!-- 操作按鈕 -->
                                             <div class="flexbox-btnbox">
                                                 <a href="#" class="sea-ui btn-xs btn certificateBtn">下載憑證</a>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="description-list-box">
                                         <div class="list-box-item">出貨時間</div>
                                         <div class="list-box-text"><span class="eng-num">MM / DD / YYYY</span></div>

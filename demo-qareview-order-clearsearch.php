@@ -277,7 +277,7 @@
         <!-- PChomeSEA footer end-->
     </section>
     <!-- PChomeSEA Panel -->
-    <?php include("assets/slide-panel/panel-global.php"); ?>
+    <?php include("assets/slide-panel/panel-orderdetail.php"); ?>
     <!-- PChomeSEA Panel end-->
     <!-- PChomeSEA lightBox -->
     <section id="sea-lightbox">
@@ -287,7 +287,7 @@
             <!--頁面會出現的lightbox放這裡-->
             <?php include("assets/lightbox/orderlist/lightbox-orderlist.php"); ?>
             <!--頁面與面板都會出現的lightbox放這裡-->
-            <?php include("assets/slide-panel/lightbox/panel-lightbox-orderdetail.php"); ?>
+            <?php include("assets/lightbox/slide-panel/lightbox-orderdetail.php"); ?>
         </div>
     </section>
     <!-- PChomeSEA lightBox end-->

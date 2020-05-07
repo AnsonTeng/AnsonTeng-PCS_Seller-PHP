@@ -48,8 +48,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="sea-ui btn btn-cta-outlined">取消</a>
-        <a href="#" class="sea-ui btn btn-cta">確定</a>
+        <a href="" class="sea-ui btn btn-primary-outlined">取消</a>
+        <a href="#" class="sea-ui btn btn-primary">確定</a>
     </div>
 </div>
 

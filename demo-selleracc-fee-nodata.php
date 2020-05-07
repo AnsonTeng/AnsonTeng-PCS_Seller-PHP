@@ -89,7 +89,7 @@
                                 <ul>
                                     <li><a href="index.php">首頁</a></li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
-                                    <li>代收款項</li>
+                                    <li>交易貨款</li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
                                     <li>費用查詢</li>
                                 </ul>
@@ -180,7 +180,7 @@
     </section>
 
     <!-- PChomeSEA Panel -->
-    <?php include("assets/slide-panel/panel-global.php"); ?>
+    <?php include("assets/slide-panel/panel-orderdetail.php"); ?>
     <!-- PChomeSEA Panel end-->
 
     <!-- PChomeSEA lightBox -->
@@ -200,7 +200,7 @@
     <!-- 滑動面板 -->
     <script type="text/javascript" src="js/plugin/slide-panel/slide-panel.js"></script>
 
-    <!--代收款項 JS-->
+    <!--交易貨款 JS-->
     <script type="text/javascript" src="js/js_selleracc.js"></script>
 
     <!-- 選單預設開啟 -->

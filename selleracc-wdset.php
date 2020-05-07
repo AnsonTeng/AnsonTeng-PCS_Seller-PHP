@@ -32,20 +32,20 @@
     <title>PChomeSEA | 結算設定</title>
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -89,7 +89,7 @@
                                 <ul>
                                     <li><a href="index.php">首頁</a></li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
-                                    <li>代收款項</li>
+                                    <li>交易貨款</li>
                                     <li class="sea-seller-icon icon-angle-right"></li>
                                     <li>結算設定</li>
                                 </ul>
@@ -104,8 +104,8 @@
                                         <div class="accountFlexbox-btnBox">
                                             <div class="accountFlexbox-btnBox-btnGroup">
                                                 <img class="btnGroup-img" src="img/bankaccount_setting.svg">
-                                                <a href="#" class="sea-ui btn-sm btn-fluid btn-primary selleridveriBtn">
-                                                    <li class="sea-btn-icon icon-plus"></li> 修改帳戶
+                                                <a href="#" class="sea-ui btn-sm btn-fluid btn-primary withdrawsettingBtn">
+                                                    <span class="sea-btn-icon icon-plus"></span> 修改帳戶
                                                 </a>
                                             </div>
                                         </div>
@@ -155,11 +155,11 @@
 
 
     <script>
-        $(document).ready(function() {
-            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(4)');
-            menuItem.find('ul').show();
-            menuItem.addClass('active');
-        });
+    $(document).ready(function() {
+        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(4)');
+        menuItem.find('ul').show();
+        menuItem.addClass('active');
+    });
     </script>
 </body>
 

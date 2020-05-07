@@ -92,54 +92,24 @@
                             <!-- PChomeSEA System Ticker end-->
 
                             <div class="sea-reverse">
-                                <!--代收款項-->
+                                <!--交易貨款-->
                                 <div class="section-outer section-seller-bank-payment">
 
                                     <!--帳戶總金額-->
                                     <div class="current-balance">
-                                        <div class="box-ttl">帳戶總金額 <span class="eng-num">THB</span></div>
+                                        <div class="box-ttl">貨款總金額：<span class="eng-num">NT$</span></div>
                                         <div class="balance-num eng-num">
-                                            <a href="selleracc-withdrawal.php"><span>$</span>19,843.87</a>
+                                            <a href="selleracc-withdrawal.php"><span>$</span>19,843</a>
                                         </div>
                                     </div>
 
                                     <!--提領帳戶-->
                                     <div class="linked-bank-account">
                                         <div class="payment-setting"><a href="selleracc-wdset.php"> <span class="sea-seller-icon icon-setting-line"></span>提領設定</a></div>
-                                        <div class="box-ttl">提領帳戶
-                                            <!--說明For RD: 若顯示已認證銀行資料，需出現icon與已驗證文字 -->
-                                            <div class="bankvarify-text"><span class="sea-seller-icon icon-bank-verified"></span>已認證</div>
-                                        </div>
+                                        <div class="box-ttl">提領帳戶</div>
                                         <div class="bank-info">
                                             <div class="sea-seller-icon icon-bank"></div>
                                             <div class="linked-bank-account">
-
-                                                <!-- 說明For RD: 狀態01: KYC審核未通過(全新帳戶)：無設定提領設定銀行--->
-                                                <!-- 說明For RD: 若未過SMS OTP class請帶 class="btn-xs telveriBtn" 已通過SMS OTP 直接連結到kyc-identity.php--->
-                                                <div class="bank-account" style="display: none"><span class="txt">未認證身分與銀行。</span> <a href="kyc-identity.php" class="btn-xs" class="btn-xs">申請認證</a></div>
-
-                                                <!-- 說明For RD: 狀態02: KYC審核通過：有銀行帳號且提領成功過--->
-                                                <div class="bank-account" style="display: none"> <span>002 Bangkok Bank (BBL)</span></div>
-
-                                                <!-- 說明For RD: 狀態03: KYC審核通過：提領設定銀行狀態- 認證中--->
-                                                <div class="bank-account" style="display: none"> <span class="txt">銀行認證中。</span></div>
-
-                                                <!-- 說明For RD: 狀態04: KYC審核通過：提領設定銀行狀態- 認證失敗 原因為：銀行帳戶相關--->
-                                                <!-- 說明For RD: 若未過SMS OTP class請帶 class="btn-xs telveriBtn" 已通過SMS OTP 直接連結到kyc-identity.php--->
-                                                <div class="bank-account" style="display: none"><span class="txt">銀行認證失敗。</span> <a class="btn-xs telveriBtn" class="btn-xs">修改</a></div>
-
-                                                <!-- 說明For RD: 狀態05: KYC審核未通過：提領設定銀行狀態- 認證失敗 原因為：身份資料錯誤相關--->
-                                                <div class="bank-account" style="display: none"> <span class="txt">銀行認證中。</span></div>
-
-                                                <!-- 說明For RD: 狀態06: KYC審核通過：舊會員有KYC資料(通過)  有設定過銀行帳號  無提領紀錄--->
-                                                <div class="bank-account" style="display: none"><span class="txt">銀行待認證。</span> <a class="btn-xs VerifyagainBtn" class="btn-xs">重送認證</a></div>
-
-                                                <!-- 說明For RD: 狀態07: KYC審核未通過：舊會員有KYC資料(未通過)  有設定過銀行帳號  無提領紀錄--->
-                                                <div class="bank-account" style="display: none"><span class="txt">銀行待認證。</span></div>
-
-                                                <!-- 說明For RD: 狀態08: 無KYC有銀行帳號：舊會員無KYC資料  有設定過銀行帳號  無提領紀錄--->
-                                                <!-- 說明For RD: 若未過SMS OTP class請帶 class="btn-xs telveriBtn" 已通過SMS OTP 直接連結到kyc-identity.php--->
-                                                <div class="bank-account"><span class="txt">銀行待認證。</span> <a class="btn-xs telveriBtn" class="btn-xs">申請認證</a></div>
 
                                                 <!--說明 FOR RD: 若沒有帳號與戶名時，請整塊隱藏-->
                                                 <div class="bank-name-num">

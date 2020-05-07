@@ -152,14 +152,15 @@
     <div class="scrolling-tall modal-content">
         <div class="description">
             <div class="title">發票抬頭：<span>（自動帶入）</span></div>
-            <div class="title">Tax ID：<span>（自動帶入）</span></div>
-
             <div class="sea-ui form-label break-label">
-                <label for="">Branch No.</label>
+                <label for="">公司英文名稱</label>
                 <div class="sea-ui form">
-                    <input type="text" placeholder="請填寫 Branch No. 號碼">
+                    <input type="text" placeholder="請填寫公司英文名稱">
                 </div>
             </div>
+            <div class="title">Tax ID：<span>（自動帶入）</span></div>
+
+
 
             <div class="sea-ui form-select-label break-label">
                 <label for="">公司登記地址</label>

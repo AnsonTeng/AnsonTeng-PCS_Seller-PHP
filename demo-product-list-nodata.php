@@ -296,7 +296,7 @@
             <!--頁面內會出現的lightbox放這裡-->
             <?php include("assets/lightbox/product/lightbox-product.php"); ?>
             <!--滑動面板內會出現的lightbox放這裡-->
-            <?php include("assets/slide-panel/lightbox/panel-lightbox-batchedit.php"); ?>
+            <?php include("assets/lightbox/slide-panel/lightbox-batchedit.php"); ?>
         </div>
     </section>
     <!-- PChomeSEA lightBox end-->

@@ -17,7 +17,8 @@
                 </div>
             </div>
 
-            <div class="setting-wrap sea-ui btn-sm accountSettingsBtn">
+            <!--說明 FOR RD: 現階段暫時隱藏-->
+            <div class="setting-wrap sea-ui btn-sm accountSettingsBtn" style="display:none">
                 <a href="#"><span class="sea-seller-icon icon-setting"></span>帳號設定</a>
             </div>
         </div>

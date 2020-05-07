@@ -124,7 +124,7 @@
                                         </div>
                                     </div>
                                     <a href="demo-product-clearsearch.php" class="inputGroup-btn searchBarGroup-searchBtn" style="display:none"><span class="sea-seller-icon icon-search"></span></a>
-                                    <a href="orderlist.php" class="sea-ui btn-sm inputGroup-btn"><span class="sea-btn-icon icon-delete"></span>清空</a>
+                                    <a href="product-list.php" class="sea-ui btn-sm inputGroup-btn"><span class="sea-btn-icon icon-delete"></span>清空</a>
                                 </div>
                                 <!-- 商品搜尋結束-->
 
@@ -239,7 +239,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -291,7 +291,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <!-- 說明 FOR RD: 商品下架中狀態 -->
@@ -347,7 +347,7 @@
                                         <a onclick="location.href='product-edit.php'" class="sea-item-card-link">
                                             <div class="card-edit-info">
                                                 <div class="card-figure">
-                                                    <div class="delete-btn edit-btn" style="display:none">
+                                                    <div class="delete-btn edit-btn">
                                                         <li class="sea-seller-icon icon-trash"></li>
                                                     </div>
                                                     <div class="card-figure-inner">
@@ -525,7 +525,7 @@
             <!--頁面內會出現的lightbox放這裡-->
             <?php include("assets/lightbox/product/lightbox-product-manage.php"); ?>
             <!--滑動面板內會出現的lightbox放這裡-->
-            <?php include("assets/slide-panel/lightbox/panel-lightbox-batchedit.php"); ?>
+            <?php include("assets/lightbox/slide-panel/lightbox-batchedit.php"); ?>
         </div>
     </section>
     <!-- PChomeSEA lightBox end-->

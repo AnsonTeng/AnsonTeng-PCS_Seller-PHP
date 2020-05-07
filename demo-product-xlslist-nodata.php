@@ -140,9 +140,9 @@
 
                             <!--商品詳細描述-->
                             <div class="content-block product-description">
-                                <div class="content-title">商品大量新增商品紀錄</div>
+                                <div class="content-title">大量新增商品紀錄</div>
                                 <div class="content-description">
-                                    <p class="description-text">以下為 excel 商品大量新增商品紀錄列表，上傳資料後需 2-3 個工作天處理，上傳結果會在列表中紀錄，紀錄只會保留最後 20 筆資料。</p>
+                                    <p class="description-text">以下為 excel 大量新增商品紀錄列表，上傳資料後需 2-3 個工作天處理，上傳結果會在列表中紀錄，紀錄只會保留最後 20 筆資料。</p>
                                     <a class="sea-ui btn-sm xlserrorBtn">
                                         <li class="sea-btn-icon icon-information"></li>結果錯誤說明
                                     </a>

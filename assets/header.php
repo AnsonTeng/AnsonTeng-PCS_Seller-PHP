@@ -130,7 +130,7 @@
                                             </div>
                                             <div class="drawer-list-content-list">
                                                 <ul>
-                                                    <li>親愛的 UserName 您好: 已收到您申請之提領作業，提領單號70519001767，提領金額998元，將轉帳至您預留的銀行帳號。提領內容請您到<b>代收款項</b>查詢。 感謝您的愛護與支持 !!</li>
+                                                    <li>親愛的 UserName 您好: 已收到您申請之提領作業，提領單號70519001767，提領金額998元，將轉帳至您預留的銀行帳號。提領內容請您到<b>交易貨款</b>查詢。 感謝您的愛護與支持 !!</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -138,8 +138,8 @@
                                 </div>
 
                                 <div class="drawer-actions nologin">
-                                    <a href="https://www.pchomesea.com/signin.html" target="_blank" class="sea-ui btn-sm btn-cta">註冊會員</a>
-                                    <a class="sea-ui btn-sm btn-cta-outlined" id="headerSignInBtn_02">登入</a>
+                                    <a href="https://www.pchomesea.com/signin.html" target="_blank" class="sea-ui btn-sm btn-primary">註冊會員</a>
+                                    <a class="sea-ui btn-sm btn-primary-outlined" id="headerSignInBtn_02">登入</a>
                                 </div>
 
                                 <div class="drawer-actions login">
@@ -184,15 +184,15 @@
                                         </div>
                                     </div>
                                     <div class="drawer-actions">
-                                        <a href="https://www.pchomesea.com/signin.html" target="_blank" class="sea-ui btn-sm btn-cta">註冊會員</a>
-                                        <a class="sea-ui btn-sm btn-cta-outlined" id="headerSignInBtn_03">登入</a>
+                                        <a href="https://www.pchomesea.com/signin.html" target="_blank" class="sea-ui btn-sm btn-primary">註冊會員</a>
+                                        <a class="sea-ui btn-sm btn-primary-outlined" id="headerSignInBtn_03">登入</a>
                                     </div>
                                 </div>
                             </div>
                     </div>
 
-                    <!-- 語言按鈕 -->
-                    <div class="headerBtn header-language">
+                    <!-- 語言按鈕 (SEA無需) -->
+                    <div class="headerBtn header-language" style="display: none;">
                         <a href="#" class="sea-ui icon-overseas-tw"></a>
                         <!-- <a href="#" class="sea-ui icon-overseas-us"></a> -->
                         <!-- <a href="#" class="sea-ui icon-overseas-th"></a> -->

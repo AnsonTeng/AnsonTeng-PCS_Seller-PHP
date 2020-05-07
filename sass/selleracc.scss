@@ -9,8 +9,8 @@
 
 //－－－ Page Components －－－
 
-//代收款項區塊
-@import "library/_section-bankPayment";
+//交易貨款區塊
+// @import "library/_section-bankPayment";
 
 //頁碼
 @import "library/_pagination";
@@ -20,6 +20,9 @@
 
 //表格－新增表格公用
 @import "library/_table-backendlist";
+
+// 新式表格 flexTable
+@import "library/_flexTable";
 
 //區塊內容
 @import "library/_content-block";

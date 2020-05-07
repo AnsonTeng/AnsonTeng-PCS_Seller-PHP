@@ -233,7 +233,7 @@
 
 
     <!-- PChomeSEA Panel -->
-    <?php include("assets/slide-panel/panel-global.php"); ?>
+    <?php include("assets/slide-panel/panel-orderdetail.php"); ?>
     <!-- PChomeSEA Panel end-->
 
 
@@ -244,7 +244,7 @@
             <?php include("assets/lightbox/global.php"); ?>
             <?php include("assets/lightbox/qareview/lightbox-qareview.php"); ?>
             <!--頁面與面板都會出現的lightbox放這裡-->
-            <?php include("assets/slide-panel/lightbox/panel-lightbox-orderdetail.php"); ?>
+            <?php include("assets/lightbox/slide-panel/lightbox-orderdetail.php"); ?>
         </div>
     </section>
     <!-- PChomeSEA lightBox end-->

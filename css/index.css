@@ -4594,77 +4594,24 @@ a.sea-ui.btn-xs.productscreenshotBtn .sea-seller-icon {
   100% {
     background-position: 500px 0; } }
 
-.section-system-ticker {
-  padding: 15px 15px;
-  border-radius: 2px;
-  background-color: #ffffff;
-  border: 1px solid #ececec;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: 300;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  word-break: normal; }
-  .section-system-ticker .ticker-ttl {
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    font-weight: 400;
-    margin-right: 10px; }
-    .section-system-ticker .ticker-ttl p {
-      display: inline-block; }
-    .section-system-ticker .ticker-ttl .sea-seller-icon {
-      display: inline-block;
-      vertical-align: bottom;
-      color: #00AFEB;
-      font-size: 1.25rem;
-      padding-right: 5px; }
-
-@media (max-width: 768px) {
-  .section-system-ticker .ticker-ttl p {
-    display: none; } }
-
 .section-seller-bank-payment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #0073C3;
-  border-radius: 4px;
-  padding: 15px 20px;
   background: -webkit-gradient(linear, left top, right top, from(#14a9ba), to(#21c8d9));
   background: -webkit-linear-gradient(left, #14a9ba 0%, #21c8d9 100%);
   background: -o-linear-gradient(left, #14a9ba 0%, #21c8d9 100%);
   background: linear-gradient(to right, #14a9ba 0%, #21c8d9 100%);
+  border-radius: 4px;
+  padding: 15px 20px;
   min-height: 120px;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); }
   .section-seller-bank-payment .box-ttl {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    text-align: left;
     font-size: 0.8125rem;
-    color: #ececec;
+    color: #bbccd4;
     padding: 5px 0; }
-    .section-seller-bank-payment .box-ttl .bankvarify-text {
-      color: #ffffff;
-      font-size: 0.8125rem;
-      margin-left: 5px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: start;
-      -ms-flex-align: start;
-      align-items: flex-start; }
-      .section-seller-bank-payment .box-ttl .bankvarify-text .sea-seller-icon.icon-bank-verified {
-        font-size: 1.125rem;
-        padding-right: 2px;
-        display: inline-block;
-        vertical-align: middle;
-        position: relative;
-        top: -4px; }
   .section-seller-bank-payment .current-balance {
     -webkit-box-flex: 5;
     -ms-flex: 5;
@@ -4672,12 +4619,12 @@ a.sea-ui.btn-xs.productscreenshotBtn .sea-seller-icon {
     .section-seller-bank-payment .current-balance .balance-num {
       color: #ffffff;
       font-size: 2.2rem;
-      text-align: left;
-      padding: 15px 0; }
+      text-align: center;
+      padding: 10px 0; }
       .section-seller-bank-payment .current-balance .balance-num span {
         font-size: 0.875rem;
         padding-right: 10px; }
-      .section-seller-bank-payment .current-balance .balance-num a {
+      .section-seller-bank-payment .current-balance .balance-num > a {
         color: #ffffff; }
   .section-seller-bank-payment .linked-bank-account {
     -webkit-box-flex: 11;
@@ -4705,7 +4652,8 @@ a.sea-ui.btn-xs.productscreenshotBtn .sea-seller-icon {
       padding: 15px 0;
       color: #ffffff;
       font-size: 0.9375rem;
-      font-weight: 300; }
+      font-weight: 300;
+      pointer-events: none; }
       .section-seller-bank-payment .linked-bank-account .bank-info .icon-bank {
         font-size: 2.5rem;
         color: #ececec; }
@@ -4790,12 +4738,25 @@ a.sea-ui.btn-xs.productscreenshotBtn .sea-seller-icon {
     display: block; }
     .section-seller-bank-payment .current-balance .balance-num {
       text-align: center;
-      font-size: 2.4rem;
+      font-size: 2.5rem;
+      padding: 5px 0 15px 0; } }
+
+@media (max-width: 768px) {
+  .section-seller-bank-payment {
+    display: block; }
+    .section-seller-bank-payment .current-balance .balance-num {
+      text-align: center;
+      font-size: 2.5rem;
       padding: 5px 0 15px 0; } }
 
 @media (max-width: 441px) {
   .section-seller-bank-payment {
     display: block; }
+    .section-seller-bank-payment .current-balance .balance-num {
+      padding: 5px 0;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
     .section-seller-bank-payment .linked-bank-account .bank-info {
       padding: 5px 0;
       -webkit-box-align: center;
@@ -4817,6 +4778,39 @@ a.sea-ui.btn-xs.productscreenshotBtn .sea-seller-icon {
             border-right: none; }
           .section-seller-bank-payment .linked-bank-account .bank-info .linked-bank-account .bank-name-num ul li.bank-num {
             max-width: auto; } }
+
+.section-system-ticker {
+  padding: 15px 15px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 300;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  word-break: normal; }
+  .section-system-ticker .ticker-ttl {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-weight: 400;
+    margin-right: 10px; }
+    .section-system-ticker .ticker-ttl p {
+      display: inline-block; }
+    .section-system-ticker .ticker-ttl .sea-seller-icon {
+      display: inline-block;
+      vertical-align: bottom;
+      color: #00AFEB;
+      font-size: 1.25rem;
+      padding-right: 5px; }
+
+@media (max-width: 768px) {
+  .section-system-ticker .ticker-ttl p {
+    display: none; } }
 
 .section-seller-dashboard {
   display: -webkit-box;

@@ -32,15 +32,17 @@
     </div>
     <div class="modal-actions">
         <!--清除-->
-        <a href="#" class="sea-ui btn btn-cta-outlined lightbox_close">清空重寫</a>
+        <a href="#" class="sea-ui btn btn-primary-outlined lightbox_close">清空重寫</a>
         <!--確定發問-->
-        <a href="#" class="sea-ui btn btn-cta">確定送出</a>
+        <a href="#" class="sea-ui btn btn-primary">確定送出</a>
     </div>
 </div>
 <!-- 燈箱結束-->
 
+
+
 <!--提領設定燈箱 -->
-<div id="sea-lightbox-withdrawsetting" class="sea-ui modal lightbox-setbank">
+<div id="sea-lightbox-withdrawsetting" class="sea-ui modal medium lightbox-setbank">
     <!-- FOR RD: After Submit Show In Progress Loading  -->
     <div class="sea-ui loading-overlay" style="display: none">
         <div class="loading-circle small"></div>
@@ -48,48 +50,57 @@
 
     <i class="sea-seller-icon icon-delete lightbox_close"></i>
     <!-- <div class="modal-header">提領設定</div> -->
-
-    <div class="modal-content">
+    <div class="modal-header">銀行帳號設定</div>
+    <div class="modal-content scrolling">
         <div class="description">
-            <div class="title">銀行帳號設定</div>
-            <div class="modal-icon-img">
+            <div class="modal-icon-img hidden-sm-down">
                 <img src="img/bankaccount_setting.svg" alt="" class="img-fluid">
             </div>
 
             <div class="sea-ui form-label break-label">
-                <!-- 說明FOR RD:  直接帶入KYC戶名 -->
-                <div class="sea-ui form-label break-label">
-                    <label for="">銀行戶名</label>
-                    <div class="sea-ui form text-without-input">
-                        <p class="data-text align-left">Sherry Hsu Snow Lily</p>
-                    </div>
-                </div>
                 <div class="sea-ui form-select-label break-label">
                     <label for="">銀行名稱</label>
                     <div class="sea-ui form select">
                         <select>
                             <option value="0">請選擇</option>
-                            <option value="1">002 Bangkok Bank (BBL)</option>
-                            <option value="2">002 Bangkok Bank (BBL)</option>
-                            <option value="3">002 Bangkok Bank (BBL)</option>
+                            <option value="004">004 臺灣銀行</option>
+                            <option value="005">005 土地銀行</option>
+                            <option value="011">011 上海銀行</option>
                         </select>
                     </div>
                 </div>
-                <label for="">銀行帳號</label>
-                <div class="sea-ui form">
-                    <input type="tel" placeholder="請輸入您的銀行帳號">
+                <div class="sea-ui form-select-label break-label">
+                    <label for="">分行代碼</label>
+                    <div class="sea-ui form">
+                        <input type="tel" placeholder="請輸入您的銀行分行代碼">
+                    </div>
+                </div>
+                <div class="sea-ui form-select-label break-label">
+                    <label for="">銀行帳號</label>
+                    <div class="sea-ui form">
+                        <input type="tel" placeholder="請輸入您的銀行帳號">
+                    </div>
                 </div>
 
-                <p class="alert-atc">＊提醒您，銀行帳戶所有人必需與個人資料一致，否則會導致提領失敗。</p>
+                <div class="sea-ui form-select-label break-label">
+                    <label for="">銀行戶名</label>
+                    <div class="sea-ui form">
+                        <input type="text" placeholder="請輸入您的銀行戶名">
+                    </div>
+                </div>
+                <p class="alert-red">＊提醒您，提領銀行戶名需與身分認證的公司名稱相同，否則會導致提領失敗。</p>
             </div>
         </div>
     </div>
     <div class="modal-actions">
-        <a href="#" class="sea-ui btn btn-cta-outlined">取消重填</a>
-        <a href="#" class="sea-ui btn btn-cta">確定送出</a>
+        <a href="#" class="sea-ui btn btn-primary-outlined">取消重填</a>
+        <a href="#" class="sea-ui btn btn-primary">確定送出</a>
     </div>
 </div>
 <!-- 燈箱結束-->
+
+
+
 
 <!-- 編輯頭像燈箱 -->
 <div id="sea-lightbox-avataredit" class="sea-ui modal small">
@@ -119,8 +130,8 @@
                             <div id="croppie"></div>
                         </div>
                         <div onClick="cropRotate(-90);" class="sea-seller-icon icon-rotate"></div>
-                        <button class="sea-ui btn btn-cta-outlined" id="prev" onclick="cropCancel();">重新選擇</button>
-                        <button class="sea-ui btn btn-cta" id="next" onclick="cropResult();">預覽圖片</button>
+                        <button class="sea-ui btn btn-primary-outlined" id="prev" onclick="cropCancel();">重新選擇</button>
+                        <button class="sea-ui btn btn-primary" id="next" onclick="cropResult();">預覽圖片</button>
 
                     </div>
                 </div>
@@ -128,8 +139,8 @@
                     <div class="img-crop-title">預覽圖像</div>
                     <div class="block">
                         <div class="stage"><img src="" /></div>
-                        <button class="sea-ui btn btn-cta-outlined" id="prev" onclick="cropCancel();">重新選擇</button>
-                        <button class="sea-ui btn btn-cta">確定送出</button>
+                        <button class="sea-ui btn btn-primary-outlined" id="prev" onclick="cropCancel();">重新選擇</button>
+                        <button class="sea-ui btn btn-primary">確定送出</button>
                     </div>
                 </div>
             </div>
@@ -176,7 +187,7 @@
             <div class="modal-icon-img">
                 <img src="img/tel-verify.svg" alt="" class="img-fluid">
             </div>
-            <a href="#" class="sea-ui btn btn-fluid btn-cta">驗證電話號碼</a>
+            <a href="#" class="sea-ui btn btn-fluid btn-primary">驗證電話號碼</a>
             <div class="sea-item-link">
                 <a href="shop-intro.php#editTel">編輯電話號碼</a>
             </div>
@@ -221,7 +232,7 @@
                         <input type="text" maxlength="4" placeholder="- - - -">
                     </div>
                 </div>
-                <a href="#" class="sea-ui btn btn-fluid btn-cta">送出驗證碼</a>
+                <a href="#" class="sea-ui btn btn-fluid btn-primary">送出驗證碼</a>
             </div>
             <!-- 說明FOR RD:  倒數 帶入processing 超過次數 帶入樣式unsucess -->
             <div class="sea-item-link">
@@ -251,7 +262,7 @@
                     <input type="text" placeholder="請輸入您的電話">
                 </div>
             </div>
-            <a href="#" class="sea-ui btn btn-fluid btn-cta">取得驗證碼</a>
+            <a href="#" class="sea-ui btn btn-fluid btn-primary">取得驗證碼</a>
         </div>
     </div>
 </div>
@@ -267,8 +278,8 @@
         </div>
     </div>
     <div class="modal-actions">
-        <a href="" class="sea-ui btn btn-cta-outlined lightbox_close">取消</a>
-        <a href="#" class="sea-ui btn btn-cta">確定</a>
+        <a href="" class="sea-ui btn btn-primary-outlined lightbox_close">取消</a>
+        <a href="#" class="sea-ui btn btn-primary">確定</a>
     </div>
 </div>
 <!-- 燈箱結束-->

@@ -3790,7 +3790,7 @@ header {
   padding-bottom: 48px; }
   .menuMobile-inner .header {
     height: 70px;
-    padding: 24px 20px 24px 20px;
+    padding: 0px 20px;
     background-color: #00AFEB; }
     .menuMobile-inner .header .headerInner {
       display: -webkit-box;
@@ -3803,7 +3803,7 @@ header {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      height: 30px; }
+      height: 70px; }
       .menuMobile-inner .header .headerInner .header-user {
         width: 100%;
         display: -webkit-box;
@@ -6922,7 +6922,7 @@ colgroup {
 #sea-lightbox-mobilebanking .normal-table .normallist-head th {
   text-align: center;
   padding: 10px 10px;
-  color: #888888;
+  color: #ffffff;
   letter-spacing: 1px;
   font-weight: 500; }
 

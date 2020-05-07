@@ -33,20 +33,20 @@
     <title>PChomeSEA | 所有訂單</title>
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WDQH45W');
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -1098,7 +1098,7 @@
         <!-- PChomeSEA footer end-->
     </section>
     <!-- PChomeSEA Panel -->
-    <?php include("assets/slide-panel/panel-global.php"); ?>
+    <?php include("assets/slide-panel/panel-orderdetail.php"); ?>
     <!-- PChomeSEA Panel end-->
     <!-- PChomeSEA lightBox -->
     <section id="sea-lightbox">
@@ -1108,7 +1108,7 @@
             <!--頁面會出現的lightbox放這裡-->
             <?php include("assets/lightbox/orderlist/lightbox-orderlist.php"); ?>
             <!--頁面與面板都會出現的lightbox放這裡-->
-            <?php include("assets/slide-panel/lightbox/panel-lightbox-orderdetail.php"); ?>
+            <?php include("assets/lightbox/slide-panel/lightbox-orderdetail.php"); ?>
         </div>
     </section>
     <!-- PChomeSEA lightBox end-->
@@ -1121,11 +1121,11 @@
     <script type="text/javascript" src="js/js_orderlist.js"></script>
 
     <script>
-        $(document).ready(function() {
-            var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(3)');
-            menuItem.find('ul').show();
-            menuItem.addClass('active');
-        });
+    $(document).ready(function() {
+        var menuItem = $('.sidebar-panel-wrap > ul > li:nth-child(3)');
+        menuItem.find('ul').show();
+        menuItem.addClass('active');
+    });
     </script>
 
 
@@ -1137,15 +1137,15 @@
     <script type="text/javascript" src="js/plugin/bootstrap/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="js/plugin/bootstrap/locales/bootstrap-datepicker.zh-TW.js"></script>
     <script>
-        //說明FOR RD: 多國語系月曆判斷在此 
-        //- bootstrap4 月曆
-        $('.datepicker').datepicker({
-            orientation: 'bottom',
-            autoclose: true,
-            language: 'zh-TW'
-            // language: 'uk' 英文語系
-            //language: 'th' 泰文語系
-        });
+    //說明FOR RD: 多國語系月曆判斷在此 
+    //- bootstrap4 月曆
+    $('.datepicker').datepicker({
+        orientation: 'bottom',
+        autoclose: true,
+        language: 'zh-TW'
+        // language: 'uk' 英文語系
+        //language: 'th' 泰文語系
+    });
     </script>
 
 
