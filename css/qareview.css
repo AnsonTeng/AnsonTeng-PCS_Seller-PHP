@@ -3786,7 +3786,7 @@ header {
   padding-bottom: 48px; }
   .menuMobile-inner .header {
     height: 70px;
-    padding: 24px 20px 24px 20px;
+    padding: 0px 20px;
     background-color: #00AFEB; }
     .menuMobile-inner .header .headerInner {
       display: -webkit-box;
@@ -3799,7 +3799,7 @@ header {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      height: 30px; }
+      height: 70px; }
       .menuMobile-inner .header .headerInner .header-user {
         width: 100%;
         display: -webkit-box;
@@ -5164,6 +5164,9 @@ a.sea-ui.btn-xs.productscreenshotBtn .sea-seller-icon {
       align-items: flex-start;
       padding-left: 0;
       padding-right: 0; }
+      @media (max-width: 992px) {
+        .listBox .listBox-singlelist-review .qareview-reviewBar .productBar-product {
+          width: 100%; } }
       .listBox .listBox-singlelist-review .qareview-reviewBar .productBar-product .productBar-productBox {
         padding-top: 6px;
         padding-bottom: 0;

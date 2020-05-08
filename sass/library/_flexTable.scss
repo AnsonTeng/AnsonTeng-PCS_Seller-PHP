@@ -438,6 +438,9 @@
                 padding-left: 0;
                 padding-right: 0;
 
+                @media (max-width: $break-md) {
+                    width: 100%;
+                }
 
                 // 商品資訊群組（圖＋文＋icon）
                 .productBar-productBox {
